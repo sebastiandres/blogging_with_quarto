@@ -1,0 +1,18 @@
+---
+title: "Inicio"
+image: avatar.png
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/sebastiandres
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/sebastiandres/
+    - icon: github
+      text: Github
+      href: https://github.com/sebastiandres
+---
+¡Hola! Soy sebastiandres. En este blog encontrarás publicaciones diversas, de distintos temas de tecnología, literatura y opinión. Me encantaría saber que opinas tú al respecto. Coméntame si hay algo en lo que pueda ayudarte.
+

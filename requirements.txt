@@ -1,0 +1,8 @@
+jupyter
+notebook
+matplotlib
+pandas
+numpy
+scipy
+ipyvizzu
+ipyvizzu-story
