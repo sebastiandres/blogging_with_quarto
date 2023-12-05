@@ -1,43 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sebastiandres.github.io/blogging_with_quarto/pages/blog.html</loc>
-    <lastmod>2023-12-05T20:12:57.376Z</lastmod>
+    <loc>https://blog.sebastiandes.xyz/pages/blog.html</loc>
+    <lastmod>2023-12-05T20:31:38.118Z</lastmod>
   </url>
   <url>
-    <loc>https://sebastiandres.github.io/blogging_with_quarto/pages/about.html</loc>
-    <lastmod>2023-12-05T20:12:56.939Z</lastmod>
+    <loc>https://blog.sebastiandes.xyz/pages/about.html</loc>
+    <lastmod>2023-12-05T20:31:37.677Z</lastmod>
   </url>
   <url>
-    <loc>https://sebastiandres.github.io/blogging_with_quarto/pages/proyectos.html</loc>
-    <lastmod>2023-12-05T20:12:56.522Z</lastmod>
+    <loc>https://blog.sebastiandes.xyz/pages/proyectos.html</loc>
+    <lastmod>2023-12-05T20:31:37.267Z</lastmod>
   </url>
   <url>
-    <loc>https://sebastiandres.github.io/blogging_with_quarto/index.html</loc>
-    <lastmod>2023-12-05T20:12:56.089Z</lastmod>
+    <loc>https://blog.sebastiandes.xyz/index.html</loc>
+    <lastmod>2023-12-05T20:31:36.822Z</lastmod>
   </url>
   <url>
-    <loc>https://sebastiandres.github.io/blogging_with_quarto/posts/2023-11-30-vizzu/vizzu.html</loc>
-    <lastmod>2023-12-05T20:12:55.670Z</lastmod>
+    <loc>https://blog.sebastiandes.xyz/posts/2023-11-29-post-with-code/index.html</loc>
+    <lastmod>2023-12-05T20:31:36.413Z</lastmod>
   </url>
   <url>
-    <loc>https://sebastiandres.github.io/blogging_with_quarto/posts/2023-11-28-welcome/index.html</loc>
-    <lastmod>2023-12-05T20:12:54.680Z</lastmod>
+    <loc>https://blog.sebastiandes.xyz/posts/2023-11-28-welcome/index.html</loc>
+    <lastmod>2023-12-05T20:31:35.293Z</lastmod>
   </url>
   <url>
-    <loc>https://sebastiandres.github.io/blogging_with_quarto/posts/2023-11-29-post-with-code/index.html</loc>
-    <lastmod>2023-12-05T20:12:55.884Z</lastmod>
+    <loc>https://blog.sebastiandes.xyz/posts/2023-11-30-vizzu/vizzu.html</loc>
+    <lastmod>2023-12-05T20:31:36.204Z</lastmod>
   </url>
   <url>
-    <loc>https://sebastiandres.github.io/blogging_with_quarto/pages/publicaciones.html</loc>
-    <lastmod>2023-12-05T20:12:56.312Z</lastmod>
+    <loc>https://blog.sebastiandes.xyz/HELP.html</loc>
+    <lastmod>2023-12-05T20:31:36.616Z</lastmod>
   </url>
   <url>
-    <loc>https://sebastiandres.github.io/blogging_with_quarto/pages/librerias.html</loc>
-    <lastmod>2023-12-05T20:12:56.730Z</lastmod>
+    <loc>https://blog.sebastiandes.xyz/pages/publicaciones.html</loc>
+    <lastmod>2023-12-05T20:31:37.056Z</lastmod>
   </url>
   <url>
-    <loc>https://sebastiandres.github.io/blogging_with_quarto/pages/charlas.html</loc>
-    <lastmod>2023-12-05T20:12:57.163Z</lastmod>
+    <loc>https://blog.sebastiandes.xyz/pages/librerias.html</loc>
+    <lastmod>2023-12-05T20:31:37.466Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.sebastiandes.xyz/pages/charlas.html</loc>
+    <lastmod>2023-12-05T20:31:37.902Z</lastmod>
   </url>
 </urlset>

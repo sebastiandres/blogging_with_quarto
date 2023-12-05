@@ -42,11 +42,11 @@
     "text": "¡Hola! Soy sebastiandres. En este blog encontrarás publicaciones diversas, de distintos temas de tecnología, literatura y opinión. Me encantaría saber que opinas tú al respecto. Coméntame si hay algo en lo que pueda ayudarte."
   },
   {
-    "objectID": "posts/2023-11-30-vizzu/vizzu.html",
-    "href": "posts/2023-11-30-vizzu/vizzu.html",
-    "title": "Another page",
+    "objectID": "posts/2023-11-29-post-with-code/index.html",
+    "href": "posts/2023-11-29-post-with-code/index.html",
+    "title": "Post With Code",
     "section": "",
-    "text": "¿Podemos incrustar animaciones de Vizzu en un blog?\n¡SI SE PUEDE!\n\n\nShow the code\nimport pandas as pd\n \nfrom ipyvizzu import Data, Config, Style\nfrom ipyvizzustory import Story, Slide, Step\n \n \n# Create data object, read csv to data frame and add data frame to data object\ndata = Data()\ndf = pd.read_csv(\n    \"https://ipyvizzu-story.vizzuhq.com/0.9/examples/population/population.csv\",\n    dtype={\"Year\": str},\n)\ndata.add_df(df)\n \n \n# Create story object, add data to it\nstory = Story(data=data)\n \n# Set the size of the HTML element\n# that appears within the notebook\nstory.set_size(\"100%\", \"400px\")\n \n# Switch on the tooltip that appears\n# when the user hovers the mouse over a chart element\nstory.set_feature(\"tooltip\", True)\n \n \n# Each slide here is a page in the final interactive story\n# Add the first slide\nslide1 = Slide(\n    Step(\n        Data.filter(\"record.Continent == 'Africa'\"),\n        Config.stackedArea(\n            {\n                \"x\": \"Year\",\n                \"y\": \"Medium\",\n                \"stackedBy\": \"Subregion\",\n                \"title\": \"Population of Africa 1953-2098\",\n            }\n        ),\n        Style({\"plot\": {\"xAxis\": {\"label\": {\"angle\": 2.0}}}}),\n    )\n)\n# Add the slide to the story\nstory.add_slide(slide1)\n \nslide2 = Slide(\n    Step(\n        Config.percentageArea(\n            {\n                \"x\": \"Year\",\n                \"y\": \"Medium\",\n                \"stackedBy\": \"Subregion\",\n            }\n        ),\n    )\n)\nstory.add_slide(slide2)\n \nslide3 = Slide(\n    Step(\n        Config.stream(\n            {\n                \"x\": \"Year\",\n                \"y\": \"Medium\",\n                \"stackedBy\": \"Subregion\",\n            }\n        ),\n    )\n)\nstory.add_slide(slide3)\n \nslide4 = Slide(\n    Step(\n        Config.violin(\n            {\n                \"x\": \"Year\",\n                \"y\": \"Medium\",\n                \"splittedBy\": \"Subregion\",\n            }\n        ),\n    )\n)\nstory.add_slide(slide4)\n \n \n# Play the created story!\nstory.play()"
+    "text": "This is a post with executable code."
   },
   {
     "objectID": "posts/2023-11-28-welcome/index.html",
@@ -56,11 +56,32 @@
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   },
   {
-    "objectID": "posts/2023-11-29-post-with-code/index.html",
-    "href": "posts/2023-11-29-post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "posts/2023-11-30-vizzu/vizzu.html",
+    "href": "posts/2023-11-30-vizzu/vizzu.html",
+    "title": "Another page",
     "section": "",
-    "text": "This is a post with executable code."
+    "text": "¿Podemos incrustar animaciones de Vizzu en un blog?\n¡SI SE PUEDE!\n\n\nShow the code\nimport pandas as pd\n \nfrom ipyvizzu import Data, Config, Style\nfrom ipyvizzustory import Story, Slide, Step\n \n \n# Create data object, read csv to data frame and add data frame to data object\ndata = Data()\ndf = pd.read_csv(\n    \"https://ipyvizzu-story.vizzuhq.com/0.9/examples/population/population.csv\",\n    dtype={\"Year\": str},\n)\ndata.add_df(df)\n \n \n# Create story object, add data to it\nstory = Story(data=data)\n \n# Set the size of the HTML element\n# that appears within the notebook\nstory.set_size(\"100%\", \"400px\")\n \n# Switch on the tooltip that appears\n# when the user hovers the mouse over a chart element\nstory.set_feature(\"tooltip\", True)\n \n \n# Each slide here is a page in the final interactive story\n# Add the first slide\nslide1 = Slide(\n    Step(\n        Data.filter(\"record.Continent == 'Africa'\"),\n        Config.stackedArea(\n            {\n                \"x\": \"Year\",\n                \"y\": \"Medium\",\n                \"stackedBy\": \"Subregion\",\n                \"title\": \"Population of Africa 1953-2098\",\n            }\n        ),\n        Style({\"plot\": {\"xAxis\": {\"label\": {\"angle\": 2.0}}}}),\n    )\n)\n# Add the slide to the story\nstory.add_slide(slide1)\n \nslide2 = Slide(\n    Step(\n        Config.percentageArea(\n            {\n                \"x\": \"Year\",\n                \"y\": \"Medium\",\n                \"stackedBy\": \"Subregion\",\n            }\n        ),\n    )\n)\nstory.add_slide(slide2)\n \nslide3 = Slide(\n    Step(\n        Config.stream(\n            {\n                \"x\": \"Year\",\n                \"y\": \"Medium\",\n                \"stackedBy\": \"Subregion\",\n            }\n        ),\n    )\n)\nstory.add_slide(slide3)\n \nslide4 = Slide(\n    Step(\n        Config.violin(\n            {\n                \"x\": \"Year\",\n                \"y\": \"Medium\",\n                \"splittedBy\": \"Subregion\",\n            }\n        ),\n    )\n)\nstory.add_slide(slide4)\n \n \n# Play the created story!\nstory.play()"
+  },
+  {
+    "objectID": "HELP.html",
+    "href": "HELP.html",
+    "title": "HELP",
+    "section": "",
+    "text": "quarto publish gh-pages\n\n\n\n\nhttps://quarto.org/docs/publishing/github-pages.html"
+  },
+  {
+    "objectID": "HELP.html#como-publicar",
+    "href": "HELP.html#como-publicar",
+    "title": "HELP",
+    "section": "",
+    "text": "quarto publish gh-pages"
+  },
+  {
+    "objectID": "HELP.html#referencias",
+    "href": "HELP.html#referencias",
+    "title": "HELP",
+    "section": "",
+    "text": "https://quarto.org/docs/publishing/github-pages.html"
   },
   {
     "objectID": "pages/publicaciones.html",
