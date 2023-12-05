@@ -1,1 +1,1 @@
-Sitemap: https://blog.sebastiandes.xyz/sitemap.xml
+Sitemap: https://sebastiandres.github.io/blogging_with_quarto/sitemap.xml
