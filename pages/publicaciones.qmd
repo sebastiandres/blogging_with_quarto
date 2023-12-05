@@ -1,46 +1,33 @@
 ---
 title: "Publicaciones"
-about:
-  template: jolla
-  links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/sebastiandres
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/sebastiandres/
-    - icon: github
-      text: Github
-      href: https://github.com/sebastiandres
 ---
 
 He participado en las siguientes publicaciones:
 
-###  On the mineral recovery estimation in Cu/Mo flotation plants
+* On the mineral recovery estimation in Cu/Mo flotation plants  
 [Minerals & Metallurgical Processing](http://mmp.smenet.org/issue.cfm?issueid=280), 
 1 mayo 2016.
 
-
-### Propagación numérica de tsunamis utilizando volúmenes finitos en mallas triangulares adaptadas a la batimetría
+* Propagación numérica de tsunamis utilizando volúmenes finitos en mallas triangulares adaptadas a la batimetría  
 XXII Congreso Chileno de Ingeniería Hidráulica, 
 22 octubre 2015.
 
-### Analysis of the operational strategies for the enzymatic hydrolysis of food proteins in batch reactor
+* Analysis of the operational strategies for the enzymatic hydrolysis of food proteins in batch reactor    
 [Journal of Food Engineering ](https://www.sciencedirect.com/science/article/abs/pii/S0260877415300303), 
 1 octubre 2015.
 
-### Effect of Internal Diffusional Restrictions on the Hydrolysis of Penicillin G: Reactor Performance and Specific Productivity of 6-APA with Immobilized Penicillin Acylase
-[Applied Biochemistry and Biotechnology](https://link.springer.com/article/10.1007/s12010-011-9262-7),   
+* Effect of Internal Diffusional Restrictions on the Hydrolysis of Penicillin G: Reactor Performance and Specific Productivity of 6-APA with Immobilized Penicillin Acylase  
+[Applied Biochemistry and Biotechnology](https://link.springer.com/article/10.1007/s12010-011-9262-7), 
 1 septiembre 2011.  
 
-### Batch reactor performance for enzymatic synthesis of cephalexin: influence of catalyst enzyme loading and particle size
+* Batch reactor performance for enzymatic synthesis of cephalexin: influence of catalyst enzyme loading and particle size
 [Journal of Biotechnology](https://www.sciencedirect.com/science/article/abs/pii/S0168165610005912), 
 1 noviembre 2010.
 
-### Temperature effect on heterogeneous enzyme catalyzed reaction: Thièle modulus and effectiveness factor analysis
+* Temperature effect on heterogeneous enzyme catalyzed reaction: Thièle modulus and effectiveness factor analysis  
 [Journal of Biotechnology](http://dx.doi.org/10.1016/j.jbiotec.2010.09.491), 
 1 noviembre 2010.
 
-### Effect of particle size distribution in immobilized enzyme reactor performance
+* Effect of particle size distribution in immobilized enzyme reactor performance  
 [Biochemical Engineering Journal, 49(2) 2010](http://www.sciencedirect.com/science/article/pii/S1369703X10000124), 
 15 Abril 2010.

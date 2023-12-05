@@ -1,20 +1,9 @@
 ---
 title: "Librerías"
-about:
-  template: jolla
-  links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/sebastiandres
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/sebastiandres/
-    - icon: github
-      text: Github
-      href: https://github.com/sebastiandres
 ---
 
 ## streamlit-slides
+
 Una extensión a streamlit que permite desplegar páginas como slides de una presentación.  
 ![Animated gif of the demo](https://raw.githubusercontent.com/sebastiandres/streamlit_slides/main/images/example.gif "Animated gif of the demo")  
 [pypi](https://pypi.org/project/streamlit-slides/)
@@ -23,6 +12,7 @@ Una extensión a streamlit que permite desplegar páginas como slides de una pre
   
 
 ## streamlit-book
+
 Una extensión a streamlit que permite desplegar páginas en un formato de libro. Fue relevante antes que streamlit proporcionara de manera nativa el soporte multipágina. Contiene funcionalidades adicionales para hacer actividades.  
 [pypi](https://pypi.org/project/streamlit-book/)
 -

@@ -1,19 +1,7 @@
 ---
 title: "Sobre mí"
-image: avatar.png
-about:
-  template: jolla
-  links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/sebastiandres
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/sebastiandres/
-    - icon: github
-      text: Github
-      href: https://github.com/sebastiandres
 ---
+
 ## En 10 palabras
 Chief Data Officer de día, programando python el día completo.
 
