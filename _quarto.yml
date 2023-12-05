@@ -16,7 +16,7 @@ website:
       - pages/blog.qmd
   navbar:
     right:
-      - about.qmd
+      - pages/about.qmd
       - icon: linkedin
         href: https://www.linkedin.com/in/sebastiandres/
       - icon: github

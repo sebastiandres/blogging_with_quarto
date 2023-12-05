@@ -1,4 +1,5 @@
 # Skip me
+.quarto/
 _site/
 _freeze/
 .DS_Store
