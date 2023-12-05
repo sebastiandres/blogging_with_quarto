@@ -88,28 +88,14 @@
     "href": "pages/publicaciones.html",
     "title": "Publicaciones",
     "section": "",
-    "text": "He participado en las siguientes publicaciones:\n\nOn the mineral recovery estimation in Cu/Mo flotation plants\nMinerals & Metallurgical Processing, 1 mayo 2016.\nPropagación numérica de tsunamis utilizando volúmenes finitos en mallas triangulares adaptadas a la batimetría\nXXII Congreso Chileno de Ingeniería Hidráulica, 22 octubre 2015.\nAnalysis of the operational strategies for the enzymatic hydrolysis of food proteins in batch reactor\nJournal of Food Engineering, 1 octubre 2015.\nEffect of Internal Diffusional Restrictions on the Hydrolysis of Penicillin G: Reactor Performance and Specific Productivity of 6-APA with Immobilized Penicillin Acylase\nApplied Biochemistry and Biotechnology, 1 septiembre 2011.\nBatch reactor performance for enzymatic synthesis of cephalexin: influence of catalyst enzyme loading and particle size Journal of Biotechnology, 1 noviembre 2010.\nTemperature effect on heterogeneous enzyme catalyzed reaction: Thièle modulus and effectiveness factor analysis\nJournal of Biotechnology, 1 noviembre 2010.\nEffect of particle size distribution in immobilized enzyme reactor performance\nBiochemical Engineering Journal, 49(2) 2010, 15 Abril 2010."
+    "text": "He participado en las siguientes publicaciones:\n\nOn the mineral recovery estimation in Cu/Mo flotation plants\nMinerals & Metallurgical Processing, 1 mayo 2016.\nPropagación numérica de tsunamis utilizando volúmenes finitos en mallas triangulares adaptadas a la batimetría\nXXII Congreso Chileno de Ingeniería Hidráulica, 22 octubre 2015.\nAnalysis of the operational strategies for the enzymatic hydrolysis of food proteins in batch reactor\nJournal of Food Engineering, 1 octubre 2015.\nEffect of Internal Diffusional Restrictions on the Hydrolysis of Penicillin G: Reactor Performance and Specific Productivity of 6-APA with Immobilized Penicillin Acylase\nApplied Biochemistry and Biotechnology, 1 septiembre 2011.\nBatch reactor performance for enzymatic synthesis of cephalexin: influence of catalyst enzyme loading and particle size\nJournal of Biotechnology, 1 noviembre 2010.\nTemperature effect on heterogeneous enzyme catalyzed reaction: Thièle modulus and effectiveness factor analysis\nJournal of Biotechnology, 1 noviembre 2010.\nEffect of particle size distribution in immobilized enzyme reactor performance\nBiochemical Engineering Journal, 49(2) 2010, 15 Abril 2010."
   },
   {
     "objectID": "pages/librerias.html",
     "href": "pages/librerias.html",
     "title": "Librerías",
     "section": "",
-    "text": "Una extensión a streamlit que permite desplegar páginas como slides de una presentación.\n\npypi - github"
-  },
-  {
-    "objectID": "pages/librerias.html#streamlit-slides",
-    "href": "pages/librerias.html#streamlit-slides",
-    "title": "Librerías",
-    "section": "",
-    "text": "Una extensión a streamlit que permite desplegar páginas como slides de una presentación.\n\npypi - github"
-  },
-  {
-    "objectID": "pages/librerias.html#streamlit-book",
-    "href": "pages/librerias.html#streamlit-book",
-    "title": "Librerías",
-    "section": "streamlit-book",
-    "text": "streamlit-book\nUna extensión a streamlit que permite desplegar páginas en un formato de libro. Fue relevante antes que streamlit proporcionara de manera nativa el soporte multipágina. Contiene funcionalidades adicionales para hacer actividades.\npypi - readthedocs - github"
+    "text": "streamlit-slides\npypi | github\nUna extensión a streamlit que permite desplegar páginas como slides de una presentación.\n\n\n\n\nstreamlit-book\npypi | readthedocs | github\nUna extensión a streamlit que permite desplegar páginas en un formato de libro. Fue relevante antes que streamlit proporcionara de manera nativa el soporte multipágina. Contiene funcionalidades adicionales para hacer actividades."
   },
   {
     "objectID": "pages/charlas.html",
