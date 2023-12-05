@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "pages/blog.html",
+    "href": "pages/blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "pages/about.html",
+    "href": "pages/about.html",
+    "title": "Sobre mí",
+    "section": "",
+    "text": "Chief Data Officer de día, programando python el día completo."
+  },
+  {
+    "objectID": "pages/about.html#en-10-palabras",
+    "href": "pages/about.html#en-10-palabras",
+    "title": "Sobre mí",
+    "section": "",
+    "text": "Chief Data Officer de día, programando python el día completo."
+  },
+  {
+    "objectID": "pages/about.html#en-10-minutos",
+    "href": "pages/about.html#en-10-minutos",
+    "title": "Sobre mí",
+    "section": "En 10 minutos",
+    "text": "En 10 minutos\nMe han dicho que colecciono diplomas: Ingeniero Matemático de la UTFSM, Ingénieur Diplômé de l’École Polytechnique, y Master of Computational and Mathematical Engineering de Stanford University. En realidad, fueran 3 experiencias estudiantiles completamente distintas y muy enriquecedoras.\nActualmente trabajo como Chief Data Officer en uPlanner, donde participo activamente en el desarrollo de nuevos productos y dirección de proyectos estratégicos con una fuerte componente de Data Science y Machine Learning. Anteriormente, he realizado diversos proyectos de ingeniería con una fuerte componente de matemáticas aplicadas e implementaciones numéricas en universidades chilenas UTFSM y Universidad de Chile. Como docente, ha impartido asignaturas de Matemática e Informática, con especial énfasis en la utilización de nuevas metodologías de aprendizaje como flipped classroom y problem based learning, y el uso de nuevas tecnologías como jupyter notebooks.\nLlevo programando en python desde el 2008, y siempre buscando nuevas librerías: uso matplotlib y vizzu para los gráficos, pandas para la manipulación de datos, jupyter notebooks para la colaboración y exploración, streamlit para proyectos web y quarto para compartir conocimiento."
+  },
+  {
+    "objectID": "pages/proyectos.html",
+    "href": "pages/proyectos.html",
+    "title": "Proyectos",
+    "section": "",
+    "text": "PPTX a RISE: Un web app para convertir presentaciones de powerpoint (pptx) a jupyter notebooks para poder presentarlos con RISE.\nGráficos xkcd: Un web app para hacer gráficos tipo xkcd. Creado usando la librería streamlit y matplotlib.\nCode snippets: Un web app con ejemplos de código de streamlit. Listo para copiar, pegar y desarrollar la siguiente web app.\nlinktree emulator: El emulador pequeño de linktree. Permite presentar opciones interactivas en html desde github.\nppt to rise library y web app: Para convertir una presentación powerpoint a RISE (Jupyter Notebook).\npypsdier: Librería para resolver ecuaciones diferenciales parciales de restricción-difusión en partículas esféricas con catalizadores inmobilizados. Un proyecto colaborativo con aplicaciones industriales.\npolite: Sistema de encuestas experimental minimalista."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Inicio",
+    "section": "",
+    "text": "¡Hola! Soy sebastiandres. En este blog encontrarás publicaciones diversas, de distintos temas de tecnología, literatura y opinión. Me encantaría saber que opinas tú al respecto. Coméntame si hay algo en lo que pueda ayudarte."
+  },
+  {
+    "objectID": "posts/2023-11-30-vizzu/vizzu.html",
+    "href": "posts/2023-11-30-vizzu/vizzu.html",
+    "title": "Another page",
+    "section": "",
+    "text": "¿Podemos incrustar animaciones de Vizzu en un blog?\n¡SI SE PUEDE!\n\n\nShow the code\nimport pandas as pd\n \nfrom ipyvizzu import Data, Config, Style\nfrom ipyvizzustory import Story, Slide, Step\n \n \n# Create data object, read csv to data frame and add data frame to data object\ndata = Data()\ndf = pd.read_csv(\n    \"https://ipyvizzu-story.vizzuhq.com/0.9/examples/population/population.csv\",\n    dtype={\"Year\": str},\n)\ndata.add_df(df)\n \n \n# Create story object, add data to it\nstory = Story(data=data)\n \n# Set the size of the HTML element\n# that appears within the notebook\nstory.set_size(\"100%\", \"400px\")\n \n# Switch on the tooltip that appears\n# when the user hovers the mouse over a chart element\nstory.set_feature(\"tooltip\", True)\n \n \n# Each slide here is a page in the final interactive story\n# Add the first slide\nslide1 = Slide(\n    Step(\n        Data.filter(\"record.Continent == 'Africa'\"),\n        Config.stackedArea(\n            {\n                \"x\": \"Year\",\n                \"y\": \"Medium\",\n                \"stackedBy\": \"Subregion\",\n                \"title\": \"Population of Africa 1953-2098\",\n            }\n        ),\n        Style({\"plot\": {\"xAxis\": {\"label\": {\"angle\": 2.0}}}}),\n    )\n)\n# Add the slide to the story\nstory.add_slide(slide1)\n \nslide2 = Slide(\n    Step(\n        Config.percentageArea(\n            {\n                \"x\": \"Year\",\n                \"y\": \"Medium\",\n                \"stackedBy\": \"Subregion\",\n            }\n        ),\n    )\n)\nstory.add_slide(slide2)\n \nslide3 = Slide(\n    Step(\n        Config.stream(\n            {\n                \"x\": \"Year\",\n                \"y\": \"Medium\",\n                \"stackedBy\": \"Subregion\",\n            }\n        ),\n    )\n)\nstory.add_slide(slide3)\n \nslide4 = Slide(\n    Step(\n        Config.violin(\n            {\n                \"x\": \"Year\",\n                \"y\": \"Medium\",\n                \"splittedBy\": \"Subregion\",\n            }\n        ),\n    )\n)\nstory.add_slide(slide4)\n \n \n# Play the created story!\nstory.play()"
+  },
+  {
+    "objectID": "posts/2023-11-28-welcome/index.html",
+    "href": "posts/2023-11-28-welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/2023-11-29-post-with-code/index.html",
+    "href": "posts/2023-11-29-post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "pages/publicaciones.html",
+    "href": "pages/publicaciones.html",
+    "title": "Publicaciones",
+    "section": "",
+    "text": "He participado en las siguientes publicaciones:\n\nOn the mineral recovery estimation in Cu/Mo flotation plants\nMinerals & Metallurgical Processing, 1 mayo 2016.\nPropagación numérica de tsunamis utilizando volúmenes finitos en mallas triangulares adaptadas a la batimetría\nXXII Congreso Chileno de Ingeniería Hidráulica, 22 octubre 2015.\nAnalysis of the operational strategies for the enzymatic hydrolysis of food proteins in batch reactor\nJournal of Food Engineering, 1 octubre 2015.\nEffect of Internal Diffusional Restrictions on the Hydrolysis of Penicillin G: Reactor Performance and Specific Productivity of 6-APA with Immobilized Penicillin Acylase\nApplied Biochemistry and Biotechnology, 1 septiembre 2011.\nBatch reactor performance for enzymatic synthesis of cephalexin: influence of catalyst enzyme loading and particle size Journal of Biotechnology, 1 noviembre 2010.\nTemperature effect on heterogeneous enzyme catalyzed reaction: Thièle modulus and effectiveness factor analysis\nJournal of Biotechnology, 1 noviembre 2010.\nEffect of particle size distribution in immobilized enzyme reactor performance\nBiochemical Engineering Journal, 49(2) 2010, 15 Abril 2010."
+  },
+  {
+    "objectID": "pages/librerias.html",
+    "href": "pages/librerias.html",
+    "title": "Librerías",
+    "section": "",
+    "text": "Una extensión a streamlit que permite desplegar páginas como slides de una presentación.\n\npypi - github"
+  },
+  {
+    "objectID": "pages/librerias.html#streamlit-slides",
+    "href": "pages/librerias.html#streamlit-slides",
+    "title": "Librerías",
+    "section": "",
+    "text": "Una extensión a streamlit que permite desplegar páginas como slides de una presentación.\n\npypi - github"
+  },
+  {
+    "objectID": "pages/librerias.html#streamlit-book",
+    "href": "pages/librerias.html#streamlit-book",
+    "title": "Librerías",
+    "section": "streamlit-book",
+    "text": "streamlit-book\nUna extensión a streamlit que permite desplegar páginas en un formato de libro. Fue relevante antes que streamlit proporcionara de manera nativa el soporte multipágina. Contiene funcionalidades adicionales para hacer actividades.\npypi - readthedocs - github"
+  },
+  {
+    "objectID": "pages/charlas.html",
+    "href": "pages/charlas.html",
+    "title": "Charlas",
+    "section": "",
+    "text": "Pycon Chile 2023 - 26 Noviembre 2023. Keynote. “¿Cómo hacer Data Storytelling con Python?”\nPycon Latam 2021 - 28 Agosto 2021. Charla “Presentaciones Interactivas con Jupyter Notebook + RISE. Todo lo que necesitas saber en 30 minutos.” En esta charla resumí los conocimientos que necesitas para hacer una presentación completamente interactiva (código, gráficos, encuestas, otros) usando jupyter notebook y su extensión RISE.\nUNSA Argentina - 09 Abril 2021. Charla “Sin límites con Python” realizada a estudiantes de primer año de la Universidad de Salta en Argentina, para contarles sobre python y algunas de las cosas que se pueden hacer.\nPyCon Argentina 2020 - Noviembre 2020. Charla “Coding as a Service: Librería pypsdier, aprendizajes y metodología” realizado en la Pycon Argentina 2020 sobre mi proyecto pypsdier y en general sobre cómo hacer una librería científica para que sea usada por otros usuarios no técnicos.\nPycon Colombia 2020 - 8 Mayo 2020. Charla “¿Cómo hacer encuestas interactivas en Jupyter + RISE? 3 experimentos” realizada en la Pycon Colombia 2020, sobre como mezclar Jupyter, RISE y encuestas.\nUniversidad Adolfo Ibáñez - 24 Octubre 2019. Charla “Matrices en la vida real” realizada a estudiantes de primer año, sobre aplicaciones de las matrices en la industria.\nMeetup Python (2/2) - 27 abril 2016. Charla sobre la librería sklearn, para el meetup de Python Valparaíso.\nMeetup Python (1/2) - 30 marzo 2016. Charla sobre la librería pandas, para el meetup de Python Valparaíso.\n\nEn cada caso, en el enlace podrás seleccionar el modo de visualización del contenido (video, slides, código, etc.)."
+  }
+]
