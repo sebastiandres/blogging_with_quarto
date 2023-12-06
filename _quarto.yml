@@ -24,7 +24,7 @@ website:
         href: https://twitter.com/sebastiandres
 format:
   html:
-    theme: zephyr
+    theme: superhero
     css: styles.css
 
 
