@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "Blog de Sebastiandres"
+  title: "sebastiandres.xyz"
   sidebar:
     style: "docked"
     search: true
@@ -16,7 +16,6 @@ website:
       - pages/blog.qmd
   navbar:
     right:
-      - pages/about.qmd
       - icon: linkedin
         href: https://www.linkedin.com/in/sebastiandres/
       - icon: github
