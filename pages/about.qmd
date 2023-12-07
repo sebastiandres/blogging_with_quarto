@@ -2,15 +2,15 @@
 title: "Sobre mí"
 ---
 
-## En 10 palabras
-Chief Data Officer de día, programando python el día completo.
+## Hoy
+Soy Chief Data Officer en uPlanner. Participo de comunidades y organizaciones relacionadas con Python: Comunidad Python Chile, Streamlit y Vizzu.
 
 ## En 10 minutos
-Me han dicho que colecciono diplomas: 
-Ingeniero Matemático de la UTFSM, Ingénieur Diplômé de l'École Polytechnique, y Master of Computational and Mathematical Engineering de Stanford University. 
+Me han dicho que colecciono diplomas:   
+Ingeniero Matemático de la UTFSM, Ingénieur Diplômé de l'École Polytechnique, y Master of Computational and Mathematical Engineering de Stanford University.   
 En realidad, fueran 3 experiencias estudiantiles completamente distintas y muy enriquecedoras.
 
-Actualmente trabajo como Chief Data Officer en uPlanner, donde participo activamente en el desarrollo de nuevos productos y dirección de proyectos estratégicos con una fuerte componente de Data Science y Machine Learning. Anteriormente, he realizado diversos proyectos de ingeniería con una fuerte componente de matemáticas aplicadas e implementaciones numéricas en universidades chilenas UTFSM y Universidad de Chile. Como docente, ha impartido asignaturas de Matemática e Informática, con especial énfasis en la utilización de nuevas metodologías de aprendizaje como flipped classroom y problem based learning, y el uso de nuevas tecnologías como jupyter notebooks.
+Actualmente trabajo como Chief Data Officer en uPlanner, donde participo activamente en el desarrollo de nuevos productos y dirección de proyectos estratégicos con una fuerte componente de Data Science y Machine Learning. Anteriormente, he realizado diversos proyectos de ingeniería con una fuerte componente de matemáticas aplicadas e implementaciones numéricas en universidades chilenas (La Universidad Santa María y Universidad de Chile). Como docente, ha impartido asignaturas de Matemática e Informática, con especial énfasis en la utilización de nuevas metodologías de aprendizaje como flipped classroom y problem based learning, y el uso de nuevas tecnologías como jupyter notebooks + RISE.
 
-Llevo programando en python desde el 2008, y siempre buscando nuevas librerías: uso matplotlib y vizzu para los gráficos, pandas para la manipulación de datos, jupyter notebooks para la colaboración y exploración, streamlit para proyectos web y quarto para compartir conocimiento.
+Llevo programando en python desde el 2008, y me gusta encontrar y aprender nuevas librerías: uso matplotlib y vizzu para los gráficos, pandas para la manipulación de datos, jupyter notebooks + RISE para la colaboración y exploración, streamlit para proyectos web y quarto para compartir conocimiento.
 

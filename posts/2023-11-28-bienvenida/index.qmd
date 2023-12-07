@@ -1,0 +1,12 @@
+---
+title: "Primer post"
+author: "sebastiandres"
+date: "2023-11-28"
+categories: [vida]
+---
+
+Este es el primer post en este nuevo blog hecho con Quarto.
+
+¡Bienvenido!
+
+![](thumbnail.jpg)

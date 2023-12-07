@@ -22,3 +22,13 @@ Una extensión a streamlit que permite desplegar páginas como slides de una pre
 [github](https://github.com/sebastiandres/streamlit_book)  
 
 Una extensión a streamlit que permite desplegar páginas en un formato de libro. Fue relevante antes que streamlit proporcionara de manera nativa el soporte multipágina. Contiene funcionalidades adicionales para hacer actividades.  
+
+
+### pypsdier
+
+[pypi](https://pypi.org/project/pypsdier/)
+ | 
+[github](https://github.com/sebastiandres/pypsdier)
+
+Librería para resolver ecuaciones diferenciales parciales de restricción-difusión en partículas esféricas con catalizadores inmobilizados. Un proyecto colaborativo con aplicaciones industriales.
+

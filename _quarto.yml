@@ -14,6 +14,7 @@ website:
       - pages/librerias.qmd
       - pages/publicaciones.qmd
       - pages/blog.qmd
+      - pages/books.qmd
   navbar:
     right:
       - icon: linkedin

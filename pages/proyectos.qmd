@@ -2,10 +2,30 @@
 title: "Proyectos"
 ---
 
-* [PPTX a RISE](https://share.streamlit.io/sebastiandres/streamlit_ppt2rise/main): Un web app para convertir presentaciones de powerpoint (pptx) a jupyter notebooks para poder presentarlos con RISE. 
-* [Gráficos xkcd](https://share.streamlit.io/sebastiandres/xkcd_streamlit/main): Un web app para hacer gráficos tipo xkcd. Creado usando la librería streamlit y matplotlib. 
-* [Code snippets](https://share.streamlit.io/sebastiandres/streamlit_code_snippets/main): Un web app con ejemplos de código de streamlit. Listo para copiar, pegar y desarrollar la siguiente web app.
-* [linktree emulator](https://github.com/sebastiandres/linktree): El emulador pequeño de linktree. Permite presentar opciones interactivas en html desde github.
-* ppt to rise [library](https://github.com/sebastiandres/pptx_to_RISE) y [web app](https://ppt2rise.sebastiandres.xyz/): Para convertir una presentación powerpoint a RISE (Jupyter Notebook).
-* [pypsdier](https://github.com/sebastiandres/pypsdier): Librería para resolver ecuaciones diferenciales parciales de restricción-difusión en partículas esféricas con catalizadores inmobilizados. Un proyecto colaborativo con aplicaciones industriales.
-* [polite](https://github.com/sebastiandres/polite_vold): Sistema de encuestas experimental minimalista.
+* [Buscador de videos Python Chile](https://pythonchile.streamlit.app/)  
+Una webapp en streamlit para buscar entre las distintas charlas disponibles en el canal de youtube de Python Chile.  
+
+* [gapminder](https://gapminder.streamlit.app/)  
+Una webapp en streamlit para emular la clásica visualización de la [Ted Talk de Ted Rosling's "The best stats you've ever seen"](https://youtu.be/hVimVzgtD6w). Usa streamlit, vizzu y hace llamados directos de SQL a snowflake. Proyecto para una hackathon de Streamlit.
+
+* [Datasaurio](https://datasaurus.streamlit.app/)  
+Una webapp en streamlit que ilustra el artículo "Datasaurus" y permite generar conjuntos de puntos que se transforman de una figura a otra sin cambiar las propiedades estadísticas. Un ejemplo que no puede faltar en toda lección de visualización.
+
+* [Confusion Matrix](https://confusion-matrix.streamlit.app/)  
+Una webapp en streamlit que emula el look&feel de The Matrix, y enseña sobre las matrices de confusión de Machine Learning.
+Un proyecto en el cual busqué llevar al límite la personalización en Streamlit y donde jugué con mucho html+js.
+
+* [PPTX a RISE](https://ppt2rise.streamlit.app/)  
+Un web app para convertir presentaciones de powerpoint (pptx) a jupyter notebooks para poder presentarlos con RISE. 
+
+* [Not Angry Birds](https://notangrybirds.streamlit.app/)  
+Una webapp en streamlit que ilustra el uso de streamlit-book para enseñanza, usando trayectorias de partículas y pájaros enojados.
+
+* [Gráficos xkcd](https://xkcd-graphs.streamlit.app/)  
+Un web app para hacer gráficos tipo xkcd. Creado usando la librería streamlit y matplotlib. 
+
+* [linktree emulator](https://github.com/sebastiandres/linktree)  
+El emulador pequeño de linktree. Permite presentar opciones interactivas en html desde github con el mismo look&feel de linktree.
+
+* [polite](https://github.com/sebastiandres/polite_surveys)  
+Sistema de encuestas experimental minimalista.

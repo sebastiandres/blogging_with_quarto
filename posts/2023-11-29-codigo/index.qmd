@@ -1,0 +1,17 @@
+---
+title: "Post Con Codigo"
+author: "sebastiandres"
+date: "2023-11-29"
+categories: [code, analysis]
+image: "image.jpg"
+---
+
+Este es un post con código ejecutable
+
+```{python}
+#| code-fold: false
+#| echo: true
+print("Hola mundo")
+```
+
+
