@@ -9,7 +9,6 @@ title: "Librerías"
 [github](https://github.com/sebastiandres/streamlit_slides)  
 
 Una extensión a streamlit que permite desplegar páginas como slides de una presentación.  
-![Animated gif of the demo](https://raw.githubusercontent.com/sebastiandres/streamlit_slides/main/images/example.gif "Animated gif of the demo")  
 
 ---
 
@@ -23,6 +22,7 @@ Una extensión a streamlit que permite desplegar páginas como slides de una pre
 
 Una extensión a streamlit que permite desplegar páginas en un formato de libro. Fue relevante antes que streamlit proporcionara de manera nativa el soporte multipágina. Contiene funcionalidades adicionales para hacer actividades.  
 
+---
 
 ### pypsdier
 

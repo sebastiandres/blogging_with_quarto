@@ -5,15 +5,15 @@ title: "Publicaciones"
 He participado en las siguientes publicaciones:
 
 * **Create a search engine with Streamlit and Google Sheets**  
-[Artículo en el Blog de Streamlit](https://blog.streamlit.io/create-a-search-engine-with-streamlit-and-google-sheets/)  
+[Artículo en el Blog de Streamlit](https://blog.streamlit.io/create-a-search-engine-with-streamlit-and-google-sheets/), 
 14 marzo 2023
 
 * **uPlanner fosters data processing innovation with Streamlit**  
-[Artículo en el Blog de Streamlit](https://blog.streamlit.io/uplanner-fosters-data-processing-innovation-with-streamlit/)  
+[Artículo en el Blog de Streamlit](https://blog.streamlit.io/uplanner-fosters-data-processing-innovation-with-streamlit/), 
 6 octubre 2022
 
 * **How to create interactive books with Streamlit in 5 steps**  
-[Artículo en el Blog de Streamlit](https://blog.streamlit.io/how-to-create-interactive-books-with-streamlit-and-streamlit-book-in-5-steps/)  
+[Artículo en el Blog de Streamlit](https://blog.streamlit.io/how-to-create-interactive-books-with-streamlit-and-streamlit-book-in-5-steps/), 
 20 enero 2022.
 
 * **On the mineral recovery estimation in Cu/Mo flotation plants**  
@@ -21,7 +21,7 @@ He participado en las siguientes publicaciones:
 1 mayo 2016.
 
 * **Propagación numérica de tsunamis utilizando volúmenes finitos en mallas triangulares adaptadas a la batimetría**  
-XXII Congreso Chileno de Ingeniería Hidráulica, 
+[XXII Congreso Chileno de Ingeniería Hidráulica](https://www.sochid.cl/publicaciones-sochid/congresos-chilenos/congreso-xxii-2/congreso-xxii-trabajo-33/), 
 22 octubre 2015.
 
 * **Analysis of the operational strategies for the enzymatic hydrolysis of food proteins in batch reactor**  

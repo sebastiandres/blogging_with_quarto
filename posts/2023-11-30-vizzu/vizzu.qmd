@@ -1,5 +1,8 @@
 ---
-title: "Another page"
+title: "Post con gráfico"
+author: "sebastiandres"
+date: "2023-11-30"
+categories: [code, analysis]
 image: vizzu.png
 ---
 

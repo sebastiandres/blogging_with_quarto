@@ -1,8 +1,15 @@
 # HELP
 
 ## Como publicar
+
+Usar el comando:
 ```
-quarto publish gh-pages
+sh publish.sh
+```
+
+Que ejecuta los siguientes comandos:
+```
+quarto publish gh-pages --no-prompt --no-browser
 ```
 
 
