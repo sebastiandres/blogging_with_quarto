@@ -6,11 +6,11 @@ He participado en las siguientes publicaciones:
 
 * **Create a search engine with Streamlit and Google Sheets**  
 [Artículo en el Blog de Streamlit](https://blog.streamlit.io/create-a-search-engine-with-streamlit-and-google-sheets/), 
-14 marzo 2023
+14 marzo 2023.
 
 * **uPlanner fosters data processing innovation with Streamlit**  
 [Artículo en el Blog de Streamlit](https://blog.streamlit.io/uplanner-fosters-data-processing-innovation-with-streamlit/), 
-6 octubre 2022
+6 octubre 2022.
 
 * **How to create interactive books with Streamlit in 5 steps**  
 [Artículo en el Blog de Streamlit](https://blog.streamlit.io/how-to-create-interactive-books-with-streamlit-and-streamlit-book-in-5-steps/), 

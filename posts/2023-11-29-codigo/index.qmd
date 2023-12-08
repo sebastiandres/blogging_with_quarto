@@ -2,7 +2,7 @@
 title: "Post Con Codigo"
 author: "sebastiandres"
 date: "2023-11-29"
-categories: [code, analysis]
+categories: [codigo, python]
 image: "image.jpg"
 ---
 

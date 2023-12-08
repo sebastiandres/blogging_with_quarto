@@ -3,19 +3,15 @@ project:
 
 website:
   title: "sebastiandres.xyz"
-  sidebar:
-    style: "docked"
-    search: true
-    contents:
+  navbar:
+    right:
       - index.qmd
-      - pages/about.qmd
+      - pages/blog.qmd
       - pages/charlas.qmd
       - pages/proyectos.qmd
       - pages/librerias.qmd
       - pages/publicaciones.qmd
-      - pages/blog.qmd
-  navbar:
-    right:
+      - pages/about.qmd
       - icon: linkedin
         href: https://www.linkedin.com/in/sebastiandres/
       - icon: github

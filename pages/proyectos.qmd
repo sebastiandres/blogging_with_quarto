@@ -1,12 +1,12 @@
 ---
-title: "Proyectos"
+title: "Apps y Repos"
 ---
 
 * [Buscador de videos Python Chile](https://pythonchile.streamlit.app/)  
 Una webapp en streamlit para buscar entre las distintas charlas disponibles en el canal de youtube de Python Chile.  
 
 * [gapminder](https://gapminder.streamlit.app/)  
-Una webapp en streamlit para emular la clásica visualización de la [Ted Talk de Ted Rosling's "The best stats you've ever seen"](https://youtu.be/hVimVzgtD6w). Usa streamlit, vizzu y hace llamados directos de SQL a snowflake. Proyecto para una hackathon de Streamlit.
+Una webapp en streamlit para emular la clásica visualización de la Ted Talk de Ted Rosling's "The best stats you've ever seen". Usa streamlit, vizzu y hace llamados directos de SQL a snowflake. Proyecto para una hackathon de Streamlit.
 
 * [Datasaurio](https://datasaurus.streamlit.app/)  
 Una webapp en streamlit que ilustra el artículo "Datasaurus" y permite generar conjuntos de puntos que se transforman de una figura a otra sin cambiar las propiedades estadísticas. Un ejemplo que no puede faltar en toda lección de visualización.

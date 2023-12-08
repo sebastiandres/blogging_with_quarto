@@ -1,0 +1,10 @@
+---
+title: A Smarter Way to Learn JavaScript
+description: "Libro práctico para aprender javascript"
+date: "2020-01-13"
+author: Mike Myers
+genre:  No Ficción
+rating: 7
+categories: [lectura, javascript]
+---
+Quería refrescar y profundizar mi conocimiento en javascript sin tener que leer demasiado. Este libro se consumía en capítulos cortos y prácticos, justo lo que necesitaba.

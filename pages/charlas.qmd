@@ -3,71 +3,72 @@ title: "Charlas"
 ---
 
 * **Python y Data Storytelling al rescate: evitemos más muertes por PowerPoint**  
-PyCon US 2024?  
+*PyCon US 2024?*  
 Durante la charla espero entregar aprendizajes y sugerencias de las distintas habilidades de data storytelling y herramientas técnicas que podemos utilizar con el objetivo de crear presentaciones más atractivas, entretenidas y memorables usando librerías y programas en python. ¡Hagamos el mundo mejor, una presentación a la vez! 
 ([repo](https://github.com/sebastiandres/talk_2023_05_pycon_us)).
 
 * **¿Cómo hacer Data Storytelling con Python?**  
-PyCon Chile 2023 (2023/11/25)  
+*PyCon Chile 2023 (2023/11/25)*  
 En esta keynote recorremos el poco explorado territorio del Data Storytelling en Python. Iremos más allá de las tablas y los gráficos, y exploraremos cómo tus datos pueden ser contados de manera convincente y emocionante. Descubrirás el arte y las herramientas disponibles en Python para tejer relatos que llamen al cambio y la acción 
 ([repo](https://github.com/sebastiandres/talk_2023_11_25_pycon_chile) | [video](https://www.youtube.com/watch?v=X1xcyY9Y0Pc&t=26980s)).
 
 * **Vizzualización de Datos**  
-PyDay Chile 2023 (2023/09/07)  
+*PyDay Chile 2023 (2023/09/07)*  
 En esta charla explico la importancia de la visualización y cómo se usa la librería [ipyvizzu](https://ipyvizzu.vizzuhq.com/). Vizzu es una librería para python y javascript, que permite realizar animaciones entre gráficos 
 ([repo](https://github.com/sebastiandres/talk_2023_09_07_vizzu) | [video](https://youtu.be/xjwkJzBTdNI?t=4044)).
 
 * **Pedagogía con Python**  
-UNSA (2022/09/26)  
+*UNSA (2022/09/26)*  
 En esta charla hablo de mi experiencia transformando un curso con Python. Recomiendo algunas herramientas y hablo de Machine Learning, Deep Learning y Data Science 
 ([repo](https://github.com/sebastiandres/talk_2022_09_26_python_cientifico)).
 
 * **Streamlit en la industria**  
-Meetup Python Chile (2022/08/25)  
+*Meetup Python Chile (2022/08/25)*  
 En esta charla hablo sobre cómo streamlit permite disponibilizar tu código Python de manera sencilla, 
 y consideraciones importantes en la industria en relación a datos, bases de datos, deployment y autenticación 
 ([repo](https://github.com/sebastiandres/talk_2022_08_25_pychile_meetup) | [video](https://www.youtube.com/watch?v=xHabAVZDAHo)).
 
-* **Construí esto, pero... ¿Cómo lo comparto?** - Charla 1000 programadores  
+* **Construí esto, pero... ¿Cómo lo comparto?**  
+*Charla 1000 programadores (2022/06)*  
 En esta charla expliqué las distintas opciones que existen para compartir tu código python:
-Graphical Interfaces, Notebook, Web Apps (streamlit!), Chatbots y otros. 
+Graphical Interfaces, Notebook, Web Apps (streamlit!), Chatbots y otros 
 ([repo](https://github.com/sebastiandres/talk_2022_06_1000PS)).
 
-* **WebApps con Streamlit: ¡más fácil que la tabla del uno, poh!** 
-PyCon Chile 2021 (2021/11/07).  
+* **WebApps con Streamlit: ¡más fácil que la tabla del uno, poh!**  
+*PyCon Chile 2021 (2021/11/07)*  
 Si alguna vez te has dicho “debería haber una manera más fácil de compartir este script/análisis/código con otras personas”, streamlit es la librería que estabas esperando. Esta charla te mostrará cómo comenzar a usar streamlit. 
 ([repo](https://github.com/sebastiandres/talk_2021_11_pyconcl) | [video](https://www.youtube.com/watch?v=cZSzK2uIqjY)).
 
 * **Presentaciones Interactivas con Jupyter Notebook + RISE. Todo lo que necesitas saber en 30 minutos**  
-Charla Pycon Latam 2021 (2021/08/28)  
+*Charla Pycon Latam 2021 (2021/08/28)*  
 En esta charla resumí los conocimientos que necesitas para hacer una presentación completamente interactiva (código, gráficos, encuestas, otros) usando jupyter notebook y su extensión RISE 
 ([repo](https://github.com/sebastiandres/talk_2021_08_pylatam/) | [video](https://www.youtube.com/watch?v=VxdnVOt5K1w)).
 
 * **Sin límites con Python**  
-Charla UNSA Argentina (2021/04/09)  
+*Charla UNSA Argentina (2021/04/09)*  
 Charla realizada a estudiantes de primer año de la Universidad de Salta en Argentina, para contarles sobre python y algunas de las cosas que se pueden hacer 
 ([repo](https://github.com/sebastiandres/talk_2021_04_UNSA_Argentina/)).
 
 * **Coding as a Service: Librería pypsdier, aprendizajes y metodología**  
-PyCon Argentina 2020 (2020/11/?)  
+*PyCon Argentina 2020 (2020/11/?)*  
 Charla realizado en la Pycon Argentina 2020 sobre mi proyecto pypsdier y en general sobre cómo hacer una librería científica para que sea usada por otros usuarios no técnicos 
 ([repo](https://github.com/sebastiandres/talk_2020_11_pycon_argentina/) | [video](https://www.youtube.com/watch?v=UoIXFRKraqY)).
 
 * **¿Cómo hacer encuestas interactivas en Jupyter + RISE?**  
-Charla en Pycon Colombia 2020 (2020/05/08)  
-En esta charla, di algunos consejos para sacar el máximo provecho de la combinación de jupyter notebook con RISE, y de cómo hacer las presentaciones aún más interactivas, para un curso o una charla. Además comento tres alternativas simples que me para compartir encuestas de manera interactiva.
- ([video](https://www.youtube.com/watch?v=ekyN9DDswBE) | [repo](https://github.com/sebastiandres/talk_2020_02_pycon_colombia_rise_and_poll/)).
+*Charla en Pycon Colombia 2020 (2020/05/08)*  
+En esta charla, di algunos consejos para sacar el máximo provecho de la combinación de jupyter notebook con RISE, y de cómo hacer las presentaciones aún más interactivas, para un curso o una charla. Además comento tres alternativas simples que me para compartir encuestas de manera interactiva 
+([video](https://www.youtube.com/watch?v=ekyN9DDswBE) | [repo](https://github.com/sebastiandres/talk_2020_02_pycon_colombia_rise_and_poll/)).
 
 * **Matrices en la vida real**  
-Charla a estudiantes Universidad Adolfo Ibáñez (2019/10/24)  
+*Charla Universidad Adolfo Ibáñez (2019/10/24)*  
 Charla realizada a estudiantes de primer año, sobre aplicaciones de las matrices en la industria 
 ([repo](https://github.com/sebastiandres/talk_2019_10_UAI/)).
 
 * **¿Cómo aplicar Machine Learning? ¡Con la libraría sklearn!**  
-Charla Meetup Python (2016/04/27)  
+*Charla Meetup Python (2016/04/27)*  
 En esta charla hablo sobre la librería sklearn y como disponibilizan distintos algoritmos de Machine Learning 
 ([repo](https://github.com/sebastiandres/talk_2016_04_python_meetup_sklearn/) | [video](https://www.youtube.com/watch?v=IenniV-KM6A) ).
 
 * **¿Cómo manipular datos en python? ¡Con la librería pandas!**  
-Charla Meetup Python (2016/03/30)  
+*Charla Meetup Python (2016/03/30)*  
 En esta charla hablo sobre la librería pandas, y su utilidad para la manipulación de datos ([repo](https://github.com/sebastiandres/talk_2016_03_python_meetup_pandas/) | [video](https://www.youtube.com/watch?v=mmR2MAqsfVg)).
