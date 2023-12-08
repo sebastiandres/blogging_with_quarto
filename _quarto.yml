@@ -4,7 +4,8 @@ project:
 website:
   title: "sebastiandres.xyz"
   favicon: favicon.ico
-  site-url: https://sebastiandres.xyz
+  google-analytics: "G-2QV9CT8MHY"
+  site-url: "https://sebastiandres.xyz"
   navbar:
     right:
       - index.qmd
