@@ -72,7 +72,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
@@ -97,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -114,6 +115,34 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html" rel="" target="">
+ <span class="menu-text">Inicio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../pages/blog.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pages/charlas.html" rel="" target="">
+ <span class="menu-text">Charlas</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pages/proyectos.html" rel="" target="">
+ <span class="menu-text">Apps y Repos</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pages/librerias.html" rel="" target="">
+ <span class="menu-text">Librerías</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pages/publicaciones.html" rel="" target="">
+ <span class="menu-text">Publicaciones</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pages/about.html" rel="" target="">
+ <span class="menu-text">Sobre mí</span></a>
+  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://www.linkedin.com/in/sebastiandres/" rel="" target=""><i class="bi bi-linkedin" role="img">
 </i> 
@@ -135,24 +164,11 @@ ul.task-list li input[type="checkbox"] {
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/blog.html">Blog</a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
+    <div class="quarto-title column-page-left">
       <h1 class="title">Blog</h1>
                       </div>
   </div>
@@ -168,66 +184,12 @@ ul.task-list li input[type="checkbox"] {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Inicio</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../pages/about.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Sobre mí</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../pages/charlas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Charlas</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../pages/proyectos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Proyectos</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../pages/librerias.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Librerías</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../pages/publicaciones.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Publicaciones</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../pages/blog.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Blog</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="analysis">analysis <span class="quarto-category-count">(2)</span></div><div class="category" data-category="code">code <span class="quarto-category-count">(2)</span></div><div class="category" data-category="vida">vida <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(60)</span></div><div class="category" data-category="balance">balance <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cells">cells <span class="quarto-category-count">(1)</span></div><div class="category" data-category="codigo">codigo <span class="quarto-category-count">(2)</span></div><div class="category" data-category="consejo">consejo <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cuenta">cuenta <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cuento">cuento <span class="quarto-category-count">(3)</span></div><div class="category" data-category="código">código <span class="quarto-category-count">(4)</span></div><div class="category" data-category="deporte">deporte <span class="quarto-category-count">(1)</span></div><div class="category" data-category="educación">educación <span class="quarto-category-count">(1)</span></div><div class="category" data-category="escritura">escritura <span class="quarto-category-count">(6)</span></div><div class="category" data-category="excel">excel <span class="quarto-category-count">(1)</span></div><div class="category" data-category="javascript">javascript <span class="quarto-category-count">(1)</span></div><div class="category" data-category="lectura">lectura <span class="quarto-category-count">(22)</span></div><div class="category" data-category="literatura">literatura <span class="quarto-category-count">(1)</span></div><div class="category" data-category="microcuentos">microcuentos <span class="quarto-category-count">(3)</span></div><div class="category" data-category="opinión">opinión <span class="quarto-category-count">(1)</span></div><div class="category" data-category="policial">policial <span class="quarto-category-count">(1)</span></div><div class="category" data-category="pycon">pycon <span class="quarto-category-count">(6)</span></div><div class="category" data-category="python">python <span class="quarto-category-count">(5)</span></div><div class="category" data-category="reflexión">reflexión <span class="quarto-category-count">(13)</span></div><div class="category" data-category="rise">rise <span class="quarto-category-count">(1)</span></div><div class="category" data-category="streamlit">streamlit <span class="quarto-category-count">(3)</span></div><div class="category" data-category="vida">vida <span class="quarto-category-count">(1)</span></div><div class="category" data-category="vizzu">vizzu <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-body" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
@@ -238,7 +200,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="code,analysis" data-listing-date-sort="1701313200000" data-listing-file-modified-sort="1701915239004" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="0" data-categories="codigo,python,vizzu" data-listing-date-sort="1701313200000" data-listing-file-modified-sort="1701988153641" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
 <div class="thumbnail">
 <p><a href="../posts/2023-11-30-vizzu/vizzu.html"> <img src="../posts/2023-11-30-vizzu/vizzu.png" class="thumbnail-image"> </a></p>
 </div>
@@ -252,11 +214,14 @@ Post con gráfico
 </div>
 </a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
+<div class="listing-category" onclick="window.quartoListingCategory('codigo'); return false;">
+codigo
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
+<div class="listing-category" onclick="window.quartoListingCategory('python'); return false;">
+python
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('vizzu'); return false;">
+vizzu
 </div>
 </div>
 <a href="../posts/2023-11-30-vizzu/vizzu.html">
@@ -276,7 +241,7 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="code,analysis" data-listing-date-sort="1701226800000" data-listing-file-modified-sort="1701913844547" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="1" data-categories="codigo,python" data-listing-date-sort="1701226800000" data-listing-file-modified-sort="1701988231026" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="thumbnail">
 <p><a href="../posts/2023-11-29-codigo/index.html"> <img src="../posts/2023-11-29-codigo/image.jpg" class="thumbnail-image"> </a></p>
 </div>
@@ -290,11 +255,11 @@ Post Con Codigo
 </div>
 </a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
+<div class="listing-category" onclick="window.quartoListingCategory('codigo'); return false;">
+codigo
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
+<div class="listing-category" onclick="window.quartoListingCategory('python'); return false;">
+python
 </div>
 </div>
 <a href="../posts/2023-11-29-codigo/index.html">
@@ -314,7 +279,7 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="vida" data-listing-date-sort="1701140400000" data-listing-file-modified-sort="1701913729229" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="2" data-categories="vida" data-listing-date-sort="1701140400000" data-listing-file-modified-sort="1701988214776" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="thumbnail">
 <p><a href="../posts/2023-11-28-bienvenida/index.html"> <p class="card-img-top"><img src="../posts/2023-11-28-bienvenida/thumbnail.jpg"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
@@ -349,10 +314,2068 @@ sebastiandres
 </a>
 </div>
 </div>
+<div class="quarto-post image-right" data-index="3" data-categories="lectura" data-listing-date-sort="1668740400000" data-listing-file-modified-sort="1701996986648" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-lectura/2022-11-18-book-review-sheik-ceo.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-lectura/2022-11-18-book-review-sheik-ceo.html">
+<h3 class="no-anchor listing-title">
+The Sheik CEO
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
+lectura
+</div>
+</div>
+<a href="../posts/2019-2023-lectura/2022-11-18-book-review-sheik-ceo.html">
+<div class="listing-description">
+<p>Reflexión sobre cómo el estilo de liderazgo del sheik influyó en el rápido desarrollo de los EAU</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-lectura/2022-11-18-book-review-sheik-ceo.html">
+<div class="listing-date">
+Nov 18, 2022
+</div>
+<div class="listing-author">
+Yasar Jarrar
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="lectura" data-listing-date-sort="1649131200000" data-listing-file-modified-sort="1701997035719" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-lectura/2022-04-05-book-review-creativity-inc.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-lectura/2022-04-05-book-review-creativity-inc.html">
+<h3 class="no-anchor listing-title">
+Creativity INC
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
+lectura
+</div>
+</div>
+<a href="../posts/2019-2023-lectura/2022-04-05-book-review-creativity-inc.html">
+<div class="listing-description">
+<p>Sobre cómo poder crear un ambiente de trabajo donde pueda flocerer la (elusiva) creatividad</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-lectura/2022-04-05-book-review-creativity-inc.html">
+<div class="listing-date">
+Apr 5, 2022
+</div>
+<div class="listing-author">
+Ed Catmull
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="balance,cuenta,reflexión" data-listing-date-sort="1642734000000" data-listing-file-modified-sort="1701988849651" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2022-01-21-metas-anuales.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2022-01-21-metas-anuales.html">
+<h3 class="no-anchor listing-title">
+Metas 2022
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('balance'); return false;">
+balance
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('cuenta'); return false;">
+cuenta
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('reflexión'); return false;">
+reflexión
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2022-01-21-metas-anuales.html">
+<div class="listing-description">
+<p>¿Qué quiero para el 2022?</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2022-01-21-metas-anuales.html">
+<div class="listing-date">
+Jan 21, 2022
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-categories="streamlit" data-listing-date-sort="1642734000000" data-listing-file-modified-sort="1701988833445" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2022-01-21-streamlit-post.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2022-01-21-streamlit-post.html">
+<h3 class="no-anchor listing-title">
+Streamlit: apps y posts
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('streamlit'); return false;">
+streamlit
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2022-01-21-streamlit-post.html">
+<div class="listing-description">
+<p>Novedades y creaciones recientes</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2022-01-21-streamlit-post.html">
+<div class="listing-date">
+Jan 21, 2022
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="7" data-categories="balance,cuenta,reflexión" data-listing-date-sort="1640919600000" data-listing-file-modified-sort="1701988862821" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2021-12-31-balance-anual.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2021-12-31-balance-anual.html">
+<h3 class="no-anchor listing-title">
+Balance anual
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('balance'); return false;">
+balance
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('cuenta'); return false;">
+cuenta
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('reflexión'); return false;">
+reflexión
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2021-12-31-balance-anual.html">
+<div class="listing-description">
+<p>El año 2021 en la balanza</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2021-12-31-balance-anual.html">
+<div class="listing-date">
+Dec 31, 2021
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="8" data-categories="python,excel,cells" data-listing-date-sort="1639450800000" data-listing-file-modified-sort="1701997612087" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2021-12-14-excel-unmerge.html"> <p class="card-img-top"><img src="../posts/_images/2021-12-14-excel-unmerge/ejemplo.png" title="Ejemplo del problema" class="thumbnail-image card-img"/></p> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2021-12-14-excel-unmerge.html">
+<h3 class="no-anchor listing-title">
+Unmerging celdas de excel
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('python'); return false;">
+python
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('excel'); return false;">
+excel
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('cells'); return false;">
+cells
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2021-12-14-excel-unmerge.html">
+<div class="listing-description">
+<p>Cuando pandas se quedó corto</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2021-12-14-excel-unmerge.html">
+<div class="listing-date">
+Dec 14, 2021
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="9" data-categories="código" data-listing-date-sort="1639278000000" data-listing-file-modified-sort="1701998181763" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2021-12-12-plot-images.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2021-12-12-plot-images.html">
+<h3 class="no-anchor listing-title">
+Graficando emojis
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('código'); return false;">
+código
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2021-12-12-plot-images.html">
+<div class="listing-description">
+<p>Resumen de un googleo interminable</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2021-12-12-plot-images.html">
+<div class="listing-date">
+Dec 12, 2021
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="10" data-categories="pycon" data-listing-date-sort="1638673200000" data-listing-file-modified-sort="1701998129438" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2021-12-05-post-pycon-y-sindrome-impostor.html"> <p class="card-img-top"><img src="../posts/_images/2021-12-05-pycon-y-sindrome-impostor/pycon2.jpg" title="Presentando - Copyright PyCon Colombia" class="thumbnail-image card-img"/></p> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2021-12-05-post-pycon-y-sindrome-impostor.html">
+<h3 class="no-anchor listing-title">
+Mi primera PyCon
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('pycon'); return false;">
+pycon
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2021-12-05-post-pycon-y-sindrome-impostor.html">
+<div class="listing-description">
+<p>Venciendo el síndrome del impostor</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2021-12-05-post-pycon-y-sindrome-impostor.html">
+<div class="listing-date">
+Dec 5, 2021
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="11" data-categories="reflexión" data-listing-date-sort="1637290800000" data-listing-file-modified-sort="1701998123322" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2021-11-19-post-streamlit-hackathon.html"> <p class="card-img-top"><img src="../posts/_images/2021-11-19-streamlit-hackathon/hackathon.png" title="Hackathon" class="thumbnail-image card-img"/></p> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2021-11-19-post-streamlit-hackathon.html">
+<h3 class="no-anchor listing-title">
+Streamlit hackathon
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('reflexión'); return false;">
+reflexión
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2021-11-19-post-streamlit-hackathon.html">
+<div class="listing-description">
+<p>Capitalizando la PyCon Chile</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2021-11-19-post-streamlit-hackathon.html">
+<div class="listing-date">
+Nov 19, 2021
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="12" data-categories="reflexión,streamlit" data-listing-date-sort="1636772400000" data-listing-file-modified-sort="1701998115835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2021-11-13-post-1000-programadores.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2021-11-13-post-1000-programadores.html">
+<h3 class="no-anchor listing-title">
+1000 Programadores Salteños
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('reflexión'); return false;">
+reflexión
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('streamlit'); return false;">
+streamlit
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2021-11-13-post-1000-programadores.html">
+<div class="listing-description">
+<p>Reflexiones de Pedagogía con Python</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2021-11-13-post-1000-programadores.html">
+<div class="listing-date">
+Nov 13, 2021
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="13" data-categories="streamlit,pycon" data-listing-date-sort="1636340400000" data-listing-file-modified-sort="1701997678536" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2021-11-08-post-pyconcl.html"> <p class="card-img-top"><img src="../posts/_images/2021-11-08-pyconcl/streamlit_start.png"  class="thumbnail-image card-img"/></p> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2021-11-08-post-pyconcl.html">
+<h3 class="no-anchor listing-title">
+PyCon Chile 2021
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('streamlit'); return false;">
+streamlit
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('pycon'); return false;">
+pycon
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2021-11-08-post-pyconcl.html">
+<div class="listing-description">
+<p>Taller y charla de Streamlit</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2021-11-08-post-pyconcl.html">
+<div class="listing-date">
+Nov 8, 2021
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="14" data-categories="pycon" data-listing-date-sort="1635476400000" data-listing-file-modified-sort="1701998097594" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2021-10-29-post-pyconar.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2021-10-29-post-pyconar.html">
+<h3 class="no-anchor listing-title">
+PyCon Argentina 2021
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('pycon'); return false;">
+pycon
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2021-10-29-post-pyconar.html">
+<div class="listing-description">
+<p>Taller para Docentes</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2021-10-29-post-pyconar.html">
+<div class="listing-date">
+Oct 29, 2021
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="15" data-categories="reflexión" data-listing-date-sort="1635476400000" data-listing-file-modified-sort="1701998104893" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2021-10-29-post-rubik.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2021-10-29-post-rubik.html">
+<h3 class="no-anchor listing-title">
+Inteligencia y Creencias Limitantes
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('reflexión'); return false;">
+reflexión
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2021-10-29-post-rubik.html">
+<div class="listing-description">
+<p>Aprendizajes inesperados al resolver el cubo de rubik</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2021-10-29-post-rubik.html">
+<div class="listing-date">
+Oct 29, 2021
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="16" data-categories="deporte,reflexión" data-listing-date-sort="1634958000000" data-listing-file-modified-sort="1701998093688" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2021-10-23-post-spartan-race.html"> <p class="card-img-top"><img src="../posts/_images/2021-10-23-spartan-race/2021-10-23-spartan-race.jpeg" title="Spartan Race" class="thumbnail-image card-img"/></p> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2021-10-23-post-spartan-race.html">
+<h3 class="no-anchor listing-title">
+Spartan Race
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('deporte'); return false;">
+deporte
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('reflexión'); return false;">
+reflexión
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2021-10-23-post-spartan-race.html">
+<div class="listing-description">
+<p>Desafíos físicos y sicológicos</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2021-10-23-post-spartan-race.html">
+<div class="listing-date">
+Oct 23, 2021
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="17" data-categories="reflexión" data-listing-date-sort="1633057200000" data-listing-file-modified-sort="1701997748906" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2021-10-01-post-tercer-trimestre.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2021-10-01-post-tercer-trimestre.html">
+<h3 class="no-anchor listing-title">
+Tercer trimestre del 2021
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('reflexión'); return false;">
+reflexión
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2021-10-01-post-tercer-trimestre.html">
+<div class="listing-description">
+<p>Balance de lo que han sido estos meses</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2021-10-01-post-tercer-trimestre.html">
+<div class="listing-date">
+Oct 1, 2021
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="18" data-categories="python" data-listing-date-sort="1632798000000" data-listing-file-modified-sort="1701998085310" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2021-09-28-post-sklearn-contributors.html"> <p class="card-img-top"><img src="../posts/_images/2021-09-28-post-scipy-contributors/contributors.png"  class="thumbnail-image card-img"/></p> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2021-09-28-post-sklearn-contributors.html">
+<h3 class="no-anchor listing-title">
+Sklearn 1.0
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('python'); return false;">
+python
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2021-09-28-post-sklearn-contributors.html">
+<div class="listing-description">
+<p>Aparecí entre los contribuidores de la nueva versión</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2021-09-28-post-sklearn-contributors.html">
+<div class="listing-date">
+Sep 28, 2021
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="19" data-categories="python" data-listing-date-sort="1631156400000" data-listing-file-modified-sort="1701998079999" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2021-09-09-post-sharing-python.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2021-09-09-post-sharing-python.html">
+<h3 class="no-anchor listing-title">
+Compartir tu código en python
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('python'); return false;">
+python
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2021-09-09-post-sharing-python.html">
+<div class="listing-description">
+<p>Revisión a las muchas alternativas</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2021-09-09-post-sharing-python.html">
+<div class="listing-date">
+Sep 9, 2021
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="20" data-categories="rise,pycon" data-listing-date-sort="1630123200000" data-listing-file-modified-sort="1701998072430" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2021-08-28-post-pylatam.html"> <p class="card-img-top"><img src="../posts/_images/2021-08-28-pylatam/hubilo.png" title="PyCon Latam 2021" class="thumbnail-image card-img"/></p> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2021-08-28-post-pylatam.html">
+<h3 class="no-anchor listing-title">
+PyCon Latam 2021
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('rise'); return false;">
+rise
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('pycon'); return false;">
+pycon
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2021-08-28-post-pylatam.html">
+<div class="listing-description">
+<p>Mi tercera PyCon</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2021-08-28-post-pylatam.html">
+<div class="listing-date">
+Aug 28, 2021
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="21" data-categories="lectura" data-listing-date-sort="1629259200000" data-listing-file-modified-sort="1701997054351" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-lectura/2021-08-18-book-review-all-systems-red.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-lectura/2021-08-18-book-review-all-systems-red.html">
+<h3 class="no-anchor listing-title">
+All systems red
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
+lectura
+</div>
+</div>
+<a href="../posts/2019-2023-lectura/2021-08-18-book-review-all-systems-red.html">
+<div class="listing-description">
+<p>Exploradores planetarios con un twist</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-lectura/2021-08-18-book-review-all-systems-red.html">
+<div class="listing-date">
+Aug 18, 2021
+</div>
+<div class="listing-author">
+Martha Wells
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="22" data-categories="código" data-listing-date-sort="1628049600000" data-listing-file-modified-sort="1701998057169" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2021-08-04-post-favicon.html"> <p class="card-img-top"><img src="../posts/_images/2021-08-04-favicon/preview.png" title="Favicon obtenido" class="thumbnail-image card-img"/></p> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2021-08-04-post-favicon.html">
+<h3 class="no-anchor listing-title">
+Nuevo favicon
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('código'); return false;">
+código
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2021-08-04-post-favicon.html">
+<div class="listing-description">
+<p>De python a sebastiandres en 1 paso.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2021-08-04-post-favicon.html">
+<div class="listing-date">
+Aug 4, 2021
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="23" data-categories="código,reflexión" data-listing-date-sort="1627185600000" data-listing-file-modified-sort="1701998060754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2021-07-25-post-data-umbrella-sprint.html"> <p class="card-img-top"><img src="../posts/_images/2021-07-25-data-umbrella-sprint/expectativa.png" title="Expectativa: Me falta mucho para poder contribuir :'(." class="thumbnail-image card-img"/></p> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2021-07-25-post-data-umbrella-sprint.html">
+<h3 class="no-anchor listing-title">
+Experiencias del Sprint de Data Umbrella
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('código'); return false;">
+código
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('reflexión'); return false;">
+reflexión
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2021-07-25-post-data-umbrella-sprint.html">
+<div class="listing-description">
+<p>Lo que aprendí en mi primer sprint contribuyendo a código abierto.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2021-07-25-post-data-umbrella-sprint.html">
+<div class="listing-date">
+Jul 25, 2021
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="24" data-categories="escritura,microcuentos" data-listing-date-sort="1622520000000" data-listing-file-modified-sort="1701988564625" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-escritura-ficcion/2021-06-01-story-microcuentos-uplanner.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-escritura-ficcion/2021-06-01-story-microcuentos-uplanner.html">
+<h3 class="no-anchor listing-title">
+Microcuentos tecnología
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('escritura'); return false;">
+escritura
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('microcuentos'); return false;">
+microcuentos
+</div>
+</div>
+<a href="../posts/2019-2023-escritura-ficcion/2021-06-01-story-microcuentos-uplanner.html">
+<div class="listing-description">
+<p>Cuentos enviados a concurso uPlanner en 100 palabras</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-escritura-ficcion/2021-06-01-story-microcuentos-uplanner.html">
+<div class="listing-date">
+Jun 1, 2021
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="25" data-categories="código" data-listing-date-sort="1622520000000" data-listing-file-modified-sort="1701998042516" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2021-06-01-post-linktree.html"> <p class="card-img-top"><img data-src="../posts/_images/2021-06-01-linktree/comparacion.png" title="Formato ofrecido por linktree (izquieda) versus lo que necesitaba y que tuve que crear (derecha)." class="thumbnail-image card-img"/></p> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2021-06-01-post-linktree.html">
+<h3 class="no-anchor listing-title">
+Emulador de Linktree
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('código'); return false;">
+código
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2021-06-01-post-linktree.html">
+<div class="listing-description">
+<p>Imitando un directorio de enlaces sólo con recursos gratuitos</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2021-06-01-post-linktree.html">
+<div class="listing-date">
+Jun 1, 2021
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="26" data-categories="escritura,microcuentos" data-listing-date-sort="1620964800000" data-listing-file-modified-sort="1701988562172" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-escritura-ficcion/2021-05-14-story-microcuentos-2021.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-escritura-ficcion/2021-05-14-story-microcuentos-2021.html">
+<h3 class="no-anchor listing-title">
+Microcuentos 2021
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('escritura'); return false;">
+escritura
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('microcuentos'); return false;">
+microcuentos
+</div>
+</div>
+<a href="../posts/2019-2023-escritura-ficcion/2021-05-14-story-microcuentos-2021.html">
+<div class="listing-description">
+<p>Cuentos enviados a Santiago en 100 palabras</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-escritura-ficcion/2021-05-14-story-microcuentos-2021.html">
+<div class="listing-date">
+May 14, 2021
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="27" data-categories="reflexión" data-listing-date-sort="1616900400000" data-listing-file-modified-sort="1701998035653" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2021-03-28-post-trillion-dollar-coach.html"> <p class="card-img-top"><img data-src="../posts/_images/2021-03-28-trillion-dollar-coach/bielsa.jpeg" title="Un entrenador peculiar" class="thumbnail-image card-img"/></p> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2021-03-28-post-trillion-dollar-coach.html">
+<h3 class="no-anchor listing-title">
+Las 3 lecciones de los CEOs del Silicon Valley que valen un billón de dólares
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('reflexión'); return false;">
+reflexión
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2021-03-28-post-trillion-dollar-coach.html">
+<div class="listing-description">
+<p>¿Tan simple como sé vulnerable, evita la democracia y trabaja en equipo?</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2021-03-28-post-trillion-dollar-coach.html">
+<div class="listing-date">
+Mar 28, 2021
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="28" data-categories="reflexión" data-listing-date-sort="1611370800000" data-listing-file-modified-sort="1701998028365" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2021-01-23-post-detectives-y-azar.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2021-01-23-post-detectives-y-azar.html">
+<h3 class="no-anchor listing-title">
+El detective: entre la lógica y el azar
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('reflexión'); return false;">
+reflexión
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2021-01-23-post-detectives-y-azar.html">
+<div class="listing-description">
+<p>Las raíces de la serendipia y la novela policial clásica en un cuento persa</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2021-01-23-post-detectives-y-azar.html">
+<div class="listing-date">
+Jan 23, 2021
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="29" data-categories="policial,cuento" data-listing-date-sort="1611284400000" data-listing-file-modified-sort="1701997127570" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-escritura-ficcion/2021-01-22-post-tres-principes-serendip.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-escritura-ficcion/2021-01-22-post-tres-principes-serendip.html">
+<h3 class="no-anchor listing-title">
+Los Tres Príncipes de Serendip
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('policial'); return false;">
+policial
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('cuento'); return false;">
+cuento
+</div>
+</div>
+<a href="../posts/2019-2023-escritura-ficcion/2021-01-22-post-tres-principes-serendip.html">
+<div class="listing-description">
+<p>Un antiguo y desconocido cuento persa de deducciones, que muestra porqué no deberíamos ufanarnos de nuestro conocimiento.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-escritura-ficcion/2021-01-22-post-tres-principes-serendip.html">
+<div class="listing-date">
+Jan 22, 2021
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="30" data-categories="escritura,cuento" data-listing-date-sort="1605841200000" data-listing-file-modified-sort="1701988557673" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-escritura-ficcion/2020-11-20-story-taller-narrativa-policial-crimen-a-la-carta.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-escritura-ficcion/2020-11-20-story-taller-narrativa-policial-crimen-a-la-carta.html">
+<h3 class="no-anchor listing-title">
+Crimen a la carta
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('escritura'); return false;">
+escritura
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('cuento'); return false;">
+cuento
+</div>
+</div>
+<a href="../posts/2019-2023-escritura-ficcion/2020-11-20-story-taller-narrativa-policial-crimen-a-la-carta.html">
+<div class="listing-description">
+<p>Taller de narrativa policial</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-escritura-ficcion/2020-11-20-story-taller-narrativa-policial-crimen-a-la-carta.html">
+<div class="listing-date">
+Nov 20, 2020
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="31" data-categories="escritura,cuento" data-listing-date-sort="1603508400000" data-listing-file-modified-sort="1701988582607" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-escritura-ficcion/2020-10-24-story-taller-narrativa-policial.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-escritura-ficcion/2020-10-24-story-taller-narrativa-policial.html">
+<h3 class="no-anchor listing-title">
+Trabajando en el SML
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('escritura'); return false;">
+escritura
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('cuento'); return false;">
+cuento
+</div>
+</div>
+<a href="../posts/2019-2023-escritura-ficcion/2020-10-24-story-taller-narrativa-policial.html">
+<div class="listing-description">
+<p>Taller de narrativa policial</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-escritura-ficcion/2020-10-24-story-taller-narrativa-policial.html">
+<div class="listing-date">
+Oct 24, 2020
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="32" data-categories="escritura,microcuentos" data-listing-date-sort="1601521200000" data-listing-file-modified-sort="1701988571784" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-escritura-ficcion/2020-10-01-story-microcuentos-2020.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-escritura-ficcion/2020-10-01-story-microcuentos-2020.html">
+<h3 class="no-anchor listing-title">
+Microcuentos 2020
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('escritura'); return false;">
+escritura
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('microcuentos'); return false;">
+microcuentos
+</div>
+</div>
+<a href="../posts/2019-2023-escritura-ficcion/2020-10-01-story-microcuentos-2020.html">
+<div class="listing-description">
+<p>Cuentos enviados a Santiago en 100 palabras</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-escritura-ficcion/2020-10-01-story-microcuentos-2020.html">
+<div class="listing-date">
+Oct 1, 2020
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="33" data-categories="reflexión" data-listing-date-sort="1600916400000" data-listing-file-modified-sort="1701998020313" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2020-09-24-post-burnout.html"> <p class="card-img-top"><img data-src="../posts/_images/2020-09-24-burnout/burnout.jpeg" title="Tipo A y tipo B relajándose (Owlturd)." class="thumbnail-image card-img"/></p> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2020-09-24-post-burnout.html">
+<h3 class="no-anchor listing-title">
+Burnout — experiencia y aprendizaje
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('reflexión'); return false;">
+reflexión
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2020-09-24-post-burnout.html">
+<div class="listing-description">
+<p>¿Cómo reconocer y combatir el agotamiento laboral?</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2020-09-24-post-burnout.html">
+<div class="listing-date">
+Sep 24, 2020
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="34" data-categories="reflexión" data-listing-date-sort="1595649600000" data-listing-file-modified-sort="1701998015173" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2020-07-25-post-python-as-a-service.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2020-07-25-post-python-as-a-service.html">
+<h3 class="no-anchor listing-title">
+PaaS: Python as a Service
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('reflexión'); return false;">
+reflexión
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2020-07-25-post-python-as-a-service.html">
+<div class="listing-description">
+<p>Entregando python en la nube, más fácil que nunca.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2020-07-25-post-python-as-a-service.html">
+<div class="listing-date">
+Jul 25, 2020
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="35" data-categories="reflexión" data-listing-date-sort="1585191600000" data-listing-file-modified-sort="1701998007117" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2020-03-26-post-rutina-optima.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2020-03-26-post-rutina-optima.html">
+<h3 class="no-anchor listing-title">
+La rutina óptima es aburrida
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('reflexión'); return false;">
+reflexión
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2020-03-26-post-rutina-optima.html">
+<div class="listing-description">
+<p>Y está sobrevalorada</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2020-03-26-post-rutina-optima.html">
+<div class="listing-date">
+Mar 26, 2020
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="36" data-categories="pycon" data-listing-date-sort="1585018800000" data-listing-file-modified-sort="1701998001984" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2020-03-24-post-pycon-colombia-charlas.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2020-03-24-post-pycon-colombia-charlas.html">
+<h3 class="no-anchor listing-title">
+Pycon Colombia 2020 - Las charlas
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('pycon'); return false;">
+pycon
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2020-03-24-post-pycon-colombia-charlas.html">
+<div class="listing-description">
+<p>Enlaces a los repositorios y videos.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2020-03-24-post-pycon-colombia-charlas.html">
+<div class="listing-date">
+Mar 24, 2020
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="37" data-categories="lectura" data-listing-date-sort="1579402800000" data-listing-file-modified-sort="1701997304378" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-lectura/2020-01-17-book-review-ready-player-2.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-lectura/2020-01-17-book-review-ready-player-2.html">
+<h3 class="no-anchor listing-title">
+Ready Player 2
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
+lectura
+</div>
+</div>
+<a href="../posts/2019-2023-lectura/2020-01-17-book-review-ready-player-2.html">
+<div class="listing-description">
+<p>Las segundas partes nunca fueron buenas…</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-lectura/2020-01-17-book-review-ready-player-2.html">
+<div class="listing-date">
+Jan 19, 2020
+</div>
+<div class="listing-author">
+Ernest Cline
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="38" data-categories="lectura" data-listing-date-sort="1579402800000" data-listing-file-modified-sort="1701997175247" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-lectura/2020-01-19-book-review-comics-de-guy-delisle.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-lectura/2020-01-19-book-review-comics-de-guy-delisle.html">
+<h3 class="no-anchor listing-title">
+Guía del mal padre y otros
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
+lectura
+</div>
+</div>
+<a href="../posts/2019-2023-lectura/2020-01-19-book-review-comics-de-guy-delisle.html">
+<div class="listing-description">
+<p>Comics insuperables sobre la paternidad y viajes</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-lectura/2020-01-19-book-review-comics-de-guy-delisle.html">
+<div class="listing-date">
+Jan 19, 2020
+</div>
+<div class="listing-author">
+Guy Delisle
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="39" data-categories="lectura" data-listing-date-sort="1579316400000" data-listing-file-modified-sort="1701997243312" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-lectura/2020-01-18-book-review-sandman-volumen-1.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-lectura/2020-01-18-book-review-sandman-volumen-1.html">
+<h3 class="no-anchor listing-title">
+Sandman volumen 1
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
+lectura
+</div>
+</div>
+<a href="../posts/2019-2023-lectura/2020-01-18-book-review-sandman-volumen-1.html">
+<div class="listing-description">
+<p>Un comic con grandes profundidades</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-lectura/2020-01-18-book-review-sandman-volumen-1.html">
+<div class="listing-date">
+Jan 18, 2020
+</div>
+<div class="listing-author">
+Neil Gaiman et al
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="40" data-categories="lectura" data-listing-date-sort="1579143600000" data-listing-file-modified-sort="1701997360382" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-lectura/2020-01-16-book-review-ready-player-1.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-lectura/2020-01-16-book-review-ready-player-1.html">
+<h3 class="no-anchor listing-title">
+Ready Player 1
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
+lectura
+</div>
+</div>
+<a href="../posts/2019-2023-lectura/2020-01-16-book-review-ready-player-1.html">
+<div class="listing-description">
+<p>Novela entretenida sobre la vida en la realidad virtual</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-lectura/2020-01-16-book-review-ready-player-1.html">
+<div class="listing-date">
+Jan 16, 2020
+</div>
+<div class="listing-author">
+Ernest Cline
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="41" data-categories="lectura" data-listing-date-sort="1579057200000" data-listing-file-modified-sort="1701997381497" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-lectura/2020-01-15-book-review-percy-jackson-(1-y-2).html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-lectura/2020-01-15-book-review-percy-jackson-(1-y-2).html">
+<h3 class="no-anchor listing-title">
+Percy Jackson (1 y 2)
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
+lectura
+</div>
+</div>
+<a href="../posts/2019-2023-lectura/2020-01-15-book-review-percy-jackson-(1-y-2).html">
+<div class="listing-description">
+<p>Novela adolescente sobre héroes griegos en el mundo actual</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-lectura/2020-01-15-book-review-percy-jackson-(1-y-2).html">
+<div class="listing-date">
+Jan 15, 2020
+</div>
+<div class="listing-author">
+Rick Riordan
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="42" data-categories="lectura" data-listing-date-sort="1578970800000" data-listing-file-modified-sort="1701997407299" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-lectura/2020-01-14-book-review-ocasional-magic.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-lectura/2020-01-14-book-review-ocasional-magic.html">
+<h3 class="no-anchor listing-title">
+Ocasional Magic
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
+lectura
+</div>
+</div>
+<a href="../posts/2019-2023-lectura/2020-01-14-book-review-ocasional-magic.html">
+<div class="listing-description">
+<p>Historias cortas y emocionantes</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-lectura/2020-01-14-book-review-ocasional-magic.html">
+<div class="listing-date">
+Jan 14, 2020
+</div>
+<div class="listing-author">
+varios autores (The Moth)
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="43" data-categories="lectura,javascript" data-listing-date-sort="1578884400000" data-listing-file-modified-sort="1701997474458" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-lectura/2020-01-12-book-review-a-smarter-way-to-learn-javascript.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-lectura/2020-01-12-book-review-a-smarter-way-to-learn-javascript.html">
+<h3 class="no-anchor listing-title">
+A Smarter Way to Learn JavaScript
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
+lectura
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('javascript'); return false;">
+javascript
+</div>
+</div>
+<a href="../posts/2019-2023-lectura/2020-01-12-book-review-a-smarter-way-to-learn-javascript.html">
+<div class="listing-description">
+<p>Libro práctico para aprender javascript</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-lectura/2020-01-12-book-review-a-smarter-way-to-learn-javascript.html">
+<div class="listing-date">
+Jan 13, 2020
+</div>
+<div class="listing-author">
+Mike Myers
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="44" data-categories="lectura" data-listing-date-sort="1578884400000" data-listing-file-modified-sort="1701997443020" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-lectura/2020-01-13-book-review-the-monk-who-sold-his-ferrari.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-lectura/2020-01-13-book-review-the-monk-who-sold-his-ferrari.html">
+<h3 class="no-anchor listing-title">
+The monk who sold his ferrari
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
+lectura
+</div>
+</div>
+<a href="../posts/2019-2023-lectura/2020-01-13-book-review-the-monk-who-sold-his-ferrari.html">
+<div class="listing-description">
+<p>Decepcionante y extraño libro sobre el éxito</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-lectura/2020-01-13-book-review-the-monk-who-sold-his-ferrari.html">
+<div class="listing-date">
+Jan 13, 2020
+</div>
+<div class="listing-author">
+Robin Sharma
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="45" data-categories="lectura" data-listing-date-sort="1578711600000" data-listing-file-modified-sort="1701997505438" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-lectura/2020-01-11-book-review-mindset.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-lectura/2020-01-11-book-review-mindset.html">
+<h3 class="no-anchor listing-title">
+Mindset
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
+lectura
+</div>
+</div>
+<a href="../posts/2019-2023-lectura/2020-01-11-book-review-mindset.html">
+<div class="listing-description">
+<p>Mentalidad de crecimiento y mentalidad fija</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-lectura/2020-01-11-book-review-mindset.html">
+<div class="listing-date">
+Jan 11, 2020
+</div>
+<div class="listing-author">
+Carol Dweck
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="46" data-categories="pycon" data-listing-date-sort="1578711600000" data-listing-file-modified-sort="1701997995932" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2020-02-11-post-pycon.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2020-02-11-post-pycon.html">
+<h3 class="no-anchor listing-title">
+Keynotes de la PyCon 2020 Colombia
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('pycon'); return false;">
+pycon
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2020-02-11-post-pycon.html">
+<div class="listing-description">
+<p>Videos, slides y resúmenes.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2020-02-11-post-pycon.html">
+<div class="listing-date">
+Jan 11, 2020
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="47" data-categories="lectura" data-listing-date-sort="1578625200000" data-listing-file-modified-sort="1701997530962" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-lectura/2020-01-10-book-review-the-gifts-of-imperfection.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-lectura/2020-01-10-book-review-the-gifts-of-imperfection.html">
+<h3 class="no-anchor listing-title">
+The gifts of imperfection
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
+lectura
+</div>
+</div>
+<a href="../posts/2019-2023-lectura/2020-01-10-book-review-the-gifts-of-imperfection.html">
+<div class="listing-description">
+<p>Regalos de la imperfección son el coraje, la compasión y la conexión</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-lectura/2020-01-10-book-review-the-gifts-of-imperfection.html">
+<div class="listing-date">
+Jan 10, 2020
+</div>
+<div class="listing-author">
+Brené Brown
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="48" data-categories="lectura" data-listing-date-sort="1578538800000" data-listing-file-modified-sort="1701997558104" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-lectura/2020-01-09-book-review-estrategia-de-datos.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-lectura/2020-01-09-book-review-estrategia-de-datos.html">
+<h3 class="no-anchor listing-title">
+Estrategia de Datos
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
+lectura
+</div>
+</div>
+<a href="../posts/2019-2023-lectura/2020-01-09-book-review-estrategia-de-datos.html">
+<div class="listing-description">
+<p>Buen contenido, mala redacción</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-lectura/2020-01-09-book-review-estrategia-de-datos.html">
+<div class="listing-date">
+Jan 9, 2020
+</div>
+<div class="listing-author">
+Karim Touma
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="49" data-categories="lectura" data-listing-date-sort="1578452400000" data-listing-file-modified-sort="1701987722507" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-lectura/2020-01-08-book-review-trillion-dollar-coach.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-lectura/2020-01-08-book-review-trillion-dollar-coach.html">
+<h3 class="no-anchor listing-title">
+Trillion Dollar Coach
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
+lectura
+</div>
+</div>
+<a href="../posts/2019-2023-lectura/2020-01-08-book-review-trillion-dollar-coach.html">
+<div class="listing-description">
+<p>Sobre la importancia de relacionarse más allá de lo laboral, de traer lo humano y lo personal al trabajo</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-lectura/2020-01-08-book-review-trillion-dollar-coach.html">
+<div class="listing-date">
+Jan 8, 2020
+</div>
+<div class="listing-author">
+Eric Schmidt, Jonathan Rosenberg y Alan Eagle
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="50" data-categories="lectura" data-listing-date-sort="1578366000000" data-listing-file-modified-sort="1701987767184" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-lectura/2020-01-07-book-review-all-these-wonders.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-lectura/2020-01-07-book-review-all-these-wonders.html">
+<h3 class="no-anchor listing-title">
+All these wonders
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
+lectura
+</div>
+</div>
+<a href="../posts/2019-2023-lectura/2020-01-07-book-review-all-these-wonders.html">
+<div class="listing-description">
+<p>Pequeñas grandes historias.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-lectura/2020-01-07-book-review-all-these-wonders.html">
+<div class="listing-date">
+Jan 7, 2020
+</div>
+<div class="listing-author">
+Varios autores (The Moth)
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="51" data-categories="lectura" data-listing-date-sort="1578279600000" data-listing-file-modified-sort="1701987765319" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-lectura/2020-01-06-book-review-iq.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-lectura/2020-01-06-book-review-iq.html">
+<h3 class="no-anchor listing-title">
+IQ
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
+lectura
+</div>
+</div>
+<a href="../posts/2019-2023-lectura/2020-01-06-book-review-iq.html">
+<div class="listing-description">
+<p>Mezcla de novela policial y ‘rapidos y furiosos’.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-lectura/2020-01-06-book-review-iq.html">
+<div class="listing-date">
+Jan 6, 2020
+</div>
+<div class="listing-author">
+Joe Ide
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="52" data-categories="lectura" data-listing-date-sort="1578193200000" data-listing-file-modified-sort="1701987764354" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-lectura/2020-01-05-book-review-nudge.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-lectura/2020-01-05-book-review-nudge.html">
+<h3 class="no-anchor listing-title">
+Nudge
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
+lectura
+</div>
+</div>
+<a href="../posts/2019-2023-lectura/2020-01-05-book-review-nudge.html">
+<div class="listing-description">
+<p>Sobre lo fácil que es realizar pequeñas influencias en las elecciones</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-lectura/2020-01-05-book-review-nudge.html">
+<div class="listing-date">
+Jan 5, 2020
+</div>
+<div class="listing-author">
+Thaler y Sunstein
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="53" data-categories="lectura" data-listing-date-sort="1578106800000" data-listing-file-modified-sort="1701987763114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-lectura/2020-01-04-book-review-matadero-palma.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-lectura/2020-01-04-book-review-matadero-palma.html">
+<h3 class="no-anchor listing-title">
+Matadero Palma
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
+lectura
+</div>
+</div>
+<a href="../posts/2019-2023-lectura/2020-01-04-book-review-matadero-palma.html">
+<div class="listing-description">
+<p>El mundo del matadero Franklin en los años 1940, con todos sus personajes memorables.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-lectura/2020-01-04-book-review-matadero-palma.html">
+<div class="listing-date">
+Jan 4, 2020
+</div>
+<div class="listing-author">
+Simón Soto
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="54" data-categories="lectura" data-listing-date-sort="1578020400000" data-listing-file-modified-sort="1701987762151" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-lectura/2020-01-03-book-review-never-split-the-deal.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-lectura/2020-01-03-book-review-never-split-the-deal.html">
+<h3 class="no-anchor listing-title">
+Never split the deal
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
+lectura
+</div>
+</div>
+<a href="../posts/2019-2023-lectura/2020-01-03-book-review-never-split-the-deal.html">
+<div class="listing-description">
+<p>Mezcla de anécdotas de distintas negociaciones y una larga lista de consejos.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-lectura/2020-01-03-book-review-never-split-the-deal.html">
+<div class="listing-date">
+Jan 3, 2020
+</div>
+<div class="listing-author">
+Chriss Voss
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="55" data-categories="lectura" data-listing-date-sort="1577934000000" data-listing-file-modified-sort="1701987760817" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-lectura/2020-01-02-book-review-flying-free.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-lectura/2020-01-02-book-review-flying-free.html">
+<h3 class="no-anchor listing-title">
+Flying Free
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
+lectura
+</div>
+</div>
+<a href="../posts/2019-2023-lectura/2020-01-02-book-review-flying-free.html">
+<div class="listing-description">
+<p>Biografía de Cecilia Aragon, llena de sorprendentes anécdotas.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-lectura/2020-01-02-book-review-flying-free.html">
+<div class="listing-date">
+Jan 2, 2020
+</div>
+<div class="listing-author">
+Cecilia Aragon
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="56" data-categories="lectura" data-listing-date-sort="1556337600000" data-listing-file-modified-sort="1701987759763" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-lectura/2020-01-01-book-review-atomic-habits.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-lectura/2020-01-01-book-review-atomic-habits.html">
+<h3 class="no-anchor listing-title">
+Atomic habits
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
+lectura
+</div>
+</div>
+<a href="../posts/2019-2023-lectura/2020-01-01-book-review-atomic-habits.html">
+<div class="listing-description">
+<p>Manual de cabecera para generar mejores hábitos.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-lectura/2020-01-01-book-review-atomic-habits.html">
+<div class="listing-date">
+Apr 27, 2019
+</div>
+<div class="listing-author">
+James Clear
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="57" data-categories="opinión,educación" data-listing-date-sort="1556337600000" data-listing-file-modified-sort="1701987577241" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2019-04-27-post-aprender.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2019-04-27-post-aprender.html">
+<h3 class="no-anchor listing-title">
+Lo que nos motiva a aprender y trabajar
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('opinión'); return false;">
+opinión
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('educación'); return false;">
+educación
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2019-04-27-post-aprender.html">
+<div class="listing-description">
+<p>¿Porqué aprendemos fácil algunas cosas y otras nos cuestan tanto?</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2019-04-27-post-aprender.html">
+<div class="listing-date">
+Apr 27, 2019
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="58" data-categories="consejo,literatura" data-listing-date-sort="1547866800000" data-listing-file-modified-sort="1701985426720" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-posts/2019-01-19-post-libros.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-posts/2019-01-19-post-libros.html">
+<h3 class="no-anchor listing-title">
+Consejos de libros al mejor precio
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('consejo'); return false;">
+consejo
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('literatura'); return false;">
+literatura
+</div>
+</div>
+<a href="../posts/2019-2023-posts/2019-01-19-post-libros.html">
+<div class="listing-description">
+<p>¿Libros a buen precio? BP Digital y BookDepository.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-posts/2019-01-19-post-libros.html">
+<div class="listing-date">
+Jan 19, 2019
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="59" data-categories="escritura" data-listing-date-sort="1546311600000" data-listing-file-modified-sort="1701996788021" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<div class="thumbnail">
+<p><a href="../posts/2019-2023-escritura-ficcion/2019-01-01-story-cocodrilito-va-al-bano.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="../posts/2019-2023-escritura-ficcion/2019-01-01-story-cocodrilito-va-al-bano.html">
+<h3 class="no-anchor listing-title">
+Cocodrilito aprender a ir al baño
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('escritura'); return false;">
+escritura
+</div>
+</div>
+<a href="../posts/2019-2023-escritura-ficcion/2019-01-01-story-cocodrilito-va-al-bano.html">
+<div class="listing-description">
+<p>Un cuento escrito a 2 manos con mi hijo</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/2019-2023-escritura-ficcion/2019-01-01-story-cocodrilito-va-al-bano.html">
+<div class="listing-date">
+Jan 1, 2019
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
+<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
