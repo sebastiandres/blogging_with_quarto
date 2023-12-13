@@ -14,6 +14,9 @@ website:
       - pages/proyectos.qmd
       - pages/librerias.qmd
       - pages/publicaciones.qmd
+      - text: Tutoriales
+        menu:
+          - tutorial/quarto.qmd
       - pages/about.qmd
       - icon: linkedin
         href: https://www.linkedin.com/in/sebastiandres/

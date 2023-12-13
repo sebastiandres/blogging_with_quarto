@@ -1,0 +1,181 @@
+---
+title: "Tutorial Quarto"
+---
+
+## ¿Qué es quarto?
+Quarto es un "sistema de publicación". Usando un formato de markdown enriquecido permite generar páginas web, presentaciones, blogs y mucho más. El formato de los archivos es .qmd.
+
+## Formato de texto
+El siguiente texto:
+```{markdown}
+*cursivas*, **negritas**, ***negritas cursivas***, ~~tachado~~, superíndice^2^, subíndice~2~, `verbatim`   
+```
+se mostrará así:  
+*cursivas*, **negritas**, ***negritas cursivas***, ~~tachado~~, superíndice^2^, subíndice~2~, `verbatim`   
+
+## Títulos
+
+Se utiliza la clásica convención para `# Título`, `## Subtítulo`, ... , `###### Subsubsubsubsubsub-título`,
+
+## Links
+
+Los siguientes códigos permiten incrustar links
+``` markdown  
+<https://quarto.org>                                                                                   |
+
+[Quarto](https://quarto.org) 
+``` 
+
+## Imágenes 
+
+```{.markdown}  
+![Caption](elephant.png) 
+
+[![Caption](elephant.png)](https://quarto.org)
+
+[![Caption](elephant.png "An elephant"){fig-alt="A line drawing of an elephant."}](https://quarto.org)
+``` 
+
+## Videos
+
+Para incluir videos puedes usar el código `{{{< video >}}}` :
+
+```{.markdown shortcodes="false"}
+{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
+```
+
+
+## Listas
+
++-----------------------------------+---------------------------------+
+| Código en Markdown                | Output                          |
++===================================+=================================+
+| ``` markdown                      |                                 |
+| * unordered list                  | * unordered list                |
+|     + sub-item 1                  |     + sub-item 1                |
+|     + sub-item 2                  |     + sub-item 2                |
+|         - sub-sub-item 1          |         - sub-sub-item 1        |
+| ```                               |                                 |
++-----------------------------------+---------------------------------+
+| ``` markdown                      |                                 |
+| 1. ordered list                   |  1. ordered list                |
+| 2. item 2                         |  2. item 2                      |
+|     i) sub-item 1                 |      i) sub-item 1              |
+|          A.  sub-sub-item 1       |           A.  sub-sub-item 1    |
+| ```                               |                                 |
+|                                   |                                 |
++-----------------------------------+---------------------------------+
+| ``` markdown                      |                                 |
+| (@)  A list whose numbering       |  (1) A list whose numbering     |
+|                                   |                                 |
+| continues after                   |  continues after                |
+|                                   |                                 |
+| (@)  an interruption              |  (2) an interruption            |
+| ```                               |                                 |
++-----------------------------------+---------------------------------+
+| ``` markdown                      |                                 |
+| ::: {}                            | ::: {}                          |
+| 1. A list                         | 1. A list                       |
+| :::                               | :::                             |
+|                                   |                                 |
+| ::: {}                            | ::: {}                          |
+| 1. Followed by another list       | 1. Followed by another list     |
+| :::                               | :::                             |
+| ```                               |                                 |
++-----------------------------------+---------------------------------+
+| ``` markdown                      |                                 |
+| term                              | term                            |
+| : definition                      | : definition                    |
+| ```                               |                                 |
++-----------------------------------+---------------------------------+
+
+Notar que las listas necesitan una linea en blanco sobre la lista, de lo contrario no se mostrarán correctamente.
+
+## Tablas
+
+Las tablas siguen el formato clásico en markdown, y donde la alineación se define con `:`, como muestra el siguiente código:
+
+``` markdown
+| Derecha | Izquierda | Por Defecto | Centrada |
+|------:|:-----|---------|:------:|
+|   12  |  12  |    12   |    12  |
+|  123  |  123 |   123   |   123  |
+|    1  |    1 |     1   |     1  |
+```
+
+que se mostrará así:
+
+| Derecha | Izquierda | Por Defecto | Centrada |
+|------:|:-----|---------|:------:|
+|    12 | 12   | 12      |   12   |
+|   123 | 123  | 123     |  123   |
+|     1 | 1    | 1       |   1    |
+
+En el siguiente enlace hay más información: <https://quarto.org/docs/authoring/tables.html>.
+
+## Código
+
+Utilice ```` ``` ```` para delimitar bloques de código:
+
+```` markdown
+```
+código
+```
+````
+
+Puedes añadir un lenguaje (python, markdown, html, javascript, etc) para resaltar correctamente la sintaxis del lenguaje
+
+```` markdown
+```python
+1 + 1
+```
+````
+
+## Ecuaciones
+
+Utilice delimitadores `$` para las ecuaciones en línea y delimitadores `$$` para ecuaciones en línea propia. 
+
+Así, por ejemplo `$E = mc^{2}$` se mostrará como $E=mc^{2}$.
+
+Por otra parte, ```$$ E = mc^{2}$$``` se mostrará así
+$$ E = mc^{2}$$
+
+## Columnas
+
+Es posible definir columnas de manera sencilla, usando `::::` y `:::`.
+
+El siguiente código:
+```{markdown}
+:::: {.columns}
+
+::: {.column width="40%"}
+Columna izquierda...
+:::
+
+::: {.column width="60%"}
+Columna derecha
+:::
+
+::::
+```
+
+Se mostrará así:
+
+:::: {.columns}
+
+::: {.column width="40%"}
+Columna izquierda...
+:::
+
+::: {.column width="60%"}
+Columna derecha
+:::
+
+::::
+
+
+
+## Referencias
+Este archivo está basado en <https://quarto.org/docs/authoring/markdown-basics.html>
+
+* <https://quarto.org/docs/presentations/>: Información extra para presentaciones.
