@@ -4,7 +4,7 @@
     "href": "TO_DO_LIST.html",
     "title": "TO DO LIST",
     "section": "",
-    "text": "TO DO LIST\n\nMenu superior: DONE\nMejor intro: DONE\nSobre mi menos pretencioso: DONE\nCharlas -&gt; cambiar readmes en github\nBlog -&gt; poner posts antiguos"
+    "text": "TO DO LIST\n\nCharlas -&gt; cambiar readmes en github\nTutorial"
   },
   {
     "objectID": "pages/charlas.html",
@@ -481,6 +481,97 @@
     "title": "Ocasional Magic",
     "section": "",
     "text": "Más historias de The Moth, a la altura del otro libro. Historias emocionantes, profundas, todas muy distintas unas de otras."
+  },
+  {
+    "objectID": "tutorial/quarto.html",
+    "href": "tutorial/quarto.html",
+    "title": "Tutorial Quarto",
+    "section": "",
+    "text": "Quarto es un “sistema de publicación”. Usando un formato de markdown enriquecido permite generar páginas web, presentaciones, blogs y mucho más. El formato de los archivos es .qmd."
+  },
+  {
+    "objectID": "tutorial/quarto.html#qué-es-quarto",
+    "href": "tutorial/quarto.html#qué-es-quarto",
+    "title": "Tutorial Quarto",
+    "section": "",
+    "text": "Quarto es un “sistema de publicación”. Usando un formato de markdown enriquecido permite generar páginas web, presentaciones, blogs y mucho más. El formato de los archivos es .qmd."
+  },
+  {
+    "objectID": "tutorial/quarto.html#formato-de-texto",
+    "href": "tutorial/quarto.html#formato-de-texto",
+    "title": "Tutorial Quarto",
+    "section": "Formato de texto",
+    "text": "Formato de texto\nEl siguiente texto:\n*cursivas*, **negritas**, ***negritas cursivas***, ~~tachado~~, superíndice^2^, subíndice~2~, `verbatim`   \nse mostrará así:\ncursivas, negritas, negritas cursivas, tachado, superíndice2, subíndice2, verbatim"
+  },
+  {
+    "objectID": "tutorial/quarto.html#títulos",
+    "href": "tutorial/quarto.html#títulos",
+    "title": "Tutorial Quarto",
+    "section": "Títulos",
+    "text": "Títulos\nSe utiliza la clásica convención para # Título, ## Subtítulo, … , ###### Subsubsubsubsubsub-título,"
+  },
+  {
+    "objectID": "tutorial/quarto.html#links",
+    "href": "tutorial/quarto.html#links",
+    "title": "Tutorial Quarto",
+    "section": "Links",
+    "text": "Links\nLos siguientes códigos permiten incrustar links\n&lt;https://quarto.org&gt;                                                                                   |\n\n[Quarto](https://quarto.org)"
+  },
+  {
+    "objectID": "tutorial/quarto.html#imágenes",
+    "href": "tutorial/quarto.html#imágenes",
+    "title": "Tutorial Quarto",
+    "section": "Imágenes",
+    "text": "Imágenes\n![Caption](elephant.png) \n\n[![Caption](elephant.png)](https://quarto.org)\n\n[![Caption](elephant.png \"An elephant\"){fig-alt=\"A line drawing of an elephant.\"}](https://quarto.org)"
+  },
+  {
+    "objectID": "tutorial/quarto.html#videos",
+    "href": "tutorial/quarto.html#videos",
+    "title": "Tutorial Quarto",
+    "section": "Videos",
+    "text": "Videos\nPara incluir videos puedes usar el código {{&lt; video &gt;}} :\n{{&lt; video https://www.youtube.com/embed/wo9vZccmqwc &gt;}}"
+  },
+  {
+    "objectID": "tutorial/quarto.html#listas",
+    "href": "tutorial/quarto.html#listas",
+    "title": "Tutorial Quarto",
+    "section": "Listas",
+    "text": "Listas\n\n\n\n\n\n\n\nCódigo en Markdown\nOutput\n\n\n\n\n* unordered list\n    + sub-item 1\n    + sub-item 2\n        - sub-sub-item 1\n\nunordered list\n\nsub-item 1\nsub-item 2\n\nsub-sub-item 1\n\n\n\n\n\n1. ordered list\n2. item 2\n    i) sub-item 1\n         A.  sub-sub-item 1\n\nordered list\nitem 2\n\nsub-item 1\n\nsub-sub-item 1\n\n\n\n\n\n(@)  A list whose numbering\n\ncontinues after\n\n(@)  an interruption\n\nA list whose numbering\n\ncontinues after\n\nan interruption\n\n\n\n::: {}\n1. A list\n:::\n\n::: {}\n1. Followed by another list\n:::\n\n\nA list\n\n\n\n\nFollowed by another list\n\n\n\n\nterm\n: definition\n\nterm\n\ndefinition\n\n\n\n\n\nNotar que las listas necesitan una linea en blanco sobre la lista, de lo contrario no se mostrarán correctamente."
+  },
+  {
+    "objectID": "tutorial/quarto.html#tablas",
+    "href": "tutorial/quarto.html#tablas",
+    "title": "Tutorial Quarto",
+    "section": "Tablas",
+    "text": "Tablas\nLas tablas siguen el formato clásico en markdown, y donde la alineación se define con :, como muestra el siguiente código:\n| Derecha | Izquierda | Por Defecto | Centrada |\n|------:|:-----|---------|:------:|\n|   12  |  12  |    12   |    12  |\n|  123  |  123 |   123   |   123  |\n|    1  |    1 |     1   |     1  |\nque se mostrará así:\n\n\n\nDerecha\nIzquierda\nPor Defecto\nCentrada\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1\n\n\n\nEn el siguiente enlace hay más información: https://quarto.org/docs/authoring/tables.html."
+  },
+  {
+    "objectID": "tutorial/quarto.html#código",
+    "href": "tutorial/quarto.html#código",
+    "title": "Tutorial Quarto",
+    "section": "Código",
+    "text": "Código\nUtilice ``` para delimitar bloques de código:\n```\ncódigo\n```\nPuedes añadir un lenguaje (python, markdown, html, javascript, etc) para resaltar correctamente la sintaxis del lenguaje\n```python\n1 + 1\n```"
+  },
+  {
+    "objectID": "tutorial/quarto.html#ecuaciones",
+    "href": "tutorial/quarto.html#ecuaciones",
+    "title": "Tutorial Quarto",
+    "section": "Ecuaciones",
+    "text": "Ecuaciones\nUtilice delimitadores $ para las ecuaciones en línea y delimitadores $$ para ecuaciones en línea propia.\nAsí, por ejemplo $E = mc^{2}$ se mostrará como \\(E=mc^{2}\\).\nPor otra parte, $$ E = mc^{2}$$ se mostrará así \\[ E = mc^{2}\\]"
+  },
+  {
+    "objectID": "tutorial/quarto.html#columnas",
+    "href": "tutorial/quarto.html#columnas",
+    "title": "Tutorial Quarto",
+    "section": "Columnas",
+    "text": "Columnas\nEs posible definir columnas de manera sencilla, usando :::: y :::.\nEl siguiente código:\n:::: {.columns}\n\n::: {.column width=\"40%\"}\nColumna izquierda...\n:::\n\n::: {.column width=\"60%\"}\nColumna derecha\n:::\n\n::::\nSe mostrará así:\n\n\nColumna izquierda…\n\nColumna derecha"
+  },
+  {
+    "objectID": "tutorial/quarto.html#referencias",
+    "href": "tutorial/quarto.html#referencias",
+    "title": "Tutorial Quarto",
+    "section": "Referencias",
+    "text": "Referencias\nEste archivo está basado en https://quarto.org/docs/authoring/markdown-basics.html\n\nhttps://quarto.org/docs/presentations/: Información extra para presentaciones."
   },
   {
     "objectID": "posts/2019-2023-lectura/2020-01-07-book-review-all-these-wonders.html",

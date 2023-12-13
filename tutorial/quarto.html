@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>sebastiandres.xyz - Sobre mí</title>
+<title>sebastiandres.xyz - Tutorial Quarto</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -70,6 +104,8 @@ gtag('js', new Date());
 gtag('config', 'G-2QV9CT8MHY', { 'anonymize_ip': true});
 </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -127,7 +163,7 @@ gtag('config', 'G-2QV9CT8MHY', { 'anonymize_ip': true});
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="../pages/about.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../pages/about.html" rel="" target="">
  <span class="menu-text">Sobre mí</span></a>
   </li>  
   <li class="nav-item compact">
@@ -162,7 +198,7 @@ gtag('config', 'G-2QV9CT8MHY', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Sobre mí</h1>
+<h1 class="title">Tutorial Quarto</h1>
 </div>
 
 
@@ -177,16 +213,222 @@ gtag('config', 'G-2QV9CT8MHY', { 'anonymize_ip': true});
 
 </header>
 
-<section id="hoy" class="level2">
-<h2 class="anchored" data-anchor-id="hoy">Hoy</h2>
-<p>Soy Chief Data Officer en uPlanner. Participo de comunidades y organizaciones relacionadas con Python: Comunidad Python Chile, Streamlit y Vizzu.</p>
+<section id="qué-es-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="qué-es-quarto">¿Qué es quarto?</h2>
+<p>Quarto es un “sistema de publicación”. Usando un formato de markdown enriquecido permite generar páginas web, presentaciones, blogs y mucho más. El formato de los archivos es .qmd.</p>
 </section>
-<section id="en-10-minutos" class="level2">
-<h2 class="anchored" data-anchor-id="en-10-minutos">En 10 minutos</h2>
-<p>He tenido la tremenda oportunidad de estudiar en grandes universidades en países muy distintos:<br>
-- Ingeniero Matemático de la Universidad Técnica Federico Santa María, en Chile. - Ingénieur Diplômé de l’École Polytechnique, en Francia. - Master of Computational and Mathematical Engineering de Stanford University, en EEUU. Fueron 3 experiencias completamente distintas y muy enriquecedoras.</p>
-<p>Actualmente trabajo como Chief Data Officer en uPlanner, donde participo activamente en el desarrollo de nuevos productos y dirección de proyectos estratégicos con componentes de Data Science y Machine Learning. Anteriormente, he realizado diversos proyectos de ingeniería relacionados con matemáticas aplicadas e implementaciones numéricas en universidades chilenas (La UTFSMa y UCH). Como docente, ha impartido asignaturas de Matemática e Informática, con especial énfasis en la utilización de nuevas metodologías de aprendizaje como flipped classroom y problem based learning, y el uso de nuevas tecnologías como jupyter notebooks + RISE.</p>
-<p>Llevo programando en python desde el 2008, y me gusta encontrar y aprender nuevas librerías: uso matplotlib y vizzu para los gráficos, pandas para la manipulación de datos, jupyter notebooks + RISE para la colaboración y exploración, streamlit para proyectos web y quarto para compartir conocimiento.</p>
+<section id="formato-de-texto" class="level2">
+<h2 class="anchored" data-anchor-id="formato-de-texto">Formato de texto</h2>
+<p>El siguiente texto:</p>
+<pre class="{markdown}"><code>*cursivas*, **negritas**, ***negritas cursivas***, ~~tachado~~, superíndice^2^, subíndice~2~, `verbatim`   </code></pre>
+<p>se mostrará así:<br>
+<em>cursivas</em>, <strong>negritas</strong>, <strong><em>negritas cursivas</em></strong>, <del>tachado</del>, superíndice<sup>2</sup>, subíndice<sub>2</sub>, <code>verbatim</code></p>
+</section>
+<section id="títulos" class="level2">
+<h2 class="anchored" data-anchor-id="títulos">Títulos</h2>
+<p>Se utiliza la clásica convención para <code># Título</code>, <code>## Subtítulo</code>, … , <code>###### Subsubsubsubsubsub-título</code>,</p>
+</section>
+<section id="links" class="level2">
+<h2 class="anchored" data-anchor-id="links">Links</h2>
+<p>Los siguientes códigos permiten incrustar links</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ot">&lt;https://quarto.org&gt;</span>                                                                                   |</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Quarto</span><span class="co">](https://quarto.org)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="imágenes" class="level2">
+<h2 class="anchored" data-anchor-id="imágenes">Imágenes</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="al">![Caption](elephant.png)</span> </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="al">![Caption](elephant.png)</span><span class="co">](https://quarto.org)</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="al">![Caption](elephant.png "An elephant")</span><span class="ot">{fig-alt="A line drawing of an elephant."}</span><span class="co">](https://quarto.org)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="videos" class="level2">
+<h2 class="anchored" data-anchor-id="videos">Videos</h2>
+<p>Para incluir videos puedes usar el código <code>{{&lt; video &gt;}}</code> :</p>
+<div class="sourceCode" id="cb4" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>{{&lt; video https://www.youtube.com/embed/wo9vZccmqwc &gt;}}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="listas" class="level2">
+<h2 class="anchored" data-anchor-id="listas">Listas</h2>
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Código en Markdown</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>unordered list</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>sub-item 1</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>sub-item 2</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="ss">        - </span>sub-sub-item 1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><ul>
+<li>unordered list
+<ul>
+<li>sub-item 1</li>
+<li>sub-item 2
+<ul>
+<li>sub-sub-item 1</li>
+</ul></li>
+</ul></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>ordered list</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>item 2</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    i) sub-item 1</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>         A.  sub-sub-item 1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><ol type="1">
+<li>ordered list</li>
+<li>item 2
+<ol type="i">
+<li>sub-item 1
+<ol type="A">
+<li>sub-sub-item 1</li>
+</ol></li>
+</ol></li>
+</ol></td>
+</tr>
+<tr class="odd">
+<td><div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>(@)  A list whose numbering</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>continues after</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>(@)  an interruption</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><ol type="1">
+<li>A list whose numbering</li>
+</ol>
+<p>continues after</p>
+<ol start="2" type="1">
+<li>an interruption</li>
+</ol></td>
+</tr>
+<tr class="even">
+<td><div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>::: {}</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>A list</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>::: {}</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Followed by another list</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><div>
+<ol type="1">
+<li>A list</li>
+</ol>
+</div>
+<div>
+<ol type="1">
+<li>Followed by another list</li>
+</ol>
+</div></td>
+</tr>
+<tr class="odd">
+<td><div class="sourceCode" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>term</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>: definition</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><dl>
+<dt>term</dt>
+<dd>
+definition
+</dd>
+</dl></td>
+</tr>
+</tbody>
+</table>
+<p>Notar que las listas necesitan una linea en blanco sobre la lista, de lo contrario no se mostrarán correctamente.</p>
+</section>
+<section id="tablas" class="level2">
+<h2 class="anchored" data-anchor-id="tablas">Tablas</h2>
+<p>Las tablas siguen el formato clásico en markdown, y donde la alineación se define con <code>:</code>, como muestra el siguiente código:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>| Derecha | Izquierda | Por Defecto | Centrada |</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>|------:|:-----|---------|:------:|</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>|   12  |  12  |    12   |    12  |</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>|  123  |  123 |   123   |   123  |</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>|    1  |    1 |     1   |     1  |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>que se mostrará así:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Derecha</th>
+<th style="text-align: left;">Izquierda</th>
+<th>Por Defecto</th>
+<th style="text-align: center;">Centrada</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">12</td>
+<td>12</td>
+<td style="text-align: center;">12</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">123</td>
+<td style="text-align: left;">123</td>
+<td>123</td>
+<td style="text-align: center;">123</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">1</td>
+<td>1</td>
+<td style="text-align: center;">1</td>
+</tr>
+</tbody>
+</table>
+<p>En el siguiente enlace hay más información: <a href="https://quarto.org/docs/authoring/tables.html" class="uri">https://quarto.org/docs/authoring/tables.html</a>.</p>
+</section>
+<section id="código" class="level2">
+<h2 class="anchored" data-anchor-id="código">Código</h2>
+<p>Utilice <code>```</code> para delimitar bloques de código:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="in">código</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Puedes añadir un lenguaje (python, markdown, html, javascript, etc) para resaltar correctamente la sintaxis del lenguaje</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="ecuaciones" class="level2">
+<h2 class="anchored" data-anchor-id="ecuaciones">Ecuaciones</h2>
+<p>Utilice delimitadores <code>$</code> para las ecuaciones en línea y delimitadores <code>$$</code> para ecuaciones en línea propia.</p>
+<p>Así, por ejemplo <code>$E = mc^{2}$</code> se mostrará como <span class="math inline">\(E=mc^{2}\)</span>.</p>
+<p>Por otra parte, <code>$$ E = mc^{2}$$</code> se mostrará así <span class="math display">\[ E = mc^{2}\]</span></p>
+</section>
+<section id="columnas" class="level2">
+<h2 class="anchored" data-anchor-id="columnas">Columnas</h2>
+<p>Es posible definir columnas de manera sencilla, usando <code>::::</code> y <code>:::</code>.</p>
+<p>El siguiente código:</p>
+<pre class="{markdown}"><code>:::: {.columns}
+
+::: {.column width="40%"}
+Columna izquierda...
+:::
+
+::: {.column width="60%"}
+Columna derecha
+:::
+
+::::</code></pre>
+<p>Se mostrará así:</p>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>Columna izquierda…</p>
+</div><div class="column" style="width:60%;">
+<p>Columna derecha</p>
+</div>
+</div>
+</section>
+<section id="referencias" class="level2">
+<h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
+<p>Este archivo está basado en <a href="https://quarto.org/docs/authoring/markdown-basics.html" class="uri">https://quarto.org/docs/authoring/markdown-basics.html</a></p>
+<ul>
+<li><a href="https://quarto.org/docs/presentations/" class="uri">https://quarto.org/docs/presentations/</a>: Información extra para presentaciones.</li>
+</ul>
 
 
 </section>
