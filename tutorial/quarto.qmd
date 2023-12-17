@@ -8,10 +8,31 @@ Quarto es un "sistema de publicación". Usando un formato de markdown enriquecid
 ## Formato de texto
 El siguiente texto:
 ```{markdown}
-*cursivas*, **negritas**, ***negritas cursivas***, ~~tachado~~, superíndice^2^, subíndice~2~, `verbatim`   
+*cursivas*, **negritas**, ***negritas cursivas***,  
+~~tachado~~, superíndice^2^, subíndice~2~, `verbatim`   
 ```
 se mostrará así:  
-*cursivas*, **negritas**, ***negritas cursivas***, ~~tachado~~, superíndice^2^, subíndice~2~, `verbatim`   
+*cursivas*, **negritas**, ***negritas cursivas***,  
+~~tachado~~, superíndice^2^, subíndice~2~, `verbatim`   
+
+Muy importante: Puedes hacer un salto de línea simple con dos espacios en blanco, o un salto de línea grande separando con 2 líneas.
+
+Así, por ejemplo, el código markdown 
+```{markdown}
+Lorem ipsum
+es aburrido.  
+Esta es una nueva línea.
+
+Este es un nuevo párrafo.
+```
+
+se mostrará como
+
+Lorem ipsum
+es aburrido.  
+Esta es una nueva línea.
+
+Este es un nuevo párrafo.
 
 ## Títulos
 
@@ -21,19 +42,24 @@ Se utiliza la clásica convención para `# Título`, `## Subtítulo`, ... , `###
 
 Los siguientes códigos permiten incrustar links
 ``` markdown  
-<https://quarto.org>                                                                                   |
-
+<https://quarto.org>  
 [Quarto](https://quarto.org) 
 ``` 
 
 ## Imágenes 
 
+El código markdown para imágenes es similar a los links, pero usa un `!` para distinguirlos.
+Es posible mezclar
+
 ```{.markdown}  
-![Caption](elephant.png) 
+![Caption](elephant.png)  
+![Caption](elephant.png "Elephant"){fig-alt="An elephant."}
+``` 
 
-[![Caption](elephant.png)](https://quarto.org)
-
-[![Caption](elephant.png "An elephant"){fig-alt="A line drawing of an elephant."}](https://quarto.org)
+Es posible hacer una imagen "clickeable" mezclando los códigos respectivos:
+```{.markdown}  
+[![Caption](elephant.png)](https://quarto.org)  
+[![Caption](elephant.png "Elephant"){fig-alt="An elephant."}](https://quarto.org)
 ``` 
 
 ## Videos
@@ -115,7 +141,7 @@ En el siguiente enlace hay más información: <https://quarto.org/docs/authoring
 
 ## Código
 
-Utilice ```` ``` ```` para delimitar bloques de código:
+Para delimitar bloques de código que se mostrar sin ejecutar se utiliza ```` ``` ````
 
 ```` markdown
 ```
@@ -123,13 +149,32 @@ código
 ```
 ````
 
-Puedes añadir un lenguaje (python, markdown, html, javascript, etc) para resaltar correctamente la sintaxis del lenguaje
+Puedes añadir un lenguaje (python, markdown, html, javascript, etc) para resaltar correctamente la sintaxis del lenguaje. Así el siguiente código
 
 ```` markdown
 ```python
-1 + 1
+print("¡Que tal, festival!")
 ```
 ````
+
+se verá así:
+```python
+print("¡Que tal, festival!")
+```
+
+
+Para delimitar bloques de código que se ejecutarán, como celdas en jupyter notebook/lab, se utilizan parentesis de llave encerrando el lenguaje, así por ejemplo el siguiente código
+```` markdown
+```{python}
+print("¡Que tal, festival!")
+```
+````
+
+que se verá así:
+```{python}
+print("¡Que tal, festival!")
+```
+
 
 ## Ecuaciones
 
