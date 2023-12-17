@@ -336,11 +336,319 @@
     "text": "En uno de los newsletter a los que estoy suscrito, el autor comentaba sobre cómo había aprovechado un tiempo de cuarentena por COVID para aprender a resolver el cubo de rubik. Yo varias veces había intentado armarlo y nunca había logrado armar más de 2 caras. Me frustraba no poder armarlo, pero pensaba que se trataba de alguna habilidad o inteligencia que yo no tenía, así que dejé de intentarlo. Que alguien dijera taxativamente que todos podían resolver el cubo picó mi curiosidad, y después de seguir los enlaces y algunos días de práctica, también logré armarlo.\nEsto me generó una desilución, un aprendizaje y una metáfora.\nLa desilución venía de algo que consideraba difícil y una muestra de inteligencia, y que terminó resultando más bien una habilidad mecánica.\nEl aprendizaje viene de que el pensar que el cubo de Rubik era difícil era una “creencia limitante”. Como pensaba que era más dificil de lo que yo podía entregar, no me molesté siquiera en buscar información sobre cómo resolverlo. Y cuando alguien me mostró que era fácil, la “creencia limitante” desapareció y en unos días ya pude aprenderlo.\nLa metáfora es perfecta. Nunca aprenderemos lo que consideramos que es más difícil de lo que podemos aprender. Una profesía autocumplida. Y lo peor, es sabemos que no hay nada que sea imposible de aprender. Todo está a nuestro alcance, sobre todo hoy en día, con toda la información que está disponible en internet. Sólo hay 2 temas: (1) creer que podemos aprenderlo y (2) motivarse de manera contínua hasta aprenderlo.\nMoraleja: ¡Cuidar de poner en pedestal una “inteligencia”, porque la mayor parte del tiempo es una habilidad que puede aprenderse!"
   },
   {
-    "objectID": "posts/2023-11-30-vizzu/vizzu.html",
-    "href": "posts/2023-11-30-vizzu/vizzu.html",
-    "title": "Another page",
+    "objectID": "posts/2023-12-17-navidad-con-ia/2023-12-17-navidad-con-ia.html",
+    "href": "posts/2023-12-17-navidad-con-ia/2023-12-17-navidad-con-ia.html",
+    "title": "Navidad con IA",
     "section": "",
-    "text": "¿Podemos incrustar animaciones de Vizzu en un blog?\n¡SI SE PUEDE!\n\n\nShow the code\nimport pandas as pd\n \nfrom ipyvizzu import Data, Config, Style\nfrom ipyvizzustory import Story, Slide, Step\n \n \n# Create data object, read csv to data frame and add data frame to data object\ndata = Data()\ndf = pd.read_csv(\n    \"https://ipyvizzu-story.vizzuhq.com/0.9/examples/population/population.csv\",\n    dtype={\"Year\": str},\n)\ndata.add_df(df)\n \n \n# Create story object, add data to it\nstory = Story(data=data)\n \n# Set the size of the HTML element\n# that appears within the notebook\nstory.set_size(\"100%\", \"400px\")\n \n# Switch on the tooltip that appears\n# when the user hovers the mouse over a chart element\nstory.set_feature(\"tooltip\", True)\n \n \n# Each slide here is a page in the final interactive story\n# Add the first slide\nslide1 = Slide(\n    Step(\n        Data.filter(\"record.Continent == 'Africa'\"),\n        Config.stackedArea(\n            {\n                \"x\": \"Year\",\n                \"y\": \"Medium\",\n                \"stackedBy\": \"Subregion\",\n                \"title\": \"Population of Africa 1953-2098\",\n            }\n        ),\n        Style({\"plot\": {\"xAxis\": {\"label\": {\"angle\": 2.0}}}}),\n    )\n)\n# Add the slide to the story\nstory.add_slide(slide1)\n \nslide2 = Slide(\n    Step(\n        Config.percentageArea(\n            {\n                \"x\": \"Year\",\n                \"y\": \"Medium\",\n                \"stackedBy\": \"Subregion\",\n            }\n        ),\n    )\n)\nstory.add_slide(slide2)\n \nslide3 = Slide(\n    Step(\n        Config.stream(\n            {\n                \"x\": \"Year\",\n                \"y\": \"Medium\",\n                \"stackedBy\": \"Subregion\",\n            }\n        ),\n    )\n)\nstory.add_slide(slide3)\n \nslide4 = Slide(\n    Step(\n        Config.violin(\n            {\n                \"x\": \"Year\",\n                \"y\": \"Medium\",\n                \"splittedBy\": \"Subregion\",\n            }\n        ),\n    )\n)\nstory.add_slide(slide4)\n \n \n# Play the created story!\nstory.play()"
+    "text": "En una de esas extrañas rutas de navegación en youtube, encontré que existen muchos videos de clásicas canciones navideñas, pero donde se ha usado IA para cambiar al cantante. El resultado resulta sorprendente y ayuda a cambiar un poco estas canciones que después de un rato comienzan a ser un poco repetidas:\n\nAll I Want For Christmas Is You\n\nFreddy Mercury\nRick Astley\n\nLast Christmas\n\nMichael Jackson\nFreddy Mercury\nElvis\n\nHappy Xmas (War is over)\n\nElvis\n\nThank God it’s Christmas\n\nQueen\nBob Esponja\n\nIt’s Beginning To Look A Lot Like Christmas\n\nFrank Sinatra\nCalamardo\nDarth Vader\n\n\nCreo que el resultado es impresionante, y las características de la voz se identifican perfectamente. Sin embargo, las notas siguen siendo exactamente las mismas, sin mucha variedad al original, y quizás podría ser interesante dar un poco más de variabilidad en la interpretación."
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-08-book-review-trillion-dollar-coach.html",
+    "href": "posts/2019-2023-lectura/2020-01-08-book-review-trillion-dollar-coach.html",
+    "title": "Trillion Dollar Coach",
+    "section": "",
+    "text": "Había escuchado de este libro en podcasts relacionados con productividad y coaching, pero hasta ahora no me había dado el tiempo. Gran pequeña joya de 100 páginas. Lo más destacable: la importancia de relacionarse más allá de lo laboral, de traer lo humano y lo personal al trabajo. Hice un post aparte, para destacar sus principales lecciones y relacionarlas con la metodología SCRUM; tienen muchas cosas en común."
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-08-book-review-trillion-dollar-coach.html#rating-1010",
+    "href": "posts/2019-2023-lectura/2020-01-08-book-review-trillion-dollar-coach.html#rating-1010",
+    "title": "Trillion Dollar Coach",
+    "section": "Rating: 10/10",
+    "text": "Rating: 10/10"
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2021-08-18-book-review-all-systems-red.html",
+    "href": "posts/2019-2023-lectura/2021-08-18-book-review-all-systems-red.html",
+    "title": "All systems red",
+    "section": "",
+    "text": "Un libro divertido y fácil de leer. El personaje central es un robot humanoide, y tiene muchas características humanas: humor negro, desprecio por el trabajo, limitaciones de multitasking, procrastinación y adicción a las series televisivas. Me resulta divertida la idea de que la evolución de la tecnología termine produciendo características tan humanas y alejadas de lo perfecto. El nudo central del libro es un poco simplón, pero la narración está muy bien lograda."
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-17-book-review-ready-player-2.html",
+    "href": "posts/2019-2023-lectura/2020-01-17-book-review-ready-player-2.html",
+    "title": "Ready Player 2",
+    "section": "",
+    "text": "¡Descubrí que existía una continuación a Ready Player One! Lamentablemente, fue una gran decepción. El libro parte lento, se demora en establecer el conflicto, que resulta poco creíble incluso para este tipo de libro. Además se hacen muchas referencias y explicaciones innecesarias al primer libro. Intenta cubrir referencias pop de los 80 y 90s que no cubrió en el primer libro porque no pasaron el corte para la primera novela: las películas de John Hughes (The Breakfast Club, Ferris Bueller’s Day Off, Pretty in Pink), la música de Prince, el mundo de Tolkien, entre otros."
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-16-book-review-ready-player-1.html",
+    "href": "posts/2019-2023-lectura/2020-01-16-book-review-ready-player-1.html",
+    "title": "Ready Player 1",
+    "section": "",
+    "text": "Me compré la Oculus Quest 2, y aluciné (y sigo alucinando) tanto con la realidad virtual que quise releer este libro, que había comprado y leído en un viaje anterior a EEUU. Dato freak: se comenta que los empleados de Oculus recibían una copia del libro cuando entraban a trabajar a la empresa. Es un bestseller entretenido, con constantes referencias a los videojuegos y música de los 80 y 90s, y enigmas por resolver. Después mi hijo tomó el libro y no logramos despegarlo hasta que lo terminó en 2 días después (y eso que tiene como 600 páginas)."
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-02-book-review-flying-free.html",
+    "href": "posts/2019-2023-lectura/2020-01-02-book-review-flying-free.html",
+    "title": "Flying Free",
+    "section": "",
+    "text": "Conocí a Cecilia en una charla en la UTFSM, y su sinceridad y humanidad me llamó profundamente la atención. No tenía idea que fue piloto acrobática de aviones, y su historia es increíble. Me devoré el libro y lo he recomendado a varios amigos. Extrañé fue un final más gradioso."
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-02-book-review-flying-free.html#rating-810",
+    "href": "posts/2019-2023-lectura/2020-01-02-book-review-flying-free.html#rating-810",
+    "title": "Flying Free",
+    "section": "Rating: 8/10",
+    "text": "Rating: 8/10"
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-06-book-review-iq.html",
+    "href": "posts/2019-2023-lectura/2020-01-06-book-review-iq.html",
+    "title": "IQ",
+    "section": "",
+    "text": "Una novela policial atípica: el detective es un joven afroamericano sin estudios pero astuto y con mucha calle, que se mueve entre la pobreza y el lujo de Los Ángeles. El caso no es un crimen cometido, sino una sospecha de asesinato por encargo en pleno desarrollo. Diálogos muy divertidos, entretenido y rápido de leer, aunque sin mucho misterio. 100% seguro que lo convertirán en película."
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-06-book-review-iq.html#rating-610",
+    "href": "posts/2019-2023-lectura/2020-01-06-book-review-iq.html#rating-610",
+    "title": "IQ",
+    "section": "Rating: 6/10",
+    "text": "Rating: 6/10"
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-15-book-review-percy-jackson-(1-y-2).html",
+    "href": "posts/2019-2023-lectura/2020-01-15-book-review-percy-jackson-(1-y-2).html",
+    "title": "Percy Jackson (1 y 2)",
+    "section": "",
+    "text": "Mi hijo leyó los 5 libros en tiempo récord y me instó a leerlos. Es interesante el concepto de la presencia de dioses, semodioses y héroes en un contexto moderno. Novelas adolescente, lectura liviana pero entretenida. En general 6/10, en el contexto de niños y adolescentes 10/10."
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-18-book-review-sandman-volumen-1.html",
+    "href": "posts/2019-2023-lectura/2020-01-18-book-review-sandman-volumen-1.html",
+    "title": "Sandman volumen 1",
+    "section": "",
+    "text": "Había leído todas las historias cuando adolescente, comprándolas en desorden y a diversos precios en las escasas tiendas con cómics de San Antonio en los 90’s, pero al leerlas en orden y con anotaciones encontré una profundidad y coherencia mucho mayor. Es una gran obra de arte. Junto con “El libro del cementerio”, lo mejor de Gaiman. La forma en que se van conectando los personajes y las historias es magistral."
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-09-book-review-estrategia-de-datos.html",
+    "href": "posts/2019-2023-lectura/2020-01-09-book-review-estrategia-de-datos.html",
+    "title": "Estrategia de Datos",
+    "section": "",
+    "text": "Un libro más bien técnico, sobre distintas estrategias a tomar respecto a los datos de una organización. Interesante, pero de una redacción dificil de seguir."
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-12-book-review-a-smarter-way-to-learn-javascript.html",
+    "href": "posts/2019-2023-lectura/2020-01-12-book-review-a-smarter-way-to-learn-javascript.html",
+    "title": "A Smarter Way to Learn JavaScript",
+    "section": "",
+    "text": "Quería refrescar y profundizar mi conocimiento en javascript sin tener que leer demasiado. Este libro se consumía en capítulos cortos y prácticos, justo lo que necesitaba."
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-07-book-review-all-these-wonders.html",
+    "href": "posts/2019-2023-lectura/2020-01-07-book-review-all-these-wonders.html",
+    "title": "All these wonders",
+    "section": "",
+    "text": "Mi hermana me introdujo al mundo de estas breves historias, personales y emotivas. Son perfectamente cortas para leer en cualquier momento, pero profundas y emocionantes para que no sean irrelevantes. Difícil decir cuál me gustó más."
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-07-book-review-all-these-wonders.html#rating-1010",
+    "href": "posts/2019-2023-lectura/2020-01-07-book-review-all-these-wonders.html#rating-1010",
+    "title": "All these wonders",
+    "section": "Rating: 10/10",
+    "text": "Rating: 10/10"
+  },
+  {
+    "objectID": "tutorial/quarto.html",
+    "href": "tutorial/quarto.html",
+    "title": "Tutorial Quarto",
+    "section": "",
+    "text": "Quarto es un “sistema de publicación”. Usando un formato de markdown enriquecido permite generar páginas web, presentaciones, blogs y mucho más. El formato de los archivos es .qmd."
+  },
+  {
+    "objectID": "tutorial/quarto.html#qué-es-quarto",
+    "href": "tutorial/quarto.html#qué-es-quarto",
+    "title": "Tutorial Quarto",
+    "section": "",
+    "text": "Quarto es un “sistema de publicación”. Usando un formato de markdown enriquecido permite generar páginas web, presentaciones, blogs y mucho más. El formato de los archivos es .qmd."
+  },
+  {
+    "objectID": "tutorial/quarto.html#formato-de-texto",
+    "href": "tutorial/quarto.html#formato-de-texto",
+    "title": "Tutorial Quarto",
+    "section": "Formato de texto",
+    "text": "Formato de texto\nEl siguiente texto:\n*cursivas*, **negritas**, ***negritas cursivas***,  \n~~tachado~~, superíndice^2^, subíndice~2~, `verbatim`   \nse mostrará así:\ncursivas, negritas, negritas cursivas,\ntachado, superíndice2, subíndice2, verbatim\nMuy importante: Puedes hacer un salto de línea simple con dos espacios en blanco, o un salto de línea grande separando con 2 líneas.\nAsí, por ejemplo, el código markdown\nLorem ipsum\nes aburrido.  \nEsta es una nueva línea.\n\nEste es un nuevo párrafo.\nse mostrará como\nLorem ipsum es aburrido.\nEsta es una nueva línea.\nEste es un nuevo párrafo."
+  },
+  {
+    "objectID": "tutorial/quarto.html#títulos",
+    "href": "tutorial/quarto.html#títulos",
+    "title": "Tutorial Quarto",
+    "section": "Títulos",
+    "text": "Títulos\nSe utiliza la clásica convención para # Título, ## Subtítulo, … , ###### Subsubsubsubsubsub-título,"
+  },
+  {
+    "objectID": "tutorial/quarto.html#links",
+    "href": "tutorial/quarto.html#links",
+    "title": "Tutorial Quarto",
+    "section": "Links",
+    "text": "Links\nLos siguientes códigos permiten incrustar links\n&lt;https://quarto.org&gt;  \n[Quarto](https://quarto.org)"
+  },
+  {
+    "objectID": "tutorial/quarto.html#imágenes",
+    "href": "tutorial/quarto.html#imágenes",
+    "title": "Tutorial Quarto",
+    "section": "Imágenes",
+    "text": "Imágenes\nEl código markdown para imágenes es similar a los links, pero usa un ! para distinguirlos. Es posible mezclar\n![Caption](elephant.png)  \n![Caption](elephant.png \"Elephant\"){fig-alt=\"An elephant.\"}\nEs posible hacer una imagen “clickeable” mezclando los códigos respectivos:\n[![Caption](elephant.png)](https://quarto.org)  \n[![Caption](elephant.png \"Elephant\"){fig-alt=\"An elephant.\"}](https://quarto.org)"
+  },
+  {
+    "objectID": "tutorial/quarto.html#videos",
+    "href": "tutorial/quarto.html#videos",
+    "title": "Tutorial Quarto",
+    "section": "Videos",
+    "text": "Videos\nPara incluir videos puedes usar el código {{&lt; video &gt;}} :\n{{&lt; video https://www.youtube.com/embed/wo9vZccmqwc &gt;}}"
+  },
+  {
+    "objectID": "tutorial/quarto.html#listas",
+    "href": "tutorial/quarto.html#listas",
+    "title": "Tutorial Quarto",
+    "section": "Listas",
+    "text": "Listas\n\n\n\n\n\n\n\nCódigo en Markdown\nOutput\n\n\n\n\n* unordered list\n    + sub-item 1\n    + sub-item 2\n        - sub-sub-item 1\n\nunordered list\n\nsub-item 1\nsub-item 2\n\nsub-sub-item 1\n\n\n\n\n\n1. ordered list\n2. item 2\n    i) sub-item 1\n         A.  sub-sub-item 1\n\nordered list\nitem 2\n\nsub-item 1\n\nsub-sub-item 1\n\n\n\n\n\n(@)  A list whose numbering\n\ncontinues after\n\n(@)  an interruption\n\nA list whose numbering\n\ncontinues after\n\nan interruption\n\n\n\n::: {}\n1. A list\n:::\n\n::: {}\n1. Followed by another list\n:::\n\n\nA list\n\n\n\n\nFollowed by another list\n\n\n\n\nterm\n: definition\n\nterm\n\ndefinition\n\n\n\n\n\nNotar que las listas necesitan una linea en blanco sobre la lista, de lo contrario no se mostrarán correctamente."
+  },
+  {
+    "objectID": "tutorial/quarto.html#tablas",
+    "href": "tutorial/quarto.html#tablas",
+    "title": "Tutorial Quarto",
+    "section": "Tablas",
+    "text": "Tablas\nLas tablas siguen el formato clásico en markdown, y donde la alineación se define con :, como muestra el siguiente código:\n| Derecha | Izquierda | Por Defecto | Centrada |\n|------:|:-----|---------|:------:|\n|   12  |  12  |    12   |    12  |\n|  123  |  123 |   123   |   123  |\n|    1  |    1 |     1   |     1  |\nque se mostrará así:\n\n\n\nDerecha\nIzquierda\nPor Defecto\nCentrada\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1\n\n\n\nEn el siguiente enlace hay más información: https://quarto.org/docs/authoring/tables.html."
+  },
+  {
+    "objectID": "tutorial/quarto.html#código",
+    "href": "tutorial/quarto.html#código",
+    "title": "Tutorial Quarto",
+    "section": "Código",
+    "text": "Código\nPara delimitar bloques de código que se mostrar sin ejecutar se utiliza ```\n```\ncódigo\n```\nPuedes añadir un lenguaje (python, markdown, html, javascript, etc) para resaltar correctamente la sintaxis del lenguaje. Así el siguiente código\n```python\nprint(\"¡Que tal, festival!\")\n```\nse verá así:\nprint(\"¡Que tal, festival!\")\nPara delimitar bloques de código que se ejecutarán, como celdas en jupyter notebook/lab, se utilizan parentesis de llave encerrando el lenguaje, así por ejemplo el siguiente código\n\n::: {.cell execution_count=1}\n``` {.python .cell-code}\nprint(\"¡Que tal, festival!\")\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n¡Que tal, festival!\n```\n:::\n:::\n\nque se verá así:\n\nprint(\"¡Que tal, festival!\")\n\n¡Que tal, festival!"
+  },
+  {
+    "objectID": "tutorial/quarto.html#ecuaciones",
+    "href": "tutorial/quarto.html#ecuaciones",
+    "title": "Tutorial Quarto",
+    "section": "Ecuaciones",
+    "text": "Ecuaciones\nUtilice delimitadores $ para las ecuaciones en línea y delimitadores $$ para ecuaciones en línea propia.\nAsí, por ejemplo $E = mc^{2}$ se mostrará como \\(E=mc^{2}\\).\nPor otra parte, $$ E = mc^{2}$$ se mostrará así \\[ E = mc^{2}\\]"
+  },
+  {
+    "objectID": "tutorial/quarto.html#columnas",
+    "href": "tutorial/quarto.html#columnas",
+    "title": "Tutorial Quarto",
+    "section": "Columnas",
+    "text": "Columnas\nEs posible definir columnas de manera sencilla, usando :::: y :::.\nEl siguiente código:\n:::: {.columns}\n\n::: {.column width=\"40%\"}\nColumna izquierda...\n:::\n\n::: {.column width=\"60%\"}\nColumna derecha\n:::\n\n::::\nSe mostrará así:\n\n\nColumna izquierda…\n\nColumna derecha"
+  },
+  {
+    "objectID": "tutorial/quarto.html#referencias",
+    "href": "tutorial/quarto.html#referencias",
+    "title": "Tutorial Quarto",
+    "section": "Referencias",
+    "text": "Referencias\nEste archivo está basado en https://quarto.org/docs/authoring/markdown-basics.html\n\nhttps://quarto.org/docs/presentations/: Información extra para presentaciones."
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-14-book-review-ocasional-magic.html",
+    "href": "posts/2019-2023-lectura/2020-01-14-book-review-ocasional-magic.html",
+    "title": "Ocasional Magic",
+    "section": "",
+    "text": "Más historias de The Moth, a la altura del otro libro. Historias emocionantes, profundas, todas muy distintas unas de otras."
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-05-book-review-nudge.html",
+    "href": "posts/2019-2023-lectura/2020-01-05-book-review-nudge.html",
+    "title": "Nudge",
+    "section": "",
+    "text": "Una propuesta interesante, sobre lo fácil que es realizar pequeñas influencias en las elecciones. Se apoya en la diferencia entre los Econs y Humans. Los Econs son los personajes mitológicos que realizan analizan todos los datos disponibles y realizan elecciones perfectas, mientras que los Humans son personas que actúan como humanos reales: a veces emocional, a veces irracional, a veces intuitivamente. La propuesta es interesante, pero el libro es más largo de lo que debería y demasiados ejemplos son anglocéntricos. Fue escrito el 2008 y algunos ejemplos se sienten un poco desactualizados (Netflix hace rato no es una “mail-order DVD rental company”)"
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-05-book-review-nudge.html#rating-710.",
+    "href": "posts/2019-2023-lectura/2020-01-05-book-review-nudge.html#rating-710.",
+    "title": "Nudge",
+    "section": "Rating: 7/10.",
+    "text": "Rating: 7/10."
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-10-book-review-the-gifts-of-imperfection.html",
+    "href": "posts/2019-2023-lectura/2020-01-10-book-review-the-gifts-of-imperfection.html",
+    "title": "The gifts of imperfection",
+    "section": "",
+    "text": "En línea con el libro de “Trillion Dollar Coach”, habla sobre cómo la vulnerabilidad nos conecta como humanos. Los 3 regalos de la imperfección son el coraje, la compasión y la conexión, en una invitación a vivir de manera más auténtica: aceptarnos con nuestras imperfecciones, abrazar nuestros gustos y excentricidades, y dejar de aparentar y creernos el cuento de la madurez. Dos historias me marcaron. La primera: lo importante de no disminuir la importancia de eventos o cosas que sí nos importan para proteger nuestro ego en caso que no resulten, porque tiene como consecuencia que estos mismos eventos no nos alegren o emocionen tanto cuando pasan. La segunda: ser valiente no tiene una única cara. Para una persona extrovertida y osada, ser valiente puede ser no responder un insulto y empezar una pelea. Para una persona introvertida, ser valiente puede ser exactamente lo contrario: responder un insulto y defender su opinión."
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-01-book-review-atomic-habits.html",
+    "href": "posts/2019-2023-lectura/2020-01-01-book-review-atomic-habits.html",
+    "title": "Atomic habits",
+    "section": "",
+    "text": "A pesar que ya había leído varias otros libros y artículos sobre hábitos, este libro me gustó mucho y aprendí más de lo que esperaba. Está bien estructurado, fácil de leer y tiene una mezcla interesante de anécdotas personales y consejos prácticos."
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-01-book-review-atomic-habits.html#rating-1010",
+    "href": "posts/2019-2023-lectura/2020-01-01-book-review-atomic-habits.html#rating-1010",
+    "title": "Atomic habits",
+    "section": "Rating: 10/10",
+    "text": "Rating: 10/10"
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-19-book-review-comics-de-guy-delisle.html",
+    "href": "posts/2019-2023-lectura/2020-01-19-book-review-comics-de-guy-delisle.html",
+    "title": "Guía del mal padre y otros",
+    "section": "",
+    "text": "Comencé con la Guía del mal padre (1, 2, 3 y 4), una risible y fresca mirada sobre la paternidad, que disfrutamos todos en la casa. Luego descubrí sus cómics sobre sus estancias en Birmania (Crónicas Birmanas), Israel (Crónicas de Jerusalén), Corea del Norte (Pyon Pyan) y China (Crónicas de Shenzen). Logra transmitir muy bien la experiencia de vivir en lugares tan particulares, con sus curiosidades y excentricidades. Me recordó cuando viví fuera de Chile, en Francia y Estados Unidos, llenándome de nostalgia."
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-03-book-review-never-split-the-deal.html",
+    "href": "posts/2019-2023-lectura/2020-01-03-book-review-never-split-the-deal.html",
+    "title": "Never split the deal",
+    "section": "",
+    "text": "Mezcla de anécdotas de distintas negociaciones y una larga lista de consejos. Muy, pero muy bueno. De esos libros que deseas que alguien te hubiera recomendado antes. No me esperaba que este libro me hiciera pensar, reír y emocionar."
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-03-book-review-never-split-the-deal.html#rating-1010",
+    "href": "posts/2019-2023-lectura/2020-01-03-book-review-never-split-the-deal.html#rating-1010",
+    "title": "Never split the deal",
+    "section": "Rating: 10/10",
+    "text": "Rating: 10/10"
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-13-book-review-the-monk-who-sold-his-ferrari.html",
+    "href": "posts/2019-2023-lectura/2020-01-13-book-review-the-monk-who-sold-his-ferrari.html",
+    "title": "The monk who sold his ferrari",
+    "section": "",
+    "text": "Me llamó la atención el título y leí algunas recomendaciones, por lo que decidí darle una oportunidad. Terrible error, fue una tortura, pero seguí avanzando por si en algún momento llegaba la iluminación y se justificaba el libro. Dicho momento no llegó."
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2022-11-18-book-review-sheik-ceo.html",
+    "href": "posts/2019-2023-lectura/2022-11-18-book-review-sheik-ceo.html",
+    "title": "The Sheik CEO",
+    "section": "",
+    "text": "Recientemente (Octubre 2022) tuve que viajar a Abu Dhabi por trabajo. Fue una experiencia extremadamente interesante, aprendí muchísimas cosas que desconocía del país. Me compré este libro para aprender un poco más sobre los Estados Árabes Unidos y el dramático cambio que han tenido en los últimos 50 años. El libro es un relato del Dr. Yasar Jarrar, quien trabajó directamente con el Sheikh Mohammed bin Rashid Al Maktoum, a quien llamaban el Sheik CEO porque tenía una visión muy pragmática del gobierno. El libro de Jarrar es una reflexión sobre cómo el estilo de liderazgo del sheik influyó en el rápido desarrollo de los EAU. El libro es mitad publicidad de EAU, mitad reflexión sobre el estilo de liderazgo del sheik, pero de todas maneras muy interesante."
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2022-11-18-book-review-sheik-ceo.html#comentario",
+    "href": "posts/2019-2023-lectura/2022-11-18-book-review-sheik-ceo.html#comentario",
+    "title": "The Sheik CEO",
+    "section": "",
+    "text": "Recientemente (Octubre 2022) tuve que viajar a Abu Dhabi por trabajo. Fue una experiencia extremadamente interesante, aprendí muchísimas cosas que desconocía del país. Me compré este libro para aprender un poco más sobre los Estados Árabes Unidos y el dramático cambio que han tenido en los últimos 50 años. El libro es un relato del Dr. Yasar Jarrar, quien trabajó directamente con el Sheikh Mohammed bin Rashid Al Maktoum, a quien llamaban el Sheik CEO porque tenía una visión muy pragmática del gobierno. El libro de Jarrar es una reflexión sobre cómo el estilo de liderazgo del sheik influyó en el rápido desarrollo de los EAU. El libro es mitad publicidad de EAU, mitad reflexión sobre el estilo de liderazgo del sheik, pero de todas maneras muy interesante."
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2022-11-18-book-review-sheik-ceo.html#apuntes-del-libro-textuales",
+    "href": "posts/2019-2023-lectura/2022-11-18-book-review-sheik-ceo.html#apuntes-del-libro-textuales",
+    "title": "The Sheik CEO",
+    "section": "Apuntes del libro (textuales)",
+    "text": "Apuntes del libro (textuales)\n\nDubai INC\n\nLa fortuna es una desventaja selectiva: lo que nos favorece y nos entrega facilidades es una desventaja si nos confiamos y no lo usamos para prepararnos. Esa es la razón por la cual la UAE está invirtiendo tanto en diversificar su economía, en turismo y educación, para no depender de la renta petrolera.\nLa competición es clave para el éxito. A través de varios ejemplos, se muestra que el monopolio lleva a la ineficiencia y conformidad. Para alcanzar el máximo potencial es necesario que hayan competidores.\n\n\n\nLiderar con coraje y visión\n\nTen gran ambición y aspiración. Lucha por ser el mejor y el número uno. No planifiques o aceptes metas mediocres. El problema no es tener metas altas y quedar corto, sino que tener metas bajas y alcanzarlas.\nEl tiempo es el principal recurso: usalo bien y rápido. Hacer algo hoy al 60% es mejor que 80% el próximo mes y 90% el próximo año. No malgastes tiempo y no permitas que tus competidores ganen una ventaja temporal. Comienza rápido. Si funciona, refina, repiute y perfeccionalo. La repetibilidad es clave para ganar velocidad.\nManeja la atención (concentración), no el tiempo. La gestión de la atención (concentración) es darse cuenta de cuánta atención inviertes en ciertas actividades y distracciones. Te ayudará a estar focalizado en las actividades claves y evitar las distracciones. En productividad, la gestión del tiempo es parte del problema (no es la solución).\nLa imaginación no es suficiente. Debe acompañarse de acciones temerarias. Toma riesgos y aduéñate de tus acciones y riesgos. Arriesga aunque puedas fallar, pero considera que hay “buenos riesgos” y “malos riesgos”. No tomes riesgos antes de tiempo, pero cuando lo hagas, hazlo con todo. Las probabilidades sueles ser mejores que tu peor escenario.\nSi tienes una visión y crees en ella (y puedes respaldarlo con datos/hechos) no te distraigas por la negatividad de otros. Imagina una versión del mañana y construye tu camino hacia ella. Cuando tienes una visión clara, el fracaso no es una opción incluso cuando ocurre. Un líder siempre debe tener el foco puesto en el largo plazo. La vida es una maratón, y habrán piedras en el camino. Fallar está bien, mientras lo veas como otro paso en el camino hacia cumplir tu visión.\n\n\n\nAcción le gana a todo lo demás\n\nEntrega (deliverability) requiere disciplina, y disciplina viene de entender que el tiempo es nuesto recurso más valioso y no es renovable. 5 minutos antes es apenas justo a tiempo. Respeta el tiempo de tus colaboradores - no llegues tarde a reuniones o canceles reuniones. Si no conoces el valor del tiempo, no lograrás entregar a tiempo tus proyectos o tu visión.\nConoce cuando desistir. Aprende la lección de “fallar rápido” y reconoce cuando es momento de cancelar un proyecto o actualizar tu pensamiento. En la mayoría de los sectores públicos del mundo es más más facil proponer un nuevo proyecto que cancelar un antiguo, o admitir que algo no ha funcionado. Tener el coraje de decir “esto no funcionó”, cancelarlo o cambiarlo, es crucial para el mundo en el que vivimos. Agilidad significa saber cuando renunciar, y rápido, yser capaz de adaptarse a la dirección que se necesite.\nHace que la entrega sea personal: muestra a tu equipo la oportunidad y una visión del futuro que buscan construir, y háceles creer que son completamente responsables de sus acciones y consecuencias. Esta mentalidad y un sistema de accouintaibility personal, que se debe acoplar con capacidad de acción (enablement) y autoridad. No dejar espacio para excusas. Si alguien promete, haz que sea seguro que puedan cumplir o dejar el espacio para que alguien más pueda hacerlo. Cuando hablamos de entrega (delivery), es blanco o negro, no hay lugar para grises.\nPonle foco a los detalles y conoce el contenido de cada reporte. No seas una persona “de mirada amplia” y que habla solo en jerigonza. El éxito en la vida está en entender los detalles, en ver y apreciar las pequeñas cosas. El éxito se conquista un paso a la vez, detalle a detalle. Para aprender los detalles: lee, investiga, pide información, observa. No aceptes información de segunda mano.\nAprende el poder de un “agradecimiento personalizado”. No hay un motivador más fuerte. Como líder, agradecer a tu equipo genuinamente ayuda a construir moral, actitud positiva y respeto. Si se hace correctamente, puede ser un motivador más fuerte que el mismo dinero. Un agradecimiento sincero emociona, motiva y genera un comportamiento positivo.\nPrioriza despiadamente y colócale recursos a tus prioridades. Si todo es una prioridad, nada lo es. ¿Cuál es LA tarea que tienes que hacer? Hazla, y hazla bien. Alcanza el éxito en esa tarea, y muévete a la siguiente tarea.\nNunca dejes de moverte hacia adelante. No importa quien seas, despiértate y corre a tu máxima velocidad. Cada día es un nuevo comienzo, una posibilidad de agregar a los éxitos de ayer y de mover hacia adelante tu visión, metas y sueños. La vida se detiene solo cuando dejar de moverte hacia adelante. Recuerda la historia del león y la gacela: cada mañana la gacela despierta y piensa “hoy tengo que correr lo más rapido posible para escapar de los leones”. Cada mañana el león despierta y piensa “hoy tengo que correr lo más rápido posible si quiero atrapar a una gacela”. No importa si eres presa o depredador, tienes que tener la mentalidad de correr lo más rápido que puedes para conseguir el éxito.\n\n\n\nNunca creer que tu trabajo está completado\n\nInnova o perece. Las oportunidades se tiene que crear, no llegan mágicamente. Para innovar tienes que salir de tu zona de comodidad y pensar distinto. Esto no sucederá por estar en la misma oficina hablando con la misma gente. Sé atrevido: habla con gente nueva, visita lugares nuevos, lee libros nuevos, aprende cosas nuevas. No puedes resolver nuevos problemas con las mismas herramientas y mentalidad que crearon el problema. Dedica parte de tu tiempo y semana a mirar y pensar en cosas no tradicionales.\nLa clave es cliente-centrismo. Escucha a tus clientes y diseña alrededor de sus necesidades. Escucha a cualquiera que estés atendiendo. No olvides que la única medida de éxito es la satisfacción del cliente.\nInvierte en ideas que harán tu trabajo obsoleto o redundante. Nunca olvides que las organizaciones y líderes que fallan en innovar perecen. Crea nuevos modelos que hacen que los modelos actuales sean obsoletos.\nManten la mente abierta y nunca dejes de escuchar. Escucha a gente que te critica, antes que a la gente que te alaba. Nunca creas que estás 100% correcto. Siempre hay una posibilidad que estés 1% equivocado. Manten eso en perspectiva y busca retroalimentación y busca formas de mejorar tu pensamiento y mentalidad.\nNunca digas nunca. La única forma de acción es ser ágil e innovar. Se un idealista y apunta a las estrellas, pero siempre mantente abierto al cambio y las oportunidades. No es la especie más fuerte la que sobrevive, sino la que se adapta más rápido.\n\n\n\nRodéate de líderes fuertes\n\nAsegúrate de formar nuevos líderes: búscalos, mentorízalos, hazlos crecer, dales soporte. Esto no sólo es clave para entregar tu visión y legado, es simplemente la manera correcta de proceder. Una comunidad de líderes que crece es una experiencia gratificante.\nAsegúrate que fomentas líderes basado en mérito, diversidad y balance de género. La diversidad es el corazón de la innovación, y evita llegar a una conclusión porque todos piensan lo mismo por ser demasiado parecidos.\nDelega, delega, delega. Para crecer, tienes que tener un gran equipo y tienes que delegar trabajo en ellos. Diseña tu “zona de genialidad” donde tienes un gran equipo que comparte tu visión, maneja la entrega del trabajo, y te permite concentrarte en refinar tu visión.\nGrandes líderes tienen la capacidad de sacar lo mejor de cada situación. Son corajudos y no tienen miedo de enfrentar el status-quo y empujar los límites para hacer las cosas mejores. No creen que tienen todas las respuestas. Los mejores líderes saben como sacer lo mejor de cada persona. En resumen: es la capacidad de encontrar, desarrollar y motivar a los mejores talentos.\n\n\n\nGanar corazón y mente\n\nTiming es todo. Grandes ideas no llegan a puerto por mala comunicación y mal timing. Incluso si crees que tienes la mejor idea, busca comunicarla de la mejor manera y en el mejor moento. Un líder es un director de orquesta.\nManeja los “nuevos medios digitales”. No hay escape de la era digital. Los nuevos líderes tienen que manejarse en redes sociales. No sólo ayuda a llegar a una audiencia mucho mayor, sino que también los hace más humanos.\nUn excelente comunicador debe saber escuchar. Escuchar te permite entender y conectar. Cuando haces eso, la comunicación se vuelve natural. Tienes 2 orejas y 1 boca: escucha el doble de lo que hablas.\nNunca tomes una decisión en un etado de cansancio o estrés. Maneja el nivel de estrés mental o físico, especialmente en crisis. Mantén el optimismo y la calma. Lo básico funciona bien: duerme bien, toma largas caminatas, y hace tu propio café - en esencia mindfulness.\nAprende a contar historias. Cuenta historias que capturan el corazon de la gente y explica tu impacto y contribucion de una manera única. Asegúrate que tus historias parten con el “porqué” (como lo hace Simon Sinek en Why).\nTrabaja para alguien más grande que tú mismo. Enfócate en la gente, en hacer cosas que ayuden a la gente, y en crear impacto. Grandes cosas ocurren a aquelllos que trabajan para algo más grande. Hay más alegría, más satisfacción y más sentido de propósito.\nPreocúpate de tí mismo. Si no te cuidas a ti mismo, no podrás entregar tu máximo y ayudar a los demás. Ten un hobbie, haz ejercicio, come bien, duerme bien, y haz lo que te hace feliz.\n\n\n\nVamos a marte\nLa iniciativa de una misión a Marte entrega 3 mensajes: (1) la civilización árabe recuperará su rol de contribución a la civilización humana, (2) la EAU puede competir con cualquier país en el mundo, y (3) no hay que ponerle límites a las ambiciones. El interés de EAU es potenciar la hermandad de las naciones árabes, inspirar a una generación, e invertir en las personas, al mismo tiempo que en ciencia y tecnología."
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-04-book-review-matadero-palma.html",
+    "href": "posts/2019-2023-lectura/2020-01-04-book-review-matadero-palma.html",
+    "title": "Matadero Palma",
+    "section": "",
+    "text": "Lo compré después que lo recomendaron en un taller de narración policial. No era lo que esperaba, sino que mucho más. El mundo del matadero Franklin en los años 1940, con todos sus personajes memorables. Un verdadero clásico moderno."
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-04-book-review-matadero-palma.html#rating-910",
+    "href": "posts/2019-2023-lectura/2020-01-04-book-review-matadero-palma.html#rating-910",
+    "title": "Matadero Palma",
+    "section": "Rating: 9/10",
+    "text": "Rating: 9/10"
+  },
+  {
+    "objectID": "posts/2019-2023-lectura/2020-01-11-book-review-mindset.html",
+    "href": "posts/2019-2023-lectura/2020-01-11-book-review-mindset.html",
+    "title": "Mindset",
+    "section": "",
+    "text": "La versión actualizada del 2017 me pareció mucho mejor que el libro original, con más ejemplos y consejos prácticos. Rescato algo que en lecturas anteriores no capturé. Todos tenemos una mezcla de mentalidad fija y de crecimiento, que se manifiestan en distintas oportunidades. Mis principales rasgos fijos a cambiar: aceptar retroalimentación negativa."
   },
   {
     "objectID": "posts/2019-2023-lectura/2022-04-05-book-review-creativity-inc.html",
@@ -371,312 +679,11 @@
     "text": "Otros\n\nMistakes aren’t a necessary evil. They aren’t evil at all. They are an inevitable consequence of doing something new (and, as such, should be seen as valuable; without them, we’d have no originality). And yet, even as I say that embracing failure is an important part of learning, I also acknowledge that acknowledging this truth is not enough. That’s because failure is painful, and our feelings about this pain tend to screw up our understanding of its worth. To disentangle the good and the bad parts of failure, we have to recognize both the reality of the pain and the benefit of the resulting growth.\n\n\nThis is key: When experimentation is seen as necessary and productive, not as a frustrating waste of time, people will enjoy their work — even when it is confounding them.\n\n\nCan we teach in a way that our directors will think smart when we’re not around?”\n\n\nMaking the process better, easier, and cheaper is an important aspiration, something we continually work on—but it is not the goal. Making something great is the goal.\n\n\nBut if every day is sunny and it doesn’t rain, things don’t grow. And if it’s sunny all the time—if, in fact, we don’t ever even have night—all kinds of things don’t happen and the planet dries up. The key is to view conflict as essential, because that’s how we know the best ideas will be tested and survive. You know, it can’t only be sunlight.”\n\n\nHere’s what we all know, deep down, even though we might wish it weren’t true: Change is going to happen, whether we like it or not. Some people see random, unforeseen events as something to fear. I am not one of those people. To my mind, randomness is not just inevitable; it is part of the beauty of life. Acknowledging it and appreciating it helps us respond constructively when we are surprised. Fear makes people reach for certainty and stability, neither of which guarantee the safety they imply. I take a different approach. Rather than fear randomness, I believe we can make choices to see it for what it is and to let it work for us. The unpredictable is the ground on which creativity occurs. Our tenth movie, Up, would be one of our most emotionally rich and original films, but it was also a case study in change and randomness.\n\n\nI’ve heard some people describe creativity as ‘unexpected connections between unrelated concepts or ideas.’\n\n\nThis is the puzzle of trying to understand randomness: Real patterns are mixed in with random events, so it is extraordinarily difficult for us to differentiate between chance and skill.\n\n\nIf all our careful planning cannot prevent problems, then our best method of response is to enable employees at every level to own the problems and have the confidence to fix them. We want people to feel like they can take steps to solve problems without asking permission.\n\n\nOur mental models aren’t reality. They are tools, like the models weather forecasters use to predict the weather.\n\n\nThe problem comes when people think that data paints a full picture, leading them to ignore what they can’t see. Here’s my approach: Measure what you can, evaluate what you measure, and appreciate that you cannot measure the vast majority of what you do.\n\n\nIn my experience, creative people discover and realize their visions over time and through dedicated, protracted struggle. In that way, creativity is more like a marathon than a sprint. You have to pace yourself.\n\n\nYou’ll never stumble upon the unexpected if you stick only to the familiar. In my experience, when people go out on research trips, they always come back changed.\n\n\nCompanies, like individuals, do not become exceptional by believing they are exceptional but by understanding the ways in which they aren’t exceptional. Postmortems are one route into that understanding. In a postmortem, you can raise questions that should be asked on the next project. A good postmortem arms people with the right questions to ask going forward. We shouldn’t expect to find the right answers, but if we can get people to frame the right questions, then we’ll be ahead of the game.\n\n\nAlan Kay—Apple’s chief scientist and the man who introduced me to Steve Jobs—expressed it well when he said, “The best way to predict the future is to invent it.”\n\n\n“People want decisiveness, but they also want honesty about when you’ve effed up,” as Andrew says. “It’s a huge lesson: Include people in your problems, not just your solutions.”\n\n\nIn big organizations there are advantages to consistency, but I strongly believe that smaller groups within the larger whole should be allowed to differentiate themselves and operate according to their own rules, so long as those rules work. This fosters a sense of personal ownership and pride in the company that, to my mind, benefits the larger enterprise.\n\n\nNotes Day was a success in part because it was based on the idea that fixing things is an ongoing, incremental process. Creative people must accept that challenges never cease, failure can’t be avoided, and “vision” is often an illusion.\n\n\nThe truth is, as challenges emerge, mistakes will always be made, and our work is never done. We will always have problems, many of which are hidden from our view; we must work to uncover them and assess our own role in them, even if doing so means making ourselves uncomfortable; when we then come across a problem, we must marshal all our energies to solve it.\n\n\nBe wary of making too many rules. Rules can simplify life for managers, but they can be demeaning to the 95 percent who behave well. Don’t create rules to rein in the other 5 percent—address abuses of common sense individually. This is more work but ultimately healthier.\n\n\n“In many ways, the work of a critic is easy,” Ego says. “We risk very little yet enjoy a position over those who offer up their work and their selves to our judgment. We thrive on negative criticism, which is fun to write and to read. But the bitter truth we critics must face is that in the grand scheme of things, the average piece of junk is probably more meaningful than our criticism designating it so. But there are times when a critic truly risks something, and that is in the discovery and defense of the new."
   },
   {
-    "objectID": "posts/2019-2023-lectura/2020-01-11-book-review-mindset.html",
-    "href": "posts/2019-2023-lectura/2020-01-11-book-review-mindset.html",
-    "title": "Mindset",
+    "objectID": "posts/2023-11-30-vizzu/vizzu.html",
+    "href": "posts/2023-11-30-vizzu/vizzu.html",
+    "title": "Another page",
     "section": "",
-    "text": "La versión actualizada del 2017 me pareció mucho mejor que el libro original, con más ejemplos y consejos prácticos. Rescato algo que en lecturas anteriores no capturé. Todos tenemos una mezcla de mentalidad fija y de crecimiento, que se manifiestan en distintas oportunidades. Mis principales rasgos fijos a cambiar: aceptar retroalimentación negativa."
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-04-book-review-matadero-palma.html",
-    "href": "posts/2019-2023-lectura/2020-01-04-book-review-matadero-palma.html",
-    "title": "Matadero Palma",
-    "section": "",
-    "text": "Lo compré después que lo recomendaron en un taller de narración policial. No era lo que esperaba, sino que mucho más. El mundo del matadero Franklin en los años 1940, con todos sus personajes memorables. Un verdadero clásico moderno."
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-04-book-review-matadero-palma.html#rating-910",
-    "href": "posts/2019-2023-lectura/2020-01-04-book-review-matadero-palma.html#rating-910",
-    "title": "Matadero Palma",
-    "section": "Rating: 9/10",
-    "text": "Rating: 9/10"
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2022-11-18-book-review-sheik-ceo.html",
-    "href": "posts/2019-2023-lectura/2022-11-18-book-review-sheik-ceo.html",
-    "title": "The Sheik CEO",
-    "section": "",
-    "text": "Recientemente (Octubre 2022) tuve que viajar a Abu Dhabi por trabajo. Fue una experiencia extremadamente interesante, aprendí muchísimas cosas que desconocía del país. Me compré este libro para aprender un poco más sobre los Estados Árabes Unidos y el dramático cambio que han tenido en los últimos 50 años. El libro es un relato del Dr. Yasar Jarrar, quien trabajó directamente con el Sheikh Mohammed bin Rashid Al Maktoum, a quien llamaban el Sheik CEO porque tenía una visión muy pragmática del gobierno. El libro de Jarrar es una reflexión sobre cómo el estilo de liderazgo del sheik influyó en el rápido desarrollo de los EAU. El libro es mitad publicidad de EAU, mitad reflexión sobre el estilo de liderazgo del sheik, pero de todas maneras muy interesante."
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2022-11-18-book-review-sheik-ceo.html#comentario",
-    "href": "posts/2019-2023-lectura/2022-11-18-book-review-sheik-ceo.html#comentario",
-    "title": "The Sheik CEO",
-    "section": "",
-    "text": "Recientemente (Octubre 2022) tuve que viajar a Abu Dhabi por trabajo. Fue una experiencia extremadamente interesante, aprendí muchísimas cosas que desconocía del país. Me compré este libro para aprender un poco más sobre los Estados Árabes Unidos y el dramático cambio que han tenido en los últimos 50 años. El libro es un relato del Dr. Yasar Jarrar, quien trabajó directamente con el Sheikh Mohammed bin Rashid Al Maktoum, a quien llamaban el Sheik CEO porque tenía una visión muy pragmática del gobierno. El libro de Jarrar es una reflexión sobre cómo el estilo de liderazgo del sheik influyó en el rápido desarrollo de los EAU. El libro es mitad publicidad de EAU, mitad reflexión sobre el estilo de liderazgo del sheik, pero de todas maneras muy interesante."
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2022-11-18-book-review-sheik-ceo.html#apuntes-del-libro-textuales",
-    "href": "posts/2019-2023-lectura/2022-11-18-book-review-sheik-ceo.html#apuntes-del-libro-textuales",
-    "title": "The Sheik CEO",
-    "section": "Apuntes del libro (textuales)",
-    "text": "Apuntes del libro (textuales)\n\nDubai INC\n\nLa fortuna es una desventaja selectiva: lo que nos favorece y nos entrega facilidades es una desventaja si nos confiamos y no lo usamos para prepararnos. Esa es la razón por la cual la UAE está invirtiendo tanto en diversificar su economía, en turismo y educación, para no depender de la renta petrolera.\nLa competición es clave para el éxito. A través de varios ejemplos, se muestra que el monopolio lleva a la ineficiencia y conformidad. Para alcanzar el máximo potencial es necesario que hayan competidores.\n\n\n\nLiderar con coraje y visión\n\nTen gran ambición y aspiración. Lucha por ser el mejor y el número uno. No planifiques o aceptes metas mediocres. El problema no es tener metas altas y quedar corto, sino que tener metas bajas y alcanzarlas.\nEl tiempo es el principal recurso: usalo bien y rápido. Hacer algo hoy al 60% es mejor que 80% el próximo mes y 90% el próximo año. No malgastes tiempo y no permitas que tus competidores ganen una ventaja temporal. Comienza rápido. Si funciona, refina, repiute y perfeccionalo. La repetibilidad es clave para ganar velocidad.\nManeja la atención (concentración), no el tiempo. La gestión de la atención (concentración) es darse cuenta de cuánta atención inviertes en ciertas actividades y distracciones. Te ayudará a estar focalizado en las actividades claves y evitar las distracciones. En productividad, la gestión del tiempo es parte del problema (no es la solución).\nLa imaginación no es suficiente. Debe acompañarse de acciones temerarias. Toma riesgos y aduéñate de tus acciones y riesgos. Arriesga aunque puedas fallar, pero considera que hay “buenos riesgos” y “malos riesgos”. No tomes riesgos antes de tiempo, pero cuando lo hagas, hazlo con todo. Las probabilidades sueles ser mejores que tu peor escenario.\nSi tienes una visión y crees en ella (y puedes respaldarlo con datos/hechos) no te distraigas por la negatividad de otros. Imagina una versión del mañana y construye tu camino hacia ella. Cuando tienes una visión clara, el fracaso no es una opción incluso cuando ocurre. Un líder siempre debe tener el foco puesto en el largo plazo. La vida es una maratón, y habrán piedras en el camino. Fallar está bien, mientras lo veas como otro paso en el camino hacia cumplir tu visión.\n\n\n\nAcción le gana a todo lo demás\n\nEntrega (deliverability) requiere disciplina, y disciplina viene de entender que el tiempo es nuesto recurso más valioso y no es renovable. 5 minutos antes es apenas justo a tiempo. Respeta el tiempo de tus colaboradores - no llegues tarde a reuniones o canceles reuniones. Si no conoces el valor del tiempo, no lograrás entregar a tiempo tus proyectos o tu visión.\nConoce cuando desistir. Aprende la lección de “fallar rápido” y reconoce cuando es momento de cancelar un proyecto o actualizar tu pensamiento. En la mayoría de los sectores públicos del mundo es más más facil proponer un nuevo proyecto que cancelar un antiguo, o admitir que algo no ha funcionado. Tener el coraje de decir “esto no funcionó”, cancelarlo o cambiarlo, es crucial para el mundo en el que vivimos. Agilidad significa saber cuando renunciar, y rápido, yser capaz de adaptarse a la dirección que se necesite.\nHace que la entrega sea personal: muestra a tu equipo la oportunidad y una visión del futuro que buscan construir, y háceles creer que son completamente responsables de sus acciones y consecuencias. Esta mentalidad y un sistema de accouintaibility personal, que se debe acoplar con capacidad de acción (enablement) y autoridad. No dejar espacio para excusas. Si alguien promete, haz que sea seguro que puedan cumplir o dejar el espacio para que alguien más pueda hacerlo. Cuando hablamos de entrega (delivery), es blanco o negro, no hay lugar para grises.\nPonle foco a los detalles y conoce el contenido de cada reporte. No seas una persona “de mirada amplia” y que habla solo en jerigonza. El éxito en la vida está en entender los detalles, en ver y apreciar las pequeñas cosas. El éxito se conquista un paso a la vez, detalle a detalle. Para aprender los detalles: lee, investiga, pide información, observa. No aceptes información de segunda mano.\nAprende el poder de un “agradecimiento personalizado”. No hay un motivador más fuerte. Como líder, agradecer a tu equipo genuinamente ayuda a construir moral, actitud positiva y respeto. Si se hace correctamente, puede ser un motivador más fuerte que el mismo dinero. Un agradecimiento sincero emociona, motiva y genera un comportamiento positivo.\nPrioriza despiadamente y colócale recursos a tus prioridades. Si todo es una prioridad, nada lo es. ¿Cuál es LA tarea que tienes que hacer? Hazla, y hazla bien. Alcanza el éxito en esa tarea, y muévete a la siguiente tarea.\nNunca dejes de moverte hacia adelante. No importa quien seas, despiértate y corre a tu máxima velocidad. Cada día es un nuevo comienzo, una posibilidad de agregar a los éxitos de ayer y de mover hacia adelante tu visión, metas y sueños. La vida se detiene solo cuando dejar de moverte hacia adelante. Recuerda la historia del león y la gacela: cada mañana la gacela despierta y piensa “hoy tengo que correr lo más rapido posible para escapar de los leones”. Cada mañana el león despierta y piensa “hoy tengo que correr lo más rápido posible si quiero atrapar a una gacela”. No importa si eres presa o depredador, tienes que tener la mentalidad de correr lo más rápido que puedes para conseguir el éxito.\n\n\n\nNunca creer que tu trabajo está completado\n\nInnova o perece. Las oportunidades se tiene que crear, no llegan mágicamente. Para innovar tienes que salir de tu zona de comodidad y pensar distinto. Esto no sucederá por estar en la misma oficina hablando con la misma gente. Sé atrevido: habla con gente nueva, visita lugares nuevos, lee libros nuevos, aprende cosas nuevas. No puedes resolver nuevos problemas con las mismas herramientas y mentalidad que crearon el problema. Dedica parte de tu tiempo y semana a mirar y pensar en cosas no tradicionales.\nLa clave es cliente-centrismo. Escucha a tus clientes y diseña alrededor de sus necesidades. Escucha a cualquiera que estés atendiendo. No olvides que la única medida de éxito es la satisfacción del cliente.\nInvierte en ideas que harán tu trabajo obsoleto o redundante. Nunca olvides que las organizaciones y líderes que fallan en innovar perecen. Crea nuevos modelos que hacen que los modelos actuales sean obsoletos.\nManten la mente abierta y nunca dejes de escuchar. Escucha a gente que te critica, antes que a la gente que te alaba. Nunca creas que estás 100% correcto. Siempre hay una posibilidad que estés 1% equivocado. Manten eso en perspectiva y busca retroalimentación y busca formas de mejorar tu pensamiento y mentalidad.\nNunca digas nunca. La única forma de acción es ser ágil e innovar. Se un idealista y apunta a las estrellas, pero siempre mantente abierto al cambio y las oportunidades. No es la especie más fuerte la que sobrevive, sino la que se adapta más rápido.\n\n\n\nRodéate de líderes fuertes\n\nAsegúrate de formar nuevos líderes: búscalos, mentorízalos, hazlos crecer, dales soporte. Esto no sólo es clave para entregar tu visión y legado, es simplemente la manera correcta de proceder. Una comunidad de líderes que crece es una experiencia gratificante.\nAsegúrate que fomentas líderes basado en mérito, diversidad y balance de género. La diversidad es el corazón de la innovación, y evita llegar a una conclusión porque todos piensan lo mismo por ser demasiado parecidos.\nDelega, delega, delega. Para crecer, tienes que tener un gran equipo y tienes que delegar trabajo en ellos. Diseña tu “zona de genialidad” donde tienes un gran equipo que comparte tu visión, maneja la entrega del trabajo, y te permite concentrarte en refinar tu visión.\nGrandes líderes tienen la capacidad de sacar lo mejor de cada situación. Son corajudos y no tienen miedo de enfrentar el status-quo y empujar los límites para hacer las cosas mejores. No creen que tienen todas las respuestas. Los mejores líderes saben como sacer lo mejor de cada persona. En resumen: es la capacidad de encontrar, desarrollar y motivar a los mejores talentos.\n\n\n\nGanar corazón y mente\n\nTiming es todo. Grandes ideas no llegan a puerto por mala comunicación y mal timing. Incluso si crees que tienes la mejor idea, busca comunicarla de la mejor manera y en el mejor moento. Un líder es un director de orquesta.\nManeja los “nuevos medios digitales”. No hay escape de la era digital. Los nuevos líderes tienen que manejarse en redes sociales. No sólo ayuda a llegar a una audiencia mucho mayor, sino que también los hace más humanos.\nUn excelente comunicador debe saber escuchar. Escuchar te permite entender y conectar. Cuando haces eso, la comunicación se vuelve natural. Tienes 2 orejas y 1 boca: escucha el doble de lo que hablas.\nNunca tomes una decisión en un etado de cansancio o estrés. Maneja el nivel de estrés mental o físico, especialmente en crisis. Mantén el optimismo y la calma. Lo básico funciona bien: duerme bien, toma largas caminatas, y hace tu propio café - en esencia mindfulness.\nAprende a contar historias. Cuenta historias que capturan el corazon de la gente y explica tu impacto y contribucion de una manera única. Asegúrate que tus historias parten con el “porqué” (como lo hace Simon Sinek en Why).\nTrabaja para alguien más grande que tú mismo. Enfócate en la gente, en hacer cosas que ayuden a la gente, y en crear impacto. Grandes cosas ocurren a aquelllos que trabajan para algo más grande. Hay más alegría, más satisfacción y más sentido de propósito.\nPreocúpate de tí mismo. Si no te cuidas a ti mismo, no podrás entregar tu máximo y ayudar a los demás. Ten un hobbie, haz ejercicio, come bien, duerme bien, y haz lo que te hace feliz.\n\n\n\nVamos a marte\nLa iniciativa de una misión a Marte entrega 3 mensajes: (1) la civilización árabe recuperará su rol de contribución a la civilización humana, (2) la EAU puede competir con cualquier país en el mundo, y (3) no hay que ponerle límites a las ambiciones. El interés de EAU es potenciar la hermandad de las naciones árabes, inspirar a una generación, e invertir en las personas, al mismo tiempo que en ciencia y tecnología."
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-13-book-review-the-monk-who-sold-his-ferrari.html",
-    "href": "posts/2019-2023-lectura/2020-01-13-book-review-the-monk-who-sold-his-ferrari.html",
-    "title": "The monk who sold his ferrari",
-    "section": "",
-    "text": "Me llamó la atención el título y leí algunas recomendaciones, por lo que decidí darle una oportunidad. Terrible error, fue una tortura, pero seguí avanzando por si en algún momento llegaba la iluminación y se justificaba el libro. Dicho momento no llegó."
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-03-book-review-never-split-the-deal.html",
-    "href": "posts/2019-2023-lectura/2020-01-03-book-review-never-split-the-deal.html",
-    "title": "Never split the deal",
-    "section": "",
-    "text": "Mezcla de anécdotas de distintas negociaciones y una larga lista de consejos. Muy, pero muy bueno. De esos libros que deseas que alguien te hubiera recomendado antes. No me esperaba que este libro me hiciera pensar, reír y emocionar."
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-03-book-review-never-split-the-deal.html#rating-1010",
-    "href": "posts/2019-2023-lectura/2020-01-03-book-review-never-split-the-deal.html#rating-1010",
-    "title": "Never split the deal",
-    "section": "Rating: 10/10",
-    "text": "Rating: 10/10"
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-19-book-review-comics-de-guy-delisle.html",
-    "href": "posts/2019-2023-lectura/2020-01-19-book-review-comics-de-guy-delisle.html",
-    "title": "Guía del mal padre y otros",
-    "section": "",
-    "text": "Comencé con la Guía del mal padre (1, 2, 3 y 4), una risible y fresca mirada sobre la paternidad, que disfrutamos todos en la casa. Luego descubrí sus cómics sobre sus estancias en Birmania (Crónicas Birmanas), Israel (Crónicas de Jerusalén), Corea del Norte (Pyon Pyan) y China (Crónicas de Shenzen). Logra transmitir muy bien la experiencia de vivir en lugares tan particulares, con sus curiosidades y excentricidades. Me recordó cuando viví fuera de Chile, en Francia y Estados Unidos, llenándome de nostalgia."
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-01-book-review-atomic-habits.html",
-    "href": "posts/2019-2023-lectura/2020-01-01-book-review-atomic-habits.html",
-    "title": "Atomic habits",
-    "section": "",
-    "text": "A pesar que ya había leído varias otros libros y artículos sobre hábitos, este libro me gustó mucho y aprendí más de lo que esperaba. Está bien estructurado, fácil de leer y tiene una mezcla interesante de anécdotas personales y consejos prácticos."
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-01-book-review-atomic-habits.html#rating-1010",
-    "href": "posts/2019-2023-lectura/2020-01-01-book-review-atomic-habits.html#rating-1010",
-    "title": "Atomic habits",
-    "section": "Rating: 10/10",
-    "text": "Rating: 10/10"
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-10-book-review-the-gifts-of-imperfection.html",
-    "href": "posts/2019-2023-lectura/2020-01-10-book-review-the-gifts-of-imperfection.html",
-    "title": "The gifts of imperfection",
-    "section": "",
-    "text": "En línea con el libro de “Trillion Dollar Coach”, habla sobre cómo la vulnerabilidad nos conecta como humanos. Los 3 regalos de la imperfección son el coraje, la compasión y la conexión, en una invitación a vivir de manera más auténtica: aceptarnos con nuestras imperfecciones, abrazar nuestros gustos y excentricidades, y dejar de aparentar y creernos el cuento de la madurez. Dos historias me marcaron. La primera: lo importante de no disminuir la importancia de eventos o cosas que sí nos importan para proteger nuestro ego en caso que no resulten, porque tiene como consecuencia que estos mismos eventos no nos alegren o emocionen tanto cuando pasan. La segunda: ser valiente no tiene una única cara. Para una persona extrovertida y osada, ser valiente puede ser no responder un insulto y empezar una pelea. Para una persona introvertida, ser valiente puede ser exactamente lo contrario: responder un insulto y defender su opinión."
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-05-book-review-nudge.html",
-    "href": "posts/2019-2023-lectura/2020-01-05-book-review-nudge.html",
-    "title": "Nudge",
-    "section": "",
-    "text": "Una propuesta interesante, sobre lo fácil que es realizar pequeñas influencias en las elecciones. Se apoya en la diferencia entre los Econs y Humans. Los Econs son los personajes mitológicos que realizan analizan todos los datos disponibles y realizan elecciones perfectas, mientras que los Humans son personas que actúan como humanos reales: a veces emocional, a veces irracional, a veces intuitivamente. La propuesta es interesante, pero el libro es más largo de lo que debería y demasiados ejemplos son anglocéntricos. Fue escrito el 2008 y algunos ejemplos se sienten un poco desactualizados (Netflix hace rato no es una “mail-order DVD rental company”)"
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-05-book-review-nudge.html#rating-710.",
-    "href": "posts/2019-2023-lectura/2020-01-05-book-review-nudge.html#rating-710.",
-    "title": "Nudge",
-    "section": "Rating: 7/10.",
-    "text": "Rating: 7/10."
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-14-book-review-ocasional-magic.html",
-    "href": "posts/2019-2023-lectura/2020-01-14-book-review-ocasional-magic.html",
-    "title": "Ocasional Magic",
-    "section": "",
-    "text": "Más historias de The Moth, a la altura del otro libro. Historias emocionantes, profundas, todas muy distintas unas de otras."
-  },
-  {
-    "objectID": "tutorial/quarto.html",
-    "href": "tutorial/quarto.html",
-    "title": "Tutorial Quarto",
-    "section": "",
-    "text": "Quarto es un “sistema de publicación”. Usando un formato de markdown enriquecido permite generar páginas web, presentaciones, blogs y mucho más. El formato de los archivos es .qmd."
-  },
-  {
-    "objectID": "tutorial/quarto.html#qué-es-quarto",
-    "href": "tutorial/quarto.html#qué-es-quarto",
-    "title": "Tutorial Quarto",
-    "section": "",
-    "text": "Quarto es un “sistema de publicación”. Usando un formato de markdown enriquecido permite generar páginas web, presentaciones, blogs y mucho más. El formato de los archivos es .qmd."
-  },
-  {
-    "objectID": "tutorial/quarto.html#formato-de-texto",
-    "href": "tutorial/quarto.html#formato-de-texto",
-    "title": "Tutorial Quarto",
-    "section": "Formato de texto",
-    "text": "Formato de texto\nEl siguiente texto:\n*cursivas*, **negritas**, ***negritas cursivas***, ~~tachado~~, superíndice^2^, subíndice~2~, `verbatim`   \nse mostrará así:\ncursivas, negritas, negritas cursivas, tachado, superíndice2, subíndice2, verbatim"
-  },
-  {
-    "objectID": "tutorial/quarto.html#títulos",
-    "href": "tutorial/quarto.html#títulos",
-    "title": "Tutorial Quarto",
-    "section": "Títulos",
-    "text": "Títulos\nSe utiliza la clásica convención para # Título, ## Subtítulo, … , ###### Subsubsubsubsubsub-título,"
-  },
-  {
-    "objectID": "tutorial/quarto.html#links",
-    "href": "tutorial/quarto.html#links",
-    "title": "Tutorial Quarto",
-    "section": "Links",
-    "text": "Links\nLos siguientes códigos permiten incrustar links\n&lt;https://quarto.org&gt;                                                                                   |\n\n[Quarto](https://quarto.org)"
-  },
-  {
-    "objectID": "tutorial/quarto.html#imágenes",
-    "href": "tutorial/quarto.html#imágenes",
-    "title": "Tutorial Quarto",
-    "section": "Imágenes",
-    "text": "Imágenes\n![Caption](elephant.png) \n\n[![Caption](elephant.png)](https://quarto.org)\n\n[![Caption](elephant.png \"An elephant\"){fig-alt=\"A line drawing of an elephant.\"}](https://quarto.org)"
-  },
-  {
-    "objectID": "tutorial/quarto.html#videos",
-    "href": "tutorial/quarto.html#videos",
-    "title": "Tutorial Quarto",
-    "section": "Videos",
-    "text": "Videos\nPara incluir videos puedes usar el código {{&lt; video &gt;}} :\n{{&lt; video https://www.youtube.com/embed/wo9vZccmqwc &gt;}}"
-  },
-  {
-    "objectID": "tutorial/quarto.html#listas",
-    "href": "tutorial/quarto.html#listas",
-    "title": "Tutorial Quarto",
-    "section": "Listas",
-    "text": "Listas\n\n\n\n\n\n\n\nCódigo en Markdown\nOutput\n\n\n\n\n* unordered list\n    + sub-item 1\n    + sub-item 2\n        - sub-sub-item 1\n\nunordered list\n\nsub-item 1\nsub-item 2\n\nsub-sub-item 1\n\n\n\n\n\n1. ordered list\n2. item 2\n    i) sub-item 1\n         A.  sub-sub-item 1\n\nordered list\nitem 2\n\nsub-item 1\n\nsub-sub-item 1\n\n\n\n\n\n(@)  A list whose numbering\n\ncontinues after\n\n(@)  an interruption\n\nA list whose numbering\n\ncontinues after\n\nan interruption\n\n\n\n::: {}\n1. A list\n:::\n\n::: {}\n1. Followed by another list\n:::\n\n\nA list\n\n\n\n\nFollowed by another list\n\n\n\n\nterm\n: definition\n\nterm\n\ndefinition\n\n\n\n\n\nNotar que las listas necesitan una linea en blanco sobre la lista, de lo contrario no se mostrarán correctamente."
-  },
-  {
-    "objectID": "tutorial/quarto.html#tablas",
-    "href": "tutorial/quarto.html#tablas",
-    "title": "Tutorial Quarto",
-    "section": "Tablas",
-    "text": "Tablas\nLas tablas siguen el formato clásico en markdown, y donde la alineación se define con :, como muestra el siguiente código:\n| Derecha | Izquierda | Por Defecto | Centrada |\n|------:|:-----|---------|:------:|\n|   12  |  12  |    12   |    12  |\n|  123  |  123 |   123   |   123  |\n|    1  |    1 |     1   |     1  |\nque se mostrará así:\n\n\n\nDerecha\nIzquierda\nPor Defecto\nCentrada\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1\n\n\n\nEn el siguiente enlace hay más información: https://quarto.org/docs/authoring/tables.html."
-  },
-  {
-    "objectID": "tutorial/quarto.html#código",
-    "href": "tutorial/quarto.html#código",
-    "title": "Tutorial Quarto",
-    "section": "Código",
-    "text": "Código\nUtilice ``` para delimitar bloques de código:\n```\ncódigo\n```\nPuedes añadir un lenguaje (python, markdown, html, javascript, etc) para resaltar correctamente la sintaxis del lenguaje\n```python\n1 + 1\n```"
-  },
-  {
-    "objectID": "tutorial/quarto.html#ecuaciones",
-    "href": "tutorial/quarto.html#ecuaciones",
-    "title": "Tutorial Quarto",
-    "section": "Ecuaciones",
-    "text": "Ecuaciones\nUtilice delimitadores $ para las ecuaciones en línea y delimitadores $$ para ecuaciones en línea propia.\nAsí, por ejemplo $E = mc^{2}$ se mostrará como \\(E=mc^{2}\\).\nPor otra parte, $$ E = mc^{2}$$ se mostrará así \\[ E = mc^{2}\\]"
-  },
-  {
-    "objectID": "tutorial/quarto.html#columnas",
-    "href": "tutorial/quarto.html#columnas",
-    "title": "Tutorial Quarto",
-    "section": "Columnas",
-    "text": "Columnas\nEs posible definir columnas de manera sencilla, usando :::: y :::.\nEl siguiente código:\n:::: {.columns}\n\n::: {.column width=\"40%\"}\nColumna izquierda...\n:::\n\n::: {.column width=\"60%\"}\nColumna derecha\n:::\n\n::::\nSe mostrará así:\n\n\nColumna izquierda…\n\nColumna derecha"
-  },
-  {
-    "objectID": "tutorial/quarto.html#referencias",
-    "href": "tutorial/quarto.html#referencias",
-    "title": "Tutorial Quarto",
-    "section": "Referencias",
-    "text": "Referencias\nEste archivo está basado en https://quarto.org/docs/authoring/markdown-basics.html\n\nhttps://quarto.org/docs/presentations/: Información extra para presentaciones."
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-07-book-review-all-these-wonders.html",
-    "href": "posts/2019-2023-lectura/2020-01-07-book-review-all-these-wonders.html",
-    "title": "All these wonders",
-    "section": "",
-    "text": "Mi hermana me introdujo al mundo de estas breves historias, personales y emotivas. Son perfectamente cortas para leer en cualquier momento, pero profundas y emocionantes para que no sean irrelevantes. Difícil decir cuál me gustó más."
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-07-book-review-all-these-wonders.html#rating-1010",
-    "href": "posts/2019-2023-lectura/2020-01-07-book-review-all-these-wonders.html#rating-1010",
-    "title": "All these wonders",
-    "section": "Rating: 10/10",
-    "text": "Rating: 10/10"
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-12-book-review-a-smarter-way-to-learn-javascript.html",
-    "href": "posts/2019-2023-lectura/2020-01-12-book-review-a-smarter-way-to-learn-javascript.html",
-    "title": "A Smarter Way to Learn JavaScript",
-    "section": "",
-    "text": "Quería refrescar y profundizar mi conocimiento en javascript sin tener que leer demasiado. Este libro se consumía en capítulos cortos y prácticos, justo lo que necesitaba."
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-09-book-review-estrategia-de-datos.html",
-    "href": "posts/2019-2023-lectura/2020-01-09-book-review-estrategia-de-datos.html",
-    "title": "Estrategia de Datos",
-    "section": "",
-    "text": "Un libro más bien técnico, sobre distintas estrategias a tomar respecto a los datos de una organización. Interesante, pero de una redacción dificil de seguir."
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-18-book-review-sandman-volumen-1.html",
-    "href": "posts/2019-2023-lectura/2020-01-18-book-review-sandman-volumen-1.html",
-    "title": "Sandman volumen 1",
-    "section": "",
-    "text": "Había leído todas las historias cuando adolescente, comprándolas en desorden y a diversos precios en las escasas tiendas con cómics de San Antonio en los 90’s, pero al leerlas en orden y con anotaciones encontré una profundidad y coherencia mucho mayor. Es una gran obra de arte. Junto con “El libro del cementerio”, lo mejor de Gaiman. La forma en que se van conectando los personajes y las historias es magistral."
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-15-book-review-percy-jackson-(1-y-2).html",
-    "href": "posts/2019-2023-lectura/2020-01-15-book-review-percy-jackson-(1-y-2).html",
-    "title": "Percy Jackson (1 y 2)",
-    "section": "",
-    "text": "Mi hijo leyó los 5 libros en tiempo récord y me instó a leerlos. Es interesante el concepto de la presencia de dioses, semodioses y héroes en un contexto moderno. Novelas adolescente, lectura liviana pero entretenida. En general 6/10, en el contexto de niños y adolescentes 10/10."
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-06-book-review-iq.html",
-    "href": "posts/2019-2023-lectura/2020-01-06-book-review-iq.html",
-    "title": "IQ",
-    "section": "",
-    "text": "Una novela policial atípica: el detective es un joven afroamericano sin estudios pero astuto y con mucha calle, que se mueve entre la pobreza y el lujo de Los Ángeles. El caso no es un crimen cometido, sino una sospecha de asesinato por encargo en pleno desarrollo. Diálogos muy divertidos, entretenido y rápido de leer, aunque sin mucho misterio. 100% seguro que lo convertirán en película."
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-06-book-review-iq.html#rating-610",
-    "href": "posts/2019-2023-lectura/2020-01-06-book-review-iq.html#rating-610",
-    "title": "IQ",
-    "section": "Rating: 6/10",
-    "text": "Rating: 6/10"
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-02-book-review-flying-free.html",
-    "href": "posts/2019-2023-lectura/2020-01-02-book-review-flying-free.html",
-    "title": "Flying Free",
-    "section": "",
-    "text": "Conocí a Cecilia en una charla en la UTFSM, y su sinceridad y humanidad me llamó profundamente la atención. No tenía idea que fue piloto acrobática de aviones, y su historia es increíble. Me devoré el libro y lo he recomendado a varios amigos. Extrañé fue un final más gradioso."
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-02-book-review-flying-free.html#rating-810",
-    "href": "posts/2019-2023-lectura/2020-01-02-book-review-flying-free.html#rating-810",
-    "title": "Flying Free",
-    "section": "Rating: 8/10",
-    "text": "Rating: 8/10"
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-16-book-review-ready-player-1.html",
-    "href": "posts/2019-2023-lectura/2020-01-16-book-review-ready-player-1.html",
-    "title": "Ready Player 1",
-    "section": "",
-    "text": "Me compré la Oculus Quest 2, y aluciné (y sigo alucinando) tanto con la realidad virtual que quise releer este libro, que había comprado y leído en un viaje anterior a EEUU. Dato freak: se comenta que los empleados de Oculus recibían una copia del libro cuando entraban a trabajar a la empresa. Es un bestseller entretenido, con constantes referencias a los videojuegos y música de los 80 y 90s, y enigmas por resolver. Después mi hijo tomó el libro y no logramos despegarlo hasta que lo terminó en 2 días después (y eso que tiene como 600 páginas)."
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-17-book-review-ready-player-2.html",
-    "href": "posts/2019-2023-lectura/2020-01-17-book-review-ready-player-2.html",
-    "title": "Ready Player 2",
-    "section": "",
-    "text": "¡Descubrí que existía una continuación a Ready Player One! Lamentablemente, fue una gran decepción. El libro parte lento, se demora en establecer el conflicto, que resulta poco creíble incluso para este tipo de libro. Además se hacen muchas referencias y explicaciones innecesarias al primer libro. Intenta cubrir referencias pop de los 80 y 90s que no cubrió en el primer libro porque no pasaron el corte para la primera novela: las películas de John Hughes (The Breakfast Club, Ferris Bueller’s Day Off, Pretty in Pink), la música de Prince, el mundo de Tolkien, entre otros."
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2021-08-18-book-review-all-systems-red.html",
-    "href": "posts/2019-2023-lectura/2021-08-18-book-review-all-systems-red.html",
-    "title": "All systems red",
-    "section": "",
-    "text": "Un libro divertido y fácil de leer. El personaje central es un robot humanoide, y tiene muchas características humanas: humor negro, desprecio por el trabajo, limitaciones de multitasking, procrastinación y adicción a las series televisivas. Me resulta divertida la idea de que la evolución de la tecnología termine produciendo características tan humanas y alejadas de lo perfecto. El nudo central del libro es un poco simplón, pero la narración está muy bien lograda."
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-08-book-review-trillion-dollar-coach.html",
-    "href": "posts/2019-2023-lectura/2020-01-08-book-review-trillion-dollar-coach.html",
-    "title": "Trillion Dollar Coach",
-    "section": "",
-    "text": "Había escuchado de este libro en podcasts relacionados con productividad y coaching, pero hasta ahora no me había dado el tiempo. Gran pequeña joya de 100 páginas. Lo más destacable: la importancia de relacionarse más allá de lo laboral, de traer lo humano y lo personal al trabajo. Hice un post aparte, para destacar sus principales lecciones y relacionarlas con la metodología SCRUM; tienen muchas cosas en común."
-  },
-  {
-    "objectID": "posts/2019-2023-lectura/2020-01-08-book-review-trillion-dollar-coach.html#rating-1010",
-    "href": "posts/2019-2023-lectura/2020-01-08-book-review-trillion-dollar-coach.html#rating-1010",
-    "title": "Trillion Dollar Coach",
-    "section": "Rating: 10/10",
-    "text": "Rating: 10/10"
+    "text": "¿Podemos incrustar animaciones de Vizzu en un blog?\n¡SI SE PUEDE!\n\n\nShow the code\nimport pandas as pd\n \nfrom ipyvizzu import Data, Config, Style\nfrom ipyvizzustory import Story, Slide, Step\n \n \n# Create data object, read csv to data frame and add data frame to data object\ndata = Data()\ndf = pd.read_csv(\n    \"https://ipyvizzu-story.vizzuhq.com/0.9/examples/population/population.csv\",\n    dtype={\"Year\": str},\n)\ndata.add_df(df)\n \n \n# Create story object, add data to it\nstory = Story(data=data)\n \n# Set the size of the HTML element\n# that appears within the notebook\nstory.set_size(\"100%\", \"400px\")\n \n# Switch on the tooltip that appears\n# when the user hovers the mouse over a chart element\nstory.set_feature(\"tooltip\", True)\n \n \n# Each slide here is a page in the final interactive story\n# Add the first slide\nslide1 = Slide(\n    Step(\n        Data.filter(\"record.Continent == 'Africa'\"),\n        Config.stackedArea(\n            {\n                \"x\": \"Year\",\n                \"y\": \"Medium\",\n                \"stackedBy\": \"Subregion\",\n                \"title\": \"Population of Africa 1953-2098\",\n            }\n        ),\n        Style({\"plot\": {\"xAxis\": {\"label\": {\"angle\": 2.0}}}}),\n    )\n)\n# Add the slide to the story\nstory.add_slide(slide1)\n \nslide2 = Slide(\n    Step(\n        Config.percentageArea(\n            {\n                \"x\": \"Year\",\n                \"y\": \"Medium\",\n                \"stackedBy\": \"Subregion\",\n            }\n        ),\n    )\n)\nstory.add_slide(slide2)\n \nslide3 = Slide(\n    Step(\n        Config.stream(\n            {\n                \"x\": \"Year\",\n                \"y\": \"Medium\",\n                \"stackedBy\": \"Subregion\",\n            }\n        ),\n    )\n)\nstory.add_slide(slide3)\n \nslide4 = Slide(\n    Step(\n        Config.violin(\n            {\n                \"x\": \"Year\",\n                \"y\": \"Medium\",\n                \"splittedBy\": \"Subregion\",\n            }\n        ),\n    )\n)\nstory.add_slide(slide4)\n \n \n# Play the created story!\nstory.play()"
   },
   {
     "objectID": "posts/2019-2023-posts/2021-12-12-plot-images.html",
@@ -935,6 +942,6 @@
     "href": "pages/blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Post con gráfico\n\n\n\n\n\n\n\ncodigo\n\n\npython\n\n\nvizzu\n\n\n\n\n\n\n\n\n\n\n\nNov 30, 2023\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nPost Con Codigo\n\n\n\n\n\n\n\ncodigo\n\n\npython\n\n\n\n\n\n\n\n\n\n\n\nNov 29, 2023\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nPrimer post\n\n\n\n\n\n\n\nvida\n\n\n\n\n\n\n\n\n\n\n\nNov 28, 2023\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nThe Sheik CEO\n\n\n\n\n\n\n\nlectura\n\n\n\n\nReflexión sobre cómo el estilo de liderazgo del sheik influyó en el rápido desarrollo de los EAU\n\n\n\n\n\n\nNov 18, 2022\n\n\nYasar Jarrar\n\n\n\n\n\n\n  \n\n\n\n\nCreativity INC\n\n\n\n\n\n\n\nlectura\n\n\n\n\nSobre cómo poder crear un ambiente de trabajo donde pueda flocerer la (elusiva) creatividad\n\n\n\n\n\n\nApr 5, 2022\n\n\nEd Catmull\n\n\n\n\n\n\n  \n\n\n\n\nMetas 2022\n\n\n\n\n\n\n\nbalance\n\n\ncuenta\n\n\nreflexión\n\n\n\n\n¿Qué quiero para el 2022?\n\n\n\n\n\n\nJan 21, 2022\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nStreamlit: apps y posts\n\n\n\n\n\n\n\nstreamlit\n\n\n\n\nNovedades y creaciones recientes\n\n\n\n\n\n\nJan 21, 2022\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nBalance anual\n\n\n\n\n\n\n\nbalance\n\n\ncuenta\n\n\nreflexión\n\n\n\n\nEl año 2021 en la balanza\n\n\n\n\n\n\nDec 31, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nUnmerging celdas de excel\n\n\n\n\n\n\n\npython\n\n\nexcel\n\n\ncells\n\n\n\n\nCuando pandas se quedó corto\n\n\n\n\n\n\nDec 14, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nGraficando emojis\n\n\n\n\n\n\n\ncódigo\n\n\n\n\nResumen de un googleo interminable\n\n\n\n\n\n\nDec 12, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nMi primera PyCon\n\n\n\n\n\n\n\npycon\n\n\n\n\nVenciendo el síndrome del impostor\n\n\n\n\n\n\nDec 5, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nStreamlit hackathon\n\n\n\n\n\n\n\nreflexión\n\n\n\n\nCapitalizando la PyCon Chile\n\n\n\n\n\n\nNov 19, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\n1000 Programadores Salteños\n\n\n\n\n\n\n\nreflexión\n\n\nstreamlit\n\n\n\n\nReflexiones de Pedagogía con Python\n\n\n\n\n\n\nNov 13, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nPyCon Chile 2021\n\n\n\n\n\n\n\nstreamlit\n\n\npycon\n\n\n\n\nTaller y charla de Streamlit\n\n\n\n\n\n\nNov 8, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nPyCon Argentina 2021\n\n\n\n\n\n\n\npycon\n\n\n\n\nTaller para Docentes\n\n\n\n\n\n\nOct 29, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nInteligencia y Creencias Limitantes\n\n\n\n\n\n\n\nreflexión\n\n\n\n\nAprendizajes inesperados al resolver el cubo de rubik\n\n\n\n\n\n\nOct 29, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nSpartan Race\n\n\n\n\n\n\n\ndeporte\n\n\nreflexión\n\n\n\n\nDesafíos físicos y sicológicos\n\n\n\n\n\n\nOct 23, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nTercer trimestre del 2021\n\n\n\n\n\n\n\nreflexión\n\n\n\n\nBalance de lo que han sido estos meses\n\n\n\n\n\n\nOct 1, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nSklearn 1.0\n\n\n\n\n\n\n\npython\n\n\n\n\nAparecí entre los contribuidores de la nueva versión\n\n\n\n\n\n\nSep 28, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nCompartir tu código en python\n\n\n\n\n\n\n\npython\n\n\n\n\nRevisión a las muchas alternativas\n\n\n\n\n\n\nSep 9, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nPyCon Latam 2021\n\n\n\n\n\n\n\nrise\n\n\npycon\n\n\n\n\nMi tercera PyCon\n\n\n\n\n\n\nAug 28, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nAll systems red\n\n\n\n\n\n\n\nlectura\n\n\n\n\nExploradores planetarios con un twist\n\n\n\n\n\n\nAug 18, 2021\n\n\nMartha Wells\n\n\n\n\n\n\n  \n\n\n\n\nNuevo favicon\n\n\n\n\n\n\n\ncódigo\n\n\n\n\nDe python a sebastiandres en 1 paso.\n\n\n\n\n\n\nAug 4, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nExperiencias del Sprint de Data Umbrella\n\n\n\n\n\n\n\ncódigo\n\n\nreflexión\n\n\n\n\nLo que aprendí en mi primer sprint contribuyendo a código abierto.\n\n\n\n\n\n\nJul 25, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nMicrocuentos tecnología\n\n\n\n\n\n\n\nescritura\n\n\nmicrocuentos\n\n\n\n\nCuentos enviados a concurso uPlanner en 100 palabras\n\n\n\n\n\n\nJun 1, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nEmulador de Linktree\n\n\n\n\n\n\n\ncódigo\n\n\n\n\nImitando un directorio de enlaces sólo con recursos gratuitos\n\n\n\n\n\n\nJun 1, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nMicrocuentos 2021\n\n\n\n\n\n\n\nescritura\n\n\nmicrocuentos\n\n\n\n\nCuentos enviados a Santiago en 100 palabras\n\n\n\n\n\n\nMay 14, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nLas 3 lecciones de los CEOs del Silicon Valley que valen un billón de dólares\n\n\n\n\n\n\n\nreflexión\n\n\n\n\n¿Tan simple como sé vulnerable, evita la democracia y trabaja en equipo?\n\n\n\n\n\n\nMar 28, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nEl detective: entre la lógica y el azar\n\n\n\n\n\n\n\nreflexión\n\n\n\n\nLas raíces de la serendipia y la novela policial clásica en un cuento persa\n\n\n\n\n\n\nJan 23, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nLos Tres Príncipes de Serendip\n\n\n\n\n\n\n\npolicial\n\n\ncuento\n\n\n\n\nUn antiguo y desconocido cuento persa de deducciones, que muestra porqué no deberíamos ufanarnos de nuestro conocimiento.\n\n\n\n\n\n\nJan 22, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nCrimen a la carta\n\n\n\n\n\n\n\nescritura\n\n\ncuento\n\n\n\n\nTaller de narrativa policial\n\n\n\n\n\n\nNov 20, 2020\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nTrabajando en el SML\n\n\n\n\n\n\n\nescritura\n\n\ncuento\n\n\n\n\nTaller de narrativa policial\n\n\n\n\n\n\nOct 24, 2020\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nMicrocuentos 2020\n\n\n\n\n\n\n\nescritura\n\n\nmicrocuentos\n\n\n\n\nCuentos enviados a Santiago en 100 palabras\n\n\n\n\n\n\nOct 1, 2020\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nBurnout — experiencia y aprendizaje\n\n\n\n\n\n\n\nreflexión\n\n\n\n\n¿Cómo reconocer y combatir el agotamiento laboral?\n\n\n\n\n\n\nSep 24, 2020\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nPaaS: Python as a Service\n\n\n\n\n\n\n\nreflexión\n\n\n\n\nEntregando python en la nube, más fácil que nunca.\n\n\n\n\n\n\nJul 25, 2020\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nLa rutina óptima es aburrida\n\n\n\n\n\n\n\nreflexión\n\n\n\n\nY está sobrevalorada\n\n\n\n\n\n\nMar 26, 2020\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nPycon Colombia 2020 - Las charlas\n\n\n\n\n\n\n\npycon\n\n\n\n\nEnlaces a los repositorios y videos.\n\n\n\n\n\n\nMar 24, 2020\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nReady Player 2\n\n\n\n\n\n\n\nlectura\n\n\n\n\nLas segundas partes nunca fueron buenas…\n\n\n\n\n\n\nJan 19, 2020\n\n\nErnest Cline\n\n\n\n\n\n\n  \n\n\n\n\nGuía del mal padre y otros\n\n\n\n\n\n\n\nlectura\n\n\n\n\nComics insuperables sobre la paternidad y viajes\n\n\n\n\n\n\nJan 19, 2020\n\n\nGuy Delisle\n\n\n\n\n\n\n  \n\n\n\n\nSandman volumen 1\n\n\n\n\n\n\n\nlectura\n\n\n\n\nUn comic con grandes profundidades\n\n\n\n\n\n\nJan 18, 2020\n\n\nNeil Gaiman et al\n\n\n\n\n\n\n  \n\n\n\n\nReady Player 1\n\n\n\n\n\n\n\nlectura\n\n\n\n\nNovela entretenida sobre la vida en la realidad virtual\n\n\n\n\n\n\nJan 16, 2020\n\n\nErnest Cline\n\n\n\n\n\n\n  \n\n\n\n\nPercy Jackson (1 y 2)\n\n\n\n\n\n\n\nlectura\n\n\n\n\nNovela adolescente sobre héroes griegos en el mundo actual\n\n\n\n\n\n\nJan 15, 2020\n\n\nRick Riordan\n\n\n\n\n\n\n  \n\n\n\n\nOcasional Magic\n\n\n\n\n\n\n\nlectura\n\n\n\n\nHistorias cortas y emocionantes\n\n\n\n\n\n\nJan 14, 2020\n\n\nvarios autores (The Moth)\n\n\n\n\n\n\n  \n\n\n\n\nA Smarter Way to Learn JavaScript\n\n\n\n\n\n\n\nlectura\n\n\njavascript\n\n\n\n\nLibro práctico para aprender javascript\n\n\n\n\n\n\nJan 13, 2020\n\n\nMike Myers\n\n\n\n\n\n\n  \n\n\n\n\nThe monk who sold his ferrari\n\n\n\n\n\n\n\nlectura\n\n\n\n\nDecepcionante y extraño libro sobre el éxito\n\n\n\n\n\n\nJan 13, 2020\n\n\nRobin Sharma\n\n\n\n\n\n\n  \n\n\n\n\nMindset\n\n\n\n\n\n\n\nlectura\n\n\n\n\nMentalidad de crecimiento y mentalidad fija\n\n\n\n\n\n\nJan 11, 2020\n\n\nCarol Dweck\n\n\n\n\n\n\n  \n\n\n\n\nKeynotes de la PyCon 2020 Colombia\n\n\n\n\n\n\n\npycon\n\n\n\n\nVideos, slides y resúmenes.\n\n\n\n\n\n\nJan 11, 2020\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nThe gifts of imperfection\n\n\n\n\n\n\n\nlectura\n\n\n\n\nRegalos de la imperfección son el coraje, la compasión y la conexión\n\n\n\n\n\n\nJan 10, 2020\n\n\nBrené Brown\n\n\n\n\n\n\n  \n\n\n\n\nEstrategia de Datos\n\n\n\n\n\n\n\nlectura\n\n\n\n\nBuen contenido, mala redacción\n\n\n\n\n\n\nJan 9, 2020\n\n\nKarim Touma\n\n\n\n\n\n\n  \n\n\n\n\nTrillion Dollar Coach\n\n\n\n\n\n\n\nlectura\n\n\n\n\nSobre la importancia de relacionarse más allá de lo laboral, de traer lo humano y lo personal al trabajo\n\n\n\n\n\n\nJan 8, 2020\n\n\nEric Schmidt, Jonathan Rosenberg y Alan Eagle\n\n\n\n\n\n\n  \n\n\n\n\nAll these wonders\n\n\n\n\n\n\n\nlectura\n\n\n\n\nPequeñas grandes historias.\n\n\n\n\n\n\nJan 7, 2020\n\n\nVarios autores (The Moth)\n\n\n\n\n\n\n  \n\n\n\n\nIQ\n\n\n\n\n\n\n\nlectura\n\n\n\n\nMezcla de novela policial y ‘rapidos y furiosos’.\n\n\n\n\n\n\nJan 6, 2020\n\n\nJoe Ide\n\n\n\n\n\n\n  \n\n\n\n\nNudge\n\n\n\n\n\n\n\nlectura\n\n\n\n\nSobre lo fácil que es realizar pequeñas influencias en las elecciones\n\n\n\n\n\n\nJan 5, 2020\n\n\nThaler y Sunstein\n\n\n\n\n\n\n  \n\n\n\n\nMatadero Palma\n\n\n\n\n\n\n\nlectura\n\n\n\n\nEl mundo del matadero Franklin en los años 1940, con todos sus personajes memorables.\n\n\n\n\n\n\nJan 4, 2020\n\n\nSimón Soto\n\n\n\n\n\n\n  \n\n\n\n\nNever split the deal\n\n\n\n\n\n\n\nlectura\n\n\n\n\nMezcla de anécdotas de distintas negociaciones y una larga lista de consejos.\n\n\n\n\n\n\nJan 3, 2020\n\n\nChriss Voss\n\n\n\n\n\n\n  \n\n\n\n\nFlying Free\n\n\n\n\n\n\n\nlectura\n\n\n\n\nBiografía de Cecilia Aragon, llena de sorprendentes anécdotas.\n\n\n\n\n\n\nJan 2, 2020\n\n\nCecilia Aragon\n\n\n\n\n\n\n  \n\n\n\n\nAtomic habits\n\n\n\n\n\n\n\nlectura\n\n\n\n\nManual de cabecera para generar mejores hábitos.\n\n\n\n\n\n\nApr 27, 2019\n\n\nJames Clear\n\n\n\n\n\n\n  \n\n\n\n\nLo que nos motiva a aprender y trabajar\n\n\n\n\n\n\n\nopinión\n\n\neducación\n\n\n\n\n¿Porqué aprendemos fácil algunas cosas y otras nos cuestan tanto?\n\n\n\n\n\n\nApr 27, 2019\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nConsejos de libros al mejor precio\n\n\n\n\n\n\n\nconsejo\n\n\nliteratura\n\n\n\n\n¿Libros a buen precio? BP Digital y BookDepository.\n\n\n\n\n\n\nJan 19, 2019\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nCocodrilito aprender a ir al baño\n\n\n\n\n\n\n\nescritura\n\n\n\n\nUn cuento escrito a 2 manos con mi hijo\n\n\n\n\n\n\nJan 1, 2019\n\n\nsebastiandres\n\n\n\n\n\n\nNo matching items"
+    "text": "Navidad con IA\n\n\n\n\n\n\n\nia\n\n\n\n\n\n\n\n\n\n\n\nDec 17, 2023\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nPost con gráfico\n\n\n\n\n\n\n\ncodigo\n\n\npython\n\n\nvizzu\n\n\n\n\n\n\n\n\n\n\n\nNov 30, 2023\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nPost Con Codigo\n\n\n\n\n\n\n\ncodigo\n\n\npython\n\n\n\n\n\n\n\n\n\n\n\nNov 29, 2023\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nPrimer post\n\n\n\n\n\n\n\nvida\n\n\n\n\n\n\n\n\n\n\n\nNov 28, 2023\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nThe Sheik CEO\n\n\n\n\n\n\n\nlectura\n\n\n\n\nReflexión sobre cómo el estilo de liderazgo del sheik influyó en el rápido desarrollo de los EAU\n\n\n\n\n\n\nNov 18, 2022\n\n\nYasar Jarrar\n\n\n\n\n\n\n  \n\n\n\n\nCreativity INC\n\n\n\n\n\n\n\nlectura\n\n\n\n\nSobre cómo poder crear un ambiente de trabajo donde pueda flocerer la (elusiva) creatividad\n\n\n\n\n\n\nApr 5, 2022\n\n\nEd Catmull\n\n\n\n\n\n\n  \n\n\n\n\nMetas 2022\n\n\n\n\n\n\n\nbalance\n\n\ncuenta\n\n\nreflexión\n\n\n\n\n¿Qué quiero para el 2022?\n\n\n\n\n\n\nJan 21, 2022\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nStreamlit: apps y posts\n\n\n\n\n\n\n\nstreamlit\n\n\n\n\nNovedades y creaciones recientes\n\n\n\n\n\n\nJan 21, 2022\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nBalance anual\n\n\n\n\n\n\n\nbalance\n\n\ncuenta\n\n\nreflexión\n\n\n\n\nEl año 2021 en la balanza\n\n\n\n\n\n\nDec 31, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nUnmerging celdas de excel\n\n\n\n\n\n\n\npython\n\n\nexcel\n\n\ncells\n\n\n\n\nCuando pandas se quedó corto\n\n\n\n\n\n\nDec 14, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nGraficando emojis\n\n\n\n\n\n\n\ncódigo\n\n\n\n\nResumen de un googleo interminable\n\n\n\n\n\n\nDec 12, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nMi primera PyCon\n\n\n\n\n\n\n\npycon\n\n\n\n\nVenciendo el síndrome del impostor\n\n\n\n\n\n\nDec 5, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nStreamlit hackathon\n\n\n\n\n\n\n\nreflexión\n\n\n\n\nCapitalizando la PyCon Chile\n\n\n\n\n\n\nNov 19, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\n1000 Programadores Salteños\n\n\n\n\n\n\n\nreflexión\n\n\nstreamlit\n\n\n\n\nReflexiones de Pedagogía con Python\n\n\n\n\n\n\nNov 13, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nPyCon Chile 2021\n\n\n\n\n\n\n\nstreamlit\n\n\npycon\n\n\n\n\nTaller y charla de Streamlit\n\n\n\n\n\n\nNov 8, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nPyCon Argentina 2021\n\n\n\n\n\n\n\npycon\n\n\n\n\nTaller para Docentes\n\n\n\n\n\n\nOct 29, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nInteligencia y Creencias Limitantes\n\n\n\n\n\n\n\nreflexión\n\n\n\n\nAprendizajes inesperados al resolver el cubo de rubik\n\n\n\n\n\n\nOct 29, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nSpartan Race\n\n\n\n\n\n\n\ndeporte\n\n\nreflexión\n\n\n\n\nDesafíos físicos y sicológicos\n\n\n\n\n\n\nOct 23, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nTercer trimestre del 2021\n\n\n\n\n\n\n\nreflexión\n\n\n\n\nBalance de lo que han sido estos meses\n\n\n\n\n\n\nOct 1, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nSklearn 1.0\n\n\n\n\n\n\n\npython\n\n\n\n\nAparecí entre los contribuidores de la nueva versión\n\n\n\n\n\n\nSep 28, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nCompartir tu código en python\n\n\n\n\n\n\n\npython\n\n\n\n\nRevisión a las muchas alternativas\n\n\n\n\n\n\nSep 9, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nPyCon Latam 2021\n\n\n\n\n\n\n\nrise\n\n\npycon\n\n\n\n\nMi tercera PyCon\n\n\n\n\n\n\nAug 28, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nAll systems red\n\n\n\n\n\n\n\nlectura\n\n\n\n\nExploradores planetarios con un twist\n\n\n\n\n\n\nAug 18, 2021\n\n\nMartha Wells\n\n\n\n\n\n\n  \n\n\n\n\nNuevo favicon\n\n\n\n\n\n\n\ncódigo\n\n\n\n\nDe python a sebastiandres en 1 paso.\n\n\n\n\n\n\nAug 4, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nExperiencias del Sprint de Data Umbrella\n\n\n\n\n\n\n\ncódigo\n\n\nreflexión\n\n\n\n\nLo que aprendí en mi primer sprint contribuyendo a código abierto.\n\n\n\n\n\n\nJul 25, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nMicrocuentos tecnología\n\n\n\n\n\n\n\nescritura\n\n\nmicrocuentos\n\n\n\n\nCuentos enviados a concurso uPlanner en 100 palabras\n\n\n\n\n\n\nJun 1, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nEmulador de Linktree\n\n\n\n\n\n\n\ncódigo\n\n\n\n\nImitando un directorio de enlaces sólo con recursos gratuitos\n\n\n\n\n\n\nJun 1, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nMicrocuentos 2021\n\n\n\n\n\n\n\nescritura\n\n\nmicrocuentos\n\n\n\n\nCuentos enviados a Santiago en 100 palabras\n\n\n\n\n\n\nMay 14, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nLas 3 lecciones de los CEOs del Silicon Valley que valen un billón de dólares\n\n\n\n\n\n\n\nreflexión\n\n\n\n\n¿Tan simple como sé vulnerable, evita la democracia y trabaja en equipo?\n\n\n\n\n\n\nMar 28, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nEl detective: entre la lógica y el azar\n\n\n\n\n\n\n\nreflexión\n\n\n\n\nLas raíces de la serendipia y la novela policial clásica en un cuento persa\n\n\n\n\n\n\nJan 23, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nLos Tres Príncipes de Serendip\n\n\n\n\n\n\n\npolicial\n\n\ncuento\n\n\n\n\nUn antiguo y desconocido cuento persa de deducciones, que muestra porqué no deberíamos ufanarnos de nuestro conocimiento.\n\n\n\n\n\n\nJan 22, 2021\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nCrimen a la carta\n\n\n\n\n\n\n\nescritura\n\n\ncuento\n\n\n\n\nTaller de narrativa policial\n\n\n\n\n\n\nNov 20, 2020\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nTrabajando en el SML\n\n\n\n\n\n\n\nescritura\n\n\ncuento\n\n\n\n\nTaller de narrativa policial\n\n\n\n\n\n\nOct 24, 2020\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nMicrocuentos 2020\n\n\n\n\n\n\n\nescritura\n\n\nmicrocuentos\n\n\n\n\nCuentos enviados a Santiago en 100 palabras\n\n\n\n\n\n\nOct 1, 2020\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nBurnout — experiencia y aprendizaje\n\n\n\n\n\n\n\nreflexión\n\n\n\n\n¿Cómo reconocer y combatir el agotamiento laboral?\n\n\n\n\n\n\nSep 24, 2020\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nPaaS: Python as a Service\n\n\n\n\n\n\n\nreflexión\n\n\n\n\nEntregando python en la nube, más fácil que nunca.\n\n\n\n\n\n\nJul 25, 2020\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nLa rutina óptima es aburrida\n\n\n\n\n\n\n\nreflexión\n\n\n\n\nY está sobrevalorada\n\n\n\n\n\n\nMar 26, 2020\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nPycon Colombia 2020 - Las charlas\n\n\n\n\n\n\n\npycon\n\n\n\n\nEnlaces a los repositorios y videos.\n\n\n\n\n\n\nMar 24, 2020\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nReady Player 2\n\n\n\n\n\n\n\nlectura\n\n\n\n\nLas segundas partes nunca fueron buenas…\n\n\n\n\n\n\nJan 19, 2020\n\n\nErnest Cline\n\n\n\n\n\n\n  \n\n\n\n\nGuía del mal padre y otros\n\n\n\n\n\n\n\nlectura\n\n\n\n\nComics insuperables sobre la paternidad y viajes\n\n\n\n\n\n\nJan 19, 2020\n\n\nGuy Delisle\n\n\n\n\n\n\n  \n\n\n\n\nSandman volumen 1\n\n\n\n\n\n\n\nlectura\n\n\n\n\nUn comic con grandes profundidades\n\n\n\n\n\n\nJan 18, 2020\n\n\nNeil Gaiman et al\n\n\n\n\n\n\n  \n\n\n\n\nReady Player 1\n\n\n\n\n\n\n\nlectura\n\n\n\n\nNovela entretenida sobre la vida en la realidad virtual\n\n\n\n\n\n\nJan 16, 2020\n\n\nErnest Cline\n\n\n\n\n\n\n  \n\n\n\n\nPercy Jackson (1 y 2)\n\n\n\n\n\n\n\nlectura\n\n\n\n\nNovela adolescente sobre héroes griegos en el mundo actual\n\n\n\n\n\n\nJan 15, 2020\n\n\nRick Riordan\n\n\n\n\n\n\n  \n\n\n\n\nOcasional Magic\n\n\n\n\n\n\n\nlectura\n\n\n\n\nHistorias cortas y emocionantes\n\n\n\n\n\n\nJan 14, 2020\n\n\nvarios autores (The Moth)\n\n\n\n\n\n\n  \n\n\n\n\nA Smarter Way to Learn JavaScript\n\n\n\n\n\n\n\nlectura\n\n\njavascript\n\n\n\n\nLibro práctico para aprender javascript\n\n\n\n\n\n\nJan 13, 2020\n\n\nMike Myers\n\n\n\n\n\n\n  \n\n\n\n\nThe monk who sold his ferrari\n\n\n\n\n\n\n\nlectura\n\n\n\n\nDecepcionante y extraño libro sobre el éxito\n\n\n\n\n\n\nJan 13, 2020\n\n\nRobin Sharma\n\n\n\n\n\n\n  \n\n\n\n\nMindset\n\n\n\n\n\n\n\nlectura\n\n\n\n\nMentalidad de crecimiento y mentalidad fija\n\n\n\n\n\n\nJan 11, 2020\n\n\nCarol Dweck\n\n\n\n\n\n\n  \n\n\n\n\nKeynotes de la PyCon 2020 Colombia\n\n\n\n\n\n\n\npycon\n\n\n\n\nVideos, slides y resúmenes.\n\n\n\n\n\n\nJan 11, 2020\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nThe gifts of imperfection\n\n\n\n\n\n\n\nlectura\n\n\n\n\nRegalos de la imperfección son el coraje, la compasión y la conexión\n\n\n\n\n\n\nJan 10, 2020\n\n\nBrené Brown\n\n\n\n\n\n\n  \n\n\n\n\nEstrategia de Datos\n\n\n\n\n\n\n\nlectura\n\n\n\n\nBuen contenido, mala redacción\n\n\n\n\n\n\nJan 9, 2020\n\n\nKarim Touma\n\n\n\n\n\n\n  \n\n\n\n\nTrillion Dollar Coach\n\n\n\n\n\n\n\nlectura\n\n\n\n\nSobre la importancia de relacionarse más allá de lo laboral, de traer lo humano y lo personal al trabajo\n\n\n\n\n\n\nJan 8, 2020\n\n\nEric Schmidt, Jonathan Rosenberg y Alan Eagle\n\n\n\n\n\n\n  \n\n\n\n\nAll these wonders\n\n\n\n\n\n\n\nlectura\n\n\n\n\nPequeñas grandes historias.\n\n\n\n\n\n\nJan 7, 2020\n\n\nVarios autores (The Moth)\n\n\n\n\n\n\n  \n\n\n\n\nIQ\n\n\n\n\n\n\n\nlectura\n\n\n\n\nMezcla de novela policial y ‘rapidos y furiosos’.\n\n\n\n\n\n\nJan 6, 2020\n\n\nJoe Ide\n\n\n\n\n\n\n  \n\n\n\n\nNudge\n\n\n\n\n\n\n\nlectura\n\n\n\n\nSobre lo fácil que es realizar pequeñas influencias en las elecciones\n\n\n\n\n\n\nJan 5, 2020\n\n\nThaler y Sunstein\n\n\n\n\n\n\n  \n\n\n\n\nMatadero Palma\n\n\n\n\n\n\n\nlectura\n\n\n\n\nEl mundo del matadero Franklin en los años 1940, con todos sus personajes memorables.\n\n\n\n\n\n\nJan 4, 2020\n\n\nSimón Soto\n\n\n\n\n\n\n  \n\n\n\n\nNever split the deal\n\n\n\n\n\n\n\nlectura\n\n\n\n\nMezcla de anécdotas de distintas negociaciones y una larga lista de consejos.\n\n\n\n\n\n\nJan 3, 2020\n\n\nChriss Voss\n\n\n\n\n\n\n  \n\n\n\n\nFlying Free\n\n\n\n\n\n\n\nlectura\n\n\n\n\nBiografía de Cecilia Aragon, llena de sorprendentes anécdotas.\n\n\n\n\n\n\nJan 2, 2020\n\n\nCecilia Aragon\n\n\n\n\n\n\n  \n\n\n\n\nAtomic habits\n\n\n\n\n\n\n\nlectura\n\n\n\n\nManual de cabecera para generar mejores hábitos.\n\n\n\n\n\n\nApr 27, 2019\n\n\nJames Clear\n\n\n\n\n\n\n  \n\n\n\n\nLo que nos motiva a aprender y trabajar\n\n\n\n\n\n\n\nopinión\n\n\neducación\n\n\n\n\n¿Porqué aprendemos fácil algunas cosas y otras nos cuestan tanto?\n\n\n\n\n\n\nApr 27, 2019\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nConsejos de libros al mejor precio\n\n\n\n\n\n\n\nconsejo\n\n\nliteratura\n\n\n\n\n¿Libros a buen precio? BP Digital y BookDepository.\n\n\n\n\n\n\nJan 19, 2019\n\n\nsebastiandres\n\n\n\n\n\n\n  \n\n\n\n\nCocodrilito aprender a ir al baño\n\n\n\n\n\n\n\nescritura\n\n\n\n\nUn cuento escrito a 2 manos con mi hijo\n\n\n\n\n\n\nJan 1, 2019\n\n\nsebastiandres\n\n\n\n\n\n\nNo matching items"
   }
 ]
