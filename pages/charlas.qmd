@@ -7,6 +7,12 @@ title: "Charlas"
 Durante la charla espero entregar aprendizajes y sugerencias de las distintas habilidades de data storytelling y herramientas técnicas que podemos utilizar con el objetivo de crear presentaciones más atractivas, entretenidas y memorables usando librerías y programas en python. ¡Hagamos el mundo mejor, una presentación a la vez! 
 ([repo](https://github.com/sebastiandres/talk_2023_05_pycon_us)).
 
+* **Sebastian's Wish List for Vizzu**  
+*Vizzu Community Call #1*  
+Tuve el honor de ser el primer "guest speaker" en la Community Call de Vizzu. Presenté algunos ejemplos de apps que que construído con Vizzu, y una lista de ideas de cosas que me gustaría ver en Vizzu... con un ejemplo funcional para algunas de éstas 
+([repo](https://github.com/sebastiandres/talk_2023_12_11_vizzu_community_call) | [video](https://www.youtube.com/watch?v=andvQnsUWvo)).
+
+
 * **¿Cómo hacer Data Storytelling con Python?**  
 *PyCon Chile 2023 (2023/11/25)*  
 En esta keynote recorremos el poco explorado territorio del Data Storytelling en Python. Iremos más allá de las tablas y los gráficos, y exploraremos cómo tus datos pueden ser contados de manera convincente y emocionante. Descubrirás el arte y las herramientas disponibles en Python para tejer relatos que llamen al cambio y la acción 
