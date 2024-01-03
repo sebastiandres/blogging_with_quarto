@@ -28,15 +28,9 @@
       "/posts/2019-2023-lectura/2021-08-18-book-review-all-systems-red.html",
       "/posts/2019-2023-posts/2021-08-04-post-favicon.html",
       "/posts/2019-2023-posts/2021-07-25-post-data-umbrella-sprint.html",
-      "/posts/2019-2023-escritura-ficcion/2021-06-01-story-microcuentos-uplanner.html",
       "/posts/2019-2023-posts/2021-06-01-post-linktree.html",
-      "/posts/2019-2023-escritura-ficcion/2021-05-14-story-microcuentos-2021.html",
       "/posts/2019-2023-posts/2021-03-28-post-trillion-dollar-coach.html",
       "/posts/2019-2023-posts/2021-01-23-post-detectives-y-azar.html",
-      "/posts/2019-2023-escritura-ficcion/2021-01-22-post-tres-principes-serendip.html",
-      "/posts/2019-2023-escritura-ficcion/2020-11-20-story-taller-narrativa-policial-crimen-a-la-carta.html",
-      "/posts/2019-2023-escritura-ficcion/2020-10-24-story-taller-narrativa-policial.html",
-      "/posts/2019-2023-escritura-ficcion/2020-10-01-story-microcuentos-2020.html",
       "/posts/2019-2023-posts/2020-09-24-post-burnout.html",
       "/posts/2019-2023-posts/2020-07-25-post-python-as-a-service.html",
       "/posts/2019-2023-posts/2020-03-26-post-rutina-optima.html",
@@ -62,8 +56,22 @@
       "/posts/2019-2023-lectura/2020-01-02-book-review-flying-free.html",
       "/posts/2019-2023-lectura/2020-01-01-book-review-atomic-habits.html",
       "/posts/2019-2023-posts/2019-04-27-post-aprender.html",
-      "/posts/2019-2023-posts/2019-01-19-post-libros.html",
-      "/posts/2019-2023-escritura-ficcion/2019-01-01-story-cocodrilito-va-al-bano.html"
+      "/posts/2019-2023-posts/2019-01-19-post-libros.html"
+    ]
+  },
+  {
+    "listing": "/pages/historias.html",
+    "items": [
+      "/stories/2024-01-03-story-microcuentos-2023.html",
+      "/stories/2024-01-03-story-microcuentos-biobio.html",
+      "/stories/2024-01-03-story-microcuentos-2022.html",
+      "/stories/2021-06-01-story-microcuentos-uplanner.html",
+      "/stories/2021-05-14-story-microcuentos-2021.html",
+      "/stories/2021-01-22-post-tres-principes-serendip.html",
+      "/stories/2020-11-20-story-taller-narrativa-policial-crimen-a-la-carta.html",
+      "/stories/2020-10-24-story-taller-narrativa-policial.html",
+      "/stories/2020-10-01-story-microcuentos-2020.html",
+      "/stories/2019-01-01-story-cocodrilito-va-al-bano.html"
     ]
   }
 ]
