@@ -10,6 +10,7 @@ website:
     right:
       - index.qmd
       - pages/blog.qmd
+      - pages/historias.qmd
       - pages/charlas.qmd
       - pages/proyectos.qmd
       - pages/librerias.qmd

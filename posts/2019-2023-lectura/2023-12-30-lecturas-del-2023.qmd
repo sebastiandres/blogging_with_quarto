@@ -1,0 +1,70 @@
+---
+title: Lecturas del 2023
+description: "Brevísimas opiniones de los libros que leí el 2023"
+date: "2023-12-30"
+categories: [libros]
+---
+
+## No Ficción General
+
+Creo que el 2023 en general la lectura no ficción giró en torno a la búsqueda de la felicidad:
+
+* **The happiness project**, libro tipo autoayuda de Gretchen Rubin. Me hizo reflexionar sobre conocer mejor lo que nos hace felices (no lo que decimos a los demás, sino lo que realmente nos hace felices) y como tenemos que reconocernos y ser más auténticos.
+
+* **80,000 Hours**, de Benjamin Todd. Una guía práctica para encontrar satisfacción en tu trabajo. Algunos consejos interesantes, debería ser lectura obligada en el colegio.
+
+* **Waking up**, de Sam Harris. Un relato autobiográfico sobre la búsqueda de la trascendencia/iluminación. Algunos pasajes y anécdotas rescatables, pero en general se me hizo difícil de leer.
+
+* **Own your weird**, Jason Zook. Un relato autobiográfico sobre encontrarse a sí mismo y aceptar tus rarezas. Divertido y ameno.
+
+* **Can't hurt me**, de David Goggins. Un relato autobiográfico de Goggins, que sin esconder sus fracasos muestra cómo superó grandes metas físicas. Creo que es el tipo de libro que puede ser un gran motivador (¡tú también puedes correr una ultramaratón!) pero que creo no hace suficiente hincapié en los costos y sacrificios que requiere (físicos, emocionales, familiares).
+
+* **Same as Ever**, de Morgan Housel. Otro buen libro de Morgan, aunque creo que Psycology of Money es mejor. La premisa básica es que perseguir lo que cambia en el mundo es un juego de nunca acabar. Los humanos, sin embargo, no cambian. No importa el año (1900, 2000, 2100 o 3000) seguirá existiendo la avaricia, el buscar el dinero fácil, etc.
+
+* **Mindhunter**, de John Douglas. Volví a leer este tremendo libro autobiográfico y que cuenta distintas historias de asesinos seriales y cómo lograron atraparlos.
+
+
+## No Ficción: Visualizacion, Storytelling o ambas
+
+El 2023 me di cuenta que varios de mi intereses se unifican en una misma vertiente de "Storytelling", tanto en lo literario como en presentaciones.
+
+* **Made to stick**, Chip y Dan Heath. Un libro que analiza porque algunas ideas son memorables y perduran en el tiempo, y otras son fácilmente olvidadas. Interesante.
+
+* **Bird by bird**, de Anne Lamott. Un libro mezcla de consejos de escritura y autobiográfico, que tenía ganas de releer. Habla sobre las dificultades de la escritura, y consejos surtidos para escribir y la vida.
+
+* **Plotting and Writing Suspense Fiction**, de Patricia Highsmith. En un podcast recomendaron este libro con la perspectiva de la autora sobre la escritura.
+
+* **The DC Comics Guide to Writing Comics**, de Dennis O'Neil. Recomendado en algún podcast, leí esta guía que contiene algunos consejos interesantes pero que tampoco es indispensable.
+
+* **Introduction to Data Visualization**, de José Berengueres. Uno de los primeros libros que leí en relación a Data Storytelling/Visualization, y que es bastante simple. Creo que lo más relevante es el consejo y ejemplos de minimizar la cantidad de elementos en un gráfico.
+
+* **Storytelling with Data**, de Cole Nussbaumer Knaflic. El mejor libro sobre Data Storytelling que he leído hasta ahora. Tiene el trasfondo técnico, ejemplos, y es fácil de leer. Un clásico.
+
+## Ficción
+
+* **Un Mago de Terramar**, de Ursula K. Le Guin. Una joya poco conocida, escrita en los '60, y que habla sobre un aprendiz de mago y su lucha con un poderoso adversario. Me gustó mucho como habla de la magia como conocer "el nombre verdadero" de las cosas. 100% recomendado.
+* **La analfabeta que era un genio de los números**, de Jonas Jonasson. La primera novela que leí de Jonasson, y que me hizo reir muchísimo. Jonasson crea situaciones imposibles y absurdas, que son completamente creíbles y verosímiles dentro del universo de sus personajes. En este caso, una niña sudafricana que termina viviendo en Suecia y que tiene un talento innato por las matemáticas. 
+* **El viejo que saltó por la ventana y se largó**, de Jonas Jonasson. Es imposible no amar a Allan Karlsson, un anciano de cien años que decide escapar de la residencia de ancianos donde vive. En esta novela, aprendemos cómo termina con robándole dinero a la mafia y también sus disparatadas historias alrededor del mundo.
+* **El abuelo que volvió para salvar el mundo**, de Jonas Jonasson. Novela continuación de aventuras del mismo viejo saltador de ventanas, y que tiene un abanico de situaciones y personajes políticos más actualizado.
+* **Yomurí**, de Cynthia Rimsky. Una novela imposible de describir. ¿Realismo mágico mapuche, quizás? Un grupo de personas buscando la ciudad prometida para los mapuches en el sur de Chile.
+* **Normal people**, de Sally Rooney. Había visto que este libro era bastante popular en ferias de libro y ventas en línea, así que decidí darle una oportunidad. Una novela entretenida, pero también triste y agridulce. Habla sobre la relación de una pareja, en sus peleas y malas decisiones en su transición del colegio a la universidad. Me sorprendió que los personajes tenían una profundidad que normalmente no se encuentra en estos libros.
+* **The incredible Mr Ripley**, de Patricia Highsmith. Recomendado en un podcast, me sumergí en este thriller clásico que no había leído antes. Muy bueno.
+* **El jardín secreto**, de Frances Hodgson Burnett. Mi hijo tenía que leer este libro para el colegio, así que aproveché de leerlo para comentarlo y que hiciéramos un resuemen. Al final, le pedimos a chatGPT que hiciera un resumen, que fue en general bueno aunque le puso algunas alucinaciones. Lo mejor fue que prepararó una lista de posibles preguntas sobre el libro que eran bastante astutas.
+* ***Silencio de los malditos**, de Carlos Pinto. Una novela del creador del noventero programa de televisión Mea Culpa. El libro era un poco previsible y jugaba mucho con el morbo, no lo encontré muy bueno.
+* **Ambos mueren al final**, de Adam Silvera. También había visto este libro en muchas ferias de libros, así que le dí una oportunidad. Me pareció interesante el concepto principal, sobre poder conocer con 24 horas de anticipación cuando vas a morir. Aparte de eso, novela romántica adolescente.
+* **El curioso incidente del perro a medianoche**, de Mark Haddon. Una novela escrito en primera persona, donde el protagonista es un adolescente con autismo. Un libro excepcional, porque te hace entender su perspectiva y vivir en primera persona sus situaciones, y entender porqué mira y entiende el mundo de una manera distinta. Muy recomendado. Acá lo terminamos leyendo todos en la familia.
+* **Boom!**, de Mark Haddon. Otro libro de Mark Haddon, un poco más adolescente. Habla sobre unos niños que descubren que sus profesores son extraterrestres y un plan para conquistar el mundo. Liviano pero entretenido.
+* **La historia de tu vida**, de Ted Chiang. Una colección de relatos disímiles, pero increíblemente buenos. Es increíble el grado de realismo que Chiang logra en sus cuentos, porque son situaciones muy extrañas o extraordinarias, y sin embargo, los personajes y sus acciones son completamente creíbles.
+* **Trilogía de los Tres Cuerpos**, de Cixin Liu. Constituída por 3 libros: El problema de los 3 cuerpos, el bosque oscuro, el fin del tiempo. Hace mucho tiempo que no leía algo que me entretuviera y me hiciera pensar tanto. Creo que cada libro supera al anterior.
+* **Rock, paper, scissors**, de Alice Feeney. Alguien lo recomendaba en instagram como el libro policial con el mayor giro argumental. Aunque estaba entretenida, y tenía un buen giro, es una de esas novelas que te agarra hasta terminarlo pero tampoco echas de menos.
+* **Sometimes I Lie**, de Alice Feeney. Leí un segundo libro de Feeney, y el estilo y trama es muy similar. Algunos giros se hacen hasta predecibles. Entretenido, pero prescindible.
+* **El cuento de la criada**, de Margaret Atwood. Un clásico distópico que no había leído y que me sorprendió mucho. 100% recomendado. No spoilers. 
+* **A la sombra del padre**, de Hugo Kruger. Una novela entretenida, de esas joyas que a veces se consiguen casi regaladas en la feria del libro de Viña del Mar.
+* **El Faro**, de Felipe Gonzalez. Una novela ambientada en Valparaíso, que narra las aventuras y desventuras de 2 primos en los cerros de Valparaíso.
+* **La ladrona de libros**, de Markus Zusak. Una novela sobre la segunda guerra mundial, desde la perspectiva de una niña huerfana. Suena triste y deprimente, pero el libro tiene un tono irónico y es entretenido.
+* **Duna**, de Frank Hebert. Un clásico de ciencia ficción, que releí por segunda vez después de haber la película para recordar algunos detalles.
+* **El visitante extranjero**, de Julio Rojas. Una novela de época, sobre crímenes que comienzan a pasar en Valparaíso de los 1900. Aunque parte un poco lenta, posee una excelente documentación de época, buena trama e interesantes giros. Uno de mis nuevos escritores favoritos (dato freak: es el autor de Caso 63, el podcast).
+* **Un mundo imposible**, de Julio Rojas. Una colección de cuentos de Rojas. Tiene 2 de los mejores cuentos que he leído, tremendamente recomendado para lectores en general, pero sobretodo para apasionados por la tecnología o la ciencia ficción.
+* **El tigre**, de Joël Dicker. Un cuento largo o una cortísima novela. En cualquier caso, un interesante relato sobre una persona que se propone cazar un tigre para cobrar una recompensa. Muy distinto a las novelas policiales con 16 giros de trama característicos de Dicker.
+* **Los Pilares De La Tierra**, de Ken Follet. Una novela sobre diversos personajes de la edad media, que se cruzan en la ciudad de Kingsbridge y su iglesia. Tiene el tono despiadado, sangriento y realista de Game of Thrones, y grandes personajes.
+* **El imperio final**, de Brandon Sanderson. Primer libro de la trilogía "Nacidos de la bruna". Hace tiempo había escuchado cosas buenas de esta trilogía, y mi hijo me recomendó leerla después que él se devoró los 3 libros. Una buena novela de fantasía, donde dan ganas que existiera la alomancia de verdad.x  

@@ -1,0 +1,283 @@
+---
+title: "Write Useful Books"
+date: "2024-01-12"
+categories: [libro, escritura]
+---
+
+# Write useful books
+
+El libro Write useful books de Rob Fitzpatrick es una guía práctica para escribir libros de no-ficción que sean tan buenos que se vengan mejor año tras año porque la gente los recomienda. Contiene varias perlas de sabiduría, que anoto acá para poder re-leerme en el futuro.
+
+## Resumen capítulo por capítulo:
+
+1. Lo más importante es crear un libro que sea tan bueno que los mismos lectores lo recomienden. Escribir un libro no es una tarea imposible, no se necesita genialidad, y basta seguir los consejos del libro. Los primeros borradores serán terribles, pero hay que hacerlos para poder mejorarlos. El proceso es completamente distinto al tradicional: compartir lo antes posible, obtener feedback y mejorar. Tratar el libro como un producto o un experimento, e irlo refinando poco a poco.
+2. El libro tiene que ser diseñado para que sea recomendable a largo plazo. Hay 2 tipos de libros: los que entregan placer y los que solucionan problemas. Los consejos de escritura se centran más bien en el primer tipo, para escritura creativa y ficción. Pero son completamente distintos. Los libros para solucionar problemas pueden diseñarse y testearse. Es importante que tu lubro tenga una promesa clara de aprendizaje, y que encuentre un nicho en el mercado. El título y subtítulo del libro, y sus secciones, tienen que ser tan claro como sea posible. El índice del libro debería ser un excelente resumen de lo que se aprenderá y debería permitir recordar y encontrar un tema fácilmente. También es importantísimo definir para quién es el libro: no cometas el error de tratar de escribir para todos: a nadie le gustará. Identifica y enfócate en tu público objetivo. Habla con ellos directamente, y ellos te recomendarán. Alcance = Promesa de aprendizaje + perfil de lectores + para quien no es + lo que no cubrirá. Es importante definir lo que no se cubrirá. ¿Que conoce ya mi lector? ¿Que cosas tengo que evitar repetirle y aburrirle? También es importante entender que el fondo supera la forma. Si el contenido es bueno, recomendarán tu libro aunque contenga errores y sea horrible. Pero nadie lee un libro solo porque es bello.
+3. Obtener retroalimentación lo más pronto posible. Escuchar y enseñar son partes y complementos esenciales de escribir. Mientras más iteraciones, mejor. Para definir el mejor contenido del libro, ten tantas conversaciones sobre el tema como puedas: conversaciones en las que escuches y conversaciones en las que enseñes. Ambas son útiles para refinar el contenido. Pero importante: las conversaciones no son para pedir opiniones! La gente simplemente te dirá: genial, bueno. Pero no te dirá que hay cosas malas. Un error común es, contraintuitivamente, tener demasiada experiencia. Es importante tener la perspectiva de quienes comienzan a aprender para hacer que el libro contenga el contenido que necesitan. El objetivo es definir y testear una tabla de contenidos (índice) detallada. Escribir es más difícil que enseñar, y enseñar suele darte pistas de que partes son importantes o más dificiles de entender. Ten entrevista y ayuda a la gente con el contenido. Si no logras obtener interesados, es una buena pista de que necesitas refinar el alcance de tu libro. Para conseguir interesados, basta con hacer que la "oferta" sea sobre y para ellos, sobre lo que necesitan y como les ayudarás.
+4. Lo más importante es que el libro entregue valor página a página. El diseño debe garantizar que todas las páginas son importantes, y que el lector recibe periodicamente momentos "ahá". Diseña el libro en función de las metas del lector, y no del contenido o conveniencia del profesor. No uses un orden porque es cómodo o fácil, sino que porque es el más adecuado para tus lectores.
+5. Para encontrar tus primeros 1000 lectores, necesitas encontrar y trabajar con lectores beta. Los lectores beta son personas que te ayudarán a mejorar tu libro antes de que lo publiques. Ellos te ayudarán a encontrar errores, a mejorar el contenido, y a hacer que el libro sea más recomendable. Es importante que los lectores beta sean personas que representen a tu público objetivo.
+6. Juntar más y mejor información para construir un mejor libro. Es importante aprender de tus lectores, y saber detectar las señales de aburrimiento. Para eso, puedes compartirles un google docs y pedirles que te comenten que partes son dificiles de comprender. Es importante entender que no es "los lectores contra tí" sino "tu y los lectores contra el problema de escribir un libro". Puedes creer que has escrito el mejor libro, pero finalmente la opinión de los lectores es la que importa. Deja el ego al lado, y escúchalos.
+7. Usa marketing dirigido para encontrar tus primeros 1000 lectores. Si has escrito un buen libro, no será dificil conseguir lectores. El boca a boca es tu mejor aliado. Hay distintos tipos de marketing. Considera usar tus textos borradores y que no usaste en el libro como gancho. Ten a mano un kit de marketing para compartir con quien pueda ayudarte a hacer publicidad.
+8. Optimiza para ventas y crecimiento. Si has escrito un buen libro, no será dificil venderlo. Hay muchos canales distintos de venta, y cada uno tiene sus propias ventajas y desventajas. Si no quieres preocuparte, puedes simplemente publicar tu libro en Amazon y dejar que ellos se encarguen de todo. Pero tu porcentaje de royalti será bajo. Otra alternativa es distribuir tu mismo tu libro, pero requiere más esfuerzo. También mencionan que vender packs de libros a universidades y empresas es un buen negocio.
+
+## Las partes que subrayé
+
+Mirando las partes que subrayé, veo que el libro aplica bien los consejos que da. Cada capítulo y casi cada página tiene contenido muy interesante y valioso. 
+
+**1. What this guide is and isn’t, how it can help you, and who I am**
+  
+Página 5
+And the most reliable path toward that goal [stand out and succeed]— especially for an unproven author who lacks a pre-existing audience— is to write a book so startlingly useful that readers can’t stop talking about.
+  
+Página 10
+The goal of book marketing is to stop needing to do it.
+  
+Página 10
+the whole premise of this guide— is to design something so useful that readers can’t help but recommend it.
+  
+Página 14
+E. L. Doctorow said it best: Writing [a book] is like driving a car at night. You can see only as far as your headlights, but you can make the whole trip that way.
+  
+Página 14
+First, your early drafts are supposed to be terrible. Every first draft is a dumpster fire.  
+Second, creating useful nonfiction is a task of manual labor, not genius.  
+Third, even if you were recently an amateur in your topic, fear not. By still remembering how it feels to stand in the shoes of a beginner, you'll write with empathy and understanding.
+Fourth, although writing a useful book does take time, you’ll begin receiving feedback, support, and pre- orders from real readers long before the book is finished.
+
+**2. Designing nonfiction for long-lasting recommendability**
+  
+Página 17
+You can divide nonfiction books into two categories by their purpose to the reader: Pleasure-givers (“ interesting”, “fascinating”, “beautiful”) Problem- solvers ("useful", "actionable", "clarifying").
+  
+Página 18
+Confusingly, nearly all of the advice you’ve ever heard about “writing a book” is actually about writing a pleasure-giver, and is at best irrelevant and often harmful when applied to a problem-solver.
+  
+Página 33
+Beyond creating something DEEP and useful, you must obey two additional requirements for your book to enter the back catalog: Pick a promise that will remain relevant and important for 5 + years Avoid overreliance on temporary tools, trends, and tactics that are likely to become quickly dated
+
+**3. Improve your book before you’ve written it**
+  
+Página 39
+As the author, you’ll typically be more experienced than your readers. To write something useful, you’ll need to get back inside their heads and see the topic from their perspective.
+  
+Página 41
+The Table of Contents (ToC) must be built from:
+1. Clear, descriptive language 
+2. Detailed subsections.
+  
+Página 43
+Regardless, I feel that informative titles are valuable enough to be worth aiming for, even at the cost of consistency. Use them when possible.
+  
+Página 44
+[...] throughout the design and writing process, treat your ToC as what it really is: a detailed blueprint of your book’s education design, learning outcomes, and takeaways.
+    
+Página 51
+You’ll begin to reread, evaluate, and improve it during the second and third drafts. But for now, just get it down on paper.
+    
+Página 52
+Stop writing for an anonymous crowd; imagine yourself writing to a specific individual who you know, and who wants your help. Stop trying to sound smart. Use the same tone and language that you would use to explain
+  
+Página 53
+All that counts is that, for this day, for this session, I have overcome Resistance.
+
+**4. Create an engaging reader experience by giving it all away**
+  
+Página 54
+your book is a multi-hour journey experienced as value received over time spent.
+If too much time passes before arriving at the next piece of meaningful value, a reader’s engagement drops and they’ll drift away.
+  
+Página 54
+They are buying it as the solution to a problem or a path toward a goal. They’ll stay engaged for as long as you are regularly and consistently delivering on that promise.
+  
+Página 55
+At least every few pages, you want your reader to be thinking, “Oh wow, I can use that.”
+  
+Página 59
+By arranging the content around the learner’s goals instead of the teacher’s convenience, the experience stops feeling like a drag and begins to feel easy and engaging. (And as it turns out, this is actually the optimal way to teach chess to kids.)
+  
+Página 62
+Nonfiction authors make this mistake all the time via the inclusion of lengthy forewords, introductions, theoretical foundations, and other speed bumps that come from a place of author ego instead of reader empathy.
+  
+Página 62
+If your whole book is building up toward a grand conclusion or set of tips, can you simply start with the big reveal?
+  
+Página 63
+Every page is valuable for beginners, who read it cover to cover. Meanwhile, more advanced readers are able to quickly get the value and then move on, grateful that I haven’t wasted their time. This structure has done wonders for both engagement and word of mouth.
+  
+Página 65
+A book should be as long as is necessary to convincingly deliver on its promise, but never any longer.
+  
+Página 67
+Reread it. Revise it. Restructure it. Refine the reader experience. Front- load the value. Remove the chapters and sections that don’t apply to your ideal readers.
+
+**5. Finding and working with beta readers**
+  
+Página 68
+What they say in their comments (qualitative insights) Where they begin to become bored, start skimming, stop reading, and stop commenting (quantitative insights) How they apply the book’s ideas in their lives (observational insights)
+  
+Página 69
+And more subtly, you’ll receive more helpful feedback by showing a less polished product.
+  
+Página 69
+Whereas if I asked for thoughts on a rough, ugly sketch that took only minutes to create, you’d feel far more comfortable saying that you just don’t get it, allowing me to catch and fix its big problems.
+  
+Página 70
+If you’re not embarrassed by the first version of your product, you’ve launched too late.
+  
+Página 70
+I aim to find a new set of 3- 5 deeply engaged beta readers per iteration, which typically requires inviting 12- 20 people who claim that they’d love to read it. Roughly half of them won’t even open the document, and another half will submit approximately one comment before giving up. So expect to invite about four times the number of potential readers as you hope to end up with.
+  
+Página 72
+Three strong signals that your manuscript is “finished” and ready to be Polished: It feels easy to recruit new beta readers, since they want what you’re offering (Desirable)
+  
+Página 72
+Most of them are receiving the value and reaching the end (Effective and Engaging) At least some of them are bringing their friends (the recommendation loop is running)
+  
+Página 76
+You also need to tell your beta readers what type of feedback you need. Otherwise, they’ll spend all their time flagging typos when you’re still trying to figure out the core content. Here’s what this looked like for The Workshop Survival Guide:
+
+**6. Gather better data, build a better book**
+  
+Página 79
+let’s shift our attention to learning from them, as well as how to detect the elusive, hidden signals of boredom and disengagement.
+  
+Página 79
+I’ve been surprised to discover that I can rarely predict which specific parts of a book will be most valued or enjoyed. But once the best bits have been identified, I can easily go through the rest of the manuscript and add more moments like them.
+  
+Página 80
+Identifying the value can fundamentally change a book. In the early versions of The Mom Test, I had included a silly mock conversation to demonstrate how getting feedback tends to go wrong.
+  
+Página 84
+Even if you’re technically correct and have explained it earlier, if one reader gets stuck, then others will as well, hindering your recommendation loop.
+  
+Página 87
+But far better to hear it now— while you have a chance to fix it— than to be blindsided later by the slings and arrows of outrageous Amazon reviews. The moment you start disregarding or rationalizing negative feedback is the moment you lose your ability to improve your book.
+  
+Página 87
+One bit of advice I give writers is to see each draft as a hypothesis or experiment: your job is to gather data to test that version of the manuscript and figure out what’s wrong with it.
+  
+Página 88
+The problem isn’t you. The problem is the problem.
+  
+Página 88
+Of course, this doesn’t force you into blindly obeying every single suggestion— especially if the feedback is coming from someone who is outside your ideal reader profile. Use reader feedback as a lens to see what’s going wrong, and then come up with your own way to fix
+  
+Página 89
+The most helpful feedback of all is about where readers are becoming bored. But that data isn’t just laying around in plain sight— you must learn to detect it.
+  
+Página 90
+You’ll never cure boredom by adding more words, which only dilutes the value further. Deletion is your savior.
+  
+Página 91
+if your book intends to change their behavior, mindset, skills, work, or life, then you’ll also need to watch what they’re doing in the weeks after they’ve finished reading.
+  
+Página 91
+going beyond the comments is invaluable. People will only recommend your book if it has successfully touched their lives.
+  
+Página 93
+As for polishing it, the biggest task— and the one that feels most writerly— is to hammer your prose into shape through detailed, repeated editing passes. Remember all those times I told you to ignore the little problems until later? Now’s the time to fix them.
+  
+Página 93
+Nearly everyone should pay the few hundred dollars for a good copy editor (for sentence- level improvements) and proofreader (for typos and grammar).
+  
+Página 94
+And now’s the time to start your seed marketing. Ideally before launch, not after it. For most authors, “marketing” is a scary word. However, since you’ve written a useful book, there happen to be four exceptional marketing options that stand out above all others.
+
+**7. Seed marketing to find your first 1,000 readers**
+  
+Página 95
+How many readers do you need to find? Personally, I aim to get any new book into the hands and hearts of 500- 1,000 seed readers before taking my foot off the gas, which could require anywhere from a few weeks to a few months.
+  
+Página 95
+Launch is a year, not a day.
+  
+Página 98
+It’s true. Commuting around the world to personally promote your books is an unbelievably poor use of your time. Instead, get better results in a twentieth of the time by sitting at home in your pajamas and doing a digital book tour.
+  
+Página 101
+Interestingly, PPC (“ pay per click”) ads work better for self- published authors than those who are published traditionally.
+  
+Página 102
+If you’re familiar with other advertising platforms, you may be surprised to learn that you’re largely powerless to customize what appears in your Amazon ads. Your book’s cover and title/ subtitle are its advertisement
+  
+Página 102
+To get started, expect to spend a few days learning the basics and then about four hours per week (for the first few months) managing, optimizing, and improving your campaigns.
+  
+Página 104
+you should jump at any chance for your books to be given away to an event’s worth of ideal readers.
+  
+Página 105
+For online events, your book must be linked/ included directly in an email sent to all attendees.
+  
+Página 105
+The point here isn’t about the money, but the fact that the event will be more motivated to distribute and promote something that they’ve paid for.
+  
+Página 105
+To find willing events, you must first understand that from their perspective, even a “free” book is never free— any sort of giveaway carries a high reputational risk by acting as a tacit endorsement. So the organizer must believe, first and foremost, that the book is useful to their attendees.
+  
+Página 105
+One slightly sneaky trick is to research relevant events while your book is still being written, and coax a few organizers into becoming beta readers.
+  
+Página 105
+However you decide to handle the printing, 7 a typical paperback will end up costing you roughly $ 2- 5 per book,
+  
+Página 106
+If you’re in the business of paid consulting or speaking, you can easily upsell clients by adding their logo to the cover and a custom foreword to the innards. I’ve sold five or ten thousand of these custom- branded books to a mix of corporations and universities, and they absolutely love it.
+  
+Página 107
+All of my “marketing” was just sharing the work I was already doing on the manuscript. You can write your book in public, chapter by chapter or section by section, and just continually release these things to an ever- growing audience of people. Nobody will compile it into a book and release it without you. Doing that consistently, every single week, will build an audience whether you like it or not. 8
+  
+Página 107
+You can reuse the book’s content as its own marketing You can begin doing this very early, even with rough drafts and tiny excerpts
+  
+Página 107
+Once a day, after you’ve done your day’s work, find one little piece of your process that you can share. If you’re in the very early stages, share your influences and what’s inspiring you. If you’re in the middle
+  
+Página 107
+of executing a project, write about your methods or share work- in- progress. If you’ve just completed a project, show the final product, share scraps from the cutting- room floor, or write about what you learned. Don’t say you don’t have enough time. We’re all busy, but we all get 24 hours a day. People often ask me, “How do you find the time?” And I answer, “I look for it.”
+  
+Página 108
+Stop trying to figure out how to “market your manuscript” and start realizing that your manuscript is the marketing. Of course, this doesn’t necessarily
+  
+Página 110
+Is it scary to post your work- in- progress? Sure. So how do you get started? By starting.
+  
+Página 111
+Originality will emerge from continued publishing. You’ll find your voice. You’ll find your audience. You’ll get better at telling your story and they’ll appreciate it even more. 10
+  
+Página 116
+Earn your first dollar in royalties? That’s a story. Get your fifth perfect review? Tell people! This works especially well for books about business/ money/ marketing, but can also be creatively applied to many other topics.
+  
+Página 116
+For his second book, The Embedded Entrepreneur, Arvid Kahl began using the momentum launch even earlier, sharing feedback and insights from beta readers as a way to both promote his book and recruit even more readers. As a result, he ended up having over 500 beta readers helping him with the manuscript, and he built a happy seed audience as a side- effect.
+  
+Página 116
+As numerous creatives have noted over the years, the optimal career strategy is simple: Make things and tell people.
+  
+Página 116
+Share your writing, drafts, and excerpts Share your research and references Share your process and progress
+  
+Página 118
+you’ll want to capture interest by getting people’s email addresses. In terms of value- per- follower, email is orders of magnitude better than social media.
+  
+Página 119
+Of course, many readers already suffer from “newsletter fatigue” and are justifiably skeptical about signing up for yet another. The solution is to offer them an enticing digital gift— called a “lead magnet”— in exchange for their signup.
+  
+Página 121
+If you’re planning to finish the book and then move on to a completely different industry, then you can likely seed your audience more time- efficiently with the other three approaches. But if your book is intended as the cornerstone of the next stage of your career or business, then absolutely, yes, invest in the platform. It will become a multiplier to everything else you do.
+
+**8. Optimize for sales and growth**
+  
+Página 125
+Getting shoppers to click on your book instead of someone else’s (relies on your cover, title, subtitle, and reviews) Getting them to press “buy” instead of “back” (relies on your store page, description, and reviews)
+  
+Página 135
+For traffic on your own website or blog, sell the book directly as a PDF, MP3, and/ or EPUB via Gumroad (or something similar) for 97% royalties.
+  
+Página 135
+Allow bulk orders for events, universities, and corporations (as discussed in Chapter 7)— potentially huge boost to both profits and audience, especially if combined with consulting / teaching, but relies on networking, sales, and logistics Create a “press pack” (i.e., a credibility brochure for your book) to assist with sales and PR— valuable if you’re doing lots of direct sales with universities/ corporations/ conferences, but pointless if you aren’t
+  
+Página 135
+Support teachers, trainers, and consultants with worksheets, slide decks, suggested readings, and lesson plans— top priority for academically- viable books, meaningless for others
+  
+Página 140
+I think it’s best to assume your book will eventually be pirated. At which point, the question becomes: what hooks can you put into it (without withholding value or frustrating your readers) that will allow even a “free” reader to end up helping you?

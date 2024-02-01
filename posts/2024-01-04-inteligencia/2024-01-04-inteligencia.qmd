@@ -1,0 +1,38 @@
+---
+title: "Inteligencia"
+date: "2024-01-04"
+categories: [ia, inteligencia]
+---
+
+# Inteligencia Colectiva, Inteligencia Artificial y la resistencia al cambio
+
+Si la inteligencia es la capacidad de resolver problemas, entonces lo importante no es resolver el problema de manera independiente y aislada. Eso es ineficiente. 
+Es narcisista, y busca poder decir "lo hice solo". Rara vez se llega a la mejor solución, porque la mayor parte de los problemas no son "problemas de pizarra" con una única solución.
+La mayor parte del tiempo lo dificil es definir el problema. 
+
+Tengo un amigo que en más de 1 ocasión he visto que organiza llamadas con personas muy diversas para conversar y opinar de temas. 
+Como solución, es brillante. Es usar la inteligencia colectiva para resolver sus problemas, y todos ganan en el proceso. 
+Llegamos a una solución mejor que la que cada uno hubiera llegado por su cuenta, y aprovechamos de sociabilizar. 
+
+Mucho tiempo me opuse a comprar un atornillador eléctrico. Me parecía una herramienta innecesaria, dado que podía hacer lo mismo 
+con un atornillador normal. Pero un día vi uno en oferta, y me lo compré. Y ha sido la mejor herramienta que he comprado.
+Es increíble la cantidad de esfuerzo que te ahorras, y que te da la libertad de 
+repensar como están armados los muebles. El hecho que tardes menos y cueste menos esfuerzo, hace que 
+emprenda más proyectos que antes. El valor no está en la herramienta utilizada, sino en el proyecto y resultado.
+No hay más valor porque haya costado más o menos sudor.
+
+¿Porqué es tan polémica la colaboración con IA?
+Por varias razones:
+* Lo primero es el tema del copyright de los datos que entrenaron al modelo. 
+* Lo segundo es que resulta demasiado fácil usar la respuesta de la IA sin entenderla ni cuestionarla.
+
+Obtener algo fácil suena a trampa. Hace demasiado fácil algo que antes era difícil. Y tenemos resistencia a eso. 
+Hay una historia similar. Los queques "en caja". 
+Antes, la mezcla venía con todos los ingredientes y la gente sólo tenía que agregar agua. Pero no se vendieron bien. Era demasiado fácil y la gente sentía que no era manera de preparar algo o entregar a sus invitados.
+Se sentía como trampa, a pesar que el resultado era bueno (para el estándar de un queque de caja). 
+Así que los fabricantes de queques de caja empezaron a pedir que agregaran huevos y aceite. 
+El resultado final era el mismo en términos de sabor. Pero la gente se sintió mejor, y comenzó a comprar y usar los queques de caja, 
+a pesar que tenían que hacer un mayor esfuerzo.
+
+Hoy en día usar inteligencia artificial para resolver algunos problema es el camino más eficiente. 
+Pero creo que el tiempo ahorrado hay que invertirlo en aprender otras cosas que nos entreguen valor.

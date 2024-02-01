@@ -1,6 +1,6 @@
 ---
 title: Microcuentos 2020
-description: Cuentos enviados a Santiago en 100 palabras
+description: Cuentos enviados a Santiago en 100 palabras (2020)
 date: "2020-10-01"
 categories: [escritura, microcuentos]
 ---

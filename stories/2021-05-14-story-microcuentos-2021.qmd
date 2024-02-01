@@ -1,6 +1,6 @@
 ---
 title: Microcuentos 2021
-description: Cuentos enviados a Santiago en 100 palabras
+description: Cuentos enviados a Santiago en 100 palabras (2021)
 date: "2021-05-14"
 categories: [escritura, microcuentos]
 ---
