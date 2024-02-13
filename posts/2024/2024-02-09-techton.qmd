@@ -1,0 +1,31 @@
+---
+title: "Techton"
+author: "sebastiandres"
+date: "2024-02-09"
+categories: [codigo, python]
+image: "./images/techton-logo.png"
+---
+
+Me invitaron a dar una charla en la Techtón, un evento para recaudar fondos para donar para Bomberos de Chile por los recientes incendios en Viña del Mar. 
+
+![Pagina Techton](./images/techton-pagina.png)
+
+Fue super potente ver cómo en tiempo récord levantaron una página con un tremendo diseño y super funcional, con los enlaces al twitch y las donaciones, incluso con el conteo de dinero en tiempo real. Colaboraron varias comunidades de ciencia y tecnología unidas, bajo el alero de JavaScript Chile. 
+En total fueron +20 horas de streaming y +30 charlistas de ciencia y tecnología.
+
+Acá los principales enlaces:
+
+* Website: <https://techton.jschile.org/>
+* Día 1: <https://www.twitch.tv/videos/2057806063>
+* Día 2: <https://www.twitch.tv/videos/2058631454>
+* Twitch de la comunidad Javascript Chile: <twitch.tv/javascriptchile>
+
+¡¡¡Se logró reunir más de 4 millones de pesos!!!
+
+![Total Techton](./images/techton-total.png)
+
+Me alegró mucho que me invitaran a presentar, lo que me dió la oportunidad de hablar de estos temas de Storytelling y Data Storytelling que he estado investigando recientemente. Mi charla fue "Data Storytelling - Evitemos más muertes por PowerPoint". Por razones de tiempo, sólo di 10 consejos para mejorar tu presentación, y no entré en temas de tecnología.
+
+Tuve muy buenas conversaciones durante y post charla, que me ayudarán a hacer mejores presentaciones en el futuro y a refinar lo que he estado preparando como apuntes sobre Data Storytelling. Y además, pude conocer nuevas personas super motivadas y capaces.
+
+![Agenda Techton](./images/techton-agenda.png)

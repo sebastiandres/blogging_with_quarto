@@ -5,7 +5,12 @@ title: "Charlas"
 * **Python y Data Storytelling al rescate: evitemos más muertes por PowerPoint**  
 *PyCon US 2024?*  
 Durante la charla espero entregar aprendizajes y sugerencias de las distintas habilidades de data storytelling y herramientas técnicas que podemos utilizar con el objetivo de crear presentaciones más atractivas, entretenidas y memorables usando librerías y programas en python. ¡Hagamos el mundo mejor, una presentación a la vez! 
-([repo](https://github.com/sebastiandres/talk_2023_05_pycon_us)).
+([repo](https://github.com/sebastiandres/talk_2024_05_pycon_us)).
+
+* **Data Storytelling: evitemos más muertes por PowerPoint**      
+*Techtón*  
+Durante la charla compartí 10 consejos para hacer mejores presentaciones, basadas en mi experiencia y en técnicas de storytelling. La Techtón fue un evento de recaudación para ir en colaboración de los bomberos por el mega-incendio en Viña del Mar. 
+([repo](https://github.com/sebastiandres/talk_2024_02_09_techton) | [video](https://www.twitch.tv/videos/2057806063?t=5h37m03s)).
 
 * **Sebastian's Wish List for Vizzu**  
 *Vizzu Community Call #1*  
