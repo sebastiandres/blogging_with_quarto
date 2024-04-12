@@ -2,7 +2,7 @@
 title: "Post con gráfico"
 author: "sebastiandres"
 date: "2023-11-30"
-categories: [codigo, python, vizzu]
+categories: [código, python, vizzu]
 image: vizzu.png
 ---
 

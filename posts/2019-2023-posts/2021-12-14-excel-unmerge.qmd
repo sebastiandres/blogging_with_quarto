@@ -2,7 +2,7 @@
 title: "Unmerging celdas de excel"
 description: "Cuando pandas se quedó corto"
 date: "2021-12-14"
-categories: [python, excel, cells]
+categories: [python, excel, código]
 ---
 
 Hace poco necesitaba procesar una gran cantidad de archivos excel que tenía muchas celdas fusionadas (merged cells). Algo así como muestro en la imagen:

@@ -2,7 +2,7 @@
 title: "Metas 2022"
 description: "¿Qué quiero para el 2022?"
 date: "2022-01-21"
-categories: [balance, cuenta, reflexión]
+categories: [balance, reflexión]
 ---
 
 ## ¿Qué quiero para el 2022?

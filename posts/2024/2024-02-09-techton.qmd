@@ -2,7 +2,7 @@
 title: "Techton"
 author: "sebastiandres"
 date: "2024-02-09"
-categories: [codigo, python]
+categories: [código, python]
 image: "./images/techton-logo.png"
 ---
 

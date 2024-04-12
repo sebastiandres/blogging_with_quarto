@@ -3,20 +3,19 @@ title: "Charlas"
 ---
 
 * **Python y Data Storytelling al rescate: evitemos más muertes por PowerPoint**  
-*PyCon US 2024?*  
+*PyCon US 2024* (2024/05/19?)
 Durante la charla espero entregar aprendizajes y sugerencias de las distintas habilidades de data storytelling y herramientas técnicas que podemos utilizar con el objetivo de crear presentaciones más atractivas, entretenidas y memorables usando librerías y programas en python. ¡Hagamos el mundo mejor, una presentación a la vez! 
 ([repo](https://github.com/sebastiandres/talk_2024_05_pycon_us)).
 
 * **Data Storytelling: evitemos más muertes por PowerPoint**      
-*Techtón*  
+*Techtón*  (2024/02/09)
 Durante la charla compartí 10 consejos para hacer mejores presentaciones, basadas en mi experiencia y en técnicas de storytelling. La Techtón fue un evento de recaudación para ir en colaboración de los bomberos por el mega-incendio en Viña del Mar. 
-([repo](https://github.com/sebastiandres/talk_2024_02_09_techton) | [video](https://www.twitch.tv/videos/2057806063?t=5h37m03s)).
+([repo](https://github.com/sebastiandres/talk_2024_02_09_techton) | [video](https://www.youtube.com/watch?v=tYfKks4NXuY&list=PLBEwfn9JYDc-89_tgbc8cHzP93xH3TX5b)).
 
 * **Sebastian's Wish List for Vizzu**  
-*Vizzu Community Call #1*  
+*Vizzu Community Call #1* (2023/12/11)
 Tuve el honor de ser el primer "guest speaker" en la Community Call de Vizzu. Presenté algunos ejemplos de apps que que construído con Vizzu, y una lista de ideas de cosas que me gustaría ver en Vizzu... con un ejemplo funcional para algunas de éstas 
 ([repo](https://github.com/sebastiandres/talk_2023_12_11_vizzu_community_call) | [video](https://www.youtube.com/watch?v=andvQnsUWvo)).
-
 
 * **¿Cómo hacer Data Storytelling con Python?**  
 *PyCon Chile 2023 (2023/11/25)*  
@@ -61,7 +60,7 @@ Charla realizada a estudiantes de primer año de la Universidad de Salta en Arge
 ([repo](https://github.com/sebastiandres/talk_2021_04_UNSA_Argentina/)).
 
 * **Coding as a Service: Librería pypsdier, aprendizajes y metodología**  
-*PyCon Argentina 2020 (2020/11/?)*  
+*PyCon Argentina 2020 (2020/11/24)*  
 Charla realizado en la Pycon Argentina 2020 sobre mi proyecto pypsdier y en general sobre cómo hacer una librería científica para que sea usada por otros usuarios no técnicos 
 ([repo](https://github.com/sebastiandres/talk_2020_11_pycon_argentina/) | [video](https://www.youtube.com/watch?v=UoIXFRKraqY)).
 
@@ -82,4 +81,5 @@ En esta charla hablo sobre la librería sklearn y como disponibilizan distintos 
 
 * **¿Cómo manipular datos en python? ¡Con la librería pandas!**  
 *Charla Meetup Python (2016/03/30)*  
-En esta charla hablo sobre la librería pandas, y su utilidad para la manipulación de datos ([repo](https://github.com/sebastiandres/talk_2016_03_python_meetup_pandas/) | [video](https://www.youtube.com/watch?v=mmR2MAqsfVg)).
+En esta charla hablo sobre la librería pandas, y su utilidad para la manipulación de datos 
+([repo](https://github.com/sebastiandres/talk_2016_03_python_meetup_pandas/) | [video](https://www.youtube.com/watch?v=mmR2MAqsfVg)).

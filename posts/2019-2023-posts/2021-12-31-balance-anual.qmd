@@ -2,7 +2,7 @@
 title: "Balance anual"
 description: "El año 2021 en la balanza"
 date: "2021-12-31"
-categories: [balance, cuenta, reflexión]
+categories: [balance, reflexión]
 ---
 
 Este 2021 fue sorprendentemente bueno en muchos aspectos.

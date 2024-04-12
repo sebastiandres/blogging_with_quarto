@@ -1,0 +1,28 @@
+---
+title: "¡Voy a la PyCon US!"
+author: "sebastiandres"
+date: "2024-02-29"
+categories: [python, pycon]
+image: "./images/pycon_us.png"
+---
+
+Ya es oficial con mucho orgullo y alegría puedo contar que estaré presentando en la PyCon US
+Acá les comparto los enlaces de la [programación](https://us.pycon.org/2024/schedule/) y del [abstract de mi charla](https://us.pycon.org/2024/schedule/presentation/19/)
+
+Tanto mi charla en inglés como en español tuvieron buenas evaluaciones y fueron aceptadas. Decidí presentar en inglés, porque ya he presentado sobre Data Storytelling en español (PyCon Chile 2023, Techton 2024), y porque creo que es un desafío más grande. Estoy muy agradecido de la PSF, porque además me proporcionaron financiamiento para realizar el viaje y la estadía.
+
+![](./images/pycon_talk_wide.png)
+
+El proceso de llegar a presentar en la Pycon US ha sido muy interesante, porque representa un hito importante en una búsqueda que llevo realizando desde hace algun tiempo sin saberlo. Todo partió cuando me atreví a ir a una PyCon por primera vez, y postular una charla, que terminó siendo aceptada. La charla fue "¿Cómo hacer encuestas interactivas en Jupyter + RISE?", en la Pycon Colombia 2020. Luego de esa primera experiencia, participé en varios eventos y comencé a hablar más frecuentemente:
+
+* "Coding as a Service: Librería pypsdier, aprendizajes y metodología", en la PyCon Argentina 2020
+* "Presentaciones Interactivas con Jupyter Notebook + RISE. Todo lo que necesitas saber en 30 minutos", en la Pycon Latam 2021
+* "WebApps con Streamlit: ¡más fácil que la tabla del uno, poh!", en la PyCon Chile 2021
+* "Construí esto, pero... ¿Cómo lo comparto?" para la iniciativa de 1000 programadores Salta (2022)
+* "Vizzualización de Datos", en el PyDay Chile 2023
+
+Finalmente, en la PyCon Chile 2023, di mi primera keynote: "¿Cómo hacer Data Storytelling con Python?"  
+
+Mirando hacia atrás, todas las charlas comparten la curiosidad sobre cómo compartir tu código con otras personas y cómo hacer tus proyectos y presentaciones más interactivos e interesantes. Creo que esa es una temática que siempre me ha fascinado, y de lo cual sólo recientemente me he dado cuenta. Además, todo esto se entiende y resume bajo el marco de Data Storytelling. Haber encontrado el concepto de Data Storytelling ha sido enriquecedor porque me ha permitido encontrar más fácilmente lecturas e información que conecta con mis intereses, y me permite comentar esta búsqueda con otras personas. Estoy seguro que será un concepto que se usará mucho a futuro. De la misma manera, espero que el viaje a la PyCon US esté lleno de aprendizajes.
+
+Participar de eventos de PyCon me ha entregado muchísimas oportunidades de las cuales estoy muy agradecido. Participar del programa de Streamit Creators, y ser parte de la comunidad de Python Chile son parte fundamental de mis actividades no laborales y me llenan de energía y entusiasmo. Espero que esta charla en la PyCon US pueda ayudar a otras personas a ganar confianza y presentar de mejor manera, para que evitemos más muertes por PowerPoint.

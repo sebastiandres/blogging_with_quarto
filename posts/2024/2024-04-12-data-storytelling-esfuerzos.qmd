@@ -1,0 +1,19 @@
+---
+title: "Reflexiones sobre Data Storytelling - ¡Es demasiado esfuerzo!"
+author: "sebastiandres"
+date: "2024-04-12"
+categories: [data storytelling]
+image: "./images/pajamas.gif"
+---
+
+Creo que uno de los principales comentarios sobre hacer una presentación es que es demasiado esfuerzo.
+
+![Arg... pero ya me puse pijama...](./images/pajamas.gif)
+
+Rehuimos la responsabilidad porque hacer una presentación y prepararse toma demasiado tiempo. Y es verdad. 
+Hacer una buena presentación toma tiempo. Pero hay 2 aspectos a considerar:
+1. La presentación N+1 es más facil que cada una de las presentaciones anteriores. Mientras más presentaciones hagas, más material tienes preparado y más práctica y conocimiento tienes. La práctica hace al maestro.
+2. No todas las presentaciones necesitan el 100% de tu esfuerzo. Para una presentación interna en tu empresa puedes dedicar poco tiempo y no se acabará el mundo si las slides no están tan pulidas. Para una PyCon con seguridad buscarás que cada slide esté perfecta y tendrás un script de cada slide. 
+
+Independientemente de si es una presentación pequeña o una importante, aplicar storytelling te ayudará a que el objetivo y contenido de tu presentación llegue y resuene con tu audiencia. No evites presentar, aprovecha cada oportunidad pero regula el esfuerzo que inviertes.
+

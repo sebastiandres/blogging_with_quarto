@@ -1,5 +1,9 @@
 # HELP
 
+## Como renderizar
+
+quarto render .
+
 ## Como publicar
 
 Usar el comando:
