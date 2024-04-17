@@ -162,7 +162,11 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-tutoriales">    
         <li>
     <a class="dropdown-item" href="../../tutorial/quarto.html" rel="" target="">
- <span class="dropdown-text">Tutorial Quarto</span></a>
+ <span class="dropdown-text">Quarto</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../tutorial/streamlit.html" rel="" target="">
+ <span class="dropdown-text">Streamlit</span></a>
   </li>  
     </ul>
   </li>
@@ -214,7 +218,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <div class="quarto-title">
 <h1 class="title">Procesando datos con pandas</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">codigo</div>
+    <div class="quarto-category">código</div>
     <div class="quarto-category">python</div>
   </div>
   </div>
@@ -395,14 +399,13 @@ rojo  -3.500000          2   3.500000</code></pre>
 <span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>        norm_1_avg <span class="op">=</span> (<span class="st">"points"</span>, norm_1), </span>
 <span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>        norm_2_avg <span class="op">=</span> (<span class="st">"points"</span>, norm_2), </span>
 <span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>        norm_inf_avg <span class="op">=</span> (<span class="st">"points"</span>, norm_inf), </span>
-<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>).reset_index()</span>
 <span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_agg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>       norm_1_avg  norm_2_avg  norm_inf_avg
-color                                      
-azul          7.0    5.222103      4.333333
-negro         4.0    2.828427      2.000000
-rojo          7.0    5.004338      4.000000</code></pre>
+<pre><code>   color  norm_1_avg  norm_2_avg  norm_inf_avg
+0   azul         7.0    5.222103      4.333333
+1  negro         4.0    2.828427      2.000000
+2   rojo         7.0    5.004338      4.000000</code></pre>
 </div>
 </div>
 
