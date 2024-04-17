@@ -1,0 +1,18 @@
+---
+title: "Streamlit"
+---
+
+Algunos recursos para aprender streamlit en español:
+
+### 30 días de streamlit 
+Desafío para aprender un poco de Streamlit, cada día.  
+[app](https://30days-in-spanish.streamlit.app/), [repo](https://github.com/streamlit/30days-spanish?tab=readme-ov-file)
+
+### Streamlit para dummies
+Un taller para aprender Streamlit de manera autocontenida.    
+[página web](https://sebastiandres.github.io/streamlit4dummies/), [repo](https://sebastiandres.github.io/streamlit4dummies/)
+
+### WebApps con Streamlit: ¡más fácil que la tabla del uno, poh!
+Charla de la Pycon 2021.   
+[youtube](https://www.youtube.com/watch?v=cZSzK2uIqjY)
+

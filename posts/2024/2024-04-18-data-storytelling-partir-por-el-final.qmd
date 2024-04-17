@@ -1,0 +1,18 @@
+---
+title: "Partir por el final"
+description: "Reflexiones sobre Data Storytelling"
+author: "sebastiandres"
+date: "2024-04-19"
+categories: [data storytelling]
+image: "./images/pajamas.gif"
+---
+
+Una de las premisas del Data Storytelling es partir por el final. Eso significa definir de manera precisa el final que quieres en tu presentación, y asegurar que está alineado con tus objetivos y tu audiencia. Sólo cuando has definido el final de manera crítica y segura, puedes ir construyendo hacia atrás las slides que son estrictamente necesarias para sostener ese final.
+
+![](./images/pajamas.gif "Pirámide")
+
+Esta aproximación suele ser contraintuitiva, y tendemos a no aplicarla. Puede incluso descabellado, como construir una pirámide desde el vértice superior hacia abajo. Sin embargo, es la aproximación más razonable para el diseño. Si partimos diseñando desde la base de la pirámide al tuntún, nunca sabremos que altura tendrá la pirámide. Si sabemos a que altura **queremos** que esté el vértice de la pirámide, podemos calcular todas las otras dimensiones y construir la pirámide adecuada.
+
+Al enfrentar una semana de trabajo o un nuevo proyecto también podemos utilizar esta filosofía. ¿Qué es lo que queremos que ocurra al final de la semana o proyecto? ¿Podemos imaginar con detalle el final? Desde ahí, podemos pensar cuales son las tareas y actividades que tenemos que realizar para llegar a ese final preciso. 
+
+Tener definido el final deseado ayuda muchísimo porque permite priorizar y definir el criterio de éxito. Ayuda a definir tus objetivos, y ser conciente de cómo obtenerlos, en lugar de dar tumbos y llenarse de actividades que no contribuyen al final deseado.

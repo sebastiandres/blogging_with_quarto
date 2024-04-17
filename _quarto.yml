@@ -18,6 +18,7 @@ website:
       - text: Tutoriales
         menu:
           - tutorial/quarto.qmd
+          - tutorial/streamlit.qmd
       - pages/about.qmd
       - icon: linkedin
         href: https://www.linkedin.com/in/sebastiandres/

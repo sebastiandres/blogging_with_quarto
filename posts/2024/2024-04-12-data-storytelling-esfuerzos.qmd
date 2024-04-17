@@ -1,5 +1,6 @@
 ---
-title: "Reflexiones sobre Data Storytelling - ¡Es demasiado esfuerzo!"
+title: "¡Es demasiado esfuerzo!"
+description: "Reflexiones sobre Data Storytelling"
 author: "sebastiandres"
 date: "2024-04-12"
 categories: [data storytelling]
