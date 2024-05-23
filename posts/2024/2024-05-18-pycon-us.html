@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="sebastiandres">
-<meta name="dcterms.date" content="2024-04-17">
-<meta name="description" content="Como hacer que las celdas de excel tengan el ancho apropiado">
+<meta name="dcterms.date" content="2024-05-18">
+<meta name="description" content="Mi charla">
 
-<title>sebastiandres.xyz - Ancho automático en celdas de excel</title>
+<title>sebastiandres.xyz - PyCon US</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -209,17 +175,16 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Ancho automático en celdas de excel</h1>
+<h1 class="title">PyCon US</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">python</div>
-    <div class="quarto-category">excel</div>
-    <div class="quarto-category">código</div>
+    <div class="quarto-category">data storytelling</div>
+    <div class="quarto-category">pycon</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Como hacer que las celdas de excel tengan el ancho apropiado
+    Mi charla
   </div>
 </div>
 
@@ -236,7 +201,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 17, 2024</p>
+      <p class="date">May 18, 2024</p>
     </div>
   </div>
   
@@ -246,47 +211,40 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 
 </header>
 
-<p>Cuando creas un archivo excel con pandas, el ancho de las columnas queda fijo y eso suele ser molesto cuando tienes que revisar el contenido. Mira el siguiente ejemplo típico:</p>
-<div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Dummy dataframes</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({<span class="st">"nombre"</span>:[<span class="st">"Juan"</span>, <span class="st">"Pedro"</span>, <span class="st">"Diego"</span>, <span class="st">"LormIpsum"</span><span class="op">*</span><span class="dv">10</span>], </span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>                     <span class="st">"edad"</span>:[<span class="dv">20</span>, <span class="dv">30</span>, <span class="dv">20</span>, <span class="dv">30</span>]})</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Save to excel XLSX file</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>filename <span class="op">=</span> <span class="st">"ejemplo_sin_autofit.xlsx"</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>excel_writer <span class="op">=</span> pd.ExcelWriter(filename, engine<span class="op">=</span><span class="st">"xlsxwriter"</span>)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Save the first dataframe </span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>sheet_name <span class="op">=</span> <span class="st">"Personas"</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>df.to_excel(excel_writer, sheet_name<span class="op">=</span>sheet_name, index<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Close the excel file</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>excel_writer.close()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This page support tabs with different languages. Select English or Español from the tab below.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Español</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">English</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>El sábado 18 de Mayo di mi charla en la PyCon US. Tenía el provocador nombre de “Evitemos más muertes por PowerPoint: Python y Data Storytelling to the rescue”. La sala de la charla estaba repleta, y la recepción increíblemente positiva que ha tenido me ha dejado sin palabras. Muchas personas se acercaron después de la charla durante el evento para discutir las ideas y decir que se habían sentidos inspirados a aprender alguna de las librerías que mencioné. Muchísima gente me ha agregado en linkedin, y me siento muy contento de que este tema que me apasiona mucho comience a ganar más terreno.</p>
+<p>Acá puedes encontrar el repositorio con la presentación, y todos los archivos relacionados: <a href="https://github.com/sebastiandres/talk_2024_05_pycon_us" class="uri">https://github.com/sebastiandres/talk_2024_05_pycon_us</a></p>
+<p>También estoy desarrollando un template de contenido y trucos en quarto: <a href="https://github.com/sebastiandres/quarto_slides_template" class="uri">https://github.com/sebastiandres/quarto_slides_template</a></p>
 </div>
-<p>Mis archivos excel se veían como en la siguiente imagen:</p>
-<p><img src="./images/excel-sin-autofit.png" title="Excel con autofit" class="img-fluid"></p>
-<p>Hoy aprendí una manera super simple de hacer que las columnas generen el ancho de manera dinámica. Sólo requiere usar ‘xlrxwriter’ y su metodo autofit! No funciona con openpyxl, otra buena librería para manejar excels desde python.</p>
-<div class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Dummy dataframes</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({<span class="st">"nombre"</span>:[<span class="st">"Juan"</span>, <span class="st">"Pedro"</span>, <span class="st">"Diego"</span>, <span class="st">"LormIpsum"</span><span class="op">*</span><span class="dv">10</span>], </span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>                     <span class="st">"edad"</span>:[<span class="dv">20</span>, <span class="dv">30</span>, <span class="dv">20</span>, <span class="dv">30</span>]})</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Save to excel XLSX file</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>filename <span class="op">=</span> <span class="st">"ejemplo_con_autofit.xlsx"</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>excel_writer <span class="op">=</span> pd.ExcelWriter(filename, engine<span class="op">=</span><span class="st">"xlsxwriter"</span>) <span class="co"># Must be xlsxwriter</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Save the first dataframe</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>sheet_name <span class="op">=</span> <span class="st">"Personas"</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>df.to_excel(excel_writer, sheet_name<span class="op">=</span>sheet_name, index<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>excel_writer.sheets[sheet_name].autofit() <span class="co"># This makes the columns to be autofitted!!!</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Close the excel file</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>excel_writer.close()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>On Saturday, May 18th, I gave my talk at PyCon US. It had the provocative title “Let’s Avoid More Deaths by PowerPoint: Python and Data Storytelling to the Rescue.” The room for the talk was packed, and the incredibly positive reception left me speechless. Many people approached me after the talk during the event to discuss the ideas and said they felt inspired to learn some of the libraries I mentioned. A lot of people have added me on LinkedIn, and I am very happy that this topic I am passionate about is starting to gain more traction.</p>
+<p>You can find the repository with the presentation and all related files here: https://github.com/sebastiandres/talk_2024_05_pycon_us</p>
+<p>I am also developing a content and tricks template in Quarto: https://github.com/sebastiandres/quarto_slides_template</p>
 </div>
-<p>¡El truco solo requiere una línea! Basta con acceder a la pestaña desde el ExcelWriter usando su nombre, y aplicar el método autofit.</p>
-<p>El excel resultante es el siguiente:</p>
-<p><img src="./images/excel-con-autofit.png" title="Excel con autofit" class="img-fluid"></p>
-<p>Por supuesto, el truco puede aplicarse a todas las pestañas del archivo.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./images/pycon_1.jpg" title="© 2024 Ted Ricks (CC BY-SA)" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">© 2024 Ted Ricks (CC BY-SA)</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./images/pycon_2.jpeg" title="© 2024 Paolo Melchiorre (CC BY-SA)" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">© 2024 Paolo Melchiorre (CC BY-SA)</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./images/pycon_3.jpeg" title="© 2024 Chanin &quot;Data Prof&quot; (CC BY-SA)" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">© 2024 Chanin “Data Prof” (CC BY-SA)</figcaption>
+</figure>
+</div>
 
 
 
