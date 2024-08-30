@@ -1,0 +1,28 @@
+---
+title: "Hackathon OpenAI"
+author: "sebastiandres"
+date: "2024-08-24"
+categories: [python, hackathon]
+image: "./images/2024-08-24-hackathon/logo.png"
+---
+
+El sábado 24 de agosto viajé temprano a Santiago a participar como mentor en la Hackatón de OpenAI 2024 en Chile. Me emocionaba mucho que me hubieran dado esa oportunidad, pues era un evento bastante exclusivo (sólo se podía participar por invitación) y que me interesaba muchísimo. No puedo sino agradecer esa oportunidad que se abrió por participar de Python Chile.
+
+![](./images/2024-08-24-hackathon/foto0.png "© ?")
+
+A las 9 am estaba ingresando al edificio de la Cámara Chilena de la Construcción - un imponente edificio. Todo el evento ocurrió en el subterráneo: al bajar las escaleras mecánicas estaba el mesón de acreditación, y cerca de ahí, el comedor y baños. Avanzando por el pasillo, la sala de coordinación, la gran sala de la hackathon (que era como 5 salas pequeñas unidas), y el auditorio del evento donde ocurrieron las charlas.
+
+Había participado en otra hackathon antes, pero no en rol de mentor, por lo que al principio estaba medio perdido sobre cual era mi rol. A las 10:00 reunieron a los mentores y nos comentaron sobre cual sería la dinámica, responsabilidades y consejos. Cada uno podía aportar con sus conocimientos específicos, pero lo más importante era aclarar dudas logísticas y asegurarse que los equipos mantuvieran el foco y pudieran presentar una buena demo al día siguiente. Durante la mañana y tarde estuve paseando entre los distintos grupos, revisando avances y haciendo sugerencias. Fue entretenido saludar a varias personas que conocía sólo de interacciones virtuales, y hacer muchos nuevos conocidos. Los otros mentores eran todos muy bacanes en lo que hacían. ¡Conocí muchísima gente!
+
+Creo que la mayor lección que me llevo del evento es la siguiente: ya nadie sabe todo. Los conocimientos de cada uno son distintos, y no alcanzan para hacer un buen producto. Nos necesitamos los unos a los otros. Necesitamos colaborar para poder hacer cosas distintas y de impacto. 
+
+Como dice el dicho:  
+**viaja solo si quieres ir rápido. Viaja acompañado si quieres llegar lejos.**
+
+![](./images/2024-08-24-hackathon/foto1.jpeg "© 2024 Sebastian Flores (CC BY-SA)")
+
+![](./images/2024-08-24-hackathon/foto2.jpeg "© 2024 Sebastian Flores (CC BY-SA)")
+
+![](./images/2024-08-24-hackathon/foto3.jpeg "© 2024 Sebastian Flores (CC BY-SA)")
+
+![](./images/2024-08-24-hackathon/foto4.jpeg "© 2024 Sebastian Flores (CC BY-SA)")

@@ -15,6 +15,8 @@ about:
       href: https://github.com/sebastiandres
 ---
 
-¡Hola! Soy sebastiandres. En este blog encontrarás publicaciones diversas, de distintos temas de tecnología, literatura y opinión.  
-Me encantaría saber que opinas tú al respecto. Agrégame en redes sociales para conversar.
+¡Hola! Soy sebastiandres. En mi sitio escribo sobre python, tecnología y libros.  
 
+Hi! I'm sebastiandres.
+I write about python, technology and books.
+Mostly on Spanish, but some posts are also available on English.

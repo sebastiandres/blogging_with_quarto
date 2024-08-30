@@ -1,0 +1,235 @@
+---
+title: "Escritura Creativa"
+subtitle: "Por Bradon Sanderson"
+---
+
+Apuntes del curso [2020 Creative Writing Lectures at BYU](https://www.youtube.com/playlist?list=PLSH_xM-KC3Zv-79sVZTTj-YA6IAqh8qeQ) de Brandon Sanderson.
+
+::: {.callout-note collapse="true" icon=false}
+## 1: Introducción
+
+Consejos de escritura:  
+
+1. Consistencia en la escritura:
+* La clave es desarrollar buenos hábitos y escribir de forma constante.
+* Cada escritor tiene su propio ritmo: algunos escriben 4 horas todos los días, otros sólo 4 horas los sábados.
+* Con 500 palabras por hora, 4 horas semanales, se puede escribir una novela en un año.
+2. Tipos de escritores:
+* Jardineros (discovery writers): exploran la historia mientras escriben.
+* Arquitectos (outline writers): planifican la estructura antes de escribir.
+* La mayoría de los escritores usan una combinación de ambos métodos.
+* Es importante conocer tu estilo para disfrutar el proceso de escritura y no frustrarse en el proceso. No escribas un outline detallado a menos que te sirva en tu escritura.
+3. Desarrollo de habilidades:
+* Metáfora del jugador de Magic: The Gathering: con la práctica, ciertas habilidades se vuelven instintivas, liberando espacio mental para manejar aspectos más complejos.
+4. Equilibrio vida-escritura:
+* Importante tener una vida real para nutrir la escritura.
+* Poner atención al peligro de obsesionarse y descuidar relaciones.
+5. Proceso creativo:
+* Los escritores no "viven en mundos de fantasía", sino que construyen algo de forma consciente y creativa.
+6. Ritmo de escritura:
+* La productividad varía durante una sesión (ej: 200 palabras la primera hora, 1000 la tercera).
+* Las interrupciones pueden reiniciar el proceso y causar retrasos significativos.
+7. Perseverancia:
+* Terminar una novela es un logro importante. Pocas personas terminan una novela.
+* Enfocarse en lo que se puede controlar: finalizar historias, ser constante, mantener el entusiasmo.
+8. Grupos de escritura:
+* Pueden ser muy útiles como estructura de apoyo y para recibir retroalimentación.
+* Advertencia: los escritores novatos pueden intentar cambiar tu historia a su estilo. Cuida escuchar retroalimentación pero no aceptar toda la retroalimentación.
+9. Consejos para dar retroalimentación:
+* Ser descriptivo, no prescriptivo (ej: "me aburrí" en lugar de "deberías añadir una escena de acción").
+* Compartir reacciones naturales, como en una audiencia de prueba para anuncios de TV.
+1.  Consejos para recibir retroalimentación:
+* Anotar todo sin hacer cambios inmediatos.
+* No defenderse ni explicarse durante la sesión.
+1.   Estructura de las sesiones de retroalimentación:
+* Comenzar con aspectos positivos.
+* Luego pasar a "cosas que merecen una segunda mirada".
+
+Anécdotas de Brandon:  
+* Este curso de BYU (Brigham Young University, en Utah) iba a ser comenzar a ser dictado por Orson Scott Card (Ender's Game), pero finalmente otro profesor lo dictó. Brandon tomó esta clase cuadno lo dictó David Wolverton (nombre de escritor es Dave Farland, saga de libros Runelords) en 2000, y la consideró la más valiosa de su carrera universitaria. Brandon la comenzó a dictar en 200?, antes de ser un escritor famoso.
+* En una fiesta, cuando dijo que era escritor, alguien asumió que estaba desempleado, pero había alcanzado la lista de bestsellers del New York Times la semana anterior.
+
+Link: https://www.youtube.com/watch?v=-6HOdHEeosc 
+:::
+
+::: {.callout-note collapse="true" icon=false}
+## 2:  Trama (Plot) - Parte 1
+
+Consejos de escritura:  
+
+1. No hay un punto de partida fijo para escribir una historia. Se puede comenzar con la trama, el personaje o el escenario, y es diferente para cada libro.
+2. Las historias se componen de tres elementos principales: trama, personaje y escenario. Estos elementos están unidos por el conflicto.
+3. Las ideas para estos elementos pueden surgir por separado y luego combinarse para formar una historia.
+4. Se puede encontrar inspiración en obras existentes. Por ejemplo, Sanderson se inspiró en Harry Potter y El Señor de los Anillos para crear Mistborn.
+5. Estar abierto a ideas poco convencionales o que subviertan las expectativas puede llevar a historias interesantes.
+6. El conflicto es crucial para unir los elementos de la historia y hacerla atractiva.
+7. No temer mezclar géneros o ideas aparentemente incompatibles. Sanderson menciona cómo la serie Codex Alera de Jim Butcher surgió de combinar la legión romana perdida con Pokémon.
+8. Considerar cómo las decisiones de worldbuilding pueden afectar la trama y los personajes. Por ejemplo, Sanderson menciona cómo la idea de la niebla en Mistborn surgió de experiencias personales y se integró en la historia.
+9. Estar dispuesto a revisar y reescribir partes de la historia si no funcionan, incluso si personalmente te gustan. Sanderson menciona haber tenido que reescribir partes de Oathbringer y Starsight basándose en la retroalimentación de los lectores.
+10. Mantener un sentido de progreso en la narración es importante para mantener enganchados a los lectores. Sanderson menciona cómo un mapa al inicio de un libro lo mantuvo interesado en la historia.
+
+Anécdotas de Brandon:  
+
+- Origen de **Mistborn**: la idea surgió mientras leía Harry Potter y pensaba en cómo los Señores Oscuros nunca tienen éxito. Se preguntó qué pasaría si al final de El Señor de los Anillos, Sauron hubiera ganado. Comentó "Man, these Dark Lords never get a break. It's always some dumb kid comes along and ruins the plan they've been setting up for a lifetime."
+- Sobre la inspiración para el sistema de magia de **Mistborn**: Dice que se le ocurrió mientras veía una película de **Ocean's Eleven**, pensando en cómo sería una historia de atracos en un mundo de fantasía.
+- Sobre la inspiración visual para la niebla en **Mistborn**: Cuenta que se le ocurrió mientras conducía y atravesaba un banco de niebla, combinado con el recuerdo de ver la Catedral Nacional de Washington D.C. iluminada por la noche.
+- La anécdota de Jim Butcher: Relata cómo Jim Butcher escribió la serie **Codex Alera** basándose en el desafío de combinar dos ideas aparentemente incompatibles: la legión romana perdida y Pokémon.
+- Su experiencia leyendo **Inferno** de Larry Niven y Jerry Pournelle: Explica cómo el mapa al inicio del libro lo mantuvo enganchado a la historia, haciéndole darse cuenta de la importancia del sentido de progreso en una narración.
+- Problemas con una secuencia en **Oathbringer**: Cuenta cómo tuvo que reescribir una parte del libro porque los lectores beta la encontraban aburrida, a pesar de que él pensaba que era interesante.
+- Una situación similar con **Starsight**: Menciona que también tuvo que hacer revisiones importantes debido a problemas al no cumplir con las promesas iniciales de la historia.
+
+:::
+
+::: {.callout-note collapse="true" icon=false}
+## 3: Trama (Plot) - Parte 2
+Consejos de escritura:
+
+Aquí tienes un resumen detallado de los principales consejos de escritura dados en esta clase:
+
+1. Estructura de la trama:
+   - Identifica los elementos clave: promesas, progreso y recompensas.
+   - Utiliza arquetipos de trama (como el atraco, el misterio, la relación) para estructurar tu historia.
+   - Considera usar estructuras como el Viaje del Héroe o el formato de Tres Actos, pero no seas demasiado rígido al seguirlos.
+
+2. Creación de esquemas:
+   - Brandon usa un método de esquema que incluye secciones para personajes, escenario y trama.
+   - Para cada trama, define el objetivo final y luego trabaja hacia atrás, creando puntos de trama que lleven a ese objetivo.
+   - Usa viñetas para delinear los pasos de progreso en cada trama.
+
+3. Múltiples tramas:
+   - Las historias más largas suelen tener múltiples tramas entrelazadas.
+   - Asegúrate de que cada trama tenga su propio sentido de progreso.
+   - Intenta que los puntos culminantes de diferentes tramas converjan para un mayor impacto.
+
+4. Arquetipos de trama:
+   - Analiza por qué la gente disfruta ciertos tipos de historias (por ejemplo, atracos, misterios, romances).
+   - Identifica los elementos clave que hacen que estos arquetipos funcionen.
+   - Considera cómo puedes darle un giro fresco a un arquetipo familiar.
+
+5. Progreso y tensión:
+   - Asegúrate de que haya un sentido claro de progreso a lo largo de la historia.
+   - Aumenta las apuestas y la tensión a medida que avanza la trama.
+   - Utiliza ciclos de intento-fracaso para crear tensión y conflicto.
+
+6. Escritura por descubrimiento:
+   - Si eres un escritor por descubrimiento, considera usar el método "sí, pero/no, y" para generar conflictos y progreso.
+   - Después de escribir, busca formas de conectar eventos en una trama más cohesiva.
+
+7. Flexibilidad:
+   - No hay una única forma correcta de estructurar una historia.
+   - Experimenta con diferentes métodos y encuentra lo que funciona mejor para ti.
+
+8. Equilibrio:
+   - En historias más largas, equilibra múltiples tramas y asegúrate de que ninguna se pierda por mucho tiempo.
+
+9. Promesas y recompensas:
+   - Asegúrate de que las promesas hechas al principio de la historia se cumplan de manera satisfactoria.
+
+10. Personajes y relaciones:
+    - Utiliza las tramas para desarrollar arcos de personajes significativos.
+    - Considera cómo las relaciones entre personajes pueden impulsar la trama.
+
+11. Escenario:
+    - El escenario puede ser muy creativo siempre que los personajes y la trama sean relatables.
+
+12. Revisión:
+    - Incluso los escritores por descubrimiento suelen necesitar revisar para reforzar la estructura de la trama.
+
+13. Estudio y práctica:
+    - Analiza historias que te gusten para entender cómo funcionan sus tramas.
+    - Practica diferentes métodos de estructuración de tramas para encontrar lo que funciona mejor para ti.
+
+Anécdotas de Brandon:
+
+1. Cuenta que George Lucas hizo que Anakin Skywalker tuviera un "nacimiento virginal" en el Episodio I, siguiendo muy literalmente el monomito de Campbell, lo cual Brandon considera un ejemplo de seguir demasiado rígidamente una estructura narrativa.
+
+2. Comenta que tiene un amigo escritor que escribe cada libro dos veces desde cero - la primera versión actúa como un esbozo para la segunda versión definitiva. Brandon dice que él personalmente encontraría ese proceso "miserable".
+
+3. Menciona que Mary Robinette Kowal le enseñó un método de escritura por descubrimiento llamado "sí, pero/no, y" que encuentra útil.
+
+4. Relata que cuando era estudiante, las sillas en esta clase son mucho más cómodas que las que él tenía, bromeando que los estudiantes podrían dormirse cómodamente si quisieran.
+
+5. Cuenta que Dave Wolverton (otro autor) solía describir las tramas románticas como "trenzar rosas", una metáfora que se le quedó grabada a Brandon por 20 años.
+:::
+
+::: {.callout-warning collapse="true"}
+## 4: Viewpoint and Q&A — Brandon Sanderson on Writing Science Fiction and Fantasy
+:::
+
+::: {.callout-warning collapse="true"}
+## 5: Worldbuilding Part One — Brandon Sanderson on Writing Science Fiction and Fantasy
+Principales puntos de la lectura #5:
+
+Estas son las reglas de Sanderson en escritura fantástica:  
+- **Primera ley:** La habilidad de un autor para resolver conflictos con magia es directamente proporcional a cuánto entiende el lector dicha magia.
+- **Segunda ley:** Las limitaciones son más importantes que los poderes.
+- **Tercera ley:** Expande lo que ya tienes antes de añadir algo nuevo.
+
+También:  
+- La magia puede explicarse en un libro en un espectro, donde en un extremo está la magia que busca sorprender y no se explica, y en el otro extremo está la magia con reglas explícitas y que se puede usar como herramientas.
+- En cualquier caso debe evitarse "Deus ex machina", en el cual los problemas se solucionan con magia sin explicación.
+- La magia debe tener un costo, ya sea físico, emocional, social, etc.
+- La magia debe tener límites, ya que si no los tiene, no hay tensión en la historia.
+- La magia debe ser consistente, es decir, no debe cambiar de reglas a lo largo de la historia.
+- La magia debe ser comprensible, ya que si no se entiende, no se puede apreciar su uso.
+- La magia debe ser interesante, ya que si no lo es, no se disfruta su uso.
+- La magia debe ser integrada a la historia, ya que si no, se siente como un elemento ajeno a la historia.
+- La magia debe ser parte de la resolución de conflictos, ya que si no, no tiene sentido que exista.
+:::
+
+::: {.callout-warning collapse="true"}
+## 6: 
+Worldbuilding Part Two — Brandon Sanderson on Writing Science Fiction and Fantasy
+:::
+
+::: {.callout-warning collapse="true"}
+## 7: Historias cortas - por Mary Robinette Kowal
+- Las historias cortas son sobre entregar un golpe emocional específico.
+- Las novelas son sobre inmersión.
+- MICE: Milieu, Inquiry, Character, Event. Son los elementos que componen una historia. 
+- Las historias están compuestas por cuatro elementos: lugar, pregunta, personaje y evento, mezclados en diferentes proporciones. Es importante cerrar los hilos MICE que se abren, en el orden inverso al cual fueron abiertos.
+    - Ejemplo: El Mago de Oz. Comienza como una historia de personaje, luego se convierte en una historia de evento, luego en una historia de lugar y finalmente en una historia de pregunta. El final parte por cerrar la pregunta, luego el lugar, luego el evento y finalmente el personaje.
+- Existe una fórmula práctica: la longitud de tu historia es igual al número de personajes, más el número de escenarios, multiplicado por 750 palabras, multiplicado por el número de hilos MICE que tengas, dividido por 1.5.
+- Las historias están hechas de ciclos de intento-fallido.
+- Cada acción que el personaje toma debe tener una consecuencia y un costo (?)
+- Una historia corta se puede dividir en tres partes: inicio, medio y fin.
+  - El inicio es donde se establecen los personajes, el lugar y el género.
+  - El medio es donde se establecen los conflictos.
+  - El fin es donde se resuelven los conflictos y se cierran los hilos MICE.
+:::
+
+::: {.callout-warning collapse="true"}
+## 8: Worldbuilding Q&A — Brandon Sanderson on Writing Science Fiction and Fantasy
+
+Lorem Ipsum
+:::
+
+::: {.callout-warning collapse="true"}
+## 9: Characters — Brandon Sanderson on Writing Science Fiction and Fantasy
+
+Lorem Ipsum
+:::
+
+::: {.callout-warning collapse="true"}
+## 10:  Characters Part 2 — Brandon Sanderson on Writing Science Fiction and Fantasy
+
+Lorem Ipsum
+:::
+
+::: {.callout-warning collapse="true"}
+## 11: Character Q&A — Brandon Sanderson on Writing Science Fiction and Fantasy
+
+Lorem Ipsum
+:::
+
+::: {.callout-warning collapse="true"}
+## 12:  Publishing Part One — Brandon Sanderson on Writing Science Fiction and Fantasy
+
+Lorem Ipsum
+:::
+
+::: {.callout-warning collapse="true"}
+## 13:  Publishing Part Two — Brandon Sanderson on Writing Science Fiction and Fantasy
+
+Lorem Ipsum
+:::

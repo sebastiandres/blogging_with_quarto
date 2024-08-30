@@ -1,0 +1,17 @@
+---
+title: "Pyschool"
+author: "sebastiandres"
+date: "2024-08-23"
+categories: [python, pyschool]
+image: "./images/2024-08-23-pyschool/cover.png"
+---
+
+El viernes 23 de agosto por fin realizamos la [PySchool](https://pyschool.cl/). Habíamos programado este evento para unas semanas antes, pero torrenciales lluvias nos obligaron a suspender. 
+
+Durante una mañana de talleres tratamos de dar a conocer Python como lenguaje de programación y sus aplicaciones de una manera sencilla y sin conocimientos previos requeridos. Ésta fue la primera vez que realizábamos el evento, así que sabíamos que había harto por aprender y mejorar. Aún así, el evento fue un éxito y tuvimos muy buenos comentarios de los estudiantes.
+
+Mi rol en el evento fue de gestor y coordinador: diseñar la estructura del evento, coordinar con DUOC UC Valparaíso las fechas y las actividades, armar la primera versión de la página, buscar talleristas, y ese tipo de cosas. Me hubiera gustado dictar uno de los talleres, pero quería darle espacio y protagonismo a nuestros talleristas (Yileanne, Valeska, Lilina, Francisco, Cristián y Bastián) para que ellos se empoderaran del evento. Francisco me ayudó enormemente a generar el material del evento, que funcionó perfecto ese día. Que los estudiantes tengan que acceder a una página estática, siempre disponible en línea (y sin publicidad, como comentó uno) fue fácil y rápido - no se requirieron usuarios, credenciales ni nada. Sólo un navegador. La combinación de quarto + pyodide la verdad es que funciona muy muy bien. 
+
+![](./images/2024-08-23-pyschool/foto1.jpg "© 2024 Sebastian Flores (CC BY-SA)")
+
+![](./images/2024-08-23-pyschool/foto1.jpg "© 2024 Sebastian Flores (CC BY-SA)")

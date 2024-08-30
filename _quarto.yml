@@ -19,6 +19,7 @@ website:
         menu:
           - tutorial/quarto.qmd
           - tutorial/streamlit.qmd
+          - tutorial/storytelling_by_sanderson.qmd
       - pages/about.qmd
       - icon: linkedin
         href: https://www.linkedin.com/in/sebastiandres/
