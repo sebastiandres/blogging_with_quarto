@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>sebastiandres.xyz</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../favicon.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-HG9BYLK8FC"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
+</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">sebastiandres.xyz</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Inicio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pages/blog.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pages/historias.html"> 
+<span class="menu-text">Historias</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pages/charlas.html"> 
+<span class="menu-text">Charlas</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pages/proyectos.html"> 
+<span class="menu-text">Apps y Repos</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pages/librerias.html"> 
+<span class="menu-text">Librerías</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pages/publicaciones.html"> 
+<span class="menu-text">Publicaciones</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tutoriales" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Tutoriales</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-tutoriales">    
+        <li>
+    <a class="dropdown-item" href="../tutorial/quarto.html">
+ <span class="dropdown-text">Quarto</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tutorial/streamlit.html">
+ <span class="dropdown-text">Streamlit</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tutorial/storytelling_by_sanderson.html">
+ <span class="dropdown-text">Escritura Creativa</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../pages/about.html"> 
+<span class="menu-text">Sobre mí</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/sebastiandres/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/sebastiandres"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/sebastiandres"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+
+<p>Let’s get started actually talking about sci-fi/fantasy. I’m going to start us off this year with plot. I do it randomly. Sometimes I start with character. Sometimes I start with setting. People often ask me, “Where does a book begin for you?” It’s really different for every book, and sometimes, in many ways, it’s kind of a chicken or an egg sort of thing. I often say that stories are made up of these three things. Plot, character, and setting. But they’re glued together by conflict, and that glue of conflict is the thing that oftentimes, I’ll have a plot idea, or a character idea, or a setting idea separately from one another. I often use Mistborn as an example of this. Where did Mistborn come from? Well, Mistborn came from, I was reading Harry Potter, and I thought, “Man, these Dark Lords never get a break.” It’s always some dumb kid comes along and ruins the plan they’ve been setting up for a lifetime. Same with Lord of the Rings. So I’m like, what if Frodo got to the end of Lord of the Rings and Sauron said, “Hey, my ring! I’ve been looking for that. Thanks. That must have been a really hard journey. Thanks for coming all this way.” And then killed him and took over the world. I thought that was a bit of a downer of a book to write. But I filed the idea away in the back of my head as an idea. That would be a plot idea. A plot or maybe a setting. It’s kind of like, what comes first. Is this a setting idea? Is this a plot idea? The idea of the prophesied hero failing is kind of a plot idea, but the idea that it turned into, a world where the prophesied hero failed, was a setting idea. These things all mix together. Separately, another time I was watching one of the Oceans movies, and I was reminded how much I love the heist genre. One of my favorite movies of all time is Sneakers, a fantastic little film. I’ve loved it all the way going back, things like The Sting, Michael Crichton’s The Great Train Robbery, any sort of heist story. Inception is just a fantastic one. You can always grab me with a heist story. I thought, “I don’t think I’ve ever read a fantasy heist.” I thought, wow, that would be really cool. You could give every member of the heist team, the leverage team or whatever, a different magical power. So they could each be magical. You could do this whole thing. I was thinking of that separately. And that was another plot idea. The idea for the mist came as I was driving to visit my parents in Idaho and I passed through a fog bank at 75 miles an hour, or whatever the legal speed limit is, which I was obviously going, because we’re being recorded. I passed through and I’m like, “This visually looks really interesting, hitting a fog bank and going into it.” I equated that in my head with a visit to the National Cathedral in D.C., which I had seen at night. Normally, I’d been inside of cathedrals and seen the stained-glass windows from inside with the light coming in from outside, but this time they had them lit from the inside at night, shining out, and I loved that visual image. Those became two setting details. This idea of the mist, of the fog, of this kind of almost living mist, and this visualization of cathedrals in the mist shining out light. Those ideas kind of combined together with this character I was developing of Kelsior, all separate. Feruchemy was designed separately from allomancy. If you haven’t read the books, there are three magic systems. Two of them were designed for separate stories, and when I combined them I liked them better. And then I designed a third one in my plotting and world-building sessions. For me, I write down all these ideas. They just go in my notebook, or in my file in my computer that’s called Working Ideas right now. It’s just big lists of ideas. A book grows out of multiples of these ideas combining together. When I have something that feels like the seed of a novel that’s working, I’ll often go back to my book and say, are there any other ideas in here that mesh really well with these ideas. I often describe, ideas are like these little atoms bouncing around. When they mash into each other, they create some core reaction, become something new. It’s not how actual science works, but, you know, it’ll work for the fantasy author. Suddenly you’ve got this thing growing of all these different atoms coming together and making some cool new thing that is somehow more than the sum of its parts, more exciting at least. That’s the story for me. Then I go and I kind of plug in things. I’m like, what else have I been thinking about that might work for this story, and I plug those in. Then I build those all in an outline that I’ll talk about during our second plotting session, kind of how I build my outlines. At that point, I’ll find holes, and I’ll just start plugging things in. I’ll start brainstorming. I’ll start saying, I know I need another idea here. Let’s put it together. Most of the time, a book is not one idea. This is where newer authors sometimes have problems. They pick one really good idea and they try to write a book on it. You can write a short story on one idea pretty well. A book generally needs a mashing together of multiple ideas. It doesn’t mean you have to have been struck magically by the idea fairy and have this brilliant idea that couldn’t ever be reproduced. That’s not how ideas work. You just need different hooks and things to make you excited and to get the audience excited. Ideas are actually cheap. My favorite story about ideas being cheap comes from Jim Butcher. I’ve confirmed this with him, so I know it actually happened, but I heard it thirdhand originally. The story goes that during his days unpublished, Jim Butcher, who is now famous for writing The Dresden Files, among many other wonderful novels, Jim was on a forum of aspiring writers, and he got in an argument with someone who said, “Some ideas are just so grand and so great, that’s what makes a writer.” Jim was making the argument, the same one that I often make, which is ideas do not make the author. Authors make the ideas work. If you give bad ideas to a good writer, you will generally get a really great book. If you give good ideas to someone unpracticed, it’s still going to fall apart. Jim and this other person got in an argument online. Finally, Jim said, “Give me your two worst, or at least most incongruous ideas, and I’m going to write a really good book using them.” They said, “All right, I want you to take the lost Roman legion and mash it together with Pokémon.” Jim wrote an entire epic series called Codex Alera, which is basically the lost Roman legion gets Pokémon in a fantasy world. It’s a great series. I recommend it. It’s an epic fantasy, it’s really cool, and it’s actually very distinctive because some of those ideas are very distinct ideas. But the skill of a writer is what readers and editors are looking for. I don’t know if I said this last week, but oftentimes writers will come and be like, “Oh, man, editors reject people so quickly.” But they really can reject very quickly. If I were to bring up here, roll out this piano, and have two people play on the piano, one picked up the piano last year, they’re not a complete noob, but they’ve been working at it assiduously these last eight months or whatever, and have gotten decent, and then we brought someone in who is 20 years practiced concert pianist and really knows their stuff, how soon do you think you could tell? Right away. An editor or a reader can generally tell after a few pages that same thing. Now, readers tend to be a little more forgiving than editors, in that readers can like the ideas and themes, even if the writing isn’t– they will notice, but they’re like, it doesn’t bug me. And that’s just fine. But people can tell by instinct which things are working better than others, even if they themselves are not experts in that field. You can, unfortunately, get judged very quickly based on your writing. That means that your ideas, however cool they may be, most of the time people aren’t going to get to your cool ideas if you can’t write a great scene starting off. That’s what we’re really looking for. We’re looking for the skill of someone who has practiced their craft and has really learned to be able to grab an audience quickly and convince them that the story is worth reading. Today we’re going to focus on doing that with plot. It’s equally important to character and setting, though I would actually rank setting the least important of the three if I had to rank them. I may tell this story again. I tend to do that. But if you think about it, we’re all in this room because we want to do sci-fi/fantasy. It’s a sci-fi/fantasy writing class. You would think that setting would be the most important. Did I say this last week? That a story that has a great setting, but terrible characters generally is still a bad book. But a story with a cliched and/or not that great setting but great characters, still generally a fantastic book. It could be better. You wish you would have all three really strong. But in some ways, setting is the least important of these three. We are going to talk about plot today. Really, before we dig into the nitty gritty of how do you actually construct a plot, and things like that, I want to talk about what we mean by plot, and why plots. Why some work. Why some don’t. Why readers get bored sometimes, even if exciting things are happening. Why readers can find “boring things” very exciting if they’re written in a certain way. If you’re going to practice something, learning how to do this, learning how to make things interesting, to pull a reader page by page, there are few skills as useful to a writer. I think the most important one, at least for a fantasy/sci-fi writer, is the ability to convey information in an interesting way, kind of this whole avoiding info dumps, instead using characterization for info dumps. But number two would be the ability to understanding what your promise, progress, and payoff is when it comes to constructing a story. Promise, progress, payoff. Now, we’re just going to go down these three and I’m going to talk at you for a while. We will start with promises. Stories all make a promise. In fact, they usually make several at the beginning of the story. Being in control of your promises and what you’re making is a sign of mastery of the art. Simply writing your story and seeing where it goes is fine. But either during revision, or during planning, or during outlining, you should be asking yourself, how am I making the correct promises? There are several types of promises you’re going to make. One is what we call a tone promise. A tone promise is where your introductory chapter’s job is, in part, to indicate the tone and style of story that you’re going to be telling. If you’re going to have a wacky comedy, don’t start your story with someone dying really tragically and really making us weep. That’s hard to do in a prologue, but you can. But don’t start with the prologue to Eye of the World if your story’s going to be a wacky comedy. If you haven’t read Eye of the World, the beginning is a man finding out that he’s gone crazy, having his sanity restored just long enough to realize he’s murdered his entire family, running off and committing suicide. That’s the prologue to Eye of the World. Yeah, he creates a mountain as he commits suicide, so that’s cool. But if the next chapter, where the wacky hijinks of a talking donkey and his friend the ogre, then you would justifiably say this tone premise was inaccurately presented. Now that’s an extreme example, but this is something that I notice a lot of writers don’t necessarily have fluency over and control over, is what kind of promises you’re making at the start of your stories. This is why, Hollywood does this too, but this is why the cold open is so popular. The cold open is where you join a character in the middle of an adventure that is a microcosm for the adventure that the entire story is going to be. The classic example of this is Indiana Jones and the Raiders of the Lost Ark. If you haven’t seen that movie, shame on you. If you haven’t seen that movie, it starts off with this fun, but very kind of solemn romp about Indiana Jones going into the jungle, trying to get this idol, being betrayed, and failing. That is your setup. Your setup to Indiana Jones’ character is, he’s awesome, but he’s kind of an everyday guy in some ways, because no matter how hard he tries, he just ends up failing at the end anyway. That is kind of your introduction. What is the story going to be about? Adventure. It’s going to be about someone who has an everyman characteristic that is really, really cool, but you can pretend that it’s a normal person, who’s probably going to get kicked around a lot, dropped into vats of snakes, and at the end maybe win, maybe not. That’s what the cold open is there to do for you. But your promise is, Indiana Jones tries really hard, you are going to have a good time, and this is going to be awesome. They’re setting a tone promise for you with the opening to that story. One of the reasons why the prologue is so popular in fantasy, to the point that it’s almost a cliché, is because a lot of fantasy writers realize having a kid start off on a farm at the beginning of their story doesn’t convey the right promise of action and adventure, so they start with something that has a lot of action and adventure, and then move to kid on the farm. Now, I’d like to point out this is not the only way to make a kid on the farm have this sort of tonal promise. But you’ll notice that Star Wars, does it start with Luke on the farm? No.&nbsp;It starts with a small ship and a large ship shooting at it, and then a firefight, a spunky princess, and goofy droids. Your cold open tells you everything, and then it cuts to Luke, and you get the last piece, where he’s looking at the binary sunset and the Force theme plays. Then you’ve got basically your whole story, the tone, the tone promises. I visited Pixar once, and they have something really cool that they showed me, which is they will try to set the tone of their movies by the color palette that are used for given scenes. They actually have, up on their wall, they have a several pixel wide sliver of color that is the average color for a given shot, a given second of screen, and then they just put them all together, and you can watch the colors change. It’s really cool with WALL-E. Gray, gray, gray, gray, brown, black, black, blue, bright blue, bright blue, green. It’s a cool way that they try to set the tone of their stories, just by using the color palette. You can’t do that, but you can set the tone of your story with the words you use and the type of scene you use to introduce your story. I will warn you that the epic fantasy prologue has become a little bit of a cliché, and so you have to work a little harder than you might once have had to do in this, because people are used to the story of action hero beginning, get some information that’s important, dies passing it on to someone, cut to kid on a farm. And/or young prince or princess who is inexperienced and wants to go out and see the world or something. Those beats are very well played. Now, anything done really well stops being a cliché. The cliched part is when it stops having the impact on your audience. If you can do it in a way that still has the impact you want on your audience, it’s not a cliché anymore. The reason clichés are bad is because they have been taken and removed from their original intent to the point that people no longer get the original intent from the words. They instead bring all the baggage that the cliché has, and it just feels lukewarm to them. So promise. Number one thing you’re going to want to look to in your promise is your tone. Another thing you’re going to want to look to in your early promises, is you’re going to want to promise us, if possible, your character arc. You don’t have to promise what the arc is going to be, but you do want to promise the thing missing in a character’s life that they cannot have, and the obstacles that lead to them being unable to have it. You want to show us your character’s desires and what’s preventing them. Now, sometimes you do this is a reverse way. Sometimes you show us what we know the character should want, and show the character not wanting that. That’s also very common. This is the Bilbo at the start of the Hobbit sort of thing. Where we all want Bilbo to go on an adventure. We know from the way the writing is written that he goes on an adventure. He thinks he doesn’t want to go on an adventure. We’re going to then cheer for him to go on this adventure as he comes to realize he wants to go on an adventure. The best part of the Peter Jackson Hobbit adaptations is that sequence in the movies. I will just leave that one thing there. But that part of the Hobbit movies was done brilliantly, and really even took what was in the books and took them a step forward, that realization that Bilbo wants to go on this adventure. But showing us a character who has a need, who has a desire, who has a flaw, has a problem they’re working on in their life, some sort of promise that tells us who’s our main character, or one of our main characters, and what’s their arc kind of going to look like if at all possible. Then the third thing you’ll want to do is indicate what kind of plot you’re going to be giving us. This can be your actual plot. This can be– I divide plot into two different things in my head. It’s sometimes been hard. I explain it different times in different classes. But there’s something I will call the umbrella plot. The umbrella plot is, in some ways, your visible structural plot. Then you have your core plot, which is what your actual progress and payoff is going to be. Let me explain what I mean by this. A lot of books and movies are romances. This is your core plot. Will they get together? But a lot of those romances get transposed to an umbrella plot of, we need to do X, and while we do X we’re going to fall in love, and that’s what you actually care about. Now, the romance genre tends to not use the umbrella plot. But a lot of other genres will be like, well, it’s a fantasy novel. The core plot, what we really want people to read about, is these two characters falling in love. But our umbrella is, there’s an alien invasion and we’re going to run away from the aliens. These two things can be separate things, and that’s okay. But a lot of times you want to indicate one of the two, and often it’s the umbrella plot that you are going to get to, and sometimes those are the same thing. You want to give us a promise of what type of story we’re getting into, if you can. Sometimes this is hard. Sometimes you’re going to be waiting till the end of Act I to actually really get us into this. Because sometimes you are following one of these classic archetypes, where the main character doesn’t want to leave their comfortable home and go on an adventure and become a better person and learn all the things they want to do. In those cases, you want to focus on the character arc, and you want to find a way to promise that the tone is going to be what you want it to be going forward. Let’s stop and talk, see if you guys have questions on this kind of concept. It’ll become more clear as I dig into the next thing, because progress is where this kind of starts to click. But any questions on promises? Yeah. Q: You’re talking about the first chapter, correct? The question is, “We are talking about the first chapter. Correct?” We are not necessarily talking about the first chapter. But that’s a great question. We are talking about the introduction to the book. This can be one chapter, but it can be a sequence of chapters. It really depends on how long we’re talking. If you’re writing a short story, this is your first couple paragraphs. If you’re writing a massive epic fantasy, really, we don’t get all of these things, tone, arc, and plot, in Stormlight Archive, until really chapter 11. That includes two prologues that aren’t in there. So chapter 13. If you’ve read Stormlight Archive, where I’d say we get all of this connecting together, where we’ve finally finished all this part, is when Kaladin makes the decision to save Bridge Four and turns back from the thing. There are earlier promises of what it’s going to be, and I used the tone promises, but this whole part is kind of finished then. Q: For Eye of the World, would you consider that beginning part when he leaves the village, or [_____]. I would say leave the village. In fact, Robert Jordan gets almost all of this stuff by the end of chapter 1. You’ve got the prologue, Dragonmount, and then, if you haven’t read it, chapter 1 starts with kid on farm. But you only have, like, three paragraphs on kid on farm until the kid on the farm sees this shadowy figure chasing him, and they go to town and everything starts to be odd and strange, and there are strangers in town. The immediate promise of that is, you saw all this action. Somebody killed himself. Now we’re learning that someone out there is a dragon reborn and might go crazy. Plus, we are learning everything’s wrong in this kid’s village. Then by the end of chapter 1 or so, I’m not exactly sure, but the end of the first little short sequence, we have the attack, and everything goes crazy. It’s really fast in Eye of the World. I would say it’s right about there. But really where this ends is where they decide to leave. Then you know what kind of plot you have. We’re going to go on a travelogue. We know what our arc is going to be. We’ve got this whole kind of promise that our characters are small town people who thought they wanted big adventure, and big adventure is way more dangerous and scary than they think, and that’s going to kind of be their arc. We have our tone promise of Dragonmount, followed by village, everything’s creepy, something’s wrong, and that covers it. Go ahead. Q: What’s the difference between the character arc promise and the plot promise? Great question. What’s the difference between the character arc promise and the plot promise? Character arc promise is how the character is going to change during the course of the story. Your promise for the character arc is a promise that they’re going to change, or at least their situation is going to change and give them what they want. I kind of intertwine these two. If you look at Luke, part of the promise is he’s going to be able to go up into the stars. But part of that promise that we don’t quite get there until we get to Obi Wan saying, “You must learn the ways of the force.” That’s the final end of, you’re going to have to stop being this person and become one of these people who can fight in this big war that we saw the starship starting. But those are character promises. Your plot promise is that is, the Empire is evil. We need to get these plans to the people who can then defeat them, and that’s your plot. Your plot is, get the plans to the rebels, and then you have a twist. We’ll talk about twists. You have a twist in that actually we’re going to go destroy the Death Star. That’s a twist ending. It doesn’t sound like one because we’ve all seen Star Wars. But it’s actually one of the forms of twists that I’ll talk about later. Do you see the difference between character arc and a plot, story arc, I would say? Yeah. Q: How do we make sure that we are predictable enough to have the promises, and not predictable enough to be predictable? Right. Great question. Wow. Okay, so the question was, how do we be predictable enough that we are giving promises, but not so predictable that we’re boring, that we’re predictable. There are a couple of answers to this. One of them is, generally, you can be, with your plot, a little more predictable than you think, as long as you are giving interesting setting and characters we care about. A lot of people talk about how many stories there actually are. There’s only five stories, or whatever. You can find those online. The truth is, almost every plot that has been done, obviously ever plot that you conceive has been done. Most of the ways to buck the trend in those plots involves doing something so unexpected that it breaks your promises. Now that can become a feature of your story. But most of the time, you want to do subtle inversions of the promises. For instance, you give the promise– I remember reading Eye of the World, which this shouldn’t have been a big inversion, it just shouldn’t have, but it was, when the Gandalf character was a woman. I’m like, oh, I haven’t seen that before. I’ve read a ton of these fantasy novels, and there’s always Gandalf, or there’s Allanon, or there’s Belgarath, or there’s always the wise wizard. When the wise wizard shows up and it’s a woman who you don’t trust, then that’s different. I’m like, I know what role this person is fulfilling, but they’re doing it in a different way. I am intrigued. Why don’t I trust her? Should I trust her? Is this Gandalf? Is this not actually Gandalf? Again, that shouldn’t have been a big inversion. It should have been– It shouldn’t have taken until that book to have a character who is not a white dude be the Gandalf character, but it was for me, as a 15-year-old reading it. You can do subtle inversions, or subtle plays on this quite a bit, to not be so expected. It comes down to, if you have a mastery over the form. If you say– Mistborn is a heist. I promise you very early on, Mistborn is a heist. It has all the classic characteristics of a heist. But the fact that most people had not read a heist where everyone has a different magical talent was new. The fact that we are recruiting someone into this team and training them in an apprentice plot, a master-apprentice plot, at the same time as pulling off a heist, was something new. A lot of people talk about, I use Terry Rossio. He’s the screenwriter who wrote Pirates of the Caribbean, one of the two, with his writing partner, and Aladdin. He talks about this idea. He’s calling it the strange attractor. This is why you hear so often in Hollywood, “It’s this meets this.” The strange attractor idea for a story is you want to have your story feel familiar but strange at the same time. Oftentimes what you do is you take a new spin on a familiar idea, or you take two familiar ideas and mash them together in a way that doesn’t feel like it would make sense but is intriguing. Mistborn is actually a heist movie in a fantasy world, mashed up with My Fair Lady. That’s part of why Mistborn works. That mashup, you know both of those plot archetypes. You know about the orphan who is taken in and trained to act all upper crust and things like that. You know heist story is. But both of those things in a fantasy book you haven’t seen before. What you’re going to do, in part, is you’re going to do this in a new way, or you’re going to do it really well. Harry Potter is a perfect example of this. I don’t think many people were surprised, who have read a lot of fantasy, by the plot of Harry Potter 1. But it was fantastically done, and there is something magnificent about seeing somebody really good do something really well that you want to enjoy. This is why people read a lot of romance novels, even though they know these two characters are going to get together. Even though the plot is predictable, watching– Like, I know how Hamlet ends. I will still go see Hamlet performed by actors. You don’t have to twist everywhere, but I will talk about how to twist also. All right, back here. Do you need a chair, by the way? I think there are a few seats here. I could have people raise hands. If you’ve got a seat next to you empty, raise your hand, just in case someone in the back wants one. You guys can glance at those. You can stand back there if you would prefer. Q: Do all good characters have to have arcs? For instance, Indiana Jones– Good question. Do all good characters have to have an arc? There is a category of character that I believe Jim Zub, the comic artist, dubbed. He called them iconic characters. These are characters that do not change story to story, and you can read their stories out of order, and you enjoy them for a different reason than seeing a character’s arc. So, no. For instance, James Bond is the classic example of this. James Bond, sometimes, depending on who does a James Bond story, will have a character arc in a given movie. That’s generally what they do nowadays. But classic James Bond, classic Conan, classic Sherlock Holmes. Sherlock Holmes did not have arcs in most of his stories. Sherlock Holmes is an iconic character. In Sherlock Holmes, your tone and your plot promises are way more important than promising some sort of character arc. It is not required. If it going to be a major feature of your story, then you do want to give a promise to it. But if it’s not, you instead show them being iconic and say, this is why you want to read about this character. They are just cool to watch, or to read, or to, you know, experience. Go ahead. Q: Why do some promises work to capture readers’ interest and make them want to keep reading, while other kinds of promises don’t work? Why do some promises work to capture readers’ interest and keep them reading, while other promises don’t work? Some of this is taste. This is something you’re going to have to, as writers, become used to, is that different people have different tastes, and there is nothing wrong with that. Okay? You can make the very best salmon in the world, and I will hate it. I do not like fish. I have a visceral reaction to fish. I gag if I taste it. It makes me feel ill to try to eat. Doesn’t matter how good that salmon is. You’re not going to get me to enjoy eating that meal. You might get me to appreciate how much work you did and how well you made that salmon. In the same way, some of this comes down to taste. Taste can be really tricky, in part because the experience of your reader influences their taste a great deal. The more you experience, the more you will fall into the “I like these things, I don’t like these things,” and you may start to develop, not everyone does, the “I just want something different.” I’ve tasted these things so much I want something new. You see this in a lot of movie reviewers. There are some movies, that if you see a hundred movies in a year, this is your favorite movie, and if you see one movie a year, it’s your least favorite movie. Books have this too. You can call this the Aragon effect. When Aragon came out, a lot of people read it and said, “I’ve read this before. This is Star Wars or Dragon Riders of Pern.” And yes, it was. But of course, Star Wars was taking that from other stories, and so was Dragon Riders of Pern. I’m sure there were people who saw Star Wars and were like, “What? People like this? I’ve been reading John Carter books forever and it’s just kind of that.” They even used the word Sith for the bad guys in those, I think. There maybe people who read your book and be like, “This is just too straight down the archetype for me.” There may be other people who read it and are like, “This is a perfect version of this archetype, and I haven’t experienced it very much.” And so they just really love it. You shouldn’t, as an author, I think, be making value judgements on those things. You can definitely decide what you want to do and what your audience is. That’s part of it. Why do some promises work also when others done? Skill of the author is going to play into it. Whether you can start making good on those promises or not. I’d say it divides between skill and what the reader wants. Okay? All right. Let’s talk about progress for a little bit. Because this is the most important of them, I think. You would think the payoff is the most important, and in one element it is. Payoff is most important sometimes because it is the feeling you leave the reader with when they put your book down at the end. That can very much influence whether they pick up another one or not. However, getting them to that end is more important. The host of writers who have fantastic progress sections and weak endings, who are still very famous and popular authors, should prove to you that this is the most important of them. The host of authors who have limp beginnings, but really spectacular characters and plot in the middle, followed by “and then it ended,” who are still very, very popular writers, should tell you this. Because progress in the middle is the hardest of them, and it’s where some of the great writers excel. Stephen King is the quintessential example of this. What do I mean by progress? We’re going to go over here for progress. I started to figure this out early in my career when I was reading a book by Larry Niven and Jerry Pournelle. Forgive me, those of you who have heard this story before. The book is Inferno by Niven and Pournelle. Not their most famous. A lot of people have heard of them because of The Mote in God’s Eye. Or Larry Niven wrote Ringworld, which was the inspiration for Halo. These are two fantastic science fiction authors. Inferno is about a science fiction author who goes to a party, gets drunk, falls out a window and dies, and wakes up in The Inferno, Dante’s Inferno. Inferno is a classic style science fiction book. What I mean by that is, a lot of the old school science fiction books felt very episodic. This is because the authors were either serializing them in magazines or were accustomed to doing so. Inferno reads like, we have this adventure with famous dead person. By the end of the adventure, the mini adventure, you figure out, “That’s probably Billy the Kid, isn’t it?” Then Billy the Kid is left at one part of the Inferno, and the main character continues on to the next part of the Inferno and has another wacky adventure with some perhaps famous person, with a lot of imagination showing off a fantasy writer’s take on what it would be like to travel through hell. I was reading this book and I was compelled page by page, and normally I’m not in these episodic stories. I can still enjoy them. But usually I finish a story and I’m like, eh, I’m done. But each time I had to turn the page and keep moving. I asked myself, why do I read like I’m reading a thriller, thrillers are a genre that specializes in always making you turn the next page, when I’m reading this goofy adventure in hell that’s very episodic. I realized one thing had made the difference. There was a map at the front of the book. Now, we laugh at this because I may have, maybe, a thing for maps. It’s possible that you may have noticed that there are a lot of maps in some of my books. So you’re like, “Of course you noticed the map, Brandon.” But this was not an epic fantasy story. But it had Dante’s Inferno as a circle, where he started out here at the end and was moving toward the center. And the question of, what’s at the center of hell and can he get out, was so compelling that I had to read each next adventure, because I could watch as he moved steadily inward. This is a really powerful sensation in readers, and it is part of what draws people to books and why they read. Every book has this by virtue of the pages in the book that the reader is watching count toward an endpoint as they go. Even if they aren’t watching the actual numbers, watching themselves get through the book. There is a natural time bomb to reading a book. That’s progress, that you, as the reader, being able to sense that you are progressing through a story, is fundamental and vital to making stories page turners. When you say page turner, most people’s mind will go to something like a thriller, where something is always exploding, someone is always chasing you, and things like that. But you can write a page turner about anything. Does not have to have a single fight in it. No one has to be running anywhere. The page turner mentality is about you indicating to your reader that progress is happening and giving them a sense that it is building toward something that they want to see. This is a sense of progress. It is an illusion of progress. Because you have absolute control over this. If you wanted to, you could pass a thousand years in one sentence. “And a thousand years passed.” I would guess that most of you in this room, if I gave you the challenge, saying you have to write 20 pages on the time between the second hand moving from one second to the next, you could do it. It’d be boring, probably, but you could do it, just describing everything in the room and making everything slow down, and sticking with this moment, adding three flashbacks. You could, if you needed to, fill the whole book and make it take one second. You have absolute control over this. One of the big complaints that people who don’t read a lot of fantasy or sci-fi make about it, is the complaint of, oh, they can just make anything happen, so there is no tension. This is, in one way, true, but it’s a much larger problem in scope than they think, because you can do that in any genre. If you are writing a romance, you can say, “And he got over himself and they got together.” Takes one sentence. “And then he got over himself. And they found a whole bunch of money that her uncle left them that they didn’t know. Suddenly they could pay off the house” and the evil whatever person who was loan sharking them and stuff, and the fact that they no longer had that tension made their relationship problems go away and they lived happily ever after. You can do this in any story. We’ll talk about how to not do this when we talk about Sanderson’s First Law. But progress is absolutely, 100%, in your control, and because of that, you want to create an illusion for the reader that a steady progress toward an inevitable and exciting goal is happening in your story. You usually want to do this by identifying what your plot is going to be. What your actual story arc, not necessarily just your umbrella. Oftentimes, like I said, your story arc and your umbrella plot are the same. But you want to know, you want to ask yourself, why are people turning the page? What question do they need answered? Now, there can be multiples. The bigger your book, the longer your story, the more of these you will generally have. But there will be a few overriding ones, and you usually, at least I do, you make this happen by identifying what type of plot you are doing. We’ll talk about those in a little bit. We did an entire year on Writing Excuses, so if you need more, well, go listen to Season 11 is it? Elemental Genres is what it’s called. All the Writing Excuses people humoring me as we go through kind of Brandon’s philosophy on plotting. Just for the sake of discussion, I will use Star Wars. Let’s use Star Wars as an example. In Star Wars, we have an umbrella plot of destroy empire, which you don’t really realize is the whole umbrella plot. You think it is relegated to get the plans to the people. There’s your umbrella plot. Yeah, rescue the princess is on there. That’s all kind of, yeah, get the plans to the people and rescue princess. Help me Obi Wan Kenobi. You’re my only hope. Your character arc, your main character arc, is Luke becomes a Jedi, or really, Luke trusts the force. Luke takes the first step on becoming a Jedi, is what it actually turned out to be. But the promise is, Luke’s going to use the force. It’s going to be cool. You have a secondary character arc of Han becomes not as much a jerk. That’s what that says. I’m sorry. Sometimes my handwriting just kind of turns into hieroglyphics. But you’ve got a secondary character arc of Han becomes not so much a jerk. I would say those are our plots. In this one, your story arc and your umbrella arc, basically the same thing. Very simple plot. Here’s your story arc. Here’s your character arc. Go. Your sense of progress that you give the reader, or the viewer in this case, needs to snowball into these things. Where writers go wrong, and why their stories can get boring, even though they’re exciting, is when they give a promise, and then they go in a different direction for their plot arc. Now, sometimes you do this intentionally. It is a very difficult thing to do, and we can maybe talk about exceptions later. But let me give you a real-world example of this in my own writing. I was working on Oathbringer, the third Stormlight book. I’ll try to avoid specific spoilers, for those of you who haven’t read it. But in Oathbringer, at a certain point, people end up, a bunch of the characters end up in the alternate dimension, Shadesmar, which is kind of like a realm of fairies, maybe? How would you explain that, people that read? The fey realm? They end up in the fey realm. Something like that. They end up in an alternate dimension. Here, a big disaster has happened. They have narrowly escaped with their lives. Characters are in serious problems mentally and emotionally. They get together. In the original draft, they talk about what they need to do, and they say, “If we can get over to this other thing, this other place, there’s a portal there that takes us back to the real world, and we can start to put things back on track.” I, as an author, knew they actually needed to be down here for the big climax. So as they went on their way, they got diverted. They’re like, well, we have to go here to get to this place that’ll get a ship, and nope, it’s going– Oh, no! We ended up here. For the big climax. Who woulda thunk? That we end up where all the other characters are going. I was really looking forward to writing this sequence. Going to Shadesmar was something I had been promising in the books since the first one. I knew it was going to be very visually interesting. It was going to have some really interesting plot things. Some of the things the characters were going through were fascinating, to me at least as a writer. I wrote the sequence, and during beta reads it came back as everyone’s least favorite sequence. They all thought it was boring. I’m like, “Really? But– but it’s not boring. Why do you all think it’s boring?” I realized that I had violated this. You do it all the time as a writer. This was a mini promise within a story. But when I got them together and said, we are going to have a mini travelogue in the middle of our story, it’s a plot archetype. See this place over here? We’re going to go there. And then we went down here. And everyone, in the back of their mind, even if they couldn’t articulate, was thinking, “Okay, but this has to be the diversion. We’re on the diversion until we get back to the real plot, which is to get over here.” They kept waiting for the diversion to end and got frustrated and bored with the diversion. If you’ve ever been in a movie where you’re like, “I’m so bored, even though exciting things are happening, with these characters. Can’t they just get back to the main plot?” [Cantobyte.] It’s because we weren’t sold on the progress toward what we wanted to have happen. We had too many different promises that we were more interested in, and/or we were going about the wrong direction about having it happen. So I revised the story so that up here in this discussion, soon after it, they have a thing where they all get together and say, “Where are we going?” All the characters are going, “We need to go over here,” except Kaladin, who is our primary viewpoint character saying, “I have had a vision. If we don’t go here, somebody very important to us dies.” They’re all like, dude, you may be a little off your rocker. But sold the reader on the idea that this was the real goal, and we need to get there. So when we got diverted, everyone who was reading knew, “I knew we were supposed to go there originally.” Suddenly, the promise became different, and the gamma readers loved the sequence, just as I had been hoping that they would. This is the power of proper promises and progress along those promises. I changed virtually nothing about what was actually happening. I changed the promise and the tone at the beginning. Instead of “we need to escape,” it turned into “we need to save this person, which means we need to get there.” Slightly different tone, slightly different locational goal on our travelogue, and suddenly all the readers were on board. Now, I say all the readers. It’s totally possible that some of the people watching this or listening are like, “I still hated that part, Brandon.” That’s okay. We talked about tastes earlier. What I get really worried about when I have beta reads, is when a large group of readers that I thought were going to enjoy something find it boring instead. That’s a problem. Happened again in Starsight, actually, where I had to do major revisions on Starsight because my promises up front were very poorly done in the original draft, and I could not figure out why until I had had beta reads, and talked it over with editors. This is not an obvious thing sometimes. You would think, after 25 years of doing this, I would know, intrinsically, how to just make a good promise at the beginning. But there are two cases in my two most recent books. Now, Skyward is in the middle, and it didn’t have one of these. But two of my three most recent books, where I fundamentally misjudged a promise or a progress I was making. In both cases, the solution was to change the promise, not the progress. That was because I’d already written the book, and I didn’t want to write another one. In outlining, if I figure this out, I would probably go 50:50 on whether I change the promise or if I change the progress. The idea with Star Wars is, most of the things that the character should be doing should be working on these points. You should be making steps toward these three things. Every scene written in Star Wars, because it has to be so tight, this is a film. Books can get away with a little more flabbiness, but I wouldn’t necessarily recommend it. Every scene either advances the “let’s get the plans,” “let’s rescue the princess,” “let’s learn to trust the force.” What you do as an author, if you’re building an outline, if you want to outline, is you look at what your plot is, and you say, what are small increments I can make along this path that will be really interesting to the reader, that will show we’re making progress, or occasionally backsliding. Backsliding is okay too. As long as you’re very careful about how you do it, backsliding can be okay now and then. Particularly if, you know, “We’re going to take the plans to Alderon. Alderon isn’t there anymore. That’s a problem.” We have just back slided, but there’s a princess here, so let’s go rescue the princess. She’s rich. Then you’re playing on this one, Identifying what type of plot you have can be very handy for this. We don’t have a ton of time left today. We have less than 15 minutes. So we may shove some of this to the next plot discussion, where I talk a lot about the different plot archetypes. But the idea is that you want to be thinking about, if you have a romance or relationship plot as really the core plot of your story, make sure you are indicating progress happening. If your main story is “We need to get to Mount Doom,” then each adventure you have on the way should generally take you a little bit closer to Mount Doom. Q: It seems like in romance the step backs are more acceptable than other archetypes. I would say that in all the– The question is, it seems like in romance the step backs are more acceptable than other archetypes. I would say generally yes. I think that’s a valid observation. But I would say step backs are expected in almost every story. You use the step backs, generally, in your type of twist you’re doing, or how you’re changing the plot. Q: Because most of the step backs, like with the Alderon one, it happened very quickly and then they were off doing– It wasn’t something they put a lot of time towards. Right. Q: It seems like if you do a huge, I guess is the word for it, and then you step back, way back. Yeah. If you step way back. Q: Why am I reading all of this? Exactly. It requires some sort of fluency. For those who are watching on YouTube, the comment is, seems like if you did all this work to go somewhere and then stepped all the way back, it would feel really terrible in most plots. But most romance stories, readers accept that you’re not stepping back as far as the characters think they are, and that’s a fundamental part of that. That, “oh, it’s all destroyed,” the all is lost moment happens in almost every story. Not always. But you have this moment where, “Oh, no. Obi Wan is dead. Ahhhh! That’s bad! That’s worse than a planet being blown up.” In the context of the story, not in real life. And a lot of stories will have these sort of things, where for a moment you believe that you’ve stepped all the way back to the beginning, but you haven’t really. That kind of comes into your payoff and your plot twist. Let’s talk about payoff. Actually, let’s do any more questions about progress before we end on payoff. Q: You said something about, when you were talking about a little anecdote over here, so promise, progress, and payoff are all four subplots as well, and you have to do it several times throughout the story, not just for– Yeah. The question is, so this is for subplots, not just for the main story. Yes. Asterisk. The longer your book, the more subplots you’re going to have, and the more of these you have to set up. Like, Oathbringer is, in some ways, a terrible example, because I plot Stormlight Archive books, generally, as three novels that I put together between one cover. That sequence actually was the beginning of a new book in my plotting archetype. But because I do that, it allows me the plot before, the plot arc before was, we need to go to this city and save this city, and then something terrible happened, and we actually were able to have a major failure in a way that didn’t feel so disastrous. Because people can completely fail a little bit more easily in the middle of a story than at the end of a story. This is why Empire Strikes Back can work the way it does. If Return of the Jedi ended that way, it might be more of a downer. Not to say you can’t do that. There are certainly lots of great stories that do. I was able to basically make Oathbringer a trilogy. But even not doing that, you will have mini plot arcs and things. I often talk about, I use this idea of, what you are doing, really, is you are nesting plots, like you do in code. Where it’s like you’ve got open bracket, open bracket, open bracket. And these are like your umbrella. You’ve got your other arc, if you’ve got a separate one. You’ve got your character. Then you’re going to close all those three near the end. Though you might not close the umbrella until book 2, or book 3, with another book in between. This is very common. In here, though, you might be like, mini plot, mini plot, mini plot. Example from Star Wars, since we’re using that. Alderon was gone and we’ve been pulled into the tractor beam. New mini plot, new side plot. Turn off the Death Star’s tractor beam and rescue the princess for good. You already, you kind of foreshadowed the rescue the princess plot, but really it starts right there. We can go rescue her. Obi Wan goes and does this. You have mini plots with their own kind of problems, and things like that. Then at the middle you close that bracket and go to the next one. This sort of visualizing a plot tends to work really well. One of the things we’re not talking about today that I need to remember to talk about next time is, this progress should involve problems arising and things like that. But I guess we can talk about that in twists. All right, let’s go on to talking about– Oh, was there another one that I missed? Okay. Let’s talk about payoff then. Payoff. Payoff is where you make good on all of this. The trick is you don’t always make exactly good on it. Now, your classic archetype, which is still perfectly valid, is to make a promise at the beginning, work hard through the progress to show that it’s working, then have things start to fall apart, and start Act III with the character thinking it’s just not going to work at all. They’ve tried and they’ve failed. Then at the start of Act III, they find new inspiration, a new bit of information, or a new clue, or just the strength to try again, and then this time it works. Then it works and you get what you were promised at the beginning. That is totally okay. I call that, my sort of metaphor for that is, you promise your son you’re going to buy him a toy car. He waits till Christmas, as he’s supposed to wait. He opens his box and gets a toy car. And there’s nothing wrong with that. People often read a lot of books that have very twisty plots with lots of reversals and say, “I guess I have to do that,” forgetting that a lot of the best stories out there, Star Wars is an example, don’t have as much of a twisty plot. Star Wars has what I call the plot expansion as a twist. The plot expansion is, you promise your kid a toy car, they wait really, really well, and then you give them a brand-new real car. This is the Luke Skywalker is promised “You’re going to get to go into the sky and help bring these plans back,” and at the end it’s actually, “You didn’t just bring the plans back. You destroyed the Death Star yourself and saved the princess.” Plot expansion. And that is a twist. Because the promise at the beginning is intentionally smaller than you know you’re going to deliver on, and you work hard to hook them on this. This is the twist I use for Mistborn. Surprise. Sorry, guys. But one of the big twists for Mistborn is, your promise is, you’re going to get a heist. As you experience the story, as our progress goes through, you see how terrible life is for people here, and you start to think, “Man, I do want these cool thieves to pull off their heist. But the thing is, if they just enrich themselves and run, they’re going to leave behind all these other people, and I actually want something more. I kind of wish this was Star Wars and they were going to overthrow the Empire. Holy crap! They overthrew the Empire.” I was able to do that, in part, because people don’t expect– People read that book and expect, book three they fight the empire, book one they pull off the heist. That was the model for epic fantasy, in a way. And so by doing the expansion twist, which is like, nope, we’re going to do it all in one book, you give the reader more than they expected. Very rarely do you run into trouble when you’re doing a plot twist, when you give the reader more than they expected. You can run into problems when you give them the substitute. If you do it really well, it doesn’t matter. In fact, they like it better. So the substitute plot twist to envision this is, you promise your son you’re going to give him a toy car. You then spend several months talking about how awesome toy planes are, to the point that your son says, “Man, I wish I was getting a toy plane.” Then they open their box at the end and it’s a toy plane. And we’re like, “Yay! Toy plane!” The classic example, one of the best ever to do this is While You Were Sleeping. If you guys haven’t seen this movie. Yeah. What’s that? Spoilers? You’ve never seen it? It’s okay. It’s a fantastic romance story where a woman sees the perfect man. She has a terrible life. She falls in love with him from afar. Then he goes into a coma, and accidentally, through hijinks, she maybe says to people she’s his girlfriend. His whole family is like, “He never tells us anything. Come.” And she becomes part of the family. Then she gets in deeper to where you’re like, “Oh, man, I wish you hadn’t promised us those two would get together.” Because the promise at the beginning is this perfect man’s going to be her love interest. You’re like, “This is getting worse and worse.” In the meantime, she falls in love with his brother, who is a really cool guy and is a great match for her. But the story is, of course she has to end up with this guy. But of course, at the end she ends up with the toy plane instead. And it is a brilliant substitution plot. Substitution plot generally depends on you convincing the reader that you actually want something else. I would argue, though this is a really big outlier, that this is what Into the Woods is. People often bring up Into the Woods and say, “How do you do Into the Woods?” If you haven’t seen Into the Woods, it starts off as a classic set of fairy tells. At the midpoint into Act II, all these people’s lives turn into disasters and they all die, and it’s miserable. But it’s fun miserable. Sondheim, everyone. Why does this work? Well, this works, when it does, a lot of people hate it. Let’s just point this out. Substitution plots can be dangerous this way. A lot of people hate it. A lot of people like it because during the beginning there’s this sense that everything’s too perfect. Everything’s just not– it’s too perfect. Plus, it’s Sondheim. When does someone get killed and be baked into a pie? Then you’re like, “Yes! Everyone’s getting killed and baked into pies.” For the second half. But Into the Woods is a really strange example. We are out of time on this. But let me just end by saying, your payoff should flow naturally from the type of progress you’re doing, with the asterisk of if you’re going to a substitution or change the plot a little bit, you do want to consider doing that. But it should give them, in most cases, everything they want at the beginning, plus something else and new. Your best bet is to give them a toy car and a plane. Those are generally the best types of stories. But just make sure it follows from the progress that you spend your story on, and you will be fine. We’ll see you guys all next week. Thanks.</p>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/sebastiandres\.xyz");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.554">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -48,7 +48,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -57,6 +63,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -104,16 +111,43 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 <link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">sebastiandres.xyz</span>
     </a>
@@ -125,71 +159,75 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
- <span class="menu-text">Inicio</span></a>
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../pages/blog.html" rel="" target="">
- <span class="menu-text">Blog</span></a>
+    <a class="nav-link" href="../pages/blog.html"> 
+<span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../pages/historias.html" rel="" target="" aria-current="page">
- <span class="menu-text">Historias</span></a>
+    <a class="nav-link active" href="../pages/historias.html" aria-current="page"> 
+<span class="menu-text">Historias</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../pages/charlas.html" rel="" target="">
- <span class="menu-text">Charlas</span></a>
+    <a class="nav-link" href="../pages/charlas.html"> 
+<span class="menu-text">Charlas</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../pages/proyectos.html" rel="" target="">
- <span class="menu-text">Apps y Repos</span></a>
+    <a class="nav-link" href="../pages/proyectos.html"> 
+<span class="menu-text">Apps y Repos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../pages/librerias.html" rel="" target="">
- <span class="menu-text">Librerías</span></a>
+    <a class="nav-link" href="../pages/librerias.html"> 
+<span class="menu-text">Librerías</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../pages/publicaciones.html" rel="" target="">
- <span class="menu-text">Publicaciones</span></a>
+    <a class="nav-link" href="../pages/publicaciones.html"> 
+<span class="menu-text">Publicaciones</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tutoriales" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tutoriales" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Tutoriales</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-tutoriales">    
         <li>
-    <a class="dropdown-item" href="../tutorial/quarto.html" rel="" target="">
+    <a class="dropdown-item" href="../tutorial/quarto.html">
  <span class="dropdown-text">Quarto</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../tutorial/streamlit.html" rel="" target="">
+    <a class="dropdown-item" href="../tutorial/streamlit.html">
  <span class="dropdown-text">Streamlit</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tutorial/storytelling_by_sanderson.html">
+ <span class="dropdown-text">Escritura Creativa</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../pages/about.html" rel="" target="">
- <span class="menu-text">Sobre mí</span></a>
+    <a class="nav-link" href="../pages/about.html"> 
+<span class="menu-text">Sobre mí</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/sebastiandres/" rel="" target=""><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/sebastiandres/"> <i class="bi bi-linkedin" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/sebastiandres" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/sebastiandres"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/sebastiandres" rel="" target=""><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com/sebastiandres"> <i class="bi bi-twitter" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -202,7 +240,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page-left">
 
       
     
@@ -226,21 +264,22 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 
 
 
+
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="escritura,microcuentos" data-listing-date-sort="1704085200000" data-listing-file-modified-sort="1704307708249" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8">
+<div class="quarto-post image-right" data-index="0" data-categories="escritura,microcuentos" data-listing-date-sort="1704078000000" data-listing-file-modified-sort="1704307708249" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1566">
 <div class="thumbnail">
-<p><a href="../stories/2024-01-03-story-microcuentos-2023.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../stories/2024-01-03-story-microcuentos-2023.html" class="no-external"></a></p><a href="../stories/2024-01-03-story-microcuentos-2023.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../stories/2024-01-03-story-microcuentos-2023.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../stories/2024-01-03-story-microcuentos-2023.html">
 <h3 class="no-anchor listing-title">
-Microcuentos 2023
+<a href="../stories/2024-01-03-story-microcuentos-2023.html" class="no-external">Microcuentos 2023</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../stories/2024-01-03-story-microcuentos-2023.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('escritura'); return false;">
 escritura
@@ -249,14 +288,12 @@ escritura
 microcuentos
 </div>
 </div>
-<a href="../stories/2024-01-03-story-microcuentos-2023.html">
 <div class="listing-description">
-<p>Cuentos enviados a Santiago en 100 palabras (2023)</p>
+<a href="../stories/2024-01-03-story-microcuentos-2023.html" class="no-external">Cuentos enviados a Santiago en 100 palabras (2023)</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../stories/2024-01-03-story-microcuentos-2023.html">
+<a href="../stories/2024-01-03-story-microcuentos-2023.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2024
 </div>
@@ -266,19 +303,19 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="escritura,microcuentos" data-listing-date-sort="1685595600000" data-listing-file-modified-sort="1704307556744" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="1" data-categories="escritura,microcuentos" data-listing-date-sort="1685592000000" data-listing-file-modified-sort="1704307556744" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="335">
 <div class="thumbnail">
-<p><a href="../stories/2024-01-03-story-microcuentos-biobio.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../stories/2024-01-03-story-microcuentos-biobio.html" class="no-external"></a></p><a href="../stories/2024-01-03-story-microcuentos-biobio.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../stories/2024-01-03-story-microcuentos-biobio.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../stories/2024-01-03-story-microcuentos-biobio.html">
 <h3 class="no-anchor listing-title">
-El crimen del librero
+<a href="../stories/2024-01-03-story-microcuentos-biobio.html" class="no-external">El crimen del librero</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../stories/2024-01-03-story-microcuentos-biobio.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('escritura'); return false;">
 escritura
@@ -287,14 +324,12 @@ escritura
 microcuentos
 </div>
 </div>
-<a href="../stories/2024-01-03-story-microcuentos-biobio.html">
 <div class="listing-description">
-<p>Concurso “Un detective en el Persa BioBio”</p>
+<a href="../stories/2024-01-03-story-microcuentos-biobio.html" class="no-external">Concurso “Un detective en el Persa BioBio”</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../stories/2024-01-03-story-microcuentos-biobio.html">
+<a href="../stories/2024-01-03-story-microcuentos-biobio.html" class="no-external">
 <div class="listing-date">
 Jun 1, 2023
 </div>
@@ -304,19 +339,19 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="escritura,microcuentos" data-listing-date-sort="1672549200000" data-listing-file-modified-sort="1704307458084" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="2" data-categories="escritura,microcuentos" data-listing-date-sort="1672542000000" data-listing-file-modified-sort="1704307458084" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="573">
 <div class="thumbnail">
-<p><a href="../stories/2024-01-03-story-microcuentos-2022.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../stories/2024-01-03-story-microcuentos-2022.html" class="no-external"></a></p><a href="../stories/2024-01-03-story-microcuentos-2022.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../stories/2024-01-03-story-microcuentos-2022.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../stories/2024-01-03-story-microcuentos-2022.html">
 <h3 class="no-anchor listing-title">
-Microcuentos 2022
+<a href="../stories/2024-01-03-story-microcuentos-2022.html" class="no-external">Microcuentos 2022</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../stories/2024-01-03-story-microcuentos-2022.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('escritura'); return false;">
 escritura
@@ -325,14 +360,12 @@ escritura
 microcuentos
 </div>
 </div>
-<a href="../stories/2024-01-03-story-microcuentos-2022.html">
 <div class="listing-description">
-<p>Cuentos enviados a Santiago en 100 palabras (2022)</p>
+<a href="../stories/2024-01-03-story-microcuentos-2022.html" class="no-external">Cuentos enviados a Santiago en 100 palabras (2022)</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../stories/2024-01-03-story-microcuentos-2022.html">
+<a href="../stories/2024-01-03-story-microcuentos-2022.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2023
 </div>
@@ -342,19 +375,19 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="escritura,microcuentos" data-listing-date-sort="1622523600000" data-listing-file-modified-sort="1701988564625" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="3" data-categories="escritura,microcuentos" data-listing-date-sort="1622520000000" data-listing-file-modified-sort="1701988564625" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="176">
 <div class="thumbnail">
-<p><a href="../stories/2021-06-01-story-microcuentos-uplanner.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../stories/2021-06-01-story-microcuentos-uplanner.html" class="no-external"></a></p><a href="../stories/2021-06-01-story-microcuentos-uplanner.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../stories/2021-06-01-story-microcuentos-uplanner.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../stories/2021-06-01-story-microcuentos-uplanner.html">
 <h3 class="no-anchor listing-title">
-Microcuentos tecnología
+<a href="../stories/2021-06-01-story-microcuentos-uplanner.html" class="no-external">Microcuentos tecnología</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../stories/2021-06-01-story-microcuentos-uplanner.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('escritura'); return false;">
 escritura
@@ -363,14 +396,12 @@ escritura
 microcuentos
 </div>
 </div>
-<a href="../stories/2021-06-01-story-microcuentos-uplanner.html">
 <div class="listing-description">
-<p>Cuentos enviados a concurso uPlanner en 100 palabras</p>
+<a href="../stories/2021-06-01-story-microcuentos-uplanner.html" class="no-external">Cuentos enviados a concurso uPlanner en 100 palabras</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../stories/2021-06-01-story-microcuentos-uplanner.html">
+<a href="../stories/2021-06-01-story-microcuentos-uplanner.html" class="no-external">
 <div class="listing-date">
 Jun 1, 2021
 </div>
@@ -380,19 +411,19 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="escritura,microcuentos" data-listing-date-sort="1620968400000" data-listing-file-modified-sort="1704306557782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="4" data-categories="escritura,microcuentos" data-listing-date-sort="1620964800000" data-listing-file-modified-sort="1704306557782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="434">
 <div class="thumbnail">
-<p><a href="../stories/2021-05-14-story-microcuentos-2021.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../stories/2021-05-14-story-microcuentos-2021.html" class="no-external"></a></p><a href="../stories/2021-05-14-story-microcuentos-2021.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../stories/2021-05-14-story-microcuentos-2021.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../stories/2021-05-14-story-microcuentos-2021.html">
 <h3 class="no-anchor listing-title">
-Microcuentos 2021
+<a href="../stories/2021-05-14-story-microcuentos-2021.html" class="no-external">Microcuentos 2021</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../stories/2021-05-14-story-microcuentos-2021.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('escritura'); return false;">
 escritura
@@ -401,14 +432,12 @@ escritura
 microcuentos
 </div>
 </div>
-<a href="../stories/2021-05-14-story-microcuentos-2021.html">
 <div class="listing-description">
-<p>Cuentos enviados a Santiago en 100 palabras (2021)</p>
+<a href="../stories/2021-05-14-story-microcuentos-2021.html" class="no-external">Cuentos enviados a Santiago en 100 palabras (2021)</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../stories/2021-05-14-story-microcuentos-2021.html">
+<a href="../stories/2021-05-14-story-microcuentos-2021.html" class="no-external">
 <div class="listing-date">
 May 14, 2021
 </div>
@@ -418,19 +447,19 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="policial,cuento" data-listing-date-sort="1611291600000" data-listing-file-modified-sort="1701997127570" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
+<div class="quarto-post image-right" data-index="5" data-categories="policial,cuento" data-listing-date-sort="1611284400000" data-listing-file-modified-sort="1701997127570" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1181">
 <div class="thumbnail">
-<p><a href="../stories/2021-01-22-post-tres-principes-serendip.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../stories/2021-01-22-post-tres-principes-serendip.html" class="no-external"></a></p><a href="../stories/2021-01-22-post-tres-principes-serendip.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../stories/2021-01-22-post-tres-principes-serendip.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../stories/2021-01-22-post-tres-principes-serendip.html">
 <h3 class="no-anchor listing-title">
-Los Tres Príncipes de Serendip
+<a href="../stories/2021-01-22-post-tres-principes-serendip.html" class="no-external">Los Tres Príncipes de Serendip</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../stories/2021-01-22-post-tres-principes-serendip.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('policial'); return false;">
 policial
@@ -439,14 +468,12 @@ policial
 cuento
 </div>
 </div>
-<a href="../stories/2021-01-22-post-tres-principes-serendip.html">
 <div class="listing-description">
-<p>Un antiguo y desconocido cuento persa de deducciones, que muestra porqué no deberíamos ufanarnos de nuestro conocimiento.</p>
+<a href="../stories/2021-01-22-post-tres-principes-serendip.html" class="no-external">Un antiguo y desconocido cuento persa de deducciones, que muestra porqué no deberíamos ufanarnos de nuestro conocimiento.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../stories/2021-01-22-post-tres-principes-serendip.html">
+<a href="../stories/2021-01-22-post-tres-principes-serendip.html" class="no-external">
 <div class="listing-date">
 Jan 22, 2021
 </div>
@@ -456,19 +483,19 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="escritura,cuento" data-listing-date-sort="1605848400000" data-listing-file-modified-sort="1701988557673" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8">
+<div class="quarto-post image-right" data-index="6" data-categories="escritura,cuento" data-listing-date-sort="1605841200000" data-listing-file-modified-sort="1701988557673" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1509">
 <div class="thumbnail">
-<p><a href="../stories/2020-11-20-story-taller-narrativa-policial-crimen-a-la-carta.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../stories/2020-11-20-story-taller-narrativa-policial-crimen-a-la-carta.html" class="no-external"></a></p><a href="../stories/2020-11-20-story-taller-narrativa-policial-crimen-a-la-carta.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../stories/2020-11-20-story-taller-narrativa-policial-crimen-a-la-carta.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../stories/2020-11-20-story-taller-narrativa-policial-crimen-a-la-carta.html">
 <h3 class="no-anchor listing-title">
-Crimen a la carta
+<a href="../stories/2020-11-20-story-taller-narrativa-policial-crimen-a-la-carta.html" class="no-external">Crimen a la carta</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../stories/2020-11-20-story-taller-narrativa-policial-crimen-a-la-carta.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('escritura'); return false;">
 escritura
@@ -477,14 +504,12 @@ escritura
 cuento
 </div>
 </div>
-<a href="../stories/2020-11-20-story-taller-narrativa-policial-crimen-a-la-carta.html">
 <div class="listing-description">
-<p>Taller de narrativa policial</p>
+<a href="../stories/2020-11-20-story-taller-narrativa-policial-crimen-a-la-carta.html" class="no-external">Taller de narrativa policial</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../stories/2020-11-20-story-taller-narrativa-policial-crimen-a-la-carta.html">
+<a href="../stories/2020-11-20-story-taller-narrativa-policial-crimen-a-la-carta.html" class="no-external">
 <div class="listing-date">
 Nov 20, 2020
 </div>
@@ -494,19 +519,19 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="escritura,cuento" data-listing-date-sort="1603515600000" data-listing-file-modified-sort="1701988582607" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="7" data-categories="escritura,cuento" data-listing-date-sort="1603508400000" data-listing-file-modified-sort="1701988582607" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="594">
 <div class="thumbnail">
-<p><a href="../stories/2020-10-24-story-taller-narrativa-policial.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../stories/2020-10-24-story-taller-narrativa-policial.html" class="no-external"></a></p><a href="../stories/2020-10-24-story-taller-narrativa-policial.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../stories/2020-10-24-story-taller-narrativa-policial.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../stories/2020-10-24-story-taller-narrativa-policial.html">
 <h3 class="no-anchor listing-title">
-Trabajando en el SML
+<a href="../stories/2020-10-24-story-taller-narrativa-policial.html" class="no-external">Trabajando en el SML</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../stories/2020-10-24-story-taller-narrativa-policial.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('escritura'); return false;">
 escritura
@@ -515,14 +540,12 @@ escritura
 cuento
 </div>
 </div>
-<a href="../stories/2020-10-24-story-taller-narrativa-policial.html">
 <div class="listing-description">
-<p>Taller de narrativa policial</p>
+<a href="../stories/2020-10-24-story-taller-narrativa-policial.html" class="no-external">Taller de narrativa policial</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../stories/2020-10-24-story-taller-narrativa-policial.html">
+<a href="../stories/2020-10-24-story-taller-narrativa-policial.html" class="no-external">
 <div class="listing-date">
 Oct 24, 2020
 </div>
@@ -532,19 +555,19 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="escritura,microcuentos" data-listing-date-sort="1601528400000" data-listing-file-modified-sort="1704306601836" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="8" data-categories="escritura,microcuentos" data-listing-date-sort="1601521200000" data-listing-file-modified-sort="1704306601836" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="351">
 <div class="thumbnail">
-<p><a href="../stories/2020-10-01-story-microcuentos-2020.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../stories/2020-10-01-story-microcuentos-2020.html" class="no-external"></a></p><a href="../stories/2020-10-01-story-microcuentos-2020.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../stories/2020-10-01-story-microcuentos-2020.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../stories/2020-10-01-story-microcuentos-2020.html">
 <h3 class="no-anchor listing-title">
-Microcuentos 2020
+<a href="../stories/2020-10-01-story-microcuentos-2020.html" class="no-external">Microcuentos 2020</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../stories/2020-10-01-story-microcuentos-2020.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('escritura'); return false;">
 escritura
@@ -553,14 +576,12 @@ escritura
 microcuentos
 </div>
 </div>
-<a href="../stories/2020-10-01-story-microcuentos-2020.html">
 <div class="listing-description">
-<p>Cuentos enviados a Santiago en 100 palabras (2020)</p>
+<a href="../stories/2020-10-01-story-microcuentos-2020.html" class="no-external">Cuentos enviados a Santiago en 100 palabras (2020)</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../stories/2020-10-01-story-microcuentos-2020.html">
+<a href="../stories/2020-10-01-story-microcuentos-2020.html" class="no-external">
 <div class="listing-date">
 Oct 1, 2020
 </div>
@@ -570,19 +591,19 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="escritura,cuento" data-listing-date-sort="1546318800000" data-listing-file-modified-sort="1704306512572" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<div class="quarto-post image-right" data-index="9" data-categories="escritura,cuento" data-listing-date-sort="1546311600000" data-listing-file-modified-sort="1704306512572" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="888">
 <div class="thumbnail">
-<p><a href="../stories/2019-01-01-story-cocodrilito-va-al-bano.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../stories/2019-01-01-story-cocodrilito-va-al-bano.html" class="no-external"></a></p><a href="../stories/2019-01-01-story-cocodrilito-va-al-bano.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../stories/2019-01-01-story-cocodrilito-va-al-bano.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../stories/2019-01-01-story-cocodrilito-va-al-bano.html">
 <h3 class="no-anchor listing-title">
-Cocodrilito aprender a ir al baño
+<a href="../stories/2019-01-01-story-cocodrilito-va-al-bano.html" class="no-external">Cocodrilito aprender a ir al baño</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../stories/2019-01-01-story-cocodrilito-va-al-bano.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('escritura'); return false;">
 escritura
@@ -591,14 +612,12 @@ escritura
 cuento
 </div>
 </div>
-<a href="../stories/2019-01-01-story-cocodrilito-va-al-bano.html">
 <div class="listing-description">
-<p>Un cuento escrito a 2 manos con mi hijo</p>
+<a href="../stories/2019-01-01-story-cocodrilito-va-al-bano.html" class="no-external">Un cuento escrito a 2 manos con mi hijo</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../stories/2019-01-01-story-cocodrilito-va-al-bano.html">
+<a href="../stories/2019-01-01-story-cocodrilito-va-al-bano.html" class="no-external">
 <div class="listing-date">
 Jan 1, 2019
 </div>
@@ -692,10 +711,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/sebastiandres\.xyz");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -705,8 +741,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -718,7 +763,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -762,6 +930,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -787,6 +956,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -847,6 +1042,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

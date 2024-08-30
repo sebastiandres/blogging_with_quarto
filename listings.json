@@ -2,6 +2,8 @@
   {
     "listing": "/pages/blog.html",
     "items": [
+      "/posts/2024/2024-08-24-hackathon.html",
+      "/posts/2024/2024-08-23-pyschool.html",
       "/posts/2024/2024-05-23-experiencia-pycon-us.html",
       "/posts/2024/2024-05-18-pycon-us-charla.html",
       "/posts/2024/2024-04-18-data-storytelling-partir-por-el-final.html",

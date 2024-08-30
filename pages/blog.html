@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.554">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -48,7 +48,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -57,6 +63,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -105,16 +112,43 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 <link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">sebastiandres.xyz</span>
     </a>
@@ -126,71 +160,75 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
- <span class="menu-text">Inicio</span></a>
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../pages/blog.html" rel="" target="" aria-current="page">
- <span class="menu-text">Blog</span></a>
+    <a class="nav-link active" href="../pages/blog.html" aria-current="page"> 
+<span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../pages/historias.html" rel="" target="">
- <span class="menu-text">Historias</span></a>
+    <a class="nav-link" href="../pages/historias.html"> 
+<span class="menu-text">Historias</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../pages/charlas.html" rel="" target="">
- <span class="menu-text">Charlas</span></a>
+    <a class="nav-link" href="../pages/charlas.html"> 
+<span class="menu-text">Charlas</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../pages/proyectos.html" rel="" target="">
- <span class="menu-text">Apps y Repos</span></a>
+    <a class="nav-link" href="../pages/proyectos.html"> 
+<span class="menu-text">Apps y Repos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../pages/librerias.html" rel="" target="">
- <span class="menu-text">Librerías</span></a>
+    <a class="nav-link" href="../pages/librerias.html"> 
+<span class="menu-text">Librerías</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../pages/publicaciones.html" rel="" target="">
- <span class="menu-text">Publicaciones</span></a>
+    <a class="nav-link" href="../pages/publicaciones.html"> 
+<span class="menu-text">Publicaciones</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tutoriales" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tutoriales" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Tutoriales</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-tutoriales">    
         <li>
-    <a class="dropdown-item" href="../tutorial/quarto.html" rel="" target="">
+    <a class="dropdown-item" href="../tutorial/quarto.html">
  <span class="dropdown-text">Quarto</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../tutorial/streamlit.html" rel="" target="">
+    <a class="dropdown-item" href="../tutorial/streamlit.html">
  <span class="dropdown-text">Streamlit</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tutorial/storytelling_by_sanderson.html">
+ <span class="dropdown-text">Escritura Creativa</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../pages/about.html" rel="" target="">
- <span class="menu-text">Sobre mí</span></a>
+    <a class="nav-link" href="../pages/about.html"> 
+<span class="menu-text">Sobre mí</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/sebastiandres/" rel="" target=""><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/sebastiandres/"> <i class="bi bi-linkedin" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/sebastiandres" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/sebastiandres"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/sebastiandres" rel="" target=""><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com/sebastiandres"> <i class="bi bi-twitter" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -203,7 +241,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page-left">
 
       
     
@@ -216,7 +254,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(65)</span></div><div class="category" data-category="balance">balance <span class="quarto-category-count">(2)</span></div><div class="category" data-category="código">código <span class="quarto-category-count">(10)</span></div><div class="category" data-category="data storytelling">data storytelling <span class="quarto-category-count">(4)</span></div><div class="category" data-category="deporte">deporte <span class="quarto-category-count">(1)</span></div><div class="category" data-category="educación">educación <span class="quarto-category-count">(1)</span></div><div class="category" data-category="escritura">escritura <span class="quarto-category-count">(1)</span></div><div class="category" data-category="excel">excel <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ia">ia <span class="quarto-category-count">(2)</span></div><div class="category" data-category="inteligencia">inteligencia <span class="quarto-category-count">(1)</span></div><div class="category" data-category="javascript">javascript <span class="quarto-category-count">(1)</span></div><div class="category" data-category="lectura">lectura <span class="quarto-category-count">(22)</span></div><div class="category" data-category="libro">libro <span class="quarto-category-count">(1)</span></div><div class="category" data-category="libros">libros <span class="quarto-category-count">(1)</span></div><div class="category" data-category="literatura">literatura <span class="quarto-category-count">(1)</span></div><div class="category" data-category="opinión">opinión <span class="quarto-category-count">(2)</span></div><div class="category" data-category="pycon">pycon <span class="quarto-category-count">(9)</span></div><div class="category" data-category="python">python <span class="quarto-category-count">(9)</span></div><div class="category" data-category="reflexión">reflexión <span class="quarto-category-count">(13)</span></div><div class="category" data-category="rise">rise <span class="quarto-category-count">(1)</span></div><div class="category" data-category="streamlit">streamlit <span class="quarto-category-count">(3)</span></div><div class="category" data-category="vida">vida <span class="quarto-category-count">(1)</span></div><div class="category" data-category="vizzu">vizzu <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(67)</span></div><div class="category" data-category="balance">balance <span class="quarto-category-count">(2)</span></div><div class="category" data-category="código">código <span class="quarto-category-count">(10)</span></div><div class="category" data-category="data storytelling">data storytelling <span class="quarto-category-count">(4)</span></div><div class="category" data-category="deporte">deporte <span class="quarto-category-count">(1)</span></div><div class="category" data-category="educación">educación <span class="quarto-category-count">(1)</span></div><div class="category" data-category="escritura">escritura <span class="quarto-category-count">(1)</span></div><div class="category" data-category="excel">excel <span class="quarto-category-count">(2)</span></div><div class="category" data-category="hackathon">hackathon <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ia">ia <span class="quarto-category-count">(2)</span></div><div class="category" data-category="inteligencia">inteligencia <span class="quarto-category-count">(1)</span></div><div class="category" data-category="javascript">javascript <span class="quarto-category-count">(1)</span></div><div class="category" data-category="lectura">lectura <span class="quarto-category-count">(22)</span></div><div class="category" data-category="libro">libro <span class="quarto-category-count">(1)</span></div><div class="category" data-category="libros">libros <span class="quarto-category-count">(1)</span></div><div class="category" data-category="literatura">literatura <span class="quarto-category-count">(1)</span></div><div class="category" data-category="opinión">opinión <span class="quarto-category-count">(2)</span></div><div class="category" data-category="pycon">pycon <span class="quarto-category-count">(9)</span></div><div class="category" data-category="pyschool">pyschool <span class="quarto-category-count">(1)</span></div><div class="category" data-category="python">python <span class="quarto-category-count">(11)</span></div><div class="category" data-category="reflexión">reflexión <span class="quarto-category-count">(13)</span></div><div class="category" data-category="rise">rise <span class="quarto-category-count">(1)</span></div><div class="category" data-category="streamlit">streamlit <span class="quarto-category-count">(3)</span></div><div class="category" data-category="vida">vida <span class="quarto-category-count">(1)</span></div><div class="category" data-category="vizzu">vizzu <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -227,21 +265,94 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 
 
 
+
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="data storytelling,pycon" data-listing-date-sort="1716440400000" data-listing-file-modified-sort="1716577360312" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20">
+<div class="quarto-post image-right" data-index="0" data-categories="python,hackathon" data-listing-date-sort="1724472000000" data-listing-file-modified-sort="1724984394722" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="347">
 <div class="thumbnail">
-<p><a href="../posts/2024/2024-05-23-experiencia-pycon-us.html"> <img src="../posts/2024/images/pyconus/mini.jpeg" class="thumbnail-image"> </a></p>
+<p><a href="../posts/2024/2024-08-24-hackathon.html" class="no-external"></a></p><a href="../posts/2024/2024-08-24-hackathon.html" class="no-external">
+<p><img src="../posts/2024/images/2024-08-24-hackathon/logo.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/2024/2024-08-24-hackathon.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2024/2024-05-23-experiencia-pycon-us.html">
 <h3 class="no-anchor listing-title">
-PyCon US - Historia en 3 actos
+<a href="../posts/2024/2024-08-24-hackathon.html" class="no-external">Hackathon OpenAI</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2024/2024-08-24-hackathon.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('python'); return false;">
+python
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('hackathon'); return false;">
+hackathon
+</div>
+</div>
+<div class="listing-description">
+<a href="../posts/2024/2024-08-24-hackathon.html" class="no-external">El sábado 24 de agosto viajé temprano a Santiago a participar como mentor en la Hackatón de OpenAI 2024 en Chile. Me emocionaba mucho que me hubieran dado esa oportunidad…</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/2024/2024-08-24-hackathon.html" class="no-external">
+<div class="listing-date">
+Aug 24, 2024
+</div>
+<div class="listing-author">
+sebastiandres
 </div>
 </a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="python,pyschool" data-listing-date-sort="1724385600000" data-listing-file-modified-sort="1724983073827" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="232">
+<div class="thumbnail">
+<p><a href="../posts/2024/2024-08-23-pyschool.html" class="no-external"></a></p><a href="../posts/2024/2024-08-23-pyschool.html" class="no-external">
+<p><img src="../posts/2024/images/2024-08-23-pyschool/cover.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/2024/2024-08-23-pyschool.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/2024/2024-08-23-pyschool.html" class="no-external">Pyschool</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/2024/2024-08-23-pyschool.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('python'); return false;">
+python
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('pyschool'); return false;">
+pyschool
+</div>
+</div>
+<div class="listing-description">
+<a href="../posts/2024/2024-08-23-pyschool.html" class="no-external">El viernes 23 de agosto por fin realizamos la PySchool. Habíamos programado este evento para unas semanas antes, pero torrenciales lluvias nos obligaron a suspender.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../posts/2024/2024-08-23-pyschool.html" class="no-external">
+<div class="listing-date">
+Aug 23, 2024
+</div>
+<div class="listing-author">
+sebastiandres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="data storytelling,pycon" data-listing-date-sort="1716436800000" data-listing-file-modified-sort="1716577360312" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20" data-listing-word-count-sort="3858">
+<div class="thumbnail">
+<p><a href="../posts/2024/2024-05-23-experiencia-pycon-us.html" class="no-external"></a></p><a href="../posts/2024/2024-05-23-experiencia-pycon-us.html" class="no-external">
+<p><img src="../posts/2024/images/pyconus/mini.jpeg" class="thumbnail-image"></p>
+</a><p><a href="../posts/2024/2024-05-23-experiencia-pycon-us.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/2024/2024-05-23-experiencia-pycon-us.html" class="no-external">PyCon US - Historia en 3 actos</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../posts/2024/2024-05-23-experiencia-pycon-us.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('data storytelling'); return false;">
 data storytelling
@@ -250,14 +361,12 @@ data storytelling
 pycon
 </div>
 </div>
-<a href="../posts/2024/2024-05-23-experiencia-pycon-us.html">
 <div class="listing-description">
-<p>Descripción detallada del evento por día (esp, eng)</p>
+<a href="../posts/2024/2024-05-23-experiencia-pycon-us.html" class="no-external">Descripción detallada del evento por día (esp, eng)</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2024/2024-05-23-experiencia-pycon-us.html">
+<a href="../posts/2024/2024-05-23-experiencia-pycon-us.html" class="no-external">
 <div class="listing-date">
 May 23, 2024
 </div>
@@ -267,19 +376,19 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="data storytelling,pycon" data-listing-date-sort="1716008400000" data-listing-file-modified-sort="1716575166947" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="3" data-categories="data storytelling,pycon" data-listing-date-sort="1716004800000" data-listing-file-modified-sort="1716575166947" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="297">
 <div class="thumbnail">
-<p><a href="../posts/2024/2024-05-18-pycon-us-charla.html"> <img src="../posts/2024/images/pycon_mini.jpeg" class="thumbnail-image"> </a></p>
+<p><a href="../posts/2024/2024-05-18-pycon-us-charla.html" class="no-external"></a></p><a href="../posts/2024/2024-05-18-pycon-us-charla.html" class="no-external">
+<p><img src="../posts/2024/images/pycon_mini.jpeg" class="thumbnail-image"></p>
+</a><p><a href="../posts/2024/2024-05-18-pycon-us-charla.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2024/2024-05-18-pycon-us-charla.html">
 <h3 class="no-anchor listing-title">
-Mi charla en la PyCon US
+<a href="../posts/2024/2024-05-18-pycon-us-charla.html" class="no-external">Mi charla en la PyCon US</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2024/2024-05-18-pycon-us-charla.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('data storytelling'); return false;">
 data storytelling
@@ -288,14 +397,12 @@ data storytelling
 pycon
 </div>
 </div>
-<a href="../posts/2024/2024-05-18-pycon-us-charla.html">
 <div class="listing-description">
-<p>Resumen y recursos de la presentación (esp, eng)</p>
+<a href="../posts/2024/2024-05-18-pycon-us-charla.html" class="no-external">Resumen y recursos de la presentación (esp, eng)</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2024/2024-05-18-pycon-us-charla.html">
+<a href="../posts/2024/2024-05-18-pycon-us-charla.html" class="no-external">
 <div class="listing-date">
 May 18, 2024
 </div>
@@ -305,32 +412,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="data storytelling" data-listing-date-sort="1713502800000" data-listing-file-modified-sort="1716464769155" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="4" data-categories="data storytelling" data-listing-date-sort="1713499200000" data-listing-file-modified-sort="1716464769155" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="233">
 <div class="thumbnail">
-<p><a href="../posts/2024/2024-04-18-data-storytelling-partir-por-el-final.html"> <img src="../posts/2024/images/piramide.png" class="thumbnail-image"> </a></p>
+<p><a href="../posts/2024/2024-04-18-data-storytelling-partir-por-el-final.html" class="no-external"></a></p><a href="../posts/2024/2024-04-18-data-storytelling-partir-por-el-final.html" class="no-external">
+<p><img src="../posts/2024/images/piramide.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/2024/2024-04-18-data-storytelling-partir-por-el-final.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2024/2024-04-18-data-storytelling-partir-por-el-final.html">
 <h3 class="no-anchor listing-title">
-Partir por el final
+<a href="../posts/2024/2024-04-18-data-storytelling-partir-por-el-final.html" class="no-external">Partir por el final</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2024/2024-04-18-data-storytelling-partir-por-el-final.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('data storytelling'); return false;">
 data storytelling
 </div>
 </div>
-<a href="../posts/2024/2024-04-18-data-storytelling-partir-por-el-final.html">
 <div class="listing-description">
-<p>Reflexiones sobre Data Storytelling</p>
+<a href="../posts/2024/2024-04-18-data-storytelling-partir-por-el-final.html" class="no-external">Reflexiones sobre Data Storytelling</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2024/2024-04-18-data-storytelling-partir-por-el-final.html">
+<a href="../posts/2024/2024-04-18-data-storytelling-partir-por-el-final.html" class="no-external">
 <div class="listing-date">
 Apr 19, 2024
 </div>
@@ -340,19 +445,19 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="python,excel,código" data-listing-date-sort="1713330000000" data-listing-file-modified-sort="1713382215754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="5" data-categories="python,excel,código" data-listing-date-sort="1713326400000" data-listing-file-modified-sort="1713382215754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="245">
 <div class="thumbnail">
-<p><a href="../posts/2024/2024-04-17-excel-autofit.html"> <p class="card-img-top"><img src="../posts/2024/images/excel-sin-autofit.png" title="Excel con autofit" class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="../posts/2024/2024-04-17-excel-autofit.html" class="no-external"></a></p><a href="../posts/2024/2024-04-17-excel-autofit.html" class="no-external">
+<p class="card-img-top"><img src="../posts/2024/images/excel-sin-autofit.png" title="Excel con autofit" class="thumbnail-image card-img"/></p>
+</a><p><a href="../posts/2024/2024-04-17-excel-autofit.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2024/2024-04-17-excel-autofit.html">
 <h3 class="no-anchor listing-title">
-Ancho automático en celdas de excel
+<a href="../posts/2024/2024-04-17-excel-autofit.html" class="no-external">Ancho automático en celdas de excel</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2024/2024-04-17-excel-autofit.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('python'); return false;">
 python
@@ -364,14 +469,12 @@ excel
 código
 </div>
 </div>
-<a href="../posts/2024/2024-04-17-excel-autofit.html">
 <div class="listing-description">
-<p>Como hacer que las celdas de excel tengan el ancho apropiado</p>
+<a href="../posts/2024/2024-04-17-excel-autofit.html" class="no-external">Como hacer que las celdas de excel tengan el ancho apropiado</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2024/2024-04-17-excel-autofit.html">
+<a href="../posts/2024/2024-04-17-excel-autofit.html" class="no-external">
 <div class="listing-date">
 Apr 17, 2024
 </div>
@@ -381,32 +484,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="data storytelling" data-listing-date-sort="1712898000000" data-listing-file-modified-sort="1713378888051" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="6" data-categories="data storytelling" data-listing-date-sort="1712894400000" data-listing-file-modified-sort="1713378888051" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="172">
 <div class="thumbnail">
-<p><a href="../posts/2024/2024-04-12-data-storytelling-esfuerzos.html"> <img src="../posts/2024/images/pajamas.gif" class="thumbnail-image"> </a></p>
+<p><a href="../posts/2024/2024-04-12-data-storytelling-esfuerzos.html" class="no-external"></a></p><a href="../posts/2024/2024-04-12-data-storytelling-esfuerzos.html" class="no-external">
+<p><img src="../posts/2024/images/pajamas.gif" class="thumbnail-image"></p>
+</a><p><a href="../posts/2024/2024-04-12-data-storytelling-esfuerzos.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2024/2024-04-12-data-storytelling-esfuerzos.html">
 <h3 class="no-anchor listing-title">
-¡Es demasiado esfuerzo!
+<a href="../posts/2024/2024-04-12-data-storytelling-esfuerzos.html" class="no-external">¡Es demasiado esfuerzo!</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2024/2024-04-12-data-storytelling-esfuerzos.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('data storytelling'); return false;">
 data storytelling
 </div>
 </div>
-<a href="../posts/2024/2024-04-12-data-storytelling-esfuerzos.html">
 <div class="listing-description">
-<p>Reflexiones sobre Data Storytelling</p>
+<a href="../posts/2024/2024-04-12-data-storytelling-esfuerzos.html" class="no-external">Reflexiones sobre Data Storytelling</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2024/2024-04-12-data-storytelling-esfuerzos.html">
+<a href="../posts/2024/2024-04-12-data-storytelling-esfuerzos.html" class="no-external">
 <div class="listing-date">
 Apr 12, 2024
 </div>
@@ -416,19 +517,19 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="código,python" data-listing-date-sort="1709701200000" data-listing-file-modified-sort="1712955136928" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="7" data-categories="código,python" data-listing-date-sort="1709694000000" data-listing-file-modified-sort="1712955136928" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="608">
 <div class="thumbnail">
-<p><a href="../posts/2024/2024-03-06-pandas-trick.html"> <p class="card-img-top"><img src="../posts/2024/2024-03-06-pandas-trick_files/figure-html/cell-3-output-2.png"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="../posts/2024/2024-03-06-pandas-trick.html" class="no-external"></a></p><a href="../posts/2024/2024-03-06-pandas-trick.html" class="no-external">
+<p class="card-img-top"><img src="../posts/2024/2024-03-06-pandas-trick_files/figure-html/cell-3-output-2.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="../posts/2024/2024-03-06-pandas-trick.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2024/2024-03-06-pandas-trick.html">
 <h3 class="no-anchor listing-title">
-Procesando datos con pandas
+<a href="../posts/2024/2024-03-06-pandas-trick.html" class="no-external">Procesando datos con pandas</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2024/2024-03-06-pandas-trick.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('código'); return false;">
 código
@@ -437,14 +538,12 @@ código
 python
 </div>
 </div>
-<a href="../posts/2024/2024-03-06-pandas-trick.html">
 <div class="listing-description">
-La motivación de este post es ayudarme en el futuro a mi mismo a recordar estos trucos, porque la notación no es muy amigable y siempre lo olvido.
+<a href="../posts/2024/2024-03-06-pandas-trick.html" class="no-external">La motivación de este post es ayudarme en el futuro a mi mismo a recordar estos trucos, porque la notación no es muy amigable y siempre lo olvido.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2024/2024-03-06-pandas-trick.html">
+<a href="../posts/2024/2024-03-06-pandas-trick.html" class="no-external">
 <div class="listing-date">
 Mar 6, 2024
 </div>
@@ -454,19 +553,19 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="python,pycon" data-listing-date-sort="1709182800000" data-listing-file-modified-sort="1709495953903" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="8" data-categories="python,pycon" data-listing-date-sort="1709175600000" data-listing-file-modified-sort="1709495953903" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="455">
 <div class="thumbnail">
-<p><a href="../posts/2024/2024-02-29-pycon_us.html"> <img src="../posts/2024/images/pycon_us.png" class="thumbnail-image"> </a></p>
+<p><a href="../posts/2024/2024-02-29-pycon_us.html" class="no-external"></a></p><a href="../posts/2024/2024-02-29-pycon_us.html" class="no-external">
+<p><img src="../posts/2024/images/pycon_us.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/2024/2024-02-29-pycon_us.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2024/2024-02-29-pycon_us.html">
 <h3 class="no-anchor listing-title">
-¡Voy a la PyCon US!
+<a href="../posts/2024/2024-02-29-pycon_us.html" class="no-external">¡Voy a la PyCon US!</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2024/2024-02-29-pycon_us.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('python'); return false;">
 python
@@ -475,14 +574,12 @@ python
 pycon
 </div>
 </div>
-<a href="../posts/2024/2024-02-29-pycon_us.html">
 <div class="listing-description">
-Ya es oficial con mucho orgullo y alegría puedo contar que estaré presentando en la PyCon US Acá les comparto los enlaces de la programación y del abstract de mi charla
+<a href="../posts/2024/2024-02-29-pycon_us.html" class="no-external">Ya es oficial con mucho orgullo y alegría puedo contar que estaré presentando en la PyCon US Acá les comparto los enlaces de la programación y del abstract de mi charla</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2024/2024-02-29-pycon_us.html">
+<a href="../posts/2024/2024-02-29-pycon_us.html" class="no-external">
 <div class="listing-date">
 Feb 29, 2024
 </div>
@@ -492,19 +589,19 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="código,python" data-listing-date-sort="1707454800000" data-listing-file-modified-sort="1712955145061" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="9" data-categories="código,python" data-listing-date-sort="1707447600000" data-listing-file-modified-sort="1712955145061" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="218">
 <div class="thumbnail">
-<p><a href="../posts/2024/2024-02-09-techton.html"> <img src="../posts/2024/images/techton-logo.png" class="thumbnail-image"> </a></p>
+<p><a href="../posts/2024/2024-02-09-techton.html" class="no-external"></a></p><a href="../posts/2024/2024-02-09-techton.html" class="no-external">
+<p><img src="../posts/2024/images/techton-logo.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/2024/2024-02-09-techton.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2024/2024-02-09-techton.html">
 <h3 class="no-anchor listing-title">
-Techton
+<a href="../posts/2024/2024-02-09-techton.html" class="no-external">Techton</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2024/2024-02-09-techton.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('código'); return false;">
 código
@@ -513,14 +610,12 @@ código
 python
 </div>
 </div>
-<a href="../posts/2024/2024-02-09-techton.html">
 <div class="listing-description">
-Me invitaron a dar una charla en la Techtón, un evento para recaudar fondos para donar para Bomberos de Chile por los recientes incendios en Viña del Mar.&nbsp;
+<a href="../posts/2024/2024-02-09-techton.html" class="no-external">Me invitaron a dar una charla en la Techtón, un evento para recaudar fondos para donar para Bomberos de Chile por los recientes incendios en Viña del Mar.&nbsp;</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2024/2024-02-09-techton.html">
+<a href="../posts/2024/2024-02-09-techton.html" class="no-external">
 <div class="listing-date">
 Feb 9, 2024
 </div>
@@ -530,19 +625,19 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="libro,escritura" data-listing-date-sort="1705035600000" data-listing-file-modified-sort="1706750495004" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19">
+<div class="quarto-post image-right" data-index="10" data-categories="libro,escritura" data-listing-date-sort="1705028400000" data-listing-file-modified-sort="1706750495004" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-word-count-sort="3774">
 <div class="thumbnail">
-<p><a href="../posts/2024/2024-01-12-write-useful-books.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2024/2024-01-12-write-useful-books.html" class="no-external"></a></p><a href="../posts/2024/2024-01-12-write-useful-books.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2024/2024-01-12-write-useful-books.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2024/2024-01-12-write-useful-books.html">
 <h3 class="no-anchor listing-title">
-Write Useful Books
+<a href="../posts/2024/2024-01-12-write-useful-books.html" class="no-external">Write Useful Books</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2024/2024-01-12-write-useful-books.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('libro'); return false;">
 libro
@@ -551,14 +646,12 @@ libro
 escritura
 </div>
 </div>
-<a href="../posts/2024/2024-01-12-write-useful-books.html">
 <div class="listing-description">
-El libro Write useful books de Rob Fitzpatrick es una guía práctica para escribir libros de…
+<a href="../posts/2024/2024-01-12-write-useful-books.html" class="no-external">El libro Write useful books de Rob Fitzpatrick es una guía práctica para escribir libros de no-ficción que sean tan buenos que se vengan mejor año tras año porque la gente…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2024/2024-01-12-write-useful-books.html">
+<a href="../posts/2024/2024-01-12-write-useful-books.html" class="no-external">
 <div class="listing-date">
 Jan 12, 2024
 </div>
@@ -568,19 +661,19 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="ia,inteligencia" data-listing-date-sort="1704344400000" data-listing-file-modified-sort="1705096451427" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="11" data-categories="ia,inteligencia" data-listing-date-sort="1704337200000" data-listing-file-modified-sort="1705096451427" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="442">
 <div class="thumbnail">
-<p><a href="../posts/2024/2024-01-04-inteligencia.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2024/2024-01-04-inteligencia.html" class="no-external"></a></p><a href="../posts/2024/2024-01-04-inteligencia.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2024/2024-01-04-inteligencia.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2024/2024-01-04-inteligencia.html">
 <h3 class="no-anchor listing-title">
-Inteligencia
+<a href="../posts/2024/2024-01-04-inteligencia.html" class="no-external">Inteligencia</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2024/2024-01-04-inteligencia.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('ia'); return false;">
 ia
@@ -589,14 +682,12 @@ ia
 inteligencia
 </div>
 </div>
-<a href="../posts/2024/2024-01-04-inteligencia.html">
 <div class="listing-description">
-Si la inteligencia es la capacidad de resolver problemas, entonces lo importante no es resolver el problema de manera independiente y aislada. Eso es ineficiente. Es…
+<a href="../posts/2024/2024-01-04-inteligencia.html" class="no-external">Si la inteligencia es la capacidad de resolver problemas, entonces lo importante no es resolver el problema de manera independiente y aislada. Eso es ineficiente. Es…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2024/2024-01-04-inteligencia.html">
+<a href="../posts/2024/2024-01-04-inteligencia.html" class="no-external">
 <div class="listing-date">
 Jan 4, 2024
 </div>
@@ -606,32 +697,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="libros" data-listing-date-sort="1703912400000" data-listing-file-modified-sort="1705096296644" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8">
+<div class="quarto-post image-right" data-index="12" data-categories="libros" data-listing-date-sort="1703905200000" data-listing-file-modified-sort="1705096296644" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1598">
 <div class="thumbnail">
-<p><a href="../posts/2023/2023-12-30-lecturas-del-2023.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2023/2023-12-30-lecturas-del-2023.html" class="no-external"></a></p><a href="../posts/2023/2023-12-30-lecturas-del-2023.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2023/2023-12-30-lecturas-del-2023.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2023/2023-12-30-lecturas-del-2023.html">
 <h3 class="no-anchor listing-title">
-Lecturas del 2023
+<a href="../posts/2023/2023-12-30-lecturas-del-2023.html" class="no-external">Lecturas del 2023</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2023/2023-12-30-lecturas-del-2023.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('libros'); return false;">
 libros
 </div>
 </div>
-<a href="../posts/2023/2023-12-30-lecturas-del-2023.html">
 <div class="listing-description">
-<p>Brevísimas opiniones de los libros que leí el 2023</p>
+<a href="../posts/2023/2023-12-30-lecturas-del-2023.html" class="no-external">Brevísimas opiniones de los libros que leí el 2023</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2023/2023-12-30-lecturas-del-2023.html">
+<a href="../posts/2023/2023-12-30-lecturas-del-2023.html" class="no-external">
 <div class="listing-date">
 Dec 30, 2023
 </div>
@@ -641,32 +730,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-categories="ia" data-listing-date-sort="1702789200000" data-listing-file-modified-sort="1703244390761" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="13" data-categories="ia" data-listing-date-sort="1702782000000" data-listing-file-modified-sort="1703244390761" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="169">
 <div class="thumbnail">
-<p><a href="../posts/2023/2023-12-17-navidad-con-ia.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2023/2023-12-17-navidad-con-ia.html" class="no-external"></a></p><a href="../posts/2023/2023-12-17-navidad-con-ia.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2023/2023-12-17-navidad-con-ia.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2023/2023-12-17-navidad-con-ia.html">
 <h3 class="no-anchor listing-title">
-Navidad con IA
+<a href="../posts/2023/2023-12-17-navidad-con-ia.html" class="no-external">Navidad con IA</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2023/2023-12-17-navidad-con-ia.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('ia'); return false;">
 ia
 </div>
 </div>
-<a href="../posts/2023/2023-12-17-navidad-con-ia.html">
 <div class="listing-description">
-En una de esas extrañas rutas de navegación en youtube, encontré que existen muchos videos de clásicas canciones navideñas, pero…
+<a href="../posts/2023/2023-12-17-navidad-con-ia.html" class="no-external">En una de esas extrañas rutas de navegación en youtube, encontré que existen muchos videos de clásicas canciones navideñas, pero donde se ha usado IA para cambiar al…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2023/2023-12-17-navidad-con-ia.html">
+<a href="../posts/2023/2023-12-17-navidad-con-ia.html" class="no-external">
 <div class="listing-date">
 Dec 17, 2023
 </div>
@@ -676,19 +763,19 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="12" data-categories="código,python,vizzu" data-listing-date-sort="1701320400000" data-listing-file-modified-sort="1712955151303" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="14" data-categories="código,python,vizzu" data-listing-date-sort="1701313200000" data-listing-file-modified-sort="1712955151303" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="570">
 <div class="thumbnail">
-<p><a href="../posts/2023/2023-11-30-vizzu.html"> <img src="../posts/2023/vizzu.png" class="thumbnail-image"> </a></p>
+<p><a href="../posts/2023/2023-11-30-vizzu.html" class="no-external"></a></p><a href="../posts/2023/2023-11-30-vizzu.html" class="no-external">
+<p><img src="../posts/2023/vizzu.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/2023/2023-11-30-vizzu.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2023/2023-11-30-vizzu.html">
 <h3 class="no-anchor listing-title">
-Post con gráfico
+<a href="../posts/2023/2023-11-30-vizzu.html" class="no-external">Post con gráfico</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2023/2023-11-30-vizzu.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('código'); return false;">
 código
@@ -700,14 +787,12 @@ python
 vizzu
 </div>
 </div>
-<a href="../posts/2023/2023-11-30-vizzu.html">
 <div class="listing-description">
-¿Podemos incrustar animaciones de Vizzu en un blog?
+<a href="../posts/2023/2023-11-30-vizzu.html" class="no-external">¿Podemos incrustar animaciones de Vizzu en un blog?</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2023/2023-11-30-vizzu.html">
+<a href="../posts/2023/2023-11-30-vizzu.html" class="no-external">
 <div class="listing-date">
 Nov 30, 2023
 </div>
@@ -717,19 +802,19 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="13" data-categories="código,python" data-listing-date-sort="1701234000000" data-listing-file-modified-sort="1712955141327" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="15" data-categories="código,python" data-listing-date-sort="1701226800000" data-listing-file-modified-sort="1712955141327" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
 <div class="thumbnail">
-<p><a href="../posts/2023/2023-11-29-codigo.html"> <img src="../posts/2023/image.jpg" class="thumbnail-image"> </a></p>
+<p><a href="../posts/2023/2023-11-29-codigo.html" class="no-external"></a></p><a href="../posts/2023/2023-11-29-codigo.html" class="no-external">
+<p><img src="../posts/2023/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="../posts/2023/2023-11-29-codigo.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2023/2023-11-29-codigo.html">
 <h3 class="no-anchor listing-title">
-Post Con Codigo
+<a href="../posts/2023/2023-11-29-codigo.html" class="no-external">Post Con Codigo</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2023/2023-11-29-codigo.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('código'); return false;">
 código
@@ -738,14 +823,12 @@ código
 python
 </div>
 </div>
-<a href="../posts/2023/2023-11-29-codigo.html">
 <div class="listing-description">
-Este es un post con código ejecutable
+<a href="../posts/2023/2023-11-29-codigo.html" class="no-external">Este es un post con código ejecutable</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2023/2023-11-29-codigo.html">
+<a href="../posts/2023/2023-11-29-codigo.html" class="no-external">
 <div class="listing-date">
 Nov 29, 2023
 </div>
@@ -755,32 +838,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="14" data-categories="vida" data-listing-date-sort="1701147600000" data-listing-file-modified-sort="1701988214776" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="16" data-categories="vida" data-listing-date-sort="1701140400000" data-listing-file-modified-sort="1701988214776" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
 <div class="thumbnail">
-<p><a href="../posts/2023/2023-11-28-bienvenida.html"> <p class="card-img-top"><img src="../posts/2023/thumbnail.jpg"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="../posts/2023/2023-11-28-bienvenida.html" class="no-external"></a></p><a href="../posts/2023/2023-11-28-bienvenida.html" class="no-external">
+<p class="card-img-top"><img src="../posts/2023/thumbnail.jpg"  class="thumbnail-image card-img"/></p>
+</a><p><a href="../posts/2023/2023-11-28-bienvenida.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2023/2023-11-28-bienvenida.html">
 <h3 class="no-anchor listing-title">
-Primer post
+<a href="../posts/2023/2023-11-28-bienvenida.html" class="no-external">Primer post</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2023/2023-11-28-bienvenida.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('vida'); return false;">
 vida
 </div>
 </div>
-<a href="../posts/2023/2023-11-28-bienvenida.html">
 <div class="listing-description">
-Este es el primer post en este nuevo blog hecho con Quarto.
+<a href="../posts/2023/2023-11-28-bienvenida.html" class="no-external">Este es el primer post en este nuevo blog hecho con Quarto.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2023/2023-11-28-bienvenida.html">
+<a href="../posts/2023/2023-11-28-bienvenida.html" class="no-external">
 <div class="listing-date">
 Nov 28, 2023
 </div>
@@ -790,32 +871,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="15" data-categories="lectura" data-listing-date-sort="1668747600000" data-listing-file-modified-sort="1701996986648" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
+<div class="quarto-post image-right" data-index="17" data-categories="lectura" data-listing-date-sort="1668740400000" data-listing-file-modified-sort="1701996986648" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1844">
 <div class="thumbnail">
-<p><a href="../posts/2022/2022-11-18-book-review-sheik-ceo.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2022/2022-11-18-book-review-sheik-ceo.html" class="no-external"></a></p><a href="../posts/2022/2022-11-18-book-review-sheik-ceo.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2022/2022-11-18-book-review-sheik-ceo.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2022/2022-11-18-book-review-sheik-ceo.html">
 <h3 class="no-anchor listing-title">
-The Sheik CEO
+<a href="../posts/2022/2022-11-18-book-review-sheik-ceo.html" class="no-external">The Sheik CEO</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2022/2022-11-18-book-review-sheik-ceo.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
 lectura
 </div>
 </div>
-<a href="../posts/2022/2022-11-18-book-review-sheik-ceo.html">
 <div class="listing-description">
-<p>Reflexión sobre cómo el estilo de liderazgo del sheik influyó en el rápido desarrollo de los EAU</p>
+<a href="../posts/2022/2022-11-18-book-review-sheik-ceo.html" class="no-external">Reflexión sobre cómo el estilo de liderazgo del sheik influyó en el rápido desarrollo de los EAU</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2022/2022-11-18-book-review-sheik-ceo.html">
+<a href="../posts/2022/2022-11-18-book-review-sheik-ceo.html" class="no-external">
 <div class="listing-date">
 Nov 18, 2022
 </div>
@@ -825,32 +904,30 @@ Yasar Jarrar
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="16" data-categories="lectura" data-listing-date-sort="1649134800000" data-listing-file-modified-sort="1701997035719" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
+<div class="quarto-post image-right" data-index="18" data-categories="lectura" data-listing-date-sort="1649131200000" data-listing-file-modified-sort="1701997035719" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1959">
 <div class="thumbnail">
-<p><a href="../posts/2022/2022-04-05-book-review-creativity-inc.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2022/2022-04-05-book-review-creativity-inc.html" class="no-external"></a></p><a href="../posts/2022/2022-04-05-book-review-creativity-inc.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2022/2022-04-05-book-review-creativity-inc.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2022/2022-04-05-book-review-creativity-inc.html">
 <h3 class="no-anchor listing-title">
-Creativity INC
+<a href="../posts/2022/2022-04-05-book-review-creativity-inc.html" class="no-external">Creativity INC</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2022/2022-04-05-book-review-creativity-inc.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
 lectura
 </div>
 </div>
-<a href="../posts/2022/2022-04-05-book-review-creativity-inc.html">
 <div class="listing-description">
-<p>Sobre cómo poder crear un ambiente de trabajo donde pueda flocerer la (elusiva) creatividad</p>
+<a href="../posts/2022/2022-04-05-book-review-creativity-inc.html" class="no-external">Sobre cómo poder crear un ambiente de trabajo donde pueda flocerer la (elusiva) creatividad</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2022/2022-04-05-book-review-creativity-inc.html">
+<a href="../posts/2022/2022-04-05-book-review-creativity-inc.html" class="no-external">
 <div class="listing-date">
 Apr 5, 2022
 </div>
@@ -860,19 +937,19 @@ Ed Catmull
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="17" data-categories="balance,reflexión" data-listing-date-sort="1642741200000" data-listing-file-modified-sort="1712955201778" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="19" data-categories="balance,reflexión" data-listing-date-sort="1642734000000" data-listing-file-modified-sort="1712955201778" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="523">
 <div class="thumbnail">
-<p><a href="../posts/2022/2022-01-21-metas-anuales.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2022/2022-01-21-metas-anuales.html" class="no-external"></a></p><a href="../posts/2022/2022-01-21-metas-anuales.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2022/2022-01-21-metas-anuales.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2022/2022-01-21-metas-anuales.html">
 <h3 class="no-anchor listing-title">
-Metas 2022
+<a href="../posts/2022/2022-01-21-metas-anuales.html" class="no-external">Metas 2022</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2022/2022-01-21-metas-anuales.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('balance'); return false;">
 balance
@@ -881,14 +958,12 @@ balance
 reflexión
 </div>
 </div>
-<a href="../posts/2022/2022-01-21-metas-anuales.html">
 <div class="listing-description">
-<p>¿Qué quiero para el 2022?</p>
+<a href="../posts/2022/2022-01-21-metas-anuales.html" class="no-external">¿Qué quiero para el 2022?</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2022/2022-01-21-metas-anuales.html">
+<a href="../posts/2022/2022-01-21-metas-anuales.html" class="no-external">
 <div class="listing-date">
 Jan 21, 2022
 </div>
@@ -898,32 +973,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="18" data-categories="streamlit" data-listing-date-sort="1642741200000" data-listing-file-modified-sort="1701988833445" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="20" data-categories="streamlit" data-listing-date-sort="1642734000000" data-listing-file-modified-sort="1701988833445" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="123">
 <div class="thumbnail">
-<p><a href="../posts/2022/2022-01-21-streamlit-post.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2022/2022-01-21-streamlit-post.html" class="no-external"></a></p><a href="../posts/2022/2022-01-21-streamlit-post.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2022/2022-01-21-streamlit-post.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2022/2022-01-21-streamlit-post.html">
 <h3 class="no-anchor listing-title">
-Streamlit: apps y posts
+<a href="../posts/2022/2022-01-21-streamlit-post.html" class="no-external">Streamlit: apps y posts</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2022/2022-01-21-streamlit-post.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('streamlit'); return false;">
 streamlit
 </div>
 </div>
-<a href="../posts/2022/2022-01-21-streamlit-post.html">
 <div class="listing-description">
-<p>Novedades y creaciones recientes</p>
+<a href="../posts/2022/2022-01-21-streamlit-post.html" class="no-external">Novedades y creaciones recientes</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2022/2022-01-21-streamlit-post.html">
+<a href="../posts/2022/2022-01-21-streamlit-post.html" class="no-external">
 <div class="listing-date">
 Jan 21, 2022
 </div>
@@ -933,19 +1006,19 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="19" data-categories="balance,reflexión" data-listing-date-sort="1640926800000" data-listing-file-modified-sort="1712955198322" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="21" data-categories="balance,reflexión" data-listing-date-sort="1640919600000" data-listing-file-modified-sort="1712955198322" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="466">
 <div class="thumbnail">
-<p><a href="../posts/2021/2021-12-31-balance-anual.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2021/2021-12-31-balance-anual.html" class="no-external"></a></p><a href="../posts/2021/2021-12-31-balance-anual.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2021/2021-12-31-balance-anual.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2021/2021-12-31-balance-anual.html">
 <h3 class="no-anchor listing-title">
-Balance anual
+<a href="../posts/2021/2021-12-31-balance-anual.html" class="no-external">Balance anual</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2021/2021-12-31-balance-anual.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('balance'); return false;">
 balance
@@ -954,14 +1027,12 @@ balance
 reflexión
 </div>
 </div>
-<a href="../posts/2021/2021-12-31-balance-anual.html">
 <div class="listing-description">
-<p>El año 2021 en la balanza</p>
+<a href="../posts/2021/2021-12-31-balance-anual.html" class="no-external">El año 2021 en la balanza</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2021/2021-12-31-balance-anual.html">
+<a href="../posts/2021/2021-12-31-balance-anual.html" class="no-external">
 <div class="listing-date">
 Dec 31, 2021
 </div>
@@ -971,19 +1042,19 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="20" data-categories="python,excel,código" data-listing-date-sort="1639458000000" data-listing-file-modified-sort="1712955146446" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="22" data-categories="python,excel,código" data-listing-date-sort="1639450800000" data-listing-file-modified-sort="1712955146446" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="580">
 <div class="thumbnail">
-<p><a href="../posts/2021/2021-12-14-excel-unmerge.html"> <p class="card-img-top"><img src="../posts/_images/2021-12-14-excel-unmerge/ejemplo.png" title="Ejemplo del problema" class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="../posts/2021/2021-12-14-excel-unmerge.html" class="no-external"></a></p><a href="../posts/2021/2021-12-14-excel-unmerge.html" class="no-external">
+<p class="card-img-top"><img src="../posts/_images/2021-12-14-excel-unmerge/ejemplo.png" title="Ejemplo del problema" class="thumbnail-image card-img"/></p>
+</a><p><a href="../posts/2021/2021-12-14-excel-unmerge.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2021/2021-12-14-excel-unmerge.html">
 <h3 class="no-anchor listing-title">
-Unmerging celdas de excel
+<a href="../posts/2021/2021-12-14-excel-unmerge.html" class="no-external">Unmerging celdas de excel</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2021/2021-12-14-excel-unmerge.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('python'); return false;">
 python
@@ -995,14 +1066,12 @@ excel
 código
 </div>
 </div>
-<a href="../posts/2021/2021-12-14-excel-unmerge.html">
 <div class="listing-description">
-<p>Cuando pandas se quedó corto</p>
+<a href="../posts/2021/2021-12-14-excel-unmerge.html" class="no-external">Cuando pandas se quedó corto</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2021/2021-12-14-excel-unmerge.html">
+<a href="../posts/2021/2021-12-14-excel-unmerge.html" class="no-external">
 <div class="listing-date">
 Dec 14, 2021
 </div>
@@ -1012,32 +1081,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="21" data-categories="código" data-listing-date-sort="1639285200000" data-listing-file-modified-sort="1701998181763" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="23" data-categories="código" data-listing-date-sort="1639278000000" data-listing-file-modified-sort="1701998181763" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="160">
 <div class="thumbnail">
-<p><a href="../posts/2021/2021-12-12-plot-images.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2021/2021-12-12-plot-images.html" class="no-external"></a></p><a href="../posts/2021/2021-12-12-plot-images.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2021/2021-12-12-plot-images.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2021/2021-12-12-plot-images.html">
 <h3 class="no-anchor listing-title">
-Graficando emojis
+<a href="../posts/2021/2021-12-12-plot-images.html" class="no-external">Graficando emojis</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2021/2021-12-12-plot-images.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('código'); return false;">
 código
 </div>
 </div>
-<a href="../posts/2021/2021-12-12-plot-images.html">
 <div class="listing-description">
-<p>Resumen de un googleo interminable</p>
+<a href="../posts/2021/2021-12-12-plot-images.html" class="no-external">Resumen de un googleo interminable</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2021/2021-12-12-plot-images.html">
+<a href="../posts/2021/2021-12-12-plot-images.html" class="no-external">
 <div class="listing-date">
 Dec 12, 2021
 </div>
@@ -1047,32 +1114,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="22" data-categories="pycon" data-listing-date-sort="1638680400000" data-listing-file-modified-sort="1712955147851" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="24" data-categories="pycon" data-listing-date-sort="1638673200000" data-listing-file-modified-sort="1712955147851" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="715">
 <div class="thumbnail">
-<p><a href="../posts/2021/2021-12-05-post-pycon-y-sindrome-impostor.html"> <p class="card-img-top"><img src="../posts/_images/2021-12-05-pycon-y-sindrome-impostor/pycon2.jpg" title="Presentando - Copyright PyCon Colombia" class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="../posts/2021/2021-12-05-post-pycon-y-sindrome-impostor.html" class="no-external"></a></p><a href="../posts/2021/2021-12-05-post-pycon-y-sindrome-impostor.html" class="no-external">
+<p class="card-img-top"><img src="../posts/_images/2021-12-05-pycon-y-sindrome-impostor/pycon2.jpg" title="Presentando - Copyright PyCon Colombia" class="thumbnail-image card-img"/></p>
+</a><p><a href="../posts/2021/2021-12-05-post-pycon-y-sindrome-impostor.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2021/2021-12-05-post-pycon-y-sindrome-impostor.html">
 <h3 class="no-anchor listing-title">
-Mi primera PyCon
+<a href="../posts/2021/2021-12-05-post-pycon-y-sindrome-impostor.html" class="no-external">Mi primera PyCon</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2021/2021-12-05-post-pycon-y-sindrome-impostor.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('pycon'); return false;">
 pycon
 </div>
 </div>
-<a href="../posts/2021/2021-12-05-post-pycon-y-sindrome-impostor.html">
 <div class="listing-description">
-<p>Venciendo el síndrome del impostor</p>
+<a href="../posts/2021/2021-12-05-post-pycon-y-sindrome-impostor.html" class="no-external">Venciendo el síndrome del impostor</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2021/2021-12-05-post-pycon-y-sindrome-impostor.html">
+<a href="../posts/2021/2021-12-05-post-pycon-y-sindrome-impostor.html" class="no-external">
 <div class="listing-date">
 Dec 5, 2021
 </div>
@@ -1082,32 +1147,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="23" data-categories="reflexión" data-listing-date-sort="1637298000000" data-listing-file-modified-sort="1701998123322" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="25" data-categories="reflexión" data-listing-date-sort="1637290800000" data-listing-file-modified-sort="1701998123322" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="431">
 <div class="thumbnail">
-<p><a href="../posts/2021/2021-11-19-post-streamlit-hackathon.html"> <p class="card-img-top"><img src="../posts/_images/2021-11-19-streamlit-hackathon/hackathon.png" title="Hackathon" class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="../posts/2021/2021-11-19-post-streamlit-hackathon.html" class="no-external"></a></p><a href="../posts/2021/2021-11-19-post-streamlit-hackathon.html" class="no-external">
+<p class="card-img-top"><img data-src="../posts/_images/2021-11-19-streamlit-hackathon/hackathon.png" title="Hackathon" class="thumbnail-image card-img"/></p>
+</a><p><a href="../posts/2021/2021-11-19-post-streamlit-hackathon.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2021/2021-11-19-post-streamlit-hackathon.html">
 <h3 class="no-anchor listing-title">
-Streamlit hackathon
+<a href="../posts/2021/2021-11-19-post-streamlit-hackathon.html" class="no-external">Streamlit hackathon</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2021/2021-11-19-post-streamlit-hackathon.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('reflexión'); return false;">
 reflexión
 </div>
 </div>
-<a href="../posts/2021/2021-11-19-post-streamlit-hackathon.html">
 <div class="listing-description">
-<p>Capitalizando la PyCon Chile</p>
+<a href="../posts/2021/2021-11-19-post-streamlit-hackathon.html" class="no-external">Capitalizando la PyCon Chile</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2021/2021-11-19-post-streamlit-hackathon.html">
+<a href="../posts/2021/2021-11-19-post-streamlit-hackathon.html" class="no-external">
 <div class="listing-date">
 Nov 19, 2021
 </div>
@@ -1117,19 +1180,19 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="24" data-categories="reflexión,streamlit" data-listing-date-sort="1636779600000" data-listing-file-modified-sort="1701998115835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="26" data-categories="reflexión,streamlit" data-listing-date-sort="1636772400000" data-listing-file-modified-sort="1701998115835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="531">
 <div class="thumbnail">
-<p><a href="../posts/2021/2021-11-13-post-1000-programadores.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2021/2021-11-13-post-1000-programadores.html" class="no-external"></a></p><a href="../posts/2021/2021-11-13-post-1000-programadores.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2021/2021-11-13-post-1000-programadores.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2021/2021-11-13-post-1000-programadores.html">
 <h3 class="no-anchor listing-title">
-1000 Programadores Salteños
+<a href="../posts/2021/2021-11-13-post-1000-programadores.html" class="no-external">1000 Programadores Salteños</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2021/2021-11-13-post-1000-programadores.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('reflexión'); return false;">
 reflexión
@@ -1138,14 +1201,12 @@ reflexión
 streamlit
 </div>
 </div>
-<a href="../posts/2021/2021-11-13-post-1000-programadores.html">
 <div class="listing-description">
-<p>Reflexiones de Pedagogía con Python</p>
+<a href="../posts/2021/2021-11-13-post-1000-programadores.html" class="no-external">Reflexiones de Pedagogía con Python</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2021/2021-11-13-post-1000-programadores.html">
+<a href="../posts/2021/2021-11-13-post-1000-programadores.html" class="no-external">
 <div class="listing-date">
 Nov 13, 2021
 </div>
@@ -1155,19 +1216,19 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="25" data-categories="streamlit,pycon" data-listing-date-sort="1636347600000" data-listing-file-modified-sort="1701997678536" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="27" data-categories="streamlit,pycon" data-listing-date-sort="1636340400000" data-listing-file-modified-sort="1701997678536" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="293">
 <div class="thumbnail">
-<p><a href="../posts/2021/2021-11-08-post-pyconcl.html"> <p class="card-img-top"><img data-src="../posts/_images/2021-11-08-pyconcl/streamlit_start.png"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="../posts/2021/2021-11-08-post-pyconcl.html" class="no-external"></a></p><a href="../posts/2021/2021-11-08-post-pyconcl.html" class="no-external">
+<p class="card-img-top"><img data-src="../posts/_images/2021-11-08-pyconcl/streamlit_start.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="../posts/2021/2021-11-08-post-pyconcl.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2021/2021-11-08-post-pyconcl.html">
 <h3 class="no-anchor listing-title">
-PyCon Chile 2021
+<a href="../posts/2021/2021-11-08-post-pyconcl.html" class="no-external">PyCon Chile 2021</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2021/2021-11-08-post-pyconcl.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('streamlit'); return false;">
 streamlit
@@ -1176,14 +1237,12 @@ streamlit
 pycon
 </div>
 </div>
-<a href="../posts/2021/2021-11-08-post-pyconcl.html">
 <div class="listing-description">
-<p>Taller y charla de Streamlit</p>
+<a href="../posts/2021/2021-11-08-post-pyconcl.html" class="no-external">Taller y charla de Streamlit</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2021/2021-11-08-post-pyconcl.html">
+<a href="../posts/2021/2021-11-08-post-pyconcl.html" class="no-external">
 <div class="listing-date">
 Nov 8, 2021
 </div>
@@ -1193,32 +1252,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="26" data-categories="pycon" data-listing-date-sort="1635483600000" data-listing-file-modified-sort="1701998097594" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="28" data-categories="pycon" data-listing-date-sort="1635476400000" data-listing-file-modified-sort="1701998097594" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="65">
 <div class="thumbnail">
-<p><a href="../posts/2021/2021-10-29-post-pyconar.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2021/2021-10-29-post-pyconar.html" class="no-external"></a></p><a href="../posts/2021/2021-10-29-post-pyconar.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2021/2021-10-29-post-pyconar.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2021/2021-10-29-post-pyconar.html">
 <h3 class="no-anchor listing-title">
-PyCon Argentina 2021
+<a href="../posts/2021/2021-10-29-post-pyconar.html" class="no-external">PyCon Argentina 2021</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2021/2021-10-29-post-pyconar.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('pycon'); return false;">
 pycon
 </div>
 </div>
-<a href="../posts/2021/2021-10-29-post-pyconar.html">
 <div class="listing-description">
-<p>Taller para Docentes</p>
+<a href="../posts/2021/2021-10-29-post-pyconar.html" class="no-external">Taller para Docentes</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2021/2021-10-29-post-pyconar.html">
+<a href="../posts/2021/2021-10-29-post-pyconar.html" class="no-external">
 <div class="listing-date">
 Oct 29, 2021
 </div>
@@ -1228,32 +1285,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="27" data-categories="reflexión" data-listing-date-sort="1635483600000" data-listing-file-modified-sort="1701998104893" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="29" data-categories="reflexión" data-listing-date-sort="1635476400000" data-listing-file-modified-sort="1701998104893" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="278">
 <div class="thumbnail">
-<p><a href="../posts/2021/2021-10-29-post-rubik.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2021/2021-10-29-post-rubik.html" class="no-external"></a></p><a href="../posts/2021/2021-10-29-post-rubik.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2021/2021-10-29-post-rubik.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2021/2021-10-29-post-rubik.html">
 <h3 class="no-anchor listing-title">
-Inteligencia y Creencias Limitantes
+<a href="../posts/2021/2021-10-29-post-rubik.html" class="no-external">Inteligencia y Creencias Limitantes</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2021/2021-10-29-post-rubik.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('reflexión'); return false;">
 reflexión
 </div>
 </div>
-<a href="../posts/2021/2021-10-29-post-rubik.html">
 <div class="listing-description">
-<p>Aprendizajes inesperados al resolver el cubo de rubik</p>
+<a href="../posts/2021/2021-10-29-post-rubik.html" class="no-external">Aprendizajes inesperados al resolver el cubo de rubik</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2021/2021-10-29-post-rubik.html">
+<a href="../posts/2021/2021-10-29-post-rubik.html" class="no-external">
 <div class="listing-date">
 Oct 29, 2021
 </div>
@@ -1263,19 +1318,19 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="28" data-categories="deporte,reflexión" data-listing-date-sort="1634965200000" data-listing-file-modified-sort="1701998093688" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="30" data-categories="deporte,reflexión" data-listing-date-sort="1634958000000" data-listing-file-modified-sort="1701998093688" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="513">
 <div class="thumbnail">
-<p><a href="../posts/2021/2021-10-23-post-spartan-race.html"> <p class="card-img-top"><img data-src="../posts/_images/2021-10-23-spartan-race/2021-10-23-spartan-race.jpeg" title="Spartan Race" class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="../posts/2021/2021-10-23-post-spartan-race.html" class="no-external"></a></p><a href="../posts/2021/2021-10-23-post-spartan-race.html" class="no-external">
+<p class="card-img-top"><img data-src="../posts/_images/2021-10-23-spartan-race/2021-10-23-spartan-race.jpeg" title="Spartan Race" class="thumbnail-image card-img"/></p>
+</a><p><a href="../posts/2021/2021-10-23-post-spartan-race.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2021/2021-10-23-post-spartan-race.html">
 <h3 class="no-anchor listing-title">
-Spartan Race
+<a href="../posts/2021/2021-10-23-post-spartan-race.html" class="no-external">Spartan Race</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2021/2021-10-23-post-spartan-race.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('deporte'); return false;">
 deporte
@@ -1284,14 +1339,12 @@ deporte
 reflexión
 </div>
 </div>
-<a href="../posts/2021/2021-10-23-post-spartan-race.html">
 <div class="listing-description">
-<p>Desafíos físicos y sicológicos</p>
+<a href="../posts/2021/2021-10-23-post-spartan-race.html" class="no-external">Desafíos físicos y sicológicos</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2021/2021-10-23-post-spartan-race.html">
+<a href="../posts/2021/2021-10-23-post-spartan-race.html" class="no-external">
 <div class="listing-date">
 Oct 23, 2021
 </div>
@@ -1301,32 +1354,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="29" data-categories="reflexión" data-listing-date-sort="1633064400000" data-listing-file-modified-sort="1701997748906" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="31" data-categories="reflexión" data-listing-date-sort="1633057200000" data-listing-file-modified-sort="1701997748906" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="325">
 <div class="thumbnail">
-<p><a href="../posts/2021/2021-10-01-post-tercer-trimestre.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2021/2021-10-01-post-tercer-trimestre.html" class="no-external"></a></p><a href="../posts/2021/2021-10-01-post-tercer-trimestre.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2021/2021-10-01-post-tercer-trimestre.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2021/2021-10-01-post-tercer-trimestre.html">
 <h3 class="no-anchor listing-title">
-Tercer trimestre del 2021
+<a href="../posts/2021/2021-10-01-post-tercer-trimestre.html" class="no-external">Tercer trimestre del 2021</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2021/2021-10-01-post-tercer-trimestre.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('reflexión'); return false;">
 reflexión
 </div>
 </div>
-<a href="../posts/2021/2021-10-01-post-tercer-trimestre.html">
 <div class="listing-description">
-<p>Balance de lo que han sido estos meses</p>
+<a href="../posts/2021/2021-10-01-post-tercer-trimestre.html" class="no-external">Balance de lo que han sido estos meses</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2021/2021-10-01-post-tercer-trimestre.html">
+<a href="../posts/2021/2021-10-01-post-tercer-trimestre.html" class="no-external">
 <div class="listing-date">
 Oct 1, 2021
 </div>
@@ -1336,32 +1387,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="30" data-categories="python" data-listing-date-sort="1632805200000" data-listing-file-modified-sort="1701998085310" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="32" data-categories="python" data-listing-date-sort="1632798000000" data-listing-file-modified-sort="1701998085310" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="218">
 <div class="thumbnail">
-<p><a href="../posts/2021/2021-09-28-post-sklearn-contributors.html"> <p class="card-img-top"><img data-src="../posts/_images/2021-09-28-post-scipy-contributors/contributors.png"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="../posts/2021/2021-09-28-post-sklearn-contributors.html" class="no-external"></a></p><a href="../posts/2021/2021-09-28-post-sklearn-contributors.html" class="no-external">
+<p class="card-img-top"><img data-src="../posts/_images/2021-09-28-post-scipy-contributors/contributors.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="../posts/2021/2021-09-28-post-sklearn-contributors.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2021/2021-09-28-post-sklearn-contributors.html">
 <h3 class="no-anchor listing-title">
-Sklearn 1.0
+<a href="../posts/2021/2021-09-28-post-sklearn-contributors.html" class="no-external">Sklearn 1.0</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2021/2021-09-28-post-sklearn-contributors.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('python'); return false;">
 python
 </div>
 </div>
-<a href="../posts/2021/2021-09-28-post-sklearn-contributors.html">
 <div class="listing-description">
-<p>Aparecí entre los contribuidores de la nueva versión</p>
+<a href="../posts/2021/2021-09-28-post-sklearn-contributors.html" class="no-external">Aparecí entre los contribuidores de la nueva versión</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2021/2021-09-28-post-sklearn-contributors.html">
+<a href="../posts/2021/2021-09-28-post-sklearn-contributors.html" class="no-external">
 <div class="listing-date">
 Sep 28, 2021
 </div>
@@ -1371,32 +1420,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="31" data-categories="python" data-listing-date-sort="1631163600000" data-listing-file-modified-sort="1701998079999" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="33" data-categories="python" data-listing-date-sort="1631156400000" data-listing-file-modified-sort="1701998079999" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
 <div class="thumbnail">
-<p><a href="../posts/2021/2021-09-09-post-sharing-python.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2021/2021-09-09-post-sharing-python.html" class="no-external"></a></p><a href="../posts/2021/2021-09-09-post-sharing-python.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2021/2021-09-09-post-sharing-python.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2021/2021-09-09-post-sharing-python.html">
 <h3 class="no-anchor listing-title">
-Compartir tu código en python
+<a href="../posts/2021/2021-09-09-post-sharing-python.html" class="no-external">Compartir tu código en python</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2021/2021-09-09-post-sharing-python.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('python'); return false;">
 python
 </div>
 </div>
-<a href="../posts/2021/2021-09-09-post-sharing-python.html">
 <div class="listing-description">
-<p>Revisión a las muchas alternativas</p>
+<a href="../posts/2021/2021-09-09-post-sharing-python.html" class="no-external">Revisión a las muchas alternativas</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2021/2021-09-09-post-sharing-python.html">
+<a href="../posts/2021/2021-09-09-post-sharing-python.html" class="no-external">
 <div class="listing-date">
 Sep 9, 2021
 </div>
@@ -1406,19 +1453,19 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="32" data-categories="rise,pycon" data-listing-date-sort="1630126800000" data-listing-file-modified-sort="1701998072430" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="34" data-categories="rise,pycon" data-listing-date-sort="1630123200000" data-listing-file-modified-sort="1701998072430" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="200">
 <div class="thumbnail">
-<p><a href="../posts/2021/2021-08-28-post-pylatam.html"> <p class="card-img-top"><img data-src="../posts/_images/2021-08-28-pylatam/hubilo.png" title="PyCon Latam 2021" class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="../posts/2021/2021-08-28-post-pylatam.html" class="no-external"></a></p><a href="../posts/2021/2021-08-28-post-pylatam.html" class="no-external">
+<p class="card-img-top"><img data-src="../posts/_images/2021-08-28-pylatam/hubilo.png" title="PyCon Latam 2021" class="thumbnail-image card-img"/></p>
+</a><p><a href="../posts/2021/2021-08-28-post-pylatam.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2021/2021-08-28-post-pylatam.html">
 <h3 class="no-anchor listing-title">
-PyCon Latam 2021
+<a href="../posts/2021/2021-08-28-post-pylatam.html" class="no-external">PyCon Latam 2021</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2021/2021-08-28-post-pylatam.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('rise'); return false;">
 rise
@@ -1427,14 +1474,12 @@ rise
 pycon
 </div>
 </div>
-<a href="../posts/2021/2021-08-28-post-pylatam.html">
 <div class="listing-description">
-<p>Mi tercera PyCon</p>
+<a href="../posts/2021/2021-08-28-post-pylatam.html" class="no-external">Mi tercera PyCon</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2021/2021-08-28-post-pylatam.html">
+<a href="../posts/2021/2021-08-28-post-pylatam.html" class="no-external">
 <div class="listing-date">
 Aug 28, 2021
 </div>
@@ -1444,32 +1489,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="33" data-categories="lectura" data-listing-date-sort="1629262800000" data-listing-file-modified-sort="1701997054351" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="35" data-categories="lectura" data-listing-date-sort="1629259200000" data-listing-file-modified-sort="1701997054351" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="74">
 <div class="thumbnail">
-<p><a href="../posts/2021/2021-08-18-book-review-all-systems-red.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2021/2021-08-18-book-review-all-systems-red.html" class="no-external"></a></p><a href="../posts/2021/2021-08-18-book-review-all-systems-red.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2021/2021-08-18-book-review-all-systems-red.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2021/2021-08-18-book-review-all-systems-red.html">
 <h3 class="no-anchor listing-title">
-All systems red
+<a href="../posts/2021/2021-08-18-book-review-all-systems-red.html" class="no-external">All systems red</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2021/2021-08-18-book-review-all-systems-red.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
 lectura
 </div>
 </div>
-<a href="../posts/2021/2021-08-18-book-review-all-systems-red.html">
 <div class="listing-description">
-<p>Exploradores planetarios con un twist</p>
+<a href="../posts/2021/2021-08-18-book-review-all-systems-red.html" class="no-external">Exploradores planetarios con un twist</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2021/2021-08-18-book-review-all-systems-red.html">
+<a href="../posts/2021/2021-08-18-book-review-all-systems-red.html" class="no-external">
 <div class="listing-date">
 Aug 18, 2021
 </div>
@@ -1479,32 +1522,30 @@ Martha Wells
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="34" data-categories="código" data-listing-date-sort="1628053200000" data-listing-file-modified-sort="1701998057169" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="36" data-categories="código" data-listing-date-sort="1628049600000" data-listing-file-modified-sort="1701998057169" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="107">
 <div class="thumbnail">
-<p><a href="../posts/2021/2021-08-04-post-favicon.html"> <p class="card-img-top"><img data-src="../posts/_images/2021-08-04-favicon/preview.png" title="Favicon obtenido" class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="../posts/2021/2021-08-04-post-favicon.html" class="no-external"></a></p><a href="../posts/2021/2021-08-04-post-favicon.html" class="no-external">
+<p class="card-img-top"><img data-src="../posts/_images/2021-08-04-favicon/preview.png" title="Favicon obtenido" class="thumbnail-image card-img"/></p>
+</a><p><a href="../posts/2021/2021-08-04-post-favicon.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2021/2021-08-04-post-favicon.html">
 <h3 class="no-anchor listing-title">
-Nuevo favicon
+<a href="../posts/2021/2021-08-04-post-favicon.html" class="no-external">Nuevo favicon</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2021/2021-08-04-post-favicon.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('código'); return false;">
 código
 </div>
 </div>
-<a href="../posts/2021/2021-08-04-post-favicon.html">
 <div class="listing-description">
-<p>De python a sebastiandres en 1 paso.</p>
+<a href="../posts/2021/2021-08-04-post-favicon.html" class="no-external">De python a sebastiandres en 1 paso.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2021/2021-08-04-post-favicon.html">
+<a href="../posts/2021/2021-08-04-post-favicon.html" class="no-external">
 <div class="listing-date">
 Aug 4, 2021
 </div>
@@ -1514,19 +1555,19 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="35" data-categories="código,reflexión" data-listing-date-sort="1627189200000" data-listing-file-modified-sort="1701998060754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="37" data-categories="código,reflexión" data-listing-date-sort="1627185600000" data-listing-file-modified-sort="1701998060754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="607">
 <div class="thumbnail">
-<p><a href="../posts/2021/2021-07-25-post-data-umbrella-sprint.html"> <p class="card-img-top"><img data-src="../posts/_images/2021-07-25-data-umbrella-sprint/expectativa.png" title="Expectativa: Me falta mucho para poder contribuir :'(." class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="../posts/2021/2021-07-25-post-data-umbrella-sprint.html" class="no-external"></a></p><a href="../posts/2021/2021-07-25-post-data-umbrella-sprint.html" class="no-external">
+<p class="card-img-top"><img data-src="../posts/_images/2021-07-25-data-umbrella-sprint/expectativa.png" title="Expectativa: Me falta mucho para poder contribuir :'(." class="thumbnail-image card-img"/></p>
+</a><p><a href="../posts/2021/2021-07-25-post-data-umbrella-sprint.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2021/2021-07-25-post-data-umbrella-sprint.html">
 <h3 class="no-anchor listing-title">
-Experiencias del Sprint de Data Umbrella
+<a href="../posts/2021/2021-07-25-post-data-umbrella-sprint.html" class="no-external">Experiencias del Sprint de Data Umbrella</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2021/2021-07-25-post-data-umbrella-sprint.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('código'); return false;">
 código
@@ -1535,14 +1576,12 @@ código
 reflexión
 </div>
 </div>
-<a href="../posts/2021/2021-07-25-post-data-umbrella-sprint.html">
 <div class="listing-description">
-<p>Lo que aprendí en mi primer sprint contribuyendo a código abierto.</p>
+<a href="../posts/2021/2021-07-25-post-data-umbrella-sprint.html" class="no-external">Lo que aprendí en mi primer sprint contribuyendo a código abierto.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2021/2021-07-25-post-data-umbrella-sprint.html">
+<a href="../posts/2021/2021-07-25-post-data-umbrella-sprint.html" class="no-external">
 <div class="listing-date">
 Jul 25, 2021
 </div>
@@ -1552,32 +1591,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="36" data-categories="código" data-listing-date-sort="1622523600000" data-listing-file-modified-sort="1701998042516" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
+<div class="quarto-post image-right" data-index="38" data-categories="código" data-listing-date-sort="1622520000000" data-listing-file-modified-sort="1701998042516" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1865">
 <div class="thumbnail">
-<p><a href="../posts/2021/2021-06-01-post-linktree.html"> <p class="card-img-top"><img data-src="../posts/_images/2021-06-01-linktree/comparacion.png" title="Formato ofrecido por linktree (izquieda) versus lo que necesitaba y que tuve que crear (derecha)." class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="../posts/2021/2021-06-01-post-linktree.html" class="no-external"></a></p><a href="../posts/2021/2021-06-01-post-linktree.html" class="no-external">
+<p class="card-img-top"><img data-src="../posts/_images/2021-06-01-linktree/comparacion.png" title="Formato ofrecido por linktree (izquieda) versus lo que necesitaba y que tuve que crear (derecha)." class="thumbnail-image card-img"/></p>
+</a><p><a href="../posts/2021/2021-06-01-post-linktree.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2021/2021-06-01-post-linktree.html">
 <h3 class="no-anchor listing-title">
-Emulador de Linktree
+<a href="../posts/2021/2021-06-01-post-linktree.html" class="no-external">Emulador de Linktree</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2021/2021-06-01-post-linktree.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('código'); return false;">
 código
 </div>
 </div>
-<a href="../posts/2021/2021-06-01-post-linktree.html">
 <div class="listing-description">
-<p>Imitando un directorio de enlaces sólo con recursos gratuitos</p>
+<a href="../posts/2021/2021-06-01-post-linktree.html" class="no-external">Imitando un directorio de enlaces sólo con recursos gratuitos</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2021/2021-06-01-post-linktree.html">
+<a href="../posts/2021/2021-06-01-post-linktree.html" class="no-external">
 <div class="listing-date">
 Jun 1, 2021
 </div>
@@ -1587,32 +1624,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="37" data-categories="reflexión" data-listing-date-sort="1616907600000" data-listing-file-modified-sort="1701998035653" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<div class="quarto-post image-right" data-index="39" data-categories="reflexión" data-listing-date-sort="1616900400000" data-listing-file-modified-sort="1701998035653" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1352">
 <div class="thumbnail">
-<p><a href="../posts/2021/2021-03-28-post-trillion-dollar-coach.html"> <p class="card-img-top"><img data-src="../posts/_images/2021-03-28-trillion-dollar-coach/bielsa.jpeg" title="Un entrenador peculiar" class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="../posts/2021/2021-03-28-post-trillion-dollar-coach.html" class="no-external"></a></p><a href="../posts/2021/2021-03-28-post-trillion-dollar-coach.html" class="no-external">
+<p class="card-img-top"><img data-src="../posts/_images/2021-03-28-trillion-dollar-coach/bielsa.jpeg" title="Un entrenador peculiar" class="thumbnail-image card-img"/></p>
+</a><p><a href="../posts/2021/2021-03-28-post-trillion-dollar-coach.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2021/2021-03-28-post-trillion-dollar-coach.html">
 <h3 class="no-anchor listing-title">
-Las 3 lecciones de los CEOs del Silicon Valley que valen un billón de dólares
+<a href="../posts/2021/2021-03-28-post-trillion-dollar-coach.html" class="no-external">Las 3 lecciones de los CEOs del Silicon Valley que valen un billón de dólares</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2021/2021-03-28-post-trillion-dollar-coach.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('reflexión'); return false;">
 reflexión
 </div>
 </div>
-<a href="../posts/2021/2021-03-28-post-trillion-dollar-coach.html">
 <div class="listing-description">
-<p>¿Tan simple como sé vulnerable, evita la democracia y trabaja en equipo?</p>
+<a href="../posts/2021/2021-03-28-post-trillion-dollar-coach.html" class="no-external">¿Tan simple como sé vulnerable, evita la democracia y trabaja en equipo?</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2021/2021-03-28-post-trillion-dollar-coach.html">
+<a href="../posts/2021/2021-03-28-post-trillion-dollar-coach.html" class="no-external">
 <div class="listing-date">
 Mar 28, 2021
 </div>
@@ -1622,32 +1657,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="38" data-categories="reflexión" data-listing-date-sort="1611378000000" data-listing-file-modified-sort="1701998028365" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="40" data-categories="reflexión" data-listing-date-sort="1611370800000" data-listing-file-modified-sort="1701998028365" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="663">
 <div class="thumbnail">
-<p><a href="../posts/2021/2021-01-23-post-detectives-y-azar.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2021/2021-01-23-post-detectives-y-azar.html" class="no-external"></a></p><a href="../posts/2021/2021-01-23-post-detectives-y-azar.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2021/2021-01-23-post-detectives-y-azar.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2021/2021-01-23-post-detectives-y-azar.html">
 <h3 class="no-anchor listing-title">
-El detective: entre la lógica y el azar
+<a href="../posts/2021/2021-01-23-post-detectives-y-azar.html" class="no-external">El detective: entre la lógica y el azar</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2021/2021-01-23-post-detectives-y-azar.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('reflexión'); return false;">
 reflexión
 </div>
 </div>
-<a href="../posts/2021/2021-01-23-post-detectives-y-azar.html">
 <div class="listing-description">
-<p>Las raíces de la serendipia y la novela policial clásica en un cuento persa</p>
+<a href="../posts/2021/2021-01-23-post-detectives-y-azar.html" class="no-external">Las raíces de la serendipia y la novela policial clásica en un cuento persa</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2021/2021-01-23-post-detectives-y-azar.html">
+<a href="../posts/2021/2021-01-23-post-detectives-y-azar.html" class="no-external">
 <div class="listing-date">
 Jan 23, 2021
 </div>
@@ -1657,32 +1690,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="39" data-categories="reflexión" data-listing-date-sort="1600923600000" data-listing-file-modified-sort="1701998020313" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="41" data-categories="reflexión" data-listing-date-sort="1600916400000" data-listing-file-modified-sort="1701998020313" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="532">
 <div class="thumbnail">
-<p><a href="../posts/2020/2020-09-24-post-burnout.html"> <p class="card-img-top"><img data-src="../posts/_images/2020-09-24-burnout/burnout.jpeg" title="Tipo A y tipo B relajándose (Owlturd)." class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="../posts/2020/2020-09-24-post-burnout.html" class="no-external"></a></p><a href="../posts/2020/2020-09-24-post-burnout.html" class="no-external">
+<p class="card-img-top"><img data-src="../posts/_images/2020-09-24-burnout/burnout.jpeg" title="Tipo A y tipo B relajándose (Owlturd)." class="thumbnail-image card-img"/></p>
+</a><p><a href="../posts/2020/2020-09-24-post-burnout.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2020/2020-09-24-post-burnout.html">
 <h3 class="no-anchor listing-title">
-Burnout — experiencia y aprendizaje
+<a href="../posts/2020/2020-09-24-post-burnout.html" class="no-external">Burnout — experiencia y aprendizaje</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2020/2020-09-24-post-burnout.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('reflexión'); return false;">
 reflexión
 </div>
 </div>
-<a href="../posts/2020/2020-09-24-post-burnout.html">
 <div class="listing-description">
-<p>¿Cómo reconocer y combatir el agotamiento laboral?</p>
+<a href="../posts/2020/2020-09-24-post-burnout.html" class="no-external">¿Cómo reconocer y combatir el agotamiento laboral?</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2020/2020-09-24-post-burnout.html">
+<a href="../posts/2020/2020-09-24-post-burnout.html" class="no-external">
 <div class="listing-date">
 Sep 24, 2020
 </div>
@@ -1692,32 +1723,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="40" data-categories="reflexión" data-listing-date-sort="1595653200000" data-listing-file-modified-sort="1701998015173" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="42" data-categories="reflexión" data-listing-date-sort="1595649600000" data-listing-file-modified-sort="1701998015173" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="449">
 <div class="thumbnail">
-<p><a href="../posts/2020/2020-07-25-post-python-as-a-service.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2020/2020-07-25-post-python-as-a-service.html" class="no-external"></a></p><a href="../posts/2020/2020-07-25-post-python-as-a-service.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2020/2020-07-25-post-python-as-a-service.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2020/2020-07-25-post-python-as-a-service.html">
 <h3 class="no-anchor listing-title">
-PaaS: Python as a Service
+<a href="../posts/2020/2020-07-25-post-python-as-a-service.html" class="no-external">PaaS: Python as a Service</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2020/2020-07-25-post-python-as-a-service.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('reflexión'); return false;">
 reflexión
 </div>
 </div>
-<a href="../posts/2020/2020-07-25-post-python-as-a-service.html">
 <div class="listing-description">
-<p>Entregando python en la nube, más fácil que nunca.</p>
+<a href="../posts/2020/2020-07-25-post-python-as-a-service.html" class="no-external">Entregando python en la nube, más fácil que nunca.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2020/2020-07-25-post-python-as-a-service.html">
+<a href="../posts/2020/2020-07-25-post-python-as-a-service.html" class="no-external">
 <div class="listing-date">
 Jul 25, 2020
 </div>
@@ -1727,32 +1756,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="41" data-categories="reflexión" data-listing-date-sort="1585198800000" data-listing-file-modified-sort="1701998007117" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="43" data-categories="reflexión" data-listing-date-sort="1585191600000" data-listing-file-modified-sort="1701998007117" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="186">
 <div class="thumbnail">
-<p><a href="../posts/2020/2020-03-26-post-rutina-optima.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2020/2020-03-26-post-rutina-optima.html" class="no-external"></a></p><a href="../posts/2020/2020-03-26-post-rutina-optima.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2020/2020-03-26-post-rutina-optima.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2020/2020-03-26-post-rutina-optima.html">
 <h3 class="no-anchor listing-title">
-La rutina óptima es aburrida
+<a href="../posts/2020/2020-03-26-post-rutina-optima.html" class="no-external">La rutina óptima es aburrida</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2020/2020-03-26-post-rutina-optima.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('reflexión'); return false;">
 reflexión
 </div>
 </div>
-<a href="../posts/2020/2020-03-26-post-rutina-optima.html">
 <div class="listing-description">
-<p>Y está sobrevalorada</p>
+<a href="../posts/2020/2020-03-26-post-rutina-optima.html" class="no-external">Y está sobrevalorada</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2020/2020-03-26-post-rutina-optima.html">
+<a href="../posts/2020/2020-03-26-post-rutina-optima.html" class="no-external">
 <div class="listing-date">
 Mar 26, 2020
 </div>
@@ -1762,32 +1789,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="42" data-categories="pycon" data-listing-date-sort="1585026000000" data-listing-file-modified-sort="1701998001984" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<div class="quarto-post image-right" data-index="44" data-categories="pycon" data-listing-date-sort="1585018800000" data-listing-file-modified-sort="1701998001984" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="811">
 <div class="thumbnail">
-<p><a href="../posts/2020/2020-03-24-post-pycon-colombia-charlas.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2020/2020-03-24-post-pycon-colombia-charlas.html" class="no-external"></a></p><a href="../posts/2020/2020-03-24-post-pycon-colombia-charlas.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2020/2020-03-24-post-pycon-colombia-charlas.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2020/2020-03-24-post-pycon-colombia-charlas.html">
 <h3 class="no-anchor listing-title">
-Pycon Colombia 2020 - Las charlas
+<a href="../posts/2020/2020-03-24-post-pycon-colombia-charlas.html" class="no-external">Pycon Colombia 2020 - Las charlas</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2020/2020-03-24-post-pycon-colombia-charlas.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('pycon'); return false;">
 pycon
 </div>
 </div>
-<a href="../posts/2020/2020-03-24-post-pycon-colombia-charlas.html">
 <div class="listing-description">
-<p>Enlaces a los repositorios y videos.</p>
+<a href="../posts/2020/2020-03-24-post-pycon-colombia-charlas.html" class="no-external">Enlaces a los repositorios y videos.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2020/2020-03-24-post-pycon-colombia-charlas.html">
+<a href="../posts/2020/2020-03-24-post-pycon-colombia-charlas.html" class="no-external">
 <div class="listing-date">
 Mar 24, 2020
 </div>
@@ -1797,32 +1822,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="43" data-categories="lectura" data-listing-date-sort="1579410000000" data-listing-file-modified-sort="1701997304378" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="45" data-categories="lectura" data-listing-date-sort="1579402800000" data-listing-file-modified-sort="1701997304378" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="95">
 <div class="thumbnail">
-<p><a href="../posts/2020/2020-01-17-book-review-ready-player-2.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2020/2020-01-17-book-review-ready-player-2.html" class="no-external"></a></p><a href="../posts/2020/2020-01-17-book-review-ready-player-2.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2020/2020-01-17-book-review-ready-player-2.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2020/2020-01-17-book-review-ready-player-2.html">
 <h3 class="no-anchor listing-title">
-Ready Player 2
+<a href="../posts/2020/2020-01-17-book-review-ready-player-2.html" class="no-external">Ready Player 2</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2020/2020-01-17-book-review-ready-player-2.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
 lectura
 </div>
 </div>
-<a href="../posts/2020/2020-01-17-book-review-ready-player-2.html">
 <div class="listing-description">
-<p>Las segundas partes nunca fueron buenas…</p>
+<a href="../posts/2020/2020-01-17-book-review-ready-player-2.html" class="no-external">Las segundas partes nunca fueron buenas…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2020/2020-01-17-book-review-ready-player-2.html">
+<a href="../posts/2020/2020-01-17-book-review-ready-player-2.html" class="no-external">
 <div class="listing-date">
 Jan 19, 2020
 </div>
@@ -1832,32 +1855,30 @@ Ernest Cline
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="44" data-categories="lectura" data-listing-date-sort="1579410000000" data-listing-file-modified-sort="1701997175247" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="46" data-categories="lectura" data-listing-date-sort="1579402800000" data-listing-file-modified-sort="1701997175247" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="83">
 <div class="thumbnail">
-<p><a href="../posts/2020/2020-01-19-book-review-comics-de-guy-delisle.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2020/2020-01-19-book-review-comics-de-guy-delisle.html" class="no-external"></a></p><a href="../posts/2020/2020-01-19-book-review-comics-de-guy-delisle.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2020/2020-01-19-book-review-comics-de-guy-delisle.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2020/2020-01-19-book-review-comics-de-guy-delisle.html">
 <h3 class="no-anchor listing-title">
-Guía del mal padre y otros
+<a href="../posts/2020/2020-01-19-book-review-comics-de-guy-delisle.html" class="no-external">Guía del mal padre y otros</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2020/2020-01-19-book-review-comics-de-guy-delisle.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
 lectura
 </div>
 </div>
-<a href="../posts/2020/2020-01-19-book-review-comics-de-guy-delisle.html">
 <div class="listing-description">
-<p>Comics insuperables sobre la paternidad y viajes</p>
+<a href="../posts/2020/2020-01-19-book-review-comics-de-guy-delisle.html" class="no-external">Comics insuperables sobre la paternidad y viajes</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2020/2020-01-19-book-review-comics-de-guy-delisle.html">
+<a href="../posts/2020/2020-01-19-book-review-comics-de-guy-delisle.html" class="no-external">
 <div class="listing-date">
 Jan 19, 2020
 </div>
@@ -1867,32 +1888,30 @@ Guy Delisle
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="45" data-categories="lectura" data-listing-date-sort="1579323600000" data-listing-file-modified-sort="1701997243312" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="47" data-categories="lectura" data-listing-date-sort="1579316400000" data-listing-file-modified-sort="1701997243312" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="71">
 <div class="thumbnail">
-<p><a href="../posts/2020/2020-01-18-book-review-sandman-volumen-1.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2020/2020-01-18-book-review-sandman-volumen-1.html" class="no-external"></a></p><a href="../posts/2020/2020-01-18-book-review-sandman-volumen-1.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2020/2020-01-18-book-review-sandman-volumen-1.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2020/2020-01-18-book-review-sandman-volumen-1.html">
 <h3 class="no-anchor listing-title">
-Sandman volumen 1
+<a href="../posts/2020/2020-01-18-book-review-sandman-volumen-1.html" class="no-external">Sandman volumen 1</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2020/2020-01-18-book-review-sandman-volumen-1.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
 lectura
 </div>
 </div>
-<a href="../posts/2020/2020-01-18-book-review-sandman-volumen-1.html">
 <div class="listing-description">
-<p>Un comic con grandes profundidades</p>
+<a href="../posts/2020/2020-01-18-book-review-sandman-volumen-1.html" class="no-external">Un comic con grandes profundidades</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2020/2020-01-18-book-review-sandman-volumen-1.html">
+<a href="../posts/2020/2020-01-18-book-review-sandman-volumen-1.html" class="no-external">
 <div class="listing-date">
 Jan 18, 2020
 </div>
@@ -1902,32 +1921,30 @@ Neil Gaiman et al
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="46" data-categories="lectura" data-listing-date-sort="1579150800000" data-listing-file-modified-sort="1701997360382" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="48" data-categories="lectura" data-listing-date-sort="1579143600000" data-listing-file-modified-sort="1701997360382" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="99">
 <div class="thumbnail">
-<p><a href="../posts/2020/2020-01-16-book-review-ready-player-1.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2020/2020-01-16-book-review-ready-player-1.html" class="no-external"></a></p><a href="../posts/2020/2020-01-16-book-review-ready-player-1.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2020/2020-01-16-book-review-ready-player-1.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2020/2020-01-16-book-review-ready-player-1.html">
 <h3 class="no-anchor listing-title">
-Ready Player 1
+<a href="../posts/2020/2020-01-16-book-review-ready-player-1.html" class="no-external">Ready Player 1</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2020/2020-01-16-book-review-ready-player-1.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
 lectura
 </div>
 </div>
-<a href="../posts/2020/2020-01-16-book-review-ready-player-1.html">
 <div class="listing-description">
-<p>Novela entretenida sobre la vida en la realidad virtual</p>
+<a href="../posts/2020/2020-01-16-book-review-ready-player-1.html" class="no-external">Novela entretenida sobre la vida en la realidad virtual</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2020/2020-01-16-book-review-ready-player-1.html">
+<a href="../posts/2020/2020-01-16-book-review-ready-player-1.html" class="no-external">
 <div class="listing-date">
 Jan 16, 2020
 </div>
@@ -1937,32 +1954,30 @@ Ernest Cline
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="47" data-categories="lectura" data-listing-date-sort="1579064400000" data-listing-file-modified-sort="1701997381497" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="49" data-categories="lectura" data-listing-date-sort="1579057200000" data-listing-file-modified-sort="1701997381497" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="47">
 <div class="thumbnail">
-<p><a href="../posts/2020/2020-01-15-book-review-percy-jackson-(1-y-2).html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2020/2020-01-15-book-review-percy-jackson-(1-y-2).html" class="no-external"></a></p><a href="../posts/2020/2020-01-15-book-review-percy-jackson-(1-y-2).html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2020/2020-01-15-book-review-percy-jackson-(1-y-2).html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2020/2020-01-15-book-review-percy-jackson-(1-y-2).html">
 <h3 class="no-anchor listing-title">
-Percy Jackson (1 y 2)
+<a href="../posts/2020/2020-01-15-book-review-percy-jackson-(1-y-2).html" class="no-external">Percy Jackson (1 y 2)</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2020/2020-01-15-book-review-percy-jackson-(1-y-2).html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
 lectura
 </div>
 </div>
-<a href="../posts/2020/2020-01-15-book-review-percy-jackson-(1-y-2).html">
 <div class="listing-description">
-<p>Novela adolescente sobre héroes griegos en el mundo actual</p>
+<a href="../posts/2020/2020-01-15-book-review-percy-jackson-(1-y-2).html" class="no-external">Novela adolescente sobre héroes griegos en el mundo actual</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2020/2020-01-15-book-review-percy-jackson-(1-y-2).html">
+<a href="../posts/2020/2020-01-15-book-review-percy-jackson-(1-y-2).html" class="no-external">
 <div class="listing-date">
 Jan 15, 2020
 </div>
@@ -1972,32 +1987,30 @@ Rick Riordan
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="48" data-categories="lectura" data-listing-date-sort="1578978000000" data-listing-file-modified-sort="1701997407299" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="50" data-categories="lectura" data-listing-date-sort="1578970800000" data-listing-file-modified-sort="1701997407299" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
 <div class="thumbnail">
-<p><a href="../posts/2020/2020-01-14-book-review-ocasional-magic.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2020/2020-01-14-book-review-ocasional-magic.html" class="no-external"></a></p><a href="../posts/2020/2020-01-14-book-review-ocasional-magic.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2020/2020-01-14-book-review-ocasional-magic.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2020/2020-01-14-book-review-ocasional-magic.html">
 <h3 class="no-anchor listing-title">
-Ocasional Magic
+<a href="../posts/2020/2020-01-14-book-review-ocasional-magic.html" class="no-external">Ocasional Magic</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2020/2020-01-14-book-review-ocasional-magic.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
 lectura
 </div>
 </div>
-<a href="../posts/2020/2020-01-14-book-review-ocasional-magic.html">
 <div class="listing-description">
-<p>Historias cortas y emocionantes</p>
+<a href="../posts/2020/2020-01-14-book-review-ocasional-magic.html" class="no-external">Historias cortas y emocionantes</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2020/2020-01-14-book-review-ocasional-magic.html">
+<a href="../posts/2020/2020-01-14-book-review-ocasional-magic.html" class="no-external">
 <div class="listing-date">
 Jan 14, 2020
 </div>
@@ -2007,19 +2020,19 @@ varios autores (The Moth)
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="49" data-categories="lectura,javascript" data-listing-date-sort="1578891600000" data-listing-file-modified-sort="1701997474458" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="51" data-categories="lectura,javascript" data-listing-date-sort="1578884400000" data-listing-file-modified-sort="1701997474458" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="26">
 <div class="thumbnail">
-<p><a href="../posts/2020/2020-01-12-book-review-a-smarter-way-to-learn-javascript.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2020/2020-01-12-book-review-a-smarter-way-to-learn-javascript.html" class="no-external"></a></p><a href="../posts/2020/2020-01-12-book-review-a-smarter-way-to-learn-javascript.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2020/2020-01-12-book-review-a-smarter-way-to-learn-javascript.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2020/2020-01-12-book-review-a-smarter-way-to-learn-javascript.html">
 <h3 class="no-anchor listing-title">
-A Smarter Way to Learn JavaScript
+<a href="../posts/2020/2020-01-12-book-review-a-smarter-way-to-learn-javascript.html" class="no-external">A Smarter Way to Learn JavaScript</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2020/2020-01-12-book-review-a-smarter-way-to-learn-javascript.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
 lectura
@@ -2028,14 +2041,12 @@ lectura
 javascript
 </div>
 </div>
-<a href="../posts/2020/2020-01-12-book-review-a-smarter-way-to-learn-javascript.html">
 <div class="listing-description">
-<p>Libro práctico para aprender javascript</p>
+<a href="../posts/2020/2020-01-12-book-review-a-smarter-way-to-learn-javascript.html" class="no-external">Libro práctico para aprender javascript</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2020/2020-01-12-book-review-a-smarter-way-to-learn-javascript.html">
+<a href="../posts/2020/2020-01-12-book-review-a-smarter-way-to-learn-javascript.html" class="no-external">
 <div class="listing-date">
 Jan 13, 2020
 </div>
@@ -2045,32 +2056,30 @@ Mike Myers
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="50" data-categories="lectura" data-listing-date-sort="1578891600000" data-listing-file-modified-sort="1701997443020" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="52" data-categories="lectura" data-listing-date-sort="1578884400000" data-listing-file-modified-sort="1701997443020" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="42">
 <div class="thumbnail">
-<p><a href="../posts/2020/2020-01-13-book-review-the-monk-who-sold-his-ferrari.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2020/2020-01-13-book-review-the-monk-who-sold-his-ferrari.html" class="no-external"></a></p><a href="../posts/2020/2020-01-13-book-review-the-monk-who-sold-his-ferrari.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2020/2020-01-13-book-review-the-monk-who-sold-his-ferrari.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2020/2020-01-13-book-review-the-monk-who-sold-his-ferrari.html">
 <h3 class="no-anchor listing-title">
-The monk who sold his ferrari
+<a href="../posts/2020/2020-01-13-book-review-the-monk-who-sold-his-ferrari.html" class="no-external">The monk who sold his ferrari</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2020/2020-01-13-book-review-the-monk-who-sold-his-ferrari.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
 lectura
 </div>
 </div>
-<a href="../posts/2020/2020-01-13-book-review-the-monk-who-sold-his-ferrari.html">
 <div class="listing-description">
-<p>Decepcionante y extraño libro sobre el éxito</p>
+<a href="../posts/2020/2020-01-13-book-review-the-monk-who-sold-his-ferrari.html" class="no-external">Decepcionante y extraño libro sobre el éxito</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2020/2020-01-13-book-review-the-monk-who-sold-his-ferrari.html">
+<a href="../posts/2020/2020-01-13-book-review-the-monk-who-sold-his-ferrari.html" class="no-external">
 <div class="listing-date">
 Jan 13, 2020
 </div>
@@ -2080,32 +2089,30 @@ Robin Sharma
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="51" data-categories="lectura" data-listing-date-sort="1578718800000" data-listing-file-modified-sort="1701997505438" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="53" data-categories="lectura" data-listing-date-sort="1578711600000" data-listing-file-modified-sort="1701997505438" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="52">
 <div class="thumbnail">
-<p><a href="../posts/2020/2020-01-11-book-review-mindset.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2020/2020-01-11-book-review-mindset.html" class="no-external"></a></p><a href="../posts/2020/2020-01-11-book-review-mindset.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2020/2020-01-11-book-review-mindset.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2020/2020-01-11-book-review-mindset.html">
 <h3 class="no-anchor listing-title">
-Mindset
+<a href="../posts/2020/2020-01-11-book-review-mindset.html" class="no-external">Mindset</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2020/2020-01-11-book-review-mindset.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
 lectura
 </div>
 </div>
-<a href="../posts/2020/2020-01-11-book-review-mindset.html">
 <div class="listing-description">
-<p>Mentalidad de crecimiento y mentalidad fija</p>
+<a href="../posts/2020/2020-01-11-book-review-mindset.html" class="no-external">Mentalidad de crecimiento y mentalidad fija</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2020/2020-01-11-book-review-mindset.html">
+<a href="../posts/2020/2020-01-11-book-review-mindset.html" class="no-external">
 <div class="listing-date">
 Jan 11, 2020
 </div>
@@ -2115,32 +2122,30 @@ Carol Dweck
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="52" data-categories="pycon" data-listing-date-sort="1578718800000" data-listing-file-modified-sort="1701997995932" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<div class="quarto-post image-right" data-index="54" data-categories="pycon" data-listing-date-sort="1578711600000" data-listing-file-modified-sort="1701997995932" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1362">
 <div class="thumbnail">
-<p><a href="../posts/2020/2020-02-11-post-pycon.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2020/2020-02-11-post-pycon.html" class="no-external"></a></p><a href="../posts/2020/2020-02-11-post-pycon.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2020/2020-02-11-post-pycon.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2020/2020-02-11-post-pycon.html">
 <h3 class="no-anchor listing-title">
-Keynotes de la PyCon 2020 Colombia
+<a href="../posts/2020/2020-02-11-post-pycon.html" class="no-external">Keynotes de la PyCon 2020 Colombia</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2020/2020-02-11-post-pycon.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('pycon'); return false;">
 pycon
 </div>
 </div>
-<a href="../posts/2020/2020-02-11-post-pycon.html">
 <div class="listing-description">
-<p>Videos, slides y resúmenes.</p>
+<a href="../posts/2020/2020-02-11-post-pycon.html" class="no-external">Videos, slides y resúmenes.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2020/2020-02-11-post-pycon.html">
+<a href="../posts/2020/2020-02-11-post-pycon.html" class="no-external">
 <div class="listing-date">
 Jan 11, 2020
 </div>
@@ -2150,32 +2155,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="53" data-categories="lectura" data-listing-date-sort="1578632400000" data-listing-file-modified-sort="1701997530962" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="55" data-categories="lectura" data-listing-date-sort="1578625200000" data-listing-file-modified-sort="1701997530962" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="152">
 <div class="thumbnail">
-<p><a href="../posts/2020/2020-01-10-book-review-the-gifts-of-imperfection.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2020/2020-01-10-book-review-the-gifts-of-imperfection.html" class="no-external"></a></p><a href="../posts/2020/2020-01-10-book-review-the-gifts-of-imperfection.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2020/2020-01-10-book-review-the-gifts-of-imperfection.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2020/2020-01-10-book-review-the-gifts-of-imperfection.html">
 <h3 class="no-anchor listing-title">
-The gifts of imperfection
+<a href="../posts/2020/2020-01-10-book-review-the-gifts-of-imperfection.html" class="no-external">The gifts of imperfection</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2020/2020-01-10-book-review-the-gifts-of-imperfection.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
 lectura
 </div>
 </div>
-<a href="../posts/2020/2020-01-10-book-review-the-gifts-of-imperfection.html">
 <div class="listing-description">
-<p>Regalos de la imperfección son el coraje, la compasión y la conexión</p>
+<a href="../posts/2020/2020-01-10-book-review-the-gifts-of-imperfection.html" class="no-external">Regalos de la imperfección son el coraje, la compasión y la conexión</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2020/2020-01-10-book-review-the-gifts-of-imperfection.html">
+<a href="../posts/2020/2020-01-10-book-review-the-gifts-of-imperfection.html" class="no-external">
 <div class="listing-date">
 Jan 10, 2020
 </div>
@@ -2185,32 +2188,30 @@ Brené Brown
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="54" data-categories="lectura" data-listing-date-sort="1578546000000" data-listing-file-modified-sort="1701997558104" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="56" data-categories="lectura" data-listing-date-sort="1578538800000" data-listing-file-modified-sort="1701997558104" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="25">
 <div class="thumbnail">
-<p><a href="../posts/2020/2020-01-09-book-review-estrategia-de-datos.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2020/2020-01-09-book-review-estrategia-de-datos.html" class="no-external"></a></p><a href="../posts/2020/2020-01-09-book-review-estrategia-de-datos.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2020/2020-01-09-book-review-estrategia-de-datos.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2020/2020-01-09-book-review-estrategia-de-datos.html">
 <h3 class="no-anchor listing-title">
-Estrategia de Datos
+<a href="../posts/2020/2020-01-09-book-review-estrategia-de-datos.html" class="no-external">Estrategia de Datos</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2020/2020-01-09-book-review-estrategia-de-datos.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
 lectura
 </div>
 </div>
-<a href="../posts/2020/2020-01-09-book-review-estrategia-de-datos.html">
 <div class="listing-description">
-<p>Buen contenido, mala redacción</p>
+<a href="../posts/2020/2020-01-09-book-review-estrategia-de-datos.html" class="no-external">Buen contenido, mala redacción</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2020/2020-01-09-book-review-estrategia-de-datos.html">
+<a href="../posts/2020/2020-01-09-book-review-estrategia-de-datos.html" class="no-external">
 <div class="listing-date">
 Jan 9, 2020
 </div>
@@ -2220,32 +2221,30 @@ Karim Touma
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="55" data-categories="lectura" data-listing-date-sort="1578459600000" data-listing-file-modified-sort="1701987722507" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="57" data-categories="lectura" data-listing-date-sort="1578452400000" data-listing-file-modified-sort="1701987722507" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="68">
 <div class="thumbnail">
-<p><a href="../posts/2020/2020-01-08-book-review-trillion-dollar-coach.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2020/2020-01-08-book-review-trillion-dollar-coach.html" class="no-external"></a></p><a href="../posts/2020/2020-01-08-book-review-trillion-dollar-coach.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2020/2020-01-08-book-review-trillion-dollar-coach.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2020/2020-01-08-book-review-trillion-dollar-coach.html">
 <h3 class="no-anchor listing-title">
-Trillion Dollar Coach
+<a href="../posts/2020/2020-01-08-book-review-trillion-dollar-coach.html" class="no-external">Trillion Dollar Coach</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2020/2020-01-08-book-review-trillion-dollar-coach.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
 lectura
 </div>
 </div>
-<a href="../posts/2020/2020-01-08-book-review-trillion-dollar-coach.html">
 <div class="listing-description">
-<p>Sobre la importancia de relacionarse más allá de lo laboral, de traer lo humano y lo personal al trabajo</p>
+<a href="../posts/2020/2020-01-08-book-review-trillion-dollar-coach.html" class="no-external">Sobre la importancia de relacionarse más allá de lo laboral, de traer lo humano y lo personal al trabajo</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2020/2020-01-08-book-review-trillion-dollar-coach.html">
+<a href="../posts/2020/2020-01-08-book-review-trillion-dollar-coach.html" class="no-external">
 <div class="listing-date">
 Jan 8, 2020
 </div>
@@ -2255,32 +2254,30 @@ Eric Schmidt, Jonathan Rosenberg y Alan Eagle
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="56" data-categories="lectura" data-listing-date-sort="1578373200000" data-listing-file-modified-sort="1701987767184" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="58" data-categories="lectura" data-listing-date-sort="1578366000000" data-listing-file-modified-sort="1701987767184" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
 <div class="thumbnail">
-<p><a href="../posts/2020/2020-01-07-book-review-all-these-wonders.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2020/2020-01-07-book-review-all-these-wonders.html" class="no-external"></a></p><a href="../posts/2020/2020-01-07-book-review-all-these-wonders.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2020/2020-01-07-book-review-all-these-wonders.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2020/2020-01-07-book-review-all-these-wonders.html">
 <h3 class="no-anchor listing-title">
-All these wonders
+<a href="../posts/2020/2020-01-07-book-review-all-these-wonders.html" class="no-external">All these wonders</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2020/2020-01-07-book-review-all-these-wonders.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
 lectura
 </div>
 </div>
-<a href="../posts/2020/2020-01-07-book-review-all-these-wonders.html">
 <div class="listing-description">
-<p>Pequeñas grandes historias.</p>
+<a href="../posts/2020/2020-01-07-book-review-all-these-wonders.html" class="no-external">Pequeñas grandes historias.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2020/2020-01-07-book-review-all-these-wonders.html">
+<a href="../posts/2020/2020-01-07-book-review-all-these-wonders.html" class="no-external">
 <div class="listing-date">
 Jan 7, 2020
 </div>
@@ -2290,32 +2287,30 @@ Varios autores (The Moth)
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="57" data-categories="lectura" data-listing-date-sort="1578286800000" data-listing-file-modified-sort="1701987765319" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="59" data-categories="lectura" data-listing-date-sort="1578279600000" data-listing-file-modified-sort="1701987765319" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="66">
 <div class="thumbnail">
-<p><a href="../posts/2020/2020-01-06-book-review-iq.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2020/2020-01-06-book-review-iq.html" class="no-external"></a></p><a href="../posts/2020/2020-01-06-book-review-iq.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2020/2020-01-06-book-review-iq.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2020/2020-01-06-book-review-iq.html">
 <h3 class="no-anchor listing-title">
-IQ
+<a href="../posts/2020/2020-01-06-book-review-iq.html" class="no-external">IQ</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2020/2020-01-06-book-review-iq.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
 lectura
 </div>
 </div>
-<a href="../posts/2020/2020-01-06-book-review-iq.html">
 <div class="listing-description">
-<p>Mezcla de novela policial y ‘rapidos y furiosos’.</p>
+<a href="../posts/2020/2020-01-06-book-review-iq.html" class="no-external">Mezcla de novela policial y ‘rapidos y furiosos’.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2020/2020-01-06-book-review-iq.html">
+<a href="../posts/2020/2020-01-06-book-review-iq.html" class="no-external">
 <div class="listing-date">
 Jan 6, 2020
 </div>
@@ -2325,32 +2320,30 @@ Joe Ide
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="58" data-categories="lectura" data-listing-date-sort="1578200400000" data-listing-file-modified-sort="1701987764354" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="60" data-categories="lectura" data-listing-date-sort="1578193200000" data-listing-file-modified-sort="1701987764354" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="103">
 <div class="thumbnail">
-<p><a href="../posts/2020/2020-01-05-book-review-nudge.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2020/2020-01-05-book-review-nudge.html" class="no-external"></a></p><a href="../posts/2020/2020-01-05-book-review-nudge.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2020/2020-01-05-book-review-nudge.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2020/2020-01-05-book-review-nudge.html">
 <h3 class="no-anchor listing-title">
-Nudge
+<a href="../posts/2020/2020-01-05-book-review-nudge.html" class="no-external">Nudge</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2020/2020-01-05-book-review-nudge.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
 lectura
 </div>
 </div>
-<a href="../posts/2020/2020-01-05-book-review-nudge.html">
 <div class="listing-description">
-<p>Sobre lo fácil que es realizar pequeñas influencias en las elecciones</p>
+<a href="../posts/2020/2020-01-05-book-review-nudge.html" class="no-external">Sobre lo fácil que es realizar pequeñas influencias en las elecciones</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2020/2020-01-05-book-review-nudge.html">
+<a href="../posts/2020/2020-01-05-book-review-nudge.html" class="no-external">
 <div class="listing-date">
 Jan 5, 2020
 </div>
@@ -2360,32 +2353,30 @@ Thaler y Sunstein
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="59" data-categories="lectura" data-listing-date-sort="1578114000000" data-listing-file-modified-sort="1701987763114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="61" data-categories="lectura" data-listing-date-sort="1578106800000" data-listing-file-modified-sort="1701987763114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
 <div class="thumbnail">
-<p><a href="../posts/2020/2020-01-04-book-review-matadero-palma.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2020/2020-01-04-book-review-matadero-palma.html" class="no-external"></a></p><a href="../posts/2020/2020-01-04-book-review-matadero-palma.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2020/2020-01-04-book-review-matadero-palma.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2020/2020-01-04-book-review-matadero-palma.html">
 <h3 class="no-anchor listing-title">
-Matadero Palma
+<a href="../posts/2020/2020-01-04-book-review-matadero-palma.html" class="no-external">Matadero Palma</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2020/2020-01-04-book-review-matadero-palma.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
 lectura
 </div>
 </div>
-<a href="../posts/2020/2020-01-04-book-review-matadero-palma.html">
 <div class="listing-description">
-<p>El mundo del matadero Franklin en los años 1940, con todos sus personajes memorables.</p>
+<a href="../posts/2020/2020-01-04-book-review-matadero-palma.html" class="no-external">El mundo del matadero Franklin en los años 1940, con todos sus personajes memorables.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2020/2020-01-04-book-review-matadero-palma.html">
+<a href="../posts/2020/2020-01-04-book-review-matadero-palma.html" class="no-external">
 <div class="listing-date">
 Jan 4, 2020
 </div>
@@ -2395,32 +2386,30 @@ Simón Soto
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="60" data-categories="lectura" data-listing-date-sort="1578027600000" data-listing-file-modified-sort="1701987762151" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="62" data-categories="lectura" data-listing-date-sort="1578020400000" data-listing-file-modified-sort="1701987762151" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
 <div class="thumbnail">
-<p><a href="../posts/2020/2020-01-03-book-review-never-split-the-deal.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2020/2020-01-03-book-review-never-split-the-deal.html" class="no-external"></a></p><a href="../posts/2020/2020-01-03-book-review-never-split-the-deal.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2020/2020-01-03-book-review-never-split-the-deal.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2020/2020-01-03-book-review-never-split-the-deal.html">
 <h3 class="no-anchor listing-title">
-Never split the deal
+<a href="../posts/2020/2020-01-03-book-review-never-split-the-deal.html" class="no-external">Never split the deal</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2020/2020-01-03-book-review-never-split-the-deal.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
 lectura
 </div>
 </div>
-<a href="../posts/2020/2020-01-03-book-review-never-split-the-deal.html">
 <div class="listing-description">
-<p>Mezcla de anécdotas de distintas negociaciones y una larga lista de consejos.</p>
+<a href="../posts/2020/2020-01-03-book-review-never-split-the-deal.html" class="no-external">Mezcla de anécdotas de distintas negociaciones y una larga lista de consejos.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2020/2020-01-03-book-review-never-split-the-deal.html">
+<a href="../posts/2020/2020-01-03-book-review-never-split-the-deal.html" class="no-external">
 <div class="listing-date">
 Jan 3, 2020
 </div>
@@ -2430,32 +2419,30 @@ Chriss Voss
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="61" data-categories="lectura" data-listing-date-sort="1577941200000" data-listing-file-modified-sort="1701987760817" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="63" data-categories="lectura" data-listing-date-sort="1577934000000" data-listing-file-modified-sort="1701987760817" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
 <div class="thumbnail">
-<p><a href="../posts/2020/2020-01-02-book-review-flying-free.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2020/2020-01-02-book-review-flying-free.html" class="no-external"></a></p><a href="../posts/2020/2020-01-02-book-review-flying-free.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2020/2020-01-02-book-review-flying-free.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2020/2020-01-02-book-review-flying-free.html">
 <h3 class="no-anchor listing-title">
-Flying Free
+<a href="../posts/2020/2020-01-02-book-review-flying-free.html" class="no-external">Flying Free</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2020/2020-01-02-book-review-flying-free.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
 lectura
 </div>
 </div>
-<a href="../posts/2020/2020-01-02-book-review-flying-free.html">
 <div class="listing-description">
-<p>Biografía de Cecilia Aragon, llena de sorprendentes anécdotas.</p>
+<a href="../posts/2020/2020-01-02-book-review-flying-free.html" class="no-external">Biografía de Cecilia Aragon, llena de sorprendentes anécdotas.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2020/2020-01-02-book-review-flying-free.html">
+<a href="../posts/2020/2020-01-02-book-review-flying-free.html" class="no-external">
 <div class="listing-date">
 Jan 2, 2020
 </div>
@@ -2465,19 +2452,19 @@ Cecilia Aragon
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="62" data-categories="opinión,educación" data-listing-date-sort="1556341200000" data-listing-file-modified-sort="1701987577241" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<div class="quarto-post image-right" data-index="64" data-categories="opinión,educación" data-listing-date-sort="1556337600000" data-listing-file-modified-sort="1701987577241" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="935">
 <div class="thumbnail">
-<p><a href="../posts/2019/2019-04-27-post-aprender.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2019/2019-04-27-post-aprender.html" class="no-external"></a></p><a href="../posts/2019/2019-04-27-post-aprender.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2019/2019-04-27-post-aprender.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2019/2019-04-27-post-aprender.html">
 <h3 class="no-anchor listing-title">
-Lo que nos motiva a aprender y trabajar
+<a href="../posts/2019/2019-04-27-post-aprender.html" class="no-external">Lo que nos motiva a aprender y trabajar</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2019/2019-04-27-post-aprender.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('opinión'); return false;">
 opinión
@@ -2486,14 +2473,12 @@ opinión
 educación
 </div>
 </div>
-<a href="../posts/2019/2019-04-27-post-aprender.html">
 <div class="listing-description">
-<p>¿Porqué aprendemos fácil algunas cosas y otras nos cuestan tanto?</p>
+<a href="../posts/2019/2019-04-27-post-aprender.html" class="no-external">¿Porqué aprendemos fácil algunas cosas y otras nos cuestan tanto?</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2019/2019-04-27-post-aprender.html">
+<a href="../posts/2019/2019-04-27-post-aprender.html" class="no-external">
 <div class="listing-date">
 Apr 27, 2019
 </div>
@@ -2503,32 +2488,30 @@ sebastiandres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="63" data-categories="lectura" data-listing-date-sort="1556341200000" data-listing-file-modified-sort="1701987759763" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="65" data-categories="lectura" data-listing-date-sort="1556337600000" data-listing-file-modified-sort="1701987759763" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
 <div class="thumbnail">
-<p><a href="../posts/2020/2020-01-01-book-review-atomic-habits.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2020/2020-01-01-book-review-atomic-habits.html" class="no-external"></a></p><a href="../posts/2020/2020-01-01-book-review-atomic-habits.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2020/2020-01-01-book-review-atomic-habits.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2020/2020-01-01-book-review-atomic-habits.html">
 <h3 class="no-anchor listing-title">
-Atomic habits
+<a href="../posts/2020/2020-01-01-book-review-atomic-habits.html" class="no-external">Atomic habits</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2020/2020-01-01-book-review-atomic-habits.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('lectura'); return false;">
 lectura
 </div>
 </div>
-<a href="../posts/2020/2020-01-01-book-review-atomic-habits.html">
 <div class="listing-description">
-<p>Manual de cabecera para generar mejores hábitos.</p>
+<a href="../posts/2020/2020-01-01-book-review-atomic-habits.html" class="no-external">Manual de cabecera para generar mejores hábitos.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2020/2020-01-01-book-review-atomic-habits.html">
+<a href="../posts/2020/2020-01-01-book-review-atomic-habits.html" class="no-external">
 <div class="listing-date">
 Apr 27, 2019
 </div>
@@ -2538,19 +2521,19 @@ James Clear
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="64" data-categories="opinión,literatura" data-listing-date-sort="1547874000000" data-listing-file-modified-sort="1712955227815" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="66" data-categories="opinión,literatura" data-listing-date-sort="1547866800000" data-listing-file-modified-sort="1712955227815" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="552">
 <div class="thumbnail">
-<p><a href="../posts/2019/2019-01-19-post-libros.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="../posts/2019/2019-01-19-post-libros.html" class="no-external"></a></p><a href="../posts/2019/2019-01-19-post-libros.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="../posts/2019/2019-01-19-post-libros.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/2019/2019-01-19-post-libros.html">
 <h3 class="no-anchor listing-title">
-Consejos de libros al mejor precio
+<a href="../posts/2019/2019-01-19-post-libros.html" class="no-external">Consejos de libros al mejor precio</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/2019/2019-01-19-post-libros.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('opinión'); return false;">
 opinión
@@ -2559,14 +2542,12 @@ opinión
 literatura
 </div>
 </div>
-<a href="../posts/2019/2019-01-19-post-libros.html">
 <div class="listing-description">
-<p>¿Libros a buen precio? BP Digital y BookDepository.</p>
+<a href="../posts/2019/2019-01-19-post-libros.html" class="no-external">¿Libros a buen precio? BP Digital y BookDepository.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/2019/2019-01-19-post-libros.html">
+<a href="../posts/2019/2019-01-19-post-libros.html" class="no-external">
 <div class="listing-date">
 Jan 19, 2019
 </div>
@@ -2663,10 +2644,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/sebastiandres\.xyz");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -2676,8 +2674,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -2689,7 +2696,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -2733,6 +2863,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -2758,6 +2889,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -2818,6 +2975,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 
