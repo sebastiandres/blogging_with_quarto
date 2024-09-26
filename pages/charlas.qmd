@@ -3,9 +3,11 @@ title: "Charlas"
 ---
 
 * **Python y Data Storytelling al rescate: evitemos más muertes por PowerPoint**  
-*PyCon US 2024* (2024/05/19?)
-Durante la charla espero entregar aprendizajes y sugerencias de las distintas habilidades de data storytelling y herramientas técnicas que podemos utilizar con el objetivo de crear presentaciones más atractivas, entretenidas y memorables usando librerías y programas en python. ¡Hagamos el mundo mejor, una presentación a la vez! 
+Se discuten distintas habilidades de data storytelling y herramientas técnicas con el objetivo de crear presentaciones más atractivas, entretenidas y memorables usando librerías y programas en python. ¡Hagamos el mundo mejor, una presentación a la vez! 
 ([repo](https://github.com/sebastiandres/talk_2024_05_pycon_us)).
+  * *PyCon US 2024* (2024/05/20) [video](https://www.youtube.com/watch?v=KknQ_VzbJY0)
+  * *Python Chile Meetup* (2024/05/29) [video](https://youtu.be/vgkOTFfJvPc&t=193)
+  * *Nerdearla* (2024/09/24) [video](https://www.youtube.com/watch?v=JbUV8mkn6v0)
 
 * **Data Storytelling: evitemos más muertes por PowerPoint**      
 *Techtón*  (2024/02/09)
