@@ -732,7 +732,7 @@
     "href": "tutorial/quarto.html#código",
     "title": "Quarto",
     "section": "Código",
-    "text": "Código\nPara delimitar bloques de código que se mostrar sin ejecutar se utiliza ```\n```\ncódigo\n```\nPuedes añadir un lenguaje (python, markdown, html, javascript, etc) para resaltar correctamente la sintaxis del lenguaje. Así el siguiente código\n```python\nprint(\"¡Que tal, festival!\")\n```\nse verá así:\nprint(\"¡Que tal, festival!\")\nPara delimitar bloques de código que se ejecutarán, como celdas en jupyter notebook/lab, se utilizan parentesis de llave encerrando el lenguaje, así por ejemplo el siguiente código\n\n::: {#fd5cffb8 .cell execution_count=1}\n``` {.python .cell-code}\nprint(\"¡Que tal, festival!\")\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n¡Que tal, festival!\n```\n:::\n:::\n\nque se verá así:\n\nprint(\"¡Que tal, festival!\")\n\n¡Que tal, festival!"
+    "text": "Código\nPara delimitar bloques de código que se mostrar sin ejecutar se utiliza ```\n```\ncódigo\n```\nPuedes añadir un lenguaje (python, markdown, html, javascript, etc) para resaltar correctamente la sintaxis del lenguaje. Así el siguiente código\n```python\nprint(\"¡Que tal, festival!\")\n```\nse verá así:\nprint(\"¡Que tal, festival!\")\nPara delimitar bloques de código que se ejecutarán, como celdas en jupyter notebook/lab, se utilizan parentesis de llave encerrando el lenguaje, así por ejemplo el siguiente código\n\n::: {#f1f7b78d .cell execution_count=1}\n``` {.python .cell-code}\nprint(\"¡Que tal, festival!\")\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n¡Que tal, festival!\n```\n:::\n:::\n\nque se verá así:\n\nprint(\"¡Que tal, festival!\")\n\n¡Que tal, festival!"
   },
   {
     "objectID": "tutorial/quarto.html#ecuaciones",
@@ -1180,7 +1180,7 @@
     "href": "index.html",
     "title": "Inicio",
     "section": "",
-    "text": "¡Hola! Soy sebastiandres. En mi sitio escribo sobre python, tecnología y libros.\n\nEnter your email  \n\n Powered by Buttondown. \n\n\nHi! I’m sebastiandres. I write about python, technology and books. Mostly on Spanish, but some posts are also available on English."
+    "text": "¡Hola! Soy sebastiandres. En mi sitio escribo sobre python, tecnología y libros.\n\n \n\n\n\nHi! I’m sebastiandres. I write about python, technology and books. Mostly on Spanish, but some posts are also available on English."
   },
   {
     "objectID": "stories/2019-01-01-story-cocodrilito-va-al-bano.html",
