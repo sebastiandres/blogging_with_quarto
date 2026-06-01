@@ -17,6 +17,47 @@ about:
 
 ¡Hola! Soy sebastiandres. En mi sitio escribo sobre python, tecnología y libros.  
 
+<form
+  action="https://buttondown.com/api/emails/embed-subscribe/sebastiandres"
+  method="post"
+  class="embeddable-buttondown-form"
+  target="_blank"
+>
+  <input
+    type="email"
+    name="email"
+    id="bd-email"
+    placeholder="tu@correo.com"
+    style="
+      background: white !important;
+      border: 1px solid #ccc !important;
+      border-radius: 8px !important;
+      padding: 8px 14px !important;
+      font-size: 15px !important;
+      width: 280px !important;
+      outline: none !important;
+      text-align: center !important;
+    "
+  />
+  <input
+    type="submit"
+    value="¡Suscríbeme!"
+    style="
+      background: transparent !important;
+      color: white !important;
+      border: 1px solid white !important;
+      border-radius: 8px !important;
+      padding: 8px 20px !important;
+      font-size: 15px !important;
+      font-weight: 500 !important;
+      cursor: pointer !important;
+    "
+  />
+</form>
+
+<p style="margin: 10px 0;"></p>
+
 Hi! I'm sebastiandres.
 I write about python, technology and books.
 Mostly on Spanish, but some posts are also available on English.
+

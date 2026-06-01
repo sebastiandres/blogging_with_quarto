@@ -27,6 +27,10 @@ website:
         href: https://github.com/sebastiandres
       - icon: twitter
         href: https://twitter.com/sebastiandres
+      - icon: rss
+        href: pages/blog.xml  # Note: This matches the 'blog.qmd' file name
+
+
 format:
   html:
     theme: superhero

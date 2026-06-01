@@ -6,3 +6,5 @@ numpy
 scipy
 ipyvizzu
 ipyvizzu-story
+xlsxwriter
+openpyxl

@@ -1,0 +1,12 @@
+---
+title: "Open Visualization Academy"
+author: "sebastiandres"
+date: "2026-05-31"
+categories: [python, visualization]
+image: "./images/ova.png"
+---
+
+Me había suscrito a la [Open Visualization Academy](https://openvisualizationacademy.org/) de Alberto Cairo, pero no me había hecho el tiempo de hacer los cursos.
+Hace poco recibí por correo la noticia de un nuevo curso, "Data Feminism for Data Visualization" que me causó mucha curiosidad, y he estado revisando los distintos cursos en la plataforma. Ya voy en la mitad del curso de "Fundamentals" y con ganas de terminar todos los disponibles.
+
+Alberto es un profesor extraordinario. Aunque ya he leído mucho del tema, he logrado aprender muchas cosas y reflexionar de muchas otras. El material es excelente, hay una generosidad increíble en los pdfs disponibles para descargar. ¡Que ganas de traducir y armar un curso con todo esto, y lo de data storytelling!
