@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.25">
@@ -7,10 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="sebastiandres">
-<meta name="dcterms.date" content="2021-06-01">
 <meta name="description" content="Imitando un directorio de enlaces sólo con recursos gratuitos">
 
-<title>Emulador de Linktree – sebastiandres.xyz</title>
+<title>Emulador de Linktree – Sebastián Flores Benner</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -94,17 +93,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
   }
 }</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-HG9BYLK8FC"></script>
@@ -116,6 +115,9 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 </script>
+<link rel="alternate" hreflang="es" href="https://sebastiandres.xyz/">
+<link rel="alternate" hreflang="en" href="https://sebastiandres.xyz/en/">
+<link rel="alternate" hreflang="x-default" href="https://sebastiandres.xyz/">
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -131,18 +133,18 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">sebastiandres.xyz</span>
+    <span class="navbar-title">Sebastián Flores Benner</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Inicio</span></a>
+    <a class="nav-link" href="../../pages/about.html"> 
+<span class="menu-text">Sobre mí</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../pages/blog.html"> 
@@ -161,10 +163,6 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <span class="menu-text">Apps y Repos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../pages/librerias.html"> 
-<span class="menu-text">Librerías</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../pages/publicaciones.html"> 
 <span class="menu-text">Publicaciones</span></a>
   </li>  
@@ -172,7 +170,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tutoriales" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Tutoriales</span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-tutoriales">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tutoriales">    
         <li>
     <a class="dropdown-item" href="../../tutorial/quarto.html">
  <span class="dropdown-text">Quarto</span></a>
@@ -183,33 +181,20 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
   </li>  
         <li>
     <a class="dropdown-item" href="../../tutorial/storytelling_by_sanderson.html">
- <span class="dropdown-text">Escritura Creativa</span></a>
+ <span class="dropdown-text">Creative Writing</span></a>
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="../../pages/about.html"> 
-<span class="menu-text">Sobre mí</span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/sebastiandres/"> <i class="bi bi-linkedin" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/sebastiandres"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/sebastiandres"> <i class="bi bi-twitter" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
     <a class="nav-link" href="../../pages/blog.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../.././eng/index.html"> 
+<span class="menu-text">ENG</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -224,7 +209,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">En esta página</h2>
    
   <ul>
   <li><a href="#aprendizajes" id="toc-aprendizajes" class="nav-link active" data-scroll-target="#aprendizajes">Aprendizajes:</a></li>
@@ -252,16 +237,16 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Autor/a</div>
     <div class="quarto-title-meta-contents">
              <p>sebastiandres </p>
           </div>
   </div>
     
     <div>
-    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 1, 2021</p>
+      <p class="date">1 de junio de 2021</p>
     </div>
   </div>
   
@@ -294,10 +279,10 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="dt">&gt;</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;</span><span class="kw">style</span><span class="dt">&gt;</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>            html {<span class="kw">background-color</span><span class="ch">:</span><span class="cn">#3d3b3c</span><span class="op">;</span> <span class="kw">font-family</span><span class="ch">:</span> <span class="dv">Karla</span><span class="op">,</span> <span class="dv">sans-serif</span><span class="op">;</span> </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>            html {<span class="kw">background-color</span><span class="ch">:</span><span class="cn">#3d3b3c</span><span class="op">;</span> <span class="kw">font-family</span><span class="ch">:</span> <span class="dv">Karla</span><span class="op">,</span> <span class="dv">sans-serif</span><span class="op">;</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>                  <span class="kw">font-size</span><span class="ch">:</span> <span class="dv">16</span><span class="dt">px</span><span class="op">;</span> <span class="kw">font-weight</span><span class="ch">:</span> <span class="dv">700</span><span class="op">;</span>}</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>            h3<span class="op">,</span> h2<span class="op">,</span> h1 { <span class="kw">color</span><span class="ch">:</span><span class="cn">#ffffff</span><span class="op">;</span> <span class="kw">margin-bottom</span><span class="ch">:</span> <span class="dv">16</span><span class="dt">px</span><span class="op">;</span> <span class="kw">text-align</span><span class="ch">:</span> <span class="dv">center</span><span class="op">;</span>}</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>            div {<span class="kw">position</span><span class="ch">:</span> <span class="dv">fixed</span><span class="op">;</span> <span class="kw">top</span><span class="ch">:</span> <span class="dv">25</span><span class="dt">%</span><span class="op">;</span> <span class="kw">left</span><span class="ch">:</span> <span class="dv">50</span><span class="dt">%</span><span class="op">;</span> </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>            div {<span class="kw">position</span><span class="ch">:</span> <span class="dv">fixed</span><span class="op">;</span> <span class="kw">top</span><span class="ch">:</span> <span class="dv">25</span><span class="dt">%</span><span class="op">;</span> <span class="kw">left</span><span class="ch">:</span> <span class="dv">50</span><span class="dt">%</span><span class="op">;</span></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>                <span class="kw">-webkit-transform</span><span class="ch">:</span> <span class="fu">translate(</span><span class="dv">-50</span><span class="dt">%</span><span class="op">,</span> <span class="dv">-50</span><span class="dt">%</span><span class="fu">)</span><span class="op">;</span> <span class="kw">transform</span><span class="ch">:</span> <span class="fu">translate(</span><span class="dv">-50</span><span class="dt">%</span><span class="op">,</span> <span class="dv">-50</span><span class="dt">%</span><span class="fu">)</span><span class="op">;</span>}</span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>            a {<span class="kw">text-decoration</span><span class="ch">:</span> <span class="dv">none</span><span class="at">!important</span><span class="op">;</span>}</span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>            p  {<span class="kw">background-color</span><span class="ch">:</span><span class="cn">#ffffff</span><span class="op">;</span> <span class="kw">color</span><span class="ch">:</span><span class="cn">#3d3b3c</span><span class="op">;</span> <span class="kw">line-height</span><span class="ch">:</span> <span class="dv">56</span><span class="dt">px</span><span class="op">;</span> <span class="kw">width</span><span class="ch">:</span> <span class="dv">676</span><span class="dt">px</span><span class="op">;</span></span>
@@ -322,13 +307,13 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>            <span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
 <span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
 <span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p>La última versión permite cambiar el estilo y copyright de manera centralizada, y preocuparse únicamente del contenido.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="dt">&gt;</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;</span><span class="kw">link</span><span class="ot"> href</span><span class="op">=</span><span class="st">"https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;700</span><span class="dv">&amp;amp;</span><span class="st">display=swap"</span><span class="ot"> rel</span><span class="op">=</span><span class="st">"stylesheet"</span><span class="dt">&gt;</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;</span><span class="kw">link</span><span class="ot"> href</span><span class="op">=</span><span class="st">"https://linktree-ixkge.ondigitalocean.app/latest_style.css"</span><span class="ot"> rel</span><span class="op">=</span><span class="st">"stylesheet"</span><span class="dt">&gt;</span> </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;</span><span class="kw">link</span><span class="ot"> href</span><span class="op">=</span><span class="st">"https://linktree-ixkge.ondigitalocean.app/latest_style.css"</span><span class="ot"> rel</span><span class="op">=</span><span class="st">"stylesheet"</span><span class="dt">&gt;</span></span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;</span><span class="kw">div</span><span class="dt">&gt;</span></span>
@@ -345,10 +330,10 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>                <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>⇦ linktree<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
 <span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>            <span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
 <span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>        <span class="co">&lt;!-- Version - dont change this code--&gt;</span>       </span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>        <span class="co">&lt;!-- Version - dont change this code--&gt;</span></span>
 <span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;</span><span class="kw">object</span><span class="ot"> data</span><span class="op">=</span><span class="st">"https://linktree-ixkge.ondigitalocean.app/latest_copyright.html"</span><span class="ot"> width</span><span class="op">=</span><span class="st">100%</span><span class="dt">&gt;&lt;/</span><span class="kw">object</span><span class="dt">&gt;</span></span>
 <span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p>¿Y cómo se ve todo al final? Se ve así:</p>
 <p><img src="../_images/2021-06-01-linktree/vfinal.gif" title="El resultado final funciona sorprendentemente bien. La transición es suave y no se nota que son 2 servicios distintos." class="img-fluid"></p>
 <section id="aprendizajes" class="level2">
@@ -387,12 +372,12 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copiado");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copiado");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -763,6 +748,41 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
   });
   </script>
 </div> <!-- /content -->
+<script>
+// Rewrites the navbar language toggle so it points to the *equivalent*
+// page in the other language instead of always going to the home page.
+//
+// Site layout:
+//   Spanish (esp profile): <root>/        -> _site/
+//   English (eng profile): <root>/eng/    -> _site/eng/
+//
+// Instead of hardcoding the "/eng" prefix (which breaks under file:// and
+// localhost), we derive both language roots from links Quarto already
+// resolves per-page:
+//   - the navbar brand  -> this page's own language root index
+//   - the language toggle (ESP/ENG) -> the other language root index
+// Then we re-base the current page's path from one root onto the other.
+document.addEventListener("DOMContentLoaded", function () {
+  var toggle = null;
+  document.querySelectorAll(".navbar a.nav-link").forEach(function (a) {
+    var label = (a.textContent || "").trim();
+    if (label === "ENG" || label === "ESP") toggle = a;
+  });
+  var brand = document.querySelector(".navbar .navbar-brand");
+  if (!toggle || !brand) return;
+
+  // Directory URL of each language root (strip the trailing "index.html").
+  var ownDir = new URL(".", new URL(brand.getAttribute("href"), location.href)).href;
+  var otherDir = new URL(".", new URL(toggle.getAttribute("href"), location.href)).href;
+
+  // Current page path relative to its own language root, re-based onto the other.
+  var here = location.href.split("#")[0];
+  if (here.indexOf(ownDir) !== 0) return; // unexpected layout: keep default href
+  var rel = here.slice(ownDir.length);
+
+  toggle.setAttribute("href", otherDir + rel + location.hash);
+});
+</script>
 
 
 

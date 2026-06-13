@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.25">
@@ -7,9 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="sebastiandres">
-<meta name="dcterms.date" content="2024-03-06">
 
-<title>Procesando datos con pandas – sebastiandres.xyz</title>
+<title>Procesando datos con pandas – Sebastián Flores Benner</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -93,17 +92,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
   }
 }</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-HG9BYLK8FC"></script>
@@ -115,6 +114,9 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 </script>
+<link rel="alternate" hreflang="es" href="https://sebastiandres.xyz/">
+<link rel="alternate" hreflang="en" href="https://sebastiandres.xyz/en/">
+<link rel="alternate" hreflang="x-default" href="https://sebastiandres.xyz/">
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -130,18 +132,18 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">sebastiandres.xyz</span>
+    <span class="navbar-title">Sebastián Flores Benner</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Inicio</span></a>
+    <a class="nav-link" href="../../pages/about.html"> 
+<span class="menu-text">Sobre mí</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../pages/blog.html"> 
@@ -160,10 +162,6 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <span class="menu-text">Apps y Repos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../pages/librerias.html"> 
-<span class="menu-text">Librerías</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../pages/publicaciones.html"> 
 <span class="menu-text">Publicaciones</span></a>
   </li>  
@@ -171,7 +169,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tutoriales" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Tutoriales</span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-tutoriales">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tutoriales">    
         <li>
     <a class="dropdown-item" href="../../tutorial/quarto.html">
  <span class="dropdown-text">Quarto</span></a>
@@ -182,33 +180,20 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
   </li>  
         <li>
     <a class="dropdown-item" href="../../tutorial/storytelling_by_sanderson.html">
- <span class="dropdown-text">Escritura Creativa</span></a>
+ <span class="dropdown-text">Creative Writing</span></a>
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="../../pages/about.html"> 
-<span class="menu-text">Sobre mí</span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/sebastiandres/"> <i class="bi bi-linkedin" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/sebastiandres"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/sebastiandres"> <i class="bi bi-twitter" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
     <a class="nav-link" href="../../pages/blog.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../.././eng/index.html"> 
+<span class="menu-text">ENG</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -223,7 +208,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">En esta página</h2>
    
   <ul>
   <li><a href="#métodos-tradicionales" id="toc-métodos-tradicionales" class="nav-link active" data-scroll-target="#métodos-tradicionales">Métodos tradicionales</a></li>
@@ -249,16 +234,16 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Autor/a</div>
     <div class="quarto-title-meta-contents">
              <p>sebastiandres </p>
           </div>
   </div>
     
     <div>
-    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 6, 2024</p>
+      <p class="date">6 de marzo de 2024</p>
     </div>
   </div>
   
@@ -272,7 +257,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 
 <p>La motivación de este post es ayudarme en el futuro a mi mismo a recordar estos trucos, porque la notación no es muy amigable y siempre lo olvido.</p>
 <p>Ejemplificaré con el siguiente dataset:</p>
-<div id="e2d48923" class="cell" data-execution_count="1">
+<div id="05f7fa95" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Mostar como se genera el dataset</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -282,7 +267,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>            <span class="st">"x"</span>:[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="op">-</span><span class="dv">2</span>, <span class="op">-</span><span class="dv">5</span>, <span class="op">-</span><span class="dv">1</span>, <span class="op">-</span><span class="dv">2</span>, <span class="op">-</span><span class="dv">5</span>],</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>            <span class="st">"y"</span>:[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="op">-</span><span class="dv">4</span>, <span class="op">-</span><span class="dv">5</span>, <span class="op">-</span><span class="dv">4</span>, <span class="dv">3</span>, <span class="dv">4</span>],</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>           })</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>   color  x  y
@@ -297,7 +282,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 </div>
 </div>
 <p>Gráficamente, el set anterior es el siguiente:</p>
-<div id="12e801c6" class="cell" data-execution_count="2">
+<div id="e7a2b963" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Mostrar cómo se genera el gráfico</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> pyplot <span class="im">as</span> plt</span>
@@ -308,7 +293,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> [color_dict[_] <span class="cf">for</span> _ <span class="kw">in</span> df.color.values]</span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>plt.scatter(x, y, c<span class="op">=</span>c)</span>
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>plt.xlim([<span class="op">-</span>L, L])</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>plt.ylim([<span class="op">-</span>L, L])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>plt.ylim([<span class="op">-</span>L, L])</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-display">
 <div>
@@ -321,9 +306,9 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <section id="métodos-tradicionales" class="level2">
 <h2 class="anchored" data-anchor-id="métodos-tradicionales">Métodos tradicionales</h2>
 <p>Una opción es aplicar directamente los métodos:</p>
-<div id="e7f6bd64" class="cell" data-execution_count="3">
+<div id="c2f23432" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df_g <span class="op">=</span> df.groupby(<span class="st">"color"</span>).mean().reset_index()</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_g)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_g)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   color         x         y
 0   azul -2.666667 -4.333333
@@ -332,9 +317,9 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 </div>
 </div>
 <p>o aplicandolo a una columna en específico:</p>
-<div id="6b8db62f" class="cell" data-execution_count="4">
+<div id="fa4ec186" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>df_g <span class="op">=</span> df.groupby(<span class="st">"color"</span>).y.mean().reset_index()</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_g)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_g)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   color         y
 0   azul -4.333333
@@ -344,14 +329,14 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 </div>
 <p>Es desaconsejable porque: * Tendrás que renombrar manualmente los nombres de las columnas, que mantienen el nombre de la columna original y no de la función aplicada. * No puedes aplicar el método a más de una función y columna de manera simultánea * No puedes usar cualquier función, solo algunas conocidas.</p>
 <p>Otro método que es posible usar, pero no conviene tanto es usar <code>agg</code>:</p>
-<div id="86b17fb7" class="cell" data-execution_count="5">
+<div id="451d90ec" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df_g <span class="op">=</span> df.groupby(<span class="st">"color"</span>).agg(</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    {</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>        <span class="st">"x"</span>: [<span class="kw">lambda</span> _: _.mean()], <span class="co"># aplicado a y</span></span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>        <span class="st">"y"</span>: [<span class="kw">lambda</span> _: _.nunique(), <span class="kw">lambda</span> _: _.mean()], <span class="co"># aplicado a z</span></span>
 <span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_g)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_g)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>              x          y           
        &lt;lambda&gt; &lt;lambda_0&gt; &lt;lambda_1&gt;
@@ -368,14 +353,14 @@ rojo  -3.500000          2   3.500000</code></pre>
 <p>El método que aconsejo es con <code>agg</code> pero con definición explícita de los nombres de las columnas.</p>
 <p>Después del groupby, aplicas el método agg pasándole inventando un nombre del parámetro deseado y dándole como valor una tupla (columna, función).</p>
 <p>¡Las columnas generadas obtienen inmediatamente el nombre deseado!</p>
-<div id="44a0592a" class="cell" data-execution_count="6">
+<div id="482afedb" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>df_g <span class="op">=</span> df.groupby(<span class="st">"color"</span>).agg(</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>        promedio_x <span class="op">=</span> (<span class="st">"x"</span>, <span class="kw">lambda</span> _: _.mean()), </span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>        conteo_y <span class="op">=</span> (<span class="st">"y"</span>, <span class="kw">lambda</span> _: _.nunique()), </span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>        promedio_y <span class="op">=</span> (<span class="st">"y"</span>, <span class="kw">lambda</span> _: _.mean()), </span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>        promedio_x <span class="op">=</span> (<span class="st">"x"</span>, <span class="kw">lambda</span> _: _.mean()),</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>        conteo_y <span class="op">=</span> (<span class="st">"y"</span>, <span class="kw">lambda</span> _: _.nunique()),</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>        promedio_y <span class="op">=</span> (<span class="st">"y"</span>, <span class="kw">lambda</span> _: _.mean()),</span>
 <span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>).reset_index()</span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_g)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_g)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   color  promedio_x  conteo_y  promedio_y
 0   azul   -2.666667         2   -4.333333
@@ -390,9 +375,9 @@ rojo  -3.500000          2   3.500000</code></pre>
 <h2 class="anchored" data-anchor-id="multicolumna">Multicolumna</h2>
 <p>Una mejora interesante es usar lo anterior para trabajar con múltiples columnas al mismo tiempo. Veamos un ejemplo concreto: calculando distintas métricas (distancias) respecto al origen (0,0).</p>
 <p>Para poder aplicar el truco anterior, necesitamos “empaquetar las columnas” en una variable</p>
-<div id="2217f379" class="cell" data-execution_count="7">
+<div id="4131882e" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"points"</span>] <span class="op">=</span> <span class="bu">list</span>(<span class="bu">zip</span>(df.x, df.y))</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   color  x  y    points
 0  negro  1  1    (1, 1)
@@ -406,7 +391,7 @@ rojo  -3.500000          2   3.500000</code></pre>
 </div>
 </div>
 <p>Y ahora podemos aplicar distintas funciones, aunque en general será mejor definirlas como funciones (más que lambda-funciones) para expresar mejor las relaciones a usar entre los elementos:</p>
-<div id="68e4c946" class="cell" data-execution_count="8">
+<div id="65856087" class="cell" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> norm_1(points):</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    d <span class="op">=</span> points.<span class="bu">apply</span>(<span class="kw">lambda</span> point: <span class="bu">abs</span>(point[<span class="dv">0</span>]) <span class="op">+</span> <span class="bu">abs</span>(point[<span class="dv">1</span>]))</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> d.mean()</span>
@@ -420,11 +405,11 @@ rojo  -3.500000          2   3.500000</code></pre>
 <span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> d.mean()</span>
 <span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>df_agg <span class="op">=</span> df.groupby(<span class="st">"color"</span>).agg(</span>
-<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>        norm_1_avg <span class="op">=</span> (<span class="st">"points"</span>, norm_1), </span>
-<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>        norm_2_avg <span class="op">=</span> (<span class="st">"points"</span>, norm_2), </span>
-<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>        norm_inf_avg <span class="op">=</span> (<span class="st">"points"</span>, norm_inf), </span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>        norm_1_avg <span class="op">=</span> (<span class="st">"points"</span>, norm_1),</span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>        norm_2_avg <span class="op">=</span> (<span class="st">"points"</span>, norm_2),</span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>        norm_inf_avg <span class="op">=</span> (<span class="st">"points"</span>, norm_inf),</span>
 <span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>).reset_index()</span>
-<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_agg)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_agg)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   color  norm_1_avg  norm_2_avg  norm_inf_avg
 0   azul         7.0    5.222103      4.333333
@@ -462,12 +447,12 @@ rojo  -3.500000          2   3.500000</code></pre>
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copiado");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copiado");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -838,6 +823,41 @@ rojo  -3.500000          2   3.500000</code></pre>
   });
   </script>
 </div> <!-- /content -->
+<script>
+// Rewrites the navbar language toggle so it points to the *equivalent*
+// page in the other language instead of always going to the home page.
+//
+// Site layout:
+//   Spanish (esp profile): <root>/        -> _site/
+//   English (eng profile): <root>/eng/    -> _site/eng/
+//
+// Instead of hardcoding the "/eng" prefix (which breaks under file:// and
+// localhost), we derive both language roots from links Quarto already
+// resolves per-page:
+//   - the navbar brand  -> this page's own language root index
+//   - the language toggle (ESP/ENG) -> the other language root index
+// Then we re-base the current page's path from one root onto the other.
+document.addEventListener("DOMContentLoaded", function () {
+  var toggle = null;
+  document.querySelectorAll(".navbar a.nav-link").forEach(function (a) {
+    var label = (a.textContent || "").trim();
+    if (label === "ENG" || label === "ESP") toggle = a;
+  });
+  var brand = document.querySelector(".navbar .navbar-brand");
+  if (!toggle || !brand) return;
+
+  // Directory URL of each language root (strip the trailing "index.html").
+  var ownDir = new URL(".", new URL(brand.getAttribute("href"), location.href)).href;
+  var otherDir = new URL(".", new URL(toggle.getAttribute("href"), location.href)).href;
+
+  // Current page path relative to its own language root, re-based onto the other.
+  var here = location.href.split("#")[0];
+  if (here.indexOf(ownDir) !== 0) return; // unexpected layout: keep default href
+  var rel = here.slice(ownDir.length);
+
+  toggle.setAttribute("href", otherDir + rel + location.hash);
+});
+</script>
 
 
 
