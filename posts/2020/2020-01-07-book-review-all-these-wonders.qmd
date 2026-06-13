@@ -1,12 +1,23 @@
 ---
 title: All these wonders
 description: "Pequeñas grandes historias."
+description-en: "Small big stories."
 date: "2020-01-07"
 author: Varios autores (The Moth)
 genre:  No Ficción
 rating: 10
 categories: [lectura]
+categories-en: [reading]
 ---
+
+::: {.content-visible when-profile="esp"}
 Mi hermana me introdujo al mundo de estas breves historias, personales y emotivas. Son perfectamente cortas para leer en cualquier momento, pero profundas y emocionantes para que no sean irrelevantes. Difícil decir cuál me gustó más.
 
 ## Rating: 10/10
+:::
+
+::: {.content-visible when-profile="eng"}
+My sister introduced me to the world of these short, personal, and moving stories. They're perfectly short to read at any moment, yet deep and stirring enough that they're never irrelevant. Hard to say which one I liked most.
+
+## Rating: 10/10
+:::

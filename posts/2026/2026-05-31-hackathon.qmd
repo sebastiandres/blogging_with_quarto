@@ -6,7 +6,16 @@ categories: [python, visualization]
 image: "./images/ova.png"
 ---
 
+::: {.content-visible when-profile="esp"}
 Me había suscrito a la [Open Visualization Academy](https://openvisualizationacademy.org/) de Alberto Cairo, pero no me había hecho el tiempo de hacer los cursos.
 Hace poco recibí por correo la noticia de un nuevo curso, "Data Feminism for Data Visualization" que me causó mucha curiosidad, y he estado revisando los distintos cursos en la plataforma. Ya voy en la mitad del curso de "Fundamentals" y con ganas de terminar todos los disponibles.
 
 Alberto es un profesor extraordinario. Aunque ya he leído mucho del tema, he logrado aprender muchas cosas y reflexionar de muchas otras. El material es excelente, hay una generosidad increíble en los pdfs disponibles para descargar. ¡Que ganas de traducir y armar un curso con todo esto, y lo de data storytelling!
+:::
+
+::: {.content-visible when-profile="eng"}
+I had subscribed to Alberto Cairo's [Open Visualization Academy](https://openvisualizationacademy.org/), but I hadn't made the time to take the courses.
+Recently I received an email about a new course, "Data Feminism for Data Visualization" that made me very curious, and I have been browsing the different courses on the platform. I'm already halfway through the "Fundamentals" course and eager to finish all the available ones.
+
+Alberto is an extraordinary teacher. Even though I've already read a lot on the subject, I've managed to learn many things and reflect on many others. The material is excellent, there is an incredible generosity in the pdfs available for download. I really want to translate and put together a course with all of this, and with the data storytelling material too!
+:::

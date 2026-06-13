@@ -1,12 +1,23 @@
 ---
 title: Trillion Dollar Coach
 description: "Sobre la importancia de relacionarse más allá de lo laboral, de traer lo humano y lo personal al trabajo"
+description-en: "On the importance of connecting beyond work, of bringing the human and the personal into the workplace"
 date: "2020-01-08"
 author: Eric Schmidt, Jonathan Rosenberg y Alan Eagle
 genre:  No Ficción
 rating: 10
 categories: [lectura]
+categories-en: [reading]
 ---
+
+::: {.content-visible when-profile="esp"}
 Había escuchado de este libro en podcasts relacionados con productividad y coaching, pero hasta ahora no me había dado el tiempo. Gran pequeña joya de 100 páginas. Lo más destacable: la importancia de relacionarse más allá de lo laboral, de traer lo humano y lo personal al trabajo. Hice un post aparte, para destacar sus principales lecciones y relacionarlas con la metodología SCRUM; tienen muchas cosas en común.
 
 ## Rating: 10/10
+:::
+
+::: {.content-visible when-profile="eng"}
+I had heard about this book on podcasts related to productivity and coaching, but until now I hadn't made the time for it. A great little 100-page gem. The most notable point: the importance of connecting beyond work, of bringing the human and the personal into the workplace. I wrote a separate post to highlight its main lessons and relate them to the SCRUM methodology; they have a lot in common.
+
+## Rating: 10/10
+:::

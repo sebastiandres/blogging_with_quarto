@@ -1,10 +1,19 @@
 ---
 title: Ready Player 1
 description: "Novela entretenida sobre la vida en la realidad virtual"
+description-en: "An entertaining novel about life in virtual reality"
 date: "2020-01-16"
 author: Ernest Cline
 genre:  Ficción
 rating: 8
 categories: [lectura]
+categories-en: [reading]
 ---
+
+::: {.content-visible when-profile="esp"}
 Me compré la Oculus Quest 2, y aluciné (y sigo alucinando) tanto con la realidad virtual que quise releer este libro, que había comprado y leído en un viaje anterior a EEUU. Dato freak: se comenta que los empleados de Oculus recibían una copia del libro cuando entraban a trabajar a la empresa. Es un bestseller entretenido, con constantes referencias a los videojuegos y música de los 80 y 90s, y enigmas por resolver. Después mi hijo tomó el libro y no logramos despegarlo hasta que lo terminó en 2 días después (y eso que tiene como 600 páginas).
+:::
+
+::: {.content-visible when-profile="eng"}
+I bought myself the Oculus Quest 2, and I was so blown away (and still am) by virtual reality that I wanted to reread this book, which I had bought and read on a previous trip to the USA. Fun fact: it's said that Oculus employees received a copy of the book when they joined the company. It's an entertaining bestseller, with constant references to videogames and music from the 80s and 90s, and puzzles to solve. Then my son picked up the book and we couldn't pry him away until he finished it 2 days later (and that's despite it being about 600 pages long).
+:::

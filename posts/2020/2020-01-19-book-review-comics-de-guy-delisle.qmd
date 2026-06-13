@@ -1,10 +1,19 @@
 ---
 title: Guía del mal padre y otros
 description: "Comics insuperables sobre la paternidad y viajes"
+description-en: "Unbeatable comics about parenthood and travel"
 author: Guy Delisle
 date: "2020-01-19"
 genre: Cómic
 rating: 10
 categories: [lectura]
+categories-en: [reading]
 ---
+
+::: {.content-visible when-profile="esp"}
 Comencé con la Guía del mal padre (1, 2, 3 y 4), una risible y fresca mirada sobre la paternidad, que disfrutamos todos en la casa. Luego descubrí sus cómics sobre sus estancias en Birmania (Crónicas Birmanas), Israel (Crónicas de Jerusalén), Corea del Norte (Pyon Pyan) y China (Crónicas de Shenzen). Logra transmitir muy bien la experiencia de vivir en lugares tan particulares, con sus curiosidades y excentricidades. Me recordó cuando viví fuera de Chile, en Francia y Estados Unidos, llenándome de nostalgia.
+:::
+
+::: {.content-visible when-profile="eng"}
+I started with the Guía del mal padre (1, 2, 3 and 4), a hilarious and fresh look at parenthood, that we all enjoyed at home. Then I discovered his comics about his stays in Burma (Crónicas Birmanas), Israel (Crónicas de Jerusalén), North Korea (Pyon Pyan) and China (Crónicas de Shenzen). He manages to convey very well the experience of living in such peculiar places, with their curiosities and eccentricities. It reminded me of when I lived outside Chile, in France and the United States, filling me with nostalgia.
+:::

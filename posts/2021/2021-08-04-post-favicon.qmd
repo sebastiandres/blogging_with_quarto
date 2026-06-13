@@ -1,13 +1,17 @@
 ---
 title: "Nuevo favicon"
+title-en: "New favicon"
 description: "De python a sebastiandres en 1 paso."
+description-en: "From python to sebastiandres in 1 step."
 categories: [código]
+categories-en: [code]
 date: "2021-08-04"
 ---
 
+::: {.content-visible when-profile="esp"}
 Ya había reemplazado el favicon del sitio, pero no me terminaba de convencer.
 Hoy mirando el logo de python me di cuenta que podía facilmente transformarse en una S,
-que me pareció muy adecuado para un favicon simple pero memorable. 
+que me pareció muy adecuado para un favicon simple pero memorable.
 
 ![](../_images/2021-08-04-favicon/transformacion.png "Transformación del logo de python al favicon")
 
@@ -19,4 +23,23 @@ dado que al convertirlo a favicon se reduce enormemente el tamaño.
 Hay varios servicios para generar un favicon a partir de una imagen, en este caso obtuve mejores resultados con [favicon.io](https://favicon.io/).
 
 El favicon se puede modificar reemplazando directamente `images/favicon.ico`, o bien,
-editando el archivo `_includes/favicons.html` para definir una ruta diferente. 
+editando el archivo `_includes/favicons.html` para definir una ruta diferente.
+:::
+
+::: {.content-visible when-profile="eng"}
+I had already replaced the site's favicon, but it did not quite convince me.
+Today, looking at the python logo, I realized it could easily be transformed into an S,
+which seemed very fitting for a simple but memorable favicon.
+
+![](../_images/2021-08-04-favicon/transformacion.png "Transformation of the python logo into the favicon")
+
+The final image has some details on the edges, but it is not relevant
+since converting it to a favicon reduces the size enormously.
+
+![](../_images/2021-08-04-favicon/preview.png "Resulting favicon")
+
+There are several services to generate a favicon from an image; in this case I got the best results with [favicon.io](https://favicon.io/).
+
+The favicon can be modified by directly replacing `images/favicon.ico`, or else,
+by editing the `_includes/favicons.html` file to define a different path.
+:::

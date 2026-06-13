@@ -1,20 +1,36 @@
 ---
 title: "¡Es demasiado esfuerzo!"
+title-en: "It's too much effort!"
 description: "Reflexiones sobre Data Storytelling"
+description-en: "Reflections on Data Storytelling"
 author: "sebastiandres"
 date: "2024-04-12"
 categories: [data storytelling]
 image: "./images/pajamas.gif"
 ---
 
+::: {.content-visible when-profile="esp"}
 Creo que uno de los principales comentarios sobre hacer una presentación es que es demasiado esfuerzo.
 
 ![Arg... pero ya me puse pijama...](./images/pajamas.gif)
 
-Rehuimos la responsabilidad porque hacer una presentación y prepararse toma demasiado tiempo. Y es verdad. 
+Rehuimos la responsabilidad porque hacer una presentación y prepararse toma demasiado tiempo. Y es verdad.
 Hacer una buena presentación toma tiempo. Pero hay 2 aspectos a considerar:
 1. La presentación N+1 es más facil que cada una de las presentaciones anteriores. Mientras más presentaciones hagas, más material tienes preparado y más práctica y conocimiento tienes. La práctica hace al maestro.
-2. No todas las presentaciones necesitan el 100% de tu esfuerzo. Para una presentación interna en tu empresa puedes dedicar poco tiempo y no se acabará el mundo si las slides no están tan pulidas. Para una PyCon con seguridad buscarás que cada slide esté perfecta y tendrás un script de cada slide. 
+2. No todas las presentaciones necesitan el 100% de tu esfuerzo. Para una presentación interna en tu empresa puedes dedicar poco tiempo y no se acabará el mundo si las slides no están tan pulidas. Para una PyCon con seguridad buscarás que cada slide esté perfecta y tendrás un script de cada slide.
 
 Independientemente de si es una presentación pequeña o una importante, aplicar storytelling te ayudará a que el objetivo y contenido de tu presentación llegue y resuene con tu audiencia. No evites presentar, aprovecha cada oportunidad pero regula el esfuerzo que inviertes.
+:::
 
+::: {.content-visible when-profile="eng"}
+I think one of the main comments about giving a presentation is that it's too much effort.
+
+![Argh... but I already put on my pajamas...](./images/pajamas.gif)
+
+We shy away from the responsibility because giving a presentation and preparing takes too much time. And it's true.
+Making a good presentation takes time. But there are 2 aspects to consider:
+1. The N+1 presentation is easier than each of the previous presentations. The more presentations you give, the more material you have prepared and the more practice and knowledge you have. Practice makes perfect.
+2. Not all presentations need 100% of your effort. For an internal presentation at your company you can dedicate little time and the world won't end if the slides aren't so polished. For a PyCon you'll surely aim for every slide to be perfect and you'll have a script for each slide.
+
+Regardless of whether it's a small presentation or an important one, applying storytelling will help the objective and content of your presentation reach and resonate with your audience. Don't avoid presenting, take advantage of every opportunity but regulate the effort you invest.
+:::

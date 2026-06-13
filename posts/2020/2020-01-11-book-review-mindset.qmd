@@ -1,10 +1,19 @@
 ---
 title: Mindset
 description: "Mentalidad de crecimiento y mentalidad fija"
+description-en: "Growth mindset and fixed mindset"
 date: "2020-01-11"
 author: Carol Dweck
 genre:  No Ficción
 rating: 8
 categories: [lectura]
+categories-en: [reading]
 ---
+
+::: {.content-visible when-profile="esp"}
 La versión actualizada del 2017 me pareció mucho mejor que el libro original, con más ejemplos y consejos prácticos. Rescato algo que en lecturas anteriores no capturé. Todos tenemos una mezcla de mentalidad fija y de crecimiento, que se manifiestan en distintas oportunidades. Mis principales rasgos fijos a cambiar: aceptar retroalimentación negativa.
+:::
+
+::: {.content-visible when-profile="eng"}
+The updated 2017 version seemed much better to me than the original book, with more examples and practical advice. I take away something that I didn't capture in previous readings. We all have a mix of fixed and growth mindset, which show up on different occasions. My main fixed traits to change: accepting negative feedback.
+:::

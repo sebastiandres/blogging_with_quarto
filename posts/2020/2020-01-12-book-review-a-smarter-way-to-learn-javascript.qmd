@@ -1,10 +1,19 @@
 ---
 title: A Smarter Way to Learn JavaScript
 description: "Libro práctico para aprender javascript"
+description-en: "A practical book for learning javascript"
 date: "2020-01-13"
 author: Mike Myers
 genre:  No Ficción
 rating: 7
 categories: [lectura, javascript]
+categories-en: [reading, javascript]
 ---
+
+::: {.content-visible when-profile="esp"}
 Quería refrescar y profundizar mi conocimiento en javascript sin tener que leer demasiado. Este libro se consumía en capítulos cortos y prácticos, justo lo que necesitaba.
+:::
+
+::: {.content-visible when-profile="eng"}
+I wanted to refresh and deepen my knowledge of javascript without having to read too much. This book was consumed in short, practical chapters, exactly what I needed.
+:::

@@ -1,5 +1,10 @@
 project:
   output-dir: ./_site/    
+  render:
+    - "*.qmd"
+    - "*/*.qmd"
+    - "!README.md"
+    - "!pages/listing-bilingual.ejs.md"
 
 website:
   title: "Sebastián Flores Benner"

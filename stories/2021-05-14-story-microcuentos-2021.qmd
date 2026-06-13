@@ -1,10 +1,14 @@
 ---
 title: Microcuentos 2021
+title-en: Flash Fiction 2021
 description: Cuentos enviados a Santiago en 100 palabras (2021)
+description-en: Stories submitted to "Santiago en 100 palabras" (2021)
 date: "2021-05-14"
 categories: [escritura, microcuentos]
+categories-en: [writing, flash fiction]
 ---
 
+::: {.content-visible when-profile="esp"}
 ## Canciones pendientes
 
 Es una situación extraña, no me pasa con la pintura, escritura, cine u otras artes. Sin embargo, cuando pienso en la cantidad de canciones que no llegaron a escribirse, me da una pena paralizadora. Estoy completamente seguro que John Lennon nos habría regalado un nuevo Yesterday que nunca llegaremos a escuchar. O que las manos de Victor Jara habrían rasgado de su guitarra otro canto poético y atemporal. Me persigue la imagen de sus muertes sin sentido. ¿Se puede tener nostalgia de una canción que nunca has escuchado?
@@ -31,3 +35,33 @@ Sentado-al-computador,-el-escritor-descubrió-que-podía-escribir-cuentos-para-S
 
 # Examen
 Sin poderlo evitar, miro de nuevo por la ventana de la biblioteca. Afuera llueve. El mar azota la costa. Adentro, apilo libros de métodos estocásticos sobre mi escritorio. Y aunque todo invita a la emoción y trato de descansar, no puedo evitar pensar ¿caerán las gotas probabilísticamente determinadas?
+:::
+
+::: {.content-visible when-profile="eng"}
+## Unwritten songs
+
+It's a strange thing, it doesn't happen to me with painting, writing, film or the other arts. Yet when I think of the number of songs that never came to be written, a paralyzing sorrow takes hold of me. I am completely certain that John Lennon would have given us a new Yesterday that we will never get to hear. Or that the hands of Victor Jara would have plucked from his guitar another poetic and timeless song. The image of their senseless deaths haunts me. Can you feel nostalgia for a song you've never heard?
+
+## To each saint his miracle
+
+My grandmother made the pilgrimage to Lo Vásquez. My mother prayed to Saint Expeditus. I am an apostle of Saint Bielsa and I light little candles to Omeprazole.
+
+## Rudy from Loncoche
+
+When we traveled with my grandfather, every place had a story: So-and-so lived here, What's-his-name worked here, Whatsit died over there. Many times I thought about sitting down with him, listening to and writing down each of his stories. But I was afraid. I thought those anecdotes were like Samson's hair or Achilles' heel. By writing them down, he would lose that inexplicable magic that had protected him from accidents and operations. So many trips to the doctor that I had already lost count. In the end, death took him anyway and all I was left with were some of his most famous stories.
+
+## Goal or foul
+
+Two backpacks mark one team's goal. The shirtless ones mark out theirs with 2 piles of clothes. Nobody checks the time. The street has its own rules. The match only ends when the loser concedes defeat.
+
+## Gustavo Adolfo turns in his grave
+
+What is poetry?, you say as you fix your blue pupil on mine. And after consulting wikipedia, I answer you. Poetry is a literary genre considered a manifestation of beauty or of aesthetic feeling through the word, in verse or in prose. You say my modernity kills romanticism. I won't share with you my spreadsheet with the divorce rate, nor my list of pros and cons of marriage. The decision was easy to assess but hard to make. A tear I cannot hold back, of 0.25 ml, runs slowly down my cheek as you walk away forever.
+
+## Santiago in 150 words
+
+Sitting-at-the-computer,-the-writer-discovered-that-he-could-write-stories-for-Santiago-in-more-than-a-hundred-words. He/simply/had/to/replace/the/spaces/with/another/symbol,/and/that/confused/the/submission/system. He&didn't&shout&eureka&nor&run&out&naked&from&the&bathtub. He_thought_that_thanks_to_the_discovery_everything_would_be_easier_with_no_limits_to_his_writing. However,^and^after^several^days^sitting^in^front^of^the^computer,^the^page^was^still^blank^and^his^story^still^unwritten. He*had*been*alone*and*shut*in*so*long*that*he*lacked*the*main*ingredient:*memories*from*which*to*weave*a*story. He+remembered+everything+as+distant+and+blurry,+like+an+old+photo+covered+with+a+thin+layer+of+gray+dust. He·no·longer·remembered·the·laughter·of·the·children·in·the·park,·the·jokes·of·a·night·of·drinks·with·friends,·the·passion·of·a·romance,·or·a·simple·aimless·walk·beneath·the·trees. And with no story to tell, his discovery never became known.
+
+# Exam
+Unable to help it, I look out the library window again. Outside it's raining. The sea lashes the coast. Inside, I pile books on stochastic methods on my desk. And although everything invites emotion and I try to rest, I can't help but wonder: will the raindrops fall probabilistically determined?
+:::

@@ -1,10 +1,14 @@
 ---
 title: "Consejos de libros al mejor precio"
+title-en: "Tips for books at the best price"
 description: ¿Libros a buen precio? BP Digital y BookDepository.
+description-en: Books at a good price? BP Digital and BookDepository.
 date: "2019-01-19"
 categories: [opinión, literatura]
+categories-en: [opinion, literature]
 ---
 
+::: {.content-visible when-profile="esp"}
 Para mi sorpresa, hay muchas personas que no conocen los 2 principales sitios que uso para abastecerme de libros a buen precio: BP Digital y BookDepository. ¡Ojalá este post sea útil en difundir esta información!
 
 ## BP Digital
@@ -37,3 +41,39 @@ Link: [https://www.bookdepository.com/](https://www.bookdepository.com/)
 Consejos: 
 1. Revisar bien el idioma del libro. En una oportunidad encargué un libro y aunque el título venía en inglés, el contenido venía en alemán. Al revisar, efectivamente en la página se indicaba que el libro venía en idioma alemán. 
 2. Revisar la sección de ofertas (bargains) que tiene algunos libros interesantes a precios inmejorables. Sobretodo para releer a los clásicos en idioma original.
+:::
+
+::: {.content-visible when-profile="eng"}
+To my surprise, there are many people who don't know the 2 main sites I use to stock up on books at a good price: BP Digital and BookDepository. I hope this post is useful in spreading this information!
+
+## BP Digital
+
+BP Digital — Biblioteca Pública Digital (Public Digital Library) — lets you borrow books in electronic format. The catalog is quite broad and recently I was surprised to find the 3 books I was planning to buy to read over the summer. For example, you can find the collections of Roberto Ampuero, Hernan Rivera Letelier, Isabel Allende, Roberto Bolaño, Phillip K Dick, Isaac Asimov, George R. R. Martin, including the recent Yuval Noah Harari. They have around 13,000 books, although most of them only in Spanish.
+* **Pros**: it's completely free. I also like that the books are borrowed for a fixed period (15 days, + 7 for renewal) because it keeps you from slacking off too much and helps you finish the requested reading.
+* **Cons**: Only in digital format and it requires a Chilean rut or a valid identifier for residents in Chile. They have very few in a language other than Spanish.
+
+Link: [http://www.bpdigital.cl/](http://www.bpdigital.cl/)
+
+Tips:
+1. Read one book at a time, since the loan period is short.
+2. Request several books at the same time, and place high-demand books on hold, because the one you want may take a while to become available.
+
+
+## BookDepository
+
+BookDepository (BD) is an online bookstore with more than 20 million books that ships for free worldwide with no minimum amount. That makes it incredibly easier to evaluate whether it's worth buying a book or not compared to local bookstores. From what I've compared, BD is up to 50% cheaper than buying the book in Chile, with the advantage (or disadvantage, depending on how you look at it) of having the book mainly in English (or the original language). It lets you pay with a credit card, or with paypal, and I haven't had any problem so far (+20 books). Some examples:
+* *Artemis* — Andy Weir. BD: 14.77 USD. Chile: > 30 USD.
+* *Surely you’re joking Mr Feynman* — Richard Feynman. BD: 14.32 USD. Chile: >25 USD.
+* *The man in the high castle* — Phillip K. Dick. US$11.55; Chile: >30 USD.
+* *Alice’s Adventures in Wonderland* — Lewis Carroll. BD: 4.17 USD; Chile: > 10 USD.
+
+In addition, it gives you easy access to books that aren't available in Chile, such as *Weapons of Math Destruction* by Cathy O’Neil, *The Dad Lab* by Sergei Urban, or the graphic novel collection *Earth Before Us* by Abby Howard. Special mention for Feynman's books, which should be required reading in all STEM degrees: deep reflections on science, physics and mathematics, plus a thousand humorous situations. A critical and irreverent spirit.
+* **Pros**: The listed price is the final price (shipping included). There is a very large catalog and it allows pre-orders. The books arrive in perfect condition and can even be returned (although I've never made use of this feature).
+* **Cons**: It takes between 2 and 5 weeks to arrive in Chile.
+
+Link: [https://www.bookdepository.com/](https://www.bookdepository.com/)
+
+Tips:
+1. Check the book's language carefully. On one occasion I ordered a book and although the title was in English, the content was in German. When I checked, the page did indeed indicate that the book came in German.
+2. Check the bargains section, which has some interesting books at unbeatable prices. Especially for rereading the classics in their original language.
+:::

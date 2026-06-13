@@ -1,6 +1,6 @@
-::: {.content-visible  when-profile="esp"}
 ---
 title: "Inicio"
+title-en: "Home"
 image: avatar.png
 about:
   template: jolla
@@ -15,7 +15,10 @@ about:
       text: Github
       href: https://github.com/sebastiandres
 ---
-¡Hola! Soy sebastiandres. En mi sitio escribo sobre python, tecnología y libros.  
+
+::: {.content-visible  when-profile="esp"}
+¡Hola! Soy sebastiandres.  
+Escribo sobre python, tecnología y libros.  
 
 <form
   action="https://buttondown.com/api/emails/embed-subscribe/sebastiandres"
@@ -59,25 +62,8 @@ about:
 :::
 
 ::: {.content-visible when-profile="eng"}
----
-title: "Home"
-image: avatar.png
-about:
-  template: jolla
-  links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/sebastiandres
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/sebastiandres/
-    - icon: github
-      text: Github
-      href: https://github.com/sebastiandres
----
-Hi! I'm sebastiandres.
-I write about python, technology and books.
-Mostly on Spanish, but some posts are also available on English.
+Hi! I'm sebastiandres.  
+I write about python, technology and books.  
 <form
   action="https://buttondown.com/api/emails/embed-subscribe/sebastiandres"
   method="post"

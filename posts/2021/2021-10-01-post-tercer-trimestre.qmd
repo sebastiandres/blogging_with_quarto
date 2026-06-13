@@ -1,17 +1,21 @@
 ---
 title: "Tercer trimestre del 2021"
+title-en: "Third quarter of 2021"
 description: "Balance de lo que han sido estos meses"
+description-en: "A review of what these months have been"
 date: "2021-10-01"
 categories: [reflexión]
+categories-en: [reflection]
 ---
 
+::: {.content-visible when-profile="esp"}
 Cerrando el tercer trimestre del 2021, me di cuenta que estuvo lleno de muchas cosas buenas:
 * Retomé el blog y comencé a escribir más regularmente. Le hice varias mejoras específicas, además de aprender html, css y javascript en el proceso.
-* Participé en el sprint de Data Umbrella, donde nos aprobaron 2 pull requests y terminamos entre los colaboradores. 
+* Participé en el sprint de Data Umbrella, donde nos aprobaron 2 pull requests y terminamos entre los colaboradores.
 * Participé en la PyLatam, con una charla sobre RISE.
 * Aceptaron mi charla de la Pycon Chile, para noviembre. ¡El año pasado me había quedado con las ganas!
 * Grabé un panel De Argentina a México, Proyectos de IA Éticos y Responsables, que saldrá en Noviembre en el INC Monterrey.
-* Recomendé un practicante y quedó en su empleo soñado :D 
+* Recomendé un practicante y quedó en su empleo soñado :D
 * Nos tomamos unas vacaciones cortas en el valle del Elqui.
 * Hicimos una extenuante pero hermosa caminata por los cerros de Quilpué.
 * Hicimos 2 bingos familiares (día del padre y fiestas patrias).
@@ -34,3 +38,36 @@ Otras cosas, menos positivas:
 * Ordenar mi escritorio y la bodega.
 
 Ya veremos cuánto de todo esto se cumple.
+:::
+
+::: {.content-visible when-profile="eng"}
+Closing the third quarter of 2021, I realized it was full of many good things:
+* I picked the blog back up and started writing more regularly. I made several specific improvements to it, besides learning html, css and javascript in the process.
+* I took part in the Data Umbrella sprint, where 2 pull requests of ours were approved and we ended up among the contributors.
+* I took part in PyLatam, with a talk about RISE.
+* My talk for Pycon Chile was accepted, for November. Last year I had been left wanting!
+* I recorded a panel From Argentina to Mexico, Ethical and Responsible AI Projects, which will come out in November at INC Monterrey.
+* I recommended an intern and they landed their dream job :D
+* We took a short vacation in the Elqui valley.
+* We did an exhausting but beautiful hike through the hills of Quilpué.
+* We played 2 family bingo games (Father's Day and national holidays).
+* I reconnected with a French friend whom I had not spoken to in about 6 years.
+* In literature, I read, among others, Proyect Hail Mary by Andy Weir and Range by David Epstein.
+* I learned to solve the Rubik's cube.
+
+Other things, less positive:
+* I was not selected in the flash fiction of Santiago en 100 palabras.
+* I applied but was not selected for the Spanish track of Pycon Brasil. I think my application was not completed, because I received neither acceptance nor rejection.
+
+What is coming in 2021-Q4?
+
+* The Spartan Race, where I hope not to make a complete fool of myself.
+* A talk at a workshop for 1000 programmers in Salta, about libraries for different problems.
+* Workshop at PyCon Argentina: Programar y Reprogramar Recursos para Docentes, with Sofía Martin, Liliana Hurtado and Ariel Ramos.
+* Talk at PyCon Chile: WebApps con Streamlit: ¡más fácil que la tabla del uno, poh!
+* Attempt number 45682123 to climb Cerro La Campana.
+* Get back to writing on the blog.
+* Tidy up my desk and the storage room.
+
+We will see how much of all this comes true.
+:::

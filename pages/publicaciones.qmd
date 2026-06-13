@@ -1,8 +1,9 @@
-::: {.content-visible when-profile="esp"}
 ---
 title: "Publicaciones"
+title-en: "Publications"
 ---
 
+::: {.content-visible when-profile="esp"}
 He participado en las siguientes publicaciones:
 
 * **Create a search engine with Streamlit and Google Sheets**
@@ -48,10 +49,6 @@ He participado en las siguientes publicaciones:
 :::
 
 ::: {.content-visible when-profile="eng"}
----
-title: "Publications"
----
-
 I have contributed to the following publications:
 
 * **Create a search engine with Streamlit and Google Sheets**

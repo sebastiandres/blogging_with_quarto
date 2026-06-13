@@ -1,10 +1,19 @@
 ---
 title: All systems red
 description: Exploradores planetarios con un twist
+description-en: Planetary explorers with a twist
 date: "2021-08-18"
 author: Martha Wells
 genre:  Ciencia Ficción
 rating: 8
 categories: [lectura]
+categories-en: [reading]
 ---
-Un libro divertido y fácil de leer. El personaje central es un robot humanoide, y tiene muchas características humanas: humor negro, desprecio por el trabajo, limitaciones de multitasking, procrastinación y adicción a las series televisivas. Me resulta divertida la idea de que la evolución de la tecnología termine produciendo características tan humanas y alejadas de lo perfecto. El nudo central del libro es un poco simplón, pero la narración está muy bien lograda. 
+
+::: {.content-visible when-profile="esp"}
+Un libro divertido y fácil de leer. El personaje central es un robot humanoide, y tiene muchas características humanas: humor negro, desprecio por el trabajo, limitaciones de multitasking, procrastinación y adicción a las series televisivas. Me resulta divertida la idea de que la evolución de la tecnología termine produciendo características tan humanas y alejadas de lo perfecto. El nudo central del libro es un poco simplón, pero la narración está muy bien lograda.
+:::
+
+::: {.content-visible when-profile="eng"}
+A fun and easy-to-read book. The central character is a humanoid robot, and it has many human characteristics: dark humor, disdain for work, multitasking limitations, procrastination and addiction to TV series. I find the idea amusing that the evolution of technology ends up producing characteristics so human and far from perfect. The central plot of the book is a bit simplistic, but the narration is very well done.
+:::

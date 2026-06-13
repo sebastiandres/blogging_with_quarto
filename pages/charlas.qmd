@@ -1,7 +1,9 @@
-::: {.content-visible when-profile="esp"}
 ---
 title: "Charlas"
+title-en: "Talks"
 ---
+
+::: {.content-visible when-profile="esp"}
 
 * **Python y Data Storytelling al rescate: evitemos más muertes por PowerPoint**  
 Se discuten distintas habilidades de data storytelling y herramientas técnicas con el objetivo de crear presentaciones más atractivas, entretenidas y memorables usando librerías y programas en python. ¡Hagamos el mundo mejor, una presentación a la vez!
@@ -90,10 +92,6 @@ En esta charla hablo sobre la librería pandas, y su utilidad para la manipulaci
 :::
 
 ::: {.content-visible when-profile="eng"}
----
-title: "Talks"
----
-
 * **Python and Data Storytelling to the rescue: let's prevent more deaths by PowerPoint**  
 I discuss different data storytelling skills and technical tools with the goal of creating more engaging, entertaining and memorable presentations using python libraries and programs. Let's make the world better, one presentation at a time!
 ([repo](https://github.com/sebastiandres/talk_2024_05_pycon_us)).

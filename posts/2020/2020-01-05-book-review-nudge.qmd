@@ -1,12 +1,23 @@
 ---
 title: Nudge
 description: "Sobre lo fácil que es realizar pequeñas influencias en las elecciones"
+description-en: "On how easy it is to exert small influences over choices"
 date: "2020-01-05"
 author: Thaler y Sunstein
 genre:  No Ficción
 rating: 7
 categories: [lectura]
+categories-en: [reading]
 ---
-Una propuesta interesante, sobre lo fácil que es realizar pequeñas influencias en las elecciones. Se apoya en la diferencia entre los Econs y Humans. Los Econs son los personajes mitológicos que realizan analizan todos los datos disponibles y realizan elecciones perfectas, mientras que los Humans son personas que actúan como humanos reales: a veces emocional, a veces irracional, a veces intuitivamente. La propuesta es interesante, pero el libro es más largo de lo que debería y demasiados ejemplos son anglocéntricos. Fue escrito el 2008 y algunos ejemplos se sienten un poco desactualizados (Netflix hace rato no es una “mail-order DVD rental company”) 
+
+::: {.content-visible when-profile="esp"}
+Una propuesta interesante, sobre lo fácil que es realizar pequeñas influencias en las elecciones. Se apoya en la diferencia entre los Econs y Humans. Los Econs son los personajes mitológicos que realizan analizan todos los datos disponibles y realizan elecciones perfectas, mientras que los Humans son personas que actúan como humanos reales: a veces emocional, a veces irracional, a veces intuitivamente. La propuesta es interesante, pero el libro es más largo de lo que debería y demasiados ejemplos son anglocéntricos. Fue escrito el 2008 y algunos ejemplos se sienten un poco desactualizados (Netflix hace rato no es una “mail-order DVD rental company”)
 
 ## Rating: 7/10.
+:::
+
+::: {.content-visible when-profile="eng"}
+An interesting premise, about how easy it is to exert small influences over choices. It builds on the difference between Econs and Humans. Econs are the mythological characters who analyze all available data and make perfect choices, while Humans are people who behave like real humans: sometimes emotional, sometimes irrational, sometimes intuitive. The premise is interesting, but the book is longer than it should be and too many examples are Anglocentric. It was written in 2008 and some examples feel a bit dated (Netflix hasn't been a “mail-order DVD rental company” for a while now)
+
+## Rating: 7/10.
+:::

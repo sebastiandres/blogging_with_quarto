@@ -1,12 +1,23 @@
 ---
 title: IQ
 description: "Mezcla de novela policial y 'rapidos y furiosos'."
+description-en: "A mix of crime novel and 'fast and furious'."
 date: "2020-01-06"
 author: Joe Ide
 genre:  Ficción
 rating: 6
 categories: [lectura]
+categories-en: [reading]
 ---
+
+::: {.content-visible when-profile="esp"}
 Una novela policial atípica: el detective es un joven afroamericano sin estudios pero astuto y con mucha calle, que se mueve entre la pobreza y el lujo de Los Ángeles. El caso no es un crimen cometido, sino una sospecha de asesinato por encargo en pleno desarrollo. Diálogos muy divertidos, entretenido y rápido de leer, aunque sin mucho misterio. 100% seguro que lo convertirán en película.
 
 ## Rating: 6/10
+:::
+
+::: {.content-visible when-profile="eng"}
+An atypical crime novel: the detective is a young African American man with no formal education but shrewd and very street-smart, who moves between the poverty and the luxury of Los Angeles. The case is not a crime already committed, but a suspected murder-for-hire in the making. Very funny dialogue, entertaining and quick to read, though without much mystery. 100% sure they'll turn it into a movie.
+
+## Rating: 6/10
+:::

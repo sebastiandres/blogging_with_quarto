@@ -2,9 +2,18 @@
 title: Ocasional Magic
 author: varios autores (The Moth)
 description: "Historias cortas y emocionantes"
+description-en: "Short and moving stories"
 date: "2020-01-14"
 genre:  No Ficción
 rating: 6
 categories: [lectura]
+categories-en: [reading]
 ---
+
+::: {.content-visible when-profile="esp"}
 Más historias de The Moth, a la altura del otro libro. Historias emocionantes, profundas, todas muy distintas unas de otras.
+:::
+
+::: {.content-visible when-profile="eng"}
+More stories from The Moth, on par with the other book. Moving, deep stories, all very different from one another.
+:::

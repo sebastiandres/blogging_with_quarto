@@ -1,8 +1,10 @@
 ---
 title: "Apps y Repos"
+title-en: "Apps & Repos"
 ---
 
-* [Buscador de videos Python Chile](https://pythonchile.streamlit.app/)  
+::: {.content-visible when-profile="esp"}
+* [Buscador de videos Python Chile](https://pythonchile.streamlit.app/)
 Una webapp en streamlit para buscar entre las distintas charlas disponibles en el canal de youtube de Python Chile.  
 
 * [gapminder](https://gapminder.streamlit.app/)  
@@ -60,3 +62,65 @@ Una extensión a streamlit que permite desplegar páginas en un formato de libro
 [github](https://github.com/sebastiandres/pypsdier)
 
 Librería para resolver ecuaciones diferenciales parciales de restricción-difusión en partículas esféricas con catalizadores inmobilizados. Un proyecto colaborativo con aplicaciones industriales.
+:::
+
+::: {.content-visible when-profile="eng"}
+* [Python Chile video search](https://pythonchile.streamlit.app/)
+A streamlit webapp to search among the different talks available on the Python Chile youtube channel.  
+
+* [gapminder](https://gapminder.streamlit.app/)  
+A streamlit webapp to emulate the classic visualization from Ted Rosling's Ted Talk "The best stats you've ever seen". It uses streamlit, vizzu and makes direct SQL calls to snowflake. A project for a Streamlit hackathon.
+
+* [Datasaurus](https://datasaurus.streamlit.app/)  
+A streamlit webapp that illustrates the "Datasaurus" article and lets you generate sets of points that transform from one figure into another without changing their statistical properties. An example that cannot be missing from any visualization lesson.
+
+* [Confusion Matrix](https://confusion-matrix.streamlit.app/)  
+A streamlit webapp that emulates the look&feel of The Matrix, and teaches about Machine Learning confusion matrices.
+A project in which I sought to push customization in Streamlit to the limit and where I played with a lot of html+js.
+
+* [PPTX to RISE](https://ppt2rise.streamlit.app/)  
+A web app to convert powerpoint presentations (pptx) into jupyter notebooks so they can be presented with RISE. 
+
+* [Not Angry Birds](https://notangrybirds.streamlit.app/)  
+A streamlit webapp that illustrates the use of streamlit-book for teaching, using particle trajectories and angry birds.
+
+* [xkcd Graphs](https://xkcd-graphs.streamlit.app/)  
+A web app to make xkcd-style graphs. Created using the streamlit and matplotlib libraries. 
+
+* [linktree emulator](https://github.com/sebastiandres/linktree)  
+The small linktree emulator. It lets you present interactive options in html from github with the same look&feel as linktree.
+
+* [polite](https://github.com/sebastiandres/polite_surveys)  
+A minimalist experimental survey system.
+
+
+### streamlit-slides
+
+[pypi](https://pypi.org/project/streamlit-slides/)
+ | 
+[github](https://github.com/sebastiandres/streamlit_slides)  
+
+A streamlit extension that lets you display pages as slides of a presentation.  
+
+---
+
+### streamlit-book
+
+[pypi](https://pypi.org/project/streamlit-book/)
+ | 
+[readthedocs](https://streamlit-book.readthedocs.io/)
+ | 
+[github](https://github.com/sebastiandres/streamlit_book)  
+
+A streamlit extension that lets you display pages in a book format. It was relevant before streamlit natively provided multipage support. It contains additional features to create activities.  
+
+---
+
+### pypsdier
+
+[pypi](https://pypi.org/project/pypsdier/)
+ | 
+[github](https://github.com/sebastiandres/pypsdier)
+
+A library to solve restriction-diffusion partial differential equations in spherical particles with immobilized catalysts. A collaborative project with industrial applications.
+:::

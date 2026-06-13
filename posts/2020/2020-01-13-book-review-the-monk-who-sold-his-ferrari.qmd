@@ -1,10 +1,19 @@
 ---
 title: The monk who sold his ferrari
 description: "Decepcionante y extraño libro sobre el éxito"
+description-en: "A disappointing and strange book about success"
 date: "2020-01-13"
 author: Robin Sharma
 genre:  No Ficción
 rating: 0
 categories: [lectura]
+categories-en: [reading]
 ---
+
+::: {.content-visible when-profile="esp"}
 Me llamó la atención el título y leí algunas recomendaciones, por lo que decidí darle una oportunidad. Terrible error, fue una tortura, pero seguí avanzando por si en algún momento llegaba la iluminación y se justificaba el libro. Dicho momento no llegó.
+:::
+
+::: {.content-visible when-profile="eng"}
+The title caught my attention and I read some recommendations, so I decided to give it a chance. Terrible mistake, it was torture, but I kept going in case enlightenment arrived at some point and the book was justified. That moment never came.
+:::

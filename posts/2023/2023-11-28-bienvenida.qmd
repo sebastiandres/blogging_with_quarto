@@ -1,12 +1,24 @@
 ---
 title: "Primer post"
+title-en: "First post"
 author: "sebastiandres"
 date: "2023-11-28"
 categories: [vida]
+categories-en: [life]
 ---
 
+::: {.content-visible when-profile="esp"}
 Este es el primer post en este nuevo blog hecho con Quarto.
 
 ¡Bienvenido!
 
 ![](thumbnail.jpg)
+:::
+
+::: {.content-visible when-profile="eng"}
+This is the first post on this new blog made with Quarto.
+
+Welcome!
+
+![](thumbnail.jpg)
+:::

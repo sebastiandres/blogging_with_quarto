@@ -1,12 +1,23 @@
 ---
 title: Atomic habits
 description: "Manual de cabecera para generar mejores hábitos."
+description-en: "A go-to handbook for building better habits."
 date: "2019-04-27"
 author: James Clear
 genre:  No ficción
 rating: 10
 categories: [lectura]
+categories-en: [reading]
 ---
-A pesar que ya había leído varias otros libros y artículos sobre hábitos, este libro me gustó mucho y aprendí más de lo que esperaba. Está bien estructurado, fácil de leer y tiene una mezcla interesante de anécdotas personales y consejos prácticos. 
+
+::: {.content-visible when-profile="esp"}
+A pesar que ya había leído varias otros libros y artículos sobre hábitos, este libro me gustó mucho y aprendí más de lo que esperaba. Está bien estructurado, fácil de leer y tiene una mezcla interesante de anécdotas personales y consejos prácticos.
 
 ## Rating: 10/10
+:::
+
+::: {.content-visible when-profile="eng"}
+Even though I had already read several other books and articles about habits, I really enjoyed this book and learned more than I expected. It's well structured, easy to read, and has an interesting mix of personal anecdotes and practical advice.
+
+## Rating: 10/10
+:::

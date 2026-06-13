@@ -1,9 +1,12 @@
 ---
 title: "Navidad con IA"
+title-en: "Christmas with AI"
 date: "2023-12-17"
 categories: [ia]
+categories-en: [ai]
 ---
 
+::: {.content-visible when-profile="esp"}
 En una de esas extrañas rutas de navegación en youtube, encontré que existen muchos videos de clásicas canciones navideñas, pero donde se ha usado IA para cambiar al cantante. El resultado resulta sorprendente y ayuda a cambiar un poco estas canciones que después de un rato comienzan a ser un poco repetidas:
 
 * All I Want For Christmas Is You
@@ -20,9 +23,35 @@ En una de esas extrañas rutas de navegación en youtube, encontré que existen 
 * Thank God it's Christmas
   * [Queen](https://www.youtube.com/watch?v=6V5mtUff6ik)
   * [Bob Esponja](https://www.youtube.com/watch?v=aHlEja1sJhU)
-* It's Beginning To Look A Lot Like Christmas 
+* It's Beginning To Look A Lot Like Christmas
   * [Frank Sinatra](https://www.youtube.com/watch?v=7jnH0T6ELGo)
   * [Calamardo](https://www.youtube.com/watch?v=NH_8f7NE_hk)
   * [Darth Vader](https://www.youtube.com/watch?v=5ctcmq4XOs4)
 
 Creo que el resultado es impresionante, y las características de la voz se identifican perfectamente. Sin embargo, las notas siguen siendo exactamente las mismas, sin mucha variedad al original, y quizás podría ser interesante dar un poco más de variabilidad en la interpretación.
+:::
+
+::: {.content-visible when-profile="eng"}
+On one of those strange youtube navigation paths, I found that there are many videos of classic Christmas songs, but where AI has been used to change the singer. The result is surprising and helps to liven up a bit these songs that after a while start to feel a little repetitive:
+
+* All I Want For Christmas Is You
+  * [Freddy Mercury](https://www.youtube.com/watch?v=cNM9sfYEA5o)
+  * [The Beatles](https://www.youtube.com/watch?v=mF1PkR8uZ2Y)
+  * [Michael Jackson](https://www.youtube.com/watch?v=4sck1owEpFY)
+* Last Christmas
+  * [Michael Jackson](https://www.youtube.com/watch?v=6UY1e_PavvE)
+  * [Freddy Mercury](https://www.youtube.com/watch?v=phbTYnn2AXM)
+  * [Rick Astley](https://www.youtube.com/watch?v=BiQWTt2zuvQ)
+  * [Elvis](https://www.youtube.com/watch?v=QLbTzTs6LtA)
+* Happy Xmas (War is over)
+  * [Elvis](https://www.youtube.com/watch?v=s3IHTH5jrZ0)
+* Thank God it's Christmas
+  * [Queen](https://www.youtube.com/watch?v=6V5mtUff6ik)
+  * [Bob Esponja](https://www.youtube.com/watch?v=aHlEja1sJhU)
+* It's Beginning To Look A Lot Like Christmas
+  * [Frank Sinatra](https://www.youtube.com/watch?v=7jnH0T6ELGo)
+  * [Calamardo](https://www.youtube.com/watch?v=NH_8f7NE_hk)
+  * [Darth Vader](https://www.youtube.com/watch?v=5ctcmq4XOs4)
+
+I think the result is impressive, and the voice characteristics are perfectly recognizable. However, the notes remain exactly the same, with little variety from the original, and perhaps it could be interesting to add a bit more variability in the performance.
+:::

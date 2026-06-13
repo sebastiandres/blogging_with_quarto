@@ -1,9 +1,11 @@
 ---
 title: "Blog"
+title-en: "Blog"
 listing:
   contents: ../posts/**/*.qmd
   sort: "date desc"
   type: default
+  template: listing-bilingual.ejs.md
   categories: true
   sort-ui: false
   filter-ui: false

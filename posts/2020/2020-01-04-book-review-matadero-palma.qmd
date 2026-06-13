@@ -1,12 +1,23 @@
 ---
 title: Matadero Palma
 description: "El mundo del matadero Franklin en los años 1940, con todos sus personajes memorables."
+description-en: "The world of the Franklin slaughterhouse in the 1940s, with all its memorable characters."
 date: "2020-01-04"
 author: Simón Soto
 genre:  Ficción
 rating: 9
 categories: [lectura]
+categories-en: [reading]
 ---
+
+::: {.content-visible when-profile="esp"}
 Lo compré después que lo recomendaron en un taller de narración policial. No era lo que esperaba, sino que mucho más. El mundo del matadero Franklin en los años 1940, con todos sus personajes memorables. Un verdadero clásico moderno.
 
 ## Rating: 9/10
+:::
+
+::: {.content-visible when-profile="eng"}
+I bought it after it was recommended in a crime-fiction writing workshop. It wasn't what I expected, but much more. The world of the Franklin slaughterhouse in the 1940s, with all its memorable characters. A true modern classic.
+
+## Rating: 9/10
+:::

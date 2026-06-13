@@ -1,18 +1,37 @@
 ---
 title: "Inteligencia y Creencias Limitantes"
+title-en: "Intelligence and Limiting Beliefs"
 description: "Aprendizajes inesperados al resolver el cubo de rubik"
+description-en: "Unexpected lessons from solving the rubik's cube"
 date: "2021-10-29"
 categories: [reflexión]
+categories-en: [reflection]
 ---
 
+::: {.content-visible when-profile="esp"}
 En uno de los newsletter a los que estoy suscrito, el autor comentaba sobre cómo había aprovechado un tiempo de cuarentena por COVID para aprender a resolver el cubo de rubik. Yo varias veces había intentado armarlo y nunca había logrado armar más de 2 caras. Me frustraba no poder armarlo, pero pensaba que se trataba de alguna habilidad o inteligencia que yo no tenía, así que dejé de intentarlo. Que alguien dijera taxativamente que todos podían resolver el cubo  picó mi curiosidad, y después de seguir los enlaces y algunos días de práctica, también logré armarlo.
 
 Esto me generó una desilución, un aprendizaje y una metáfora.
 
-La desilución venía de algo que consideraba difícil y una muestra de inteligencia, y que terminó resultando más bien una habilidad mecánica.  
+La desilución venía de algo que consideraba difícil y una muestra de inteligencia, y que terminó resultando más bien una habilidad mecánica.
 
-El aprendizaje viene de que el pensar que el cubo de Rubik era difícil era una "creencia limitante". Como pensaba que era más dificil de lo que yo podía entregar, no me molesté siquiera en buscar información sobre cómo resolverlo. Y cuando alguien me mostró que era fácil, la "creencia limitante" desapareció y en unos días ya pude aprenderlo. 
+El aprendizaje viene de que el pensar que el cubo de Rubik era difícil era una "creencia limitante". Como pensaba que era más dificil de lo que yo podía entregar, no me molesté siquiera en buscar información sobre cómo resolverlo. Y cuando alguien me mostró que era fácil, la "creencia limitante" desapareció y en unos días ya pude aprenderlo.
 
 La metáfora es perfecta. Nunca aprenderemos lo que consideramos que es más difícil de lo que podemos aprender. Una profesía autocumplida. Y lo peor, es sabemos que no hay nada que sea imposible de aprender. Todo está a nuestro alcance, sobre todo hoy en día, con toda la información que está disponible en internet. Sólo hay 2 temas: (1) creer que podemos aprenderlo y (2) motivarse de manera contínua hasta aprenderlo.
 
 Moraleja: ¡Cuidar de poner en pedestal una "inteligencia", porque la mayor parte del tiempo es una habilidad que puede aprenderse!
+:::
+
+::: {.content-visible when-profile="eng"}
+In one of the newsletters I'm subscribed to, the author commented on how he had taken advantage of a COVID quarantine period to learn how to solve the rubik's cube. I had tried several times to put it together and had never managed to complete more than 2 faces. It frustrated me not being able to solve it, but I thought it was about some skill or intelligence that I didn't have, so I stopped trying. Hearing someone state categorically that everyone could solve the cube sparked my curiosity, and after following the links and a few days of practice, I managed to solve it too.
+
+This gave me a disappointment, a lesson and a metaphor.
+
+The disappointment came from something I considered difficult and a sign of intelligence, which ended up being more of a mechanical skill.
+
+The lesson comes from the fact that thinking the Rubik's cube was difficult was a "limiting belief". Since I thought it was harder than what I could deliver, I didn't even bother to look for information on how to solve it. And when someone showed me that it was easy, the "limiting belief" disappeared and in a few days I was able to learn it.
+
+The metaphor is perfect. We will never learn what we consider to be harder than what we can learn. A self-fulfilling prophecy. And the worst part is that we know there's nothing that is impossible to learn. Everything is within our reach, especially nowadays, with all the information available on the internet. There are only 2 issues: (1) believing that we can learn it and (2) motivating ourselves continuously until we learn it.
+
+Moral: Be careful about putting an "intelligence" on a pedestal, because most of the time it's a skill that can be learned!
+:::

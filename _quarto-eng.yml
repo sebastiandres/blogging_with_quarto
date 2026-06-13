@@ -1,5 +1,10 @@
 project:
   output-dir: ./_site/eng
+  render:
+    - "*.qmd"
+    - "*/*.qmd"
+    - "!README.md"
+    - "!pages/listing-bilingual.ejs.md"
 
 website:
   title: "Sebastián Flores Benner"
@@ -12,12 +17,19 @@ website:
         href: pages/about.qmd
       - text: "Blog"
         href: pages/blog.qmd
+      - text: "Stories"
+        href: pages/historias.qmd
       - text: "Talks"
         href: pages/charlas.qmd
       - text: "Apps & Repos"
         href: pages/proyectos.qmd
       - text: "Publications"
         href: pages/publicaciones.qmd
+      - text: Tutoriales
+        menu:
+          - tutorial/quarto.qmd
+          - tutorial/streamlit.qmd
+          - tutorial/storytelling_by_sanderson.qmd
     right:
       - icon: rss
         href: pages/blog.xml  # Note: This matches the 'blog.qmd' file name

@@ -1,13 +1,17 @@
 ---
 title: Microcuentos tecnología
+title-en: Technology Flash Fiction
 description: Cuentos enviados a concurso uPlanner en 100 palabras
+description-en: Stories submitted to the uPlanner 100-word contest
 date: "2021-06-01"
 categories: [escritura, microcuentos]
+categories-en: [writing, flash fiction]
 ---
 
+::: {.content-visible when-profile="esp"}
 ## Todo cobra sentido
 
-Esperando el metro, escuchó una conversación entre dos estudiantes. 
+Esperando el metro, escuchó una conversación entre dos estudiantes.
 ¿Porqué elegiste esa U? - preguntó uno.
 Y el otro respondió: ¿No cachai? Usan uPlanner.
 
@@ -18,3 +22,20 @@ Tu perfil y antecedentes laborales son impecables, serías un buen fit para Cust
 ## Siglas
 
 El PM le comentó al PO que el reporte PBI de NPS estaba fallando por un problema del ETL, cuando el SQL no conectaba a la VPN. El PO había estado en JIRA, loggeando el MVP de GDPR para SaaS. El PM le pidió al PO no olvidar su OKR para aumentar el ARR mediante un mejor SEO para SMB. El CEO les recordó el valor de la cooperación, o los mandaría a la CTM mediante una expedita PLR, ¿OK?
+:::
+
+::: {.content-visible when-profile="eng"}
+## It all makes sense
+
+Waiting for the subway, he overheard a conversation between two students.
+Why did you choose that university? - asked one.
+And the other answered: Don't you get it? They use uPlanner.
+
+## Nica
+
+Your profile and work history are impeccable, you'd be a good fit for Customer Success. I thanked the interviewer, and went on to say goodbye to Nicolás Diaz, who had forwarded me the job offer. I also said goodbye to Nicolás Walters and Nicolás Mena, hoping I had made a good impression. The next day they called me. I'm sorry -said Nicole Lorenzini- but we already have a Nicolás González, and it would be too confusing for everyone.
+
+## Acronyms
+
+The PM told the PO that the NPS PBI report was failing because of an ETL problem, when the SQL wouldn't connect to the VPN. The PO had been in JIRA, logging the MVP of GDPR for SaaS. The PM asked the PO not to forget his OKR to increase ARR through better SEO for SMB. The CEO reminded them of the value of cooperation, or he'd send them to hell with a swift PIP, OK?
+:::

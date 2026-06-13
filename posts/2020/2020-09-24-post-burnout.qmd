@@ -1,11 +1,15 @@
 ---
 title: Burnout — experiencia y aprendizaje
+title-en: Burnout — experience and learning
 description: ¿Cómo reconocer y combatir el agotamiento laboral?
+description-en: How to recognize and fight work burnout?
 date: "2020-09-24"
 categories: [reflexión]
+categories-en: [reflection]
 ---
 
-_Disclaimer:_ 
+::: {.content-visible when-profile="esp"}
+_Disclaimer:_
 
 _Estos son apuntes personales de mis lecturas sobre el tema. Espero a alguien más le puedan servir._
 
@@ -37,3 +41,39 @@ En mi caso, el burnout viene de poner poca atención a las señales y exceso de 
 Algunas lecturas:
 * The Opposite of Burnout — Liz Garrett (85 páginas) corto y preciso. Actividades específicas a realizar, con buenos consejos. Recomendado.
 * Burnout to Breakthrough — Eileen McDargh (115 páginas) Tiene capítulos cortos pero no me gustó tanto. Habían demasiados ejercicios y preguntas, por lo que el flujo de lectura estaba muy interrumpido.
+:::
+
+::: {.content-visible when-profile="eng"}
+_Disclaimer:_
+
+_These are personal notes from my readings on the subject. I hope they can be useful to someone else._
+
+My summary: don't hide it, on the contrary, talk about it, get opinions and understand that other people also suffer it or have suffered it in the past.
+
+"Burnout" — work fatigue or extreme exhaustion — is characterized by presenting some of the following feelings:
+* A permanent feeling of exhaustion, failure.
+* Difficulty concentrating, low productivity and low self-esteem.
+* Fantasy of escape and even suicide.
+* Headache, tachycardia or insomnia.
+* Apathy, boredom, impatience or irritability.
+
+First of all, you have to let go of the shame and stigma. Having burnout does not (necessarily) mean not wanting or not appreciating your work. It is a medical condition of physical and mental exhaustion. Recognizing burnout is the first step to regaining control and interest in your life.
+
+It is said to affect "Type A" people (competitive, detail-oriented and workaholics) more than "Type B" people (relaxed and non-neurotic)
+
+![](../_images/2020-09-24-burnout/burnout.jpeg "Tipo A y tipo B relajándose (Owlturd).")
+
+There are certain dimensions to review to reduce the impact of burnout:
+
+* **Diet**: reduce toxins such as sugar, fats or alcohol. It is usually very difficult because precisely those toxins give us pleasure and tend to be (short-term) escape routes.
+* **Sleep**: You need to sleep to recover in order to have energy and clarity. It is simply a physiological matter. You have to plan schedules to get deep and restorative sleep.
+* **Body**: burnout is a condition that feeds on a disconnection with the body and the physical world, from spending too much time on more mental tasks. Exercise and meditation are 2 tools to connect with your body and with the present moment. It is not necessary to allocate large amounts of time: HIIT workouts and 5 or 10 minute meditations can be integrated into the routine permanently without much impact.
+* **Attunement and communication**: recognizing the signs and the level of stress allows you to seek support and communicate it, without shame. Putting burnout into words is simply liberating, and provides containment and relief.
+* **Mindset**: maintaining a positive mindset about our life and accepting personal responsibility for the situation can help us.
+
+In my case, burnout comes from paying little attention to the signs and excessive screen time (laptop, smartphone, television), amplified by quarantine stress. To counteract it, I reduced from four to a single cup of bean coffee a day, in addition to making sure to sleep at least 7 or ideally 8 hours a day. I re-established exercise and meditation routines, and reduced the amount of time in front of screens. I stopped being available at any hour, trying to prioritize tasks and meetings on the topics that are most interesting to me. And perhaps most importantly, I stopped hiding it, making a point of checking whether other people might also be suffering from it and assuming that the responsibility for my health is only mine and that I cannot expect improvements without making changes.
+
+Some readings:
+* The Opposite of Burnout — Liz Garrett (85 pages) short and precise. Specific activities to carry out, with good advice. Recommended.
+* Burnout to Breakthrough — Eileen McDargh (115 pages) It has short chapters but I didn't like it as much. There were too many exercises and questions, so the reading flow was very interrupted.
+:::

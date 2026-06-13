@@ -6,12 +6,26 @@ categories: [python, pyschool]
 image: "./images/2024-08-23-pyschool/cover.png"
 ---
 
-El viernes 23 de agosto por fin realizamos la [PySchool](https://pyschool.cl/). Habíamos programado este evento para unas semanas antes, pero torrenciales lluvias nos obligaron a suspender. 
+::: {.content-visible when-profile="esp"}
+El viernes 23 de agosto por fin realizamos la [PySchool](https://pyschool.cl/). Habíamos programado este evento para unas semanas antes, pero torrenciales lluvias nos obligaron a suspender.
 
 Durante una mañana de talleres tratamos de dar a conocer Python como lenguaje de programación y sus aplicaciones de una manera sencilla y sin conocimientos previos requeridos. Ésta fue la primera vez que realizábamos el evento, así que sabíamos que había harto por aprender y mejorar. Aún así, el evento fue un éxito y tuvimos muy buenos comentarios de los estudiantes.
 
-Mi rol en el evento fue de gestor y coordinador: diseñar la estructura del evento, coordinar con DUOC UC Valparaíso las fechas y las actividades, armar la primera versión de la página, buscar talleristas, y ese tipo de cosas. Me hubiera gustado dictar uno de los talleres, pero quería darle espacio y protagonismo a nuestros talleristas (Yileanne, Valeska, Lilina, Francisco, Cristián y Bastián) para que ellos se empoderaran del evento. Francisco me ayudó enormemente a generar el material del evento, que funcionó perfecto ese día. Que los estudiantes tengan que acceder a una página estática, siempre disponible en línea (y sin publicidad, como comentó uno) fue fácil y rápido - no se requirieron usuarios, credenciales ni nada. Sólo un navegador. La combinación de quarto + pyodide la verdad es que funciona muy muy bien. 
+Mi rol en el evento fue de gestor y coordinador: diseñar la estructura del evento, coordinar con DUOC UC Valparaíso las fechas y las actividades, armar la primera versión de la página, buscar talleristas, y ese tipo de cosas. Me hubiera gustado dictar uno de los talleres, pero quería darle espacio y protagonismo a nuestros talleristas (Yileanne, Valeska, Lilina, Francisco, Cristián y Bastián) para que ellos se empoderaran del evento. Francisco me ayudó enormemente a generar el material del evento, que funcionó perfecto ese día. Que los estudiantes tengan que acceder a una página estática, siempre disponible en línea (y sin publicidad, como comentó uno) fue fácil y rápido - no se requirieron usuarios, credenciales ni nada. Sólo un navegador. La combinación de quarto + pyodide la verdad es que funciona muy muy bien.
 
 ![](./images/2024-08-23-pyschool/foto1.jpg "© 2024 Sebastian Flores (CC BY-SA)")
 
 ![](./images/2024-08-23-pyschool/foto1.jpg "© 2024 Sebastian Flores (CC BY-SA)")
+:::
+
+::: {.content-visible when-profile="eng"}
+On Friday, August 23, we finally held the [PySchool](https://pyschool.cl/). We had scheduled this event for a few weeks earlier, but torrential rains forced us to postpone it.
+
+During a morning of workshops we tried to introduce Python as a programming language and its applications in a simple way, with no prior knowledge required. This was the first time we held the event, so we knew there was plenty to learn and improve. Even so, the event was a success and we got very good feedback from the students.
+
+My role at the event was as organizer and coordinator: designing the event structure, coordinating the dates and activities with DUOC UC Valparaíso, building the first version of the website, finding workshop leaders, and that kind of thing. I would have liked to lead one of the workshops, but I wanted to give space and prominence to our workshop leaders (Yileanne, Valeska, Lilina, Francisco, Cristián and Bastián) so they could take ownership of the event. Francisco helped me enormously in creating the event material, which worked perfectly that day. Having students access a static page, always available online (and ad-free, as one of them noted) was easy and fast - no users, credentials, or anything were required. Just a browser. The combination of quarto + pyodide really works very, very well.
+
+![](./images/2024-08-23-pyschool/foto1.jpg "© 2024 Sebastian Flores (CC BY-SA)")
+
+![](./images/2024-08-23-pyschool/foto1.jpg "© 2024 Sebastian Flores (CC BY-SA)")
+:::

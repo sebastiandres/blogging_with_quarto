@@ -1,10 +1,19 @@
 ---
 title: Sandman volumen 1
 description: "Un comic con grandes profundidades"
+description-en: "A comic with great depth"
 author: Neil Gaiman et al
 date: "2020-01-18"
 genre:  Ficción
 rating: 9
 categories: [lectura]
+categories-en: [reading]
 ---
+
+::: {.content-visible when-profile="esp"}
 Había leído todas las historias cuando adolescente, comprándolas en desorden y a diversos precios en las escasas tiendas con cómics de San Antonio en los 90’s, pero al leerlas en orden y con anotaciones encontré una profundidad y coherencia mucho mayor. Es una gran obra de arte. Junto con “El libro del cementerio”, lo mejor de Gaiman. La forma en que se van conectando los personajes y las historias es magistral.
+:::
+
+::: {.content-visible when-profile="eng"}
+I had read all the stories as a teenager, buying them out of order and at various prices in the few comic shops in San Antonio in the 90s, but reading them in order and with annotations I found a much greater depth and coherence. It's a great work of art. Along with “El libro del cementerio”, the best of Gaiman. The way the characters and stories connect is masterful.
+:::

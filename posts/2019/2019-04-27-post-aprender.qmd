@@ -1,10 +1,14 @@
 ---
 title: Lo que nos motiva a aprender y trabajar
+title-en: What motivates us to learn and work
 description: ¿Porqué aprendemos fácil algunas cosas y otras nos cuestan tanto?
+description-en: Why do we learn some things easily while others are so hard for us?
 date: "2019-04-27"
 categories: [opinión, educación]
+categories-en: [opinion, education]
 ---
 
+::: {.content-visible when-profile="esp"}
 Estoy leyendo *“Who Own the Learning”* de Alan November. La anécdota inicial del libro me encanta. Alan cuenta que tuvo que volver a la escuela, durante el verano, para reprender un alumno que había entrado sin autorización a la sala de computación. Sin embargo, el estudiante no había realizado daños, sino que simplemente había pasado varias horas sentado frente a la pantalla aprendiendo en una profunda concentración. Era una paradoja: ¿tenía que regañar a un alumno por hacer lo que debe realizarse en una escuela, sólo por no respetar las reglas? Este estudiante estaba aprendiendo por cuenta propia, con una alta motivación intrínseca e incluso contra las mismas restricciones que la escuela le imponía. El estudiante mostraba con orgullo el código que había desarrollado, y atribuía su facilidad para aprender porque el computador le entregaba rápidamente retroalimentación sobre cada línea en su código. Creo que a todos nosotros en el mundillo de la informática nos ha pasado un momento similar, el momento en que algo hace click en la cabeza y nos hace gritar eureka, embriagados con el haber aprendido algo por nuestra propia cuenta gracias a la retroalimentación inmediata en la pantalla. Ese estudiante, en unas horas, pudo aprender más por su propia cuenta que en un semestre de clases gracias a su concentración, interés y motivación.
 
 Lo que me ha sorprendido al leer el libro es que los elementos principales de la narrativa son los mismos de un video que había visto hace un tiempo y que me había causado mucho impacto:
@@ -28,3 +32,30 @@ El libro de November, y el video de Daniel Pink, llegan a la misma conclusión: 
 video https://www.youtube.com/embed/ebJHzpEy4bE 
 title='Alan November — Who Owns the Learning (11 minutos, 2011)' 
 >}}
+:::
+
+::: {.content-visible when-profile="eng"}
+I'm reading *“Who Own the Learning”* by Alan November. The book's opening anecdote delights me. Alan tells how he had to go back to school, during the summer, to reprimand a student who had entered the computer lab without authorization. However, the student hadn't caused any damage, but had simply spent several hours sitting in front of the screen learning in deep concentration. It was a paradox: did he have to scold a student for doing what should be done at a school, just for not following the rules? This student was learning on his own, with high intrinsic motivation and even against the very restrictions the school imposed on him. The student proudly showed the code he had developed, and attributed his ease of learning to the fact that the computer quickly gave him feedback on each line in his code. I think all of us in the computing world have had a similar moment, the moment when something clicks in your head and makes you shout eureka, intoxicated by having learned something on your own thanks to the immediate feedback on the screen. That student, in a few hours, was able to learn more on his own than in a semester of classes thanks to his concentration, interest and motivation.
+
+What has surprised me while reading the book is that the main elements of the narrative are the same as those of a video I had watched some time ago and that had made a big impression on me:
+
+{{< 
+video https://www.youtube.com/embed/IhJ4CDCfASI  
+title='Daniel H. Pink — The surprising truth about what motivate us (11 minutes, 2010)' 
+>}}
+
+November's book, and Daniel Pink's video, reach the same conclusion: what motivates us as workers and as students is purpose, autonomy, and mastery.
+
+**Seeking Purpose**: How many times have we been in a class that has no reason whatsoever, or learning concepts, names or historical dates that we know we'll forget as soon as the test is over? It turns out to be a waste of time for everyone; for the teacher who observes the students' lack of interest, and for the students who perceive the teacher as a machine that delivers content without reflecting on its importance. As in any job, to achieve deep motivation, there needs to be a purpose. Alan proposes that tasks and projects have a global scope, so that the tasks are not just between the student and the teacher, and so that the content of the tasks can endure over time and have a greater purpose. For example, (1) putting together summary videos of the content that students in other parts of the world can watch, (2) creating notes by turns to share with the other classmates, (3) creating wikis or subject notes that improve year by year, or (4) carrying out projects that directly benefit a community. In the case of computing courses, having open source code repositories that the students themselves can update and look at, even if they aren't formally taking the course, has become a common practice.
+
+**Achieving Mastery**: we people seek to improve ourselves in order to become better at what we do, even at the cost of accidents and injuries. For example, practicing musical instruments, magic tricks, parkour routes or complex skate pirouettes, which have no greater practical value than knowing that one has managed to master a skill. However, for someone who has managed to advance in their expertise and skill, it is an incredible (and addictive) satisfaction. In terms of learning, it is important not to deliver the content of a course rigidly and not allowing students to go deeper and reach the level of mastery they want in their knowledge. The book argues that children will seek to achieve mastery of a subject when, for example, they have to explain it to their peers in videos or by sharing their notes. In a way, it relates to the principles of Gamification that are used for all kinds of learning on platforms and apps, such as Duolingo. The desire to beat “just one more level” remains regardless of the level we are at and makes us always seek to surpass ourselves.
+
+**Attaining Autonomy**: it is the desire to direct our own actions. As both students and workers, we have a clear idea about the things that need to be done, the priority each of them has, and the time that will be needed. There is nothing more frustrating than having an external figure dictate step by step (and in the wrong order) the tasks to be carried out, because that order which should serve everyone in practice serves no one. For students to achieve autonomy, they must be given freedom, which often turns out to be frightening for teachers. However, the benefits far exceed all the risks. As a teacher, I have observed this directly. When you hand out an assignment with 10 questions to answer, the student only explores their ability to answer what the teacher wants to hear, and the student can at most reach the level expected by the teacher. When you propose that they carry out projects that are of interest to them, they have to explore how to frame the problem, how to solve it, where to get reliable information, how to present it in the best way, and many times, they far exceed the level and depth that one as a teacher expected.
+
+**Bonus**: While creating this article I found a ted talk by Alan November, where Alan November cites Daniel Pink. So, indeed, there was a direct link between the two!
+
+{{< 
+video https://www.youtube.com/embed/ebJHzpEy4bE 
+title='Alan November — Who Owns the Learning (11 minutes, 2011)' 
+>}}
+:::

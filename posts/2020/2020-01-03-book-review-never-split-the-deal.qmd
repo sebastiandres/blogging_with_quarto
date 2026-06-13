@@ -1,12 +1,23 @@
 ---
 title: Never split the deal
 description: "Mezcla de anécdotas de distintas negociaciones y una larga lista de consejos."
+description-en: "A mix of anecdotes from different negotiations and a long list of tips."
 date: "2020-01-03"
 author: Chriss Voss
 genre:  No ficción (¿+ biografía?)
 rating: 10
 categories: [lectura]
+categories-en: [reading]
 ---
+
+::: {.content-visible when-profile="esp"}
 Mezcla de anécdotas de distintas negociaciones y una larga lista de consejos. Muy, pero muy bueno. De esos libros que deseas que alguien te hubiera recomendado antes. No me esperaba que este libro me hiciera pensar, reír y emocionar.
 
 ## Rating: 10/10
+:::
+
+::: {.content-visible when-profile="eng"}
+A mix of anecdotes from different negotiations and a long list of tips. Very, very good. One of those books you wish someone had recommended to you earlier. I didn't expect this book to make me think, laugh, and feel moved.
+
+## Rating: 10/10
+:::

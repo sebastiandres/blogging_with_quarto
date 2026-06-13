@@ -1,3 +1,4 @@
+::: {.content-visible when-profile="esp"}
 ---
 title: "Escritura Creativa"
 subtitle: "Apuntes del curso de Bradon Sanderson"
@@ -962,5 +963,977 @@ Propusieron hacer una gira de 10 ciudades por $1000 cada uno. La editorial acept
 **Enlaces**
 
 * <https://www.youtube.com/watch?v=tHdYX418PaA>
+
+:::
+
+:::
+
+::: {.content-visible when-profile="eng"}
+---
+title: "Creative Writing"
+subtitle: "Notes from Brandon Sanderson's course"
+---
+
+Notes from Brandon Sanderson's [2020 Creative Writing Lectures at BYU](https://www.youtube.com/playlist?list=PLSH_xM-KC3Zv-79sVZTTj-YA6IAqh8qeQ).
+Note: I'll use BS as an acronym for Brandon Sanderson.
+
+::: {.callout-note collapse="true" icon=false}
+## 1: Introduction
+
+**Writing advice**
+
+1. Consistency in writing:
+   * The key is to develop good habits and write consistently.
+   * Every writer has their own pace: some write 4 hours every day, others only 4 hours on Saturdays.
+   * At 500 words per hour, 4 hours a week, you can write a novel in a year.
+2. Types of writers:
+   * Gardeners (discovery writers): explore the story while writing.
+   * Architects (outline writers): plan the structure before writing.
+   * Most writers use a combination of both methods.
+   * It's important to know your style so you can enjoy the writing process and not get frustrated along the way. Don't write a detailed outline unless it helps your writing.
+3. Skill development:
+   * The Magic: The Gathering player metaphor: with practice, certain skills become instinctive, freeing up mental space to handle more complex aspects.
+4. Life-writing balance:
+   * It's important to have a real life to nourish your writing.
+   * Pay attention to the danger of becoming obsessed and neglecting relationships.
+5. Creative process:
+   * Writers don't "live in fantasy worlds," but rather build something consciously and creatively.
+6. Writing pace:
+   * Productivity varies during a session (e.g., 200 words in the first hour, 1000 in the third).
+   * Interruptions can reset the process and cause significant delays.
+7. Perseverance:
+   * Finishing a novel is a major accomplishment. Few people finish a novel.
+   * Focus on what you can control: finishing stories, being consistent, keeping up your enthusiasm.
+8. Writing groups:
+   * They can be very useful as a support structure and for receiving feedback.
+   * Warning: novice writers may try to change your story to fit their style. Be careful to listen to feedback but not to accept all of it.
+9. Tips for giving feedback:
+   * Be descriptive, not prescriptive (e.g., "I got bored" instead of "you should add an action scene").
+   * Share your natural reactions, like a test audience for TV commercials.
+10. Tips for receiving feedback:
+    * Write everything down without making immediate changes.
+    * Don't defend or explain yourself during the session.
+11.  Structure of feedback sessions:
+     * Start with positive aspects.
+     * Then move on to "things that deserve a second look."
+
+**Anecdotes**
+
+* This BYU course (Brigham Young University, in Utah) was originally going to be taught by Orson Scott Card (Ender's Game), but in the end another professor taught it. Brandon took this class when it was taught by David Wolverton (whose author name is Dave Farland, the Runelords book series) in 2000, and he considered it the most valuable class of his university career. Brandon started teaching it in 200?, before becoming a famous writer.
+* At a party, when he said he was a writer, someone assumed he was unemployed, but he had made the New York Times bestseller list the week before.
+Brandon Sanderson shares several interesting personal anecdotes in this transcript:
+* He got published thanks to Dan Wells introducing him to an editor at a convention.
+* He worked the graveyard shift at a hotel, writing from 11 PM to 5 AM while studying and working full-time.
+
+**References**
+
+1. "On Writing" by Stephen King.
+2. The works of George R.R. Martin.
+3. The works of Joe Abercrombie.
+4. The works of Brandon Mull.
+5. The works of Shannon Hale.
+6. The works of Kevin J. Anderson.
+7. The works of Dan Wells
+
+**Links**
+
+* <https://www.youtube.com/watch?v=-6HOdHEeosc>
+
+:::
+
+::: {.callout-note collapse="true" icon=false}
+## 2: Plot - Part 1
+
+**Writing advice**
+
+1. There's no fixed starting point for writing a story. You can begin with the plot, the character, or the setting, and it's different for every book.
+2. Stories are made up of three main elements: plot, character, and setting. These elements are bound together by conflict.
+3. Ideas for these elements can arise separately and then combine to form a story.
+4. You can find inspiration in existing works. For example, Sanderson was inspired by Harry Potter and The Lord of the Rings to create Mistborn.
+5. Being open to unconventional ideas or ones that subvert expectations can lead to interesting stories.
+6. Conflict is crucial for binding the elements of the story together and making it compelling.
+7. Don't be afraid to mix genres or seemingly incompatible ideas. Sanderson mentions how Jim Butcher's Codex Alera series came from combining the lost Roman legion with Pokémon.
+8. Consider how worldbuilding decisions can affect plot and characters. For example, Sanderson mentions how the idea of the mist in Mistborn arose from personal experiences and was integrated into the story.
+9. Be willing to revise and rewrite parts of the story if they don't work, even if you personally like them. Sanderson mentions having to rewrite parts of Oathbringer and Starsight based on reader feedback.
+10. Maintaining a sense of progress in the narrative is important for keeping readers hooked. Sanderson mentions how a map at the start of a book kept him interested in the story.
+
+**Anecdotes**
+
+- Origin of **Mistborn**: the idea arose while reading Harry Potter and thinking about how Dark Lords never succeed. He wondered what would happen if, at the end of The Lord of the Rings, Sauron had won. He commented, "Man, these Dark Lords never get a break. It's always some dumb kid comes along and ruins the plan they've been setting up for a lifetime."
+- On the inspiration for the **Mistborn** magic system: He says it came to him while watching an **Ocean's Eleven** movie, thinking about what a heist story in a fantasy world would be like.
+- On the visual inspiration for the mist in **Mistborn**: He recounts that it came to him while driving through a fog bank, combined with the memory of seeing the Washington D.C. National Cathedral lit up at night.
+- The Jim Butcher anecdote: He relates how Jim Butcher wrote the **Codex Alera** series based on the challenge of combining two seemingly incompatible ideas: the lost Roman legion and Pokémon.
+- His experience reading **Inferno** by Larry Niven and Jerry Pournelle: He explains how the map at the start of the book kept him hooked on the story, making him realize the importance of a sense of progress in a narrative.
+- Problems with a sequence in **Oathbringer**: He tells how he had to rewrite a part of the book because beta readers found it boring, even though he thought it was interesting.
+- A similar situation with **Starsight**: He mentions that he also had to make significant revisions due to problems with not fulfilling the story's initial promises.
+
+**References**
+
+1. Mistborn - Series by Brandon Sanderson
+2. Harry Potter - Series by J.K. Rowling
+3. The Lord of the Rings - J.R.R. Tolkien
+4. Codex Alera - Series by Jim Butcher
+5. The Dresden Files - Series by Jim Butcher
+6. Inferno - Larry Niven and Jerry Pournelle
+7. The Mote in God's Eye - Larry Niven and Jerry Pournelle
+8. Ringworld - Larry Niven
+9. The Divine Comedy (specifically the Inferno) - Dante Alighieri
+10. Star Wars (movies)
+11. Indiana Jones and the Raiders of the Lost Ark (movie)
+12. Sneakers (movie)
+13. The Sting (movie)
+14. The Great Train Robbery - Michael Crichton
+15. Inception (movie)
+16. Oathbringer - Brandon Sanderson (part of the Stormlight Archive series)
+17. Skyward - Brandon Sanderson
+18. Starsight - Brandon Sanderson
+19. The Eye of the World - Robert Jordan
+20. Empire Strikes Back and Return of the Jedi (Star Wars movies)
+21. While You Were Sleeping (movie)
+22. Into the Woods (musical/movie)
+23. Dragonriders of Pern - Anne McCaffrey
+
+**Links**
+
+* <https://www.youtube.com/watch?v=jrIogch5DBU>
+
+:::
+
+::: {.callout-note collapse="true" icon=false}
+## 3: Plot - Part 2
+**Writing advice**
+
+Here is a detailed summary of the main writing tips given in this class:
+
+1. Plot structure:
+   - Identify the key elements: promises, progress, and payoffs.
+   - Use plot archetypes (such as the heist, the mystery, the relationship) to structure your story.
+   - Consider using structures like the Hero's Journey or the Three-Act format, but don't be too rigid in following them.
+2. Outlining:
+   - Brandon uses an outlining method that includes sections for characters, setting, and plot.
+   - For each plot, define the final goal and then work backwards, creating plot points that lead to that goal.
+   - Use bullet points to outline the progress steps in each plot.
+3. Multiple plots:
+   - Longer stories usually have multiple intertwined plots.
+   - Make sure each plot has its own sense of progress.
+   - Try to have the climaxes of different plots converge for greater impact.
+4. Plot archetypes:
+   - Analyze why people enjoy certain types of stories (for example, heists, mysteries, romances).
+   - Identify the key elements that make these archetypes work.
+   - Consider how you can put a fresh spin on a familiar archetype.
+5. Progress and tension:
+   - Make sure there's a clear sense of progress throughout the story.
+   - Raise the stakes and tension as the plot advances.
+   - Use try-fail cycles to create tension and conflict.
+6. Discovery writing:
+   - If you're a discovery writer, consider using the "yes, but/no, and" method to generate conflict and progress.
+   - After writing, look for ways to connect events into a more cohesive plot.
+7. Flexibility:
+   - There's no single correct way to structure a story.
+   - Experiment with different methods and find what works best for you.
+8. Balance:
+   - In longer stories, balance multiple plots and make sure none of them is lost for too long.
+9. Promises and payoffs:
+   - Make sure the promises made at the beginning of the story are fulfilled in a satisfying way.
+10. Characters and relationships:
+   - Use plots to develop meaningful character arcs.
+   - Consider how relationships between characters can drive the plot.
+11. Setting:
+   - The setting can be very creative as long as the characters and plot are relatable.
+12. Revision:
+   - Even discovery writers usually need to revise to reinforce plot structure.
+13. Study and practice:
+   - Analyze stories you like to understand how their plots work.
+   - Practice different methods of structuring plots to find what works best for you.
+
+**Anecdotes**
+
+1. He says George Lucas had Anakin Skywalker undergo a "virgin birth" in Episode I, following Campbell's monomyth very literally, which Brandon considers an example of following a narrative structure too rigidly.
+2. He mentions that he has a writer friend who writes each book twice from scratch - the first version acts as a draft for the second, definitive version. Brandon says he personally would find that process "miserable."
+3. He mentions that Mary Robinette Kowal taught him a discovery-writing method called "yes, but/no, and" that he finds useful.
+4. He recounts that when he was a student, the chairs in this class are much more comfortable than the ones he had, joking that students could comfortably fall asleep if they wanted to.
+5. He tells how Dave Wolverton (another author) used to describe romantic plots as "braiding roses," a metaphor that stuck with Brandon for 20 years.
+
+**References**
+
+1. Save the Cat - A screenwriting book mentioned as a resource for structuring stories.
+2. The Hero's Journey / The Monomyth - Concept developed by Joseph Campbell, mentioned as a common narrative structure.
+3. Star Wars - Frequently used as an example to illustrate narrative structures like the Hero's Journey and the three-act format.
+4. Works of George R.R. Martin - Mentioned as a reference for discovery writing or "gardening."
+5. Works of Stephen King - Also mentioned as a reference for discovery writing.
+6. Pride and Prejudice - Mentioned as an example of duplicating romantic plots in a contrasting way.
+7. Mistborn - Sanderson's own novel, used to exemplify how he combines different plot archetypes.
+8. Way of Kings - Another of Sanderson's novels, used to exemplify complex structures in epic fantasy.
+9. Inception - Mentioned as an example of mini-heists leading to a big final heist.
+10. Hoosiers, Ender's Game, and The Way of Kings - Mentioned as examples of stories that use the "underdog sports" archetype in different ways.
+11. Oceans 11 and The Italian Job - Used to exemplify different heist plot structures.
+
+**Links**
+
+* <https://www.youtube.com/watch?v=Qgbsz7Gnrd8>
+
+:::
+
+::: {.callout-note collapse="true" icon=false}
+## 4: Questions and Answers
+**Writing advice**
+
+1. On the length of introductions:
+   - Make them as short as possible while achieving your goals for the type of story you're telling.
+   - Introduce the tone of the story and the character's main conflict as early as possible.
+   - Sell the reader on the character's personality in the first few chapters.
+   - The acceptable length can vary depending on the genre and the author's fame.
+2. On plots and subplots:
+   - Make sure the reader is invested in and engaged with the point-of-view characters.
+   - Make the right promises for each character and show progress on what you promised the reader.
+   - Treat each subplot as its own story if the characters are separated.
+   - If the characters are together, it's easier to alternate between subplots.
+3. On plot twists:
+   - Avoid making twists just for the sake of it.
+   - Ask yourself what emotion or purpose the twist adds to the story.
+   - Twists should expand the reader's understanding of the character or situation.
+   - It's better to escalate the conflict than to completely subvert it.
+4. On episodic stories:
+   - Use hooks at the end of each episode to promise something interesting in the next one.
+   - Avoid cheap tricks; it's better to reveal something meaningful than to simply cut on a suspenseful moment.
+5. On narrative points of view:
+   - The main ones are: first person (epistolary, retrospective, cinematic), third person limited, and omniscient.
+   - Each point of view has advantages and disadvantages:
+      - Epistolary: Allows mystery and immersion, but can strain credibility.
+      - Retrospective: Allows you to understand the character intimately, but reduces tension since you know they survive.
+      - Cinematic: Immediate and personal, makes unreliable narrators easier.
+      - Third limited: Best for large casts, allows contrast between perception and reality.
+      - Omniscient: Difficult to handle, requires building tension through anticipation rather than mystery.
+6. General advice:
+   - Finish the story even if you think something is fundamentally broken.
+   - The best cure for writer's block is to keep writing.
+   - As a new writer, your job is to become someone who can write great novels, not necessarily to write a great novel right away.
+
+**Anecdotes**
+
+1. He mentions a friend who published his first book at the same time as Brandon, but who didn't have the same success. This friend told him that his book subverted the expectations of the epic fantasy genre in the final quarter of the story, but Brandon reflects that this can be problematic if not handled well.
+2. He tells the anecdote of how the revelation that Darth Vader is Luke's father in The Empire Strikes Back is a perfect example of a twist that expands the conflict effectively.
+3. He talks about his experience with the book The Apocalypse Guard, which had problems and which he still doesn't know how to fix, despite being able to identify that something was wrong.
+4. He mentions that he had a similar problem with The Way of Kings in 2002, but that after thinking about it for 7-8 years, he finally knew how to fix it and rewrote it in 2009.
+5. He comments on the original Dune movie and how they tried to adapt the book's omniscient style using voiceovers for the characters' thoughts, which came out strange.
+6. He talks about how he used different points of view in Skyward, alternating between first person for the protagonist and third person limited for other characters in the interludes.
+
+**References**
+
+1. The "The Name of the Wind" series by Patrick Rothfuss
+2. "Dune" by Frank Herbert
+3. The "Broken Earth" trilogy by N.K. Jemisin
+4. "Diary of a Wimpy Kid"
+5. "Dracula" by Bram Stoker
+6. "Illuminae" by Amie Kaufman and Jay Kristoff
+7. "Sorcery and Cecelia"
+8. The Farseer Trilogy by Robin Hobb
+9. "The Hobbit" by J.R.R. Tolkien
+10. "Watchmen" by Alan Moore
+11. His own series "Mistborn"
+12. "Skyward" and "Steelheart," also by him
+13. "The Martian" by Andy Weir
+14. His "Alcatraz versus the Evil Librarians" series
+15. The "The Wheel of Time" series by Robert Jordan
+
+**Links**
+
+* <https://www.youtube.com/watch?v=zVXFNw-xz3Y>
+
+:::
+
+::: {.callout-note collapse="true" icon=false}
+## 5: Worldbuilding - Part 1
+
+**Writing advice**
+
+1. Sanderson's First Law: *"Your ability to solve problems with magic in a satisfying way is directly proportional to how well the reader understands said magic."*
+   - This law relates to anticipation and foreshadowing.
+   - It explains why solving problems with new powers at the end of a story can be unsatisfying.
+   - It suggests that magic systems can be placed on a spectrum between "sense of wonder" and "problem-solving."
+   - It emphasizes the importance of establishing the rules and limitations of magic before using it to solve important problems.
+1. Sanderson's Second Law: *"Flaws or limitations are more interesting than powers."*
+   - The limitations, flaws, and cost of a magic system usually generate more narrative potential than the powers themselves.
+   - It divides these elements into three categories:
+      a) Flaws: Aspects that can be improved with effort or a change of character.
+      b) Limitations: Inherent restrictions that must be accepted and worked around.
+      c) Costs: Consequences of using magic.
+   - It applies both to magic systems and to character development.
+1. Sanderson's Third Law: *"Before adding something new to your magic or story, see if you can expand what you already have."*
+   - It warns against the tendency to make things bigger or more complex without need.
+   - It suggests delving deeper into existing ideas instead of constantly adding new elements.
+   - It recommends focusing on developing a few elements well instead of having many superficial ones.
+1. Sanderson's Zeroth Law: *"Always err on the side of what is awesome."*
+   - It emphasizes starting with interesting or "cool" ideas and then working backwards to develop the system.
+   - It reminds you that the ultimate goal is to create a great story.
+Other important advice:
+1. Avoid excessive exposition (info-dumping) when introducing elements of the world.
+2. Use the "iceberg theory" for worldbuilding: explain parts of the world in detail and suggest depth without showing all of it.
+3. Combine different types of magic (hard and soft) to create contrast and depth. Sanderson suggests that the more you move toward hard magic, the more you can use it to solve problems satisfyingly, but you lose some of the sense of wonder associated with softer magic.
+   - **Hard magic** Has well-defined rules and limitations that are understandable to the reader. The reader understands what the magic can and cannot do. - It allows problems to be solved satisfyingly using magic, since the reader understands its mechanics. It's closer to the "magic as science" end of the spectrum. Example: Allomancy in Mistborn.
+   - **Soft magic** The rules and limitations are vaguer or unknown to the reader. It's not known for certain what the magic can do or what its consequences are. It generates more of a sense of awe and mystery. It's closer to the "sense of wonder" end of the spectrum. Example: Gandalf's magic in The Lord of the Rings.
+4. Consider how the limitations of magic can generate narrative tension.
+5.  Use the costs of magic to create interesting conflicts or to tie it to the world's economy.
+6.  Make sure that magical or worldbuilding elements serve the story and the characters, not the other way around.
+7.  Don't be afraid to discard rules if they don't work for your specific story.
+
+**Anecdotes**
+
+1. Origin of Mistborn: The idea arose while reading Harry Potter and thinking about how Dark Lords never succeed. He wondered what would happen if, at the end of The Lord of the Rings, Sauron had won.
+2. Inspiration for the Mistborn magic system: It came to him while watching an Ocean's Eleven movie, thinking about how entertaining a heist story in a fantasy world would be.
+3. Visual inspiration for the mist in Mistborn: It came to him while driving through a fog bank, combined with the memory of seeing the Washington D.C. National Cathedral lit up at night.
+4. Books he wrote that he had to fix due to various problems: "The Apocalypse Guard" and "The Way of Kings."
+5. Publishing experience: He wrote 13 novels before managing to get published, and only one of these was a sequel. This allowed him to always have several manuscripts in circulation to send to publishers.
+
+**References**
+
+1. "Mistborn" series by Brandon Sanderson
+2. "The Lord of the Rings" by J.R.R. Tolkien
+3. "Harry Potter" series by J.K. Rowling
+4. "Dune" by Frank Herbert
+5. "Codex Alera" series by Jim Butcher
+6. "Inferno" by Larry Niven and Jerry Pournelle
+7. "Oathbringer" by Brandon Sanderson
+8. "Starsight" by Brandon Sanderson
+9. "The Name of the Wind" by Patrick Rothfuss
+10. "Broken Earth" trilogy by N.K. Jemisin
+11. "Diary of a Wimpy Kid"
+12. "Dracula" by Bram Stoker
+13. "Illuminae" by Amie Kaufman and Jay Kristoff
+14. "Sorcery and Cecelia"
+15. Farseer Trilogy by Robin Hobb
+16. "The Hobbit" by J.R.R. Tolkien
+17. "Watchmen" by Alan Moore
+18. "Skyward" by Brandon Sanderson
+19. "Steelheart" by Brandon Sanderson
+20. "The Martian" by Andy Weir
+21. "Alcatraz versus the Evil Librarians" series by Brandon Sanderson
+22. "The Wheel of Time" series by Robert Jordan
+23. "Elantris" by Brandon Sanderson
+24. "The Way of Kings" (part of the Stormlight Archive series) by Brandon Sanderson
+25. "Warbreaker" by Brandon Sanderson
+26. "Temeraire" series by Naomi Novik
+27. "Dragonriders of Pern" series by Anne McCaffrey
+28. "Alice in Wonderland" by Lewis Carroll
+29. The Chronicles of Narnia by C.S. Lewis
+30. "Sabriel" by Garth Nix
+31. "A Song of Ice and Fire" series by George R.R. Martin
+32. "Gulliver's Travels" by Jonathan Swift
+33. "Around the World in 80 Days" by Jules Verne
+34. Sherlock Holmes stories by Arthur Conan Doyle
+35. "The Wizard of Oz" by L. Frank Baum
+
+**Links**
+
+* <https://www.youtube.com/watch?v=ATNvOk5rIJA>
+:::
+
+::: {.callout-note collapse="true" icon=false}
+## 6: Worldbuilding - Part 2
+
+**Writing advice**
+
+1. Worldbuilding in service of the story:
+   - Worldbuilding should enhance the story and the characters, not just be decorative.
+   - Focus on aspects of the world that highlight the central themes and conflicts.
+   - Avoid "worldbuilder's disease" - don't get trapped creating endless details without advancing the plot.
+2. Conveying information about the world:
+   - The key skill in fantasy/science fiction is conveying information about the world in an interesting way.
+   - Avoid "encyclopedia entries" or obvious exposition.
+   - Introduce worldbuilding through the eyes and experiences of the characters.
+3. Pyramid of abstraction:
+   - Use concrete language and specific details to anchor the reader in the world.
+   - Earn the right to use more abstract concepts by first establishing a solid foundation.
+4. Show vs. tell:
+   - Showing requires more words but is usually more effective.
+   - Find a balance - it's not always necessary to show everything.
+5. Selective focus:
+   - Choose a few elements of the world to develop in depth.
+   - Interconnect those key elements with other aspects of the world.
+   - One well-developed element is better than many superficial ones.
+6. Physical vs. cultural worldbuilding:
+   - Divide worldbuilding into physical aspects (geography, climate, etc.) and cultural aspects (religion, economy, etc.).
+   - Choose some elements from each category to focus on.
+7. Adapt worldbuilding to the genre:
+   - Different genres allow for different levels of complexity in worldbuilding.
+   - Epic fantasy allows for more worldbuilding than urban fantasy, for example.
+8. Use worldbuilding to enhance themes:
+   - Choose elements of the world that reinforce the central themes of your story.
+9. Create taboos and unique details:
+   - Invent cultural taboos or unusual details to make your world more interesting.
+10. Internal vs. external logic:
+   - Make sure your world makes sense internally, even if everything isn't explained to the reader.
+11. Start with characters and situations:
+   - Introduce the world through characters in concrete situations, not with exposition.
+12. Use worldbuilding to create tension or conflict:
+   - Elements of the world can be sources of conflict to drive the plot.
+13. Be efficient:
+   - Don't spend too much time on worldbuilding - you need to produce stories regularly to have a career.
+14. Adapt your approach according to your goals:
+   - Consider whether you're writing a series or standalone stories when planning your worldbuilding.
+
+**Anecdotes**
+
+1. On his experience trying to get published before being a recognized author:
+   - He wrote 13 novels before managing to get published, and only one was a sequel.
+   - This allowed him to always have several manuscripts in circulation to send to publishers.
+2. On Naomi Novik and her publishing strategy:
+   - Novik had already written several books of her Temeraire series before being published.
+   - Her publisher released the first 3 books in 3 consecutive months, which hugely boosted her career.
+3. On his difficulty spelling certain words:
+   - He mentions that he can't spell "villain" correctly and that his computer autocorrects it.
+   - He also jokes about his difficulty spelling "climate."
+4. On cultural taboos that inspired him:
+   - He mentions that in Korea it's taboo to show the sole of your foot.
+   - He talks about South American tribes that consider themselves dressed if they wear only a small gourd to cover a certain part of the male anatomy.
+5. On how the idea of the taboo of women covering one hand in his fictional world came about:
+   - He drew inspiration from real taboos to create a fantastical one.
+   - He justified it in the world with a fictional philosophy about feminine and masculine arts.
+
+**References**
+
+1. Mistborn - His own series
+2. Elantris - His own novel
+3. The Way of Kings (part of the Stormlight Archive series) - His own series
+4. Warbreaker - His own novel
+5. Dune - By Frank Herbert (Brandon mentions it as his favorite science fiction/fantasy world)
+6. His Majesty's Dragon (Temeraire series) - By Naomi Novik
+7. Dragonriders of Pern - By Anne McCaffrey
+8. Harry Potter - By J.K. Rowling
+9. Alice in Wonderland - By Lewis Carroll
+10. The Chronicles of Narnia - By C.S. Lewis
+11. Sabriel - By Garth Nix
+12. Game of Thrones (A Song of Ice and Fire series) - By George R.R. Martin
+
+**Links**
+
+* <https://www.youtube.com/watch?v=V2KpWOLTXx8>
+:::
+
+::: {.callout-note collapse="true" icon=false}
+## 7: Short stories - by Mary Robinette Kowal
+
+**Writing advice**
+
+1. Focus on delivering a specific emotional punch. Short stories are more about this than about prolonged immersion.
+2. Use the MICE model (Milieu, Inquiry, Character, Event) to structure your story. Make sure to close these elements in the reverse order to the one in which you opened them.
+3. Be conscious of length. There's a practical formula:
+   (Number of characters + Number of settings) x 750 words x Number of MICE threads ÷ 1.5
+4. Build your story with try-fail cycles. Each action the character takes should have a consequence and a cost.
+5. Structure your story in three parts:
+   - Beginning: Establish characters, place, and genre.
+   - Middle: Establish the conflicts.
+   - End: Resolve the conflicts and close the MICE threads.
+6. Limit the number of characters, settings, and MICE elements to keep the story concise.
+7. Make sure each included element serves a specific purpose in the story.
+8. Concentrate your narrative on one main aspect (whether milieu, inquiry, character, or event) to maintain focus.
+9. Practice economy of words. Every sentence should contribute to the emotional punch or to advancing the plot.
+10. Consider nesting MICE elements if necessary, but remember to close them in the correct order.
+
+**Mary Robinette's short story**
+
+Hydraulic fluid dripped out of the roller coaster's AI straight onto Chelsea's jockey I.D. Where the heck was that leak?
+If she didn't manage to get the coaster back online before the race, she'd have to forfeit her entry money. Not a gosh darn suggestion from the trouble shooter on her heads-up display had isolated the problem.
+Chelsea stuck her hand into the AI's guts and traced the slippery fluid up as far as
+she could go. The interior of the roller coaster was still cold from sitting overnight in the cryo bay.
+Condensation clung to the walls and mixed with the hydraulic fluid coating her fingers.
+She closed her eyes, trying to imagine the interior, as she ran past the junction box,
+and sudden heat stung her fingers. Chelsea jerked back, cracking her head on the toolbox behind her.
+*'Gosh darn it all to heck!*
+Shaking her hand, she glowered at the roller coaster.
+*'You know, if I have to forfeit this entry money, I'm going to have to sell you just to pay rent, and you'll probably wind up in scrap.'*
+She reached into the chassis again.
+*'Please, please let me find the leak.'*
+Her heads-up display lit up with what looked like a diagnostic message, from the AI that  was supposedly offline.
+*'The leak is from the thermal coupler in my right braking mechanism, but fluid dynamics make it appear to come from the manifold.'*
+Chelsea's mouth dropped open.
+*'If you knew that all along--?'*
+She closed her eyes, cursing her own stupidity.  Three years as an AI jockey and you'd think
+that she would remember that even in a roller coaster, the temperamental things needed the
+magic word. Next time she'd say please sooner.
+
+**References**
+
+1. "Gulliver's Travels" is mentioned as a classic example of a "milieu" (setting) story.
+2. "Around the World in 80 Days" is mentioned as another example of a "milieu" story.
+3. The Sherlock Holmes stories are referenced as classic examples of "inquiry" stories.
+4. "The Wizard of Oz" is mentioned as an example of a story with multiple nested MICE (Milieu, Inquiry, Character, Event) elements.
+5. A brief reference is made to Star Wars when explaining try-fail cycles in storytelling.
+
+My notes:
+- Short stories are about delivering a specific emotional punch.
+- Novels are about immersion.
+- MICE: Milieu, Inquiry, Character, Event. These are the elements that make up a story.
+- Stories are composed of four elements: place, question, character, and event, mixed in different proportions. It's important to close the MICE threads that you open, in the reverse order to the one in which they were opened.
+    - Example: The Wizard of Oz. It begins as a character story, then becomes an event story, then a place story, and finally a question story. The ending starts by closing the question, then the place, then the event, and finally the character.
+- There's a practical formula: the length of your story equals the number of characters, plus the number of settings, multiplied by 750 words, multiplied by the number of MICE threads you have, divided by 1.5.
+- Stories are made of try-fail cycles.
+- Each action the character takes should have a consequence and a cost (?)
+- A short story can be divided into three parts: beginning, middle, and end.
+  - The beginning is where the characters, the place, and the genre are established.
+  - The middle is where the conflicts are established.
+  - The end is where the conflicts are resolved and the MICE threads are closed.
+
+**Links**
+
+* <https://www.youtube.com/watch?v=blehVIDyuXk>
+
+:::
+
+::: {.callout-note collapse="true" icon=false}
+## 8: Worldbuilding - Questions and Answers
+
+**Writing advice**
+
+Here is a detailed summary of the main writing tips given in this class:
+
+1. On internal vs. external logic in magic systems:
+   - Internal logic (consistency within the created world) is generally more important than external logic (explanations based on the real world).
+   - Even "soft" magic systems must maintain some internal consistency.
+   - A bit of external logic can help readers suspend disbelief.
+2. On making magic not seem like magic:
+   - Present it as technology or science fiction.
+   - Integrate it naturally into the world and its rules.
+   - Take advantage of genre conventions.
+3. On exposing the world without losing the mystery:
+   - Show only a segment of the world that the characters understand.
+   - Make it clear that there's more to discover.
+   - Use the characters' limited perspective.
+   - Plant clues and mysteries from the beginning.
+4. On adding new magical elements without them seeming like deus ex machina:
+   - Indicate from the beginning that there are aspects of the magic that aren't understood.
+   - Plant clues and foreshadowing early.
+   - Be willing to add foreshadowing in later revisions if necessary.
+5. On revision:
+   - Brandon uses a system of multiple revisions (1.0, 2.0, 3.0, etc.)
+   - He creates a revision guide after the first draft.
+   - He uses alpha readers (industry professionals) and beta readers (casual readers/fans).
+   - He focuses on different aspects in each revision (plot, character arcs, prose polishing, etc.)
+   - He recommends having clear goals for each revision.
+6. General advice:
+   - There are no absolute rules in writing.
+   - Focus on what excites you to write.
+   - It's fine to leave things to fix in later revisions.
+   - Learn to recognize when something needs more work and when it's simply changing without improving.
+7. On becoming an editor:
+   - It's not a good backup plan for being a writer, since there are fewer jobs.
+   - It requires moving to New York in most cases.
+   - It's very competitive, especially in speculative fiction.
+
+**Anecdotes**
+
+1. He mentions that when he was a high school student he suffered from insomnia, which inspired him to create the feruchemy magic system in the Mistborn books. He imagined being able to store sleep in an amulet to use it whenever he wanted to sleep.
+2. He tells how, in the first Mistborn book, he had Sazed save Vin in a scene that technically violates Sanderson's First Law, but he did it to introduce Sazed's mysterious powers that would be relevant later on.
+3. He explains that when he's writing and needs to add something that should have been foreshadowed earlier, he writes "remember a bucket" as a reference to a scene from Bill & Ted, to remind himself that he needs to add that foreshadowing during revision.
+4. He comments that in his first drafts of the Stormlight Archive books, he doesn't include the "spren" (visual manifestations of emotions). He has an assistant add them afterwards, comparing it to adding special effects to a movie.
+5. He mentions that George Lucas originally planned to destroy the Millennium Falcon at the end of Return of the Jedi, but changed his mind after test audiences hated that idea.
+
+**References**
+
+1. The Mistborn series
+2. The Lord of the Rings and The Silmarillion by J.R.R. Tolkien
+3. The Harry Potter series by J.K. Rowling
+4. 50 Shades of Grey (mentioned as Twilight fanfiction)
+5. The books of David Gemmell
+6. The books of Joe Abercrombie
+7. The Dragonriders of Pern series by Anne McCaffrey
+8. The books of Fred Saberhagen (Books of the Swords)
+9. The Mandalorian (TV series)
+10. The Star Wars movies
+11. The X-Men and Spider-Man comics
+12. The Bill & Ted movies
+13. Heinlein's rules of writing
+14. The Stormlight Archive series (his own books)
+15. The Bourne movie trilogy
+16. The Golden Compass
+17. Ender's Game by Orson Scott Card
+18. The His Dark Materials series by Philip Pullman
+19. The books of Charlaine Harris (True Blood)
+20. Works of Neal Stephenson
+21. Works of Margaret Atwood
+
+**Links**
+
+* <https://www.youtube.com/watch?v=W1afbpM80b0>
+
+:::
+
+::: {.callout-note collapse="true" icon=false}
+## 9: Characters - Part 1
+
+**Writing advice**
+
+1. Purpose of characters:
+   - Establish empathy with the reader
+   - Create interest in their motivations and goals
+   - Show progress and change throughout the story
+2. Three ways to make the reader interested in characters:
+   - Establish empathy: Show that they're similar to the reader, make them likable, or show that others appreciate them.
+   - Establish interest in their motivations: Show what the character wants and why they can't get it.
+   - Show progress: Establish how they're going to change, their flaws, and the journey they'll undertake.
+3. Characterization scales:
+   - Likability: How likable the character is
+   - Proactivity: How motivated they are to achieve their goals
+   - Competence: How capable they are in their relevant skills
+4. Motivations vs. Goals:
+   - Motivations are deeper and more continuous than goals
+   - Understanding why a character wants something is more important than just knowing what they want
+5. Flaws, limitations, and handicaps:
+   - Flaws: Things the character could change but hasn't
+   - Limitations: Restrictions that shouldn't change
+   - Handicaps: Obstacles that must be overcome but that the character can't control
+6. Creating distinctive voices for characters:
+   - Use the character's background to influence their metaphors and way of speaking
+   - Reflect their education and experiences in how they argue and see the world
+   - Practice writing dialogue without tags so it's recognizable on its own
+7. Motivations of villains and antagonists:
+   - They can range from iconic villains without depth to complex antagonists with understandable motivations
+   - Distinguish between villains (do bad things) and antagonists (oppose the protagonist)
+8. Characters who don't understand their own motivations:
+   - Show small successes early on to establish their true nature
+   - Use other trustworthy characters to reveal the truth about them
+9. Rewriting and editing:
+   - Be willing to rewrite the first chapters so they match the later development of the characters
+   - Don't be afraid to make major changes if they improve the story and the characters
+10. Avoid one-dimensional characters:
+   - Give characters multiple motivations and internal conflicts
+   - Avoid writing characters just to fulfill specific roles in the plot
+11. Use of dramatic irony:
+   - Allow the reader to understand things the characters don't comprehend
+12. Importance of progression:
+   - Make sure there's a sense of advancement in the story, even if it's a descent
+13. Beware of "gorillas in the phone booth":
+   - Avoid elements that distract the reader from the main story
+
+**Anecdotes**
+
+1. He mentions that when he was a creative writing student, he used to ask his professors how to make readers care about his characters, but he didn't get satisfying answers.
+2. He tells that at the start of his career he had trouble writing female characters, who felt like "cardboard cutouts." This led him to rethink how he wrote characters in general.
+3. He recounts that he often discards the first 2-3 chapters of his books and rewrites them, as he did with Skyward, to better tune the initial characterization.
+4. He mentions that in Mistborn 3 he had to completely rewrite the scenes of a depressed character to give him more progression and make him more interesting.
+5. He tells that in The Way of Kings he split Dalinar's scenes between him and his son Adolin to solve characterization problems.
+6. He recounts that he took his mother to see The Lord of the Rings movies, her first experience with fantasy, and that she got especially hooked on the character of Gollum/Sméagol.
+
+**References**
+
+1. "Save the Cat" - A famous screenwriting book mentioned when talking about establishing empathy with characters.
+2. The "Mistborn" series - One of his own series, mentioned as an example.
+3. The "Stormlight Archive" series - Another of his own series, mentioned as an example.
+4. "The Wheel of Time" by Robert Jordan - Mentioned when talking about unreliable narrators and character voices.
+5. The "Harry Potter" series by J.K. Rowling - Mentioned briefly when talking about the use of adverbs.
+6. "The Hitchhiker's Guide to the Galaxy" - Mentioned as an example of a protagonist who wants nothing.
+7. "Star Wars" - Used several times as an example to discuss motivations and character arcs.
+8. "The Lord of the Rings" by J.R.R. Tolkien - Mentioned when talking about different types of villains.
+9. "The Silmarillion" by J.R.R. Tolkien - Mentioned briefly in relation to Sauron.
+10. "Ferris Bueller's Day Off" - Mentioned as an example of an antagonist who becomes more of a villain.
+11. "The Fugitive" - Mentioned as an example of an antagonist who isn't a villain.
+12. "Les Misérables" by Victor Hugo - Mentioned when talking about the character Javert as an example of an antagonist who isn't evil but isn't likable.
+13. "Avengers: Infinity War" - Mentioned as an example of a story where the protagonist is the villain.
+
+**Links**
+
+* <https://www.youtube.com/watch?v=1NCiuI6F5O0>
+
+:::
+
+::: {.callout-note collapse="true" icon=false}
+## 10: Characters - Part 2
+
+**Writing advice**
+
+1. Dialogue:
+   - Avoid having dialogue sound like monologues.
+   - Make conversations seem natural, with interruptions and retorts.
+   - Use dialogue to express:
+      - The character's likability
+      - Proactivity
+      - Motivation
+      - Flaws/character arc
+      - Competence
+   - Vary dialogue according to the character (aggressive vs. non-aggressive, etc.)
+   - Use dialect sparingly; less is more.
+   - Practice writing dialogue without attributions to differentiate the characters' voices.
+2. Dialogue attributions:
+   - Use mostly "said" and "asked" (90% of attributions).
+   - Avoid the excessive use of adverbs in attributions.
+   - Consider using actions (beats) instead of attributions.
+3. Description:
+   - Use "establishing shots" to introduce scenes.
+   - Employ anchoring descriptions to keep the reader centered in the scene.
+   - Use the five senses, not just sight.
+   - Use description to characterize both the character doing the describing and the one being described.
+4. Action:
+   - Treat action sequences as mini narrative arcs:
+      - Establish the character's motivation
+      - Show the character making a plan
+      - Indicate progress
+      - Provide a payoff (success or failure)
+   - Use changes in the status quo to maintain interest.
+   - For one-on-one fights, consider:
+      - Injuries
+      - Fatigue
+      - Surprises and twists
+   - For technical topics:
+      - Educate the reader throughout the story
+      - Use abstractions or summaries
+      - Research to get a basic understanding and consult experts for the details
+5. Introspection:
+   - Avoid excessive introspection.
+   - Make sure the introspection has a clear purpose.
+   - Use introspection to reinforce the character arc.
+6. Character arcs:
+   - Most arcs involve a reevaluation of goals (want vs. need).
+   - Characters usually go from being inactive to active regarding their flaws.
+   - Consider including a relapse into the character's flaw.
+   - Have the internal conflict align or contrast with the external conflict at some point.
+7. General advice:
+   - Use variety in all writing techniques.
+   - Take advantage of the strengths of prose writing over visual media (access to thoughts, multiple senses).
+   - Practice using the four tools (dialogue, description, action, introspection) to characterize, avoiding over-reliance on introspection.
+   - Consider how each element can make a character more or less likable, proactive, motivated, flawed, or competent.
+
+**Anecdotes**
+
+1. He mentioned a character in the book "The Truth" by Terry Pratchett who misunderstands the dashes used to censor swear words in Victorian novels, believing that "ing" is a bad word.
+2. He described a comedic action scene from the movie "The Emperor's New Groove," where the character Kronk drops a chandelier on Yzma, as an example of a well-structured action sequence.
+3. He talked about how he hired a military surgeon to review the field-medicine scenes of the character Kaladin in one of his books.
+4. He shared that he made some mistakes about G-forces in his book Skyward, which were pointed out by fighter pilots who read the manuscript. This led to significant rewrites, including the addition of a gyroscopic cockpit.
+5. He mentioned that he uses YouTube videos from Matt Easton's channel to research combat with different types of weapons.
+
+**References**
+
+1. The Truth by Terry Pratchett
+2. The Wheel of Time series by Robert Jordan
+3. The Emperor's New Groove (Disney movie)
+4. Skyward by Brandon Sanderson
+5. The Name of the Wind by Patrick Rothfuss
+6. The Wee Free Men by Terry Pratchett
+7. Star Wars (franchise)
+8. Elantris by Brandon Sanderson
+9. "They're Made of Meat" (short story) by Terry Bisson
+10. "Wikihistory" (short story) - Brandon doesn't remember the author
+11. Alcatraz series by Brandon Sanderson
+
+**Links**
+
+* <https://www.youtube.com/watch?v=fJfE-HMfSkk>
+
+:::
+
+::: {.callout-note collapse="true" icon=false}
+## 11: Characters - Questions and Answers
+
+**Writing advice**
+
+1. On characters with a tragic past:
+   - Avoid having the character ruminate too much about their past.
+   - Show brief moments of pain followed by overcoming them.
+   - Present multiple emotional reactions, not just focusing on the trauma.
+   - Show the character trying to succeed despite the circumstances.
+   - Be careful with the "women in refrigerators" trope - don't use characters just as motivation for others.
+2. On character and plot development:
+   - Characters usually change more than the plot during the writing process.
+   - Look to align character development with the plot in a natural way.
+   - Not every conversation needs to advance the plot directly.
+3. On the use of dialogue:
+   - It can serve to show the shared history between characters.
+   - It can generate emotions like laughter or tears in the reader.
+   - It can provide pauses in intense action sequences.
+4. On developing villains:
+   - Give the villain interesting and complex motivations.
+   - Dedicate time to developing the villain as a character.
+   - Show different facets of their personality.
+   - Avoid having them be one-dimensional or vaguely seeking "power."
+5. On humor in writing:
+   - Use different types: character humor, relationship humor, humorous insults, wordplay.
+   - Use the "comic drop" - bringing a character down from an elevated position.
+   - Employ the juxtaposition of disparate elements.
+   - Use the "rule of three" to structure jokes.
+   - Start with normal situations and gradually escalate to the absurd.
+6. On character introspection:
+   - It's good for all characters, but use less than your instinct tells you to.
+   - It helps characters feel real.
+   - Consider that not all characters think with a constant internal dialogue.
+7. On handling multiple plots:
+   - Interweave the climaxes of different characters carefully.
+   - Avoid having minor climactic moments be overshadowed by major ones.
+   - Make sure the plots feed into each other and feel like part of a whole.
+   - Avoid plot twists just for the sake of having them - they should add something to the story.
+8. On writing unhappy endings:
+   - Hint that it's possible in the world of the story.
+   - Show the character's flaw that will lead to their downfall.
+   - Contrast with characters who make the right decisions.
+   - Consider making the reader not want the character to get what they initially wanted.
+9. On character arcs across multiple books:
+   - Try to make the first book as satisfying as possible on its own.
+   - Divide the overall arc into steps, giving a complete arc in each book.
+   - Make sure each step is satisfying on its own.
+10. On developing villains off-screen:
+   - Use the dialogue of other characters to build up their reputation.
+   - Show the villain's impact on the world before introducing them.
+   - Treat the villain as a worldbuilding element until they appear.
+11. On character autonomy:
+   - Show characters making decisions that affect the plot from the beginning.
+   - Even if they can't control big aspects of the story, give them control over small aspects.
+   - Characters' decisions should have visible consequences for the reader.
+
+**Anecdotes**
+
+1. He mentions a scene from the Death of Superman comics in the 90s, where a secondary character with very little screen time stuck in his memory: a man with a hot dog cart who started giving them away for free while wearing a Superman t-shirt, saying that was his way of being Superman.
+2. He talks about a movie called Hudson Hawk starring Bruce Willis, where there's a recurring joke about the character trying to have a cup of coffee but being interrupted each time in more ridiculous ways, culminating in his cup being shot out of his hand.
+3. He mentions that in one of his early novels (Elantris) he originally had a twist at the end where it was revealed that a character had a completely different origin than was believed, but he removed it because it didn't add anything to the story and only confused things.
+4. He talks about a movie called Mystery Men, where a legendary superhero who can cut weapons in half with his mind is mentioned, and how this generates anticipation before the character appears on screen.
+5. He comments that in Rhythm of War (the book he was writing at the time) he had to revise a character's arc several times so that it fit the plot better.
+
+**References**
+
+1. The Sherlock Holmes novels - As an example of a very competent character.
+2. Marvel movies - He mentions how they use dialogue to establish relationships between characters.
+3. The Death of Superman (comics) - As an example of how to make the reader care about a character with little screen time.
+4. The Way of Kings - His own novel, which he mentions when talking about character revision.
+5. Hudson Hawk - A Bruce Willis movie that uses repetition for humor.
+6. Last Action Hero - Another movie that plays with action conventions.
+7. The Chevy Chase Vacation movies - As an example of comedic escalation.
+8. Star Wars (the original trilogy) - He uses it as an example to explain character arcs across multiple stories.
+9. Mystery Men - A movie he uses to exemplify how to develop characters off-screen.
+
+**References**
+
+* <https://www.youtube.com/watch?v=VeXqndZdzwE>
+
+:::
+
+
+::: {.callout-note collapse="true" icon=false}
+## 12: Publishing - Part One
+
+**Publishing advice**
+
+1. On literary agents:
+   - Agents are very important in today's publishing industry. Most major publishers only accept manuscripts through agents.
+   - Agents do the research on editors and publishers, negotiate contracts, and handle foreign rights.
+   - They typically charge a 15% commission.
+   - It's advisable to look for an agent who has recently sold books by new authors to recognized publishers.
+   - Be careful with agents who charge upfront fees or who direct you to vanity publishers.
+2. On the traditional publishing process:
+   - It's recommended to have the manuscript complete and revised (at least 3 drafts) before submitting it.
+   - The typical process is: query letter > sample chapters > full manuscript > offer.
+   - Advances for first-time authors are usually around $10,000.
+   - It's better to get a contract for 2-3 books, not for too many.
+   - The editor works with the author to improve the book, but the final decisions are the author's.
+   - The publisher handles the cover, sales, publicity, and marketing.
+3. On independent publishing:
+   - It's a viable option, especially for "midlist" authors.
+   - It requires the author to pay for editing and cover design.
+   - It allows for greater control and higher royalties per book.
+   - Selling 10,000-20,000 copies independently can attract traditional publishers.
+4. General advice:
+   - Research publishers and editors well before submitting manuscripts.
+   - Attend conferences and conventions to make contacts.
+   - Personalize cover letters.
+   - Be patient, the process can take a long time.
+   - Consider being a "hybrid author" who publishes both traditionally and independently.
+
+**Anecdotes**
+
+1. Brandon tells that when he was trying to get published, he sent dozens of query letters and only received one response asking for sample chapters, from Joshua, who later became his agent.
+2. He mentions that he waited 18 months to receive a response about his book Elantris.
+3. He tells that he sold Elantris directly to Tor Books in 2003, through a pitch to an editor he had met at a convention (Moshe Feder).
+4. He explains that for Elantris, Tor initially offered $5,000 for one book, but his agent Joshua negotiated up to $20,000 for two books.
+5. He comments that he accepted a slightly lower offer from Tor because he wanted to be with that publisher, even though his agent thought they could have gotten more if they had explored other options.
+6. He mentions that his editor at Tor, Moshe Feder, was an assistant to another editor for many years before being able to acquire books on his own.
+
+**References**
+
+1. Elantris - Brandon Sanderson's first published book
+2. The Mistborn series by Brandon Sanderson
+3. The Way of Kings by Brandon Sanderson
+4. Works of George R.R. Martin (mentioned as an example of an author who went from being a "midlister" to a best-seller)
+5. Works of Scott Lynch (mentioned as a comparison for Mistborn)
+6. Harry Potter
+7. The Lord of the Rings
+8. Works of Dan Brown
+9. Publishers Weekly (publishing industry magazine)
+10. AbsoluteWrite forums (writers' forum)
+11. Writer Beware (website mentioned as a resource for avoiding scams in the publishing industry)
+
+**Links**
+
+* <https://www.youtube.com/watch?v=-f0biNdwifI>
+
+:::
+
+::: {.callout-note collapse="true" icon=false}
+## 13: Publishing - Part Two
+
+**Publishing advice**
+
+1. Independent vs. traditional publishing:
+   - Independent publishing has grown a lot in recent years thanks to the digital revolution and platforms like Amazon.
+   - It offers more flexibility, control, and earning potential for the author.
+   - Traditional publishing is still better for certain genres and established authors.
+   - Consider a hybrid approach, publishing some books independently and others traditionally.
+2. Advantages of independent publishing:
+   - Higher percentage of royalties (70% vs. 10-15% in traditional publishing).
+   - Control over pricing, covers, marketing, etc.
+   - Ability to publish faster and respond to market trends.
+   - A good option if you have a dedicated but small fan base.
+3. Challenges of independent publishing:
+   - It requires handling all aspects of the business (editing, design, marketing, etc).
+   - The need to invest in professional covers and editing.
+   - Harder to get distribution in physical bookstores.
+   - Intense competition on platforms like Amazon.
+4. Tips for independent publishing:
+   - Join online groups and forums of independent authors.
+   - Attend specialized conferences.
+   - Handle it as a business, investing time and money.
+   - Write several books before launching, so you can publish quickly.
+   - Take care of professional quality (cover, editing, etc).
+   - Consider publishing exclusively with Amazon vs. "wide" on multiple platforms.
+5. Marketing and promotion:
+   - Build a presence on social media and a website.
+   - Create an email list of fans.
+   - Do blog tours and collaborations with other authors.
+   - Consider paid advertising on Amazon and other platforms.
+   - For traditional authors, take advantage of signing tours and publisher promotions.
+6. Financial aspects:
+   - In traditional publishing, advances are important but royalties are low.
+   - In independent publishing, there's no advance but royalties are much higher.
+   - Be careful with scams and services that charge a lot of money.
+7. Trends:
+   - Growth of audiobooks.
+   - Amazon is becoming "pay-to-play" with advertising.
+   - Novellas and series work well in independent publishing.
+
+**Anecdotes**
+
+1. Brandon tells that in his early books, his royalty statements showed very small earnings from ebooks (around $53 per quarter), but within the span of a year this changed drastically and ebooks came to represent 20-30% of his sales.
+2. He mentions that for his most recent book Starsight (sequel to Skyward), only 17% of sales were in print format, while 83% were audiobooks and ebooks. It was the first book where audiobook sales surpassed ebook sales.
+3. He tells that at the start of his career, when the publisher didn't want to send him on a promotional tour because of the costs, he proposed doing a shared tour with another author:
+"I went to them and said: How about I do a tour with another author you were thinking of sending and the two of us share a car and drive instead of flying, which saves a lot of money? How about we just drive along the west coast where we live? How about we share a hotel room?"
+They proposed doing a 10-city tour for $1000 each. The publisher agreed and Brandon did 3 tours like this before his books took off and the publisher started sending him on bigger tours.
+1. He mentions that he has a profit-sharing agreement with some of his publishers, where he doesn't receive an advance but gets higher royalties.
+
+**References**
+
+1. The Christmas Box - Mentioned as a successful example of a self-published book.
+2. Eragon - Another example of a successful self-published book.
+3. Harry Potter books - Mentioned in relation to J.K. Rowling and digital rights.
+4. Books by Jennifer Peale and Becky Monson - Romance authors mentioned as successful examples of self-publishing.
+5. Books by Bella Forest - Mentioned as one of the best-selling independent authors on Amazon.
+6. The Shade of Vampire - Series by Bella Forest mentioned as an example.
+7. Books by Larry Correia - Mentioned as an example of an author who used his platform to promote his books.
+8. Books by Andy Weir - Mentioned as an example of an author who went from self-publishing to traditional publishing.
+9. The Doomsday Book by Connie Willis - Mentioned as an example of a book that benefits more from traditional publishing.
+10. Books from the Stormlight Archive series by Brandon Sanderson - Mentioned in relation to ebook pricing.
+11. Books from the Wax and Wayne series by Brandon Sanderson - Mentioned as an example of books that could work well in self-publishing.
+12. Books from the Lost Fleet series by Jack Campbell (John Henry) - Mentioned as an example of successful rebranding.
+13. The Emperor's Soul by Brandon Sanderson - Mentioned as an example of hybrid publishing.
+
+**Links**
+
+* <https://www.youtube.com/watch?v=tHdYX418PaA>
+
+:::
 
 :::

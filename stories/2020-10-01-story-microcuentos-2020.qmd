@@ -1,14 +1,18 @@
 ---
 title: Microcuentos 2020
+title-en: Flash Fiction 2020
 description: Cuentos enviados a Santiago en 100 palabras (2020)
+description-en: Stories submitted to "Santiago en 100 palabras" (2020)
 date: "2020-10-01"
 categories: [escritura, microcuentos]
+categories-en: [writing, flash fiction]
 ---
 
+::: {.content-visible when-profile="esp"}
 ## Cocina neoliberal
 
 Sale humo del sartén, donde trato de freir los huevos en las lagunas disparejas de aceite. La olla de arroz, inestable sobre el fuego, se cocina de manera desigual. Tengo que cocinar con ese molesto clic-clac de las cucharas de metal. Pero no hay remedio, es el resultado de salir a cacerolear cada día hasta la cuarentena. La vida a veces, y sobretodo últimamente, nos pone aprueba.
- 
+
 
 ## Cana
 
@@ -18,7 +22,7 @@ Todavía escucho el ruido de pasos y metales por las noches. Pagué mi deuda con
 ## Gatos
 
 Después de extensos y precisos cálculos matemático, y considerando la cantidad de pelo que encuentro en la cama, las sillas, detrás de muebles y por todos lados, puedo decir que en esta casa viven al menos 17 gatos, y no los 2 que me quieren hacen creer.
- 
+
 
 ## La feria
 
@@ -28,4 +32,30 @@ Los sábados me levanto temprano. Entre las 7 y las 8 de la mañana se vive el t
 ## El regalo de cumpleaños
 
 Siempre había sido entretenido que todos en la casa - mis papás, mi hermana y yo - estábamos de cumpleaños en abril. La primera festejada fue mi mamá, y entre todos nos esforzamos en comprarle una caja grande de esos chocolates finos. Días después nos pilló la cuarentena, sin posibilidad ni dinero para comprar más regalos. El segundo cumpleañero, mi hermana, recibió la misma caja, pero con menos de la mitad de los chocolates. Sólo espero que en mi turno, el último de todos, me llegue ese bombón de chocolate blanco y maracuyá que tanto anhelo.
+:::
 
+::: {.content-visible when-profile="eng"}
+## Neoliberal kitchen
+
+Smoke rises from the pan, where I try to fry the eggs in uneven pools of oil. The pot of rice, unsteady over the flame, cooks unevenly. I have to cook with that annoying click-clack of the metal spoons. But there's no help for it, it's the result of going out to bang pots and pans every day until lockdown. Life sometimes, and especially lately, puts us to the test.
+
+
+## Behind bars
+
+I still hear the sound of footsteps and metal at night. I paid my debt to society, but not to God. As soon as I got out of prison, I was forced to lock myself up in quarantine for several more months.
+
+
+## Cats
+
+After extensive and precise mathematical calculations, and considering the amount of fur I find on the bed, the chairs, behind the furniture and everywhere, I can say that at least 17 cats live in this house, and not the 2 they want me to believe.
+
+
+## The street market
+
+On Saturdays I get up early. Between 7 and 8 in the morning you witness the backstage of the street market. The mushroom vendor whose stand was gorgeous for two months but never said why. The vendors who lost a daughter to cancer. The new pomegranate-juice vendor who split up with Albert - whom we affectionately call Einstein. The vendor who tells me each week whether she's got passion fruit. And the vendor with a joke always on the tip of his tongue, an expert salesman shouting _"Take the Kale, it's got more virtues than Bachelet's own kid"_.
+
+
+## The birthday gift
+
+It had always been amusing that everyone in the house - my parents, my sister and I - had birthdays in April. The first to be celebrated was my mom, and between us all we made the effort to buy her a big box of those fine chocolates. Days later lockdown caught us, with no way and no money to buy more gifts. The second birthday person, my sister, received the same box, but with less than half the chocolates. I just hope that on my turn, the very last of all, I'll still find that white-chocolate-and-passion-fruit bonbon I so long for.
+:::

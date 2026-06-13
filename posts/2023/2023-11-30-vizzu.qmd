@@ -1,25 +1,128 @@
 ---
 title: "Post con gráfico"
+title-en: "Post with chart"
 author: "sebastiandres"
 date: "2023-11-30"
 categories: [código, python, vizzu]
+categories-en: [code, python, vizzu]
 image: vizzu.png
 ---
 
-¿Podemos incrustar animaciones de Vizzu en un blog?  
-  
+::: {.content-visible when-profile="esp"}
+¿Podemos incrustar animaciones de Vizzu en un blog?
+
 ¡SI SE PUEDE!
+
+```{python}
+#| code-fold: true
+#| code-summary: "Mostrar el código"
+
+import pandas as pd
+
+from ipyvizzu import Data, Config, Style
+from ipyvizzustory import Story, Slide, Step
+
+
+# Crear objeto de datos, leer csv a data frame y agregar data frame al objeto de datos
+data = Data()
+df = pd.read_csv(
+    "https://ipyvizzu-story.vizzuhq.com/0.9/examples/population/population.csv",
+    dtype={"Year": str},
+)
+data.add_df(df)
+
+
+# Crear objeto story, agregarle los datos
+story = Story(data=data)
+
+# Definir el tamaño del elemento HTML
+# que aparece dentro del notebook
+story.set_size("100%", "400px")
+
+# Activar el tooltip que aparece
+# cuando el usuario pasa el mouse sobre un elemento del gráfico
+story.set_feature("tooltip", True)
+
+
+# Cada slide aquí es una página en la story interactiva final
+# Agregar la primera slide
+slide1 = Slide(
+    Step(
+        Data.filter("record.Continent == 'Africa'"),
+        Config.stackedArea(
+            {
+                "x": "Year",
+                "y": "Medium",
+                "stackedBy": "Subregion",
+                "title": "Population of Africa 1953-2098",
+            }
+        ),
+        Style({"plot": {"xAxis": {"label": {"angle": 2.0}}}}),
+    )
+)
+# Agregar la slide a la story
+story.add_slide(slide1)
+
+slide2 = Slide(
+    Step(
+        Config.percentageArea(
+            {
+                "x": "Year",
+                "y": "Medium",
+                "stackedBy": "Subregion",
+            }
+        ),
+    )
+)
+story.add_slide(slide2)
+
+slide3 = Slide(
+    Step(
+        Config.stream(
+            {
+                "x": "Year",
+                "y": "Medium",
+                "stackedBy": "Subregion",
+            }
+        ),
+    )
+)
+story.add_slide(slide3)
+
+slide4 = Slide(
+    Step(
+        Config.violin(
+            {
+                "x": "Year",
+                "y": "Medium",
+                "splittedBy": "Subregion",
+            }
+        ),
+    )
+)
+story.add_slide(slide4)
+
+
+# ¡Reproducir la story creada!
+story.play()
+```
+:::
+
+::: {.content-visible when-profile="eng"}
+Can we embed Vizzu animations in a blog?
+
+YES WE CAN!
 
 ```{python}
 #| code-fold: true
 #| code-summary: "Show the code"
 
 import pandas as pd
- 
+
 from ipyvizzu import Data, Config, Style
 from ipyvizzustory import Story, Slide, Step
- 
- 
+
+
 # Create data object, read csv to data frame and add data frame to data object
 data = Data()
 df = pd.read_csv(
@@ -27,20 +130,20 @@ df = pd.read_csv(
     dtype={"Year": str},
 )
 data.add_df(df)
- 
- 
+
+
 # Create story object, add data to it
 story = Story(data=data)
- 
+
 # Set the size of the HTML element
 # that appears within the notebook
 story.set_size("100%", "400px")
- 
+
 # Switch on the tooltip that appears
 # when the user hovers the mouse over a chart element
 story.set_feature("tooltip", True)
- 
- 
+
+
 # Each slide here is a page in the final interactive story
 # Add the first slide
 slide1 = Slide(
@@ -59,7 +162,7 @@ slide1 = Slide(
 )
 # Add the slide to the story
 story.add_slide(slide1)
- 
+
 slide2 = Slide(
     Step(
         Config.percentageArea(
@@ -72,7 +175,7 @@ slide2 = Slide(
     )
 )
 story.add_slide(slide2)
- 
+
 slide3 = Slide(
     Step(
         Config.stream(
@@ -85,7 +188,7 @@ slide3 = Slide(
     )
 )
 story.add_slide(slide3)
- 
+
 slide4 = Slide(
     Step(
         Config.violin(
@@ -98,8 +201,9 @@ slide4 = Slide(
     )
 )
 story.add_slide(slide4)
- 
- 
+
+
 # Play the created story!
 story.play()
 ```
+:::

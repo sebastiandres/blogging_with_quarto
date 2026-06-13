@@ -1,11 +1,13 @@
 ---
 title: Keynotes de la PyCon 2020 Colombia
-description: Videos, slides y resúmenes. 
+title-en: Keynotes from PyCon 2020 Colombia
+description: Videos, slides y resúmenes.
+description-en: Videos, slides and summaries.
 date: "2020-01-11"
 categories: [pycon]
 ---
 
-
+::: {.content-visible when-profile="esp"}
 > “Came for the language, stayed for the community” - Brett Cannon
 
 Todos los keynote speakers recalcaron la importancia del trabajo en equipo y la colaboración de la comunidad de Python, como refleja la frase de Brett Cannon de la PyCon US del 2014. Los principales elementos comunes fueron:
@@ -44,7 +46,7 @@ Specialized roles are now required: data engineer, machine learning engineer, bu
 Job offers for data science ask for: Python or R, SQL, basic knowledge of statistics and Machine Learning, data intuition, ability to communicate and to be independent. Communications is a must.
 * Data in the wild is still messy: and that’s not ever going to change.
 
-## Wes McKinney [@wesmckinn](https://twitter.com/wesmckinn) 
+## Wes McKinney [@wesmckinn](https://twitter.com/wesmckinn)
 Python for Data Analysis: Past, Present, and Future: [slides original](https://www.slideshare.net/wesm/pycon-colombia-2020-python-for-data-analysis-past-present-and-future) / [slides respaldo](https://drive.google.com/file/d/1Gzcwg1Pew1GAEuzz3itpM_FiFer2zqOt/view?usp=sharing)
 
 <center>
@@ -108,8 +110,119 @@ Fernando desconectó un cable para prestarlo y dejó sin internet a toda Colombi
 * IPython partió como un hack de una tarde, y se juntó con otros 2 proyectos que tenía funcionalidades similares (Interactive Python, Lazy Python).
 * Mail original anunciando IPython: [link](https://mail.python.org/pipermail/python-list/2001-December/093408.html)
 * Fue crucial encontrar apoyo y colaboradores en el camino: Eric Jones (Enthought), Scipy, John Hunter (matplotlib), Tarvis Oliphant (numpy — scipy), Wes McKinney (pandas) y muchos más, además del apoyo de la comunidad de python (Guido et al.).
-La comunidad de python científico persigue los ideales de la ciencia: (1) la búsqueda de conocimiento verificable (2) reproducibilidad (3) esfuerzo colectivo en beneficio de la humanidad.
-* Toda contribución tiene valor, y las necesitamos a todas: diversidad geográfica, cultural, lingüística, etc!
+La comunidad de python científico persigue los ideales de la ciencia: (1) la búsqueda de conocimiento verificable (2) reproducibilidad (3) esfuerzo colectivo en beneficio de la humanidad.
+* Toda contribución tiene valor, y las necesitamos a todas: diversidad geográfica, cultural, lingüística, etc!
 * ¿Impacto generado? Agujeros negros! LIGO 2015 (Nobel 17), primera imagen de un agujero negro 2019 (Nobel ?).
 * Cool stuff: Pangeo — volúmenes ridículamente grandes de datos geológicos, ICESat (icepyx), simpeg, GeoSci.xyz, JupyterBook, cursos de ciencias de datos en Berkeley +2000 alumnos simultáneos,
 * Hay un libro sobre como usar Jupyter como herramienta pedagógica: [libro](https://jupyter4edu.github.io/jupyter-edu-book/).
+:::
+
+::: {.content-visible when-profile="eng"}
+> “Came for the language, stayed for the community” - Brett Cannon
+
+All the keynote speakers stressed the importance of teamwork and collaboration in the Python community, as reflected in Brett Cannon's quote from PyCon US 2014. The main common themes were:
+1. **Communication, inclusion and mentoring**: The python community is an example that collaboration can achieve more than competition. Andrew mentioned the importance of good communication between engineering teams. Fernando talked about the value of community and of having had good mentors. Emily mentioned how important it is to have a welcoming community that empowers new members.
+2. **Documentation and backups**:Documentation is crucial to facilitate community collaboration, and to safeguard for the future: what isn't documented is lost. Emily mentioned that “Documenting is saving money”, and that it's a necessary effort. Nick Sweeting also mentioned this in a talk: we take for granted that everything we read today will be available everywhere and in the future. Backing up is important.
+3. **On failure**: We all have our failures. Making them visible is important to show others that it's normal, and that it's part of growth and learning. Fernando mentioned examples of his failures (disconnecting the internet for all of Colombia, a failed hands-on computing course). Emily talked about her insecurities, the lack of confidence to take on challenges and the need to step out of the comfort zone.
+
+## Andrew Godwin [@andrewgodwin](https://twitter.com/andrewgodwin)
+The Scientist and the engineer: [original slides](https://speakerdeck.com/andrewgodwin/the-scientist-and-the-engineer) / [backup slides](https://drive.google.com/file/d/1bfZAgeNa4vkB6MDGQF7ZuVXd27pvmA61/view?usp=sharing)
+
+<center>
+<iframe width="600" height="400" src="https://youtube.com/embed/862xL6jm_PQ" frameborder="0" allowfullscreen></iframe>
+</center>
+
+* **TLDR;** Today's systems are too big for a single person. Communication and delegation are a crucial part of engineering.
+* *“Computer science is no more about computers than astronomy is about telescopes”* — Edsger Dijkstra.
+* *“In theory there is no difference between theory and practice.
+In practice there is”* — Benjamin Brewster.
+* *“A ship in port is safe, but that’s not what ships are built for”*— Grace Hopper
+* The real world is messy. Cosmic ray affects RAM and quantum tunneling affects CPUs. Python is a balanced language to deal with a messy world.
+* Learn when and how to forget. You can’t remember all the details all the time. Besides, it’s inefficient. Abstract - Verify - Forget.
+* Scientists observe and question: They are always asking “why?” and “how?”. Engineers build and invent: they look at a question and think of solutions. Be the scientist and the engineer: Model your systems. Ask the tough questions. Build them for the real world.
+
+## Sarah Guido [@sarah_guido](https://twitter.com/sarah_guido)
+Data Science Retrospective: [original slides](https://www.slideshare.net/SarahGuido/data-science-retrospective) / [backup slides](https://drive.google.com/file/d/19dlfJCQoE3DFU7IVf6GpnMJpl_P9634H/view?usp=sharing)
+
+<center>
+<iframe width="600" height="400" src="https://youtube.com/embed/Apsrm8tiV54" frameborder="0" allowfullscreen></iframe>
+</center>
+
+* **TLDR;** The industry will always create hype. What doesn't change (nor will it) is that data will never be perfect.
+* What’s the definition of Data Science? Using data to drive business outcomes!
+Specialized roles are now required: data engineer, machine learning engineer, business intelligence engineer, data analyst, decision scientist, data science engineer, product scientist and more.
+* Learning data science has evolved. Before: no college programs, few bootcamps, early days for Coursera, Codecademy, etc. Today: Lots of free & open source material, (too) many bootcamps and university programs, not so free resources like Coursera, documentation has improved.
+* Lots of new and cool tools: docker, spark, AWS cloud tools, Zeppelin, Sagemaker, dasboarding tools (Looker, Mode, Periscope, Amplitude). Most tools have a python API!
+Job offers for data science ask for: Python or R, SQL, basic knowledge of statistics and Machine Learning, data intuition, ability to communicate and to be independent. Communications is a must.
+* Data in the wild is still messy: and that’s not ever going to change.
+
+## Wes McKinney [@wesmckinn](https://twitter.com/wesmckinn)
+Python for Data Analysis: Past, Present, and Future: [original slides](https://www.slideshare.net/wesm/pycon-colombia-2020-python-for-data-analysis-past-present-and-future) / [backup slides](https://drive.google.com/file/d/1Gzcwg1Pew1GAEuzz3itpM_FiFer2zqOt/view?usp=sharing)
+
+<center>
+<iframe width="600" height="400" src="https://youtube.com/embed/ZTXFQ2sEarQ" frameborder="0" allowfullscreen></iframe>
+</center>
+
+
+* **TLDR;** Python's growth is due to a perfect storm of libraries, and pandas's success to being able to read csv (among other things).
+* Pandas first version still at Pypi: [https://pypi.org/project/pandas/0.1/](https://pypi.org/project/pandas/0.1/).
+* Wes is no longer working on pandas since 2013, don’t insist!
+Python growth is due to several things, pandas being one of them. There was the need of data wrangling, and there was a “perfect storm” of packages. And packaging of libraries was improved.
+* The success of pandas, mostly due to being able to read csv.
+Python being readable makes everyone can contribute. The new pandas logo is an example of non cs contributions with huge impact
+See: [“PyData NYC 2013: 10 Things I Hate About pandas”](https://www.slideshare.net/wesm/practical-medium-data-analytics-with-python)
+* Pandas has taken responsability of too many things. It is more productive to have a common computational framework to . This is why
+Apache Arrow is “a common standard designed for speed, for data processing libraries”.  It should be CPU/GPU friendly, memory map huge datasets, and relocate data structures without serialization.
+* Personal reflection: in 10 years it will seem natural that a standard for dataframe data exists. Can you imagine how complex and inefficient it would be if each language handled a different standard for chars, integers and floats?
+
+## Ines Montani [@_inesmontani](https://twitter.com/_inesmontani)
+The Future of NLP in Python: [original slide](https://speakerdeck.com/inesmontani/the-future-of-nlp-in-python-keynote-pycon-colombia-2020) / [backup slide](https://drive.google.com/file/d/1z1ErZYM_3L8NiQHlJGJOZBIqpSHMi_pz/view?usp=sharing)
+
+<center>
+<iframe width="600" height="400" src="https://youtube.com/embed/YDAgQO1DX0Q" frameborder="0" allowfullscreen></iframe>
+</center>
+
+* **TLDR;** The hardest part is having good datasets. We need to build software that helps us with that.
+* Skills are tree shaped: There’s overlap and branches can grow into empty spaces.
+* spaCy: Open-source library for industrial-strength Natural Language Processing.
+* Prodigy: Annotation tool for creating training data for machine learning models.
+* Thinc: Lightweight deep learning library for composing models with a functional type-checked API
+* Why python? general purpose better than specialized “AI language” & easier for developers. Your team needs specialist, generalists and complementary.
+* Problem 1: Connecting layers in DL is hard. Matrix dimensions must match, and it’s not straightforward. Thic allows to simplify to unblock developer experience to unlock productivity.
+* Problem 2: Dependencies and configuration is a nightmare. You need to close the gap between prototype & production.
+* Problem 3: We needed something so we built it.
+* Problem 4: It all depends on the data. It’s better to pay someone on your team to precisely gather/create the data you need. Move fast and train things. Have several models and choose based on results.
+
+## Emily Morehouse [@emilyemorehouse](https://twitter.com/emilyemorehouse)
+We go further together: [original slide](https://drive.google.com/file/d/1KZeyDkd-UphbHOWi_kv9KkN83mnDUU9s/view) / [backup slide](https://drive.google.com/file/d/1bwv7hLyo09J2aP1nnGu7LypxJac2A758/view?usp=sharing)
+
+<center>
+<iframe width="600" height="400" src="https://youtube.com/embed/TSphDJdco8M" frameborder="0" allowfullscreen></iframe>
+</center>
+
+* **TLDR;** nobody is perfect all the time, even the python core developers have doubts and have overcome impostor syndrome. Everyone can contribute, and documentation is undervalued.
+* Walrus operator := allows to assign and return value. This was hugely polemic. People are afraid to change. But people is the community.
+* If you’re bored in tech, you’re not working on the right things.
+* Writing documentation is hard! You have the bias of not having fresh eyes.
+* Time is money. Documentation saves time. Ergo, documentation saves money.
+* Mentoring is crucial. Reach out to others, and to overcome impostor syndrome.
+
+## Fernando Perez [@fperez_org](https://twitter.com/fperez_org)
+Jupyter, physics and open communities: [original slides](https://docs.google.com/presentation/d/1KAvDHwslapwO4l98M0HWRjyHEsGxzVFVT2tX_6e1dPQ) / [backup slides](https://drive.google.com/file/d/1eBAYRkIZ-IX-bZnGgnSv9IWxVK5hkBh_/view?usp=sharing)
+
+<center>
+<iframe width="600" height="400" src="https://youtube.com/embed/XFynShM1xLU" frameborder="0" allowfullscreen></iframe>
+</center>
+
+* **TLDR;** Community work is very important. The python community and the scientific python community share values and have learned from each other reciprocally.
+Fernando unplugged a cable to lend it and left all of Colombia without internet for a few hours.
+* People are surprised by the python community: lots of collaboration, no envy or competition, unlike conferences in other fields.
+* IPython started as an afternoon hack, and merged with 2 other projects that had similar functionality (Interactive Python, Lazy Python).
+* Original email announcing IPython: [link](https://mail.python.org/pipermail/python-list/2001-December/093408.html)
+* It was crucial to find support and collaborators along the way: Eric Jones (Enthought), Scipy, John Hunter (matplotlib), Tarvis Oliphant (numpy — scipy), Wes McKinney (pandas) and many more, in addition to the support of the python community (Guido et al.).
+The scientific python community pursues the ideals of science: (1) the pursuit of verifiable knowledge (2) reproducibility (3) collective effort for the benefit of humanity.
+* Every contribution has value, and we need them all: geographic, cultural, linguistic diversity, etc!
+* Impact generated? Black holes! LIGO 2015 (Nobel 17), first image of a black hole 2019 (Nobel ?).
+* Cool stuff: Pangeo — ridiculously large volumes of geological data, ICESat (icepyx), simpeg, GeoSci.xyz, JupyterBook, data science courses at Berkeley +2000 simultaneous students,
+* There's a book about how to use Jupyter as a teaching tool: [book](https://jupyter4edu.github.io/jupyter-edu-book/).
+:::

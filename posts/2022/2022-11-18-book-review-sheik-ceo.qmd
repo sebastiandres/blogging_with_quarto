@@ -1,13 +1,16 @@
 ---
 title: The Sheik CEO
 description: "Reflexión sobre cómo el estilo de liderazgo del sheik influyó en el rápido desarrollo de los EAU"
+description-en: "A reflection on how the sheik's leadership style influenced the rapid development of the UAE"
 date: "2022-11-18"
 author: Yasar Jarrar
 genre: No ficción
 rating: 8
 categories: [lectura]
+categories-en: [reading]
 ---
 
+::: {.content-visible when-profile="esp"}
 ## Comentario
 Recientemente (Octubre 2022) tuve que viajar a Abu Dhabi por trabajo. Fue una experiencia extremadamente interesante, aprendí muchísimas cosas que desconocía del país. Me compré este libro para aprender un poco más sobre los Estados Árabes Unidos y el dramático cambio que han tenido en los últimos 50 años. El libro es un relato del Dr. Yasar Jarrar, quien trabajó directamente con el Sheikh Mohammed bin Rashid Al Maktoum, a quien llamaban el Sheik CEO porque tenía una visión muy pragmática del gobierno. El libro de Jarrar es una reflexión sobre cómo el estilo de liderazgo del sheik influyó en el rápido desarrollo de los EAU. El libro es mitad publicidad de EAU, mitad reflexión sobre el estilo de liderazgo del sheik, pero de todas maneras muy interesante.
 
@@ -57,3 +60,56 @@ Recientemente (Octubre 2022) tuve que viajar a Abu Dhabi por trabajo. Fue una ex
 
 ### Vamos a marte
 La iniciativa de una misión a Marte entrega 3 mensajes: (1) la civilización árabe recuperará su rol de contribución a la civilización humana, (2) la EAU puede competir con cualquier país en el mundo, y (3) no hay que ponerle límites a las ambiciones. El interés de EAU es potenciar la hermandad de las naciones árabes, inspirar a una generación, e invertir en las personas, al mismo tiempo que en ciencia y tecnología.
+:::
+
+::: {.content-visible when-profile="eng"}
+## Comment
+Recently (October 2022) I had to travel to Abu Dhabi for work. It was an extremely interesting experience, I learned a great many things I didn't know about the country. I bought this book to learn a bit more about the United Arab Emirates and the dramatic change they have undergone in the last 50 years. The book is an account by Dr. Yasar Jarrar, who worked directly with Sheikh Mohammed bin Rashid Al Maktoum, whom they called the Sheik CEO because he had a very pragmatic view of government. Jarrar's book is a reflection on how the sheik's leadership style influenced the rapid development of the UAE. The book is half UAE publicity, half reflection on the sheik's leadership style, but interesting all the same.
+
+## Notes from the book (verbatim)
+
+### Dubai INC
+* Fortune is a selective disadvantage: what favors us and gives us advantages is a disadvantage if we become complacent and don't use it to prepare ourselves. That is the reason why the UAE is investing so much in diversifying its economy, in tourism and education, so as not to depend on oil revenue.
+* Competition is key to success. Through several examples, it is shown that monopoly leads to inefficiency and conformity. To reach maximum potential it is necessary to have competitors.
+
+### Lead with courage and vision
+* Have great ambition and aspiration. Strive to be the best and number one. Don't plan for or accept mediocre goals. The problem is not having high goals and falling short, but having low goals and reaching them.
+* Time is the main resource: use it well and fast. Doing something today at 60% is better than 80% next month and 90% next year. Don't waste time and don't let your competitors gain a temporal advantage. Start fast. If it works, refine, repeat and perfect it. Repeatability is key to gaining speed.
+* Manage attention (focus), not time. Attention (focus) management is realizing how much attention you invest in certain activities and distractions. It will help you stay focused on the key activities and avoid distractions. In productivity, time management is part of the problem (it is not the solution).
+* Imagination is not enough. It must be accompanied by bold actions. Take risks and own your actions and risks. Take risks even if you might fail, but consider that there are "good risks" and "bad risks". Don't take risks too early, but when you do, do it all the way. The odds are usually better than your worst-case scenario.
+* If you have a vision and you believe in it (and you can back it up with data/facts) don't get distracted by the negativity of others. Imagine a version of tomorrow and build your path toward it. When you have a clear vision, failure is not an option even when it happens. A leader must always keep the focus on the long term. Life is a marathon, and there will be stones on the road. Failing is fine, as long as you see it as another step on the path toward fulfilling your vision.
+
+### Action beats everything else
+* Deliverability requires discipline, and discipline comes from understanding that time is our most valuable resource and is not renewable. 5 minutes early is barely just in time. Respect the time of your collaborators - don't be late to meetings or cancel meetings. If you don't know the value of time, you won't manage to deliver your projects or your vision on time.
+* Know when to give up. Learn the lesson of "fail fast" and recognize when it's time to cancel a project or update your thinking. In most of the world's public sectors it is easier to propose a new project than to cancel an old one, or to admit that something hasn't worked. Having the courage to say "this didn't work", cancel it or change it, is crucial for the world we live in. Agility means knowing when to quit, and fast, and being able to adapt to the direction that's needed.
+* Make delivery personal: show your team the opportunity and a vision of the future they seek to build, and make them believe they are fully responsible for their actions and consequences. This mindset and a system of personal accountability, which must be coupled with capacity for action (enablement) and authority. Leave no room for excuses. If someone makes a promise, make sure they can deliver or leave room for someone else to do it. When we talk about delivery, it's black or white, there is no place for grays.
+* Focus on the details and know the content of each report. Don't be a "big picture" person who only speaks in jargon. Success in life lies in understanding the details, in seeing and appreciating the small things. Success is conquered one step at a time, detail by detail. To learn the details: read, investigate, ask for information, observe. Don't accept second-hand information.
+* Learn the power of a "personalized thank you". There is no stronger motivator. As a leader, genuinely thanking your team helps build morale, positive attitude and respect. If done correctly, it can be a stronger motivator than money itself. A sincere thank you moves, motivates and generates positive behavior.
+* Prioritize ruthlessly and put resources behind your priorities. If everything is a priority, nothing is. What is THE task you have to do? Do it, and do it well. Achieve success in that task, and move on to the next task.
+* Never stop moving forward. No matter who you are, wake up and run at your maximum speed. Every day is a new beginning, a possibility to add to yesterday's successes and to move your vision, goals and dreams forward. Life stops only when you stop moving forward. Remember the story of the lion and the gazelle: every morning the gazelle wakes up and thinks *"today I have to run as fast as possible to escape the lions"*. Every morning the lion wakes up and thinks *"today I have to run as fast as possible if I want to catch a gazelle"*. It doesn't matter if you are prey or predator, you have to have the mindset of running as fast as you can to achieve success.
+
+### Never believe your work is complete
+* Innovate or perish. Opportunities have to be created, they don't arrive magically. To innovate you have to get out of your comfort zone and think differently. This won't happen by being in the same office talking to the same people. Be bold: talk to new people, visit new places, read new books, learn new things. You can't solve new problems with the same tools and mindset that created the problem. Dedicate part of your time and week to looking at and thinking about non-traditional things.
+* The key is customer-centrism. Listen to your customers and design around their needs. Listen to anyone you are serving. Don't forget that the only measure of success is customer satisfaction.
+* Invest in ideas that will make your work obsolete or redundant. Never forget that organizations and leaders that fail to innovate perish. Create new models that make the current models obsolete.
+* Keep an open mind and never stop listening. Listen to people who criticize you, before the people who praise you. Never believe you are 100% right. There is always a possibility that you are 1% wrong. Keep that in perspective and seek feedback and look for ways to improve your thinking and mindset.
+* Never say never. The only way to act is to be agile and innovate. Be an idealist and aim for the stars, but always stay open to change and opportunities. It is not the strongest species that survives, but the one that adapts fastest.
+
+### Surround yourself with strong leaders
+* Make sure to develop new leaders: seek them out, mentor them, grow them, support them. This is not only key to delivering your vision and legacy, it is simply the right way to proceed. A growing community of leaders is a rewarding experience.
+* Make sure you foster leaders based on merit, diversity and gender balance. Diversity is the heart of innovation, and avoids reaching a conclusion just because everyone thinks the same for being too similar.
+* Delegate, delegate, delegate. To grow, you have to have a great team and you have to delegate work to them. Design your "zone of genius" where you have a great team that shares your vision, manages the delivery of the work, and allows you to concentrate on refining your vision.
+* Great leaders have the ability to bring out the best in every situation. They are courageous and not afraid to confront the status-quo and push the limits to make things better. They don't believe they have all the answers. The best leaders know how to bring out the best in each person. In short: it is the ability to find, develop and motivate the best talent.
+
+### Win heart and mind
+* Timing is everything. Great ideas don't come to fruition due to poor communication and bad timing. Even if you think you have the best idea, seek to communicate it in the best way and at the best moment. A leader is an orchestra conductor.
+* Manage the "new digital media". There is no escape from the digital era. New leaders have to manage themselves on social media. It not only helps reach a much larger audience, it also makes them more human.
+* An excellent communicator must know how to listen. Listening allows you to understand and connect. When you do that, communication becomes natural. You have 2 ears and 1 mouth: listen twice as much as you talk.
+* Never make a decision in a state of tiredness or stress. Manage the level of mental or physical stress, especially in crises. Keep optimism and calm. The basics work well: sleep well, take long walks, and make your own coffee - in essence, mindfulness.
+* Learn to tell stories. Tell stories that capture people's hearts and explain your impact and contribution in a unique way. Make sure your stories start with the "why" (like Simon Sinek does in Why).
+* Work for something greater than yourself. Focus on people, on doing things that help people, and on creating impact. Great things happen to those who work for something greater. There is more joy, more satisfaction and more sense of purpose.
+* Take care of yourself. If you don't take care of yourself, you won't be able to deliver your best and help others. Have a hobby, exercise, eat well, sleep well, and do what makes you happy.
+
+### Let's go to mars
+The initiative of a mission to Mars delivers 3 messages: (1) Arab civilization will recover its role of contribution to human civilization, (2) the UAE can compete with any country in the world, and (3) one must not put limits on ambitions. The UAE's interest is to strengthen the brotherhood of Arab nations, inspire a generation, and invest in people, at the same time as in science and technology.
+:::

@@ -1,10 +1,14 @@
 ---
 title: Microcuentos 2023
+title-en: Flash Fiction 2023
 description: Cuentos enviados a Santiago en 100 palabras (2023)
+description-en: Stories submitted to "Santiago en 100 palabras" (2023)
 date: "2024-01-01"
 categories: [escritura, microcuentos]
+categories-en: [writing, flash fiction]
 ---
 
+::: {.content-visible when-profile="esp"}
 ## Reencarnación
 Los huincas me arrancaron de mi tierra. Fuí humillado y desnudado de mis ropajes ancestrales. Me encerraron y me quitaron alimento, agua y luz. Cuando pensaba que no volvería a ser libre, sentí unas minúsculas gotas que me recordaron los inviernos en el sur, en medio de la niebla, el bosque y los animales. Sabía que tenía madera de guerrero, pero me sorprendí al transformarme en sabiduría. Me había convertido en un libro.
 
@@ -49,10 +53,10 @@ Drones de supervisión policial encontraron el cadáver de Andrew Stoobern, el �
 Moler los granos de café en la máquina que te regalé para tu cumpleaños. Prepararnos un café americano en la prensa francesa que me diste para aquella navidad. Volver a nuestra cama y disfrutar en complicidad el aroma del café y esa pequeña pausa antes de comenzar el día. Compartimos por años esa pequeña rutina. Quizás sería más romántico traer flores a tu tumba en lugar de tazas de café. Pero las flores me recuerdan la injusticia de que no pudiste envejecer y marchitarse de a poco. Y el café, me recuerda lo que era el momento favorito de mi día.
 
 ## Educación
-El azar nos obliga a hacer el trabajo de Ciencias Naturales juntos. 
-Él presta el smatphone que no tengo para buscar la información. 
+El azar nos obliga a hacer el trabajo de Ciencias Naturales juntos.
+Él presta el smatphone que no tengo para buscar la información.
 Yo pienso, aprendo, resumo, escribo, dibujo, recorto, pego y organizo.
-Resultado: Ruisopatrón un siete. Soto un cinco. 
+Resultado: Ruisopatrón un siete. Soto un cinco.
 
 ## Error de cálculo
 Camuflada como un asteroide, tenía la misión de colonizar la tierra y eliminar a esos primitivos organismos de carbono. Su trayectoria había sido calculada con precisión hace miles de años. Pero el plan no contaba con el desarrollo de un pequeño homínido, que comenzaría a expandirse por el planeta, a fabricar herramientas e intervenir su entorno. ¿Quién podría anticipar que contaminarían y cambiarían la atmósfera de su planeta en su propio perjuicio? La nave, no preparada para este cambio imprevisible e ilógico, perdió el control y se fundió a 2000 grados celsius. Llegó a la tierra compactada hasta ser indistinguible de un meteorito común.
@@ -64,6 +68,72 @@ Las dimensiones de 'Oumuamua causaron conmoción en la comunidad internacional. 
 La vimos cruzar el firmamento, dejando una estela celeste. Mi deseo fue amarte toda la vida. No se que pediste tu. Cinco años después de que te fuiste y sintiendo que este amor sigue vivo como el primer día, desearía haber pedido otra cosa.
 
 ## Nada cambia
-Golpeó la puerta de la cabaña. Estaba cansada. Había tomado el sendero más largo, porque sabía que su madre la estaría mirando en la app que le había instalado en el teléfono. 
-Adelante -gritó una voz ronca desde dentro. Soy el señor Wulff -se presentó- tu abuela acaba de salir, pero está por regresar. Nos conocimos por Tinder, llevamos unas semanas saliendo. 
+Golpeó la puerta de la cabaña. Estaba cansada. Había tomado el sendero más largo, porque sabía que su madre la estaría mirando en la app que le había instalado en el teléfono.
+Adelante -gritó una voz ronca desde dentro. Soy el señor Wulff -se presentó- tu abuela acaba de salir, pero está por regresar. Nos conocimos por Tinder, llevamos unas semanas saliendo.
 Un gusto -mintió Caperucita. Y sabiendo que era mala educación, pero sin poder evitarlo, le comentó: pero qué ojos más grandes tienes.
+:::
+
+::: {.content-visible when-profile="eng"}
+## Reincarnation
+The huincas tore me from my land. I was humiliated and stripped of my ancestral garments. They locked me up and took away food, water and light. When I thought I would never be free again, I felt tiny droplets that reminded me of the winters in the south, amid the fog, the forest and the animals. I knew I had the makings of a warrior, but I was surprised to be transformed into wisdom. I had become a book.
+
+## Earthly rivalry
+He looked around to make sure there was no one else before shouting: What the hell are you doing here, you idiots? This block is ours! Bráyatan was worried about a public confrontation, but as a leader he couldn't show weakness. Johni answered him: What's the big deal, the toughest one wins around here, plain and simple. They had spent months fighting over every block of the housing project. Bráyatan had more presence and seniority in the neighborhood. Johni was a rising star. After exchanging their best sermons, the groups split apart. Every Sunday, Jehovah's Witnesses and evangelicals fiercely fight over new followers.
+
+## Wear and tear
+I thought it was just my imagination, that it couldn't be that Ignacio, Manuel, Gabriela, Arturo and Andrés were shrinking. I decided to measure them and write down the results. In a single day they could lose one or two millimeters. In a few months I had to gather four of them to pay for what one used to cover. Damned inflation. (In Chile, banknotes bear the portraits of Ignacio Carrera Pinto, Manuel Rodríguez, Gabriela Mistral, Arturo Prat and Anibal Pinto / Andrés Bello.)
+
+## Limbo
+Do you think they've forgotten us? – asks the one who arrived last. No – answers the oldest one – you just have to be patient. He's been there over a year, and has watched many others come and go. Someday it will be his turn. Every week is different. Sometimes several arrive together. But almost always they leave one at a time. Suddenly, a stir. A new one has arrived. And the pile of books on the nightstand keeps growing.
+
+##  Misunderstanding
+I shout that I won't leave her, that we've become inseparable, that my life isn't the same without her. I cry and throw a tantrum, as I never thought I would at 21. It's a whim, says my mother. No, she's not coming with us, and that's final, says my father. I'll think of her and miss her every day. I won't forget her, I promise myself. Throughout the whole vacation, every cup of instant coffee reminded me of her. Despite my efforts, my espresso machine stayed home.
+
+## Unacceptable ending
+Doña Clotilda goes to mass without fail on Tuesdays, Thursdays and Sundays. At ninety years old, she knows her time will soon come and she's at peace. She's had a long, hard and not very happy life, and in spite of everything she helps neighbors and acquaintances with her limited means. Perhaps that's why she was so surprised to wake up in hell, with walls of fire around her. What was my sin, dear God? - she asked, weeping over and over as everything burned around her. The firefighters found her body the next morning, still clutching her cross.
+
+## Metamorphosis
+The transformation was gradual. First he began to forget things and thought his brain had shrunk to the size of a walnut. He was called "sir" three times in three days running, and suddenly his neck stretched out to measure 8 meters. Fortunately a few gray hairs appeared, and an enormous 6-meter tail gave balance to his recently acquired 50 tons. That summer, when he noticed he didn't know any of the artists invited to the Viña festival, he accepted that the involution was over. He was, officially, a dinosaur.
+
+## Bullying
+He wiped away his tears. He knew that showing them his emotions was giving them more power. His mother had told him so many times that he shouldn't be so sensitive, to be a little man and not cry in public. He never imagined seventh grade would be like this. How cruel and mocking teenagers can be. It was only the second day, and he knew that Emilio and Vicente would look for anything to torment him. He was so nervous he could barely control that stutter he thought he'd already overcome. No one warned him how hard it was to be a teacher.
+
+## InstaMood
+In 2073, the dominant form of communication is sharing one-second emotions. They are transmitted wirelessly and directly to the brain's sensory areas. Neurofluencers share, for one second, sensations like the ecstasy of the first bite at an exclusive restaurant, the indescribable pride of the birth of your first child, and the overwhelming sadness of the death of a father from cancer. In one hour you can experience a thousand different emotions, of course, if you can put up with the 2600 seconds of advertising.
+
+## Double life
+He had spent 9 years in his Santiago marriage (blonde, 45 years old, 2 girls, a dog, a house with a garden) and 7 years living together in Calama (brunette, 37 years old, 1 boy, 2 cats, an apartment). He was no exception among his fellow miners, but unlike them he had organized his parallel lives with an engineering precision that made him proud. His whole life was duplicated, compartmentalized and without confusion. Until at the pharmacy he made the blunder of giving, with full confidence and without hesitating a second in front of his wife, the name and ID number of his mistress so as not to lose the loyalty points.
+
+## Bad love
+Panchito watches as his friends fall to the ground, scream in pain and writhe clutching their stomachs. The school field trip is interrupted by the tragedy. At the hospital, he confesses. He has handed out the cake his grandmother sent him, but he hasn't eaten it. She has been forbidden to cook since the last accident. He still has his piece, wrapped in a napkin, in his pocket. The lab analysis confirms it: instead of powdered sugar, it's coated in rat poison.
+
+## ​​On the high seas
+Devastated by his daughter's death, he turns to spiritualism. The beyond sends him strange instructions to briefly open a portal. He steers his whole career to be at the appointed place and date: the coast of Iquique, May 21st, 1879. The crossing is successful and he exchanges life for life. What Prat will never know is that his daughter Carmela wakes up in a small coffin 2 meters underground.
+
+## Breaking news: The last human with a biological body dies
+New New York, North America. 12/07/2128. 8:35 am.
+Police surveillance drones found the corpse of Andrew Stoobern, the last human with a biological body on record. Andrew, born in 2082, repeatedly refused to transfer himself to the i-www. His ex-wife made no statements. He had no descendants through random psychometric recombination, given his lack of a digital avatar like the rest of humanity. At the scene of death, a written note was found that read "I'd rather die as a human than live as a machine". Cleaning androids are already sanitizing the site.
+
+## Routine
+Grinding the coffee beans in the machine I gave you for your birthday. Making ourselves an americano in the French press you gave me that Christmas. Coming back to our bed and savoring together the aroma of the coffee and that small pause before starting the day. We shared that little routine for years. Maybe it would be more romantic to bring flowers to your grave instead of cups of coffee. But the flowers remind me of the injustice that you couldn't grow old and wither away little by little. And the coffee reminds me of what used to be my favorite moment of the day.
+
+## Education
+Chance forces us to do the Natural Science assignment together.
+He lends the smartphone I don't have to look up the information.
+I think, learn, summarize, write, draw, cut out, paste and organize.
+Result: Ruisopatrón gets a seven. Soto gets a five.
+
+## Miscalculation
+Camouflaged as an asteroid, it had the mission of colonizing the earth and eliminating those primitive carbon-based organisms. Its trajectory had been calculated with precision thousands of years ago. But the plan didn't account for the development of a small hominid, who would begin to spread across the planet, to make tools and intervene in its surroundings. Who could anticipate that they would pollute and change their planet's atmosphere to their own detriment? The ship, unprepared for this unforeseeable and illogical change, lost control and melted at 2000 degrees Celsius. It reached the earth compacted until it was indistinguishable from a common meteorite.
+
+## The origin
+The dimensions of 'Oumuamua caused a stir in the international community. Its 240 meters in length by 4 meters in width make it an asteroid of unusual shape. Astronomers wonder how it has maintained that fragile shape and whether it is a crewed ship. At the other end of the galaxy, 5 million years ago, a stone colossus kilometers tall puts away his scissors and wonders where the fingernail he just clipped ended up.
+
+## Shooting star
+We saw it cross the firmament, leaving a sky-blue trail. My wish was to love you all my life. I don't know what you wished for. Five years after you left and feeling that this love is still as alive as the first day, I wish I had wished for something else.
+
+## Nothing changes
+She knocked on the cabin door. She was tired. She had taken the longer trail, because she knew her mother would be watching her on the app she had installed on her phone.
+Come in -shouted a hoarse voice from inside. I'm Mr. Wulff -he introduced himself- your grandmother just stepped out, but she's about to come back. We met on Tinder, we've been dating a few weeks.
+Pleased to meet you -lied Little Red Riding Hood. And knowing it was rude, but unable to help herself, she remarked: but what big eyes you have.
+:::

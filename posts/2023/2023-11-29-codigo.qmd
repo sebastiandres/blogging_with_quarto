@@ -1,11 +1,14 @@
 ---
 title: "Post Con Codigo"
+title-en: "Post With Code"
 author: "sebastiandres"
 date: "2023-11-29"
 categories: [código, python]
+categories-en: [code, python]
 image: "image.jpg"
 ---
 
+::: {.content-visible when-profile="esp"}
 Este es un post con código ejecutable
 
 ```{python}
@@ -13,5 +16,14 @@ Este es un post con código ejecutable
 #| echo: true
 print("Hola mundo")
 ```
+:::
 
+::: {.content-visible when-profile="eng"}
+This is a post with executable code
 
+```{python}
+#| code-fold: false
+#| echo: true
+print("Hola mundo")
+```
+:::

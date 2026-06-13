@@ -1,3 +1,4 @@
+::: {.content-visible when-profile="esp"}
 ---
 title: "Quarto"
 ---
@@ -224,3 +225,235 @@ Columna derecha
 Este archivo está basado en <https://quarto.org/docs/authoring/markdown-basics.html>
 
 * <https://quarto.org/docs/presentations/>: Información extra para presentaciones.
+
+:::
+
+::: {.content-visible when-profile="eng"}
+---
+title: "Quarto"
+---
+
+## What is quarto?
+Quarto is a "publishing system". Using an enriched markdown format it lets you generate web pages, presentations, blogs and much more. The file format is .qmd.
+
+## Text formatting
+The following text:
+```{markdown}
+*cursivas*, **negritas**, ***negritas cursivas***,  
+~~tachado~~, superíndice^2^, subíndice~2~, `verbatim`   
+```
+will be shown like this:  
+*italics*, **bold**, ***bold italics***,  
+~~strikethrough~~, superscript^2^, subscript~2~, `verbatim`   
+
+Very important: You can make a single line break with two blank spaces, or a large line break by separating with 2 lines.
+
+So, for example, the markdown code
+```{markdown}
+Lorem ipsum
+es aburrido.  
+Esta es una nueva línea.
+
+Este es un nuevo párrafo.
+```
+
+will be shown as
+
+Lorem ipsum
+is boring.  
+This is a new line.
+
+This is a new paragraph.
+
+## Headings
+
+The classic convention is used for `# Title`, `## Subtitle`, ... , `###### Subsubsubsubsubsub-title`,
+
+## Links
+
+The following codes let you embed links
+``` markdown  
+<https://quarto.org>  
+[Quarto](https://quarto.org) 
+``` 
+
+## Images 
+
+The markdown code for images is similar to links, but uses a `!` to distinguish them.
+It is possible to mix them
+
+```{.markdown}  
+![Caption](elephant.png)  
+![Caption](elephant.png "Elephant"){fig-alt="An elephant."}
+``` 
+
+It is possible to make an image "clickable" by mixing the respective codes:
+```{.markdown}  
+[![Caption](elephant.png)](https://quarto.org)  
+[![Caption](elephant.png "Elephant"){fig-alt="An elephant."}](https://quarto.org)
+``` 
+
+## Videos
+
+To include videos you can use the `{{{< video >}}}` code:
+
+```{.markdown shortcodes="false"}
+{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
+```
+
+
+## Lists
+
++-----------------------------------+---------------------------------+
+| Código en Markdown                | Output                          |
++===================================+=================================+
+| ``` markdown                      |                                 |
+| * unordered list                  | * unordered list                |
+|     + sub-item 1                  |     + sub-item 1                |
+|     + sub-item 2                  |     + sub-item 2                |
+|         - sub-sub-item 1          |         - sub-sub-item 1        |
+| ```                               |                                 |
++-----------------------------------+---------------------------------+
+| ``` markdown                      |                                 |
+| 1. ordered list                   |  1. ordered list                |
+| 2. item 2                         |  2. item 2                      |
+|     i) sub-item 1                 |      i) sub-item 1              |
+|          A.  sub-sub-item 1       |           A.  sub-sub-item 1    |
+| ```                               |                                 |
+|                                   |                                 |
++-----------------------------------+---------------------------------+
+| ``` markdown                      |                                 |
+| (@)  A list whose numbering       |  (1) A list whose numbering     |
+|                                   |                                 |
+| continues after                   |  continues after                |
+|                                   |                                 |
+| (@)  an interruption              |  (2) an interruption            |
+| ```                               |                                 |
++-----------------------------------+---------------------------------+
+| ``` markdown                      |                                 |
+| ::: {}                            | ::: {}                          |
+| 1. A list                         | 1. A list                       |
+| :::                               | :::                             |
+|                                   |                                 |
+| ::: {}                            | ::: {}                          |
+| 1. Followed by another list       | 1. Followed by another list     |
+| :::                               | :::                             |
+| ```                               |                                 |
++-----------------------------------+---------------------------------+
+| ``` markdown                      |                                 |
+| term                              | term                            |
+| : definition                      | : definition                    |
+| ```                               |                                 |
++-----------------------------------+---------------------------------+
+
+Note that lists need a blank line above the list, otherwise they will not be shown correctly.
+
+## Tables
+
+Tables follow the classic markdown format, where alignment is defined with `:`, as the following code shows:
+
+``` markdown
+| Derecha | Izquierda | Por Defecto | Centrada |
+|------:|:-----|---------|:------:|
+|   12  |  12  |    12   |    12  |
+|  123  |  123 |   123   |   123  |
+|    1  |    1 |     1   |     1  |
+```
+
+which will be shown like this:
+
+| Derecha | Izquierda | Por Defecto | Centrada |
+|------:|:-----|---------|:------:|
+|    12 | 12   | 12      |   12   |
+|   123 | 123  | 123     |  123   |
+|     1 | 1    | 1       |   1    |
+
+The following link has more information: <https://quarto.org/docs/authoring/tables.html>.
+
+## Code
+
+To delimit code blocks that are shown without being executed you use ```` ``` ````
+
+```` markdown
+```
+código
+```
+````
+
+You can add a language (python, markdown, html, javascript, etc) to correctly highlight the language syntax. So the following code
+
+```` markdown
+```python
+print("¡Que tal, festival!")
+```
+````
+
+will look like this:
+```python
+print("¡Que tal, festival!")
+```
+
+
+To delimit code blocks that will be executed, like cells in jupyter notebook/lab, you use curly braces enclosing the language, so for example the following code
+```` markdown
+```{python}
+print("¡Que tal, festival!")
+```
+````
+
+which will look like this:
+```{python}
+print("¡Que tal, festival!")
+```
+
+
+## Equations
+
+Use `$` delimiters for inline equations and `$$` delimiters for equations on their own line. 
+
+So, for example `$E = mc^{2}$` will be shown as $E=mc^{2}$.
+
+On the other hand, ```$$ E = mc^{2}$$``` will be shown like this
+$$ E = mc^{2}$$
+
+## Columns
+
+It is possible to define columns easily, using `::::` and `:::`.
+
+The following code:
+```{markdown}
+:::: {.columns}
+
+::: {.column width="40%"}
+Columna izquierda...
+:::
+
+::: {.column width="60%"}
+Columna derecha
+:::
+
+::::
+```
+
+Will be shown like this:
+
+:::: {.columns}
+
+::: {.column width="40%"}
+Left column...
+:::
+
+::: {.column width="60%"}
+Right column
+:::
+
+::::
+
+
+
+## References
+This file is based on <https://quarto.org/docs/authoring/markdown-basics.html>
+
+* <https://quarto.org/docs/presentations/>: Extra information for presentations.
+
+:::

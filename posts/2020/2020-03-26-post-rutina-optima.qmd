@@ -1,17 +1,35 @@
 ---
 title: La rutina óptima es aburrida
+title-en: The optimal routine is boring
 description: Y está sobrevalorada
+description-en: And it's overrated
 date: "2020-03-26"
 categories: [reflexión]
+categories-en: [reflection]
 ---
 
+::: {.content-visible when-profile="esp"}
 Nadie es perfecto. Es difícil ser un ultra-maratonista, fundador de startup, medallista fields y nobel, buen padre y buen esposo. Probablemente también es aburrido, pero estoy muy lejos como para saberlo. Hacer todas las tareas diarias que deberíamos no es fácil, y mantener una rutina es _-aceptémoslo de una vez por todas-_ aburrido. Esto hace que frecuentemente sintamos que no estamos avanzando en la vida.
 
 Una aproximación más realista y efectiva es tener una rotación de rutinas. Ponerse un objetivo y una cierta cantidad de tiempo. Enfocarse y obsesionarse hasta lograr ese **único** objetivo. Algunas ideas:
-* Aprender portugués en 2 meses. 
-* Tomar todos los cursos de Deep Learning que puedas en coursera por 3 meses. 
-* Hacer una página web y escribir 10 posts en 6 semanas. 
-* Mirar en netflix el top 20 de películas en IMBD en 2 meses. 
-* Hacer una rutina de deporte durante 4 semanas. Meditar a las 6 am todos los días por un mes. 
+* Aprender portugués en 2 meses.
+* Tomar todos los cursos de Deep Learning que puedas en coursera por 3 meses.
+* Hacer una página web y escribir 10 posts en 6 semanas.
+* Mirar en netflix el top 20 de películas en IMBD en 2 meses.
+* Hacer una rutina de deporte durante 4 semanas. Meditar a las 6 am todos los días por un mes.
 
 **Tener una rutina óptima está sobrevalorado**. Hacer cambios seguidos es más natural y siempre más entretenido. La clave es hacerlo deliberadamente, y no al azar.
+:::
+
+::: {.content-visible when-profile="eng"}
+Nobody is perfect. It's hard to be an ultra-marathoner, startup founder, Fields medalist and Nobel laureate, a good father and a good husband. It's probably also boring, but I'm too far away to know. Doing all the daily tasks we should isn't easy, and keeping a routine is _-let's just admit it once and for all-_ boring. This often makes us feel like we're not making progress in life.
+
+A more realistic and effective approach is to have a rotation of routines. Set yourself a goal and a certain amount of time. Focus and obsess until you achieve that **single** goal. Some ideas:
+* Learn Portuguese in 2 months.
+* Take all the Deep Learning courses you can on coursera for 3 months.
+* Build a website and write 10 posts in 6 weeks.
+* Watch the top 20 IMBD movies on netflix in 2 months.
+* Do a sports routine for 4 weeks. Meditate at 6 am every day for a month.
+
+**Having an optimal routine is overrated**. Making frequent changes is more natural and always more fun. The key is to do it deliberately, and not at random.
+:::

@@ -1,10 +1,13 @@
 ---
 title: "Procesando datos con pandas"
+title-en: "Processing data with pandas"
 author: "sebastiandres"
 date: "2024-03-06"
 categories: [código, python]
+categories-en: [code, python]
 ---
 
+::: {.content-visible when-profile="esp"}
 La motivación de este post es ayudarme en el futuro a mi mismo a recordar estos trucos, porque la notación no es muy amigable y siempre lo olvido.
 
 Ejemplificaré con el siguiente dataset:
@@ -87,7 +90,7 @@ Pero al menos es mejor que el método anterior porque puedes usar funciones gen�
 
 El método que aconsejo es con `agg` pero con definición explícita de los nombres de las columnas.
 
-Después del groupby, aplicas el método agg pasándole inventando un nombre del parámetro deseado y dándole como valor una tupla (columna, función). 
+Después del groupby, aplicas el método agg pasándole inventando un nombre del parámetro deseado y dándole como valor una tupla (columna, función).
 
 ¡Las columnas generadas obtienen inmediatamente el nombre deseado!
 
@@ -96,9 +99,9 @@ Después del groupby, aplicas el método agg pasándole inventando un nombre del
 
 import pandas as pd
 df_g = df.groupby("color").agg(
-        promedio_x = ("x", lambda _: _.mean()), 
-        conteo_y = ("y", lambda _: _.nunique()), 
-        promedio_y = ("y", lambda _: _.mean()), 
+        promedio_x = ("x", lambda _: _.mean()),
+        conteo_y = ("y", lambda _: _.nunique()),
+        promedio_y = ("y", lambda _: _.mean()),
 ).reset_index()
 print(df_g)
 ```
@@ -139,9 +142,153 @@ def norm_inf(points):
     return d.mean()
 
 df_agg = df.groupby("color").agg(
-        norm_1_avg = ("points", norm_1), 
-        norm_2_avg = ("points", norm_2), 
-        norm_inf_avg = ("points", norm_inf), 
+        norm_1_avg = ("points", norm_1),
+        norm_2_avg = ("points", norm_2),
+        norm_inf_avg = ("points", norm_inf),
 ).reset_index()
 print(df_agg)
 ```
+:::
+
+::: {.content-visible when-profile="eng"}
+The motivation for this post is to help my future self remember these tricks, because the notation is not very friendly and I always forget it.
+
+I'll illustrate with the following dataset:
+
+```{python}
+#| code-fold: true
+#| code-summary: "Show how the dataset is generated"
+
+import pandas as pd
+df = pd.DataFrame(
+    data = {
+            "color": ["negro", "negro", "negro", "azul","azul", "azul", "rojo", "rojo"],
+            "x":[1, 2, 3, -2, -5, -1, -2, -5],
+            "y":[1, 2, 3, -4, -5, -4, 3, 4],
+           })
+print(df)
+```
+
+Graphically, the previous set looks like this:
+```{python}
+#| code-fold: true
+#| code-summary: "Show how the chart is generated"
+
+from matplotlib import pyplot as plt
+color_dict = {"negro":"k", "azul":"b", "rojo":"r"}
+x = df.x.values
+y = df.y.values
+L = max(abs(x.max()), abs(x.min()), abs(y.max()), abs(y.min()), ) + 1
+c = [color_dict[_] for _ in df.color.values]
+plt.scatter(x, y, c=c)
+plt.xlim([-L, L])
+plt.ylim([-L, L])
+```
+
+
+## Traditional methods
+
+One option is to apply the methods directly:
+```{python}
+#| code-fold: false
+
+df_g = df.groupby("color").mean().reset_index()
+print(df_g)
+```
+
+or applying it to a specific column:
+
+```{python}
+#| code-fold: false
+
+df_g = df.groupby("color").y.mean().reset_index()
+print(df_g)
+```
+
+It's not advisable because:
+* You'll have to manually rename the column names, which keep the name of the original column and not of the applied function.
+* You can't apply the method to more than one function and column simultaneously
+* You can't use any function, only some well-known ones.
+
+Another method that can be used, but isn't as convenient, is to use `agg`:
+
+```{python}
+#| code-fold: false
+
+df_g = df.groupby("color").agg(
+    {
+        "x": [lambda _: _.mean()], # applied to y
+        "y": [lambda _: _.nunique(), lambda _: _.mean()], # applied to z
+    }
+)
+print(df_g)
+```
+
+It's not advisable because:
+* It generates 2 levels of columns: it's hard to "flatten"
+* It makes renaming the columns even harder.
+But at least it's better than the previous method because you can use generic functions.
+
+## Suggested method
+
+The method I recommend is `agg` but with explicit definition of the column names.
+
+After the groupby, you apply the agg method by passing it an invented name for the desired parameter and giving it a tuple (column, function) as the value.
+
+The generated columns immediately get the desired name!
+
+```{python}
+#| code-fold: false
+
+import pandas as pd
+df_g = df.groupby("color").agg(
+        promedio_x = ("x", lambda _: _.mean()),
+        conteo_y = ("y", lambda _: _.nunique()),
+        promedio_y = ("y", lambda _: _.mean()),
+).reset_index()
+print(df_g)
+```
+
+The groupby can receive a list of columns in case you need a more detailed level of aggregation.
+
+Note that the columns to be generated are passed as function parameters (`promedio_y`) and not strings (`"promedio_y"`)!!!
+
+## Multicolumn
+
+An interesting improvement is to use the above to work with multiple columns at the same time.
+Let's look at a concrete example: calculating different metrics (distances) with respect to the origin (0,0).
+
+To be able to apply the previous trick, we need to "pack the columns" into a variable
+
+```{python}
+#| code-fold: false
+
+df["points"] = list(zip(df.x, df.y))
+print(df)
+```
+
+And now we can apply different functions, although in general it will be better to define them as functions (rather than lambda functions) to better express the relationships to use between the elements:
+
+```{python}
+#| code-fold: false
+
+def norm_1(points):
+    d = points.apply(lambda point: abs(point[0]) + abs(point[1]))
+    return d.mean()
+
+def norm_2(points):
+    d = points.apply(lambda point: (point[0]**2 + point[1]**2)**.5)
+    return d.mean()
+
+def norm_inf(points):
+    d = points.apply(lambda point: max(abs(point[0]), abs(point[1])))
+    return d.mean()
+
+df_agg = df.groupby("color").agg(
+        norm_1_avg = ("points", norm_1),
+        norm_2_avg = ("points", norm_2),
+        norm_inf_avg = ("points", norm_inf),
+).reset_index()
+print(df_agg)
+```
+:::

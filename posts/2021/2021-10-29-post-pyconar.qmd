@@ -1,11 +1,19 @@
 ---
 title: "PyCon Argentina 2021"
 description: "Taller para Docentes"
+description-en: "Workshop for Teachers"
 date: "2021-10-29"
 categories: [pycon]
 ---
 
-El viernes 29 de Octubre dictamos un taller en la Pycon Argentina, con Sofía Martín, Liliana Hurtado y Ariel Ramos. 
-Fue una experiencia interesante, no fue fácil coordinarnos entre varios para dictar el taller. Finalmente, creo que logramos armar un taller interesante para docentes que están introduciéndose en la pedagogía con jupyter notebooks. 
+::: {.content-visible when-profile="esp"}
+El viernes 29 de Octubre dictamos un taller en la Pycon Argentina, con Sofía Martín, Liliana Hurtado y Ariel Ramos.
+Fue una experiencia interesante, no fue fácil coordinarnos entre varios para dictar el taller. Finalmente, creo que logramos armar un taller interesante para docentes que están introduciéndose en la pedagogía con jupyter notebooks.
 El taller de 2 horas está disponible en el repositorio de [github](https://github.com/sebastiandres/pycon_ar)
+:::
 
+::: {.content-visible when-profile="eng"}
+On Friday October 29th we gave a workshop at PyCon Argentina, with Sofía Martín, Liliana Hurtado and Ariel Ramos.
+It was an interesting experience; it wasn't easy to coordinate among several people to deliver the workshop. In the end, I think we managed to put together an interesting workshop for teachers who are getting started in pedagogy with jupyter notebooks.
+The 2-hour workshop is available in the [github](https://github.com/sebastiandres/pycon_ar) repository
+:::

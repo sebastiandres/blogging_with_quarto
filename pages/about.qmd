@@ -1,8 +1,9 @@
-::: {.content-visible  when-profile="esp"}
 ---
 title: "Sobre mí"
+title-en: "About me"
 ---
 
+::: {.content-visible  when-profile="esp"}
 ## Hoy
 Chief Product Officer en uPlanner. Presidente de Python Chile, co-founder de IADevs.
 
@@ -24,10 +25,6 @@ Llevo programando en python desde el 2008, y me gusta encontrar y aprender nueva
 :::
 
 ::: {.content-visible when-profile="eng"}
----
-title: "About me"
----
-
 ## Now
 Chief Product Officer en uPlanner. President at Python Chile,  IADevs co-founder.
 

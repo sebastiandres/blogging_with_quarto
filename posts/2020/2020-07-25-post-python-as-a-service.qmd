@@ -1,10 +1,13 @@
 ---
 title: "PaaS: Python as a Service"
 description: Entregando python en la nube, más fácil que nunca.
+description-en: Delivering python in the cloud, easier than ever.
 date: "2020-07-25"
 categories: [reflexión]
+categories-en: [reflection]
 ---
 
+::: {.content-visible when-profile="esp"}
 La tecnología cambia y nos trae muchas ventajas. Pero el volumen de conocimiento a manejar se ha vuelto enorme: python, ipython, jupyter notebooks y sus librerías por un lado, y por el otro lado, servidores, kubernetes, y un sin fin de siglas. Aquellos que saben de todo esto pueden sacarles el mejor provecho pero… ¿cómo podemos disponibilizar todas estas tecnologías a un usuario que no sabe ni necesita conocer de todo esto?
 
 ## ¿Existe alguna forma de entregar PaaS: Python as a Service?
@@ -47,4 +50,51 @@ La librería está en [github](https://github.com/sebastiandres/GenericSimulatio
 En resumen, el framework tiene preconfiguradas buenas prácticas, librerías y recursos que permiten cumplir con pip, git, interface simple, documentación y guardar parámetros, al menos de la forma más minimal posible.
 
 ## Adendum 7 Diciembre 2023
-Más de 3 años después de la escritura de este post, todo lo anterior puede solucionarse mucho más facilmente con streamlit. 
+Más de 3 años después de la escritura de este post, todo lo anterior puede solucionarse mucho más facilmente con streamlit.
+:::
+
+::: {.content-visible when-profile="eng"}
+Technology changes and brings us many advantages. But the volume of knowledge to manage has become enormous: python, ipython, jupyter notebooks and their libraries on one side, and on the other side, servers, kubernetes, and an endless list of acronyms. Those who know all of this can make the most of it but… how can we make all these technologies available to a user who doesn't know and doesn't need to know about all of this?
+
+## Is there any way to deliver PaaS: Python as a Service?
+
+Yes. There is a way that is simple both for the user and for the developer.
+
+## What are we looking for on the user side?
+
+The simplest way for an eventual user is to create a library that can be installed with pip:
+
+```
+pip install la_libreria_que_hice_con_mucho_esfuerzo
+```
+
+That way a user could use the library with jupyter notebook, without installing anything locally, using mybinder or google colab. They could even use it from a tablet or phone!
+
+A simple example: **calculating who has the next birthday**.
+
+I have a good memory for some things, but birthdays are not among those things. It's a family problem, and a reminder could probably be useful to more than one person. With a very simple python code I could implement a function that shows who the next 3 people to have a birthday are and calculates the age they are going to turn.
+How could I share that code with my family?
+
+Very simple! With [MyBinder](https://mybinder.org/v2/gh/sebastiandres/family_birthdays/master?filepath=tests%2Fjupyter_test.ipynb) or [Google Colab](https://colab.research.google.com/drive/1XnruLOcG39i4SrQSSy9rnHIQ3RsQJdJr?usp=sharing).
+
+It is possible to configure MyBinder (but not Google Colab) so that the library comes pre-installed by default.
+
+## What does the developer have to do?
+
+There are several things we need in order to provide an easy service to users:
+* A pip-installable library: requires defining a setup.py file and properly configuring a folder structure. The code can be installed from pypi (official, stable) and github (edge).
+* Use git: allows keeping versions of the code and making incremental changes.
+* Simple interface: hide the complexity of the code with object orientation, exposing only what is strictly necessary.
+* Save parameters: when everything fails, it allows quick debugging (and reproducing the execution conditions). In the previous case, it helped me realize that Google Colab uses python 3.6.9 and that's why certain recent functions of the standard datetime library were not available.
+* Documentation: for more advanced users and to document the library.
+
+## How does it work?
+
+I packaged all of the above into a library that serves as a working framework, which you just download and customize.
+The library is on [github](https://github.com/sebastiandres/GenericSimulationLibrary) and here is the [documentation](https://readthedocs.org/projects/generalsimulationlibrary/).
+
+In short, the framework has best practices, libraries and resources pre-configured that allow you to comply with pip, git, simple interface, documentation and saving parameters, at least in the most minimal way possible.
+
+## Addendum December 7, 2023
+More than 3 years after writing this post, all of the above can be solved much more easily with streamlit.
+:::

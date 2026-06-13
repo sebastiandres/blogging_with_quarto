@@ -1,10 +1,14 @@
 ---
 title: Microcuentos 2022
+title-en: Flash Fiction 2022
 description: Cuentos enviados a Santiago en 100 palabras (2022)
+description-en: Stories submitted to "Santiago en 100 palabras" (2022)
 date: "2023-01-01"
 categories: [escritura, microcuentos]
+categories-en: [writing, flash fiction]
 ---
 
+::: {.content-visible when-profile="esp"}
 ## El barómetro de mi abuelo
 Incluso en medio de la lluvia más torrencial, marca un día de buen tiempo. Dicen que está descompuesto. Prefiero pensar que es un optimista sin remedio.
 26 palabras
@@ -24,10 +28,40 @@ Al salir de la cárcel, miré mis manos vacías. Sin un mísero peso. Ya tenía 
 Su vida seguía siendo una mierda, pero ahora en HD
 
 ## Error médico
-El doctor le recetó "Alegria a la primavera" en lugar de "Alergia a la primavera", pero era justo lo que necesitaba en ese momento. 
+El doctor le recetó "Alegria a la primavera" en lugar de "Alergia a la primavera", pero era justo lo que necesitaba en ese momento.
 
 ## Marco Polo estelar
 La llegada del hombre a la luna no es como te la contaron. Sí, Neil Armstrong dió un gran paso para la humanidad y la filmación de 1969 es real. Pero los franceses ya habían llegado 12 años antes. No le contaron a nadie porque ese primer viaje tenía grandes posibilidades de fracasar, y después de volver exitosamente, tenían un gran secreto por guardar. Registros cuentan que Jean Blanchard y Benoit Dumont no pudieron resistirse y engulleron tres de las diez muestras en el viaje de regreso de la misión Artémis 1. De esas mismas muestras lunares, científicos franceses extrajeron la cepa usada para el queso camembert. Los americanos hicieron un trato con Francia: dicen que la luna está hecha de roca y no de queso, y nadie los contradice en que ellos fueron los primeros en llegar. El color y la forma del camembert no son una casualidad.
 
 ## Teléfonos
 Tengo una memoria terrible y nunca logro recordar mi número de teléfono. Llamé al +56 9 1234 5678, pero el abuelo me cortó antes de que pudiera explicarle que quería comprarle su número. El +56 9 8765 4321, en cambio, resultó ser la sorpresa de mi vida. Guapa y simpática. Espero cada día para ver sus estados de whatsapp. El viernes tendremos nuestra primera cita.
+:::
+
+::: {.content-visible when-profile="eng"}
+## My grandfather's barometer
+Even in the middle of the most torrential rain, it reads fair weather. They say it's broken. I prefer to think it's a hopeless optimist.
+26 words
+
+## Fabulous
+Look alive, little bird, you're just dawdling -shouted her cocky boss- that fellow pulled a runner without paying. The girl had had a blast last night, but she was hungover, and she'd overslept. A dirty old man, randy as ever, stuck out his snout to steal a kiss, so she told him off and sent him packing. Just in case, she went to the café bathroom and gave herself a quick once-over. Thinking of the guy she'd met the night before at the party, she said to herself: you never know when the hare will jump. (This piece strings together Chilean slang and animal-based idioms; it has been rendered for sense rather than literally.)
+100 words
+
+## Wind
+In this Patagonian house, the wind is in charge. It rises at the most unexpected hours and likes to push the windows until they swing open. Stubborn, it knocks over the flowerpots and throws down the freshly hung laundry. It's everywhere. The wind keeps me company while I work at the computer, when I lie down to watch TV or while cooking. I hear its constant murmur and I've come to think it answers me when I talk to it. My life is more entertaining and more poetic since a cat named Wind came into it.
+88 words
+
+## Theft out of necessity
+Coming out of jail, I looked at my empty hands. Without a miserable peso. I had already mortgaged my only property, a moss-green house, small and cheap, that I found in the Franklin neighborhood. I fell into despair. Using imagination and dark arts I managed to distract them and steal some bills from the bank's till. I didn't manage to fool them; they caught me red-handed. They jumped on me and shouted thief, crook and other adjectives I deserved. I don't know why my children like this board game of Greater Santiago so much. I still don't see the fun in it.
+
+## Nothing changed when he put on his glasses
+His life was still shit, but now in HD.
+
+## Medical error
+The doctor prescribed her "Joy at springtime" instead of "Allergy at springtime", but it was just what she needed at that moment. (In Spanish the near-homophones are "Alegria"/joy and "Alergia"/allergy.)
+
+## Stellar Marco Polo
+The landing of man on the moon is not as they told you. Yes, Neil Armstrong took a giant leap for mankind and the 1969 footage is real. But the French had already arrived 12 years earlier. They told no one because that first trip had a high chance of failure, and after returning successfully, they had a great secret to keep. Records tell that Jean Blanchard and Benoit Dumont couldn't resist and gobbled up three of the ten samples on the return journey of the Artémis 1 mission. From those very lunar samples, French scientists extracted the strain used for camembert cheese. The Americans made a deal with France: they say the moon is made of rock and not of cheese, and no one contradicts them that they were the first to arrive. The color and shape of camembert are no coincidence.
+
+## Phone numbers
+I have a terrible memory and never manage to remember my own phone number. I called +56 9 1234 5678, but the old man hung up on me before I could explain that I wanted to buy his number. +56 9 8765 4321, on the other hand, turned out to be the surprise of my life. Pretty and charming. I wait every day to see her whatsapp statuses. On Friday we'll have our first date.
+:::

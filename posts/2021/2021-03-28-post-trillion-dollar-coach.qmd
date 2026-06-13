@@ -1,10 +1,14 @@
 ---
 title: Las 3 lecciones de los CEOs del Silicon Valley que valen un billón de dólares
+title-en: The 3 lessons from Silicon Valley CEOs that are worth a trillion dollars
 description: "¿Tan simple como sé vulnerable, evita la democracia y trabaja en equipo?"
+description-en: "As simple as be vulnerable, avoid democracy and work as a team?"
 date: "2021-03-28"
 categories: [reflexión]
+categories-en: [reflection]
 ---
 
+::: {.content-visible when-profile="esp"}
 ![](../_images/2021-03-28-trillion-dollar-coach/bielsa.jpeg "Un entrenador peculiar")
 
 Trillion Dollar Coach, traducido al español como “El coach de Silicon Valley”, es un libro escrito por Eric Schmidt, Jonathan Rosenberg y Alan Eagle, donde relatan los aprendizajes y consejos que recibieron de Bill Campbell, un coach con un estilo personal que rompía esquemas y convenciones.
@@ -34,3 +38,36 @@ En cuanto a los valores SCRUM:
 
 Al igual que estos valores y pilares de SCRUM, Bill buscaba generar una confianza profunda entre los integrantes de los equipos.
 Los fanáticos del fútbol (el real, no el americano :) se habrán percatado que la foto del artículo es de Marcelo Bielsa, entrenador de la selección chilena de fútbol masculino entre 2007 y 2011. No tengo dudas que Marcelo y Bill se hubieran entendido a la perfección, y que desarrollaron la misma filosofía: el valor del trabajo duro y honesto, la búsqueda de equipos comprometidos y enfocados, la preocupación obsesiva por el proceso sobre el resultado específico, y la persecución del éxito con dignidad y sin trucos.
+:::
+
+::: {.content-visible when-profile="eng"}
+![](../_images/2021-03-28-trillion-dollar-coach/bielsa.jpeg "A peculiar coach")
+
+Trillion Dollar Coach, translated into Spanish as “El coach de Silicon Valley,” is a book written by Eric Schmidt, Jonathan Rosenberg and Alan Eagle, where they recount the lessons and advice they received from Bill Campbell, a coach with a personal style that broke molds and conventions.
+
+Bill Campbell (1940–2016) was an American football coach in his youth, later a company CEO, and finally a coach for the executives of multiple companies in Silicon Valley: Google (Eric Schmidt, Larry Page, Sergey Brin, Dundar Pichai, Jonathan Rosenberg, Alan Eagle), Amazon (Jeff Bezos), Facebook (Sheryl Sandberg), Apple (Steve Jobs), Twitter (Jack Dorsey), among many others. All his “students” attribute a large part of their success to his teachings and advice, so if we add up the market capitalization of all these companies it amply deserves the title of the book: more than 1,000,000,000,000 dollars (billón in Spanish, trillion in English).
+
+When reading the book, I could not help remembering those teachers and bosses who have made a great difference in my life. They all shared the atypical characteristics mentioned in the book as essential for a good boss: closeness and authenticity, honest but constructive feedback, believing in your potential and pushing you to take on challenges. Put that way, it sounds trivial, they are all positive virtues that we seek to develop in ourselves as people or as bosses. But the truth is that being a boss is not so simple. There are more moments in which you do not know what the right decision is than those in which you have some certainty. You often have to make decisions that will affect your team and your customers. Personally, I tend to establish very strict boundaries between different areas of my life, and so, for example, the people from work do not know my close friends or family beyond my wife and children. My friends from undergraduate university do not know my friends from graduate university. It is a constant challenge to overcome the temptation not to “compartmentalize” the different aspects of my life, and to erase boundaries that only exist in my mind. We try not to expose our fears and vulnerabilities, not to establish personal connections beyond the professional, because we believe it will allow us to make better decisions, coldly, without letting ourselves be dominated by emotions. As if connection and empathy made us weaker. However, the book and various recent research show the opposite.
+A great boss is like a great parent: they provide emotional and intellectual support, they listen and advise, but they also trust your potential and motivate you to reach it.
+
+Would you prefer to be a cold parent and not love your child, in order to make better decisions about their food, education, health or safety? Of course not, because loving makes being a parent the best job in the world, and because it allows you to make the best decisions thinking about the well-being of the other more than about yourself.
+
+A second surprising lesson from the book was the statements “consensus leads to bad decisions” and “you must avoid democracy in meetings.” The phrases left me perplexed, but the explanation is simple and forceful. If in a meeting the decision is made by the highest-ranking manager or a vote is taken, then the matter becomes a question of who lobbies best so that their opinion is chosen. On the contrary, the book proposes that a good decision-making process has certain specific characteristics. It must be led by the person most expert on the topic. Then everyone must give their opinion, especially those who have a different opinion. Everyone must be able to ask and ask until no doubts remain. At the end, and only then, the highest-ranking manager can give their opinion, to avoid steering the discussion in a specific direction. The team as a whole chooses the best decision based on the merits of the idea and not on who proposes it. Only in case of a tie, and if the team is unable to resolve the difference by itself, is it necessary for the CEO to make a decision. Once the decision is made, everyone must back it. No private agenda, no sabotaging it and no grudges. The decision was made by the team and all its members must back it. An additional detail: meetings are held to make decisions. If in a meeting you are not going to make decisions, there is no need to have that meeting!
+
+A third aspect worth highlighting: many of the book's pieces of advice are aligned with the SCRUM methodology, although this is not mentioned directly. SCRUM is a working methodology used in projects, software development and even in marketing, because it allows delivering results quickly in order to validate that the solution provides an answer to the problem, improving week by week. It gets its name from the scrum in rugby, because it seeks to generate commitment and unity among the team members, who jointly push until reaching the goal. The first similarity between the book and SCRUM lies in the vital importance of the team. As in SCRUM, for Bill the success of a company comes from having great teams of people, working committed as a unit. The well-being and success of the team must be the focus of all its members. Teams must be multidisciplinary and have the best people, with the greatest possible variety. Next, I will mention the relationship between the pillars and values of the SCRUM methodology and the book (it is not a requirement to know SCRUM beforehand).
+
+In relation to the SCRUM pillars:
+* Transparency: honesty and transparency appear as a recurring theme in the book, both in the relationships between team members and with bosses and the board of directors.
+* Inspection: Bill had a checklist for one-on-one interviews to inspect 4 fundamental dimensions in an evaluation: performance in the role, relationship with peers, leadership and direction, and innovation. In each one, it was essential to have objective metrics to start a conversation.
+* Adaptation: a valuable lesson from the book was seeing that even great CEOs regret their decisions and change their initial decision. We need to lose the arrogance of thinking we will always know what to do. Based on what we learn, we will have to adapt our choices.
+
+As for the SCRUM values:
+* Commitment: literally, on several occasions the book mentions the importance of committing to achieving the stated objectives and of supporting one another.
+* Focus: Bill always asked about the main problem, and his concern was to make sure he had the best people on the team, and to review the processes. To let smart people do their job without distractions.
+* Openness: Bill provided and demanded direct, no-nonsense honesty, that allows determining without doubt the state of a problem. The same applies to feedback: reproaches must be in private using constructive feedback, and congratulations public.
+* Respect: it begins with recognizing the fundamental humanity of others. All employees have a cultural, family and emotional background outside of work. This must be known, accepted and even encouraged to create a work environment that cultivates a network of trust to criticize and dissent. That people are empowered to express their disagreement is an indispensable tool in an organization. Silencing, humiliating, or any kind of discrimination must not be tolerated, because it will generate a toxic environment.
+* Courage: Do not be conformist. Do the right thing. Have uncomfortable conversations. Venture to work on the significant problems even if they are complex.
+
+Like these SCRUM values and pillars, Bill sought to generate deep trust among the team members.
+Football fans (the real one, not American :) will have noticed that the photo in the article is of Marcelo Bielsa, coach of the Chilean men's national football team between 2007 and 2011. I have no doubt that Marcelo and Bill would have understood each other perfectly, and that they developed the same philosophy: the value of hard and honest work, the search for committed and focused teams, the obsessive concern for the process over the specific result, and the pursuit of success with dignity and without tricks.
+:::

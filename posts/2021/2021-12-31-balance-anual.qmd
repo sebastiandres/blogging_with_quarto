@@ -1,10 +1,14 @@
 ---
 title: "Balance anual"
+title-en: "Annual review"
 description: "El año 2021 en la balanza"
+description-en: "The year 2021 in the balance"
 date: "2021-12-31"
 categories: [balance, reflexión]
+categories-en: [review, reflection]
 ---
 
+::: {.content-visible when-profile="esp"}
 Este 2021 fue sorprendentemente bueno en muchos aspectos.
 
 ### Lectura
@@ -20,7 +24,7 @@ Este 2021 fue sorprendentemente bueno en muchos aspectos.
 * Trekking: empezamos a salir al cerro con grupo de senderimos. Ya hicimos 2 salidas, y nos sorprendimos con encontrar naturaleza tan cerca de la ciudad.
 
 ### Charlas y Comunidad
-* Participé en el sprint de Data Umbrella, donde aprendí más sobre la colaboración Open Source. Me  aprobaron 2 pull requests y terminé entre los colaboradores de la versión 1.0.0 de sklearn. 
+* Participé en el sprint de Data Umbrella, donde aprendí más sobre la colaboración Open Source. Me  aprobaron 2 pull requests y terminé entre los colaboradores de la versión 1.0.0 de sklearn.
 * Participé en la PyLatam, con una charla sobre RISE.
 * Participé en la Pycon Chile. ¡El año pasado me había quedado con las ganas! El tema fue "WebApps con Streamlit: ¡más fácil que la tabla del uno, poh!" y usé streamlit para presentar, lo cual fue muy bien recibido.
 * Grabé un panel De Argentina a México, Proyectos de IA Éticos y Responsables, que saldrá en Noviembre en el INC Monterrey.
@@ -29,7 +33,7 @@ Este 2021 fue sorprendentemente bueno en muchos aspectos.
 
 ### Familia y amigos
 * Recomendé un practicante y quedó en su empleo soñado.
-* Nos tomamos unas vacaciones cortas en el valle del Elqui. 
+* Nos tomamos unas vacaciones cortas en el valle del Elqui.
 * Hicimos 2 bingos familiares (día del padre y fiestas patrias).
 * Retomé el contacto con un amigo francés con quien no hablaba hace unos 6 años.
 * Aprendí a resolver el cubo de Rubik.
@@ -47,3 +51,49 @@ No todo fue positivo. Algunas cosas no tan positivas fueron:
 
 * Las vacunas contra el COVID19 reflejan la importancia de una política transversal de salud pública. El proceso ha sido (y sigue siendo) impecable en Chile.
 * Importancia de familia sobre otras cosas. Cuando hemos peleado con Cote o tenido problemas con Igna, todo lo demás pierde valor.
+:::
+
+::: {.content-visible when-profile="eng"}
+This 2021 was surprisingly good in many aspects.
+
+### Reading
+* I went back to reading more often. I don't keep a list, but among what I read I highlight: Project Hail Mary (Andy Weir), Matadero Franklin (Simón Soto), Trillion Dollar Coach (Eagle, Schmidt and Rosenberg), Never Split the Difference (Chriss Voss) and Range (David Epstein).
+
+### Writing
+* I picked the blog back up and started writing more regularly. I made several specific improvements to fastpages, as well as learning html, css and javascript in the process (or learning to google better).
+* One of my flash-fiction stories was selected among the 100 stories of Santiago en 100 palabras.
+
+### Sport
+* I lost weight. My trick: reducing calorie intake. Call it skipping breakfast or 16-8 fasting, it has worked well for me.
+* I completed a 10K Spartan Race. It was very hard but incredibly satisfying. Having signed up without being prepared forced me to exercise more and was very good motivation.
+* Trekking: we started going out to the hills with a hiking group. We've already done 2 outings, and we were surprised to find nature so close to the city.
+
+### Talks and Community
+* I took part in the Data Umbrella sprint, where I learned more about Open Source collaboration. They approved 2 of my pull requests and I ended up among the contributors of sklearn version 1.0.0.
+* I took part in PyLatam, with a talk about RISE.
+* I took part in PyCon Chile. Last year I had been left wanting more! The topic was "WebApps con Streamlit: ¡más fácil que la tabla del uno, poh!" and I used streamlit to present, which was very well received.
+* I recorded a panel De Argentina a México, Proyectos de IA Éticos y Responsables, which will be released in November at INC Monterrey.
+* A talk in a workshop for 1000 programmers in Salta, about libraries for different problems.
+* Workshop at PyCon Argentina: Programar y Reprogramar Recursos para Docentes, with Sofía Martin, Liliana Hurtado and Ariel Ramos.
+
+### Family and friends
+* I recommended an intern and they landed their dream job.
+* We took a short vacation in the Elqui valley.
+* We held 2 family bingos (Father's Day and national holidays).
+* I reconnected with a French friend I hadn't spoken to in about 6 years.
+* I learned to solve the Rubik's cube.
+* We took a long vacation in the south of Chile.
+
+### Other projects
+* A planter made from a pallet
+
+### Fails
+Not everything was positive. Some not-so-positive things were:
+* Failed attempt number 45682123 to climb Cerro La Campana. This time, we didn't get the permits.
+* Fights, impatience, frustrations, because I find it hard to laugh at myself.
+
+### Some reflections
+
+* The COVID19 vaccines reflect the importance of a cross-cutting public health policy. The process has been (and continues to be) impeccable in Chile.
+* The importance of family over other things. When we've fought with Cote or had problems with Igna, everything else loses value.
+:::

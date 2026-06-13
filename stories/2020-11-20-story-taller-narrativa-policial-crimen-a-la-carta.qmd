@@ -1,12 +1,16 @@
 ---
 title: Crimen a la carta
+title-en: Crime à la carte
 description: Taller de narrativa policial
+description-en: Crime fiction writing workshop
 date: "2020-11-20"
 categories: [escritura, cuento]
+categories-en: [writing, story]
 ---
 
-Felipe terminó de leer su cuento y se produjo un silencio incómodo. El taller de narrativa policial cerraba la última clase con las lecturas de los alumnos, y varios habíamos compartido nuestras historias. Me alegré de haber leído mi relato antes que él; todavía sentía la respiración agitada y la adrenalina, y me habían dado buenas ideas para mejorar el suspenso. Felipe era uno de los integrantes del taller que me causaba más curiosidad: en algunas clases participaba de manera activa, cercana y chispeante, mientras que en otras evitaba participar aunque se veía atento a todo lo que se comentaba. No sabíamos mucho de él, no quiso comentar su profesión o trabajo, y solo dijo que estaba desde siempre obsesionado con las novelas policiales. El silencio tras la lectura se prolongó tanto que por un momento pensé que mi internet estaba fallando de nuevo. En la clase anterior mi computador se había quedado pegado dos veces, pero esta vez el internet no era el problema ahora. Podía ver como algunos de los asistentes parpadeaban o se acomodaban en sus asientos. 
-Creo que nadie se atrevía a decir lo evidente: el cuento, sencillamente, no había sido bueno. La trama no se sostenía, era rebuscado y sobre todo, estaba muy mal narrado. En resumen, la historia de Felipe era plana y sin adornos: 2 detectives jugaban un juego de mesa mientras discutían su último caso: un envenenamiento por cianuro. Inicialmente se había sospechado suicidio, porque la víctima vivía sola y no recibía visitas, pero después las pistas revelaban que el veneno había llegado en una comida entregada por Uber Eats. 
+::: {.content-visible when-profile="esp"}
+Felipe terminó de leer su cuento y se produjo un silencio incómodo. El taller de narrativa policial cerraba la última clase con las lecturas de los alumnos, y varios habíamos compartido nuestras historias. Me alegré de haber leído mi relato antes que él; todavía sentía la respiración agitada y la adrenalina, y me habían dado buenas ideas para mejorar el suspenso. Felipe era uno de los integrantes del taller que me causaba más curiosidad: en algunas clases participaba de manera activa, cercana y chispeante, mientras que en otras evitaba participar aunque se veía atento a todo lo que se comentaba. No sabíamos mucho de él, no quiso comentar su profesión o trabajo, y solo dijo que estaba desde siempre obsesionado con las novelas policiales. El silencio tras la lectura se prolongó tanto que por un momento pensé que mi internet estaba fallando de nuevo. En la clase anterior mi computador se había quedado pegado dos veces, pero esta vez el internet no era el problema ahora. Podía ver como algunos de los asistentes parpadeaban o se acomodaban en sus asientos.
+Creo que nadie se atrevía a decir lo evidente: el cuento, sencillamente, no había sido bueno. La trama no se sostenía, era rebuscado y sobre todo, estaba muy mal narrado. En resumen, la historia de Felipe era plana y sin adornos: 2 detectives jugaban un juego de mesa mientras discutían su último caso: un envenenamiento por cianuro. Inicialmente se había sospechado suicidio, porque la víctima vivía sola y no recibía visitas, pero después las pistas revelaban que el veneno había llegado en una comida entregada por Uber Eats.
 De la historia había tan poco por rescatar que incluso la profesora se veía incómoda, buscando las palabras para dar algún comentario alentador:
 
 \-   Tiene potencial, Felipe – le dijo – hay, ehhm, ideas novedosas ¿Tú eres de Rancagua, verdad? Quizás podrías situar las escenas en algún lugar que conozcas bien de Rancagua, para describir un ambiente de manera más realista.
@@ -19,7 +23,7 @@ Yo ya sabía que el primero en opinar sería Alejandro. Era ese tipo de personas
 
 \- Felipín, Felipín – dijo Alejandro – ¿Por donde empiezo? Primero que nada, ¿Por qué los detectives tienen que estar jugando a ese juego de mesa desconocido? ¿Cómo se llamaba?
 
-\-   El juego se llama go, Alejandro. – le contestó Felipe con un tono que no escondía su molestia –  Es un juego milenario, de origen japonés. Los jugadores van colocando alternadamente sus fichas de color blanco o negro, y gana quien logra dominar una mayor superficie. 
+\-   El juego se llama go, Alejandro. – le contestó Felipe con un tono que no escondía su molestia –  Es un juego milenario, de origen japonés. Los jugadores van colocando alternadamente sus fichas de color blanco o negro, y gana quien logra dominar una mayor superficie.
 
 \- Me parece que es una mala elección poner un juego que resulta desconocido y que además no se explica bien - le asestó Alejandro.
 
@@ -27,7 +31,7 @@ Felipe suspiró profundamente. No parecía incómodo; todavía miraba fijamente 
 
 \-  Ya veo, el concepto no es taaaaaan malo una vez que lo explicas – concedió Alejandro - pero no es nada de lo que cuentas en tu historia, sólo dices que juegan ese juego de mesa, nada del trasfondo. Por otra parte, no se entiende bien el crimen. ¿Cómo logró obtener la password de su cuenta de Uber Eats para saber exactamente lo que había ordenado y sustituirla?
 
-\- No me pareció interesante contarlo – respondió Felipe – pensé que sería muy obvio. Existen muchas formas de conseguir una contraseña. La manera más fácil de conseguir una es, por ejemplo, armar un sitio web con alguna promesa vacía a todas personas que se hagan una cuenta. La gran mayoría de las personas son tan flojas que usan una única contraseña para todas sus plataformas en internet: facebook, instagram, correo, banco, zoom, etc. 
+\- No me pareció interesante contarlo – respondió Felipe – pensé que sería muy obvio. Existen muchas formas de conseguir una contraseña. La manera más fácil de conseguir una es, por ejemplo, armar un sitio web con alguna promesa vacía a todas personas que se hagan una cuenta. La gran mayoría de las personas son tan flojas que usan una única contraseña para todas sus plataformas en internet: facebook, instagram, correo, banco, zoom, etc.
 
 Varias de las pequeñas caras en mi pantalla abrieron los ojos sorprendidos, lo que me hizo pensar que no era el único que se había sentido identificado. En efecto, bastaba que cualquiera de los cientos de sitios que usaba fuera falso o hubiera sido hackeado para comprometer todas mis cuentas. Tendría que al menos tener claves distintas para mis bancos, pensé.
 
@@ -37,7 +41,7 @@ Varias de las pequeñas caras en mi pantalla abrieron los ojos sorprendidos, lo 
 
 El experto era un prefecto general de la PDI que apoyaba en algunas de las clases. En situación de retiro, como aclaraba él. Sus comentarios eran esperados con ansias. No era del tipo de personas que se iban con rodeos, y sus aclaraciones técnicas del sitio del suceso nos habían ayudado muchísimo a dar veracidad a los relatos. Bueno, a casi todos los relatos.
 
-\-  Otras personas pueden emitir un juicio más certero que el que yo podría entregar sobre la calidad literaria. Me referiré por tanto a los aspectos técnicos de la narración, donde existe un error cuando se habla de la comparación de huellas digitales que permite resolver el crimen. Felipe, le recuerdo que huellas dactilares son aquellas marcas involuntarias dejadas por la sudoración y grasa de las yemas de los dedos, mientras que las impresiones dactilares corresponden al registro voluntario de éstas. No se comparan huellas dactilares, se compara una huella dactilar con una impresión dactilar - sentenció el ex-prefecto.  
+\-  Otras personas pueden emitir un juicio más certero que el que yo podría entregar sobre la calidad literaria. Me referiré por tanto a los aspectos técnicos de la narración, donde existe un error cuando se habla de la comparación de huellas digitales que permite resolver el crimen. Felipe, le recuerdo que huellas dactilares son aquellas marcas involuntarias dejadas por la sudoración y grasa de las yemas de los dedos, mientras que las impresiones dactilares corresponden al registro voluntario de éstas. No se comparan huellas dactilares, se compara una huella dactilar con una impresión dactilar - sentenció el ex-prefecto.
 
 A pesar de verlo en un recuadro pequeño de mi pantalla, podía notar que Felipe cada vez estaba más rígido y concentrado. Como su cuento, era difícil leer sus emociones; no podría decir que se veía incómodo, pero tampoco parecía contento. Claramente no esperaba este tipo de comentarios. Por mi parte, más que los comentarios anteriores, me parecía que la historia tenía un gran problema.
 
@@ -47,6 +51,55 @@ A pesar de verlo en un recuadro pequeño de mi pantalla, podía notar que Felipe
 
 \-  Pero eso es poco satisfactorio para el lector – intervino la profesora – es demasiado plano. No existe un arco argumental ni cierre a la historia. La novela policial no es una competencia de quién puede crear el crimen perfecto. Existe una historia porque el crimen quiebra la normalidad y racionalidad. El mundo del policial es oscuro, visceral, violento, irracional. El detective resuelve el crimen de una manera lógica y así restituye el orden. Se necesita ese contraste, ese juego de sombra y luz. Si todo es lógico, limpio, ordenado, no existe una restitución. El crimen podría volver a cometerse.
 
-\- Quizás tienes razón – le respondió Felipe – quizás literariamente no es atractivo. Pero la realidad no tiene porqué ser literalmente atractiva. El verdadero crimen es cien por ciento intelectual, no es pasional ni visceral. Pero no lo entenderían – insistió. Y luego colgó. 
+\- Quizás tienes razón – le respondió Felipe – quizás literariamente no es atractivo. Pero la realidad no tiene porqué ser literalmente atractiva. El verdadero crimen es cien por ciento intelectual, no es pasional ni visceral. Pero no lo entenderían – insistió. Y luego colgó.
 
 Hubo otro largo silencio incómodo. Nos miramos sin decir qué decir. Hubo algunas risas nerviosas, y la profesora le pidió al siguiente tallerista que leyera su relato. Pero algo se había quebrado en la dinámica del grupo. Noté que todos estaban más reservados, incómodos, y terminamos la sesión antes de lo normal. Traté de ignorarlo durante los días siguientes, pero me sorprendía a momentos pensando en la historia y en el comportamiento de Felipe en el taller. Algo me causaba preocupación. Una semana más tarde en la prensa apareció la noticia: un caso de envenenamiento por cianuro en Rancagua, que se sospechaba entregado por un Uber Eats. El primero de una serie de muertes sin sentido. Puedo asegurarles que no hay nada tan perturbador como haber conocido a un asesino serial. Parecen personas normales.
+:::
+
+::: {.content-visible when-profile="eng"}
+Felipe finished reading his story and an awkward silence fell. The crime fiction writing workshop was closing its final class with readings by the students, and several of us had shared our stories. I was glad to have read mine before him; I could still feel the quickened breathing and the adrenaline, and I had been given good ideas for improving the suspense. Felipe was one of the workshop members who most intrigued me: in some classes he participated actively, warmly and with a spark, while in others he avoided participating although he looked attentive to everything being said. We didn't know much about him, he wouldn't comment on his profession or work, and he only said that he had always been obsessed with crime novels. The silence after the reading stretched so long that for a moment I thought my internet was acting up again. In the previous class my computer had frozen twice, but this time the internet wasn't the problem now. I could see some of the participants blinking or shifting in their seats.
+I think nobody dared to say the obvious: the story, quite simply, had not been good. The plot didn't hold together, it was convoluted and, above all, very poorly narrated. In short, Felipe's story was flat and without adornment: 2 detectives played a board game while discussing their latest case: a cyanide poisoning. Suicide had initially been suspected, because the victim lived alone and received no visitors, but later the clues revealed that the poison had arrived in a meal delivered by Uber Eats.
+There was so little to salvage from the story that even the teacher looked uncomfortable, searching for words to offer some encouraging comment:
+
+\-   It has potential, Felipe – she said – there are, ehhm, novel ideas. You're from Rancagua, right? Maybe you could set the scenes somewhere you know well in Rancagua, to describe a setting more realistically.
+
+The suggestion wasn't far-fetched. Felipe hadn't described where the characters were. The story only said they were playing some kind of board game, but nothing indicated the year or the time, whether it was a house, an apartment or a hotel room. The whole story was narrated far too directly. To make matters worse, the characters bordered on cliché, undisguised copies of Sherlock and Watson. More than a story, it seemed like a step-by-step crime recipe.
+
+\-   What does the rest of the class think? - the teacher asked, looking for support from the group.
+
+I already knew the first to speak would be Alejandro. He was the kind of person who had no problem interrupting and giving his opinion in lavish detail, even if someone else was already speaking, as I had already seen in previous sessions.
+
+\- Felipín, Felipín – said Alejandro – Where do I begin? First of all, why do the detectives have to be playing that obscure board game? What was it called?
+
+\-   The game is called go, Alejandro. – Felipe answered him in a tone that didn't hide his annoyance –  It's an ancient game, of Japanese origin. The players take turns placing their white or black stones, and whoever manages to dominate the larger area wins.
+
+\- It seems to me a bad choice to put in a game that turns out to be unfamiliar and that, on top of that, isn't explained well - Alejandro struck back.
+
+Felipe sighed deeply. He didn't seem uncomfortable; he was still staring at the screen. Rather he seemed tired, perhaps regretful of having shared his story with us. He paused, and replied that the game in the story is a metaphor for the competition between cops and robbers. Each new technology opens new possibilities for crimes. 3D printers are invented and before long there are already models to print the pieces to assemble a gun. Social networks are created and in a second fake profiles and bullying appear. It's an endless race. It's interesting to see how new types of crimes keep appearing that weren't possible before.
+
+\-  I see, the concept isn't soooo bad once you explain it – Alejandro conceded - but it's none of what you tell in your story, you only say they play that board game, nothing of the background. On the other hand, the crime isn't well understood. How did he manage to get the password to his Uber Eats account to know exactly what he had ordered and swap it out?
+
+\- It didn't seem interesting to me to tell it – Felipe replied – I thought it would be too obvious. There are many ways to obtain a password. The easiest way to get one is, for example, to set up a website with some empty promise to everyone who creates an account. The vast majority of people are so lazy that they use a single password for all their internet platforms: facebook, instagram, email, bank, zoom, etc.
+
+Several of the little faces on my screen widened their eyes in surprise, which made me think I wasn't the only one who had felt identified. Indeed, it was enough for any one of the hundreds of sites I used to be fake or to have been hacked to compromise all my accounts. I'd have to at least keep different passwords for my banks, I thought.
+
+
+
+\- Does anyone else want to comment? – the teacher asked - What does our expert think?
+
+The expert was a general prefect of the PDI who assisted in some of the classes. Retired, as he clarified. His comments were eagerly awaited. He wasn't the kind of person who beat around the bush, and his technical clarifications about the crime scene had helped us enormously to lend credibility to the stories. Well, to almost all the stories.
+
+\-  Others can pass a more accurate judgment than I could give on literary quality. I will therefore refer to the technical aspects of the narration, where there is an error when it speaks of the comparison of fingerprints that allows the crime to be solved. Felipe, let me remind you that latent fingerprints are those involuntary marks left by the sweat and grease of the fingertips, while recorded fingerprints correspond to the voluntary registration of them. You don't compare latent fingerprints to each other, you compare a latent fingerprint with a recorded fingerprint - the former prefect pronounced.
+
+Even though I saw him in a small box on my screen, I could tell that Felipe was growing more and more rigid and focused. Like his story, it was hard to read his emotions; I couldn't say he looked uncomfortable, but he didn't seem happy either. Clearly he wasn't expecting this kind of comment. For my part, more than the previous comments, it seemed to me the story had a big problem.
+
+\- Felipe, there's something I don't understand – I said to him - from what I understood of the story, the criminal didn't know the victim. So why was the crime committed? Why had he chosen them over other people? What was the motive?
+
+\-  And why should there be a motive? - he answered me - he could have chosen any of the people whose valid password he had obtained. A motive isn't necessary – he answered me in an increasingly impersonal voice – a criminal without a motive has fewer reasons to be discovered. A true criminal needs no motive other than to prove he can do it without getting caught.
+
+\-  But that's unsatisfying for the reader – the teacher cut in – it's too flat. There's no narrative arc, no closure to the story. The crime novel isn't a competition over who can create the perfect crime. There's a story because the crime breaks normality and rationality. The world of crime fiction is dark, visceral, violent, irrational. The detective solves the crime in a logical way and thus restores order. You need that contrast, that play of shadow and light. If everything is logical, clean, orderly, there's no restitution. The crime could be committed again.
+
+\- Maybe you're right – Felipe answered her – maybe it isn't appealing in literary terms. But reality doesn't have to be literarily appealing. The true crime is one hundred percent intellectual, it isn't passionate or visceral. But you wouldn't understand – he insisted. And then he hung up.
+
+There was another long, awkward silence. We looked at each other not knowing what to say. There were a few nervous laughs, and the teacher asked the next workshop member to read their story. But something had broken in the group's dynamic. I noticed everyone was more reserved, uncomfortable, and we ended the session earlier than usual. I tried to ignore it over the following days, but I caught myself at moments thinking about the story and about Felipe's behavior in the workshop. Something worried me. A week later the news appeared in the press: a case of cyanide poisoning in Rancagua, suspected to have been delivered by an Uber Eats. The first of a series of senseless deaths. I can assure you there's nothing as disturbing as having met a serial killer. They look like normal people.
+:::

@@ -1,25 +1,28 @@
 ---
 title: "Compartir tu código en python"
+title-en: "Sharing your python code"
 description: "Revisión a las muchas alternativas"
+description-en: "A review of the many alternatives"
 date: "2021-09-09"
 categories: [python]
 ---
 
+::: {.content-visible when-profile="esp"}
 Aparte de mis herramientas favoritas de jupyter notebook y streamlit, existen otras alternativas. Esta es una lista preliminar de enumerarlas y compararlas.
 
 ### Repositorio en línea
 La versión más básica para compartir tu código (ya sea python, jupyter notebook u otros) es simplemente almacenarlo en un repositorio en línea, como [github](https://github.com/), [bitbucket](https://bitbucket.org/) u otros. Tiene la ventaja de entregar todo el detalle, con el copyright o copyleft que deseas, pero el usuario tiene que tener los conocimientos para poder instalarlo y probarlo.
 
 ### Jupyter Notebooks en línea
-Otra opcion para compartir código de python es incluirlo en un jupyter notebooks. La opción más común es tener instalado Jupyter Notebook/Lab en local y así ejecutar los notebooks, pero han surgido muchas alternativas para compartirlas en línea. Algunas de las opciones más comunes son: [binder](https://mybinder.org/) o en [Google Colab](https://colab.research.google.com/). Existen otras alternativas que funcionan como los notabooks, como [Kaggle Kernels](https://www.kaggle.com/kernels), [CoCalc](https://cocalc.com/) o [Datalore](https://datalore.jetbrains.com/) pero no los conozco en profundidad. 
+Otra opcion para compartir código de python es incluirlo en un jupyter notebooks. La opción más común es tener instalado Jupyter Notebook/Lab en local y así ejecutar los notebooks, pero han surgido muchas alternativas para compartirlas en línea. Algunas de las opciones más comunes son: [binder](https://mybinder.org/) o en [Google Colab](https://colab.research.google.com/). Existen otras alternativas que funcionan como los notabooks, como [Kaggle Kernels](https://www.kaggle.com/kernels), [CoCalc](https://cocalc.com/) o [Datalore](https://datalore.jetbrains.com/) pero no los conozco en profundidad.
 
 ### Desarrollo web y API
 Para desarrollo web y apis existen múltiples alternativas:
-* [falcon](https://falconframework.org/): Un framework para construir APIs (+9 años) 
+* [falcon](https://falconframework.org/): Un framework para construir APIs (+9 años)
 * [FastAPI](https://fastapi.tiangolo.com/): Otro framework web para construir APIs, más reciente (+3 años) y creciente popularidad.
 * [web2pi](http://www.web2py.com/): Un framework web inspirado por Ruby on Rails y Django (+13 años). No conozco a nadie que lo use.
-* [bottle](https://bottlepy.org/): Un framework web minimalista pero extensible, con +12 años de desarrollo. 
-* [flask](https://flask.palletsprojects.com/en/2.0.x/): Un framework web minimalista pero extensible, con +11 años de desarrollo. ¿Similar a bottle? Si, mucho. A pesar de ser más reciente e inspirarse en su hermano, Flask es mucho más popular. 
+* [bottle](https://bottlepy.org/): Un framework web minimalista pero extensible, con +12 años de desarrollo.
+* [flask](https://flask.palletsprojects.com/en/2.0.x/): Un framework web minimalista pero extensible, con +11 años de desarrollo. ¿Similar a bottle? Si, mucho. A pesar de ser más reciente e inspirarse en su hermano, Flask es mucho más popular.
 * [pyramid](https://trypyramid.com/): framework web que busca situarse entre los micro-frameworks y los mega-frameworks: un framework que permite comenzar pequeño pero escalar sin problemas de ser necesario.
 * [Django](https://www.djangoproject.com/): un framework web completamente pythonistico con esquema modelo–vista–controlador (MVC), y con +15 años de desarrollo. No es simple, pero tiene todo lo necesario para competir con frameworks "famosos" de otros lenguajes.
 
@@ -32,3 +35,34 @@ Entre el desarrollo web y los jupyter notebooks existe un fértil campo de frame
 * [Streamlit](https://streamlit.io/): permite generar páginas web interactivas de manera simple e intuitiva. Se hace un tradeoff de flexibilidad por simpleza y diseño predefinido.
 
 Por ahora conozco poco de los primeros, pero espero actualizar esta lista con más detalles pronto.
+:::
+
+::: {.content-visible when-profile="eng"}
+Apart from my favorite tools, jupyter notebook and streamlit, there are other alternatives. This is a preliminary list to enumerate and compare them.
+
+### Online repository
+The most basic version for sharing your code (whether python, jupyter notebook or others) is simply to store it in an online repository, such as [github](https://github.com/), [bitbucket](https://bitbucket.org/) or others. It has the advantage of providing all the detail, with the copyright or copyleft you want, but the user has to have the knowledge to install it and try it out.
+
+### Online Jupyter Notebooks
+Another option for sharing python code is to include it in a jupyter notebooks. The most common option is to have Jupyter Notebook/Lab installed locally and thus run the notebooks, but many alternatives have emerged to share them online. Some of the most common options are: [binder](https://mybinder.org/) or [Google Colab](https://colab.research.google.com/). There are other alternatives that work like notebooks, such as [Kaggle Kernels](https://www.kaggle.com/kernels), [CoCalc](https://cocalc.com/) or [Datalore](https://datalore.jetbrains.com/), but I do not know them in depth.
+
+### Web development and API
+For web development and apis there are multiple alternatives:
+* [falcon](https://falconframework.org/): A framework for building APIs (+9 years)
+* [FastAPI](https://fastapi.tiangolo.com/): Another web framework for building APIs, more recent (+3 years) and growing in popularity.
+* [web2pi](http://www.web2py.com/): A web framework inspired by Ruby on Rails and Django (+13 years). I do not know anyone who uses it.
+* [bottle](https://bottlepy.org/): A minimalist but extensible web framework, with +12 years of development.
+* [flask](https://flask.palletsprojects.com/en/2.0.x/): A minimalist but extensible web framework, with +11 years of development. Similar to bottle? Yes, very much. Despite being more recent and inspired by its sibling, Flask is much more popular.
+* [pyramid](https://trypyramid.com/): a web framework that seeks to sit between the micro-frameworks and the mega-frameworks: a framework that lets you start small but scale without problems if needed.
+* [Django](https://www.djangoproject.com/): a fully pythonic web framework with a model–view–controller (MVC) scheme, and with +15 years of development. It is not simple, but it has everything needed to compete with the "famous" frameworks of other languages.
+
+### Dashboards, Web apps and data apps
+Between web development and jupyter notebooks there is a fertile field of frameworks and libraries for making dashboards and webapps. The idea is that you can create and share interactivity generating little code **additional** to what your base code needs:
+* [Plotly](https://plotly.com/) and [Dash](https://plotly.com/dash/)
+* [Voila](https://voila.readthedocs.io/en/stable/using.html)
+* [Gradio](https://www.gradio.app/)
+* [Panel](https://panel.holoviz.org/)
+* [Streamlit](https://streamlit.io/): lets you generate interactive web pages in a simple and intuitive way. There is a tradeoff of flexibility for simplicity and predefined design.
+
+For now I know little about the first ones, but I hope to update this list with more details soon.
+:::

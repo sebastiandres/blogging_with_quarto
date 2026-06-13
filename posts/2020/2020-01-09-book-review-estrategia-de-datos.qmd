@@ -1,10 +1,19 @@
 ---
 title: Estrategia de Datos
 description: "Buen contenido, mala redacción"
+description-en: "Good content, poor writing"
 date: "2020-01-09"
 author: Karim Touma
 genre: No Ficción
 rating: 5
 categories: [lectura]
+categories-en: [reading]
 ---
+
+::: {.content-visible when-profile="esp"}
 Un libro más bien técnico, sobre distintas estrategias a tomar respecto a los datos de una organización. Interesante, pero de una redacción dificil de seguir.
+:::
+
+::: {.content-visible when-profile="eng"}
+A rather technical book, about different strategies to adopt regarding an organization's data. Interesting, but with writing that's hard to follow.
+:::

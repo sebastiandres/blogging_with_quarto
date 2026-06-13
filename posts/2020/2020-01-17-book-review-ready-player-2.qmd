@@ -1,10 +1,19 @@
 ---
 title: Ready Player 2
 description: "Las segundas partes nunca fueron buenas..."
+description-en: "Sequels were never any good..."
 date: "2020-01-19"
 author: Ernest Cline
 genre:  Ficción
 rating: 1
 categories: [lectura]
+categories-en: [reading]
 ---
+
+::: {.content-visible when-profile="esp"}
 ¡Descubrí que existía una continuación a Ready Player One! Lamentablemente, fue una gran decepción. El libro parte lento, se demora en establecer el conflicto, que resulta poco creíble incluso para este tipo de libro. Además se hacen muchas referencias y explicaciones innecesarias al primer libro. Intenta cubrir referencias pop de los 80 y 90s que no cubrió en el primer libro porque no pasaron el corte para la primera novela: las películas de John Hughes (The Breakfast Club, Ferris Bueller’s Day Off, Pretty in Pink), la música de Prince, el mundo de Tolkien, entre otros.
+:::
+
+::: {.content-visible when-profile="eng"}
+I discovered that there was a sequel to Ready Player One! Unfortunately, it was a big disappointment. The book starts slow, takes too long to establish the conflict, which turns out to be hard to believe even for this kind of book. It also makes many unnecessary references and explanations about the first book. It tries to cover pop references from the 80s and 90s that it didn't cover in the first book because they didn't make the cut for the first novel: John Hughes's movies (The Breakfast Club, Ferris Bueller’s Day Off, Pretty in Pink), Prince's music, Tolkien's world, among others.
+:::

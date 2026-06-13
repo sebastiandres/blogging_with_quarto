@@ -1,10 +1,14 @@
 ---
 title: Los Tres Príncipes de Serendip
+title-en: The Three Princes of Serendip
 description: "Un antiguo y desconocido cuento persa de deducciones, que muestra porqué no deberíamos ufanarnos de nuestro conocimiento."
+description-en: "An old and little-known Persian tale of deductions, showing why we shouldn't boast about our knowledge."
 date: "2021-01-22"
 categories: [policial, cuento]
+categories-en: [crime, story]
 ---
 
+::: {.content-visible when-profile="esp"}
 Érase una vez, en el reino de Serendip, un sabio y poderoso rey llamado Giaffer. Tenía tres hijos a los que amaba mucho, y quería dejarles, no sólo su reino, sino que todos los conocimientos y virtudes que debían tener los gobernantes de un gran reino. Así que reunió a grandes eruditos de todo su reino, cada uno con una especialidad diferente, y los puso como tutores de sus hijos. El rey pidió a cada uno que instruyera a los príncipes tan bien que cualquier experto que los encontrara reconocería de inmediato quién era su maestro. Y así lo hicieron los tutores.
 
 Debido a que todos los príncipes eran muy inteligentes, les llevó poco tiempo convertirse en expertos en ciencia, lenguaje, filosofía y todas las demás materias que estudiaron, y pronto estaban mucho más informados que cualquier otro joven príncipe o noble del mismo país, edad y rango. Los tutores informaron al rey sobre el gran progreso que habían hecho los príncipes. El rey estaba un poco escéptico de que los príncipes pudieran haber adquirido tanto conocimiento tan rápido, así que decidió ponerlos a prueba.
@@ -70,3 +74,72 @@ El emperador quedó tan impresionado con la inteligencia y las habilidades de ob
 Traducido y editado con libertad de esta versión del cuento en inglés: [link](https://multoghost.wordpress.com/2018/05/03/the-three-princes-of-serendip-and-the-one-eyed-camel/).
 
 Este cuento persa es considerado uno de los primeros cuentos de deducción lógica. En []() comento más al respecto.
+:::
+
+::: {.content-visible when-profile="eng"}
+Once upon a time, in the kingdom of Serendip, there lived a wise and powerful king named Giaffer. He had three sons whom he loved very much, and he wanted to leave them not only his kingdom, but all the knowledge and virtues that the rulers of a great kingdom should have. So he gathered great scholars from all over his kingdom, each with a different specialty, and appointed them as tutors to his sons. The king asked each one to instruct the princes so well that any expert who met them would immediately recognize who their master was. And so the tutors did.
+
+Because all the princes were very intelligent, it took them little time to become experts in science, language, philosophy and all the other subjects they studied, and soon they were far more learned than any other young prince or noble of the same country, age and rank. The tutors informed the king of the great progress the princes had made. The king was a little skeptical that the princes could have acquired so much knowledge so fast, so he decided to put them to the test.
+
+In a private meeting with his eldest son, the king said: “My son, you know how long I have ruled this kingdom and how hard I have striven to care for my subjects and govern them with love and mercy, as well as with justice. But now I am growing old and I feel it is time to focus on my journey to the other world. I have decided to retire to a monastery, to spend the rest of my days meditating and praying for my sins. You are my eldest son, and so I leave you the kingdom.”
+
+The eldest son bowed before his father and said: “My father and king, although I understand your wishes, I know that you can still rule this kingdom well and, by the grace of God, I will pray that you may do so for many more years. Although I am willing to obey you in everything you ask of me, while you are alive and healthy, it would not be fitting for me to wear the crown. Only when you ascend to your deserved place in heaven will I take charge of the kingdom and try to rule with as much wisdom and justice as you.”
+
+The king was pleased with his son's answer, which showed wisdom and humility. But he hid his feelings and told his son to withdraw. Then he called his second son and made him the same proposal. The second son also refused and added: “Shouldn't my elder brother be the ruler after you?” The king again hid his feelings and called his third son, who also refused, reminding his father that his two elder brothers had precedence over the throne before him.
+
+The king was satisfied with what his sons had learned. He decided that, to complete their education, he would have them travel the world so that they would have real-life experiences in addition to the knowledge acquired from books and their teachers.
+He called his sons and, pretending to be angry, said to them: “You have disobeyed me and refused my wishes. You are expelled from the kingdom. Leave.”
+
+The princes were surprised and hurt, but they loved their father, and he was the king, so the three of them gathered a few things and left the kingdom. They kept traveling until they reached another kingdom, ruled by a great emperor named Beramo.
+While they were traveling along the road toward the imperial capital, they met a merchant whose camel had run away. The merchant asked the princes whether they had seen his camel on the road.
+
+The first son asked him: “Was your camel blind in one eye?”
+
+“Why, yes,” said the man.
+
+“And was it missing a tooth?” asked the second son.
+
+“Yes,” said the man.
+
+“And was it also lame?” asked the third son.
+
+“Yes!” the man said.
+
+“Does your camel carry a load of butter on one side and a load of honey on the other?” asked the first son.
+
+“That's right!” answered the merchant.
+
+“Moreover, it carries a woman on its back,” said the second brother.
+
+“And she is pregnant,” added the third brother.
+
+“Yes, that's my camel and my wife,” said the man.
+
+“Well, we haven't seen it,” said the princes, and they continued on their way.
+
+The merchant thought the only way the brothers could have known so much about the missing camel was if they had stolen and hidden it themselves. So the man went to the judge, accusing the brothers of having stolen his camel, and the judge had them arrested and thrown in jail. The next day, the emperor himself heard the case and sentenced them to death.
+
+Luckily for them, someone found the camel and the woman, and gave notice to the merchant. The man returned to the court and humbly acknowledged that he had found his camel and that the three men were innocent. The emperor had them released and summoned them to his presence. He asked the brothers how they had known so many details about a camel they had never seen.
+
+The first brother said: “I noticed that the grass had been eaten only on one side of the road, even though the grass on the other side was of better quality. So I concluded that the camel must not see well on the side of the road where the grass was good.”
+
+The second brother said: “I noticed that the grass was cropped close, but that some blades remained completely untouched, so the camel must have had a missing tooth.”
+
+The third brother said: “And I knew the camel must be lame, because I observed the prints of three camel legs along with the print of a foot being dragged.”
+
+The emperor was astonished and impressed, and wanted to know more. “How did you know the other details?” he asked them.
+
+The first brother said: “I guessed the camel must carry butter on one side and honey on the other, because on one side of the road I noticed a trail of ants, which love fat, and on the other side I noticed a great number of flies, which love honey.”
+
+The second brother said: “I guessed the camel was carrying a woman, because at one point I saw marks indicating that the camel had knelt, and nearby I saw a small human footprint, which could be a woman's or a child's. There was urine nearby, and when I smelled it, I felt a surge of lust, so I was sure the footprint must be a woman's.”
+
+The third brother said: “And I guessed the woman must be pregnant, because I saw handprints, which indicate that the woman had to help herself up with her hands after urinating.”
+
+The emperor was so impressed with the brothers' intelligence and powers of observation that he begged them to stay as his guests for a time. He provided them with the best rooms in the palace, and every day he entertained himself with them, discussing a variety of different subjects and enjoying their clever conversation.
+
+---
+
+Freely translated and edited from this English version of the tale: [link](https://multoghost.wordpress.com/2018/05/03/the-three-princes-of-serendip-and-the-one-eyed-camel/).
+
+This Persian tale is considered one of the earliest stories of logical deduction. In []() I comment further on the matter.
+:::

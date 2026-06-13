@@ -1,9 +1,11 @@
 ---
 title: "Historias"
+title-en: "Stories"
 listing:
   contents: ../stories/*.qmd
   sort: "date desc"
   type: default
+  template: listing-bilingual.ejs.md
   categories: true
   sort-ui: false
   filter-ui: false

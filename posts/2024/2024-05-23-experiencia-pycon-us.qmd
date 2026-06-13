@@ -1,19 +1,16 @@
 ---
 title: "PyCon US - Historia en 3 actos"
-description: "Descripción detallada del evento por día (esp, eng)"
+title-en: "PyCon US - A story in 3 acts"
+description: "Descripción detallada del evento por día"
+description-en: "A detailed description of the event day by day"
 author: "sebastiandres"
 date: "2024-05-23"
 categories: [data storytelling, pycon]
 image: "./images/pyconus/mini.jpeg"
 ---
 
-This page support tabs with different languages. You can select English on the tab below.
-
-::: {.panel-tabset}
-
-## Español
-
-Ya finalizó la PyCon US. Tuve la duda sobre hacer un post corto o uno largo. Finalmente me incliné por el post con más detalles porque quiero poder releerlo más adelante y recordar todo lo que sucedió durante el evento, y porque creo que de esa manera otras personas podrán imaginarse mejor el evento. ¡Pasó tanto en tan poco tiempo! Me cuesta creer que fueron sólo 3 días, y no una semana entera. 
+::: {.content-visible when-profile="esp"}
+Ya finalizó la PyCon US. Tuve la duda sobre hacer un post corto o uno largo. Finalmente me incliné por el post con más detalles porque quiero poder releerlo más adelante y recordar todo lo que sucedió durante el evento, y porque creo que de esa manera otras personas podrán imaginarse mejor el evento. ¡Pasó tanto en tan poco tiempo! Me cuesta creer que fueron sólo 3 días, y no una semana entera.
 
 ### Viernes:
 
@@ -41,7 +38,7 @@ También pasé por el stand de Streamlit, y aproveché de saludar Chanin, Tony, 
 
 Chanin - Data Prof - me hizo una [entrevista de la cual rescató algunos momentos coherentes](https://www.youtube.com/shorts/eIaaZ0xVEtU).
 
-Después de la keynote, me repartí entre pasearme entre los stands, recogiendo poleras y stickers, y ver algunas charlas. 
+Después de la keynote, me repartí entre pasearme entre los stands, recogiendo poleras y stickers, y ver algunas charlas.
 Había un stand que tenía unos puzzles a resolver y que regalaban unas poleras que me gustaban, pero que estaba siempre con mucha gente, así decidí pasar al día siguiente.
 
 Durante las lightning talks, tipo 6 pm, me di cuenta que estaba agotado mental y emocionalmente. Decidí salir a caminar para relajarme y conocer un poco los alrededores, y comprar algo para la cena. Me di cuenta que necesitaba descansar para poder hacer una buena presentación al día siguiente. Finalmente terminé cenando en el hotel, a pesar de haber caminado los alrededores buscando una mejor alternativa (3 mini-hamburguesas). Ya de vuelta en la habitación, estuve ensayando y trabajando en los últimos cambios en la presentación entre las 8 y las 11 pm. Mis speaker notes tenían cada palabra que tenía que decir e incluso el momento de hacer cada click/next en la presentación. Me derrumbé en la cama y dormí profundamente.
@@ -50,9 +47,9 @@ Durante las lightning talks, tipo 6 pm, me di cuenta que estaba agotado mental y
 
 El día partió temprano, con un desayuno liviano debido a mis nervios pre-presentación. Fui a la Keynote de Simon Willison, que fue increíble y recomendaré a todos apenas esté disponible en youtube. Simon explica como funcionan los LLMs de manera didáctica y divertida, destacando todas sus limitaciones pero también la increíbles cosas que nos permiten hacer (que no eran posibles antes).
 
-A mediodía, di mi charla en inglés en un salón enorme y llenísimo. Para ser honesto, estaba increíblemente nervioso. Justo antes de subir al escenario, me di cuenta de que no tenía ni una sola línea de Python en mi presentación!!! Afortunadamente, ya era demasiado tarde para cambiar nada. Sabía que había preparado buen material y notas para apoyarme. 
+A mediodía, di mi charla en inglés en un salón enorme y llenísimo. Para ser honesto, estaba increíblemente nervioso. Justo antes de subir al escenario, me di cuenta de que no tenía ni una sola línea de Python en mi presentación!!! Afortunadamente, ya era demasiado tarde para cambiar nada. Sabía que había preparado buen material y notas para apoyarme.
 
-La recepción ha sido tremendamente positiva. Creo que Storytelling realmente conecta con la gente porque es un concepto muy intuitivo y poderoso. Todos queremos mejorar la forma en que comunicamos nuestras ideas. Escuchar a la gente decir: "Gracias por señalarme la biblioteca X, me encanta" o "Quería seguir aprendiendo, así que compré el libro Y" me hace muy feliz. 
+La recepción ha sido tremendamente positiva. Creo que Storytelling realmente conecta con la gente porque es un concepto muy intuitivo y poderoso. Todos queremos mejorar la forma en que comunicamos nuestras ideas. Escuchar a la gente decir: "Gracias por señalarme la biblioteca X, me encanta" o "Quería seguir aprendiendo, así que compré el libro Y" me hace muy feliz.
 
 ![© 2024 Ted Ricks (CC BY-SA)](./images/pycon_1.jpg "© 2024 Ted Ricks (CC BY-SA)")
 
@@ -60,7 +57,7 @@ La recepción ha sido tremendamente positiva. Creo que Storytelling realmente co
 
 ![© 2024 Chanin "Data Prof" (CC BY-SA)](./images/pycon_3.jpeg "© 2024 Chanin "Data Prof" (CC BY-SA)")
 
-En la presentación incluí una encuesta, que respondieron +30 personas. La evaluación es enormemente positiva, y las pocas sugerencias de mejora son: 
+En la presentación incluí una encuesta, que respondieron +30 personas. La evaluación es enormemente positiva, y las pocas sugerencias de mejora son:
 
 * Tengo que sonreir más
 * Tengo que modular mejor y usar más tonos, no hablar tan plano.
@@ -69,11 +66,11 @@ En la presentación incluí una encuesta, que respondieron +30 personas. La eval
 
 Después de la charla, aproveché de relajarme y ver algunas charlas. También conversé con algunas personas que se me acercaron a comentar sobre mi presentación, a intercambiar recomendaciones de libros o simplemente a presentarse.
 
-¿Recuerdan el stand con las poleras que quería? Por la tarde pasé y había poca gente. Habían 3 desafíos distintos, y al resolver cada uno obtenías un codigo de 4 cifras que te servía para abrir un candado en una caja. Mientras me explicaban las reglas, les pregunté en modo broma si se valía abrir el candado sin resolver el puzzle, y me miraron con cara de ¿de verdad puedes hacer eso? Así que les mostré que en realidad es super fácil (había visto un tutorial hace algunos años) y logré abrir el candado en cerca de 1 minuto. Se rieron mucho y me regalaron igual la polera (no llegué a aprender de que trataban los puzzles a resolver). Me sentí muy "street smart", jajaja. 
+¿Recuerdan el stand con las poleras que quería? Por la tarde pasé y había poca gente. Habían 3 desafíos distintos, y al resolver cada uno obtenías un codigo de 4 cifras que te servía para abrir un candado en una caja. Mientras me explicaban las reglas, les pregunté en modo broma si se valía abrir el candado sin resolver el puzzle, y me miraron con cara de ¿de verdad puedes hacer eso? Así que les mostré que en realidad es super fácil (había visto un tutorial hace algunos años) y logré abrir el candado en cerca de 1 minuto. Se rieron mucho y me regalaron igual la polera (no llegué a aprender de que trataban los puzzles a resolver). Me sentí muy "street smart", jajaja.
 
 Como el día anterior, alterné entre ir a charlas, ir a los stands y hacer networking. Conocí mucha gente interesante. Al almuerzo, conocí un ingeniero de Duolingo que trabajaba en Pittsburgh y a un recién egresado que estaba recién aprendiendo Python. La diversidad misma de perfiles y conocimientos. Y me encanta que no haya prejuicio sobre el nivel de tus conocimientos, porque hay tanto por aprender que todos somos newbies en algún aspecto o librería de Python. Todos estamos siempre aprendiendo algo.
 
-Volví a dejar mi computador al hotel, y me vestí de gala para la subasta de PyLadies. La "PyLadies auction" es muy divertida y ruidosa, pero al mismo tiempo elegante e íntima. Se sirve un menú de varios tiempos, con comida muy buena. Mientras tanto, se van subastando distintos items donados por gente de la misma comunidad. Python Chile había donado uno de los recuerdos de la PyCon Chile 2023 (el ascensor con manivela), que terminó vendiéndose por 425 dólares - yo sólo esperaba que fuera más que 100 dólares. Fueron 44 items a subastar, entre los cuales destacaban: una serpiente de peluche gigante (3 o 4 metros), una maleta con los logos de todos los capítulos de PyLadies del mundo, y un reloj cucú con temática de Python. En total, se recaudaron más de 60,000 dólares. 
+Volví a dejar mi computador al hotel, y me vestí de gala para la subasta de PyLadies. La "PyLadies auction" es muy divertida y ruidosa, pero al mismo tiempo elegante e íntima. Se sirve un menú de varios tiempos, con comida muy buena. Mientras tanto, se van subastando distintos items donados por gente de la misma comunidad. Python Chile había donado uno de los recuerdos de la PyCon Chile 2023 (el ascensor con manivela), que terminó vendiéndose por 425 dólares - yo sólo esperaba que fuera más que 100 dólares. Fueron 44 items a subastar, entre los cuales destacaban: una serpiente de peluche gigante (3 o 4 metros), una maleta con los logos de todos los capítulos de PyLadies del mundo, y un reloj cucú con temática de Python. En total, se recaudaron más de 60,000 dólares.
 
 Despues del evento de PyLadies, con gente de distintas comunidades en español salimos a tomar cerveza y celebrar el cumpleaños de Cristián. Creo que volví al hotel cerca de las 2 am.
 
@@ -87,7 +84,7 @@ Ya el domingo se veía menos gente en el evento, muchas personas circulaban con 
 
 ![](./images/pyconus/pycon-us_viernes_1.jpeg "© 2024 Sebastian Flores (CC BY-SA)")
 
-Durante la mañana vi algunas charlas, y por la tarde organicé un Open Space llamado "Data Storytelling 2: Revenge of the Audience" que había propuesto. No conocía el formato de Open Space, y es super potente. Además de las charlas ya organizadas, se ponen a disposición de los asistentes unas 10 salas de tamaño diverso (60 a 100 personas), y dependiendo del ánimo y del interés, se van proponiendo "espacios de colaboración" que pueden tener cualquier forma o intención. 
+Durante la mañana vi algunas charlas, y por la tarde organicé un Open Space llamado "Data Storytelling 2: Revenge of the Audience" que había propuesto. No conocía el formato de Open Space, y es super potente. Además de las charlas ya organizadas, se ponen a disposición de los asistentes unas 10 salas de tamaño diverso (60 a 100 personas), y dependiendo del ánimo y del interés, se van proponiendo "espacios de colaboración" que pueden tener cualquier forma o intención.
 
 ![](./images/pyconus/pycon-us_viernes_2.jpeg "© 2024 Sebastian Flores (CC BY-SA)")
 
@@ -99,13 +96,13 @@ Al Open Space de Data Storytelling llegaron muchas más personas de las que hab�
 * Usar la libraría manim para hacer gráficos de animaciones de matemática.
 * Consejos de libros: Creativity Inc, que habla de storytelling en Pixar.
 
-Una de las preguntas más interesante fue "¿Que pasará cuando el futuro cuando la IA generativa pueda hacer una película, comic o libro a partir de un prompt?" Esto significará que como sociedad no tengamos las mismas referencias, y que quizás no sean transferibles. 
+Una de las preguntas más interesante fue "¿Que pasará cuando el futuro cuando la IA generativa pueda hacer una película, comic o libro a partir de un prompt?" Esto significará que como sociedad no tengamos las mismas referencias, y que quizás no sean transferibles.
 
 También nos sacamos fotos de la comunidad Python en español
 
-![](./images/pyconus/python-en-español.jpeg "?")
+![](./images/pyconus/python-en-español.jpeg "?")
 
-Con Armando fuimos a cenar al Primanti Bros, una sanguchería en Pittsburg que se supone que es extraordinaria pero que palidece en comparación con los sandwichs de Chile, Perú o Argentina. 
+Con Armando fuimos a cenar al Primanti Bros, una sanguchería en Pittsburg que se supone que es extraordinaria pero que palidece en comparación con los sandwichs de Chile, Perú o Argentina.
 
 ![](./images/pyconus/primanti.jpeg "© 2024 Sebastian Flores (CC BY-SA)")
 
@@ -114,10 +111,9 @@ Después nos reunimos con el resto de los pythonistas en una cervecería muy cer
 Y así, llegó el momento de preparar las maletas. Adorné mi maleta con stickers de numfocus, y salí al aeropuerto pensando en que era cierto, que lo había cumplido. Mi sueño de estar en una PyCon US y presentar una charla, en inglés. Que cuando uno piensa en grande y trabaja desde y para una comunidad, se pueden lograr cosas increíbles. Y que he sido muy afortunado de poder llegar hasta aquí, y que eso también significa una enorme responsabilidad para apoyar a que otros puedan atreverse a venir.
 
 ![](./images/pyconus/pycon-us_viernes_3.jpeg "© 2024 Sebastian Flores (CC BY-SA)")
+:::
 
-
-## English
-
+::: {.content-visible when-profile="eng"}
 PyCon US has ended. I was unsure whether to write a short post or a long one. I finally opted for a more detailed post because: I want to be able to reread it later and remember everything that happened during the event, and because I think that way others can better imagine the event. So much happened in such a short time! I find it hard to believe it was only 3 days, and not an entire week.
 
 ### Friday
@@ -140,21 +136,20 @@ In the morning, I met up with Denny and Cristián, whom I have talked to and col
 
 ![](./images/pyconus/pycon-us_miercoles_5.jpeg "© 2024 Sebastian Flores (CC BY-SA)")
 
-I also stopped by the Streamlit booth and took the opportunity to greet Chanin, Tony, Cristine, Ted, and Krista, whom I had only known virtually. I was surprised by the warmth with which they greeted me with me. I would have liked to talk more with them and express my gratitude, but I think the mix of fatigue, lack of sleep, and a constant state of amazement limited my ability to express myself in English.
-
-Chanin - Data Prof - [interviewed me trying to get some coherent thoughts](https://www.youtube.com/shorts/eIaaZ0xVEtU).
-
-After the keynote, I split my time between wandering around the stands, collecting t-shirts and stickers, and attending some talks. 
-There was a stand with puzzles to solve and t-shirts that I liked, but it was always very crowded, so I decided to try again the next day.
+I also stopped by the Streamlit booth and took the opportunity to greet Chanin, Tony, Cristine, Ted, and Krista, whom I had only known virtually. I was surprised by the warmth with which they greeted me with me. I would have liked to talk more with them and express my gratitude, but I think the mix of fatigue, lack of sleep, and a constant state of amazement limited my ability to express myself in English. It was only on Saturday, after my talk, that I managed to relax and truly enjoy it.
 
 ![](./images/pyconus/pycon-us_miercoles_6.jpeg "© 2024 Sebastian Flores (CC BY-SA)")
 
-During the lightning talks, around 6 pm, I realized I was mentally and emotionally exhausted. I decided to go for a walk to relax and get to know the surroundings a bit, and to buy something for dinner. I realized I needed to rest to be able to give a good presentation the next day. I ended up having dinner at the hotel despite walking around looking for a better option (3 mini-burgers). Back in the room, I rehearsed and worked on the last changes to the presentation from 8 to 11 pm. My speaker notes had every word I needed to say and even the moment to click/next on the presentation. I collapsed into bed and slept deeply.
+Chanin - Data Prof - [interviewed me trying to get some coherent thoughts](https://www.youtube.com/shorts/eIaaZ0xVEtU).
 
+After the keynote, I split my time between wandering around the stands, collecting t-shirts and stickers, and attending some talks.
+There was a stand with puzzles to solve and t-shirts that I liked, but it was always very crowded, so I decided to try again the next day.
+
+During the lightning talks, around 6 pm, I realized I was mentally and emotionally exhausted. I decided to go for a walk to relax and get to know the surroundings a bit, and to buy something for dinner. I realized I needed to rest to be able to give a good presentation the next day. I ended up having dinner at the hotel despite walking around looking for a better option (3 mini-burgers). Back in the room, I rehearsed and worked on the last changes to the presentation from 8 to 11 pm. My speaker notes had every word I needed to say and even the moment to click/next on the presentation. I collapsed into bed and slept deeply.
 
 ### Saturday
 
-The day started early, with a light breakfast due to my pre-presentation nerves. I went to Simon Willison's keynote, which was incredible and I will recommend to everyone as soon as it’s available on YouTube. Simon explains how LLMs work in a didactic and fun way, highlighting all their limitations but also the amazing things they allow us to do (which weren't possible before).
+The day started early, with a light breakfast due to my pre-presentation nerves. I went to Simon Willison's keynote, which was incredible and I will recommend to everyone as soon as it's available on YouTube. Simon explains how LLMs work in a didactic and fun way, highlighting all their limitations but also the amazing things they allow us to do (which weren't possible before).
 
 At noon, I gave my talk in English in a huge, packed room. To be honest, I was incredibly nervous. Just before going on stage, I realized that I didn't have a single line of Python in my presentation! Fortunately, it was too late to change anything. I knew I had prepared good material and notes to support me.
 
@@ -171,15 +166,17 @@ In the presentation, I included a survey, which over 30 people responded to. The
 * I need to smile more
 * I need to modulate better and use more tones, not speak so flatly
 * The ending was a bit abrupt
-T* he agenda (table of contents) can be used to generate more interest
+* The agenda (table of contents) can be used to generate more interest
 
 After the talk, I took the opportunity to relax and attend some presentations. I also chatted with some people who approached me to comment on my presentation, exchange book recommendations, or simply introduce themselves.
 
-Do you remember the stand with the t-shirts I wanted? In the afternoon, I stopped by and it was almost empty. There were three different challenges, and by solving each one, you would get a four-digit code that you could use to open a lock on a box. While they were explaining the rules, I half-jokingly asked if it was allowed to open the lock without solving the puzzle, and they looked at me like, "Can you really do that?" So I showed them that it’s actually super easy to hack one of those small locks (I had seen a tutorial a few years ago) and managed to open the lock in about a minute. They laughed a lot and gave me the t-shirt anyway (I never got to learn what the puzzles were about). I felt so "street smart" haha.
+Do you remember the stand with the t-shirts I wanted? In the afternoon, I stopped by and it was almost empty. There were three different challenges, and by solving each one, you would get a four-digit code that you could use to open a lock on a box. While they were explaining the rules, I half-jokingly asked if it was allowed to open the lock without solving the puzzle, and they looked at me like, "Can you really do that?" So I showed them that it's actually super easy to hack one of those small locks (I had seen a tutorial a few years ago) and managed to open the lock in about a minute. They laughed a lot and gave me the t-shirt anyway (I never got to learn what the puzzles were about). I felt so "street smart" haha.
 
-I went back to the hotel to drop off my computer and dressed up for the PyLadies auction. The "PyLadies auction" is very fun and noisy, but also elegant and intimate. A multi-course menu with very good food is served. Meanwhile, various items donated by people from the community are auctioned off. Python Chile had donated a keepsake from PyCon Chile 2023, which ended up selling for 425 dollars - I only hoped it would go for more than 100 dollars. There were 44 items up for auction, including: a giant plush snake (3 or 4 meters), a suitcase with the logos of all the PyLadies chapters around the world, and a cuckoo clock with a Python theme. In total, more than 60,000 dollars were raised.
+Like the previous day, I alternated between attending talks, visiting the stands, and networking. I met a lot of interesting people. At lunch, I met a Duolingo engineer who worked in Pittsburgh and a recent graduate who was just starting to learn Python. The sheer diversity of profiles and knowledge. And I love that there is no prejudice about your level of knowledge, because there is so much to learn that we are all newbies in some aspect or library of Python. We are all always learning something.
 
-After the PyLadies event, people from various Spanish-speaking communities and I went out for beers and to celebrate Cristián's birthday. I think I went to sleep around 2 am.
+I went back to the hotel to drop off my computer and dressed up for the PyLadies auction. The "PyLadies auction" is very fun and noisy, but also elegant and intimate. A multi-course menu with very good food is served. Meanwhile, various items donated by people from the community are auctioned off. Python Chile had donated one of the keepsakes from PyCon Chile 2023 (the elevator with a crank), which ended up selling for 425 dollars - I only hoped it would go for more than 100 dollars. There were 44 items up for auction, including: a giant plush snake (3 or 4 meters), a suitcase with the logos of all the PyLadies chapters around the world, and a cuckoo clock with a Python theme. In total, more than 60,000 dollars were raised.
+
+After the PyLadies event, people from various Spanish-speaking communities and I went out for beers and to celebrate Cristián's birthday. I think I went back to the hotel around 2 am.
 
 ### Sunday
 
@@ -187,11 +184,11 @@ I woke up early because I had committed to presenting a slide about PyDay Chile 
 
 ![© 2024 Cristián Maureira (CC BY-SA)](./images/pyconus/pyconus_friday_pyday-chile.jpg "© 2024 Cristián Maureira (CC BY-SA)")
 
-By Sunday, there were fewer people at the event, with many walking around with their suitcases. The company, startup, and community booths had already been removed, and the focus was on the job fair and posters. I found the work on "algorithmic embroidery" notable for its artistic and delicate nature. It’s incredible that such things can be done.
+By Sunday, there were fewer people at the event, with many walking around with their suitcases. The company, startup, and community booths had already been removed, and the focus was on the job fair and posters. I found the work on "algorithmic embroidery" notable for its artistic and delicate nature. It's incredible that such things can be done, linking the ethereal nature of a programming language with the concrete reality of fabric and thread.
 
 ![](./images/pyconus/pycon-us_viernes_1.jpeg "© 2024 Sebastian Flores (CC BY-SA)")
 
-In the morning, I attended some talks, and in the afternoon, I organized an Open Space called "Data Storytelling 2: Revenge of the Audience" that I had proposed on the board. I wasn’t familiar with the Open Space format, and it’s super fun. In addition to the scheduled talks, about 10 rooms of various sizes (60 to 100 people) are available to attendees, and depending on the mood and interest, "collaboration spaces" are proposed, which can take any form or intention.
+In the morning, I attended some talks, and in the afternoon, I organized an Open Space called "Data Storytelling 2: Revenge of the Audience" that I had proposed. I wasn't familiar with the Open Space format, and it's super powerful. In addition to the scheduled talks, about 10 rooms of various sizes (60 to 100 people) are available to attendees, and depending on the mood and interest, "collaboration spaces" are proposed, which can take any form or intention.
 
 ![](./images/pyconus/pycon-us_viernes_2.jpeg "© 2024 Sebastian Flores (CC BY-SA)")
 
@@ -199,25 +196,23 @@ Many more people attended the Data Storytelling Open Space than I had expected; 
 
 * Favorite data visualization libraries.
 * Opinions on pie charts and other graphs.
-* Using Ren'Py to make a presentation like a conversation/manga.
-* Using the Manim library to make mathematical animation graphics.
-* Book recommendations: Creativity Inc, on storytelling at Pixar.
+* Using renpy to make a presentation that is like a conversation/manga.
+* Using the manim library to make mathematical animation graphics.
+* Book recommendations: Creativity Inc, which talks about storytelling at Pixar.
 
-One of the most interesting questions was, "What will happen in the future when generative AI can create a movie, comic, or book from a prompt?" This might mean that as a society, we won’t have the same references, and they might not be transferable.
+One of the most interesting questions was, "What will happen in the future when generative AI can create a movie, comic, or book from a prompt?" This will mean that as a society we won't have the same references, and that they might not be transferable.
 
 We also took photos of the Spanish-speaking Python community.
 
-![](./images/pyconus/python-en-español.jpeg "?")
+![](./images/pyconus/python-en-español.jpeg "?")
 
 Armando and I went to dinner at Primanti Bros, a sandwich shop in Pittsburgh that is supposed to be extraordinary but pales in comparison to the sandwiches from Chile, Peru, or Argentina.
 
-![](./images/pyconus/primanti.jpeg "?")
+![](./images/pyconus/primanti.jpeg "© 2024 Sebastian Flores (CC BY-SA)")
 
 Afterwards, we met up with the rest of the Pythonistas at a nearby brewery. There, we talked, toasted until glasses broke, and gave away the last stickers, plush toys, and t-shirts. One Pythonista was looking from afar with a face that said, "I want a sticker too," so I invited him over. He took some stickers for his daughter, and we started chatting. He was American but spoke Japanese and was very close with the Python Japan group, whom he introduced me to, and he ended up buying me some beers. Two stickers for two beers, definitely the best deal I've ever made! Hahaha. I was surprised at how easy it was to meet people and discuss technical topics when I usually find it much harder to talk to strangers or network.
 
-And so, the time came to pack my bags. I decorated my suitcase with NumFOCUS stickers and headed to the airport, thinking I had accomplished it. My dream of being at a PyCon US and presenting a talk in English. That when you think big and work from and for a community, amazing things can be achieved. And that I have been very fortunate to be able to get here, and that also means a huge responsibility to support others in daring to come as well.
+And so, the time came to pack my bags. I decorated my suitcase with NumFOCUS stickers and headed to the airport, thinking it was true, that I had accomplished it. My dream of being at a PyCon US and presenting a talk in English. That when you think big and work from and for a community, amazing things can be achieved. And that I have been very fortunate to be able to get here, and that also means a huge responsibility to support others in daring to come as well.
 
 ![](./images/pyconus/pycon-us_viernes_3.jpeg "© 2024 Sebastian Flores (CC BY-SA)")
-
 :::
-

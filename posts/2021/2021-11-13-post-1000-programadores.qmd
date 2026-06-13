@@ -1,16 +1,20 @@
 ---
 title: "1000 Programadores Salteños"
+title-en: "1000 Programmers from Salta"
 description: "Reflexiones de Pedagogía con Python"
+description-en: "Reflections on Pedagogy with Python"
 date: "2021-11-13"
 categories: [reflexión, streamlit]
+categories-en: [reflection, streamlit]
 ---
 
+::: {.content-visible when-profile="esp"}
 El viernes 12 noviembre 2021 di una charla a los docentes de la iniciativa **1000 Programadores Salteños**, en Salta, Argentina. Elegí una charla sobre pedagogía con Python, y aproveché de recordar y reflexionar lo que fue dictar el curso de Aplicaciones de la Matemática en la Ingeniería.
 
 ## ¿Qué cosas aprendí dictando el curso de MAT244/MAT281 - Aplicaciones de la Matemática en la Ingeniería?
 
 * Considerar el curso como un producto (de software) donde los estudiantes son los clientes: estar en sintonía con las herramientas de la industria, pedir retroalimentación de manera frecuente y mejorar iterativamente el contenido.
-* Experimentar. Atreverse a que las cosas no resulten durante la clase. Ponerse en los zapatos de un estudiante: ¡no olvidar lo que es no saber! 
+* Experimentar. Atreverse a que las cosas no resulten durante la clase. Ponerse en los zapatos de un estudiante: ¡no olvidar lo que es no saber!
 * Enseñar habilidades y competencias, por sobre contenido.
 "Learn in case" vs "learn in need".
 * Que las evaluaciones no sean irrelevantes. Sólo podemos inspirar a que alguien aprenda por sí mismo. Evitar pruebas tradicionales, es mejor que los estudiantes generen impacto a solucionando un problema real de alguna  comunidad.
@@ -19,7 +23,7 @@ El viernes 12 noviembre 2021 di una charla a los docentes de la iniciativa **100
    * https://es.datachile.io/
    * http://datagramas.cl/courses/infovis/resources/
 
-En resumen, **¡No dictes un curso, ¡comienza una revolución!** 
+En resumen, **¡No dictes un curso, ¡comienza una revolución!**
 
 _Disclaimer: Presento el caso exitoso. Pero también he dictado otros cursos sin el mismo éxito: Matemáticas 1 (cálculo y álgebra primer año ingeniería) e Introducción a la programación (python primer año ingeniería). No digo qque sea fácil. Pero cuando se logran hacer cambios, es satisfactorio e impacta en la vida de loss estudiantes._
 
@@ -29,9 +33,9 @@ _Disclaimer: Presento el caso exitoso. Pero también he dictado otros cursos sin
    * Nociones básicas de SQL
    * Nociones básicas de visualización (gráficos y dashboards)
    * Nociones básicas de data pipelines y ETLs.
-* **Ética**: Temas de ética, impacto de algoritmos en la vida real, GDPR y protección de datos. 
+* **Ética**: Temas de ética, impacto de algoritmos en la vida real, GDPR y protección de datos.
 * **Publicidad y la economía de la atención**: En un mundo disperso y bombardeado de distracciones, tener foco es un superpoder. Dar nociones de cómo funciona la publicidad y porqué todos los productos quieren nuestra atención 100% del tiempo. Nociones de flow state y deep work.
-* **Comunidad y open source**: FOSS (Free Open Source Software) está presente en todas las empresas. Contribuir en un FOSS es un imperativo ético (y skill marketeable). Encontrar y crear comunidades de interés. Participar en eventos de tecnología, como las Pycon. Algunas posibles 
+* **Comunidad y open source**: FOSS (Free Open Source Software) está presente en todas las empresas. Contribuir en un FOSS es un imperativo ético (y skill marketeable). Encontrar y crear comunidades de interés. Participar en eventos de tecnología, como las Pycon. Algunas posibles
 tareas:
    * Contribuir en la documentación de un proyecto de Open Source
    * Hacer un Pull Request en un proyecto de Open Source
@@ -46,3 +50,48 @@ Creo que estuvo muy entretenido, se me pasó rápido la hora. Al finalizar tuvim
 Todas las opciones de visualización de la charla (en jupyter notebook) están en el repositorio de [github](https://sebastiandres.github.io/talk_2021_11_unsa).
 
 La aplicación web está en [github](https://github.com/sebastiandres/streamlit_ml_edu) y (quizás online) en [share.streamlit](https://share.streamlit.io/sebastiand.res/streamlit_ml_edu/main).
+:::
+
+::: {.content-visible when-profile="eng"}
+On Friday November 12th 2021 I gave a talk to the teachers of the **1000 Programadores Salteños** initiative, in Salta, Argentina. I chose a talk about pedagogy with Python, and took the opportunity to recall and reflect on what it was like to teach the Applications of Mathematics in Engineering course.
+
+## What did I learn teaching the MAT244/MAT281 course - Applications of Mathematics in Engineering?
+
+* Consider the course as a (software) product where the students are the clients: stay in tune with the industry's tools, ask for feedback frequently and iteratively improve the content.
+* Experiment. Dare to let things not work out during class. Put yourself in a student's shoes: don't forget what it's like to not know!
+* Teach skills and competencies, over content.
+"Learn in case" vs "learn in need".
+* Don't let evaluations be irrelevant. We can only inspire someone to learn on their own. Avoid traditional tests; it's better for students to generate impact by solving a real problem for some community.
+* Use real examples, attractive images and videos, interesting datasets, like the following:
+   * https://archive.ics.uci.edu/ml/datasets.php
+   * https://es.datachile.io/
+   * http://datagramas.cl/courses/infovis/resources/
+
+In short, **Don't teach a course, start a revolution!**
+
+_Disclaimer: I'm presenting the successful case. But I've also taught other courses without the same success: Mathematics 1 (calculus and algebra, first year engineering) and Introduction to programming (python, first year engineering). I'm not saying it's easy. But when you manage to make changes, it's satisfying and it impacts the students' lives._
+
+## What new topics would I include in the course?
+
+* **Data engineering**:  The software engineer, data engineer, data scientist and similar roles are becoming more and more "full stack" and have to be self-sufficient in the use of data. Students (future professionals) need to know:
+   * Basic notions of SQL
+   * Basic notions of visualization (charts and dashboards)
+   * Basic notions of data pipelines and ETLs.
+* **Ethics**: Ethics topics, the impact of algorithms in real life, GDPR and data protection.
+* **Advertising and the attention economy**: In a scattered world bombarded with distractions, having focus is a superpower. Give notions of how advertising works and why all products want our attention 100% of the time. Notions of flow state and deep work.
+* **Community and open source**: FOSS (Free Open Source Software) is present in every company. Contributing to FOSS is an ethical imperative (and a marketable skill). Finding and creating communities of interest. Participating in technology events, such as PyCons. Some possible
+tasks:
+   * Contribute to the documentation of an Open Source project
+   * Make a Pull Request on an Open Source project
+   * Edit a wikipedia article
+
+
+
+In addition, I recommended some libraries and used a streamlit app to try teaching some Machine Learning concepts.
+
+I think it was very entertaining; the hour flew by. At the end we had a lively exchange, although I would have liked to have a bit more audience... I think other teachers could have made good use of the content and the presentation
+
+All the visualization options for the talk (in jupyter notebook) are in the [github](https://sebastiandres.github.io/talk_2021_11_unsa) repository.
+
+The web application is on [github](https://github.com/sebastiandres/streamlit_ml_edu) and (maybe online) at [share.streamlit](https://share.streamlit.io/sebastiand.res/streamlit_ml_edu/main).
+:::

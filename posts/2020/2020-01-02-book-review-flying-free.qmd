@@ -1,12 +1,23 @@
 ---
 title: Flying Free
 description: "Biografía de Cecilia Aragon, llena de sorprendentes anécdotas."
+description-en: "Biography of Cecilia Aragon, full of surprising anecdotes."
 date: "2020-01-02"
 author: Cecilia Aragon
 genre:  Biografía
 rating: 8
 categories: [lectura]
+categories-en: [reading]
 ---
+
+::: {.content-visible when-profile="esp"}
 Conocí a Cecilia en una charla en la UTFSM, y su sinceridad y humanidad me llamó profundamente la atención. No tenía idea que fue piloto acrobática de aviones, y su historia es increíble. Me devoré el libro y lo he recomendado a varios amigos. Extrañé fue un final más gradioso.
 
 ## Rating: 8/10
+:::
+
+::: {.content-visible when-profile="eng"}
+I met Cecilia at a talk at UTFSM, and her sincerity and humanity deeply caught my attention. I had no idea she had been an aerobatic pilot, and her story is incredible. I devoured the book and have recommended it to several friends. What I missed was a grander ending.
+
+## Rating: 8/10
+:::
