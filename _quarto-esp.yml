@@ -1,0 +1,42 @@
+project:
+  output-dir: ./_site/    
+
+website:
+  title: "Sebastián Flores Benner"
+  favicon: favicon.ico
+  google-analytics: "G-HG9BYLK8FC"
+  site-url: "https://sebastiandres.xyz"
+  navbar:
+    left:
+      - text: "Sobre mí"
+        href: pages/about.qmd
+      - text: "Blog"
+        href: pages/blog.qmd
+      - text: "Historias"
+        href: pages/historias.qmd
+      - text: "Charlas"
+        href: pages/charlas.qmd
+      - text: "Apps y Repos"
+        href: pages/proyectos.qmd
+      - text: "Publicaciones"
+        href: pages/publicaciones.qmd
+      - text: Tutoriales
+        menu:
+          - tutorial/quarto.qmd
+          - tutorial/streamlit.qmd
+          - tutorial/storytelling_by_sanderson.qmd
+    right:
+      - icon: rss
+        href: pages/blog.xml  # Note: This matches the 'blog.qmd' file name
+      - href: ./eng/index.html
+        text: ENG
+
+lang: es
+
+format:
+  html:
+    theme: superhero
+    css: styles.css
+
+
+

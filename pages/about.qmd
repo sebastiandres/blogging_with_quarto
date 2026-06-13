@@ -1,18 +1,49 @@
+::: {.content-visible  when-profile="esp"}
 ---
 title: "Sobre mí"
 ---
 
 ## Hoy
-Soy Chief Data Officer en uPlanner. Participo de comunidades y organizaciones relacionadas con Python: Comunidad Python Chile, Streamlit y Vizzu.
+Chief Product Officer en uPlanner. Presidente de Python Chile, co-founder de IADevs.
 
 ## En 10 minutos
-He tenido la tremenda oportunidad de estudiar en grandes universidades en países muy distintos:   
+He tenido la tremenda oportunidad de estudiar en grandes universidades en países muy distintos:
+
 - Ingeniero Matemático de la Universidad Técnica Federico Santa María, en Chile.
 - Ingénieur Diplômé de l'École Polytechnique, en Francia.
 - Master of Computational and Mathematical Engineering de Stanford University, en EEUU.
 Fueron 3 experiencias completamente distintas y muy enriquecedoras.
 
-Actualmente trabajo como Chief Data Officer en uPlanner, donde participo activamente en el desarrollo de nuevos productos y dirección de proyectos estratégicos con componentes de Data Science y Machine Learning. Anteriormente, he realizado diversos proyectos de ingeniería relacionados con matemáticas aplicadas e implementaciones numéricas en universidades chilenas (La UTFSMa y UCH). Como docente, ha impartido asignaturas de Matemática e Informática, con especial énfasis en la utilización de nuevas metodologías de aprendizaje como flipped classroom y problem based learning, y el uso de nuevas tecnologías como jupyter notebooks + RISE.
+Actualmente trabajo como Chief Product Officer en uPlanner, donde participo activamente en el desarrollo de nuevos productos y dirección de proyectos estratégicos con componentes de Data Science y Machine Learning. Anteriormente, he realizado diversos proyectos de ingeniería relacionados con matemáticas aplicadas e implementaciones numéricas en universidades chilenas (La UTFSM y UCH). Como docente, ha impartido asignaturas de Matemática e Informática, con especial énfasis en la utilización de nuevas metodologías de aprendizaje como flipped classroom y problem based learning, y el uso de nuevas tecnologías como jupyter notebooks + RISE.
 
 Llevo programando en python desde el 2008, y me gusta encontrar y aprender nuevas librerías: uso matplotlib y vizzu para los gráficos, pandas para la manipulación de datos, jupyter notebooks + RISE para la colaboración y exploración, streamlit para proyectos web y quarto para compartir conocimiento.
 
+## Contactarme
+[Linkedin](https://www.linkedin.com/in/sebastiandres/), [Gihtub](https://github.com/sebastiandres), [Twitter](https://twitter.com/sebastiandres) o mi correo, si lo conoces.
+
+:::
+
+::: {.content-visible when-profile="eng"}
+---
+title: "About me"
+---
+
+## Now
+Chief Product Officer en uPlanner. President at Python Chile,  IADevs co-founder.
+
+
+## In 10 minutes
+I've had the tremendous opportunity to study at great universities in very different countries:
+
+- Mathematical Engineer from Universidad Técnica Federico Santa María, in Chile.  
+- Ingénieur Diplômé de l'École Polytechnique, in France.  
+- Master of Computational and Mathematical Engineering from Stanford University, in the USA.  
+These were 3 completely different and very enriching experiences.
+
+I currently work as Chief Product Officer at uPlanner, where I actively participate in the development of new products and the direction of strategic projects with Data Science and Machine Learning components. Previously, I carried out various engineering projects related to applied mathematics and numerical implementations at Chilean universities (UTFSM and UCH). As a lecturer, I have taught Mathematics and Computer Science courses, with special emphasis on the use of new learning methodologies such as flipped classroom and problem based learning, and the use of new technologies such as jupyter notebooks + RISE.
+
+I've been programming in python since 2008, and I enjoy finding and learning new libraries: I use matplotlib and vizzu for charts, pandas for data manipulation, jupyter notebooks + RISE for collaboration and exploration, streamlit for web projects and quarto for sharing knowledge.
+
+## Contact me
+[Linkedin](https://www.linkedin.com/in/sebastiandres/), [Gihtub](https://github.com/sebastiandres), [Twitter](https://twitter.com/sebastiandres) or my email, if you know it.
+:::

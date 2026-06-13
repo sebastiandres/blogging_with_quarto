@@ -8,7 +8,7 @@ quarto render .
 
 Usar el comando:
 ```
-sh publish.sh
+make publish
 ```
 
 Que ejecuta los siguientes comandos:

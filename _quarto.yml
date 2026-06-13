@@ -1,40 +1,20 @@
 project:
+  title: "Sebastian Flores Benner"
   type: website
 
-website:
-  title: "sebastiandres.xyz"
-  favicon: favicon.ico
-  google-analytics: "G-HG9BYLK8FC"
-  site-url: "https://sebastiandres.xyz"
-  navbar:
-    right:
-      - index.qmd
-      - pages/blog.qmd
-      - pages/historias.qmd
-      - pages/charlas.qmd
-      - pages/proyectos.qmd
-      - pages/librerias.qmd
-      - pages/publicaciones.qmd
-      - text: Tutoriales
-        menu:
-          - tutorial/quarto.qmd
-          - tutorial/streamlit.qmd
-          - tutorial/storytelling_by_sanderson.qmd
-      - pages/about.qmd
-      - icon: linkedin
-        href: https://www.linkedin.com/in/sebastiandres/
-      - icon: github
-        href: https://github.com/sebastiandres
-      - icon: twitter
-        href: https://twitter.com/sebastiandres
-      - icon: rss
-        href: pages/blog.xml  # Note: This matches the 'blog.qmd' file name
-
+execute:
+  freeze: auto  # re-render only when the source file changes
 
 format:
   html:
-    theme: superhero
-    css: styles.css
+    include-in-header:
+      text: |
+        <link rel="alternate" hreflang="es" href="https://sebastiandres.xyz/" />
+        <link rel="alternate" hreflang="en" href="https://sebastiandres.xyz/en/" />
+        <link rel="alternate" hreflang="x-default" href="https://sebastiandres.xyz/" />
+    include-after-body:
+      file: lang-switch.html
 
-
-
+profile:
+  default: esp
+  group: [esp, eng]

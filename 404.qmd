@@ -1,0 +1,40 @@
+---
+title: "404"
+page-layout: full
+toc: false
+sidebar: false
+search: false
+format:
+  html:
+    include-in-header:
+      text: |
+        <meta name="robots" content="noindex">
+---
+
+::: {.text-center style="max-width: 720px; margin: 0 auto; padding: 2rem 1rem;"}
+
+# 404 {style="font-size: 6rem; margin-bottom: 0; line-height: 1;"}
+
+### Esta página no existe. / This page does not exist. {style="font-weight: 300;"}
+
+<p style="font-size: 5rem; margin: 0.5rem 0;">🤳💀</p>
+
+::: {.callout-warning appearance="simple" icon="false"}
+**🇪🇸 Houston, tenemos un problema.** Buscaste algo que no está aquí... o que solo existe en el otro idioma. *No eres tú, soy yo.* 😩
+
+**🇬🇧 Houston, we have a problem.** You looked for something that isn't here... or that only exists in the other language. *It's not you, it's me.* 😩
+:::
+
+<br>
+
+```default
+        ▄▄▄▄▄▄▄▄▄▄▄
+     ▄█████████████▄
+    ███  ▄     ▄  ███      "this is fine"
+    ███ (◕)   (◕) ███           🔥🐶🔥
+    ███     ▼     ███      everything is on fire
+    ███   ╰───╯   ███      but the 404 page works
+     ▀█████████████▀
+```
+
+:::

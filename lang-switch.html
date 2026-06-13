@@ -1,0 +1,35 @@
+<script>
+// Rewrites the navbar language toggle so it points to the *equivalent*
+// page in the other language instead of always going to the home page.
+//
+// Site layout:
+//   Spanish (esp profile): <root>/        -> _site/
+//   English (eng profile): <root>/eng/    -> _site/eng/
+//
+// Instead of hardcoding the "/eng" prefix (which breaks under file:// and
+// localhost), we derive both language roots from links Quarto already
+// resolves per-page:
+//   - the navbar brand  -> this page's own language root index
+//   - the language toggle (ESP/ENG) -> the other language root index
+// Then we re-base the current page's path from one root onto the other.
+document.addEventListener("DOMContentLoaded", function () {
+  var toggle = null;
+  document.querySelectorAll(".navbar a.nav-link").forEach(function (a) {
+    var label = (a.textContent || "").trim();
+    if (label === "ENG" || label === "ESP") toggle = a;
+  });
+  var brand = document.querySelector(".navbar .navbar-brand");
+  if (!toggle || !brand) return;
+
+  // Directory URL of each language root (strip the trailing "index.html").
+  var ownDir = new URL(".", new URL(brand.getAttribute("href"), location.href)).href;
+  var otherDir = new URL(".", new URL(toggle.getAttribute("href"), location.href)).href;
+
+  // Current page path relative to its own language root, re-based onto the other.
+  var here = location.href.split("#")[0];
+  if (here.indexOf(ownDir) !== 0) return; // unexpected layout: keep default href
+  var rel = here.slice(ownDir.length);
+
+  toggle.setAttribute("href", otherDir + rel + location.hash);
+});
+</script>

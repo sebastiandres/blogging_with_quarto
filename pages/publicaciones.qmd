@@ -1,45 +1,97 @@
+::: {.content-visible when-profile="esp"}
 ---
 title: "Publicaciones"
 ---
 
 He participado en las siguientes publicaciones:
 
-* **Create a search engine with Streamlit and Google Sheets**  
-[Artículo en el Blog de Streamlit](https://blog.streamlit.io/create-a-search-engine-with-streamlit-and-google-sheets/), 
+* **Create a search engine with Streamlit and Google Sheets**
+[Artículo en el Blog de Streamlit](https://blog.streamlit.io/create-a-search-engine-with-streamlit-and-google-sheets/),
 14 marzo 2023.
 
-* **uPlanner fosters data processing innovation with Streamlit**  
-[Artículo en el Blog de Streamlit](https://blog.streamlit.io/uplanner-fosters-data-processing-innovation-with-streamlit/), 
+* **uPlanner fosters data processing innovation with Streamlit**
+[Artículo en el Blog de Streamlit](https://blog.streamlit.io/uplanner-fosters-data-processing-innovation-with-streamlit/),
 6 octubre 2022.
 
-* **How to create interactive books with Streamlit in 5 steps**  
-[Artículo en el Blog de Streamlit](https://blog.streamlit.io/how-to-create-interactive-books-with-streamlit-and-streamlit-book-in-5-steps/), 
+* **How to create interactive books with Streamlit in 5 steps**
+[Artículo en el Blog de Streamlit](https://blog.streamlit.io/how-to-create-interactive-books-with-streamlit-and-streamlit-book-in-5-steps/),
 20 enero 2022.
 
-* **On the mineral recovery estimation in Cu/Mo flotation plants**  
-[Minerals & Metallurgical Processing](http://mmp.smenet.org/issue.cfm?issueid=280), 
+* **On the mineral recovery estimation in Cu/Mo flotation plants**
+[Minerals & Metallurgical Processing](http://mmp.smenet.org/issue.cfm?issueid=280),
 1 mayo 2016.
 
-* **Propagación numérica de tsunamis utilizando volúmenes finitos en mallas triangulares adaptadas a la batimetría**  
-[XXII Congreso Chileno de Ingeniería Hidráulica](https://www.sochid.cl/publicaciones-sochid/congresos-chilenos/congreso-xxii-2/congreso-xxii-trabajo-33/), 
+* **Propagación numérica de tsunamis utilizando volúmenes finitos en mallas triangulares adaptadas a la batimetría**
+[XXII Congreso Chileno de Ingeniería Hidráulica](https://www.sochid.cl/publicaciones-sochid/congresos-chilenos/congreso-xxii-2/congreso-xxii-trabajo-33/),
 22 octubre 2015.
 
-* **Analysis of the operational strategies for the enzymatic hydrolysis of food proteins in batch reactor**  
-[Journal of Food Engineering ](https://www.sciencedirect.com/science/article/abs/pii/S0260877415300303), 
+* **Analysis of the operational strategies for the enzymatic hydrolysis of food proteins in batch reactor**
+[Journal of Food Engineering ](https://www.sciencedirect.com/science/article/abs/pii/S0260877415300303),
 1 octubre 2015.
 
-* **Effect of Internal Diffusional Restrictions on the Hydrolysis of Penicillin G: Reactor Performance and Specific Productivity of 6-APA with Immobilized Penicillin Acylase**  
-[Applied Biochemistry and Biotechnology](https://link.springer.com/article/10.1007/s12010-011-9262-7), 
+* **Effect of Internal Diffusional Restrictions on the Hydrolysis of Penicillin G: Reactor Performance and Specific Productivity of 6-APA with Immobilized Penicillin Acylase**
+[Applied Biochemistry and Biotechnology](https://link.springer.com/article/10.1007/s12010-011-9262-7),
 1 septiembre 2011.
 
-* **Batch reactor performance for enzymatic synthesis of cephalexin: influence of catalyst enzyme loading and particle size**  
-[Journal of Biotechnology](https://www.sciencedirect.com/science/article/abs/pii/S0168165610005912), 
+* **Batch reactor performance for enzymatic synthesis of cephalexin: influence of catalyst enzyme loading and particle size**
+[Journal of Biotechnology](https://www.sciencedirect.com/science/article/abs/pii/S0168165610005912),
 1 noviembre 2010.
 
-* **Temperature effect on heterogeneous enzyme catalyzed reaction: Thièle modulus and effectiveness factor analysis**  
-[Journal of Biotechnology](http://dx.doi.org/10.1016/j.jbiotec.2010.09.491), 
+* **Temperature effect on heterogeneous enzyme catalyzed reaction: Thièle modulus and effectiveness factor analysis**
+[Journal of Biotechnology](http://dx.doi.org/10.1016/j.jbiotec.2010.09.491),
 1 noviembre 2010.
 
-* **Effect of particle size distribution in immobilized enzyme reactor performance**  
-[Biochemical Engineering Journal, 49(2) 2010](http://www.sciencedirect.com/science/article/pii/S1369703X10000124), 
+* **Effect of particle size distribution in immobilized enzyme reactor performance**
+[Biochemical Engineering Journal, 49(2) 2010](http://www.sciencedirect.com/science/article/pii/S1369703X10000124),
 15 Abril 2010.
+
+:::
+
+::: {.content-visible when-profile="eng"}
+---
+title: "Publications"
+---
+
+I have contributed to the following publications:
+
+* **Create a search engine with Streamlit and Google Sheets**
+[Article on the Streamlit Blog](https://blog.streamlit.io/create-a-search-engine-with-streamlit-and-google-sheets/),
+March 14, 2023.
+
+* **uPlanner fosters data processing innovation with Streamlit**
+[Article on the Streamlit Blog](https://blog.streamlit.io/uplanner-fosters-data-processing-innovation-with-streamlit/),
+October 6, 2022.
+
+* **How to create interactive books with Streamlit in 5 steps**
+[Article on the Streamlit Blog](https://blog.streamlit.io/how-to-create-interactive-books-with-streamlit-and-streamlit-book-in-5-steps/),
+January 20, 2022.
+
+* **On the mineral recovery estimation in Cu/Mo flotation plants**
+[Minerals & Metallurgical Processing](http://mmp.smenet.org/issue.cfm?issueid=280),
+May 1, 2016.
+
+* **Numerical propagation of tsunamis using finite volumes on triangular meshes adapted to bathymetry**
+[XXII Congreso Chileno de Ingeniería Hidráulica](https://www.sochid.cl/publicaciones-sochid/congresos-chilenos/congreso-xxii-2/congreso-xxii-trabajo-33/),
+October 22, 2015.
+
+* **Analysis of the operational strategies for the enzymatic hydrolysis of food proteins in batch reactor**
+[Journal of Food Engineering ](https://www.sciencedirect.com/science/article/abs/pii/S0260877415300303),
+October 1, 2015.
+
+* **Effect of Internal Diffusional Restrictions on the Hydrolysis of Penicillin G: Reactor Performance and Specific Productivity of 6-APA with Immobilized Penicillin Acylase**
+[Applied Biochemistry and Biotechnology](https://link.springer.com/article/10.1007/s12010-011-9262-7),
+September 1, 2011.
+
+* **Batch reactor performance for enzymatic synthesis of cephalexin: influence of catalyst enzyme loading and particle size**
+[Journal of Biotechnology](https://www.sciencedirect.com/science/article/abs/pii/S0168165610005912),
+November 1, 2010.
+
+* **Temperature effect on heterogeneous enzyme catalyzed reaction: Thièle modulus and effectiveness factor analysis**
+[Journal of Biotechnology](http://dx.doi.org/10.1016/j.jbiotec.2010.09.491),
+November 1, 2010.
+
+* **Effect of particle size distribution in immobilized enzyme reactor performance**
+[Biochemical Engineering Journal, 49(2) 2010](http://www.sciencedirect.com/science/article/pii/S1369703X10000124),
+April 15, 2010.
+
+:::

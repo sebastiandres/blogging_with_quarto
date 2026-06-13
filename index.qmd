@@ -1,3 +1,4 @@
+::: {.content-visible  when-profile="esp"}
 ---
 title: "Inicio"
 image: avatar.png
@@ -14,7 +15,6 @@ about:
       text: Github
       href: https://github.com/sebastiandres
 ---
-
 ¡Hola! Soy sebastiandres. En mi sitio escribo sobre python, tecnología y libros.  
 
 <form
@@ -56,8 +56,63 @@ about:
 </form>
 
 <p style="margin: 10px 0;"></p>
+:::
 
+::: {.content-visible when-profile="eng"}
+---
+title: "Home"
+image: avatar.png
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/sebastiandres
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/sebastiandres/
+    - icon: github
+      text: Github
+      href: https://github.com/sebastiandres
+---
 Hi! I'm sebastiandres.
 I write about python, technology and books.
 Mostly on Spanish, but some posts are also available on English.
-
+<form
+  action="https://buttondown.com/api/emails/embed-subscribe/sebastiandres"
+  method="post"
+  class="embeddable-buttondown-form"
+  target="_blank"
+>
+  <input
+    type="email"
+    name="email"
+    id="bd-email"
+    placeholder="tu@correo.com"
+    style="
+      background: white !important;
+      border: 1px solid #ccc !important;
+      border-radius: 8px !important;
+      padding: 8px 14px !important;
+      font-size: 15px !important;
+      width: 280px !important;
+      outline: none !important;
+      text-align: center !important;
+    "
+  />
+  <input
+    type="submit"
+    value="¡Suscríbeme!"
+    style="
+      background: transparent !important;
+      color: white !important;
+      border: 1px solid white !important;
+      border-radius: 8px !important;
+      padding: 8px 20px !important;
+      font-size: 15px !important;
+      font-weight: 500 !important;
+      cursor: pointer !important;
+    "
+  />
+</form>
+:::
