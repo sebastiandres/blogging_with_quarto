@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Talks – Sebastián Flores Benner</title>
+<title>Charlas - Talks· Sebastián Flores Benner – sebastiandres</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../favicon.ico" rel="icon">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -38,10 +40,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-580496dacbc81ff1c201807634f1d0aa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-ebec4c5ba3c60d5890bd0368d1fe85a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-1126176dc1e1c8ea128a5c41afbd35af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-project','listing-execute','listing-format','listing-filters','listing-website','listing-lang','listing-language','listing-freeze','listing-title-block-banner','listing-author','listing-toc','listing-page-layout','listing-title','listing-title-en','listing-description','listing-description-en','listing-date','listing-event','listing-categories','listing-categories-en','listing-image','listing-path','listing-outputHref','listing-date-modified','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-execute","listing-format","listing-filters","listing-website","listing-lang","listing-language","listing-freeze","listing-title-block-banner","listing-author","listing-toc","listing-page-layout","listing-title","listing-title-en","listing-description","listing-description-en","listing-date","listing-event","listing-categories","listing-categories-en","listing-image","listing-path","listing-outputHref","listing-date-modified","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-HG9BYLK8FC"></script>
 
 <script type="text/javascript">
@@ -82,11 +113,40 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <link rel="alternate" hreflang="en" href="https://sebastiandres.xyz/en/">
 <link rel="alternate" hreflang="x-default" href="https://sebastiandres.xyz/">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -96,7 +156,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Sebastián Flores Benner</span>
+    <span class="navbar-title">sebastiandres</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -106,34 +166,30 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../pages/about.html"> 
-<span class="menu-text">About me</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../pages/blog.html"> 
 <span class="menu-text">Blog</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../pages/historias.html"> 
-<span class="menu-text">Stories</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="../pages/talks.html" aria-current="page"> 
 <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../pages/proyectos.html"> 
-<span class="menu-text">Apps &amp; Repos</span></a>
+    <a class="nav-link" href="../pages/reading.html"> 
+<span class="menu-text">Reading</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../pages/publicaciones.html"> 
-<span class="menu-text">Publications</span></a>
+    <a class="nav-link" href="../pages/projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pages/articles.html"> 
+<span class="menu-text">Articles</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tutoriales" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Tutoriales</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tutorials" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Tutorials</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-tutoriales">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tutorials">    
         <li>
     <a class="dropdown-item" href="../tutorial/quarto.html">
  <span class="dropdown-text">Quarto</span></a>
@@ -148,16 +204,24 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
   </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../pages/writing.html"> 
+<span class="menu-text">Stories</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="../pages/blog.xml"> <i class="bi bi-rss" role="img">
-</i> 
-<span class="menu-text"></span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../pages/about.html"> 
+<span class="menu-text">About me</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">ESP</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../pages/blog.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -167,631 +231,379 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(16)</span></div><div class="category" data-category="ZWR1Y2FjaSVDMyVCM24=">educación <span class="quarto-category-count">(1)</span></div><div class="category" data-category="anVweXRlcg==">jupyter <span class="quarto-category-count">(2)</span></div><div class="category" data-category="bWFjaGluZSUyMGxlYXJuaW5n">machine learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWF0ZW0lQzMlQTF0aWNh">matemática <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cGFuZGFz">pandas <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cHl0aG9u">python <span class="quarto-category-count">(14)</span></div><div class="category" data-category="c3Rvcnl0ZWxsaW5n">storytelling <span class="quarto-category-count">(3)</span></div><div class="category" data-category="c3RyZWFtbGl0">streamlit <span class="quarto-category-count">(3)</span></div><div class="category" data-category="dmlzdWFsaXphY2klQzMlQjNu">visualización <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Talks</h1>
+
+
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-custom" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-left" data-index="0" data-categories="c3Rvcnl0ZWxsaW5nJTJDcHl0aG9u" data-listing-date-sort="1727146800000" data-listing-file-modified-sort="1781463321185" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<div class="thumbnail"><a href="../talks/2024-09-24-python-data-storytelling-rescate.html" class="no-external"><img src="../talks/images/storytelling.png" class="thumbnail-image" alt=""></a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../talks/2024-09-24-python-data-storytelling-rescate.html" class="no-external stretched-link">Python and Data Storytelling to the rescue: let’s prevent more deaths by PowerPoint</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('c3Rvcnl0ZWxsaW5n'); return false;">storytelling</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">python</div>
+
 </div>
+<div class="delink listing-description"><a href="../talks/2024-09-24-python-data-storytelling-rescate.html" class="no-external">
+<p>I discuss different data storytelling skills and technical tools with the goal of creating more engaging, entertaining and memorable presentations using python libraries and programs. Let’s make the world better, one presentation at a time!</p>
+</a></div>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="1" data-categories="c3Rvcnl0ZWxsaW5n" data-listing-date-sort="1707447600000" data-listing-file-modified-sort="1781463321185" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../talks/2024-02-09-data-storytelling-powerpoint.html" class="no-external stretched-link">Data Storytelling: let’s prevent more deaths by PowerPoint</a>
+</h3>
+<div class="listing-categories">
 
+<div class="listing-category" onclick="window.quartoListingCategory('c3Rvcnl0ZWxsaW5n'); return false;">storytelling</div>
 
+</div>
+<div class="delink listing-description"><a href="../talks/2024-02-09-data-storytelling-powerpoint.html" class="no-external">
+<p>During the talk I shared 10 tips for making better presentations, based on my experience and on storytelling techniques. Techtón was a fundraising event in collaboration with the firefighters fighting the mega-fire in Viña del Mar.</p>
+</a></div>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="2" data-categories="dmlzdWFsaXphY2klQzMlQjNuJTJDcHl0aG9u" data-listing-date-sort="1702263600000" data-listing-file-modified-sort="1781463321185" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail"><a href="../talks/2023-12-11-vizzu-wish-list.html" class="no-external"><img src="../talks/images/vizzu.svg" class="thumbnail-image" alt=""></a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../talks/2023-12-11-vizzu-wish-list.html" class="no-external stretched-link">Sebastian’s Wish List for Vizzu</a>
+</h3>
+<div class="listing-categories">
 
-<div class="quarto-title-meta">
+<div class="listing-category" onclick="window.quartoListingCategory('dmlzdWFsaXphY2klQzMlQjNu'); return false;">visualización</div>
 
-    
-  
-    
-  </div>
-  
+<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">python</div>
 
+</div>
+<div class="delink listing-description"><a href="../talks/2023-12-11-vizzu-wish-list.html" class="no-external">
+<p>I had the honor of being the first “guest speaker” at the Vizzu Community Call. I presented some examples of apps I built with Vizzu, and a list of ideas of things I’d like to see in Vizzu… with a working example for some of them.</p>
+</a></div>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="3" data-categories="c3Rvcnl0ZWxsaW5nJTJDcHl0aG9u" data-listing-date-sort="1700881200000" data-listing-file-modified-sort="1781463321185" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail"><a href="../talks/2023-11-25-data-storytelling-python.html" class="no-external"><img src="../talks/images/pycon-chile.png" class="thumbnail-image" alt=""></a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../talks/2023-11-25-data-storytelling-python.html" class="no-external stretched-link">How to do Data Storytelling with Python?</a>
+</h3>
+<div class="listing-categories">
 
-</header>
+<div class="listing-category" onclick="window.quartoListingCategory('c3Rvcnl0ZWxsaW5n'); return false;">storytelling</div>
 
+<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">python</div>
 
-<style>
-  .talk-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.25rem;
-    margin-top: 1.5rem;
+</div>
+<div class="delink listing-description"><a href="../talks/2023-11-25-data-storytelling-python.html" class="no-external">
+<p>In this keynote we explore the little-charted territory of Data Storytelling in Python. We go beyond tables and charts, and explore how your data can be told in a compelling and exciting way. You’ll discover the art and the tools available in Python to weave stories that call for change and action.</p>
+</a></div>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="4" data-categories="dmlzdWFsaXphY2klQzMlQjNuJTJDcHl0aG9u" data-listing-date-sort="1694055600000" data-listing-file-modified-sort="1781463321185" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail"><a href="../talks/2023-09-07-vizzualizacion-de-datos.html" class="no-external"><img src="../talks/images/pyday-chile.webp" class="thumbnail-image" alt=""></a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../talks/2023-09-07-vizzualizacion-de-datos.html" class="no-external stretched-link">Data Vizzualization</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('dmlzdWFsaXphY2klQzMlQjNu'); return false;">visualización</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">python</div>
+
+</div>
+<div class="delink listing-description"><a href="../talks/2023-09-07-vizzualizacion-de-datos.html" class="no-external">
+</a><p><a href="../talks/2023-09-07-vizzualizacion-de-datos.html" class="no-external">In this talk I explain the importance of visualization and how to use the </a><a href="https://ipyvizzu.vizzuhq.com/">ipyvizzu</a> library. Vizzu is a library for python and javascript that lets you create animations between charts.</p>
+</div>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="5" data-categories="cHl0aG9uJTJDZWR1Y2FjaSVDMyVCM24=" data-listing-date-sort="1664161200000" data-listing-file-modified-sort="1781463321185" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="thumbnail"><a href="../talks/2022-09-26-pedagogia-con-python.html" class="no-external"><img src="../talks/images/unsa-arequipa.png" class="thumbnail-image" alt=""></a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../talks/2022-09-26-pedagogia-con-python.html" class="no-external stretched-link">Pedagogy with Python</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">python</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZWR1Y2FjaSVDMyVCM24='); return false;">educación</div>
+
+</div>
+<div class="delink listing-description"><a href="../talks/2022-09-26-pedagogia-con-python.html" class="no-external">
+<p>In this talk I share my experience transforming a course with Python. I recommend some tools and talk about Machine Learning, Deep Learning and Data Science.</p>
+</a></div>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="6" data-categories="c3RyZWFtbGl0JTJDcHl0aG9u" data-listing-date-sort="1661400000000" data-listing-file-modified-sort="1781463321185" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail"><a href="../talks/2022-08-25-streamlit-en-la-industria.html" class="no-external"><img src="../talks/images/streamlit.png" class="thumbnail-image" alt=""></a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../talks/2022-08-25-streamlit-en-la-industria.html" class="no-external stretched-link">Streamlit in industry</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('c3RyZWFtbGl0'); return false;">streamlit</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">python</div>
+
+</div>
+<div class="delink listing-description"><a href="../talks/2022-08-25-streamlit-en-la-industria.html" class="no-external">
+<p>In this talk I discuss how streamlit lets you make your Python code available in a simple way, and important considerations in industry regarding data, databases, deployment and authentication.</p>
+</a></div>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="7" data-categories="cHl0aG9uJTJDc3RyZWFtbGl0" data-listing-date-sort="1654056000000" data-listing-file-modified-sort="1781463321185" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../talks/2022-06-01-como-lo-comparto.html" class="no-external stretched-link">I built this, but… how do I share it?</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">python</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c3RyZWFtbGl0'); return false;">streamlit</div>
+
+</div>
+<div class="delink listing-description"><a href="../talks/2022-06-01-como-lo-comparto.html" class="no-external">
+<p>In this talk I explained the different options that exist for sharing your python code: Graphical Interfaces, Notebook, Web Apps (streamlit!), Chatbots and others.</p>
+</a></div>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="8" data-categories="c3RyZWFtbGl0JTJDcHl0aG9u" data-listing-date-sort="1636254000000" data-listing-file-modified-sort="1781463321185" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail"><a href="../talks/2021-11-07-webapps-con-streamlit.html" class="no-external"><img src="../talks/images/pycon-chile.png" class="thumbnail-image" alt=""></a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../talks/2021-11-07-webapps-con-streamlit.html" class="no-external stretched-link">WebApps with Streamlit: easier than the one-times table, dude!</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('c3RyZWFtbGl0'); return false;">streamlit</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">python</div>
+
+</div>
+<div class="delink listing-description"><a href="../talks/2021-11-07-webapps-con-streamlit.html" class="no-external">
+<p>If you’ve ever told yourself “there should be an easier way to share this script/analysis/code with other people”, streamlit is the library you were waiting for. This talk will show you how to start using streamlit.</p>
+</a></div>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="9" data-categories="anVweXRlciUyQ3B5dGhvbg==" data-listing-date-sort="1630123200000" data-listing-file-modified-sort="1781463321185" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail"><a href="../talks/2021-08-28-jupyter-rise.html" class="no-external"><img src="../talks/images/pycon-latam.svg" class="thumbnail-image" alt=""></a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../talks/2021-08-28-jupyter-rise.html" class="no-external stretched-link">Interactive Presentations with Jupyter Notebook + RISE</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('anVweXRlcg=='); return false;">jupyter</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">python</div>
+
+</div>
+<div class="delink listing-description"><a href="../talks/2021-08-28-jupyter-rise.html" class="no-external">
+<p>Everything you need to know in 30 minutes. In this talk I summarized the knowledge you need to make a fully interactive presentation (code, charts, polls, and more) using jupyter notebook and its RISE extension.</p>
+</a></div>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="10" data-categories="cHl0aG9u" data-listing-date-sort="1617940800000" data-listing-file-modified-sort="1781463321186" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="thumbnail"><a href="../talks/2021-04-09-sin-limites-con-python.html" class="no-external"><img src="../talks/images/unsa-salta.png" class="thumbnail-image" alt=""></a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../talks/2021-04-09-sin-limites-con-python.html" class="no-external stretched-link">No limits with Python</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">python</div>
+
+</div>
+<div class="delink listing-description"><a href="../talks/2021-04-09-sin-limites-con-python.html" class="no-external">
+<p>A talk given to first-year students at Universidad de Salta in Argentina, to tell them about python and some of the things you can do with it.</p>
+</a></div>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="11" data-categories="cHl0aG9u" data-listing-date-sort="1606186800000" data-listing-file-modified-sort="1781463321186" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail"><a href="../talks/2020-11-24-coding-as-a-service-pypsdier.html" class="no-external"><img src="../talks/images/pyar.png" class="thumbnail-image" alt=""></a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../talks/2020-11-24-coding-as-a-service-pypsdier.html" class="no-external stretched-link">Coding as a Service: the pypsdier library, lessons learned and methodology</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">python</div>
+
+</div>
+<div class="delink listing-description"><a href="../talks/2020-11-24-coding-as-a-service-pypsdier.html" class="no-external">
+<p>A talk given at PyCon Argentina 2020 about my pypsdier project and, more generally, about how to build a scientific library so it can be used by other non-technical users.</p>
+</a></div>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="12" data-categories="anVweXRlciUyQ3B5dGhvbg==" data-listing-date-sort="1588910400000" data-listing-file-modified-sort="1781463321186" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail"><a href="../talks/2020-05-08-encuestas-jupyter-rise.html" class="no-external"><img src="../talks/images/pycon-colombia.svg" class="thumbnail-image" alt=""></a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../talks/2020-05-08-encuestas-jupyter-rise.html" class="no-external stretched-link">How to make interactive polls in Jupyter + RISE?</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('anVweXRlcg=='); return false;">jupyter</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">python</div>
+
+</div>
+<div class="delink listing-description"><a href="../talks/2020-05-08-encuestas-jupyter-rise.html" class="no-external">
+<p>In this talk, I gave some tips for making the most of the combination of jupyter notebook with RISE, and how to make presentations even more interactive, for a course or a talk. I also discuss three simple alternatives for sharing polls interactively.</p>
+</a></div>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="13" data-categories="bWF0ZW0lQzMlQTF0aWNh" data-listing-date-sort="1571886000000" data-listing-file-modified-sort="1781463321186" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="thumbnail"><a href="../talks/2019-10-24-matrices-en-la-vida-real.html" class="no-external"><img src="../talks/images/uai.jpg" class="thumbnail-image" alt=""></a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../talks/2019-10-24-matrices-en-la-vida-real.html" class="no-external stretched-link">Matrices in real life</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWF0ZW0lQzMlQTF0aWNh'); return false;">matemática</div>
+
+</div>
+<div class="delink listing-description"><a href="../talks/2019-10-24-matrices-en-la-vida-real.html" class="no-external">
+<p>A talk given to first-year students, about applications of matrices in industry.</p>
+</a></div>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="14" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDcHl0aG9u" data-listing-date-sort="1461726000000" data-listing-file-modified-sort="1781463321186" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail"><a href="../talks/2016-04-27-machine-learning-sklearn.html" class="no-external"><img src="../talks/images/python.png" class="thumbnail-image" alt=""></a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../talks/2016-04-27-machine-learning-sklearn.html" class="no-external stretched-link">How to apply Machine Learning? With the sklearn library!</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZSUyMGxlYXJuaW5n'); return false;">machine learning</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">python</div>
+
+</div>
+<div class="delink listing-description"><a href="../talks/2016-04-27-machine-learning-sklearn.html" class="no-external">
+<p>In this talk I discuss the sklearn library and how it provides different Machine Learning algorithms.</p>
+</a></div>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="15" data-categories="cGFuZGFzJTJDcHl0aG9u" data-listing-date-sort="1459306800000" data-listing-file-modified-sort="1781463321186" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail"><a href="../talks/2016-03-30-pandas-manipular-datos.html" class="no-external"><img src="../talks/images/python.png" class="thumbnail-image" alt=""></a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../talks/2016-03-30-pandas-manipular-datos.html" class="no-external stretched-link">How to manipulate data in python? With the pandas library!</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGFuZGFz'); return false;">pandas</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHl0aG9u'); return false;">python</div>
+
+</div>
+<div class="delink listing-description"><a href="../talks/2016-03-30-pandas-manipular-datos.html" class="no-external">
+<p>In this talk I discuss the pandas library and its usefulness for data manipulation.</p>
+</a></div>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
+<script>
+// Rewrites the navbar language toggle so it points to the *equivalent*
+// page in the other language instead of always going to the home page.
+//
+// Site layout:
+//   Spanish (esp profile): <root>/        -> _site/
+//   English (eng profile): <root>/eng/    -> _site/eng/
+//
+// Instead of hardcoding the "/eng" prefix (which breaks under file:// and
+// localhost), we derive both language roots from links Quarto already
+// resolves per-page:
+//   - the navbar brand  -> this page's own language root index
+//   - the language toggle (ESP/ENG) -> the other language root index
+// Then we re-base the current page's path from one root onto the other.
+document.addEventListener("DOMContentLoaded", function () {
+  var toggle = null;
+  document.querySelectorAll(".navbar a.nav-link").forEach(function (a) {
+    var label = (a.textContent || "").trim();
+    if (label === "ENG" || label === "ESP") toggle = a;
+  });
+  var brand = document.querySelector(".navbar .navbar-brand");
+  if (!toggle || !brand) return;
+
+  // Directory URL of each language root (strip the trailing "index.html").
+  var ownDir = new URL(".", new URL(brand.getAttribute("href"), location.href)).href;
+  var otherDir = new URL(".", new URL(toggle.getAttribute("href"), location.href)).href;
+
+  // Current page path relative to its own language root, re-based onto the other.
+  var here = location.href.split("#")[0];
+  if (here.indexOf(ownDir) !== 0) return; // unexpected layout: keep default href
+  var rel = here.slice(ownDir.length);
+
+  toggle.setAttribute("href", otherDir + rel + location.hash);
+
+  // On mobile the navbar items (including this toggle) collapse behind the
+  // hamburger. Search stays visible because Quarto renders it inside
+  // .navbar-brand-container, outside the collapsible area. Mirror that: clone
+  // the (already-rewritten) toggle into the brand container so it's always
+  // reachable. The clone is shown only below the lg breakpoint (d-lg-none) —
+  // where the hamburger appears — so the desktop navbar is unchanged.
+  var brandContainer = brand.closest(".navbar-brand-container") || brand.parentNode;
+  if (brandContainer && !document.querySelector(".lang-switch-anchored")) {
+    var clone = toggle.cloneNode(true);
+    clone.classList.add("nav-link", "lang-switch-anchored", "d-lg-none");
+    brandContainer.appendChild(clone);
   }
-  .talk-card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    overflow: hidden;
-    border: none;
-    transition: transform .15s ease, box-shadow .15s ease;
-    cursor: pointer;
-  }
-  .talk-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 .75rem 1.5rem rgba(0,0,0,.35);
-  }
-  .talk-card-media {
-    height: 150px;
-    overflow: hidden;
-  }
-  .talk-card-media img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .talk-card-media.placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    text-align: center;
-    font-weight: 600;
-    color: #fff;
-    background: linear-gradient(135deg, #4e54c8 0%, #8f94fb 100%);
-  }
-  .talk-card .card-body { display: flex; flex-direction: column; flex: 1; }
-  .talk-meta {
-    font-size: .78rem;
-    text-transform: uppercase;
-    letter-spacing: .03em;
-    opacity: .75;
-    margin-bottom: .35rem;
-  }
-  .talk-card .card-title { font-size: 1.05rem; line-height: 1.3; }
-  .talk-modal-venues { list-style: none; padding-left: 0; }
-  .talk-modal-venues li { margin-bottom: .35rem; }
-</style>
-<div class="talk-grid">
-<div class="card talk-card" data-bs-toggle="modal" data-bs-target="#talk-en-0">
-<div class="talk-card-media">
-<img src="images/talks/storytelling.png" alt="Python and Data Storytelling to the rescue: let's prevent more deaths by PowerPoint">
-</div>
-<div class="card-body">
-<span class="talk-meta">2024-09-24 · Nerdearla</span>
-<h5 class="card-title anchored">
-Python and Data Storytelling to the rescue: let's prevent more deaths by PowerPoint
-</h5>
-<span class="btn btn-primary btn-sm mt-auto align-self-start">Read more</span>
-</div>
-</div>
-<div class="card talk-card" data-bs-toggle="modal" data-bs-target="#talk-en-1">
-<div class="talk-card-media placeholder">
-Techtón
-</div>
-<div class="card-body">
-<span class="talk-meta">2024-02-09 · Techtón</span>
-<h5 class="card-title anchored">
-Data Storytelling: let's prevent more deaths by PowerPoint
-</h5>
-<span class="btn btn-primary btn-sm mt-auto align-self-start">Read more</span>
-</div>
-</div>
-<div class="card talk-card" data-bs-toggle="modal" data-bs-target="#talk-en-2">
-<div class="talk-card-media">
-<img src="images/talks/vizzu.svg" alt="Sebastian's Wish List for Vizzu">
-</div>
-<div class="card-body">
-<span class="talk-meta">2023-12-11 · Vizzu Community Call #1</span>
-<h5 class="card-title anchored">
-Sebastian's Wish List for Vizzu
-</h5>
-<span class="btn btn-primary btn-sm mt-auto align-self-start">Read more</span>
-</div>
-</div>
-<div class="card talk-card" data-bs-toggle="modal" data-bs-target="#talk-en-3">
-<div class="talk-card-media">
-<img src="images/talks/pycon-chile.png" alt="How to do Data Storytelling with Python?">
-</div>
-<div class="card-body">
-<span class="talk-meta">2023-11-25 · PyCon Chile 2023</span>
-<h5 class="card-title anchored">
-How to do Data Storytelling with Python?
-</h5>
-<span class="btn btn-primary btn-sm mt-auto align-self-start">Read more</span>
-</div>
-</div>
-<div class="card talk-card" data-bs-toggle="modal" data-bs-target="#talk-en-4">
-<div class="talk-card-media">
-<img src="images/talks/pyday-chile.webp" alt="Data Vizzualization">
-</div>
-<div class="card-body">
-<span class="talk-meta">2023-09-07 · PyDay Chile 2023</span>
-<h5 class="card-title anchored">
-Data Vizzualization
-</h5>
-<span class="btn btn-primary btn-sm mt-auto align-self-start">Read more</span>
-</div>
-</div>
-<div class="card talk-card" data-bs-toggle="modal" data-bs-target="#talk-en-5">
-<div class="talk-card-media">
-<img src="images/talks/unsa-arequipa.png" alt="Pedagogy with Python">
-</div>
-<div class="card-body">
-<span class="talk-meta">2022-09-26 · UNSA</span>
-<h5 class="card-title anchored">
-Pedagogy with Python
-</h5>
-<span class="btn btn-primary btn-sm mt-auto align-self-start">Read more</span>
-</div>
-</div>
-<div class="card talk-card" data-bs-toggle="modal" data-bs-target="#talk-en-6">
-<div class="talk-card-media">
-<img src="images/talks/streamlit.png" alt="Streamlit in industry">
-</div>
-<div class="card-body">
-<span class="talk-meta">2022-08-25 · Meetup Python Chile</span>
-<h5 class="card-title anchored">
-Streamlit in industry
-</h5>
-<span class="btn btn-primary btn-sm mt-auto align-self-start">Read more</span>
-</div>
-</div>
-<div class="card talk-card" data-bs-toggle="modal" data-bs-target="#talk-en-7">
-<div class="talk-card-media placeholder">
-Charla 1000 programadores
-</div>
-<div class="card-body">
-<span class="talk-meta">2022-06 · Charla 1000 programadores</span>
-<h5 class="card-title anchored">
-I built this, but… how do I share it?
-</h5>
-<span class="btn btn-primary btn-sm mt-auto align-self-start">Read more</span>
-</div>
-</div>
-<div class="card talk-card" data-bs-toggle="modal" data-bs-target="#talk-en-8">
-<div class="talk-card-media">
-<img src="images/talks/pycon-chile.png" alt="WebApps with Streamlit: easier than the one-times table, dude!">
-</div>
-<div class="card-body">
-<span class="talk-meta">2021-11-07 · PyCon Chile 2021</span>
-<h5 class="card-title anchored">
-WebApps with Streamlit: easier than the one-times table, dude!
-</h5>
-<span class="btn btn-primary btn-sm mt-auto align-self-start">Read more</span>
-</div>
-</div>
-<div class="card talk-card" data-bs-toggle="modal" data-bs-target="#talk-en-9">
-<div class="talk-card-media">
-<img src="images/talks/pycon-latam.svg" alt="Interactive Presentations with Jupyter Notebook + RISE">
-</div>
-<div class="card-body">
-<span class="talk-meta">2021-08-28 · PyCon Latam 2021</span>
-<h5 class="card-title anchored">
-Interactive Presentations with Jupyter Notebook + RISE
-</h5>
-<span class="btn btn-primary btn-sm mt-auto align-self-start">Read more</span>
-</div>
-</div>
-<div class="card talk-card" data-bs-toggle="modal" data-bs-target="#talk-en-10">
-<div class="talk-card-media">
-<img src="images/talks/unsa-salta.png" alt="No limits with Python">
-</div>
-<div class="card-body">
-<span class="talk-meta">2021-04-09 · UNSA Argentina</span>
-<h5 class="card-title anchored">
-No limits with Python
-</h5>
-<span class="btn btn-primary btn-sm mt-auto align-self-start">Read more</span>
-</div>
-</div>
-<div class="card talk-card" data-bs-toggle="modal" data-bs-target="#talk-en-11">
-<div class="talk-card-media">
-<img src="images/talks/pyar.png" alt="Coding as a Service: the pypsdier library, lessons learned and methodology">
-</div>
-<div class="card-body">
-<span class="talk-meta">2020-11-24 · PyCon Argentina 2020</span>
-<h5 class="card-title anchored">
-Coding as a Service: the pypsdier library, lessons learned and methodology
-</h5>
-<span class="btn btn-primary btn-sm mt-auto align-self-start">Read more</span>
-</div>
-</div>
-<div class="card talk-card" data-bs-toggle="modal" data-bs-target="#talk-en-12">
-<div class="talk-card-media">
-<img src="images/talks/pycon-colombia.svg" alt="How to make interactive polls in Jupyter + RISE?">
-</div>
-<div class="card-body">
-<span class="talk-meta">2020-05-08 · PyCon Colombia 2020</span>
-<h5 class="card-title anchored">
-How to make interactive polls in Jupyter + RISE?
-</h5>
-<span class="btn btn-primary btn-sm mt-auto align-self-start">Read more</span>
-</div>
-</div>
-<div class="card talk-card" data-bs-toggle="modal" data-bs-target="#talk-en-13">
-<div class="talk-card-media">
-<img src="images/talks/uai.jpg" alt="Matrices in real life">
-</div>
-<div class="card-body">
-<span class="talk-meta">2019-10-24 · Universidad Adolfo Ibáñez</span>
-<h5 class="card-title anchored">
-Matrices in real life
-</h5>
-<span class="btn btn-primary btn-sm mt-auto align-self-start">Read more</span>
-</div>
-</div>
-<div class="card talk-card" data-bs-toggle="modal" data-bs-target="#talk-en-14">
-<div class="talk-card-media">
-<img src="images/talks/python.png" alt="How to apply Machine Learning? With the sklearn library!">
-</div>
-<div class="card-body">
-<span class="talk-meta">2016-04-27 · Meetup Python</span>
-<h5 class="card-title anchored">
-How to apply Machine Learning? With the sklearn library!
-</h5>
-<span class="btn btn-primary btn-sm mt-auto align-self-start">Read more</span>
-</div>
-</div>
-<div class="card talk-card" data-bs-toggle="modal" data-bs-target="#talk-en-15">
-<div class="talk-card-media">
-<img src="images/talks/python.png" alt="How to manipulate data in python? With the pandas library!">
-</div>
-<div class="card-body">
-<span class="talk-meta">2016-03-30 · Meetup Python</span>
-<h5 class="card-title anchored">
-How to manipulate data in python? With the pandas library!
-</h5>
-<span class="btn btn-primary btn-sm mt-auto align-self-start">Read more</span>
-</div>
-</div>
-</div>
-<div id="talk-en-0" class="modal fade" tabindex="-1" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title anchored">
-Python and Data Storytelling to the rescue: let's prevent more deaths by PowerPoint
-</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-</button>
-</div>
-<div class="modal-body">
-<p class="mb-1">
-<strong>Presented at:</strong>
-</p>
-<ul class="talk-modal-venues">
-<li>
-<strong>PyCon US 2024</strong> (2024-05-20) — <a href="https://www.youtube.com/watch?v=KknQ_VzbJY0" target="_blank" rel="noopener">video</a>
-</li>
-<li>
-<strong>Python Chile Meetup</strong> (2024-05-29) — <a href="https://youtu.be/vgkOTFfJvPc&amp;t=193" target="_blank" rel="noopener">video</a>
-</li>
-<li>
-<strong>Nerdearla</strong> (2024-09-24) — <a href="https://www.youtube.com/watch?v=JbUV8mkn6v0" target="_blank" rel="noopener">video</a>
-</li>
-</ul>
-<div>
-I discuss different data storytelling skills and technical tools with the goal of creating more engaging, entertaining and memorable presentations using python libraries and programs. Let’s make the world better, one presentation at a time!
-</div>
-<p class="mt-3">
-<a href="https://github.com/sebastiandres/talk_2024_05_pycon_us" target="_blank" rel="noopener">repo</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div id="talk-en-1" class="modal fade" tabindex="-1" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title anchored">
-Data Storytelling: let's prevent more deaths by PowerPoint
-</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-</button>
-</div>
-<div class="modal-body">
-<div>
-During the talk I shared 10 tips for making better presentations, based on my experience and on storytelling techniques. Techtón was a fundraising event in collaboration with the firefighters fighting the mega-fire in Viña del Mar.
-</div>
-<p class="mt-3">
-<a href="https://github.com/sebastiandres/talk_2024_02_09_techton" target="_blank" rel="noopener">repo</a> · <a href="https://www.youtube.com/watch?v=tYfKks4NXuY&amp;list=PLBEwfn9JYDc-89_tgbc8cHzP93xH3TX5b" target="_blank" rel="noopener">video</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div id="talk-en-2" class="modal fade" tabindex="-1" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title anchored">
-Sebastian's Wish List for Vizzu
-</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-</button>
-</div>
-<div class="modal-body">
-<div>
-I had the honor of being the first “guest speaker” at the Vizzu Community Call. I presented some examples of apps I built with Vizzu, and a list of ideas of things I’d like to see in Vizzu… with a working example for some of them.
-</div>
-<p class="mt-3">
-<a href="https://github.com/sebastiandres/talk_2023_12_11_vizzu_community_call" target="_blank" rel="noopener">repo</a> · <a href="https://www.youtube.com/watch?v=andvQnsUWvo" target="_blank" rel="noopener">video</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div id="talk-en-3" class="modal fade" tabindex="-1" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title anchored">
-How to do Data Storytelling with Python?
-</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-</button>
-</div>
-<div class="modal-body">
-<div>
-In this keynote we explore the little-charted territory of Data Storytelling in Python. We go beyond tables and charts, and explore how your data can be told in a compelling and exciting way. You’ll discover the art and the tools available in Python to weave stories that call for change and action.
-</div>
-<p class="mt-3">
-<a href="https://github.com/sebastiandres/talk_2023_11_25_pycon_chile" target="_blank" rel="noopener">repo</a> · <a href="https://www.youtube.com/watch?v=X1xcyY9Y0Pc&amp;t=26980s" target="_blank" rel="noopener">video</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div id="talk-en-4" class="modal fade" tabindex="-1" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title anchored">
-Data Vizzualization
-</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-</button>
-</div>
-<div class="modal-body">
-<div>
-In this talk I explain the importance of visualization and how to use the <a href="https://ipyvizzu.vizzuhq.com/" target="_blank" rel="noopener">ipyvizzu</a> library. Vizzu is a library for python and javascript that lets you create animations between charts.
-</div>
-<p class="mt-3">
-<a href="https://github.com/sebastiandres/talk_2023_09_07_vizzu" target="_blank" rel="noopener">repo</a> · <a href="https://youtu.be/xjwkJzBTdNI?t=4044" target="_blank" rel="noopener">video</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div id="talk-en-5" class="modal fade" tabindex="-1" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title anchored">
-Pedagogy with Python
-</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-</button>
-</div>
-<div class="modal-body">
-<div>
-In this talk I share my experience transforming a course with Python. I recommend some tools and talk about Machine Learning, Deep Learning and Data Science.
-</div>
-<p class="mt-3">
-<a href="https://github.com/sebastiandres/talk_2022_09_26_python_cientifico" target="_blank" rel="noopener">repo</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div id="talk-en-6" class="modal fade" tabindex="-1" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title anchored">
-Streamlit in industry
-</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-</button>
-</div>
-<div class="modal-body">
-<div>
-In this talk I discuss how streamlit lets you make your Python code available in a simple way, and important considerations in industry regarding data, databases, deployment and authentication.
-</div>
-<p class="mt-3">
-<a href="https://github.com/sebastiandres/talk_2022_08_25_pychile_meetup" target="_blank" rel="noopener">repo</a> · <a href="https://www.youtube.com/watch?v=xHabAVZDAHo" target="_blank" rel="noopener">video</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div id="talk-en-7" class="modal fade" tabindex="-1" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title anchored">
-I built this, but… how do I share it?
-</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-</button>
-</div>
-<div class="modal-body">
-<div>
-In this talk I explained the different options that exist for sharing your python code: Graphical Interfaces, Notebook, Web Apps (streamlit!), Chatbots and others.
-</div>
-<p class="mt-3">
-<a href="https://github.com/sebastiandres/talk_2022_06_1000PS" target="_blank" rel="noopener">repo</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div id="talk-en-8" class="modal fade" tabindex="-1" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title anchored">
-WebApps with Streamlit: easier than the one-times table, dude!
-</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-</button>
-</div>
-<div class="modal-body">
-<div>
-If you’ve ever told yourself “there should be an easier way to share this script/analysis/code with other people”, streamlit is the library you were waiting for. This talk will show you how to start using streamlit.
-</div>
-<p class="mt-3">
-<a href="https://github.com/sebastiandres/talk_2021_11_pyconcl" target="_blank" rel="noopener">repo</a> · <a href="https://www.youtube.com/watch?v=cZSzK2uIqjY" target="_blank" rel="noopener">video</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div id="talk-en-9" class="modal fade" tabindex="-1" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title anchored">
-Interactive Presentations with Jupyter Notebook + RISE
-</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-</button>
-</div>
-<div class="modal-body">
-<div>
-Everything you need to know in 30 minutes. In this talk I summarized the knowledge you need to make a fully interactive presentation (code, charts, polls, and more) using jupyter notebook and its RISE extension.
-</div>
-<p class="mt-3">
-<a href="https://github.com/sebastiandres/talk_2021_08_pylatam/" target="_blank" rel="noopener">repo</a> · <a href="https://www.youtube.com/watch?v=VxdnVOt5K1w" target="_blank" rel="noopener">video</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div id="talk-en-10" class="modal fade" tabindex="-1" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title anchored">
-No limits with Python
-</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-</button>
-</div>
-<div class="modal-body">
-<div>
-A talk given to first-year students at Universidad de Salta in Argentina, to tell them about python and some of the things you can do with it.
-</div>
-<p class="mt-3">
-<a href="https://github.com/sebastiandres/talk_2021_04_UNSA_Argentina/" target="_blank" rel="noopener">repo</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div id="talk-en-11" class="modal fade" tabindex="-1" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title anchored">
-Coding as a Service: the pypsdier library, lessons learned and methodology
-</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-</button>
-</div>
-<div class="modal-body">
-<div>
-A talk given at PyCon Argentina 2020 about my pypsdier project and, more generally, about how to build a scientific library so it can be used by other non-technical users.
-</div>
-<p class="mt-3">
-<a href="https://github.com/sebastiandres/talk_2020_11_pycon_argentina/" target="_blank" rel="noopener">repo</a> · <a href="https://www.youtube.com/watch?v=UoIXFRKraqY" target="_blank" rel="noopener">video</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div id="talk-en-12" class="modal fade" tabindex="-1" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title anchored">
-How to make interactive polls in Jupyter + RISE?
-</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-</button>
-</div>
-<div class="modal-body">
-<div>
-In this talk, I gave some tips for making the most of the combination of jupyter notebook with RISE, and how to make presentations even more interactive, for a course or a talk. I also discuss three simple alternatives for sharing polls interactively.
-</div>
-<p class="mt-3">
-<a href="https://www.youtube.com/watch?v=ekyN9DDswBE" target="_blank" rel="noopener">video</a> · <a href="https://github.com/sebastiandres/talk_2020_02_pycon_colombia_rise_and_poll/" target="_blank" rel="noopener">repo</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div id="talk-en-13" class="modal fade" tabindex="-1" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title anchored">
-Matrices in real life
-</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-</button>
-</div>
-<div class="modal-body">
-<div>
-A talk given to first-year students, about applications of matrices in industry.
-</div>
-<p class="mt-3">
-<a href="https://github.com/sebastiandres/talk_2019_10_UAI/" target="_blank" rel="noopener">repo</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div id="talk-en-14" class="modal fade" tabindex="-1" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title anchored">
-How to apply Machine Learning? With the sklearn library!
-</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-</button>
-</div>
-<div class="modal-body">
-<div>
-In this talk I discuss the sklearn library and how it provides different Machine Learning algorithms.
-</div>
-<p class="mt-3">
-<a href="https://github.com/sebastiandres/talk_2016_04_python_meetup_sklearn/" target="_blank" rel="noopener">repo</a> · <a href="https://www.youtube.com/watch?v=IenniV-KM6A" target="_blank" rel="noopener">video</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div id="talk-en-15" class="modal fade" tabindex="-1" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title anchored">
-How to manipulate data in python? With the pandas library!
-</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-</button>
-</div>
-<div class="modal-body">
-<div>
-In this talk I discuss the pandas library and its usefulness for data manipulation.
-</div>
-<p class="mt-3">
-<a href="https://github.com/sebastiandres/talk_2016_03_python_meetup_pandas/" target="_blank" rel="noopener">repo</a> · <a href="https://www.youtube.com/watch?v=mmR2MAqsfVg" target="_blank" rel="noopener">video</a>
-</p>
-</div>
-</div>
-</div>
-</div>
+});
+</script>
+<!-- When a listing's bottom pagination is clicked, Quarto's List.js swaps the
+     posts in place but leaves the scroll position at the bottom. Scroll back to
+     the top of the listing so page 2/3 starts from the first post. -->
+<script>
+// Capture phase is required: List.js handles the pagination click on the link's
+// own `onclick`, which synchronously re-renders the list and *replaces* the
+// clicked <a>. By the bubble phase `e.target` is detached, so `closest()` finds
+// nothing and a bubble-phase handler bails. Running in capture, we read the
+// target before List.js swaps it, then scroll once the new page has rendered.
+document.addEventListener("click", function (e) {
+  var link = e.target.closest(".listing-pagination a, ul.pagination a");
+  if (!link) return;
 
+  var listing = document.querySelector(".quarto-listing") ||
+                document.querySelector('[id^="listing-"]');
+  if (!listing) return;
 
-
-</main> <!-- /main -->
+  // Let List.js re-render the page, then jump to the top of the listing.
+  requestAnimationFrame(function () {
+    var nav = document.querySelector(".navbar.fixed-top, .fixed-top");
+    var offset = nav ? nav.offsetHeight + 12 : 12;
+    var y = listing.getBoundingClientRect().top + window.pageYOffset - offset;
+    window.scrollTo({ top: y < 0 ? 0 : y, behavior: "smooth" });
+  });
+}, true);
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -1193,54 +1005,6 @@ In this talk I discuss the pandas library and its usefulness for data manipulati
   });
   </script>
 </div> <!-- /content -->
-<script>
-// Rewrites the navbar language toggle so it points to the *equivalent*
-// page in the other language instead of always going to the home page.
-//
-// Site layout:
-//   Spanish (esp profile): <root>/        -> _site/
-//   English (eng profile): <root>/eng/    -> _site/eng/
-//
-// Instead of hardcoding the "/eng" prefix (which breaks under file:// and
-// localhost), we derive both language roots from links Quarto already
-// resolves per-page:
-//   - the navbar brand  -> this page's own language root index
-//   - the language toggle (ESP/ENG) -> the other language root index
-// Then we re-base the current page's path from one root onto the other.
-document.addEventListener("DOMContentLoaded", function () {
-  var toggle = null;
-  document.querySelectorAll(".navbar a.nav-link").forEach(function (a) {
-    var label = (a.textContent || "").trim();
-    if (label === "ENG" || label === "ESP") toggle = a;
-  });
-  var brand = document.querySelector(".navbar .navbar-brand");
-  if (!toggle || !brand) return;
-
-  // Directory URL of each language root (strip the trailing "index.html").
-  var ownDir = new URL(".", new URL(brand.getAttribute("href"), location.href)).href;
-  var otherDir = new URL(".", new URL(toggle.getAttribute("href"), location.href)).href;
-
-  // Current page path relative to its own language root, re-based onto the other.
-  var here = location.href.split("#")[0];
-  if (here.indexOf(ownDir) !== 0) return; // unexpected layout: keep default href
-  var rel = here.slice(ownDir.length);
-
-  toggle.setAttribute("href", otherDir + rel + location.hash);
-
-  // On mobile the navbar items (including this toggle) collapse behind the
-  // hamburger. Search stays visible because Quarto renders it inside
-  // .navbar-brand-container, outside the collapsible area. Mirror that: clone
-  // the (already-rewritten) toggle into the brand container so it's always
-  // reachable. The clone is shown only below the lg breakpoint (d-lg-none) —
-  // where the hamburger appears — so the desktop navbar is unchanged.
-  var brandContainer = brand.closest(".navbar-brand-container") || brand.parentNode;
-  if (brandContainer && !document.querySelector(".lang-switch-anchored")) {
-    var clone = toggle.cloneNode(true);
-    clone.classList.add("nav-link", "lang-switch-anchored", "d-lg-none");
-    brandContainer.appendChild(clone);
-  }
-});
-</script>
 
 
 

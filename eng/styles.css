@@ -1,9 +1,9 @@
 /* css styles */
 
 .embeddable-buttondown-form input[type="email"] {
-  background: white;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  background: #f7f4ec;
+  border: 2px solid #15110d;
+  border-radius: 0;
   padding: 8px 14px;
   font-size: 15px;
   width: 280px;
@@ -11,15 +11,27 @@
   text-align: center;
 }
 
+.embeddable-buttondown-form input[type="email"]:focus {
+  border-color: #1850a8;
+}
+
 .embeddable-buttondown-form input[type="submit"] {
-  background: transparent;
-  color: white;
-  border: 1px solid white;
-  border-radius: 8px;
+  background: #d4332b;
+  color: #f7f4ec;
+  border: 2px solid #15110d;
+  border-radius: 0;
   padding: 8px 20px;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
   cursor: pointer;
+  transition: box-shadow 0.12s ease, transform 0.12s ease;
+}
+
+.embeddable-buttondown-form input[type="submit"]:hover {
+  box-shadow: 4px 4px 0 0 #15110d;
+  transform: translate(-1px, -1px);
 }
 
 /* Mobile language toggle (ESP/ENG) anchored next to the search box, mirroring

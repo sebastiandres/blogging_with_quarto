@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Quarto – Sebastián Flores Benner</title>
+<title>Quarto – sebastiandres</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,10 +73,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-580496dacbc81ff1c201807634f1d0aa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-ebec4c5ba3c60d5890bd0368d1fe85a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-1126176dc1e1c8ea128a5c41afbd35af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -160,7 +160,7 @@ window.Quarto = {
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Sebastián Flores Benner</span>
+    <span class="navbar-title">sebastiandres</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -170,34 +170,30 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../pages/about.html"> 
-<span class="menu-text">About me</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../pages/blog.html"> 
 <span class="menu-text">Blog</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../pages/historias.html"> 
-<span class="menu-text">Stories</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../pages/talks.html"> 
 <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../pages/proyectos.html"> 
-<span class="menu-text">Apps &amp; Repos</span></a>
+    <a class="nav-link" href="../pages/reading.html"> 
+<span class="menu-text">Reading</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../pages/publicaciones.html"> 
-<span class="menu-text">Publications</span></a>
+    <a class="nav-link" href="../pages/projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pages/articles.html"> 
+<span class="menu-text">Articles</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tutoriales" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Tutoriales</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tutorials" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Tutorials</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-tutoriales">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tutorials">    
         <li>
     <a class="dropdown-item" href="../tutorial/quarto.html">
  <span class="dropdown-text">Quarto</span></a>
@@ -212,16 +208,24 @@ window.Quarto = {
   </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../pages/writing.html"> 
+<span class="menu-text">Stories</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="../pages/blog.xml"> <i class="bi bi-rss" role="img">
-</i> 
-<span class="menu-text"></span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../pages/about.html"> 
+<span class="menu-text">About me</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">ESP</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../pages/blog.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -514,6 +518,80 @@ Columna derecha
 </section>
 
 </main> <!-- /main -->
+<script>
+// Rewrites the navbar language toggle so it points to the *equivalent*
+// page in the other language instead of always going to the home page.
+//
+// Site layout:
+//   Spanish (esp profile): <root>/        -> _site/
+//   English (eng profile): <root>/eng/    -> _site/eng/
+//
+// Instead of hardcoding the "/eng" prefix (which breaks under file:// and
+// localhost), we derive both language roots from links Quarto already
+// resolves per-page:
+//   - the navbar brand  -> this page's own language root index
+//   - the language toggle (ESP/ENG) -> the other language root index
+// Then we re-base the current page's path from one root onto the other.
+document.addEventListener("DOMContentLoaded", function () {
+  var toggle = null;
+  document.querySelectorAll(".navbar a.nav-link").forEach(function (a) {
+    var label = (a.textContent || "").trim();
+    if (label === "ENG" || label === "ESP") toggle = a;
+  });
+  var brand = document.querySelector(".navbar .navbar-brand");
+  if (!toggle || !brand) return;
+
+  // Directory URL of each language root (strip the trailing "index.html").
+  var ownDir = new URL(".", new URL(brand.getAttribute("href"), location.href)).href;
+  var otherDir = new URL(".", new URL(toggle.getAttribute("href"), location.href)).href;
+
+  // Current page path relative to its own language root, re-based onto the other.
+  var here = location.href.split("#")[0];
+  if (here.indexOf(ownDir) !== 0) return; // unexpected layout: keep default href
+  var rel = here.slice(ownDir.length);
+
+  toggle.setAttribute("href", otherDir + rel + location.hash);
+
+  // On mobile the navbar items (including this toggle) collapse behind the
+  // hamburger. Search stays visible because Quarto renders it inside
+  // .navbar-brand-container, outside the collapsible area. Mirror that: clone
+  // the (already-rewritten) toggle into the brand container so it's always
+  // reachable. The clone is shown only below the lg breakpoint (d-lg-none) —
+  // where the hamburger appears — so the desktop navbar is unchanged.
+  var brandContainer = brand.closest(".navbar-brand-container") || brand.parentNode;
+  if (brandContainer && !document.querySelector(".lang-switch-anchored")) {
+    var clone = toggle.cloneNode(true);
+    clone.classList.add("nav-link", "lang-switch-anchored", "d-lg-none");
+    brandContainer.appendChild(clone);
+  }
+});
+</script>
+<!-- When a listing's bottom pagination is clicked, Quarto's List.js swaps the
+     posts in place but leaves the scroll position at the bottom. Scroll back to
+     the top of the listing so page 2/3 starts from the first post. -->
+<script>
+// Capture phase is required: List.js handles the pagination click on the link's
+// own `onclick`, which synchronously re-renders the list and *replaces* the
+// clicked <a>. By the bubble phase `e.target` is detached, so `closest()` finds
+// nothing and a bubble-phase handler bails. Running in capture, we read the
+// target before List.js swaps it, then scroll once the new page has rendered.
+document.addEventListener("click", function (e) {
+  var link = e.target.closest(".listing-pagination a, ul.pagination a");
+  if (!link) return;
+
+  var listing = document.querySelector(".quarto-listing") ||
+                document.querySelector('[id^="listing-"]');
+  if (!listing) return;
+
+  // Let List.js re-render the page, then jump to the top of the listing.
+  requestAnimationFrame(function () {
+    var nav = document.querySelector(".navbar.fixed-top, .fixed-top");
+    var offset = nav ? nav.offsetHeight + 12 : 12;
+    var y = listing.getBoundingClientRect().top + window.pageYOffset - offset;
+    window.scrollTo({ top: y < 0 ? 0 : y, behavior: "smooth" });
+  });
+}, true);
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -915,54 +993,6 @@ Columna derecha
   });
   </script>
 </div> <!-- /content -->
-<script>
-// Rewrites the navbar language toggle so it points to the *equivalent*
-// page in the other language instead of always going to the home page.
-//
-// Site layout:
-//   Spanish (esp profile): <root>/        -> _site/
-//   English (eng profile): <root>/eng/    -> _site/eng/
-//
-// Instead of hardcoding the "/eng" prefix (which breaks under file:// and
-// localhost), we derive both language roots from links Quarto already
-// resolves per-page:
-//   - the navbar brand  -> this page's own language root index
-//   - the language toggle (ESP/ENG) -> the other language root index
-// Then we re-base the current page's path from one root onto the other.
-document.addEventListener("DOMContentLoaded", function () {
-  var toggle = null;
-  document.querySelectorAll(".navbar a.nav-link").forEach(function (a) {
-    var label = (a.textContent || "").trim();
-    if (label === "ENG" || label === "ESP") toggle = a;
-  });
-  var brand = document.querySelector(".navbar .navbar-brand");
-  if (!toggle || !brand) return;
-
-  // Directory URL of each language root (strip the trailing "index.html").
-  var ownDir = new URL(".", new URL(brand.getAttribute("href"), location.href)).href;
-  var otherDir = new URL(".", new URL(toggle.getAttribute("href"), location.href)).href;
-
-  // Current page path relative to its own language root, re-based onto the other.
-  var here = location.href.split("#")[0];
-  if (here.indexOf(ownDir) !== 0) return; // unexpected layout: keep default href
-  var rel = here.slice(ownDir.length);
-
-  toggle.setAttribute("href", otherDir + rel + location.hash);
-
-  // On mobile the navbar items (including this toggle) collapse behind the
-  // hamburger. Search stays visible because Quarto renders it inside
-  // .navbar-brand-container, outside the collapsible area. Mirror that: clone
-  // the (already-rewritten) toggle into the brand container so it's always
-  // reachable. The clone is shown only below the lg breakpoint (d-lg-none) —
-  // where the hamburger appears — so the desktop navbar is unchanged.
-  var brandContainer = brand.closest(".navbar-brand-container") || brand.parentNode;
-  if (brandContainer && !document.querySelector(".lang-switch-anchored")) {
-    var clone = toggle.cloneNode(true);
-    clone.classList.add("nav-link", "lang-switch-anchored", "d-lg-none");
-    brandContainer.appendChild(clone);
-  }
-});
-</script>
 
 
 
