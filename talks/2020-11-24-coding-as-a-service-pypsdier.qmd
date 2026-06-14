@@ -1,0 +1,19 @@
+---
+title: "Coding as a Service: Librería pypsdier, aprendizajes y metodología"
+title-en: "Coding as a Service: the pypsdier library, lessons learned and methodology"
+description: "Charla realizada en la PyCon Argentina 2020 sobre mi proyecto pypsdier y en general sobre cómo hacer una librería científica para que sea usada por otros usuarios no técnicos."
+description-en: "A talk given at PyCon Argentina 2020 about my pypsdier project and, more generally, about how to build a scientific library so it can be used by other non-technical users."
+date: "2020-11-24"
+event: "PyCon Argentina 2020"
+categories: ["python"]
+categories-en: ["python"]
+image: "./images/pyar.png"
+---
+
+::: {.content-visible when-profile="esp"}
+[repo](https://github.com/sebastiandres/talk_2020_11_pycon_argentina/) · [video](https://www.youtube.com/watch?v=UoIXFRKraqY)
+:::
+
+::: {.content-visible when-profile="eng"}
+[repo](https://github.com/sebastiandres/talk_2020_11_pycon_argentina/) · [video](https://www.youtube.com/watch?v=UoIXFRKraqY)
+:::

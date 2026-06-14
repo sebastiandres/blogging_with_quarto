@@ -1,0 +1,19 @@
+---
+title: "Pedagogía con Python"
+title-en: "Pedagogy with Python"
+description: "En esta charla hablo de mi experiencia transformando un curso con Python. Recomiendo algunas herramientas y hablo de Machine Learning, Deep Learning y Data Science."
+description-en: "In this talk I share my experience transforming a course with Python. I recommend some tools and talk about Machine Learning, Deep Learning and Data Science."
+date: "2022-09-26"
+event: "UNSA"
+categories: ["python", "educación"]
+categories-en: ["python", "education"]
+image: "./images/unsa-arequipa.png"
+---
+
+::: {.content-visible when-profile="esp"}
+[repo](https://github.com/sebastiandres/talk_2022_09_26_python_cientifico)
+:::
+
+::: {.content-visible when-profile="eng"}
+[repo](https://github.com/sebastiandres/talk_2022_09_26_python_cientifico)
+:::

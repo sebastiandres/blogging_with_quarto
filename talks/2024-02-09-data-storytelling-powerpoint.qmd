@@ -1,0 +1,18 @@
+---
+title: "Data Storytelling: evitemos más muertes por PowerPoint"
+title-en: "Data Storytelling: let's prevent more deaths by PowerPoint"
+description: "Durante la charla compartí 10 consejos para hacer mejores presentaciones, basadas en mi experiencia y en técnicas de storytelling. La Techtón fue un evento de recaudación para ir en colaboración de los bomberos por el mega-incendio en Viña del Mar."
+description-en: "During the talk I shared 10 tips for making better presentations, based on my experience and on storytelling techniques. Techtón was a fundraising event in collaboration with the firefighters fighting the mega-fire in Viña del Mar."
+date: "2024-02-09"
+event: "Techtón"
+categories: ["storytelling"]
+categories-en: ["storytelling"]
+---
+
+::: {.content-visible when-profile="esp"}
+[repo](https://github.com/sebastiandres/talk_2024_02_09_techton) · [video](https://www.youtube.com/watch?v=tYfKks4NXuY&list=PLBEwfn9JYDc-89_tgbc8cHzP93xH3TX5b)
+:::
+
+::: {.content-visible when-profile="eng"}
+[repo](https://github.com/sebastiandres/talk_2024_02_09_techton) · [video](https://www.youtube.com/watch?v=tYfKks4NXuY&list=PLBEwfn9JYDc-89_tgbc8cHzP93xH3TX5b)
+:::

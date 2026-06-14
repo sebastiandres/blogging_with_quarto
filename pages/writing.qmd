@@ -1,13 +1,12 @@
 ---
-pagetitle: "Blog · Sebastián Flores Benner"
+pagetitle: "Cuentos e historias - Stories · Sebastián Flores Benner"
 listing:
-  contents: ../blog/**/*.qmd
+  contents: ../writing/*.qmd
   sort: "date desc"
   type: default
   template: listing-bilingual.ejs.md
   categories: true
   sort-ui: false
   filter-ui: false
-  feed: true
 page-layout: full
 ---

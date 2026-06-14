@@ -7,40 +7,44 @@ project:
     - "!pages/listing-bilingual.ejs.md"
 
 website:
-  title: "Sebastián Flores Benner"
+  title: "sebastiandres"
   favicon: favicon.ico
   google-analytics: "G-HG9BYLK8FC"
   site-url: "https://sebastiandres.xyz/eng"
   navbar:
     left:
-      - text: "About me"
-        href: pages/about.qmd
       - text: "Blog"
         href: pages/blog.qmd
-      - text: "Stories"
-        href: pages/historias.qmd
       - text: "Talks"
         href: pages/talks.qmd
-      - text: "Apps & Repos"
-        href: pages/proyectos.qmd
-      - text: "Publications"
-        href: pages/publicaciones.qmd
-      - text: Tutoriales
+      - text: "Reading"
+        href: pages/reading.qmd
+      - text: "Projects"
+        href: pages/projects.qmd
+      - text: "Articles"
+        href: pages/articles.qmd
+      - text: Tutorials
         menu:
           - tutorial/quarto.qmd
           - tutorial/streamlit.qmd
           - tutorial/storytelling_by_sanderson.qmd
+      - text: "Stories"
+        href: pages/writing.qmd
     right:
-      - icon: rss
-        href: pages/blog.xml  # Note: This matches the 'blog.qmd' file name
+      - text: "About me"
+        href: pages/about.qmd
       - href: ../index.html
         text: ESP
+      - icon: rss
+        href: pages/blog.xml  # Note: This matches the 'blog.qmd' file name
 
 lang: en
 
 format:
   html:
-    theme: superhero
+    theme:
+      - default
+      - theme-mondrian.scss
     css: styles.css
 
 

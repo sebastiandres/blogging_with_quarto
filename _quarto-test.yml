@@ -1,0 +1,16 @@
+project:
+  output-dir: ./_site-test/   # separate dir so it never clobbers the real build
+  render:
+    # Only the file(s) you're actively testing. Edit this list as needed.
+    - "posts/2026/2026-05-31-hackathon.qmd"
+
+website:
+  title: "TEST — Sebastián Flores Benner"
+  site-url: "https://sebastiandres.xyz"
+
+lang: es
+
+format:
+  html:
+    theme: superhero
+    css: styles.css

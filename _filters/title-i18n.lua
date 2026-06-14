@@ -5,19 +5,26 @@
 -- is a single static string, so the title block / browser tab stay in the
 -- profile-default language in every build.
 --
--- This filter lets a page declare a translated title alongside the default:
+-- This filter lets a page declare translated metadata alongside the default:
 --
 --   ---
 --   title: "Sobre mí"
 --   title-en: "About me"
+--   description: "..."
+--   description-en: "..."
 --   ---
 --
--- When the active profile is `eng`, `title` is replaced with `title-en`.
--- Pages without `title-en` are left untouched (they keep `title`).
+-- When the active profile is `eng`, `title`/`description`/`subtitle` are
+-- replaced with their `-en` counterparts. Fields without an `-en` variant are
+-- left untouched (they keep the default value).
 function Meta(meta)
   local profile = os.getenv("QUARTO_PROFILE") or ""
-  if profile:find("eng", 1, true) and meta["title-en"] ~= nil then
-    meta.title = meta["title-en"]
+  if profile:find("eng", 1, true) then
+    for _, key in ipairs({ "title", "subtitle", "description" }) do
+      if meta[key .. "-en"] ~= nil then
+        meta[key] = meta[key .. "-en"]
+      end
+    end
   end
   return meta
 end

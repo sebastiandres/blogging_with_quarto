@@ -1,0 +1,19 @@
+---
+title: "Vizzualización de Datos"
+title-en: "Data Vizzualization"
+description: "En esta charla explico la importancia de la visualización y cómo se usa la librería [ipyvizzu](https://ipyvizzu.vizzuhq.com/). Vizzu es una librería para python y javascript, que permite realizar animaciones entre gráficos."
+description-en: "In this talk I explain the importance of visualization and how to use the [ipyvizzu](https://ipyvizzu.vizzuhq.com/) library. Vizzu is a library for python and javascript that lets you create animations between charts."
+date: "2023-09-07"
+event: "PyDay Chile 2023"
+categories: ["visualización", "python"]
+categories-en: ["visualization", "python"]
+image: "./images/pyday-chile.webp"
+---
+
+::: {.content-visible when-profile="esp"}
+[repo](https://github.com/sebastiandres/talk_2023_09_07_vizzu) · [video](https://youtu.be/xjwkJzBTdNI?t=4044)
+:::
+
+::: {.content-visible when-profile="eng"}
+[repo](https://github.com/sebastiandres/talk_2023_09_07_vizzu) · [video](https://youtu.be/xjwkJzBTdNI?t=4044)
+:::

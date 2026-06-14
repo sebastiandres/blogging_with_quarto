@@ -1,0 +1,19 @@
+---
+title: "¿Cómo hacer encuestas interactivas en Jupyter + RISE?"
+title-en: "How to make interactive polls in Jupyter + RISE?"
+description: "En esta charla, di algunos consejos para sacar el máximo provecho de la combinación de jupyter notebook con RISE, y de cómo hacer las presentaciones aún más interactivas, para un curso o una charla. Además comento tres alternativas simples para compartir encuestas de manera interactiva."
+description-en: "In this talk, I gave some tips for making the most of the combination of jupyter notebook with RISE, and how to make presentations even more interactive, for a course or a talk. I also discuss three simple alternatives for sharing polls interactively."
+date: "2020-05-08"
+event: "PyCon Colombia 2020"
+categories: ["jupyter", "python"]
+categories-en: ["jupyter", "python"]
+image: "./images/pycon-colombia.svg"
+---
+
+::: {.content-visible when-profile="esp"}
+[video](https://www.youtube.com/watch?v=ekyN9DDswBE) · [repo](https://github.com/sebastiandres/talk_2020_02_pycon_colombia_rise_and_poll/)
+:::
+
+::: {.content-visible when-profile="eng"}
+[video](https://www.youtube.com/watch?v=ekyN9DDswBE) · [repo](https://github.com/sebastiandres/talk_2020_02_pycon_colombia_rise_and_poll/)
+:::

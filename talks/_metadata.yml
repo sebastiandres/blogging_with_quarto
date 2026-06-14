@@ -1,0 +1,15 @@
+# Options specified here will apply to all talks in this folder
+
+# freeze computational output
+freeze: true
+
+# Enable banner style title blocks
+title-block-banner: false
+
+# Author name of all talks
+author: 'sebastiandres'
+
+# Table of content settings
+toc: false
+
+page-layout: article

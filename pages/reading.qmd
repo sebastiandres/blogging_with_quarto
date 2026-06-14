@@ -1,8 +1,7 @@
 ---
-title: "Historias"
-title-en: "Stories"
+pagetitle: "Lecturas - Reading · Sebastián Flores Benner"
 listing:
-  contents: ../stories/*.qmd
+  contents: ../reading/*.qmd
   sort: "date desc"
   type: default
   template: listing-bilingual.ejs.md
@@ -10,5 +9,4 @@ listing:
   sort-ui: false
   filter-ui: false
 page-layout: full
-title-block-banner: true
 ---

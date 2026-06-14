@@ -1,0 +1,19 @@
+---
+title: "¿Cómo manipular datos en python? ¡Con la librería pandas!"
+title-en: "How to manipulate data in python? With the pandas library!"
+description: "En esta charla hablo sobre la librería pandas, y su utilidad para la manipulación de datos."
+description-en: "In this talk I discuss the pandas library and its usefulness for data manipulation."
+date: "2016-03-30"
+event: "Meetup Python"
+categories: ["pandas", "python"]
+categories-en: ["pandas", "python"]
+image: "./images/python.png"
+---
+
+::: {.content-visible when-profile="esp"}
+[repo](https://github.com/sebastiandres/talk_2016_03_python_meetup_pandas/) · [video](https://www.youtube.com/watch?v=mmR2MAqsfVg)
+:::
+
+::: {.content-visible when-profile="eng"}
+[repo](https://github.com/sebastiandres/talk_2016_03_python_meetup_pandas/) · [video](https://www.youtube.com/watch?v=mmR2MAqsfVg)
+:::

@@ -1,0 +1,19 @@
+---
+title: "¿Cómo aplicar Machine Learning? ¡Con la librería sklearn!"
+title-en: "How to apply Machine Learning? With the sklearn library!"
+description: "En esta charla hablo sobre la librería sklearn y como disponibiliza distintos algoritmos de Machine Learning."
+description-en: "In this talk I discuss the sklearn library and how it provides different Machine Learning algorithms."
+date: "2016-04-27"
+event: "Meetup Python"
+categories: ["machine learning", "python"]
+categories-en: ["machine learning", "python"]
+image: "./images/python.png"
+---
+
+::: {.content-visible when-profile="esp"}
+[repo](https://github.com/sebastiandres/talk_2016_04_python_meetup_sklearn/) · [video](https://www.youtube.com/watch?v=IenniV-KM6A)
+:::
+
+::: {.content-visible when-profile="eng"}
+[repo](https://github.com/sebastiandres/talk_2016_04_python_meetup_sklearn/) · [video](https://www.youtube.com/watch?v=IenniV-KM6A)
+:::

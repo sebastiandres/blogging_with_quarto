@@ -17,7 +17,7 @@ about:
 ---
 
 ::: {.content-visible  when-profile="esp"}
-¡Hola! Soy sebastiandres.  
+¡Hola! Soy Sebastián Flores Benner, o sebastiandres en internet.  
 Escribo sobre python, tecnología y libros.  
 
 <form
@@ -35,7 +35,7 @@ Escribo sobre python, tecnología y libros.
 :::
 
 ::: {.content-visible when-profile="eng"}
-Hi! I'm sebastiandres.  
+Hi! I'm Sebastián Flores Benner, or sebastiandres on the web.  
 I write about python, technology and books.  
 <form
   action="https://buttondown.com/api/emails/embed-subscribe/sebastiandres"

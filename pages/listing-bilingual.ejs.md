@@ -51,7 +51,7 @@ const align = item['image-align'] || 'left';
 <div class="body">
 ```
 
-<h3 class="no-anchor listing-title"><a href="<%- item.path %>" class="no-external"><%= itemTitle %></a></h3>
+<h3 class="no-anchor listing-title"><a href="<%- item.path %>" class="no-external stretched-link"><%= itemTitle %></a></h3>
 
 <% if (itemSubtitle) { %>
 <div class="listing-subtitle"><a href="<%- item.path %>" class="no-external"><%= itemSubtitle %></a></div>
@@ -84,21 +84,6 @@ const align = item['image-align'] || 'left';
 <% } %>
 
 ```{=html}
-</div>
-<div class="metadata">
-<a href="<%- item.path %>" class="no-external">
-```
-
-<% if (item.date) { %>
-<div class="listing-date"><%= item.date %></div>
-<% } %>
-
-<% if (item.author) { %>
-<div class="listing-author"><%= item.author %></div>
-<% } %>
-
-```{=html}
-</a>
 </div>
 </div>
 ```

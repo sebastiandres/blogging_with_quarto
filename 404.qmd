@@ -1,6 +1,6 @@
 ---
-title: "404"
-title-en: "404"
+title: ""
+title-en: ""
 page-layout: full
 toc: false
 sidebar: false
@@ -12,12 +12,116 @@ format:
         <meta name="robots" content="noindex">
 ---
 
-::: {.text-center style="max-width: 720px; margin: 0 auto; padding: 2rem 1rem;"}
+```{=html}
+<style>
+  /* --- 404: a small De Stijl composition --------------------------------- */
+  .m404 {
+    --m-white:  #f7f4ec;
+    --m-black:  #15110d;
+    --m-red:    #d4332b;
+    --m-blue:   #1850a8;
+    --m-yellow: #f6c915;
+    max-width: 760px;
+    margin: 2.5rem auto 4rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
 
-# 404 {style="font-size: 6rem; margin-bottom: 0; line-height: 1;"}
+  /* The painting: a 4x4 grid where black "grid lines" are the gaps showing
+     through a black backing, and the 404 lives in the big white field. */
+  .m404-grid {
+    width: min(440px, 82vw);
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "num num num red"
+      "num num num red"
+      "num num num yel"
+      "blu wht wht yel";
+    gap: 6px;
+    background: var(--m-black);
+    border: 6px solid var(--m-black);
+  }
+  .m404-grid > div { background: var(--m-white); }
 
-### Esta página no existe. {style="font-weight: 300;"}
-### This page does not exist. {style="font-weight: 300;"}
+  .m404-grid .num {
+    grid-area: num;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Archivo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    font-size: clamp(3.5rem, 14vw, 7rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    color: var(--m-black);
+    user-select: none;
+  }
+  .m404-grid .red { grid-area: red; background: var(--m-red); }
+  .m404-grid .yel { grid-area: yel; background: var(--m-yellow); }
+  .m404-grid .blu { grid-area: blu; background: var(--m-blue); }
+  .m404-grid .wht { grid-area: wht; }
 
-<p style="font-size: 5rem; margin: 0.5rem 0;">💀</p>
-:::
+  /* The composition breathes a little on load. */
+  @media (prefers-reduced-motion: no-preference) {
+    .m404-grid .red,
+    .m404-grid .yel,
+    .m404-grid .blu {
+      animation: m404-fill 0.6s ease both;
+    }
+    .m404-grid .red { animation-delay: 0.05s; }
+    .m404-grid .yel { animation-delay: 0.20s; }
+    .m404-grid .blu { animation-delay: 0.35s; }
+  }
+  @keyframes m404-fill {
+    from { opacity: 0; transform: scale(0.6); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+
+  .m404-text { margin-top: 2.25rem; }
+  .m404-text p {
+    margin: 0.15rem 0;
+    font-weight: 300;
+    font-size: 1.35rem;
+  }
+  .m404-text .lead-es { font-weight: 600; }
+  .m404-home {
+    display: inline-block;
+    margin-top: 1.75rem;
+    padding: 0.6rem 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--m-white);
+    background: var(--m-red);
+    border: 3px solid var(--m-black);
+    text-decoration: none;
+    transition: box-shadow 0.12s ease, transform 0.12s ease;
+  }
+  .m404-home:hover {
+    color: var(--m-white);
+    box-shadow: 5px 5px 0 0 var(--m-black);
+    transform: translate(-2px, -2px);
+  }
+</style>
+
+<div class="m404">
+  <div class="m404-grid" role="img"
+       aria-label="404 — page not found, in a Mondrian composition">
+    <div class="num">404</div>
+    <div class="red"></div>
+    <div class="yel"></div>
+    <div class="blu"></div>
+    <div class="wht"></div>
+  </div>
+
+  <div class="m404-text">
+    <p class="lead-es">Esta página se salió de la cuadrícula.</p>
+    <p>This page fell outside the grid.</p>
+    <a class="m404-home" href="/">Volver al inicio · Back home</a>
+  </div>
+</div>
+```

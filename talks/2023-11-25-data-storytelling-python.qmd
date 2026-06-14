@@ -1,0 +1,19 @@
+---
+title: "¿Cómo hacer Data Storytelling con Python?"
+title-en: "How to do Data Storytelling with Python?"
+description: "En esta keynote recorremos el poco explorado territorio del Data Storytelling en Python. Iremos más allá de las tablas y los gráficos, y exploraremos cómo tus datos pueden ser contados de manera convincente y emocionante. Descubrirás el arte y las herramientas disponibles en Python para tejer relatos que llamen al cambio y la acción."
+description-en: "In this keynote we explore the little-charted territory of Data Storytelling in Python. We go beyond tables and charts, and explore how your data can be told in a compelling and exciting way. You'll discover the art and the tools available in Python to weave stories that call for change and action."
+date: "2023-11-25"
+event: "PyCon Chile 2023"
+categories: ["storytelling", "python"]
+categories-en: ["storytelling", "python"]
+image: "./images/pycon-chile.png"
+---
+
+::: {.content-visible when-profile="esp"}
+[repo](https://github.com/sebastiandres/talk_2023_11_25_pycon_chile) · [video](https://www.youtube.com/watch?v=X1xcyY9Y0Pc&t=26980s)
+:::
+
+::: {.content-visible when-profile="eng"}
+[repo](https://github.com/sebastiandres/talk_2023_11_25_pycon_chile) · [video](https://www.youtube.com/watch?v=X1xcyY9Y0Pc&t=26980s)
+:::

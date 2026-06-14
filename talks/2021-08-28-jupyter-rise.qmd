@@ -1,0 +1,19 @@
+---
+title: "Presentaciones Interactivas con Jupyter Notebook + RISE"
+title-en: "Interactive Presentations with Jupyter Notebook + RISE"
+description: "Todo lo que necesitas saber en 30 minutos. En esta charla resumí los conocimientos que necesitas para hacer una presentación completamente interactiva (código, gráficos, encuestas, otros) usando jupyter notebook y su extensión RISE."
+description-en: "Everything you need to know in 30 minutes. In this talk I summarized the knowledge you need to make a fully interactive presentation (code, charts, polls, and more) using jupyter notebook and its RISE extension."
+date: "2021-08-28"
+event: "PyCon Latam 2021"
+categories: ["jupyter", "python"]
+categories-en: ["jupyter", "python"]
+image: "./images/pycon-latam.svg"
+---
+
+::: {.content-visible when-profile="esp"}
+[repo](https://github.com/sebastiandres/talk_2021_08_pylatam/) · [video](https://www.youtube.com/watch?v=VxdnVOt5K1w)
+:::
+
+::: {.content-visible when-profile="eng"}
+[repo](https://github.com/sebastiandres/talk_2021_08_pylatam/) · [video](https://www.youtube.com/watch?v=VxdnVOt5K1w)
+:::

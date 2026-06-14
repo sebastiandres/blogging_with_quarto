@@ -1,0 +1,31 @@
+---
+title: "Python y Data Storytelling al rescate: evitemos más muertes por PowerPoint"
+title-en: "Python and Data Storytelling to the rescue: let's prevent more deaths by PowerPoint"
+description: "Se discuten distintas habilidades de data storytelling y herramientas técnicas con el objetivo de crear presentaciones más atractivas, entretenidas y memorables usando librerías y programas en python. ¡Hagamos el mundo mejor, una presentación a la vez!"
+description-en: "I discuss different data storytelling skills and technical tools with the goal of creating more engaging, entertaining and memorable presentations using python libraries and programs. Let's make the world better, one presentation at a time!"
+date: "2024-09-24"
+event: "Nerdearla"
+categories: ["storytelling", "python"]
+categories-en: ["storytelling", "python"]
+image: "./images/storytelling.png"
+---
+
+::: {.content-visible when-profile="esp"}
+**Presentada en:**
+
+- **PyCon US 2024** (2024-05-20) — [video](https://www.youtube.com/watch?v=KknQ_VzbJY0)
+- **Python Chile Meetup** (2024-05-29) — [video](https://youtu.be/vgkOTFfJvPc&t=193)
+- **Nerdearla** (2024-09-24) — [video](https://www.youtube.com/watch?v=JbUV8mkn6v0)
+
+[repo](https://github.com/sebastiandres/talk_2024_05_pycon_us)
+:::
+
+::: {.content-visible when-profile="eng"}
+**Presented at:**
+
+- **PyCon US 2024** (2024-05-20) — [video](https://www.youtube.com/watch?v=KknQ_VzbJY0)
+- **Python Chile Meetup** (2024-05-29) — [video](https://youtu.be/vgkOTFfJvPc&t=193)
+- **Nerdearla** (2024-09-24) — [video](https://www.youtube.com/watch?v=JbUV8mkn6v0)
+
+[repo](https://github.com/sebastiandres/talk_2024_05_pycon_us)
+:::

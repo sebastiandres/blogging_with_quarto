@@ -1,0 +1,19 @@
+---
+title: "Matrices en la vida real"
+title-en: "Matrices in real life"
+description: "Charla realizada a estudiantes de primer año, sobre aplicaciones de las matrices en la industria."
+description-en: "A talk given to first-year students, about applications of matrices in industry."
+date: "2019-10-24"
+event: "Universidad Adolfo Ibáñez"
+categories: ["matemática"]
+categories-en: ["math"]
+image: "./images/uai.jpg"
+---
+
+::: {.content-visible when-profile="esp"}
+[repo](https://github.com/sebastiandres/talk_2019_10_UAI/)
+:::
+
+::: {.content-visible when-profile="eng"}
+[repo](https://github.com/sebastiandres/talk_2019_10_UAI/)
+:::

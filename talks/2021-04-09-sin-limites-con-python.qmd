@@ -1,0 +1,19 @@
+---
+title: "Sin límites con Python"
+title-en: "No limits with Python"
+description: "Charla realizada a estudiantes de primer año de la Universidad de Salta en Argentina, para contarles sobre python y algunas de las cosas que se pueden hacer."
+description-en: "A talk given to first-year students at Universidad de Salta in Argentina, to tell them about python and some of the things you can do with it."
+date: "2021-04-09"
+event: "UNSA Argentina"
+categories: ["python"]
+categories-en: ["python"]
+image: "./images/unsa-salta.png"
+---
+
+::: {.content-visible when-profile="esp"}
+[repo](https://github.com/sebastiandres/talk_2021_04_UNSA_Argentina/)
+:::
+
+::: {.content-visible when-profile="eng"}
+[repo](https://github.com/sebastiandres/talk_2021_04_UNSA_Argentina/)
+:::

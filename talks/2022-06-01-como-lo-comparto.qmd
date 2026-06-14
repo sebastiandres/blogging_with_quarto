@@ -1,0 +1,18 @@
+---
+title: "Construí esto, pero... ¿Cómo lo comparto?"
+title-en: "I built this, but... how do I share it?"
+description: "En esta charla expliqué las distintas opciones que existen para compartir tu código python: Graphical Interfaces, Notebook, Web Apps (streamlit!), Chatbots y otros."
+description-en: "In this talk I explained the different options that exist for sharing your python code: Graphical Interfaces, Notebook, Web Apps (streamlit!), Chatbots and others."
+date: "2022-06-01"
+event: "Charla 1000 programadores"
+categories: ["python", "streamlit"]
+categories-en: ["python", "streamlit"]
+---
+
+::: {.content-visible when-profile="esp"}
+[repo](https://github.com/sebastiandres/talk_2022_06_1000PS)
+:::
+
+::: {.content-visible when-profile="eng"}
+[repo](https://github.com/sebastiandres/talk_2022_06_1000PS)
+:::

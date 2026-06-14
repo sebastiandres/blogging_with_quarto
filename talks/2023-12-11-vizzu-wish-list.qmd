@@ -1,0 +1,18 @@
+---
+title: "Sebastian's Wish List for Vizzu"
+description: "Tuve el honor de ser el primer \"guest speaker\" en la Community Call de Vizzu. Presenté algunos ejemplos de apps que he construido con Vizzu, y una lista de ideas de cosas que me gustaría ver en Vizzu... con un ejemplo funcional para algunas de éstas."
+description-en: "I had the honor of being the first \"guest speaker\" at the Vizzu Community Call. I presented some examples of apps I built with Vizzu, and a list of ideas of things I'd like to see in Vizzu... with a working example for some of them."
+date: "2023-12-11"
+event: "Vizzu Community Call #1"
+categories: ["visualización", "python"]
+categories-en: ["visualization", "python"]
+image: "./images/vizzu.svg"
+---
+
+::: {.content-visible when-profile="esp"}
+[repo](https://github.com/sebastiandres/talk_2023_12_11_vizzu_community_call) · [video](https://www.youtube.com/watch?v=andvQnsUWvo)
+:::
+
+::: {.content-visible when-profile="eng"}
+[repo](https://github.com/sebastiandres/talk_2023_12_11_vizzu_community_call) · [video](https://www.youtube.com/watch?v=andvQnsUWvo)
+:::

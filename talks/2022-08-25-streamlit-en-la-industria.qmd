@@ -1,0 +1,19 @@
+---
+title: "Streamlit en la industria"
+title-en: "Streamlit in industry"
+description: "En esta charla hablo sobre cómo streamlit permite disponibilizar tu código Python de manera sencilla, y consideraciones importantes en la industria en relación a datos, bases de datos, deployment y autenticación."
+description-en: "In this talk I discuss how streamlit lets you make your Python code available in a simple way, and important considerations in industry regarding data, databases, deployment and authentication."
+date: "2022-08-25"
+event: "Meetup Python Chile"
+categories: ["streamlit", "python"]
+categories-en: ["streamlit", "python"]
+image: "./images/streamlit.png"
+---
+
+::: {.content-visible when-profile="esp"}
+[repo](https://github.com/sebastiandres/talk_2022_08_25_pychile_meetup) · [video](https://www.youtube.com/watch?v=xHabAVZDAHo)
+:::
+
+::: {.content-visible when-profile="eng"}
+[repo](https://github.com/sebastiandres/talk_2022_08_25_pychile_meetup) · [video](https://www.youtube.com/watch?v=xHabAVZDAHo)
+:::

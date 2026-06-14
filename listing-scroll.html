@@ -1,0 +1,26 @@
+<!-- When a listing's bottom pagination is clicked, Quarto's List.js swaps the
+     posts in place but leaves the scroll position at the bottom. Scroll back to
+     the top of the listing so page 2/3 starts from the first post. -->
+<script>
+// Capture phase is required: List.js handles the pagination click on the link's
+// own `onclick`, which synchronously re-renders the list and *replaces* the
+// clicked <a>. By the bubble phase `e.target` is detached, so `closest()` finds
+// nothing and a bubble-phase handler bails. Running in capture, we read the
+// target before List.js swaps it, then scroll once the new page has rendered.
+document.addEventListener("click", function (e) {
+  var link = e.target.closest(".listing-pagination a, ul.pagination a");
+  if (!link) return;
+
+  var listing = document.querySelector(".quarto-listing") ||
+                document.querySelector('[id^="listing-"]');
+  if (!listing) return;
+
+  // Let List.js re-render the page, then jump to the top of the listing.
+  requestAnimationFrame(function () {
+    var nav = document.querySelector(".navbar.fixed-top, .fixed-top");
+    var offset = nav ? nav.offsetHeight + 12 : 12;
+    var y = listing.getBoundingClientRect().top + window.pageYOffset - offset;
+    window.scrollTo({ top: y < 0 ? 0 : y, behavior: "smooth" });
+  });
+}, true);
+</script>

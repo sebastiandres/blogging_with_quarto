@@ -1,0 +1,19 @@
+---
+title: "WebApps con Streamlit: ¡más fácil que la tabla del uno, poh!"
+title-en: "WebApps with Streamlit: easier than the one-times table, dude!"
+description: "Si alguna vez te has dicho \"debería haber una manera más fácil de compartir este script/análisis/código con otras personas\", streamlit es la librería que estabas esperando. Esta charla te mostrará cómo comenzar a usar streamlit."
+description-en: "If you've ever told yourself \"there should be an easier way to share this script/analysis/code with other people\", streamlit is the library you were waiting for. This talk will show you how to start using streamlit."
+date: "2021-11-07"
+event: "PyCon Chile 2021"
+categories: ["streamlit", "python"]
+categories-en: ["streamlit", "python"]
+image: "./images/pycon-chile.png"
+---
+
+::: {.content-visible when-profile="esp"}
+[repo](https://github.com/sebastiandres/talk_2021_11_pyconcl) · [video](https://www.youtube.com/watch?v=cZSzK2uIqjY)
+:::
+
+::: {.content-visible when-profile="eng"}
+[repo](https://github.com/sebastiandres/talk_2021_11_pyconcl) · [video](https://www.youtube.com/watch?v=cZSzK2uIqjY)
+:::

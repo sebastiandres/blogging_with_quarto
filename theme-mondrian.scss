@@ -1,0 +1,356 @@
+/*-- scss:functions --*/
+
+/*-- scss:defaults --*/
+
+// ===========================================================================
+//  MONDRIAN / DE STIJL (Neoplasticism) theme for Quarto
+//  - Warm white canvas, true-black grid lines, primary red/blue/yellow blocks
+//  - Geometric grotesque typography, hard right angles, no rounded corners
+// ===========================================================================
+
+// --- De Stijl palette --------------------------------------------------------
+$mondrian-white:  #f7f4ec;   // warm canvas, not pure white
+$mondrian-black:  #15110d;   // near-black grid line
+$mondrian-red:    #d4332b;
+$mondrian-blue:   #1850a8;
+$mondrian-yellow: #f6c915;
+$mondrian-grey:   #d9d4c8;
+
+// --- Bootstrap / Quarto greyscale --------------------------------------------
+$white:    $mondrian-white;
+$black:    $mondrian-black;
+$gray-100: #f2efe6;
+$gray-200: $mondrian-grey;
+$gray-600: #6b665c;
+$gray-800: #2b2620;
+
+// --- Brand colors ------------------------------------------------------------
+$primary:   $mondrian-red;
+$secondary: $mondrian-blue;
+$success:   $mondrian-blue;
+$info:      $mondrian-yellow;
+$warning:   $mondrian-yellow;
+$danger:    $mondrian-red;
+$light:     $mondrian-white;
+$dark:      $mondrian-black;
+
+// --- Body --------------------------------------------------------------------
+$body-bg:    $mondrian-white;
+$body-color: $mondrian-black;
+
+// --- Typography: geometric grotesque -----------------------------------------
+$font-family-sans-serif: "Archivo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headings-font-family:   "Archivo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-monospace:  "JetBrains Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+
+$headings-font-weight: 800;
+$headings-color:       $mondrian-black;
+$font-weight-bold:     700;
+
+// --- Geometry: no rounded corners, thick black rules -------------------------
+$border-radius:        0;
+$border-radius-sm:     0;
+$border-radius-lg:     0;
+$border-radius-pill:   0;
+$border-width:         3px;
+$border-color:         $mondrian-black;
+
+// --- Links -------------------------------------------------------------------
+$link-color:            $mondrian-blue;
+$link-hover-color:      $mondrian-red;
+$link-decoration:       none;
+$link-hover-decoration: underline;
+
+// --- Navbar ------------------------------------------------------------------
+$navbar-bg:                       $mondrian-white;
+$navbar-light-bg:                 $mondrian-white;
+$navbar-light-color:              $mondrian-black;
+$navbar-light-hover-color:        $mondrian-red;
+$navbar-light-active-color:       $mondrian-red;
+$navbar-light-brand-color:        $mondrian-black;
+$navbar-light-brand-hover-color:  $mondrian-black;
+
+// --- Cards / code ------------------------------------------------------------
+$card-border-width:  3px;
+$card-border-color:  $mondrian-black;
+$card-cap-bg:        $mondrian-white;
+$code-color:         $mondrian-red;
+$code-bg:            $gray-100;
+
+// --- Inputs ------------------------------------------------------------------
+$input-border-color:        $mondrian-black;
+$input-border-width:        2px;
+$input-focus-border-color:  $mondrian-blue;
+$input-btn-focus-color:     rgba($mondrian-blue, 0.35);
+
+
+/*-- scss:rules --*/
+
+// ===========================================================================
+//  Rules layer — the actual Mondrian composition
+// ===========================================================================
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap");
+
+// Tricolor "De Stijl" rule reused by several blocks
+@mixin destijl-stripe($h: 3px) {
+  height: $h;
+  background: linear-gradient(
+    to right,
+    $mondrian-red 0 33.333%,
+    $mondrian-yellow 33.333% 66.666%,
+    $mondrian-blue 66.666% 100%
+  );
+}
+
+body {
+  letter-spacing: 0.01em;
+}
+
+// --- Headings: heavy, tight, geometric ---------------------------------------
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  line-height: 1.1;
+}
+
+h1, .h1 { text-transform: uppercase; }
+
+// Colored left "block" accent on section headings
+.content h2,
+.content h3 {
+  padding-left: 0.6rem;
+  border-left: 5px solid $mondrian-red;
+}
+.content h3 { border-left-color: $mondrian-blue; }
+
+// ===========================================================================
+//  Navbar — white bar capped by a heavy black rule + tricolor stripe
+// ===========================================================================
+.navbar {
+  border-bottom: 4px solid $mondrian-black;
+  font-weight: 700;
+}
+
+.navbar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  @include destijl-stripe(3px);
+}
+
+.navbar-brand {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+// Nav links: text-color highlight only (no filled boxes); the active page
+// gets a thin red underline so it stays distinguishable from hover.
+.navbar .navbar-nav .nav-link {
+  margin: 0 0.1rem;
+  border-bottom: 2px solid transparent;
+  transition: color 0.12s ease;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: $mondrian-red !important;
+}
+.navbar .navbar-nav .nav-link.active {
+  color: $mondrian-red !important;
+  border-bottom-color: $mondrian-red;
+}
+
+// Manual ENG/ESP toggle on the right
+.navbar .navbar-nav .nav-item .nav-link[href*="index"] {
+  font-weight: 900;
+}
+
+// ===========================================================================
+//  Buttons — flat blocks with hard black outline
+// ===========================================================================
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  border: 3px solid $mondrian-black;
+  box-shadow: none;
+}
+.btn:hover { box-shadow: 4px 4px 0 0 $mondrian-black; transform: translate(-1px, -1px); }
+.btn-primary   { background: $mondrian-red;    color: $mondrian-white; }
+.btn-secondary { background: $mondrian-blue;   color: $mondrian-white; }
+
+// ===========================================================================
+//  Title banners (e.g. Blog listing, page-layout full)
+// ===========================================================================
+// Collapse empty title blocks (e.g. listing pages whose heading is conveyed
+// by the navbar alone) so they leave no gap.
+#title-block-header:empty { display: none; }
+
+// Regular content pages/posts: give the page title a Mondrian underline so
+// every page reads as part of the same composition.
+#title-block-header .quarto-title .title {
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  border-bottom: 5px solid $mondrian-red;
+}
+#title-block-header .quarto-title .subtitle {
+  font-weight: 500;
+  color: $mondrian-blue;
+}
+
+.quarto-title-banner {
+  background: $mondrian-black;
+  border-bottom: 4px solid $mondrian-red;
+  color: $mondrian-white;
+}
+.quarto-title-banner .title {
+  color: $mondrian-white;
+  text-transform: uppercase;
+}
+
+// ===========================================================================
+//  Listing pages — each post is a framed block with a rotating color cap
+// ===========================================================================
+.quarto-listing {
+  .quarto-post,
+  .quarto-grid-item {
+    border: 3px solid $mondrian-black;
+    background: $mondrian-white;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    transition: box-shadow 0.12s ease, transform 0.12s ease;
+  }
+
+  .quarto-post:hover,
+  .quarto-grid-item:hover {
+    box-shadow: 6px 6px 0 0 $mondrian-black;
+    transform: translate(-2px, -2px);
+  }
+
+  // Whole-card click target: the title link is `.stretched-link`, so its
+  // ::after overlay fills the (position:relative) card.
+  .quarto-post,
+  .quarto-grid-item { cursor: pointer; }
+
+  // Keep category blocks clickable above the stretched-link overlay.
+  .listing-category { position: relative; z-index: 2; }
+
+  // Top color cap, rotating red / blue / yellow across the list
+  .quarto-post::before,
+  .quarto-grid-item::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 5px;
+    background: $mondrian-red;
+    z-index: 1;
+  }
+  .quarto-post:nth-child(3n+2)::before,
+  .quarto-grid-item:nth-child(3n+2)::before { background: $mondrian-blue; }
+  .quarto-post:nth-child(3n)::before,
+  .quarto-grid-item:nth-child(3n)::before   { background: $mondrian-yellow; }
+}
+
+// Quarto's default listing strips the bottom border off the last post
+// (`.list.quarto-listing-default div:last-of-type { border-bottom: none }`) so
+// the divider-style listing doesn't end on a stray rule. Our posts are full
+// framed boxes, so that leaves the last card on every page open at the bottom —
+// restore it. List.js re-renders one page at a time, so `:last-of-type` is the
+// last *visible* post. Specificity (0,4,0) beats Quarto's (0,3,1).
+.list.quarto-listing-default .quarto-post:last-of-type,
+.list.quarto-listing-default .quarto-grid-item:last-of-type {
+  border-bottom: 3px solid $mondrian-black;
+}
+
+// Category pills become square color blocks
+.quarto-category,
+.listing-category {
+  border: 2px solid $mondrian-black !important;
+  border-radius: 0 !important;
+  background: $mondrian-yellow !important;
+  color: $mondrian-black !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.72em;
+  opacity: 1 !important;
+}
+.quarto-category:hover { background: $mondrian-red !important; color: $mondrian-white !important; }
+
+// ===========================================================================
+//  About / profile blocks (jolla & trestles templates)
+// ===========================================================================
+.quarto-about-jolla .about-image,
+.about-image img,
+.quarto-about-jolla img.round {
+  border-radius: 0 !important;
+  border: 4px solid $mondrian-black;
+}
+
+.about-links .about-link {
+  border: 2px solid $mondrian-black !important;
+  border-radius: 0 !important;
+  margin: 0.2rem;
+  font-weight: 700;
+}
+.about-links .about-link:hover {
+  background: $mondrian-blue !important;
+  color: $mondrian-white !important;
+}
+
+// ===========================================================================
+//  Code blocks — framed, monospaced, with a yellow corner tab
+// ===========================================================================
+div.sourceCode,
+pre.sourceCode {
+  border: 3px solid $mondrian-black;
+  border-radius: 0;
+  background: $gray-100;
+}
+code:not(.sourceCode) {
+  background: $gray-100;
+  padding: 0.1em 0.3em;
+  border: 1px solid $mondrian-black;
+}
+
+// ===========================================================================
+//  Tables & blockquotes
+// ===========================================================================
+.table {
+  border: 3px solid $mondrian-black;
+}
+.table th {
+  background: $mondrian-black;
+  color: $mondrian-white;
+  text-transform: uppercase;
+}
+
+blockquote, .blockquote {
+  border-left: 5px solid $mondrian-blue;
+  background: $gray-100;
+  padding: 0.75rem 1rem;
+  margin-left: 0;
+}
+
+// ===========================================================================
+//  Footer — capped by the De Stijl tricolor stripe
+// ===========================================================================
+.nav-footer {
+  border-top: 4px solid $mondrian-black;
+  background: $mondrian-white;
+  position: relative;
+}
+.nav-footer::before {
+  content: "";
+  position: absolute;
+  top: -4px; left: 0; right: 0;
+  @include destijl-stripe(3px);
+}
+
+// ===========================================================================
+//  Selection
+// ===========================================================================
+::selection { background: $mondrian-yellow; color: $mondrian-black; }
