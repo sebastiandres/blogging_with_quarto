@@ -20,7 +20,7 @@ website:
       - text: "Historias"
         href: pages/historias.qmd
       - text: "Charlas"
-        href: pages/charlas.qmd
+        href: pages/talks.qmd
       - text: "Apps y Repos"
         href: pages/proyectos.qmd
       - text: "Publicaciones"

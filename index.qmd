@@ -26,36 +26,9 @@ Escribo sobre python, tecnología y libros.
   class="embeddable-buttondown-form"
   target="_blank"
 >
-  <input
-    type="email"
-    name="email"
-    id="bd-email"
-    placeholder="tu@correo.com"
-    style="
-      background: white !important;
-      border: 1px solid #ccc !important;
-      border-radius: 8px !important;
-      padding: 8px 14px !important;
-      font-size: 15px !important;
-      width: 280px !important;
-      outline: none !important;
-      text-align: center !important;
-    "
-  />
-  <input
-    type="submit"
-    value="¡Suscríbeme!"
-    style="
-      background: transparent !important;
-      color: white !important;
-      border: 1px solid white !important;
-      border-radius: 8px !important;
-      padding: 8px 20px !important;
-      font-size: 15px !important;
-      font-weight: 500 !important;
-      cursor: pointer !important;
-    "
-  />
+  <input type="email" name="email" id="bd-email" placeholder="tu@correo.com" />
+  <input type="submit" value="¡Suscríbeme!" />
+
 </form>
 
 <p style="margin: 10px 0;"></p>
@@ -70,35 +43,8 @@ I write about python, technology and books.
   class="embeddable-buttondown-form"
   target="_blank"
 >
-  <input
-    type="email"
-    name="email"
-    id="bd-email"
-    placeholder="tu@correo.com"
-    style="
-      background: white !important;
-      border: 1px solid #ccc !important;
-      border-radius: 8px !important;
-      padding: 8px 14px !important;
-      font-size: 15px !important;
-      width: 280px !important;
-      outline: none !important;
-      text-align: center !important;
-    "
-  />
-  <input
-    type="submit"
-    value="¡Suscríbeme!"
-    style="
-      background: transparent !important;
-      color: white !important;
-      border: 1px solid white !important;
-      border-radius: 8px !important;
-      padding: 8px 20px !important;
-      font-size: 15px !important;
-      font-weight: 500 !important;
-      cursor: pointer !important;
-    "
-  />
+  <input type="email" name="email" id="bd-email" placeholder="tu@correo.com" />
+  <input type="submit" value="¡Suscríbeme!" />
+
 </form>
 :::

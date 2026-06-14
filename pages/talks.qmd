@@ -1,0 +1,175 @@
+---
+title: "Charlas"
+title-en: "Talks"
+# Don't freeze: the cards come from talks.yml, not from this .qmd. Under
+# `freeze: auto` Quarto only re-executes when the .qmd itself changes, so
+# edits to talks.yml would silently not appear. freeze:false keeps it live.
+freeze: false
+---
+
+```{=html}
+<style>
+  .talk-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+  }
+  .talk-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    border: none;
+    transition: transform .15s ease, box-shadow .15s ease;
+    cursor: pointer;
+  }
+  .talk-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 .75rem 1.5rem rgba(0,0,0,.35);
+  }
+  .talk-card-media {
+    height: 150px;
+    overflow: hidden;
+  }
+  .talk-card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .talk-card-media.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #4e54c8 0%, #8f94fb 100%);
+  }
+  .talk-card .card-body { display: flex; flex-direction: column; flex: 1; }
+  .talk-meta {
+    font-size: .78rem;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    opacity: .75;
+    margin-bottom: .35rem;
+  }
+  .talk-card .card-title { font-size: 1.05rem; line-height: 1.3; }
+  .talk-modal-venues { list-style: none; padding-left: 0; }
+  .talk-modal-venues li { margin-bottom: .35rem; }
+</style>
+```
+
+```{python}
+#| echo: false
+#| output: asis
+import os, html, re, yaml
+
+# Resolve the data file whether the kernel runs from pages/ or the project root.
+for candidate in ("talks.yml", "pages/talks.yml"):
+    if os.path.exists(candidate):
+        with open(candidate, encoding="utf-8") as f:
+            talks = yaml.safe_load(f)
+        break
+else:
+    talks = []
+
+# We emit BOTH languages and let Quarto's `content-visible when-profile` filter
+# keep only the active one. We deliberately do NOT branch on QUARTO_PROFILE here:
+# Quarto reuses a persistent Jupyter kernel across the esp/eng builds, so the
+# env var is frozen at whatever the kernel first launched with and would leak
+# one language into the other. The content-visible filter runs every render
+# (after freeze, independent of the kernel), so it switches reliably.
+LANGS = {
+    # lang -> (quarto profile, UI strings, English-fallback flag)
+    "es": {"profile": "esp", "more": "Ver más", "close": "Cerrar", "where": "Presentada en", "video": "video"},
+    "en": {"profile": "eng", "more": "Read more", "close": "Close", "where": "Presented at", "video": "video"},
+}
+
+_MD_LINK = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
+
+
+def field(item, key, lang):
+    """Localized field with English -> Spanish fallback. Inline markdown links
+    are converted to HTML, since modal bodies are emitted as raw HTML (where
+    pandoc would not process markdown)."""
+    val = item.get(f"{key}_en") if (lang == "en" and item.get(f"{key}_en")) else item.get(key, "")
+    return _MD_LINK.sub(r'<a href="\2" target="_blank" rel="noopener">\1</a>', val)
+
+
+def md_links(links):
+    return " · ".join(
+        f'<a href="{html.escape(l["href"])}" target="_blank" rel="noopener">{html.escape(l["text"])}</a>'
+        for l in (links or [])
+    )
+
+
+def oneline(s):
+    """Collapse generated HTML to a single unindented line. With `output: asis`
+    pandoc parses the printed text as markdown, where any 4-space-indented line
+    becomes a code block; emitting one flat line keeps it a raw HTML block."""
+    return "".join(line.strip() for line in s.splitlines())
+
+
+def render_lang(lang):
+    ui = LANGS[lang]
+    cards, modals = [], []
+    for i, t in enumerate(talks):
+        mid = f"talk-{lang}-{i}"  # lang-suffixed so the two builds never collide
+        title = html.escape(field(t, "title", lang))
+        event = html.escape(t.get("event", ""))
+        date = html.escape(str(t.get("date", "")))
+        meta = " · ".join(p for p in (date, event) if p)
+
+        if t.get("image"):
+            media = f'<div class="talk-card-media"><img src="{html.escape(t["image"])}" alt="{title}"></div>'
+        else:
+            media = f'<div class="talk-card-media placeholder">{event}</div>'
+
+        cards.append(oneline(f'''
+<div class="card talk-card" data-bs-toggle="modal" data-bs-target="#{mid}">
+{media}
+<div class="card-body">
+<span class="talk-meta">{meta}</span>
+<h5 class="card-title">{title}</h5>
+<span class="btn btn-primary btn-sm mt-auto align-self-start">{ui["more"]}</span>
+</div>
+</div>'''))
+
+        body = ""
+        venues = t.get("venues")
+        if venues:
+            items = ""
+            for v in venues:
+                vlink = f' — <a href="{html.escape(v["video"])}" target="_blank" rel="noopener">{ui["video"]}</a>' if v.get("video") else ""
+                items += f'<li><strong>{html.escape(v["event"])}</strong> ({html.escape(str(v.get("date","")))}){vlink}</li>'
+            body += f'<p class="mb-1"><strong>{ui["where"]}:</strong></p><ul class="talk-modal-venues">{items}</ul>'
+
+        body += f'<div>{field(t, "description", lang)}</div>'
+
+        links = md_links(t.get("links"))
+        if links:
+            body += f'<p class="mt-3">{links}</p>'
+
+        modals.append(oneline(f'''
+<div class="modal fade" id="{mid}" tabindex="-1" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">{title}</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{ui["close"]}"></button>
+</div>
+<div class="modal-body">{body}</div>
+</div>
+</div>
+</div>'''))
+
+    return '<div class="talk-grid">' + "".join(cards) + "</div>\n" + "\n".join(modals)
+
+
+for lang, cfg in LANGS.items():
+    print(f'\n::: {{.content-visible when-profile="{cfg["profile"]}"}}\n')
+    print(render_lang(lang))
+    print('\n:::\n')
+```

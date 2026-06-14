@@ -1,0 +1,291 @@
+# Talks data — single source of truth for pages/charlas.qmd
+#
+# Each entry renders as a card (front: image, date, event, title) that opens a
+# modal (full description + links). Order newest-first; that's the display order.
+#
+# Fields:
+#   title          (required)  Spanish title / default.
+#   title_en       (optional)  English title; falls back to `title`.
+#   date           (required)  YYYY-MM-DD (or YYYY-MM). Shown on the card.
+#   event          (required)  Event name shown on the card.
+#   image          (optional)  Path relative to this folder (pages/). If absent,
+#                              a gradient placeholder with the event name is used.
+#   description    (required)  Spanish body / default (modal text).
+#   description_en (optional)  English body; falls back to `description`.
+#   links          (optional)  List of {text, href} shown as buttons in the modal.
+#   venues         (optional)  For talks given at several events. List of
+#                              {event, date, video?}. When present it's shown in
+#                              the modal under "Presented at".
+
+- title: "Python y Data Storytelling al rescate: evitemos más muertes por PowerPoint"
+  title_en: "Python and Data Storytelling to the rescue: let's prevent more deaths by PowerPoint"
+  date: "2024-09-24"
+  event: "Nerdearla"
+  image: "images/talks/storytelling.png"
+  description: >
+    Se discuten distintas habilidades de data storytelling y herramientas
+    técnicas con el objetivo de crear presentaciones más atractivas, entretenidas
+    y memorables usando librerías y programas en python. ¡Hagamos el mundo mejor,
+    una presentación a la vez!
+  description_en: >
+    I discuss different data storytelling skills and technical tools with the
+    goal of creating more engaging, entertaining and memorable presentations
+    using python libraries and programs. Let's make the world better, one
+    presentation at a time!
+  links:
+    - { text: repo, href: "https://github.com/sebastiandres/talk_2024_05_pycon_us" }
+  venues:
+    - { event: "PyCon US 2024", date: "2024-05-20", video: "https://www.youtube.com/watch?v=KknQ_VzbJY0" }
+    - { event: "Python Chile Meetup", date: "2024-05-29", video: "https://youtu.be/vgkOTFfJvPc&t=193" }
+    - { event: "Nerdearla", date: "2024-09-24", video: "https://www.youtube.com/watch?v=JbUV8mkn6v0" }
+
+- title: "Data Storytelling: evitemos más muertes por PowerPoint"
+  title_en: "Data Storytelling: let's prevent more deaths by PowerPoint"
+  date: "2024-02-09"
+  event: "Techtón"
+  description: >
+    Durante la charla compartí 10 consejos para hacer mejores presentaciones,
+    basadas en mi experiencia y en técnicas de storytelling. La Techtón fue un
+    evento de recaudación para ir en colaboración de los bomberos por el
+    mega-incendio en Viña del Mar.
+  description_en: >
+    During the talk I shared 10 tips for making better presentations, based on
+    my experience and on storytelling techniques. Techtón was a fundraising
+    event in collaboration with the firefighters fighting the mega-fire in Viña
+    del Mar.
+  links:
+    - { text: repo, href: "https://github.com/sebastiandres/talk_2024_02_09_techton" }
+    - { text: video, href: "https://www.youtube.com/watch?v=tYfKks4NXuY&list=PLBEwfn9JYDc-89_tgbc8cHzP93xH3TX5b" }
+
+- title: "Sebastian's Wish List for Vizzu"
+  date: "2023-12-11"
+  event: "Vizzu Community Call #1"
+  image: "images/talks/vizzu.svg"
+  description: >
+    Tuve el honor de ser el primer "guest speaker" en la Community Call de Vizzu.
+    Presenté algunos ejemplos de apps que he construido con Vizzu, y una lista de
+    ideas de cosas que me gustaría ver en Vizzu... con un ejemplo funcional para
+    algunas de éstas.
+  description_en: >
+    I had the honor of being the first "guest speaker" at the Vizzu Community
+    Call. I presented some examples of apps I built with Vizzu, and a list of
+    ideas of things I'd like to see in Vizzu... with a working example for some
+    of them.
+  links:
+    - { text: repo, href: "https://github.com/sebastiandres/talk_2023_12_11_vizzu_community_call" }
+    - { text: video, href: "https://www.youtube.com/watch?v=andvQnsUWvo" }
+
+- title: "¿Cómo hacer Data Storytelling con Python?"
+  title_en: "How to do Data Storytelling with Python?"
+  date: "2023-11-25"
+  event: "PyCon Chile 2023"
+  image: "images/talks/pycon-chile.png"
+  description: >
+    En esta keynote recorremos el poco explorado territorio del Data Storytelling
+    en Python. Iremos más allá de las tablas y los gráficos, y exploraremos cómo
+    tus datos pueden ser contados de manera convincente y emocionante. Descubrirás
+    el arte y las herramientas disponibles en Python para tejer relatos que llamen
+    al cambio y la acción.
+  description_en: >
+    In this keynote we explore the little-charted territory of Data Storytelling
+    in Python. We go beyond tables and charts, and explore how your data can be
+    told in a compelling and exciting way. You'll discover the art and the tools
+    available in Python to weave stories that call for change and action.
+  links:
+    - { text: repo, href: "https://github.com/sebastiandres/talk_2023_11_25_pycon_chile" }
+    - { text: video, href: "https://www.youtube.com/watch?v=X1xcyY9Y0Pc&t=26980s" }
+
+- title: "Vizzualización de Datos"
+  title_en: "Data Vizzualization"
+  date: "2023-09-07"
+  event: "PyDay Chile 2023"
+  image: "images/talks/pyday-chile.webp"
+  description: >
+    En esta charla explico la importancia de la visualización y cómo se usa la
+    librería [ipyvizzu](https://ipyvizzu.vizzuhq.com/). Vizzu es una librería
+    para python y javascript, que permite realizar animaciones entre gráficos.
+  description_en: >
+    In this talk I explain the importance of visualization and how to use the
+    [ipyvizzu](https://ipyvizzu.vizzuhq.com/) library. Vizzu is a library for
+    python and javascript that lets you create animations between charts.
+  links:
+    - { text: repo, href: "https://github.com/sebastiandres/talk_2023_09_07_vizzu" }
+    - { text: video, href: "https://youtu.be/xjwkJzBTdNI?t=4044" }
+
+- title: "Pedagogía con Python"
+  title_en: "Pedagogy with Python"
+  date: "2022-09-26"
+  event: "UNSA"
+  image: "images/talks/unsa-arequipa.png"
+  description: >
+    En esta charla hablo de mi experiencia transformando un curso con Python.
+    Recomiendo algunas herramientas y hablo de Machine Learning, Deep Learning y
+    Data Science.
+  description_en: >
+    In this talk I share my experience transforming a course with Python. I
+    recommend some tools and talk about Machine Learning, Deep Learning and Data
+    Science.
+  links:
+    - { text: repo, href: "https://github.com/sebastiandres/talk_2022_09_26_python_cientifico" }
+
+- title: "Streamlit en la industria"
+  title_en: "Streamlit in industry"
+  date: "2022-08-25"
+  event: "Meetup Python Chile"
+  image: "images/talks/streamlit.png"
+  description: >
+    En esta charla hablo sobre cómo streamlit permite disponibilizar tu código
+    Python de manera sencilla, y consideraciones importantes en la industria en
+    relación a datos, bases de datos, deployment y autenticación.
+  description_en: >
+    In this talk I discuss how streamlit lets you make your Python code available
+    in a simple way, and important considerations in industry regarding data,
+    databases, deployment and authentication.
+  links:
+    - { text: repo, href: "https://github.com/sebastiandres/talk_2022_08_25_pychile_meetup" }
+    - { text: video, href: "https://www.youtube.com/watch?v=xHabAVZDAHo" }
+
+- title: "Construí esto, pero... ¿Cómo lo comparto?"
+  title_en: "I built this, but... how do I share it?"
+  date: "2022-06"
+  event: "Charla 1000 programadores"
+  description: >
+    En esta charla expliqué las distintas opciones que existen para compartir tu
+    código python: Graphical Interfaces, Notebook, Web Apps (streamlit!),
+    Chatbots y otros.
+  description_en: >
+    In this talk I explained the different options that exist for sharing your
+    python code: Graphical Interfaces, Notebook, Web Apps (streamlit!), Chatbots
+    and others.
+  links:
+    - { text: repo, href: "https://github.com/sebastiandres/talk_2022_06_1000PS" }
+
+- title: "WebApps con Streamlit: ¡más fácil que la tabla del uno, poh!"
+  title_en: "WebApps with Streamlit: easier than the one-times table, dude!"
+  date: "2021-11-07"
+  event: "PyCon Chile 2021"
+  image: "images/talks/pycon-chile.png"
+  description: >
+    Si alguna vez te has dicho "debería haber una manera más fácil de compartir
+    este script/análisis/código con otras personas", streamlit es la librería que
+    estabas esperando. Esta charla te mostrará cómo comenzar a usar streamlit.
+  description_en: >
+    If you've ever told yourself "there should be an easier way to share this
+    script/analysis/code with other people", streamlit is the library you were
+    waiting for. This talk will show you how to start using streamlit.
+  links:
+    - { text: repo, href: "https://github.com/sebastiandres/talk_2021_11_pyconcl" }
+    - { text: video, href: "https://www.youtube.com/watch?v=cZSzK2uIqjY" }
+
+- title: "Presentaciones Interactivas con Jupyter Notebook + RISE"
+  title_en: "Interactive Presentations with Jupyter Notebook + RISE"
+  date: "2021-08-28"
+  event: "PyCon Latam 2021"
+  image: "images/talks/pycon-latam.svg"
+  description: >
+    Todo lo que necesitas saber en 30 minutos. En esta charla resumí los
+    conocimientos que necesitas para hacer una presentación completamente
+    interactiva (código, gráficos, encuestas, otros) usando jupyter notebook y
+    su extensión RISE.
+  description_en: >
+    Everything you need to know in 30 minutes. In this talk I summarized the
+    knowledge you need to make a fully interactive presentation (code, charts,
+    polls, and more) using jupyter notebook and its RISE extension.
+  links:
+    - { text: repo, href: "https://github.com/sebastiandres/talk_2021_08_pylatam/" }
+    - { text: video, href: "https://www.youtube.com/watch?v=VxdnVOt5K1w" }
+
+- title: "Sin límites con Python"
+  title_en: "No limits with Python"
+  date: "2021-04-09"
+  event: "UNSA Argentina"
+  image: "images/talks/unsa-salta.png"
+  description: >
+    Charla realizada a estudiantes de primer año de la Universidad de Salta en
+    Argentina, para contarles sobre python y algunas de las cosas que se pueden
+    hacer.
+  description_en: >
+    A talk given to first-year students at Universidad de Salta in Argentina, to
+    tell them about python and some of the things you can do with it.
+  links:
+    - { text: repo, href: "https://github.com/sebastiandres/talk_2021_04_UNSA_Argentina/" }
+
+- title: "Coding as a Service: Librería pypsdier, aprendizajes y metodología"
+  title_en: "Coding as a Service: the pypsdier library, lessons learned and methodology"
+  date: "2020-11-24"
+  event: "PyCon Argentina 2020"
+  image: "images/talks/pyar.png"
+  description: >
+    Charla realizada en la PyCon Argentina 2020 sobre mi proyecto pypsdier y en
+    general sobre cómo hacer una librería científica para que sea usada por otros
+    usuarios no técnicos.
+  description_en: >
+    A talk given at PyCon Argentina 2020 about my pypsdier project and, more
+    generally, about how to build a scientific library so it can be used by other
+    non-technical users.
+  links:
+    - { text: repo, href: "https://github.com/sebastiandres/talk_2020_11_pycon_argentina/" }
+    - { text: video, href: "https://www.youtube.com/watch?v=UoIXFRKraqY" }
+
+- title: "¿Cómo hacer encuestas interactivas en Jupyter + RISE?"
+  title_en: "How to make interactive polls in Jupyter + RISE?"
+  date: "2020-05-08"
+  event: "PyCon Colombia 2020"
+  image: "images/talks/pycon-colombia.svg"
+  description: >
+    En esta charla, di algunos consejos para sacar el máximo provecho de la
+    combinación de jupyter notebook con RISE, y de cómo hacer las presentaciones
+    aún más interactivas, para un curso o una charla. Además comento tres
+    alternativas simples para compartir encuestas de manera interactiva.
+  description_en: >
+    In this talk, I gave some tips for making the most of the combination of
+    jupyter notebook with RISE, and how to make presentations even more
+    interactive, for a course or a talk. I also discuss three simple alternatives
+    for sharing polls interactively.
+  links:
+    - { text: video, href: "https://www.youtube.com/watch?v=ekyN9DDswBE" }
+    - { text: repo, href: "https://github.com/sebastiandres/talk_2020_02_pycon_colombia_rise_and_poll/" }
+
+- title: "Matrices en la vida real"
+  title_en: "Matrices in real life"
+  date: "2019-10-24"
+  event: "Universidad Adolfo Ibáñez"
+  image: "images/talks/uai.jpg"
+  description: >
+    Charla realizada a estudiantes de primer año, sobre aplicaciones de las
+    matrices en la industria.
+  description_en: >
+    A talk given to first-year students, about applications of matrices in
+    industry.
+  links:
+    - { text: repo, href: "https://github.com/sebastiandres/talk_2019_10_UAI/" }
+
+- title: "¿Cómo aplicar Machine Learning? ¡Con la librería sklearn!"
+  title_en: "How to apply Machine Learning? With the sklearn library!"
+  date: "2016-04-27"
+  event: "Meetup Python"
+  image: "images/talks/python.png"
+  description: >
+    En esta charla hablo sobre la librería sklearn y como disponibiliza distintos
+    algoritmos de Machine Learning.
+  description_en: >
+    In this talk I discuss the sklearn library and how it provides different
+    Machine Learning algorithms.
+  links:
+    - { text: repo, href: "https://github.com/sebastiandres/talk_2016_04_python_meetup_sklearn/" }
+    - { text: video, href: "https://www.youtube.com/watch?v=IenniV-KM6A" }
+
+- title: "¿Cómo manipular datos en python? ¡Con la librería pandas!"
+  title_en: "How to manipulate data in python? With the pandas library!"
+  date: "2016-03-30"
+  event: "Meetup Python"
+  image: "images/talks/python.png"
+  description: >
+    En esta charla hablo sobre la librería pandas, y su utilidad para la
+    manipulación de datos.
+  description_en: >
+    In this talk I discuss the pandas library and its usefulness for data
+    manipulation.
+  links:
+    - { text: repo, href: "https://github.com/sebastiandres/talk_2016_03_python_meetup_pandas/" }
+    - { text: video, href: "https://www.youtube.com/watch?v=mmR2MAqsfVg" }
