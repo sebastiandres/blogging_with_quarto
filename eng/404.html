@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -151,7 +116,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <span class="menu-text">Stories</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="/eng/pages/charlas.html"> 
+    <a class="nav-link" href="/eng/pages/talks.html"> 
 <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
@@ -228,30 +193,14 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 
 <section id="section" class="level1 text-center" style="font-size: 6rem; margin-bottom: 0; line-height: 1;">
 <h1 style="font-size: 6rem; margin-bottom: 0; line-height: 1;">404</h1>
-<section id="esta-página-no-existe.-this-page-does-not-exist." class="level3" style="font-weight: 300;">
-<h3 style="font-weight: 300;" class="anchored" data-anchor-id="esta-página-no-existe.-this-page-does-not-exist.">Esta página no existe. / This page does not exist.</h3>
+<section id="esta-página-no-existe." class="level3" style="font-weight: 300;">
+<h3 style="font-weight: 300;" class="anchored" data-anchor-id="esta-página-no-existe.">Esta página no existe.</h3>
+</section>
+<section id="this-page-does-not-exist." class="level3" style="font-weight: 300;">
+<h3 style="font-weight: 300;" class="anchored" data-anchor-id="this-page-does-not-exist.">This page does not exist.</h3>
 <p style="font-size: 5rem; margin: 0.5rem 0;">
-🤳💀
+💀
 </p>
-<div class="callout callout-style-simple callout-warning no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
-<p><strong>🇪🇸 Houston, tenemos un problema.</strong> Buscaste algo que no está aquí… o que solo existe en el otro idioma. <em>No eres tú, soy yo.</em> 😩</p>
-<p><strong>🇬🇧 Houston, we have a problem.</strong> You looked for something that isn’t here… or that only exists in the other language. <em>It’s not you, it’s me.</em> 😩</p>
-</div>
-</div>
-</div>
-<p><br></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>        ▄▄▄▄▄▄▄▄▄▄▄</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>     ▄█████████████▄</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    ███  ▄     ▄  ███      "this is fine"</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    ███ (◕)   (◕) ███           🔥🐶🔥</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    ███     ▼     ███      everything is on fire</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    ███   ╰───╯   ███      but the 404 page works</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>     ▀█████████████▀</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 </section>
 
@@ -692,6 +641,19 @@ document.addEventListener("DOMContentLoaded", function () {
   var rel = here.slice(ownDir.length);
 
   toggle.setAttribute("href", otherDir + rel + location.hash);
+
+  // On mobile the navbar items (including this toggle) collapse behind the
+  // hamburger. Search stays visible because Quarto renders it inside
+  // .navbar-brand-container, outside the collapsible area. Mirror that: clone
+  // the (already-rewritten) toggle into the brand container so it's always
+  // reachable. The clone is shown only below the lg breakpoint (d-lg-none) —
+  // where the hamburger appears — so the desktop navbar is unchanged.
+  var brandContainer = brand.closest(".navbar-brand-container") || brand.parentNode;
+  if (brandContainer && !document.querySelector(".lang-switch-anchored")) {
+    var clone = toggle.cloneNode(true);
+    clone.classList.add("nav-link", "lang-switch-anchored", "d-lg-none");
+    brandContainer.appendChild(clone);
+  }
 });
 </script>
 

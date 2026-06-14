@@ -1,20 +1,5 @@
 [
   {
-    "listing": "/pages/historias.html",
-    "items": [
-      "/stories/2024-01-03-story-microcuentos-2023.html",
-      "/stories/2024-01-03-story-microcuentos-biobio.html",
-      "/stories/2024-01-03-story-microcuentos-2022.html",
-      "/stories/2021-06-01-story-microcuentos-uplanner.html",
-      "/stories/2021-05-14-story-microcuentos-2021.html",
-      "/stories/2021-01-22-post-tres-principes-serendip.html",
-      "/stories/2020-11-20-story-taller-narrativa-policial-crimen-a-la-carta.html",
-      "/stories/2020-10-24-story-taller-narrativa-policial.html",
-      "/stories/2020-10-01-story-microcuentos-2020.html",
-      "/stories/2019-01-01-story-cocodrilito-va-al-bano.html"
-    ]
-  },
-  {
     "listing": "/pages/blog.html",
     "items": [
       "/posts/2026/2026-05-31-hackathon.html",
@@ -86,6 +71,21 @@
       "/posts/2019/2019-04-27-post-aprender.html",
       "/posts/2020/2020-01-01-book-review-atomic-habits.html",
       "/posts/2019/2019-01-19-post-libros.html"
+    ]
+  },
+  {
+    "listing": "/pages/historias.html",
+    "items": [
+      "/stories/2024-01-03-story-microcuentos-2023.html",
+      "/stories/2024-01-03-story-microcuentos-biobio.html",
+      "/stories/2024-01-03-story-microcuentos-2022.html",
+      "/stories/2021-06-01-story-microcuentos-uplanner.html",
+      "/stories/2021-05-14-story-microcuentos-2021.html",
+      "/stories/2021-01-22-post-tres-principes-serendip.html",
+      "/stories/2020-11-20-story-taller-narrativa-policial-crimen-a-la-carta.html",
+      "/stories/2020-10-24-story-taller-narrativa-policial.html",
+      "/stories/2020-10-01-story-microcuentos-2020.html",
+      "/stories/2019-01-01-story-cocodrilito-va-al-bano.html"
     ]
   }
 ]

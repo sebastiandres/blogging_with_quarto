@@ -118,7 +118,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <span class="menu-text">Historias</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../pages/charlas.html"> 
+    <a class="nav-link" href="../pages/talks.html"> 
 <span class="menu-text">Charlas</span></a>
   </li>  
   <li class="nav-item">
@@ -644,6 +644,19 @@ document.addEventListener("DOMContentLoaded", function () {
   var rel = here.slice(ownDir.length);
 
   toggle.setAttribute("href", otherDir + rel + location.hash);
+
+  // On mobile the navbar items (including this toggle) collapse behind the
+  // hamburger. Search stays visible because Quarto renders it inside
+  // .navbar-brand-container, outside the collapsible area. Mirror that: clone
+  // the (already-rewritten) toggle into the brand container so it's always
+  // reachable. The clone is shown only below the lg breakpoint (d-lg-none) —
+  // where the hamburger appears — so the desktop navbar is unchanged.
+  var brandContainer = brand.closest(".navbar-brand-container") || brand.parentNode;
+  if (brandContainer && !document.querySelector(".lang-switch-anchored")) {
+    var clone = toggle.cloneNode(true);
+    clone.classList.add("nav-link", "lang-switch-anchored", "d-lg-none");
+    brandContainer.appendChild(clone);
+  }
 });
 </script>
 

@@ -1,1 +1,31 @@
 /* css styles */
+
+.embeddable-buttondown-form input[type="email"] {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 15px;
+  width: 280px;
+  outline: none;
+  text-align: center;
+}
+
+.embeddable-buttondown-form input[type="submit"] {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Mobile language toggle (ESP/ENG) anchored next to the search box, mirroring
+   the always-visible search. Added by lang-switch.html below the lg breakpoint. */
+.navbar-brand-container .lang-switch-anchored {
+  padding: 0 0.5rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
