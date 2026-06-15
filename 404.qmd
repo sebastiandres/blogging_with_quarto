@@ -1,6 +1,6 @@
 ---
-title: ""
-title-en: ""
+title: "404"
+title-en: "404"
 page-layout: full
 toc: false
 sidebar: false
