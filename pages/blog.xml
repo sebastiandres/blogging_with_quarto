@@ -10,7 +10,62 @@
 <atom:link href="https://sebastiandres.xyz/pages/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Sun, 31 May 2026 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 15 Jun 2026 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>Galvano Pyday</title>
+  <dc:creator>sebastiandres </dc:creator>
+  <link>https://sebastiandres.xyz/blog/2026/2026-06-15-trofeo-pyday.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>En Octubre del año pasado (2025) compré una impresora 3d: una bambu lab A1 con AMS (multi filamento). Había pensado que los usuarios más adeptos seríamos mi hijo y yo, pero Cote me sorprendió encontrando usos inesperados (regalos personalizados, adornos de navidad y halloween, diseños para pintar con lapices acrílicos, entre otros). Imprimimos muchas cosas desde el marketplace (ya creados por otros), pero tenía ganas de hacer algo yo mismo desde cero usando tinkercad.</p>
+<p>El <a href="http://pyday.cl">PyDay 2026</a> me dió la escusa perfecta: me ofrecí a hacer los galvanos de recuerdos para los charlistas.</p>
+<p>Quería que el galvano incluyera el logo de Python Chile y que tuviera un elemento giratorio. Esto terminó siendo más dificil de lo que pensaba, pero me permitió aprender muchísimo.</p>
+<section id="prueba-1---la-prueba-de-concepto" class="level2">
+<h2 class="anchored" data-anchor-id="prueba-1---la-prueba-de-concepto">Prueba #1 - la prueba de concepto</h2>
+<p>La prueba de concepto me permitió entender muchas cosas.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://sebastiandres.xyz/blog/2026/images/galvano-v1.jpg" class="img-fluid figure-img"></p>
+<figcaption>Primera versión del galvano</figcaption>
+</figure>
+</div>
+<p>Partí generando los conectores de la pieza giratoria por separado, pero era engorroso insertarla y las piezas quedaban muy sueltas. Además, el ancho de las piezas era muy grande (2 cms) lo que l hacía ver muy tosca.</p>
+<p><strong>Aprendizajes</strong>: Es más fácil diseñar un único modelo para imprimir, y lograr que ciertas uniones se rompan para permitir el giro.</p>
+</section>
+<section id="prueba-2---estilizando" class="level2">
+<h2 class="anchored" data-anchor-id="prueba-2---estilizando">Prueba #2 - estilizando</h2>
+<p>La parte superior se imprime en una única pieza, que tiene soportes que se rompen elegantemente permitiendo la rotación libre. Al reducir el ancho de las piezas se logra que el galvano se vea más estilizado, pero también se ve frágil. La unión de la base y la placa giratoria se ve muy débil.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://sebastiandres.xyz/blog/2026/images/galvano-v2.jpg" class="img-fluid figure-img"></p>
+<figcaption>Segunda versión del galvano</figcaption>
+</figure>
+</div>
+<p>No me gustaron las terminaciones de las superficies. Las superficies “rotadas” en la base me generan cierta disonancia. Aprendí: A diseñar soportes integrados al modelo (en lugar de hacer que se generen automáticamente).</p>
+</section>
+<section id="prueba-3---final" class="level2">
+<h2 class="anchored" data-anchor-id="prueba-3---final">Prueba #3 - final</h2>
+<p>La unión entre la base y la placa giratoria me seguía pareciendo débil, así que agregué una pieza adicional que permitiera una unión de encaje que diera mayor estabilidad. Imprimí los galvanos con filamentos negro y “oro”.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://sebastiandres.xyz/blog/2026/images/galvano-v3.jpg" class="img-fluid figure-img"></p>
+<figcaption>Versión final del galvano</figcaption>
+</figure>
+</div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="./images/galvano-v3.mp4"></video></div>
+
+
+</section>
+
+ ]]></description>
+  <category>impresión 3d</category>
+  <guid>https://sebastiandres.xyz/blog/2026/2026-06-15-trofeo-pyday.html</guid>
+  <pubDate>Mon, 15 Jun 2026 04:00:00 GMT</pubDate>
+  <media:content url="https://sebastiandres.xyz/blog/2026/images/galvano-v3-small.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Open Visualization Academy</title>
   <dc:creator>sebastiandres </dc:creator>
@@ -1654,85 +1709,6 @@ font-style: inherit;">"Hola mundo"</span>)</span></code></pre></div></div>
   <category>streamlit</category>
   <guid>https://sebastiandres.xyz/blog/2022/2022-01-21-streamlit-post.html</guid>
   <pubDate>Fri, 21 Jan 2022 03:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Balance anual</title>
-  <dc:creator>sebastiandres </dc:creator>
-  <link>https://sebastiandres.xyz/blog/2021/2021-12-31-balance-anual.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Este 2021 fue sorprendentemente bueno en muchos aspectos.</p>
-<section id="lectura" class="level3">
-<h3 class="anchored" data-anchor-id="lectura">Lectura</h3>
-<ul>
-<li>Volví a leer más seguido. No llevo una lista, pero de lo que leí destaco: Proyect Hail Mary (Andy Weir),Matadero Franklin (Simón Soto), Trillion Dollar Coach (Eagle, Schmidt y Rosenberg), Never Split the Difference (Chriss Voss) y Range (David Epstein).</li>
-</ul>
-</section>
-<section id="escritura" class="level3">
-<h3 class="anchored" data-anchor-id="escritura">Escritura</h3>
-<ul>
-<li>Retomé el blog y comencé a escribir más regularmente. Le hice varias mejoras específicas a fastpages, además de aprender html, css y javascript en el proceso (o aprender a googlear mejor).</li>
-<li>Uno de mis microcuentos fue seleccionado entre los 100 cuentos de Santiago en 100 palabras.</li>
-</ul>
-</section>
-<section id="deporte" class="level3">
-<h3 class="anchored" data-anchor-id="deporte">Deporte</h3>
-<ul>
-<li>Bajé de peso. Mi truco: reducir la ingesta de calorías. Llámenle saltarse el desayuno o ayuno 16-8, me ha funcionado bien.</li>
-<li>Completé una carrera 10K del Spartan Race. Fue muy difícil pero increíblemente satisfactorio. Haberme inscrito sin estar preparado me obligó a hacer más ejercicio y fue muy buena motivación.</li>
-<li>Trekking: empezamos a salir al cerro con grupo de senderimos. Ya hicimos 2 salidas, y nos sorprendimos con encontrar naturaleza tan cerca de la ciudad.</li>
-</ul>
-</section>
-<section id="charlas-y-comunidad" class="level3">
-<h3 class="anchored" data-anchor-id="charlas-y-comunidad">Charlas y Comunidad</h3>
-<ul>
-<li>Participé en el sprint de Data Umbrella, donde aprendí más sobre la colaboración Open Source. Me aprobaron 2 pull requests y terminé entre los colaboradores de la versión 1.0.0 de sklearn.</li>
-<li>Participé en la PyLatam, con una charla sobre RISE.</li>
-<li>Participé en la Pycon Chile. ¡El año pasado me había quedado con las ganas! El tema fue “WebApps con Streamlit: ¡más fácil que la tabla del uno, poh!” y usé streamlit para presentar, lo cual fue muy bien recibido.</li>
-<li>Grabé un panel De Argentina a México, Proyectos de IA Éticos y Responsables, que saldrá en Noviembre en el INC Monterrey.</li>
-<li>Una charla en un taller para 1000 programadores en Salta, sobre librerías para distintos problemas.</li>
-<li>Taller en la PyCon Argentina: Programar y Reprogramar Recursos para Docentes, con Sofía Martin, Liliana Hurtado y Ariel Ramos.</li>
-</ul>
-</section>
-<section id="familia-y-amigos" class="level3">
-<h3 class="anchored" data-anchor-id="familia-y-amigos">Familia y amigos</h3>
-<ul>
-<li>Recomendé un practicante y quedó en su empleo soñado.</li>
-<li>Nos tomamos unas vacaciones cortas en el valle del Elqui.</li>
-<li>Hicimos 2 bingos familiares (día del padre y fiestas patrias).</li>
-<li>Retomé el contacto con un amigo francés con quien no hablaba hace unos 6 años.</li>
-<li>Aprendí a resolver el cubo de Rubik.</li>
-<li>Nos tomamos unas vacaciones largas en el sur de Chile.</li>
-</ul>
-</section>
-<section id="otros-proyectos" class="level3">
-<h3 class="anchored" data-anchor-id="otros-proyectos">Otros proyectos</h3>
-<ul>
-<li>Jardinera hecha con un pallet</li>
-</ul>
-</section>
-<section id="fails" class="level3">
-<h3 class="anchored" data-anchor-id="fails">Fails</h3>
-<p>No todo fue positivo. Algunas cosas no tan positivas fueron: * Intento fallido número 45682123 de subir al Cerro La Campana. Esta vez, no conseguimos los permisos. * Peleas, impaciencia, frustraciones, porque me cuesta reirme de mí mismo.</p>
-</section>
-<section id="algunas-reflexiones" class="level3">
-<h3 class="anchored" data-anchor-id="algunas-reflexiones">Algunas reflexiones</h3>
-<ul>
-<li>Las vacunas contra el COVID19 reflejan la importancia de una política transversal de salud pública. El proceso ha sido (y sigue siendo) impecable en Chile.</li>
-<li>Importancia de familia sobre otras cosas. Cuando hemos peleado con Cote o tenido problemas con Igna, todo lo demás pierde valor.</li>
-</ul>
-
-
-</section>
-
- ]]></description>
-  <category>balance</category>
-  <category>reflexión</category>
-  <guid>https://sebastiandres.xyz/blog/2021/2021-12-31-balance-anual.html</guid>
-  <pubDate>Fri, 31 Dec 2021 03:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

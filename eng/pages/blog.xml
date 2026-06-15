@@ -10,7 +10,62 @@
 <atom:link href="https://sebastiandres.xyz/eng/pages/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Sun, 31 May 2026 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 15 Jun 2026 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>Galvano Pyday</title>
+  <dc:creator>sebastiandres </dc:creator>
+  <link>https://sebastiandres.xyz/eng/blog/2026/2026-06-15-trofeo-pyday.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Last October (2025) I bought a 3D printer: a Bambu Lab A1 with AMS (multi-filament). I had figured that my son and I would be the most enthusiastic users, but Cote surprised me by finding unexpected uses (personalized gifts, Christmas and Halloween decorations, designs to paint with acrylic pencils, among others). We printed lots of things from the marketplace (already created by others), but I wanted to make something myself from scratch using Tinkercad.</p>
+<p><a href="http://pyday.cl">PyDay 2026</a> gave me the perfect excuse: I offered to make the commemorative trophies for the speakers.</p>
+<p>I wanted the trophy to include the Python Chile logo and to have a rotating element. This ended up being harder than I thought, but it let me learn a ton.</p>
+<section id="attempt-1---the-proof-of-concept" class="level2">
+<h2 class="anchored" data-anchor-id="attempt-1---the-proof-of-concept">Attempt #1 - the proof of concept</h2>
+<p>The proof of concept helped me understand a lot of things.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://sebastiandres.xyz/eng/blog/2026/images/galvano-v1.jpg" class="img-fluid figure-img"></p>
+<figcaption>First version of the trophy</figcaption>
+</figure>
+</div>
+<p>I started by making the connectors for the rotating piece separately, but it was cumbersome to insert and the pieces fit very loosely. Also, the pieces were too wide (2 cm), which made it look very clunky.</p>
+<p><strong>Lessons learned</strong>: It’s easier to design a single model to print, and to make certain joints break to allow rotation.</p>
+</section>
+<section id="attempt-2---styling" class="level2">
+<h2 class="anchored" data-anchor-id="attempt-2---styling">Attempt #2 - styling</h2>
+<p>The top part is printed as a single piece, which has supports that break elegantly to allow free rotation. By reducing the width of the pieces, the trophy looks more stylized, but it also looks fragile. The joint between the base and the rotating plate looks very weak.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://sebastiandres.xyz/eng/blog/2026/images/galvano-v2.jpg" class="img-fluid figure-img"></p>
+<figcaption>Second version of the trophy</figcaption>
+</figure>
+</div>
+<p>I didn’t like the surface finishes. The “rotated” surfaces on the base create a certain dissonance for me. What I learned: To design supports integrated into the model (instead of having them generated automatically).</p>
+</section>
+<section id="attempt-3---final" class="level2">
+<h2 class="anchored" data-anchor-id="attempt-3---final">Attempt #3 - final</h2>
+<p>The joint between the base and the rotating plate still seemed weak to me, so I added an extra piece that allowed a snap-fit joint to provide greater stability. I printed the trophies with black and “gold” filaments.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://sebastiandres.xyz/eng/blog/2026/images/galvano-v3.jpg" class="img-fluid figure-img"></p>
+<figcaption>Final version of the trophy</figcaption>
+</figure>
+</div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="./images/galvano-v3.mp4"></video></div>
+
+
+</section>
+
+ ]]></description>
+  <category>impresión 3d</category>
+  <guid>https://sebastiandres.xyz/eng/blog/2026/2026-06-15-trofeo-pyday.html</guid>
+  <pubDate>Mon, 15 Jun 2026 04:00:00 GMT</pubDate>
+  <media:content url="https://sebastiandres.xyz/eng/blog/2026/images/galvano-v3-small.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Open Visualization Academy</title>
   <dc:creator>sebastiandres </dc:creator>
@@ -1654,85 +1709,6 @@ font-style: inherit;">"Hola mundo"</span>)</span></code></pre></div></div>
   <category>streamlit</category>
   <guid>https://sebastiandres.xyz/eng/blog/2022/2022-01-21-streamlit-post.html</guid>
   <pubDate>Fri, 21 Jan 2022 03:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Annual review</title>
-  <dc:creator>sebastiandres </dc:creator>
-  <link>https://sebastiandres.xyz/eng/blog/2021/2021-12-31-balance-anual.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>This 2021 was surprisingly good in many aspects.</p>
-<section id="reading" class="level3">
-<h3 class="anchored" data-anchor-id="reading">Reading</h3>
-<ul>
-<li>I went back to reading more often. I don’t keep a list, but among what I read I highlight: Project Hail Mary (Andy Weir), Matadero Franklin (Simón Soto), Trillion Dollar Coach (Eagle, Schmidt and Rosenberg), Never Split the Difference (Chriss Voss) and Range (David Epstein).</li>
-</ul>
-</section>
-<section id="writing" class="level3">
-<h3 class="anchored" data-anchor-id="writing">Writing</h3>
-<ul>
-<li>I picked the blog back up and started writing more regularly. I made several specific improvements to fastpages, as well as learning html, css and javascript in the process (or learning to google better).</li>
-<li>One of my flash-fiction stories was selected among the 100 stories of Santiago en 100 palabras.</li>
-</ul>
-</section>
-<section id="sport" class="level3">
-<h3 class="anchored" data-anchor-id="sport">Sport</h3>
-<ul>
-<li>I lost weight. My trick: reducing calorie intake. Call it skipping breakfast or 16-8 fasting, it has worked well for me.</li>
-<li>I completed a 10K Spartan Race. It was very hard but incredibly satisfying. Having signed up without being prepared forced me to exercise more and was very good motivation.</li>
-<li>Trekking: we started going out to the hills with a hiking group. We’ve already done 2 outings, and we were surprised to find nature so close to the city.</li>
-</ul>
-</section>
-<section id="talks-and-community" class="level3">
-<h3 class="anchored" data-anchor-id="talks-and-community">Talks and Community</h3>
-<ul>
-<li>I took part in the Data Umbrella sprint, where I learned more about Open Source collaboration. They approved 2 of my pull requests and I ended up among the contributors of sklearn version 1.0.0.</li>
-<li>I took part in PyLatam, with a talk about RISE.</li>
-<li>I took part in PyCon Chile. Last year I had been left wanting more! The topic was “WebApps con Streamlit: ¡más fácil que la tabla del uno, poh!” and I used streamlit to present, which was very well received.</li>
-<li>I recorded a panel De Argentina a México, Proyectos de IA Éticos y Responsables, which will be released in November at INC Monterrey.</li>
-<li>A talk in a workshop for 1000 programmers in Salta, about libraries for different problems.</li>
-<li>Workshop at PyCon Argentina: Programar y Reprogramar Recursos para Docentes, with Sofía Martin, Liliana Hurtado and Ariel Ramos.</li>
-</ul>
-</section>
-<section id="family-and-friends" class="level3">
-<h3 class="anchored" data-anchor-id="family-and-friends">Family and friends</h3>
-<ul>
-<li>I recommended an intern and they landed their dream job.</li>
-<li>We took a short vacation in the Elqui valley.</li>
-<li>We held 2 family bingos (Father’s Day and national holidays).</li>
-<li>I reconnected with a French friend I hadn’t spoken to in about 6 years.</li>
-<li>I learned to solve the Rubik’s cube.</li>
-<li>We took a long vacation in the south of Chile.</li>
-</ul>
-</section>
-<section id="other-projects" class="level3">
-<h3 class="anchored" data-anchor-id="other-projects">Other projects</h3>
-<ul>
-<li>A planter made from a pallet</li>
-</ul>
-</section>
-<section id="fails-1" class="level3">
-<h3 class="anchored" data-anchor-id="fails-1">Fails</h3>
-<p>Not everything was positive. Some not-so-positive things were: * Failed attempt number 45682123 to climb Cerro La Campana. This time, we didn’t get the permits. * Fights, impatience, frustrations, because I find it hard to laugh at myself.</p>
-</section>
-<section id="some-reflections" class="level3">
-<h3 class="anchored" data-anchor-id="some-reflections">Some reflections</h3>
-<ul>
-<li>The COVID19 vaccines reflect the importance of a cross-cutting public health policy. The process has been (and continues to be) impeccable in Chile.</li>
-<li>The importance of family over other things. When we’ve fought with Cote or had problems with Igna, everything else loses value.</li>
-</ul>
-
-
-</section>
-
- ]]></description>
-  <category>balance</category>
-  <category>reflexión</category>
-  <guid>https://sebastiandres.xyz/eng/blog/2021/2021-12-31-balance-anual.html</guid>
-  <pubDate>Fri, 31 Dec 2021 03:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
