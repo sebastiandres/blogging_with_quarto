@@ -10,11 +10,96 @@
 <atom:link href="https://sebastiandres.xyz/eng/pages/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Mon, 15 Jun 2026 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 16 Jun 2026 04:00:00 GMT</lastBuildDate>
 <item>
-  <title>Galvano Pyday</title>
+  <title>Usos no productivos de la IA</title>
   <dc:creator>sebastiandres </dc:creator>
-  <link>https://sebastiandres.xyz/eng/blog/2026/2026-06-15-trofeo-pyday.html</link>
+  <link>https://sebastiandres.xyz/eng/blog/2026/2026-06-16-usos-ia-no-productivos.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>There are tons of tutorials, videos and podcasts about how to use AI to be more productive. That’s fine, but honestly the uses that have surprised me the most have nothing to do with productivity. They’re a bit more counter-intuitive, and those are exactly the ones I want to jot down here, mostly for my future self.</p>
+<p>One thing before we start: I’m sharing the prompts I use, but the trick isn’t to copy them verbatim. It’s about giving the AI <strong>context, a clear role, and letting it ask you questions</strong> before answering. That last part is what changes the results the most.</p>
+<section id="recommendations" class="level3">
+<h3 class="anchored" data-anchor-id="recommendations">Recommendations</h3>
+<p>I give the AI a list of my favorite books or music, explain what I like about them, and that’s it: I get a list of personalized recommendations. That’s how I’ve found musical oddities and a couple of great literary recommendations I probably never would have gotten around to reading.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Prompt for book recommendations</strong></pre>
+</div>
+<pre class="text" data-filename="Prompt for book recommendations"><code>My favorite books are X, Y and Z, and I like them especially because of A and B.
+Before recommending anything, ask me 3 or 4 questions to fine-tune my taste.
+Then recommend 5 books I probably haven't read, explaining in one line why each one connects with what I like.</code></pre>
+</div>
+<p>or, for music:</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Prompt for music recommendations</strong></pre>
+</div>
+<pre class="text" data-filename="Prompt for music recommendations"><code>I like the music of X, Y, ..., Z.
+Before recommending anything, ask me a couple of questions to understand what draws me to them.
+Then recommend lesser-known artists I might like, grouped by the style or reason that connects them to my taste.</code></pre>
+</div>
+</section>
+<section id="shopping-assistant" class="level3">
+<h3 class="anchored" data-anchor-id="shopping-assistant">Shopping assistant</h3>
+<p>When I have to buy something online, I tend to fall into a terrible decision paralysis. I over-research, build a spreadsheet with features and prices, and almost certainly spend way more time than necessary. Sound familiar?</p>
+<p>Asking the AI to first help me define what I’m looking for, and only then to compare, saves me hours. Literally. The key shift was to stop asking it for “the best product” and start asking it to help me decide what “best” means for me.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Prompt for shopping</strong></pre>
+</div>
+<pre class="text" data-filename="Prompt for shopping"><code>I want to buy X, available in Y. My budget is Z and I'll use it for [use case].
+First, help me define the 4 or 5 features that really matter for my case, and ask me whatever you need.
+Then compare the best options in a table with price, pros and cons, and close with your recommendation and why.</code></pre>
+</div>
+</section>
+<section id="finding-your-purpose" class="level3">
+<h3 class="anchored" data-anchor-id="finding-your-purpose">Finding your purpose</h3>
+<p>I asked Claude to review my LinkedIn, my website and other things of mine online, and to ask me questions to help me find my purpose (my <em>why</em>). It surprised me: it made a good summary of my activities and pushed me to think. That said, I’ll be honest: I had to iterate through several versions before I was happy with it. It didn’t come out right the first time, not even close.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Prompt for your purpose</strong></pre>
+</div>
+<pre class="text" data-filename="Prompt for your purpose"><code>Act as a leadership coach who's an expert in Simon Sinek's "Golden Circle" (what/how/why).
+I want to identify my WHY: my fundamental purpose or belief.
+Review my context [paste profile, links or background] and look for the common threads between my achievements, my hard decisions and what gives me deep satisfaction. Don't stay on the surface.
+Ask me between 5 and 7 open questions about the "what for" of what I do.
+When I answer, help me draft a clear, actionable purpose statement.
+Start by asking me the first question.</code></pre>
+</div>
+</section>
+<section id="analyzing-conversations" class="level3">
+<h3 class="anchored" data-anchor-id="analyzing-conversations">Analyzing conversations</h3>
+<p>When I have to have a difficult conversation, I write down my points beforehand so I can review them calmly. I discovered that passing them to the AI helps me prepare better: it finds the weak spots in my argument, suggests analogies, and sometimes makes me see the other side in a way I wasn’t seeing on my own.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Prompt for conversations</strong></pre>
+</div>
+<pre class="text" data-filename="Prompt for conversations"><code>I have to have a difficult conversation with [person] about [topic]. My goal is [goal].
+These are my notes:
+X
+Y
+Z
+
+Read them from the other person's perspective and tell me: where my argument is weak, what could be misinterpreted, and how you'd rephrase it. If an example or analogy helps, use it.</code></pre>
+</div>
+<p>I’m not sure you can even call this “productivity”. For me it’s more like using AI as a thinking partner: someone/something that forces me to ask more and better questions.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>ia</category>
+  <guid>https://sebastiandres.xyz/eng/blog/2026/2026-06-16-usos-ia-no-productivos.html</guid>
+  <pubDate>Tue, 16 Jun 2026 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Usos no productivos de la IA</title>
+  <dc:creator>sebastiandres </dc:creator>
+  <link>https://sebastiandres.xyz/eng/blog/2026/2026-06-12-trofeo-pyday.html</link>
   <description><![CDATA[ 
 
 
@@ -62,8 +147,8 @@
 
  ]]></description>
   <category>impresión 3d</category>
-  <guid>https://sebastiandres.xyz/eng/blog/2026/2026-06-15-trofeo-pyday.html</guid>
-  <pubDate>Mon, 15 Jun 2026 04:00:00 GMT</pubDate>
+  <guid>https://sebastiandres.xyz/eng/blog/2026/2026-06-12-trofeo-pyday.html</guid>
+  <pubDate>Fri, 12 Jun 2026 04:00:00 GMT</pubDate>
   <media:content url="https://sebastiandres.xyz/eng/blog/2026/images/galvano-v3-small.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -1688,26 +1773,6 @@ font-style: inherit;">"Hola mundo"</span>)</span></code></pre></div></div>
   <category>balance</category>
   <category>reflexión</category>
   <guid>https://sebastiandres.xyz/eng/blog/2022/2022-01-21-metas-anuales.html</guid>
-  <pubDate>Fri, 21 Jan 2022 03:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Streamlit: apps and posts</title>
-  <dc:creator>sebastiandres </dc:creator>
-  <link>https://sebastiandres.xyz/eng/blog/2022/2022-01-21-streamlit-post.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>In 2021 I was prolific in creating Streamlit apps, and this year looks like it will be similar. Fresh out of the oven, I have published on the Streamlit blog a post about using the streamlit_book library: <a href="https://blog.streamlit.io/how-to-create-interactive-books-with-streamlit-and-streamlit-book-in-5-steps/">How to create interacrtive books with streamlit and streamlit_book in 5 steps</a>. Essentially, it illustrates the step-by-step construction of the <a href="https://share.streamlit.io/sebastiandres/streamlit_happy_birds/main/happy_birds.py">Happy Birds</a> app.</p>
-<p>I also recently launched a Streamlit app about the <a href="https://share.streamlit.io/sebastiandres/ml-edu-1-confusion-matrix/main">confusion matrix</a> with the matrix effect and other funny things.</p>
-<p>Other Streamlit apps: * <a href="https://share.streamlit.io/sebastiandres/streamlit_ppt2rise/main">PPT 2 RISE</a>: To convert powerpoint presentations to jupyter notebook with RISE. * <a href="https://share.streamlit.io/sebastiandres/streamlit_xkcd/main">xkcd plots</a>: To plot xkcd-style functions online. * <a href="https://share.streamlit.io/sebastiandres/talk_2021_11_pyconcl/main">Webapps con Streamlit</a>: the PyconCL 2021 presentation, made entirely in Streamlit.</p>
-
-
-
- ]]></description>
-  <category>streamlit</category>
-  <guid>https://sebastiandres.xyz/eng/blog/2022/2022-01-21-streamlit-post.html</guid>
   <pubDate>Fri, 21 Jan 2022 03:00:00 GMT</pubDate>
 </item>
 </channel>

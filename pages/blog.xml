@@ -10,11 +10,96 @@
 <atom:link href="https://sebastiandres.xyz/pages/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Mon, 15 Jun 2026 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 16 Jun 2026 04:00:00 GMT</lastBuildDate>
 <item>
-  <title>Galvano Pyday</title>
+  <title>Usos no productivos de la IA</title>
   <dc:creator>sebastiandres </dc:creator>
-  <link>https://sebastiandres.xyz/blog/2026/2026-06-15-trofeo-pyday.html</link>
+  <link>https://sebastiandres.xyz/blog/2026/2026-06-16-usos-ia-no-productivos.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Hay muchísimos tutoriales, videos y podcasts sobre cómo usar la IA para ser más productivo. Me parece bien, pero la verdad es que los usos que más me han sorprendido no tienen nada que ver con productividad. Son un poco más contra-intuitivos, y son justamente esos los que quiero anotar acá, sobre todo para mi yo futuro.</p>
+<p>Una cosa antes de empezar: comparto los prompts que uso, pero el truco no está en copiarlos tal cual. Está en darle a la IA <strong>contexto, un rol claro, y permitirle hacerte preguntas</strong> antes de responder. Esa última parte es la que más cambia los resultados.</p>
+<section id="recomendaciones" class="level3">
+<h3 class="anchored" data-anchor-id="recomendaciones">Recomendaciones</h3>
+<p>Le paso a la IA una lista de mis libros o música favorita, le explico qué es lo que me gusta de ellos, y listo: tengo una lista de recomendaciones personalizadas. Así he encontrado rarezas musicales y un par de excelentes recomendaciones literarias que probablemente nunca habría llegado a leer.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Prompt para recomendaciones literarias</strong></pre>
+</div>
+<pre class="text" data-filename="Prompt para recomendaciones literarias"><code>Mis libros favoritos son X, Y y Z, y me gustan especialmente por A y B.
+Antes de recomendarme nada, hazme 3 o 4 preguntas para afinar mi gusto.
+Luego recomiéndame 5 libros que probablemente no haya leído, explicando en una línea por qué cada uno conecta con lo que me gusta.</code></pre>
+</div>
+<p>o, para música:</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Prompt para recomendaciones musicales</strong></pre>
+</div>
+<pre class="text" data-filename="Prompt para recomendaciones musicales"><code>Me gusta la música de X, Y, ..., Z.
+Antes de recomendarme nada, hazme un par de preguntas para entender qué me atrae de ellos.
+Luego recomiéndame artistas poco conocidos que me podrían gustar, agrupados por el estilo o la razón que los conecta con mi gusto.</code></pre>
+</div>
+</section>
+<section id="asistente-de-compras" class="level3">
+<h3 class="anchored" data-anchor-id="asistente-de-compras">Asistente de compras</h3>
+<p>Cuando tengo que comprar algo por internet, suelo caer en una terrible parálisis de decisión. Investigo más de la cuenta, armo un excel con características y precios, y con toda seguridad invierto bastante más tiempo del necesario. ¡Una vez me demoré 2 semanas en decidir que disco duro comprar!</p>
+<p>Pedirle a la IA que primero me ayude a definir qué estoy buscando, y recién después a comparar, me ahorra horas. Literal. El cambio clave fue dejar de pedirle “el mejor producto” y empezar a pedirle que me ayudara a decidir qué significa “mejor” para mí.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Prompt para shopping</strong></pre>
+</div>
+<pre class="text" data-filename="Prompt para shopping"><code>Quiero comprar X, disponible en Y. Mi presupuesto es Z y lo voy a usar para [uso].
+Primero, ayúdame a definir las 4 o 5 características que realmente importan para mi caso, y pregúntame lo que necesites.
+Luego compárame las mejores opciones en una tabla con precio, ventajas y desventajas, y cierra con tu recomendación y por qué.</code></pre>
+</div>
+</section>
+<section id="encontrar-tu-propósito" class="level3">
+<h3 class="anchored" data-anchor-id="encontrar-tu-propósito">Encontrar tu propósito</h3>
+<p>Le pedí a Claude que revisara mi LinkedIn, mi página web y otras cosas mías en internet, y que me hiciera preguntas para ayudarme a encontrar mi propósito (mi <em>why</em>). Me sorprendió: hizo un buen resumen de mis actividades y me empujó a pensar. Eso sí, fui honesto: tuve que iterar varias versiones antes de quedar conforme. No salió a la primera, ni de cerca.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Prompt para tu propósito</strong></pre>
+</div>
+<pre class="text" data-filename="Prompt para tu propósito"><code>Actúa como un coach de liderazgo experto en el "Círculo Dorado" (what/how/why) de Simon Sinek.
+Quiero identificar mi WHY: mi propósito o creencia fundamental.
+Revisa mi contexto [pega perfil, links o trayectoria] y busca los hilos conductores entre mis logros, mis decisiones difíciles y lo que me da satisfacción profunda. No te quedes en lo superficial.
+Hazme entre 5 y 7 preguntas abiertas sobre el "para qué" hago lo que hago.
+Cuando responda, ayúdame a redactar una declaración de propósito clara y accionable.
+Empieza haciéndome la primera pregunta.</code></pre>
+</div>
+</section>
+<section id="análisis-de-conversaciones" class="level3">
+<h3 class="anchored" data-anchor-id="análisis-de-conversaciones">Análisis de conversaciones</h3>
+<p>Cuando me toca tener una conversación difícil, anoto los puntos antes para poder revisarlos con calma. Descubrí que pasárselos a la IA me ayuda a prepararla mejor: encuentra puntos débiles en mi argumento, me sugiere analogías, y a veces me hace ver el otro lado de una forma que yo no estaba viendo.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Prompt para conversaciones</strong></pre>
+</div>
+<pre class="text" data-filename="Prompt para conversaciones"><code>Tengo que tener una conversación difícil con [persona] sobre [tema]. Mi objetivo es [objetivo].
+Estos son mis apuntes:
+X
+Y
+Z
+
+Léelos desde la perspectiva de la otra persona y dime: dónde está débil mi argumento, qué podría malinterpretarse, y cómo lo reformularías. Si te sirve algún ejemplo o analogía, úsalo.</code></pre>
+</div>
+<p>No sé si a esto se le pueda llamar “productividad”. Para mí es más bien usar la IA como un compañero de pensamiento: alguien/algo que me obliga a hacer más y mejores preguntas.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>ia</category>
+  <guid>https://sebastiandres.xyz/blog/2026/2026-06-16-usos-ia-no-productivos.html</guid>
+  <pubDate>Tue, 16 Jun 2026 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Usos no productivos de la IA</title>
+  <dc:creator>sebastiandres </dc:creator>
+  <link>https://sebastiandres.xyz/blog/2026/2026-06-12-trofeo-pyday.html</link>
   <description><![CDATA[ 
 
 
@@ -62,8 +147,8 @@
 
  ]]></description>
   <category>impresión 3d</category>
-  <guid>https://sebastiandres.xyz/blog/2026/2026-06-15-trofeo-pyday.html</guid>
-  <pubDate>Mon, 15 Jun 2026 04:00:00 GMT</pubDate>
+  <guid>https://sebastiandres.xyz/blog/2026/2026-06-12-trofeo-pyday.html</guid>
+  <pubDate>Fri, 12 Jun 2026 04:00:00 GMT</pubDate>
   <media:content url="https://sebastiandres.xyz/blog/2026/images/galvano-v3-small.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -1688,26 +1773,6 @@ font-style: inherit;">"Hola mundo"</span>)</span></code></pre></div></div>
   <category>balance</category>
   <category>reflexión</category>
   <guid>https://sebastiandres.xyz/blog/2022/2022-01-21-metas-anuales.html</guid>
-  <pubDate>Fri, 21 Jan 2022 03:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Streamlit: apps y posts</title>
-  <dc:creator>sebastiandres </dc:creator>
-  <link>https://sebastiandres.xyz/blog/2022/2022-01-21-streamlit-post.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>El 2021 fui prolífico en la creación de apps de Streamlit, y este año tiene pinta de que será similar. Recién salido del horno, he publicado en el blog de Streamlit un post sobre la utilización de la librería streamlit_book: <a href="https://blog.streamlit.io/how-to-create-interactive-books-with-streamlit-and-streamlit-book-in-5-steps/">How to create interacrtive books with streamlit and streamlit_book in 5 steps</a>. Esencialmente, ilustra el paso a paso de la construcción de la app de <a href="https://share.streamlit.io/sebastiandres/streamlit_happy_birds/main/happy_birds.py">Happy Birds</a>.</p>
-<p>También recientemente lancé un app en Streamlit sobre la <a href="https://share.streamlit.io/sebastiandres/ml-edu-1-confusion-matrix/main">matriz de confusión</a> con el efecto matrix y otras cosas graciosas.</p>
-<p>Otras apps de Streamlit: * <a href="https://share.streamlit.io/sebastiandres/streamlit_ppt2rise/main">PPT 2 RISE</a>: Para convertir presentaciones de powerpoint a jupyter notebook con RISE. * <a href="https://share.streamlit.io/sebastiandres/streamlit_xkcd/main">xkcd plots</a>: Para graficar funciones en línea tipo xkcd. * <a href="https://share.streamlit.io/sebastiandres/talk_2021_11_pyconcl/main">Webapps con Streamlit</a>: la presentación de la PyconCL 2021, hecha completamente en Streamlit.</p>
-
-
-
- ]]></description>
-  <category>streamlit</category>
-  <guid>https://sebastiandres.xyz/blog/2022/2022-01-21-streamlit-post.html</guid>
   <pubDate>Fri, 21 Jan 2022 03:00:00 GMT</pubDate>
 </item>
 </channel>

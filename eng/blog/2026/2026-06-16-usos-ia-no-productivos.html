@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="sebastiandres">
-<meta name="dcterms.date" content="2026-06-15">
+<meta name="dcterms.date" content="2026-06-16">
 
-<title>Galvano Pyday – sebastiandres</title>
+<title>Usos no productivos de la IA – sebastiandres</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -44,8 +44,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-1126176dc1e1c8ea128a5c41afbd35af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="../../site_libs/quarto-contrib/videojs/video.min.js"></script>
-<link href="../../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -183,9 +181,10 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#attempt-1---the-proof-of-concept" id="toc-attempt-1---the-proof-of-concept" class="nav-link active" data-scroll-target="#attempt-1---the-proof-of-concept">Attempt #1 - the proof of concept</a></li>
-  <li><a href="#attempt-2---styling" id="toc-attempt-2---styling" class="nav-link" data-scroll-target="#attempt-2---styling">Attempt #2 - styling</a></li>
-  <li><a href="#attempt-3---final" id="toc-attempt-3---final" class="nav-link" data-scroll-target="#attempt-3---final">Attempt #3 - final</a></li>
+  <li><a href="#recommendations" id="toc-recommendations" class="nav-link active" data-scroll-target="#recommendations">Recommendations</a></li>
+  <li><a href="#shopping-assistant" id="toc-shopping-assistant" class="nav-link" data-scroll-target="#shopping-assistant">Shopping assistant</a></li>
+  <li><a href="#finding-your-purpose" id="toc-finding-your-purpose" class="nav-link" data-scroll-target="#finding-your-purpose">Finding your purpose</a></li>
+  <li><a href="#analyzing-conversations" id="toc-analyzing-conversations" class="nav-link" data-scroll-target="#analyzing-conversations">Analyzing conversations</a></li>
   </ul>
 </nav>
     </div>
@@ -194,9 +193,9 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Galvano Pyday</h1>
+<h1 class="title">Usos no productivos de la IA</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">impresión 3d</div>
+    <div class="quarto-category">ia</div>
   </div>
   </div>
 
@@ -214,7 +213,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 15, 2026</p>
+      <p class="date">June 16, 2026</p>
     </div>
   </div>
   
@@ -226,42 +225,73 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 </header>
 
 
-<p>Last October (2025) I bought a 3D printer: a Bambu Lab A1 with AMS (multi-filament). I had figured that my son and I would be the most enthusiastic users, but Cote surprised me by finding unexpected uses (personalized gifts, Christmas and Halloween decorations, designs to paint with acrylic pencils, among others). We printed lots of things from the marketplace (already created by others), but I wanted to make something myself from scratch using Tinkercad.</p>
-<p><a href="http://pyday.cl">PyDay 2026</a> gave me the perfect excuse: I offered to make the commemorative trophies for the speakers.</p>
-<p>I wanted the trophy to include the Python Chile logo and to have a rotating element. This ended up being harder than I thought, but it let me learn a ton.</p>
-<section id="attempt-1---the-proof-of-concept" class="level2">
-<h2 class="anchored" data-anchor-id="attempt-1---the-proof-of-concept">Attempt #1 - the proof of concept</h2>
-<p>The proof of concept helped me understand a lot of things.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./images/galvano-v1.jpg" class="img-fluid figure-img"></p>
-<figcaption>First version of the trophy</figcaption>
-</figure>
+<p>There are tons of tutorials, videos and podcasts about how to use AI to be more productive. That’s fine, but honestly the uses that have surprised me the most have nothing to do with productivity. They’re a bit more counter-intuitive, and those are exactly the ones I want to jot down here, mostly for my future self.</p>
+<p>One thing before we start: I’m sharing the prompts I use, but the trick isn’t to copy them verbatim. It’s about giving the AI <strong>context, a clear role, and letting it ask you questions</strong> before answering. That last part is what changes the results the most.</p>
+<section id="recommendations" class="level3">
+<h3 class="anchored" data-anchor-id="recommendations">Recommendations</h3>
+<p>I give the AI a list of my favorite books or music, explain what I like about them, and that’s it: I get a list of personalized recommendations. That’s how I’ve found musical oddities and a couple of great literary recommendations I probably never would have gotten around to reading.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Prompt for book recommendations</strong></pre>
 </div>
-<p>I started by making the connectors for the rotating piece separately, but it was cumbersome to insert and the pieces fit very loosely. Also, the pieces were too wide (2 cm), which made it look very clunky.</p>
-<p><strong>Lessons learned</strong>: It’s easier to design a single model to print, and to make certain joints break to allow rotation.</p>
+<pre class="text" data-filename="Prompt for book recommendations"><code>My favorite books are X, Y and Z, and I like them especially because of A and B.
+Before recommending anything, ask me 3 or 4 questions to fine-tune my taste.
+Then recommend 5 books I probably haven't read, explaining in one line why each one connects with what I like.</code></pre>
+</div>
+<p>or, for music:</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Prompt for music recommendations</strong></pre>
+</div>
+<pre class="text" data-filename="Prompt for music recommendations"><code>I like the music of X, Y, ..., Z.
+Before recommending anything, ask me a couple of questions to understand what draws me to them.
+Then recommend lesser-known artists I might like, grouped by the style or reason that connects them to my taste.</code></pre>
+</div>
 </section>
-<section id="attempt-2---styling" class="level2">
-<h2 class="anchored" data-anchor-id="attempt-2---styling">Attempt #2 - styling</h2>
-<p>The top part is printed as a single piece, which has supports that break elegantly to allow free rotation. By reducing the width of the pieces, the trophy looks more stylized, but it also looks fragile. The joint between the base and the rotating plate looks very weak.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./images/galvano-v2.jpg" class="img-fluid figure-img"></p>
-<figcaption>Second version of the trophy</figcaption>
-</figure>
+<section id="shopping-assistant" class="level3">
+<h3 class="anchored" data-anchor-id="shopping-assistant">Shopping assistant</h3>
+<p>When I have to buy something online, I tend to fall into a terrible decision paralysis. I over-research, build a spreadsheet with features and prices, and almost certainly spend way more time than necessary. Sound familiar?</p>
+<p>Asking the AI to first help me define what I’m looking for, and only then to compare, saves me hours. Literally. The key shift was to stop asking it for “the best product” and start asking it to help me decide what “best” means for me.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Prompt for shopping</strong></pre>
 </div>
-<p>I didn’t like the surface finishes. The “rotated” surfaces on the base create a certain dissonance for me. What I learned: To design supports integrated into the model (instead of having them generated automatically).</p>
+<pre class="text" data-filename="Prompt for shopping"><code>I want to buy X, available in Y. My budget is Z and I'll use it for [use case].
+First, help me define the 4 or 5 features that really matter for my case, and ask me whatever you need.
+Then compare the best options in a table with price, pros and cons, and close with your recommendation and why.</code></pre>
+</div>
 </section>
-<section id="attempt-3---final" class="level2">
-<h2 class="anchored" data-anchor-id="attempt-3---final">Attempt #3 - final</h2>
-<p>The joint between the base and the rotating plate still seemed weak to me, so I added an extra piece that allowed a snap-fit joint to provide greater stability. I printed the trophies with black and “gold” filaments.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./images/galvano-v3.jpg" class="img-fluid figure-img"></p>
-<figcaption>Final version of the trophy</figcaption>
-</figure>
+<section id="finding-your-purpose" class="level3">
+<h3 class="anchored" data-anchor-id="finding-your-purpose">Finding your purpose</h3>
+<p>I asked Claude to review my LinkedIn, my website and other things of mine online, and to ask me questions to help me find my purpose (my <em>why</em>). It surprised me: it made a good summary of my activities and pushed me to think. That said, I’ll be honest: I had to iterate through several versions before I was happy with it. It didn’t come out right the first time, not even close.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Prompt for your purpose</strong></pre>
 </div>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="./images/galvano-v3.mp4"></video></div>
+<pre class="text" data-filename="Prompt for your purpose"><code>Act as a leadership coach who's an expert in Simon Sinek's "Golden Circle" (what/how/why).
+I want to identify my WHY: my fundamental purpose or belief.
+Review my context [paste profile, links or background] and look for the common threads between my achievements, my hard decisions and what gives me deep satisfaction. Don't stay on the surface.
+Ask me between 5 and 7 open questions about the "what for" of what I do.
+When I answer, help me draft a clear, actionable purpose statement.
+Start by asking me the first question.</code></pre>
+</div>
+</section>
+<section id="analyzing-conversations" class="level3">
+<h3 class="anchored" data-anchor-id="analyzing-conversations">Analyzing conversations</h3>
+<p>When I have to have a difficult conversation, I write down my points beforehand so I can review them calmly. I discovered that passing them to the AI helps me prepare better: it finds the weak spots in my argument, suggests analogies, and sometimes makes me see the other side in a way I wasn’t seeing on my own.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Prompt for conversations</strong></pre>
+</div>
+<pre class="text" data-filename="Prompt for conversations"><code>I have to have a difficult conversation with [person] about [topic]. My goal is [goal].
+These are my notes:
+X
+Y
+Z
+
+Read them from the other person's perspective and tell me: where my argument is weak, what could be misinterpreted, and how you'd rephrase it. If an example or analogy helps, use it.</code></pre>
+</div>
+<p>I’m not sure you can even call this “productivity”. For me it’s more like using AI as a thinking partner: someone/something that forces me to ask more and better questions.</p>
 
 
 </section>
@@ -742,7 +772,6 @@ document.addEventListener("click", function (e) {
   });
   </script>
 </div> <!-- /content -->
-<script>videojs(video_shortcode_videojs_video1);</script>
 
 
 
