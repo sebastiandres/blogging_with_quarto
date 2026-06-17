@@ -77,7 +77,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-580496dacbc81ff1c201807634f1d0aa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1126176dc1e1c8ea128a5c41afbd35af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-442c2dc775672f77f383292e288ce91d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -183,6 +186,10 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
   <li class="nav-item">
     <a class="nav-link" href="../../pages/writing.html"> 
 <span class="menu-text">Cuentos</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pages/art.html"> 
+<span class="menu-text">Arte</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -302,7 +309,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="2024-03-06-pandas-trick_files/figure-html/cell-3-output-1.png" width="573" height="416" class="figure-img"></p>
+<p><a href="2024-03-06-pandas-trick_files/figure-html/cell-3-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="2024-03-06-pandas-trick_files/figure-html/cell-3-output-1.png" width="573" height="416" class="figure-img"></a></p>
 </figure>
 </div>
 </div>
@@ -901,6 +908,38 @@ document.addEventListener("click", function (e) {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

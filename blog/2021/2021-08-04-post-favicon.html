@@ -43,7 +43,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-580496dacbc81ff1c201807634f1d0aa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1126176dc1e1c8ea128a5c41afbd35af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-442c2dc775672f77f383292e288ce91d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -150,6 +153,10 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <a class="nav-link" href="../../pages/writing.html"> 
 <span class="menu-text">Cuentos</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pages/art.html"> 
+<span class="menu-text">Arte</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -222,9 +229,9 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 
 
 <p>Ya había reemplazado el favicon del sitio, pero no me terminaba de convencer. Hoy mirando el logo de python me di cuenta que podía facilmente transformarse en una S, que me pareció muy adecuado para un favicon simple pero memorable.</p>
-<p><img src="../_images/2021-08-04-favicon/transformacion.png" title="Transformación del logo de python al favicon" class="img-fluid"></p>
+<p><a href="../_images/2021-08-04-favicon/transformacion.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../_images/2021-08-04-favicon/transformacion.png" title="Transformación del logo de python al favicon" class="img-fluid"></a></p>
 <p>La imagen final tiene algunos detalles en los bordes, pero no es relevante dado que al convertirlo a favicon se reduce enormemente el tamaño.</p>
-<p><img src="../_images/2021-08-04-favicon/preview.png" title="Favicon obtenido" class="img-fluid"></p>
+<p><a href="../_images/2021-08-04-favicon/preview.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="../_images/2021-08-04-favicon/preview.png" title="Favicon obtenido" class="img-fluid"></a></p>
 <p>Hay varios servicios para generar un favicon a partir de una imagen, en este caso obtuve mejores resultados con <a href="https://favicon.io/">favicon.io</a>.</p>
 <p>El favicon se puede modificar reemplazando directamente <code>images/favicon.ico</code>, o bien, editando el archivo <code>_includes/favicons.html</code> para definir una ruta diferente.</p>
 
@@ -706,6 +713,38 @@ document.addEventListener("click", function (e) {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

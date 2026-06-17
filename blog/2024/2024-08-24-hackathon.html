@@ -42,7 +42,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-580496dacbc81ff1c201807634f1d0aa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1126176dc1e1c8ea128a5c41afbd35af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-442c2dc775672f77f383292e288ce91d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -149,6 +152,10 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <a class="nav-link" href="../../pages/writing.html"> 
 <span class="menu-text">Cuentos</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pages/art.html"> 
+<span class="menu-text">Arte</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -217,15 +224,15 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 
 
 <p>El sábado 24 de agosto viajé temprano a Santiago a participar como mentor en la Hackatón de OpenAI 2024 en Chile. Me emocionaba mucho que me hubieran dado esa oportunidad, pues era un evento bastante exclusivo (sólo se podía participar por invitación) y que me interesaba muchísimo. No puedo sino agradecer esa oportunidad que se abrió por participar de Python Chile.</p>
-<p><img src="./images/2024-08-24-hackathon/foto0.png" title="© ?" class="img-fluid"></p>
+<p><a href="./images/2024-08-24-hackathon/foto0.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="./images/2024-08-24-hackathon/foto0.png" title="© ?" class="img-fluid"></a></p>
 <p>A las 9 am estaba ingresando al edificio de la Cámara Chilena de la Construcción - un imponente edificio. Todo el evento ocurrió en el subterráneo: al bajar las escaleras mecánicas estaba el mesón de acreditación, y cerca de ahí, el comedor y baños. Avanzando por el pasillo, la sala de coordinación, la gran sala de la hackathon (que era como 5 salas pequeñas unidas), y el auditorio del evento donde ocurrieron las charlas.</p>
 <p>Había participado en otra hackathon antes, pero no en rol de mentor, por lo que al principio estaba medio perdido sobre cual era mi rol. A las 10:00 reunieron a los mentores y nos comentaron sobre cual sería la dinámica, responsabilidades y consejos. Cada uno podía aportar con sus conocimientos específicos, pero lo más importante era aclarar dudas logísticas y asegurarse que los equipos mantuvieran el foco y pudieran presentar una buena demo al día siguiente. Durante la mañana y tarde estuve paseando entre los distintos grupos, revisando avances y haciendo sugerencias. Fue entretenido saludar a varias personas que conocía sólo de interacciones virtuales, y hacer muchos nuevos conocidos. Los otros mentores eran todos muy bacanes en lo que hacían. ¡Conocí muchísima gente!</p>
 <p>Creo que la mayor lección que me llevo del evento es la siguiente: ya nadie sabe todo. Los conocimientos de cada uno son distintos, y no alcanzan para hacer un buen producto. Nos necesitamos los unos a los otros. Necesitamos colaborar para poder hacer cosas distintas y de impacto.</p>
 <p>Como dice el dicho: <strong>viaja solo si quieres ir rápido. Viaja acompañado si quieres llegar lejos.</strong></p>
-<p><img src="./images/2024-08-24-hackathon/foto1.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></p>
-<p><img src="./images/2024-08-24-hackathon/foto2.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></p>
-<p><img src="./images/2024-08-24-hackathon/foto3.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></p>
-<p><img src="./images/2024-08-24-hackathon/foto4.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></p>
+<p><a href="./images/2024-08-24-hackathon/foto1.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="./images/2024-08-24-hackathon/foto1.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></a></p>
+<p><a href="./images/2024-08-24-hackathon/foto2.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="./images/2024-08-24-hackathon/foto2.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></a></p>
+<p><a href="./images/2024-08-24-hackathon/foto3.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="./images/2024-08-24-hackathon/foto3.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></a></p>
+<p><a href="./images/2024-08-24-hackathon/foto4.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="./images/2024-08-24-hackathon/foto4.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></a></p>
 
 
 
@@ -705,6 +712,38 @@ document.addEventListener("click", function (e) {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

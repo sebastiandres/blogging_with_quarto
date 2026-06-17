@@ -43,7 +43,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-580496dacbc81ff1c201807634f1d0aa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1126176dc1e1c8ea128a5c41afbd35af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-442c2dc775672f77f383292e288ce91d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -150,6 +153,10 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <a class="nav-link" href="../../pages/writing.html"> 
 <span class="menu-text">Cuentos</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pages/art.html"> 
+<span class="menu-text">Arte</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -221,7 +228,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 </header>
 
 
-<p><img src="../_images/2021-03-28-trillion-dollar-coach/bielsa.jpeg" title="Un entrenador peculiar" class="img-fluid"></p>
+<p><a href="../_images/2021-03-28-trillion-dollar-coach/bielsa.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../_images/2021-03-28-trillion-dollar-coach/bielsa.jpeg" title="Un entrenador peculiar" class="img-fluid"></a></p>
 <p>Trillion Dollar Coach, traducido al español como “El coach de Silicon Valley”, es un libro escrito por Eric Schmidt, Jonathan Rosenberg y Alan Eagle, donde relatan los aprendizajes y consejos que recibieron de Bill Campbell, un coach con un estilo personal que rompía esquemas y convenciones.</p>
 <p>Bill Campbell (1940–2016) fue un entrenador de fútbol americano en su juventud, después CEO de empresas, y finalmente coach para los gerentes de múltiples empresas en el Silicon Valley: Google (Eric Schmidt, Larry Page, Sergey Brin, Dundar Pichai, Jonathan Rosenberg, Alan Eagle), Amazon (Jeff Bezos), Facebook (Sheryl Sandberg), Apple (Steve Jobs), Twitter (Jack Dorsey), entre muchos otros. Todos sus “alumnos” le atribuyen gran parte de su éxito a sus enseñanzas y consejos, por lo si sumamos la capitalización bursátil de todas estas empresas merece ampliamente el título del libro: más de 1,000,000,000,000 dólares (billón en español, trillion en inglés).</p>
 <p>Al leer el libro, no pude evitar acordarme de aquellos profesores y jefes que han marcado una gran diferencia en mi vida. Todos compartían las características atípicas que se mencionan en el libro como esenciales para un buen jefe: cercanía y autenticidad, retroalimentación honesta pero constructiva, creer en tu potencial y empujarte a abordar desafíos. Dicho así, suena trivial, son todas virtudes positivas y que buscamos desarrollar en nosotros como personas o como jefes. Pero la verdad es que ser jefe no es tan sencillo. Son más los momentos en los que no sabes cuál es la decisión correcta que aquellos en los que tienes alguna certeza. A menudo tienes que tomar decisiones que afectarán a tu equipo y a tus clientes. Personalmente, tiendo a establecer fronteras muy estrictas entre distintos ámbitos de mi vida, y así, por ejemplo, la gente del trabajo no conoce a mis amigos cercanos o familia más allá de mi esposa e hijos. Mis amigos de mi universidad de pregrado no se conocen con mis amigos de universidad de posgrado. Es un desafío constante vencer la tentación de no “compartimentalizar” los distintos aspectos de mi vida, y borrar fronteras que sólo existen en mi mente. Tratamos de no exponer nuestros miedos y vulnerabilidades, de no establecer conexiones personales fuera de lo profesional, porque creemos que nos permitirá tomar mejores decisiones, en frío, sin dejarse dominar por emociones. Como si la conexión y la empatía nos volvieran más débiles. Sin embargo, el libro y diversas investigaciones recientes muestran lo contrario. Un gran jefe se parece a un gran padre: entrega soporte emocional e intelectual, escucha y aconseja, pero también confía en tu potencial y te motiva para que lo alcances.</p>
@@ -710,6 +717,38 @@ document.addEventListener("click", function (e) {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

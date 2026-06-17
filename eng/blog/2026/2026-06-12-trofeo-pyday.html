@@ -9,7 +9,7 @@
 <meta name="author" content="sebastiandres">
 <meta name="dcterms.date" content="2026-06-12">
 
-<title>Usos no productivos de la IA – sebastiandres</title>
+<title>3d printing the PyDay 2026 speaker gift – sebastiandres</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -43,9 +43,12 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-580496dacbc81ff1c201807634f1d0aa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1126176dc1e1c8ea128a5c41afbd35af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-442c2dc775672f77f383292e288ce91d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/videojs/video.min.js"></script>
 <link href="../../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -152,6 +155,10 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <a class="nav-link" href="../../pages/writing.html"> 
 <span class="menu-text">Stories</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pages/art.html"> 
+<span class="menu-text">Art</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -194,7 +201,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Usos no productivos de la IA</h1>
+<h1 class="title">3d printing the PyDay 2026 speaker gift</h1>
   <div class="quarto-categories">
     <div class="quarto-category">impresión 3d</div>
   </div>
@@ -234,7 +241,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <p>The proof of concept helped me understand a lot of things.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./images/galvano-v1.jpg" class="img-fluid figure-img"></p>
+<p><a href="./images/galvano-v1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="First version of the trophy"><img src="./images/galvano-v1.jpg" class="img-fluid figure-img" alt="First version of the trophy"></a></p>
 <figcaption>First version of the trophy</figcaption>
 </figure>
 </div>
@@ -246,7 +253,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <p>The top part is printed as a single piece, which has supports that break elegantly to allow free rotation. By reducing the width of the pieces, the trophy looks more stylized, but it also looks fragile. The joint between the base and the rotating plate looks very weak.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./images/galvano-v2.jpg" class="img-fluid figure-img"></p>
+<p><a href="./images/galvano-v2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Second version of the trophy"><img src="./images/galvano-v2.jpg" class="img-fluid figure-img" alt="Second version of the trophy"></a></p>
 <figcaption>Second version of the trophy</figcaption>
 </figure>
 </div>
@@ -257,7 +264,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <p>The joint between the base and the rotating plate still seemed weak to me, so I added an extra piece that allowed a snap-fit joint to provide greater stability. I printed the trophies with black and “gold” filaments.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./images/galvano-v3.jpg" class="img-fluid figure-img"></p>
+<p><a href="./images/galvano-v3.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Final version of the trophy"><img src="./images/galvano-v3.jpg" class="img-fluid figure-img" alt="Final version of the trophy"></a></p>
 <figcaption>Final version of the trophy</figcaption>
 </figure>
 </div>
@@ -743,6 +750,38 @@ document.addEventListener("click", function (e) {
   </script>
 </div> <!-- /content -->
 <script>videojs(video_shortcode_videojs_video1);</script>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

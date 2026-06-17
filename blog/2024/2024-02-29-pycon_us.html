@@ -42,7 +42,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-580496dacbc81ff1c201807634f1d0aa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1126176dc1e1c8ea128a5c41afbd35af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-442c2dc775672f77f383292e288ce91d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -149,6 +152,10 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <a class="nav-link" href="../../pages/writing.html"> 
 <span class="menu-text">Cuentos</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pages/art.html"> 
+<span class="menu-text">Arte</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -218,7 +225,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 
 <p>Ya es oficial con mucho orgullo y alegría puedo contar que estaré presentando en la PyCon US Acá les comparto los enlaces de la <a href="https://us.pycon.org/2024/schedule/">programación</a> y del <a href="https://us.pycon.org/2024/schedule/presentation/19/">abstract de mi charla</a></p>
 <p>Tanto mi charla en inglés como en español tuvieron buenas evaluaciones y fueron aceptadas. Decidí presentar en inglés, porque ya he presentado sobre Data Storytelling en español (PyCon Chile 2023, Techton 2024), y porque creo que es un desafío más grande. Estoy muy agradecido de la PSF, porque además me proporcionaron financiamiento para realizar el viaje y la estadía.</p>
-<p><img src="./images/pycon_talk_wide.png" class="img-fluid"></p>
+<p><a href="./images/pycon_talk_wide.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="./images/pycon_talk_wide.png" class="img-fluid"></a></p>
 <p>El proceso de llegar a presentar en la Pycon US ha sido muy interesante, porque representa un hito importante en una búsqueda que llevo realizando desde hace algun tiempo sin saberlo. Todo partió cuando me atreví a ir a una PyCon por primera vez, y postular una charla, que terminó siendo aceptada. La charla fue “¿Cómo hacer encuestas interactivas en Jupyter + RISE?”, en la Pycon Colombia 2020. Luego de esa primera experiencia, participé en varios eventos y comencé a hablar más frecuentemente:</p>
 <ul>
 <li>“Coding as a Service: Librería pypsdier, aprendizajes y metodología”, en la PyCon Argentina 2020</li>
@@ -709,6 +716,38 @@ document.addEventListener("click", function (e) {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

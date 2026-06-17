@@ -43,7 +43,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-580496dacbc81ff1c201807634f1d0aa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1126176dc1e1c8ea128a5c41afbd35af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-442c2dc775672f77f383292e288ce91d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -150,6 +153,10 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <a class="nav-link" href="../../pages/writing.html"> 
 <span class="menu-text">Cuentos</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pages/art.html"> 
+<span class="menu-text">Arte</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -227,7 +234,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <p>Segundo que todo: <strong>en equipo siempre es mejor</strong>. Tuve la fortuna de ser acompañado en la carrera por Julio, un amigo del trabajo. Estoy seguro que no habría podido terminar la carrera sin la compañía y el aliento de Julio. Me sorprendió que teníamos distintas fortalezas y debilidades, y que a cada uno le costaba más o menos distintas pruebas, por lo que nos complementábamos bien en darnos consejo y apoyarnos. Una lección que reaprendemos constantemente: las diferencias nos hacen más fuertes como equipo.</p>
 <p>Otro aspecto: <strong>bendita ignorancia</strong>. Al inicio, cuando corrimos por un terreno con barro y agua, pensé en lo incómodo que sería el resto de la carrera con las zapatillas mojadas. No sabía que minutos más adelante tendría que sumergirme completamente en una fosa con agua para pasar por debajo de un obstáculo. Esa fue la tónica del evento: cada obstáculo era más dificil o exigente que el anterior, en una progresión que no parecía tener fin. De haber sabido todo lo que tendría que realizar, no sé si me hubiera inscrito en la carrera o si hubiera podido terminarla; hubiera sido demasiado abrumador. Enfrentar obstáculo a obstáculo, paso a paso, es una estrategia que te permite conquistar cualquier desafío.</p>
 <p>Por último: <strong>fortaleza mental sobre física</strong> Me gustó ver que en la carrera habían todo tipo de cuerpos: más o menos tonificados, más delgados y más gruesos, hombres y mujeres, todos unidos por un deseo de superación. La carrera se corría más en la cabeza que en los pies: Los obstáculos estaban diseñados para probar tanto tu fortaleza física como mental. Y creo que más allá de la medalla, me llevo aprenizajes sobre mi percepción de mi mismo, de mis límites auto-impuestos, y de como superarlos.</p>
-<p><img src="../_images/2021-10-23-spartan-race/2021-10-23-spartan-race.jpeg" title="Spartan Race" class="img-fluid"></p>
+<p><a href="../_images/2021-10-23-spartan-race/2021-10-23-spartan-race.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../_images/2021-10-23-spartan-race/2021-10-23-spartan-race.jpeg" title="Spartan Race" class="img-fluid"></a></p>
 
 
 
@@ -707,6 +714,38 @@ document.addEventListener("click", function (e) {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

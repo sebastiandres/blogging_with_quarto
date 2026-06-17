@@ -44,7 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-580496dacbc81ff1c201807634f1d0aa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1126176dc1e1c8ea128a5c41afbd35af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-442c2dc775672f77f383292e288ce91d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -151,6 +154,10 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <a class="nav-link" href="../../pages/writing.html"> 
 <span class="menu-text">Stories</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pages/art.html"> 
+<span class="menu-text">Art</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -223,7 +230,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 
 
 <p>With as much pride as bashfulness, I found out that my name appeared in the contributions list of <a href="https://scikit-learn.org/stable/whats_new/v1.0.html#code-and-documentation-contributors">scikit learn (sklearn)</a>:</p>
-<p><img src="../_images/2021-09-28-post-scipy-contributors/contributors.png" class="img-fluid"></p>
+<p><a href="../_images/2021-09-28-post-scipy-contributors/contributors.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../_images/2021-09-28-post-scipy-contributors/contributors.png" class="img-fluid"></a></p>
 <p>In this regard, my reflection is that it is never too late to learn. I had been working for a long time on <a href="https://sebastiandres.github.io/blog/proyectos/">individual projects</a>, where contributions are simpler: you can commit directly to main, you know where each part of the project is and you set the pace. But I felt that not having contributed to an open source project was a great debt, for constantly using multiple open source libraries and not duly giving back for everything they give us. The <a href="https://sebastiandres.github.io/blog/sprint-data-umbrella/">Data Umbrella sprint</a> was a good push to learn in a guided and easy way, and with my sprint partner we made 2 pull requests to fix the library’s documentation. I feel very privileged that my name is there, right at that important change from version 0.24 to 1.0, just by luck in one of sklearn’s milestones.</p>
 <p>One last thought: fixing documentation, even if they are superficial and cosmetic things, takes time. Maybe it is not a revolutionary contribution, but someone has to do it and it is an excellent way to contribute, lose your shyness and learn. Making code contributions must be even more intense, but for that same reason, also more satisfying. We will get to that, I hope during 2021.</p>
 
@@ -705,6 +712,38 @@ document.addEventListener("click", function (e) {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

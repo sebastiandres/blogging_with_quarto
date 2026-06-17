@@ -44,7 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-580496dacbc81ff1c201807634f1d0aa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1126176dc1e1c8ea128a5c41afbd35af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-442c2dc775672f77f383292e288ce91d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -151,6 +154,10 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <a class="nav-link" href="../../pages/writing.html"> 
 <span class="menu-text">Stories</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pages/art.html"> 
+<span class="menu-text">Art</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -222,7 +229,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 </header>
 
 
-<p><img src="../_images/2021-03-28-trillion-dollar-coach/bielsa.jpeg" title="A peculiar coach" class="img-fluid"></p>
+<p><a href="../_images/2021-03-28-trillion-dollar-coach/bielsa.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../_images/2021-03-28-trillion-dollar-coach/bielsa.jpeg" title="A peculiar coach" class="img-fluid"></a></p>
 <p>Trillion Dollar Coach, translated into Spanish as “El coach de Silicon Valley,” is a book written by Eric Schmidt, Jonathan Rosenberg and Alan Eagle, where they recount the lessons and advice they received from Bill Campbell, a coach with a personal style that broke molds and conventions.</p>
 <p>Bill Campbell (1940–2016) was an American football coach in his youth, later a company CEO, and finally a coach for the executives of multiple companies in Silicon Valley: Google (Eric Schmidt, Larry Page, Sergey Brin, Dundar Pichai, Jonathan Rosenberg, Alan Eagle), Amazon (Jeff Bezos), Facebook (Sheryl Sandberg), Apple (Steve Jobs), Twitter (Jack Dorsey), among many others. All his “students” attribute a large part of their success to his teachings and advice, so if we add up the market capitalization of all these companies it amply deserves the title of the book: more than 1,000,000,000,000 dollars (billón in Spanish, trillion in English).</p>
 <p>When reading the book, I could not help remembering those teachers and bosses who have made a great difference in my life. They all shared the atypical characteristics mentioned in the book as essential for a good boss: closeness and authenticity, honest but constructive feedback, believing in your potential and pushing you to take on challenges. Put that way, it sounds trivial, they are all positive virtues that we seek to develop in ourselves as people or as bosses. But the truth is that being a boss is not so simple. There are more moments in which you do not know what the right decision is than those in which you have some certainty. You often have to make decisions that will affect your team and your customers. Personally, I tend to establish very strict boundaries between different areas of my life, and so, for example, the people from work do not know my close friends or family beyond my wife and children. My friends from undergraduate university do not know my friends from graduate university. It is a constant challenge to overcome the temptation not to “compartmentalize” the different aspects of my life, and to erase boundaries that only exist in my mind. We try not to expose our fears and vulnerabilities, not to establish personal connections beyond the professional, because we believe it will allow us to make better decisions, coldly, without letting ourselves be dominated by emotions. As if connection and empathy made us weaker. However, the book and various recent research show the opposite. A great boss is like a great parent: they provide emotional and intellectual support, they listen and advise, but they also trust your potential and motivate you to reach it.</p>
@@ -711,6 +718,38 @@ document.addEventListener("click", function (e) {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

@@ -43,7 +43,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-580496dacbc81ff1c201807634f1d0aa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1126176dc1e1c8ea128a5c41afbd35af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-442c2dc775672f77f383292e288ce91d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -150,6 +153,10 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <a class="nav-link" href="../../pages/writing.html"> 
 <span class="menu-text">Cuentos</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pages/art.html"> 
+<span class="menu-text">Arte</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -222,7 +229,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 
 
 <p>Una de las premisas del Data Storytelling es partir por el final. Eso significa definir de manera precisa el final que quieres en tu presentación, y asegurar que está alineado con tus objetivos y tu audiencia. Sólo cuando has definido el final de manera crítica y segura, puedes ir construyendo hacia atrás las slides que son estrictamente necesarias para sostener ese final.</p>
-<p><img src="./images/piramide.png" title="Pirámide" class="img-fluid"></p>
+<p><a href="./images/piramide.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="./images/piramide.png" title="Pirámide" class="img-fluid"></a></p>
 <p>Esta aproximación suele ser contraintuitiva, y tendemos a no aplicarla. Puede incluso descabellado, como construir una pirámide desde el vértice superior hacia abajo. Sin embargo, es la aproximación más razonable para el diseño. Si partimos diseñando desde la base de la pirámide al tuntún, nunca sabremos que altura tendrá la pirámide. Si sabemos a que altura <strong>queremos</strong> que esté el vértice de la pirámide, podemos calcular todas las otras dimensiones y construir la pirámide adecuada.</p>
 <p>Al enfrentar una semana de trabajo o un nuevo proyecto también podemos utilizar esta filosofía. ¿Qué es lo que queremos que ocurra al final de la semana o proyecto? ¿Podemos imaginar con detalle el final? Desde ahí, podemos pensar cuales son las tareas y actividades que tenemos que realizar para llegar a ese final preciso.</p>
 <p>Tener definido el final deseado ayuda muchísimo porque permite priorizar y definir el criterio de éxito. Ayuda a definir tus objetivos, y ser conciente de cómo obtenerlos, en lugar de dar tumbos y llenarse de actividades que no contribuyen al final deseado.</p>
@@ -705,6 +712,38 @@ document.addEventListener("click", function (e) {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

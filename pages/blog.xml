@@ -20,7 +20,7 @@
 
 
 
-<p>Hay muchísimos tutoriales, videos y podcasts sobre cómo usar la IA para ser más productivo. Me parece bien, pero la verdad es que los usos que más me han sorprendido no tienen nada que ver con productividad. Son un poco más contra-intuitivos, y son justamente esos los que quiero anotar acá, sobre todo para mi yo futuro.</p>
+<p>Hay muchísimos tutoriales, videos y podcasts sobre cómo usar la IA para ser más productivo. Me parece bien, pero la verdad es que los usos que más me han sorprendido no tienen que ver con productividad. Son un poco más contra-intuitivos, y son justamente esos los que quiero anotar acá, sobre todo para mi yo futuro.</p>
 <p>Una cosa antes de empezar: comparto los prompts que uso, pero el truco no está en copiarlos tal cual. Está en darle a la IA <strong>contexto, un rol claro, y permitirle hacerte preguntas</strong> antes de responder. Esa última parte es la que más cambia los resultados.</p>
 <section id="recomendaciones" class="level3">
 <h3 class="anchored" data-anchor-id="recomendaciones">Recomendaciones</h3>
@@ -97,7 +97,7 @@ Léelos desde la perspectiva de la otra persona y dime: dónde está débil mi a
   <pubDate>Tue, 16 Jun 2026 04:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>Usos no productivos de la IA</title>
+  <title>Imprimiendo en 3d el galvano de PyDay 2026</title>
   <dc:creator>sebastiandres </dc:creator>
   <link>https://sebastiandres.xyz/blog/2026/2026-06-12-trofeo-pyday.html</link>
   <description><![CDATA[ 
@@ -113,7 +113,7 @@ Léelos desde la perspectiva de la otra persona y dime: dónde está débil mi a
 <p>La prueba de concepto me permitió entender muchas cosas.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://sebastiandres.xyz/blog/2026/images/galvano-v1.jpg" class="img-fluid figure-img"></p>
+<p><a href="./images/galvano-v1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Primera versión del galvano"><img src="https://sebastiandres.xyz/blog/2026/images/galvano-v1.jpg" class="img-fluid figure-img" alt="Primera versión del galvano"></a></p>
 <figcaption>Primera versión del galvano</figcaption>
 </figure>
 </div>
@@ -125,7 +125,7 @@ Léelos desde la perspectiva de la otra persona y dime: dónde está débil mi a
 <p>La parte superior se imprime en una única pieza, que tiene soportes que se rompen elegantemente permitiendo la rotación libre. Al reducir el ancho de las piezas se logra que el galvano se vea más estilizado, pero también se ve frágil. La unión de la base y la placa giratoria se ve muy débil.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://sebastiandres.xyz/blog/2026/images/galvano-v2.jpg" class="img-fluid figure-img"></p>
+<p><a href="./images/galvano-v2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Segunda versión del galvano"><img src="https://sebastiandres.xyz/blog/2026/images/galvano-v2.jpg" class="img-fluid figure-img" alt="Segunda versión del galvano"></a></p>
 <figcaption>Segunda versión del galvano</figcaption>
 </figure>
 </div>
@@ -136,7 +136,7 @@ Léelos desde la perspectiva de la otra persona y dime: dónde está débil mi a
 <p>La unión entre la base y la placa giratoria me seguía pareciendo débil, así que agregué una pieza adicional que permitiera una unión de encaje que diera mayor estabilidad. Imprimí los galvanos con filamentos negro y “oro”.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://sebastiandres.xyz/blog/2026/images/galvano-v3.jpg" class="img-fluid figure-img"></p>
+<p><a href="./images/galvano-v3.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Versión final del galvano"><img src="https://sebastiandres.xyz/blog/2026/images/galvano-v3.jpg" class="img-fluid figure-img" alt="Versión final del galvano"></a></p>
 <figcaption>Versión final del galvano</figcaption>
 </figure>
 </div>
@@ -182,15 +182,15 @@ Léelos desde la perspectiva de la otra persona y dime: dónde está débil mi a
 
 
 <p>El sábado 24 de agosto viajé temprano a Santiago a participar como mentor en la Hackatón de OpenAI 2024 en Chile. Me emocionaba mucho que me hubieran dado esa oportunidad, pues era un evento bastante exclusivo (sólo se podía participar por invitación) y que me interesaba muchísimo. No puedo sino agradecer esa oportunidad que se abrió por participar de Python Chile.</p>
-<p><img src="https://sebastiandres.xyz/blog/2024/images/2024-08-24-hackathon/foto0.png" title="© ?" class="img-fluid"></p>
+<p><a href="./images/2024-08-24-hackathon/foto0.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="https://sebastiandres.xyz/blog/2024/images/2024-08-24-hackathon/foto0.png" title="© ?" class="img-fluid"></a></p>
 <p>A las 9 am estaba ingresando al edificio de la Cámara Chilena de la Construcción - un imponente edificio. Todo el evento ocurrió en el subterráneo: al bajar las escaleras mecánicas estaba el mesón de acreditación, y cerca de ahí, el comedor y baños. Avanzando por el pasillo, la sala de coordinación, la gran sala de la hackathon (que era como 5 salas pequeñas unidas), y el auditorio del evento donde ocurrieron las charlas.</p>
 <p>Había participado en otra hackathon antes, pero no en rol de mentor, por lo que al principio estaba medio perdido sobre cual era mi rol. A las 10:00 reunieron a los mentores y nos comentaron sobre cual sería la dinámica, responsabilidades y consejos. Cada uno podía aportar con sus conocimientos específicos, pero lo más importante era aclarar dudas logísticas y asegurarse que los equipos mantuvieran el foco y pudieran presentar una buena demo al día siguiente. Durante la mañana y tarde estuve paseando entre los distintos grupos, revisando avances y haciendo sugerencias. Fue entretenido saludar a varias personas que conocía sólo de interacciones virtuales, y hacer muchos nuevos conocidos. Los otros mentores eran todos muy bacanes en lo que hacían. ¡Conocí muchísima gente!</p>
 <p>Creo que la mayor lección que me llevo del evento es la siguiente: ya nadie sabe todo. Los conocimientos de cada uno son distintos, y no alcanzan para hacer un buen producto. Nos necesitamos los unos a los otros. Necesitamos colaborar para poder hacer cosas distintas y de impacto.</p>
 <p>Como dice el dicho: <strong>viaja solo si quieres ir rápido. Viaja acompañado si quieres llegar lejos.</strong></p>
-<p><img src="https://sebastiandres.xyz/blog/2024/images/2024-08-24-hackathon/foto1.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></p>
-<p><img src="https://sebastiandres.xyz/blog/2024/images/2024-08-24-hackathon/foto2.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></p>
-<p><img src="https://sebastiandres.xyz/blog/2024/images/2024-08-24-hackathon/foto3.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></p>
-<p><img src="https://sebastiandres.xyz/blog/2024/images/2024-08-24-hackathon/foto4.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></p>
+<p><a href="./images/2024-08-24-hackathon/foto1.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="https://sebastiandres.xyz/blog/2024/images/2024-08-24-hackathon/foto1.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></a></p>
+<p><a href="./images/2024-08-24-hackathon/foto2.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="https://sebastiandres.xyz/blog/2024/images/2024-08-24-hackathon/foto2.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></a></p>
+<p><a href="./images/2024-08-24-hackathon/foto3.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="https://sebastiandres.xyz/blog/2024/images/2024-08-24-hackathon/foto3.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></a></p>
+<p><a href="./images/2024-08-24-hackathon/foto4.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="https://sebastiandres.xyz/blog/2024/images/2024-08-24-hackathon/foto4.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></a></p>
 
 
 
@@ -213,8 +213,8 @@ Léelos desde la perspectiva de la otra persona y dime: dónde está débil mi a
 <p>El viernes 23 de agosto por fin realizamos la <a href="https://pyschool.cl/">PySchool</a>. Habíamos programado este evento para unas semanas antes, pero torrenciales lluvias nos obligaron a suspender.</p>
 <p>Durante una mañana de talleres tratamos de dar a conocer Python como lenguaje de programación y sus aplicaciones de una manera sencilla y sin conocimientos previos requeridos. Ésta fue la primera vez que realizábamos el evento, así que sabíamos que había harto por aprender y mejorar. Aún así, el evento fue un éxito y tuvimos muy buenos comentarios de los estudiantes.</p>
 <p>Mi rol en el evento fue de gestor y coordinador: diseñar la estructura del evento, coordinar con DUOC UC Valparaíso las fechas y las actividades, armar la primera versión de la página, buscar talleristas, y ese tipo de cosas. Me hubiera gustado dictar uno de los talleres, pero quería darle espacio y protagonismo a nuestros talleristas (Yileanne, Valeska, Lilina, Francisco, Cristián y Bastián) para que ellos se empoderaran del evento. Francisco me ayudó enormemente a generar el material del evento, que funcionó perfecto ese día. Que los estudiantes tengan que acceder a una página estática, siempre disponible en línea (y sin publicidad, como comentó uno) fue fácil y rápido - no se requirieron usuarios, credenciales ni nada. Sólo un navegador. La combinación de quarto + pyodide la verdad es que funciona muy muy bien.</p>
-<p><img src="https://sebastiandres.xyz/blog/2024/images/2024-08-23-pyschool/foto1.jpg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></p>
-<p><img src="https://sebastiandres.xyz/blog/2024/images/2024-08-23-pyschool/foto1.jpg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></p>
+<p><a href="./images/2024-08-23-pyschool/foto1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="https://sebastiandres.xyz/blog/2024/images/2024-08-23-pyschool/foto1.jpg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></a></p>
+<p><a href="./images/2024-08-23-pyschool/foto1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="https://sebastiandres.xyz/blog/2024/images/2024-08-23-pyschool/foto1.jpg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></a></p>
 
 
 
@@ -238,16 +238,16 @@ Léelos desde la perspectiva de la otra persona y dime: dónde está débil mi a
 <section id="viernes" class="level3">
 <h3 class="anchored" data-anchor-id="viernes">Viernes:</h3>
 <p>El primer día, caminando por el centro de convenciones, me sorprendió del tamaño del evento. El espacio principal es gigantesco. Y los salones de presentación también, son verdaderamente enormes. Mi hotel -carísimo pero auspiciado por la PSF- tenía conexión directa con el centro de eventos lo que era muy cómodo.</p>
-<p><img src="https://sebastiandres.xyz/blog/2024/images/pyconus/pycon-us_miercoles_1.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></p>
+<p><a href="./images/pyconus/pycon-us_miercoles_1.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="https://sebastiandres.xyz/blog/2024/images/pyconus/pycon-us_miercoles_1.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></a></p>
 <p>En la foto, se ve el espacio principal del piso 2 que tenía posters, booths de empresas, startups y comunidades, y el servicio de alimentación. En el mismo piso estaba el salón principal donde se hacían las keynotes y las lightining talk. En el piso 3, estaban los salones de las talks y de las charlas. Sí, hay una diferencia. Habían 4 salones para talks (charlas en inglés) y una sala para charlas (charlas en español). Además, en el piso 3 había una green room, una sala para que los speakers fueran a probar sus conexiones y practicar. Como speaker, tenía derecho a pasar ahí cuando quisiera, lo que era práctico para sacar café cuando se había agotado en otros lados.</p>
 <p>Durante la mañana del viernes hice mi registro en el evento, y me pasaron el badge con mi nombre, stickers y polera. La polera me quedó pequeñísima (L fitted &lt;&lt; regular M), pero afortunadamente pude cambiarla el domingo. Ya durante el desayuno, la cosa ya mostraba que no sería un evento cualquiera: a la distancia vi a Guido Van Rossum, el mismísimo creador de Python. Sí, también es humano. Increíble. Resistí el impulso de sacar una foto porque soy orgulloso (y ya me habían advertido de no paparazearlo).</p>
-<p><img src="https://sebastiandres.xyz/blog/2024/images/pyconus/pycon-us_miercoles_2.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></p>
-<p><img src="https://sebastiandres.xyz/blog/2024/images/pyconus/pycon-us_miercoles_3.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></p>
+<p><a href="./images/pyconus/pycon-us_miercoles_2.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="https://sebastiandres.xyz/blog/2024/images/pyconus/pycon-us_miercoles_2.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></a></p>
+<p><a href="./images/pyconus/pycon-us_miercoles_3.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="https://sebastiandres.xyz/blog/2024/images/pyconus/pycon-us_miercoles_3.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></a></p>
 <p>Durante la mañana me junté con Denny y Cristián, con quienes he conversado y colaborado en línea por Python Chile durante años, pero que nunca nos habíamos visto en persona. Y fue como si ya nos conociéramos y nos hubiéramos visto siempre. Estuve en el stand (booth) de Python en español, conociendo otros pythonistas, entregando stickers y recibiendo stickers. También fui a la inauguración de la Pycon, y a la primera Keynote.</p>
-<p><img src="https://sebastiandres.xyz/blog/2024/images/pyconus/pycon-us_miercoles_4.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></p>
-<p><img src="https://sebastiandres.xyz/blog/2024/images/pyconus/pycon-us_miercoles_5.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></p>
+<p><a href="./images/pyconus/pycon-us_miercoles_4.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="https://sebastiandres.xyz/blog/2024/images/pyconus/pycon-us_miercoles_4.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></a></p>
+<p><a href="./images/pyconus/pycon-us_miercoles_5.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="https://sebastiandres.xyz/blog/2024/images/pyconus/pycon-us_miercoles_5.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></a></p>
 <p>También pasé por el stand de Streamlit, y aproveché de saludar Chanin, Tony, Cristine, Ted y Krista, a quienes también solo conocía virtualmente. Me sorprendió el cariño con el que me saludaron y me recibieron. Me hubiera gustado hablar más con ellos y expresarles también mi agradecimiento, pero creo que la mezcla de cansancio, falta de sueño y estado de permanente de asombro limitaba mi capacidad de expresarme en inglés. Recién el sábado, después de charla, logré relajarme y disfrutar realmente.</p>
-<p><img src="https://sebastiandres.xyz/blog/2024/images/pyconus/pycon-us_miercoles_6.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></p>
+<p><a href="./images/pyconus/pycon-us_miercoles_6.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="https://sebastiandres.xyz/blog/2024/images/pyconus/pycon-us_miercoles_6.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></a></p>
 <p>Chanin - Data Prof - me hizo una <a href="https://www.youtube.com/shorts/eIaaZ0xVEtU">entrevista de la cual rescató algunos momentos coherentes</a>.</p>
 <p>Después de la keynote, me repartí entre pasearme entre los stands, recogiendo poleras y stickers, y ver algunas charlas. Había un stand que tenía unos puzzles a resolver y que regalaban unas poleras que me gustaban, pero que estaba siempre con mucha gente, así decidí pasar al día siguiente.</p>
 <p>Durante las lightning talks, tipo 6 pm, me di cuenta que estaba agotado mental y emocionalmente. Decidí salir a caminar para relajarme y conocer un poco los alrededores, y comprar algo para la cena. Me di cuenta que necesitaba descansar para poder hacer una buena presentación al día siguiente. Finalmente terminé cenando en el hotel, a pesar de haber caminado los alrededores buscando una mejor alternativa (3 mini-hamburguesas). Ya de vuelta en la habitación, estuve ensayando y trabajando en los últimos cambios en la presentación entre las 8 y las 11 pm. Mis speaker notes tenían cada palabra que tenía que decir e incluso el momento de hacer cada click/next en la presentación. Me derrumbé en la cama y dormí profundamente.</p>
@@ -259,19 +259,19 @@ Léelos desde la perspectiva de la otra persona y dime: dónde está débil mi a
 <p>La recepción ha sido tremendamente positiva. Creo que Storytelling realmente conecta con la gente porque es un concepto muy intuitivo y poderoso. Todos queremos mejorar la forma en que comunicamos nuestras ideas. Escuchar a la gente decir: “Gracias por señalarme la biblioteca X, me encanta” o “Quería seguir aprendiendo, así que compré el libro Y” me hace muy feliz.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://sebastiandres.xyz/blog/2024/images/pycon_1.jpg" title="© 2024 Ted Ricks (CC BY-SA)" class="img-fluid figure-img"></p>
+<p><a href="./images/pycon_1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="© 2024 Ted Ricks (CC BY-SA)"><img src="https://sebastiandres.xyz/blog/2024/images/pycon_1.jpg" title="© 2024 Ted Ricks (CC BY-SA)" class="img-fluid figure-img" alt="© 2024 Ted Ricks (CC BY-SA)"></a></p>
 <figcaption>© 2024 Ted Ricks (CC BY-SA)</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://sebastiandres.xyz/blog/2024/images/pycon_2.jpeg" title="© 2024 Paolo Melchiorre (CC BY-SA)" class="img-fluid figure-img"></p>
+<p><a href="./images/pycon_2.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="© 2024 Paolo Melchiorre (CC BY-SA)"><img src="https://sebastiandres.xyz/blog/2024/images/pycon_2.jpeg" title="© 2024 Paolo Melchiorre (CC BY-SA)" class="img-fluid figure-img" alt="© 2024 Paolo Melchiorre (CC BY-SA)"></a></p>
 <figcaption>© 2024 Paolo Melchiorre (CC BY-SA)</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://sebastiandres.xyz/blog/2024/images/pycon_3.jpeg" title="© 2024 Chanin &quot;Data Prof&quot; (CC BY-SA)" class="img-fluid figure-img"></p>
+<p><a href="./images/pycon_3.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="© 2024 Chanin “Data Prof” (CC BY-SA)"><img src="https://sebastiandres.xyz/blog/2024/images/pycon_3.jpeg" title="© 2024 Chanin &quot;Data Prof&quot; (CC BY-SA)" class="img-fluid figure-img" alt="© 2024 Chanin “Data Prof” (CC BY-SA)"></a></p>
 <figcaption>© 2024 Chanin “Data Prof” (CC BY-SA)</figcaption>
 </figure>
 </div>
@@ -293,14 +293,14 @@ Léelos desde la perspectiva de la otra persona y dime: dónde está débil mi a
 <p>Me levanté temprano porque me había comprometido a presentar una slide de PyDay Chile durante las lighting talk a las 8 am. Me di el gusto de partir diciendo “¿Que tal, festival?” que seguramente solo cuarentones chilenos entenderán como referencia.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://sebastiandres.xyz/blog/2024/images/pyconus/pyconus_friday_pyday-chile.jpg" title="© 2024 Cristián Maureira (CC BY-SA)" class="img-fluid figure-img"></p>
+<p><a href="./images/pyconus/pyconus_friday_pyday-chile.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="© 2024 Cristián Maureira (CC BY-SA)"><img src="https://sebastiandres.xyz/blog/2024/images/pyconus/pyconus_friday_pyday-chile.jpg" title="© 2024 Cristián Maureira (CC BY-SA)" class="img-fluid figure-img" alt="© 2024 Cristián Maureira (CC BY-SA)"></a></p>
 <figcaption>© 2024 Cristián Maureira (CC BY-SA)</figcaption>
 </figure>
 </div>
 <p>Ya el domingo se veía menos gente en el evento, muchas personas circulaban con su maletas. Ya se habían retirado los stands de las empresas, startups y comunidades, y la atención se concentraba en la feria de trabajo y los posters. Me pareció destable el trabajo sobre “algorithmic embroidery” por lo artístico y delicado del trabajo. Que increíble que puedan hacerse cosas así, vinculando lo etéreo de un lenguaje de programación con lo concreto de una tela e hilo.</p>
-<p><img src="https://sebastiandres.xyz/blog/2024/images/pyconus/pycon-us_viernes_1.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></p>
+<p><a href="./images/pyconus/pycon-us_viernes_1.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img src="https://sebastiandres.xyz/blog/2024/images/pyconus/pycon-us_viernes_1.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></a></p>
 <p>Durante la mañana vi algunas charlas, y por la tarde organicé un Open Space llamado “Data Storytelling 2: Revenge of the Audience” que había propuesto. No conocía el formato de Open Space, y es super potente. Además de las charlas ya organizadas, se ponen a disposición de los asistentes unas 10 salas de tamaño diverso (60 a 100 personas), y dependiendo del ánimo y del interés, se van proponiendo “espacios de colaboración” que pueden tener cualquier forma o intención.</p>
-<p><img src="https://sebastiandres.xyz/blog/2024/images/pyconus/pycon-us_viernes_2.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></p>
+<p><a href="./images/pyconus/pycon-us_viernes_2.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img src="https://sebastiandres.xyz/blog/2024/images/pyconus/pycon-us_viernes_2.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></a></p>
 <p>Al Open Space de Data Storytelling llegaron muchas más personas de las que había pensado, creo que fuimos como unas 15 personas. Hablamos de distintos temas:</p>
 <ul>
 <li>Librerías preferidas de visualización de datos.</li>
@@ -311,12 +311,12 @@ Léelos desde la perspectiva de la otra persona y dime: dónde está débil mi a
 </ul>
 <p>Una de las preguntas más interesante fue “¿Que pasará cuando el futuro cuando la IA generativa pueda hacer una película, comic o libro a partir de un prompt?” Esto significará que como sociedad no tengamos las mismas referencias, y que quizás no sean transferibles.</p>
 <p>También nos sacamos fotos de la comunidad Python en español</p>
-<p><img src="https://sebastiandres.xyz/blog/2024/images/pyconus/python-en-español.jpeg" title="?" class="img-fluid"></p>
+<p><a href="./images/pyconus/python-en-español.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img src="https://sebastiandres.xyz/blog/2024/images/pyconus/python-en-español.jpeg" title="?" class="img-fluid"></a></p>
 <p>Con Armando fuimos a cenar al Primanti Bros, una sanguchería en Pittsburg que se supone que es extraordinaria pero que palidece en comparación con los sandwichs de Chile, Perú o Argentina.</p>
-<p><img src="https://sebastiandres.xyz/blog/2024/images/pyconus/primanti.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></p>
+<p><a href="./images/pyconus/primanti.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img src="https://sebastiandres.xyz/blog/2024/images/pyconus/primanti.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></a></p>
 <p>Después nos reunimos con el resto de los pythonistas en una cervecería muy cercana. Ahí conversamos, brindamos hasta que se rompieron vasos, y se regalaron los últimos stickers, peluches y poleras. Un pythonista miraba a lo lejos con cara de “yo también quiero un sticker” así que lo invité a acercarse y tomó algunos stickers para su hija, y nos pusimos a conversar. Él era norteamericano pero hablaba japonés y era muy amigo del grupo de Python Japón, a quienes me presentó, y terminó comprándome unas cervezas. ¡2 stickers por 2 cervezas, es definitivamente el mejor trato que he hecho en la vida! Jajajaja. Me sorprende lo fácil que fue conocer gente y conversar de temas técnicos, cuando normalmente me cuesta muchísimo más hablar con desconocidos o hacer networking.</p>
 <p>Y así, llegó el momento de preparar las maletas. Adorné mi maleta con stickers de numfocus, y salí al aeropuerto pensando en que era cierto, que lo había cumplido. Mi sueño de estar en una PyCon US y presentar una charla, en inglés. Que cuando uno piensa en grande y trabaja desde y para una comunidad, se pueden lograr cosas increíbles. Y que he sido muy afortunado de poder llegar hasta aquí, y que eso también significa una enorme responsabilidad para apoyar a que otros puedan atreverse a venir.</p>
-<p><img src="https://sebastiandres.xyz/blog/2024/images/pyconus/pycon-us_viernes_3.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></p>
+<p><a href="./images/pyconus/pycon-us_viernes_3.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img src="https://sebastiandres.xyz/blog/2024/images/pyconus/pycon-us_viernes_3.jpeg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></a></p>
 
 
 </section>
@@ -342,19 +342,19 @@ Léelos desde la perspectiva de la otra persona y dime: dónde está débil mi a
 <p>También estoy desarrollando un template de contenido y trucos en quarto: <a href="https://github.com/sebastiandres/quarto_slides_template" class="uri">https://github.com/sebastiandres/quarto_slides_template</a></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://sebastiandres.xyz/blog/2024/images/pycon_1.jpg" title="© 2024 Ted Ricks (CC BY-SA)" class="img-fluid figure-img"></p>
+<p><a href="./images/pycon_1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="© 2024 Ted Ricks (CC BY-SA)"><img src="https://sebastiandres.xyz/blog/2024/images/pycon_1.jpg" title="© 2024 Ted Ricks (CC BY-SA)" class="img-fluid figure-img" alt="© 2024 Ted Ricks (CC BY-SA)"></a></p>
 <figcaption>© 2024 Ted Ricks (CC BY-SA)</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://sebastiandres.xyz/blog/2024/images/pycon_2.jpeg" title="© 2024 Paolo Melchiorre (CC BY-SA)" class="img-fluid figure-img"></p>
+<p><a href="./images/pycon_2.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="© 2024 Paolo Melchiorre (CC BY-SA)"><img src="https://sebastiandres.xyz/blog/2024/images/pycon_2.jpeg" title="© 2024 Paolo Melchiorre (CC BY-SA)" class="img-fluid figure-img" alt="© 2024 Paolo Melchiorre (CC BY-SA)"></a></p>
 <figcaption>© 2024 Paolo Melchiorre (CC BY-SA)</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://sebastiandres.xyz/blog/2024/images/pycon_3.jpeg" title="© 2024 Chanin &quot;Data Prof&quot; (CC BY-SA)" class="img-fluid figure-img"></p>
+<p><a href="./images/pycon_3.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="© 2024 Chanin “Data Prof” (CC BY-SA)"><img src="https://sebastiandres.xyz/blog/2024/images/pycon_3.jpeg" title="© 2024 Chanin &quot;Data Prof&quot; (CC BY-SA)" class="img-fluid figure-img" alt="© 2024 Chanin “Data Prof” (CC BY-SA)"></a></p>
 <figcaption>© 2024 Chanin “Data Prof” (CC BY-SA)</figcaption>
 </figure>
 </div>
@@ -378,7 +378,7 @@ Léelos desde la perspectiva de la otra persona y dime: dónde está débil mi a
 
 
 <p>Una de las premisas del Data Storytelling es partir por el final. Eso significa definir de manera precisa el final que quieres en tu presentación, y asegurar que está alineado con tus objetivos y tu audiencia. Sólo cuando has definido el final de manera crítica y segura, puedes ir construyendo hacia atrás las slides que son estrictamente necesarias para sostener ese final.</p>
-<p><img src="https://sebastiandres.xyz/blog/2024/images/piramide.png" title="Pirámide" class="img-fluid"></p>
+<p><a href="./images/piramide.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="https://sebastiandres.xyz/blog/2024/images/piramide.png" title="Pirámide" class="img-fluid"></a></p>
 <p>Esta aproximación suele ser contraintuitiva, y tendemos a no aplicarla. Puede incluso descabellado, como construir una pirámide desde el vértice superior hacia abajo. Sin embargo, es la aproximación más razonable para el diseño. Si partimos diseñando desde la base de la pirámide al tuntún, nunca sabremos que altura tendrá la pirámide. Si sabemos a que altura <strong>queremos</strong> que esté el vértice de la pirámide, podemos calcular todas las otras dimensiones y construir la pirámide adecuada.</p>
 <p>Al enfrentar una semana de trabajo o un nuevo proyecto también podemos utilizar esta filosofía. ¿Qué es lo que queremos que ocurra al final de la semana o proyecto? ¿Podemos imaginar con detalle el final? Desde ahí, podemos pensar cuales son las tareas y actividades que tenemos que realizar para llegar a ese final preciso.</p>
 <p>Tener definido el final deseado ayuda muchísimo porque permite priorizar y definir el criterio de éxito. Ayuda a definir tus objetivos, y ser conciente de cómo obtenerlos, en lugar de dar tumbos y llenarse de actividades que no contribuyen al final deseado.</p>
@@ -476,7 +476,7 @@ font-style: inherit;"># Close the excel file</span></span>
 <span id="cb1-14">excel_writer.close()</span></code></pre></div></div>
 </div>
 <p>Mis archivos excel se veían como en la siguiente imagen:</p>
-<p><img src="https://sebastiandres.xyz/blog/2024/images/excel-sin-autofit.png" title="Excel con autofit" class="img-fluid"></p>
+<p><a href="./images/excel-sin-autofit.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="https://sebastiandres.xyz/blog/2024/images/excel-sin-autofit.png" title="Excel con autofit" class="img-fluid"></a></p>
 <p>Hoy aprendí una manera super simple de hacer que las columnas generen el ancho de manera dinámica. Sólo requiere usar ‘xlrxwriter’ y su metodo autofit! No funciona con openpyxl, otra buena librería para manejar excels desde python.</p>
 <div id="726ad959" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
@@ -559,7 +559,7 @@ font-style: inherit;"># Close the excel file</span></span>
 </div>
 <p>¡El truco solo requiere una línea! Basta con acceder a la pestaña desde el ExcelWriter usando su nombre, y aplicar el método autofit.</p>
 <p>El excel resultante es el siguiente:</p>
-<p><img src="https://sebastiandres.xyz/blog/2024/images/excel-con-autofit.png" title="Excel con autofit" class="img-fluid"></p>
+<p><a href="./images/excel-con-autofit.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="https://sebastiandres.xyz/blog/2024/images/excel-con-autofit.png" title="Excel con autofit" class="img-fluid"></a></p>
 <p>Por supuesto, el truco puede aplicarse a todas las pestañas del archivo.</p>
 
 
@@ -583,7 +583,7 @@ font-style: inherit;"># Close the excel file</span></span>
 <p>Creo que uno de los principales comentarios sobre hacer una presentación es que es demasiado esfuerzo.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://sebastiandres.xyz/blog/2024/images/pajamas.gif" class="img-fluid figure-img"></p>
+<p><a href="./images/pajamas.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Arg… pero ya me puse pijama…"><img src="https://sebastiandres.xyz/blog/2024/images/pajamas.gif" class="img-fluid figure-img" alt="Arg… pero ya me puse pijama…"></a></p>
 <figcaption>Arg… pero ya me puse pijama…</figcaption>
 </figure>
 </div>
@@ -792,7 +792,7 @@ font-style: inherit;">-</span>L, L])</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://sebastiandres.xyz/blog/2024/2024-03-06-pandas-trick_files/figure-html/cell-3-output-1.png" width="573" height="416" class="figure-img"></p>
+<p><a href="2024-03-06-pandas-trick_files/figure-html/cell-3-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="https://sebastiandres.xyz/blog/2024/2024-03-06-pandas-trick_files/figure-html/cell-3-output-1.png" width="573" height="416" class="figure-img"></a></p>
 </figure>
 </div>
 </div>
@@ -1103,7 +1103,7 @@ font-style: inherit;">print</span>(df_agg)</span></code></pre></div></div>
 
 <p>Ya es oficial con mucho orgullo y alegría puedo contar que estaré presentando en la PyCon US Acá les comparto los enlaces de la <a href="https://us.pycon.org/2024/schedule/">programación</a> y del <a href="https://us.pycon.org/2024/schedule/presentation/19/">abstract de mi charla</a></p>
 <p>Tanto mi charla en inglés como en español tuvieron buenas evaluaciones y fueron aceptadas. Decidí presentar en inglés, porque ya he presentado sobre Data Storytelling en español (PyCon Chile 2023, Techton 2024), y porque creo que es un desafío más grande. Estoy muy agradecido de la PSF, porque además me proporcionaron financiamiento para realizar el viaje y la estadía.</p>
-<p><img src="https://sebastiandres.xyz/blog/2024/images/pycon_talk_wide.png" class="img-fluid"></p>
+<p><a href="./images/pycon_talk_wide.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="https://sebastiandres.xyz/blog/2024/images/pycon_talk_wide.png" class="img-fluid"></a></p>
 <p>El proceso de llegar a presentar en la Pycon US ha sido muy interesante, porque representa un hito importante en una búsqueda que llevo realizando desde hace algun tiempo sin saberlo. Todo partió cuando me atreví a ir a una PyCon por primera vez, y postular una charla, que terminó siendo aceptada. La charla fue “¿Cómo hacer encuestas interactivas en Jupyter + RISE?”, en la Pycon Colombia 2020. Luego de esa primera experiencia, participé en varios eventos y comencé a hablar más frecuentemente:</p>
 <ul>
 <li>“Coding as a Service: Librería pypsdier, aprendizajes y metodología”, en la PyCon Argentina 2020</li>
@@ -1137,7 +1137,7 @@ font-style: inherit;">print</span>(df_agg)</span></code></pre></div></div>
 <p>Me invitaron a dar una charla en la Techtón, un evento para recaudar fondos para donar para Bomberos de Chile por los recientes incendios en Viña del Mar.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://sebastiandres.xyz/blog/2024/images/techton-pagina.png" class="img-fluid figure-img"></p>
+<p><a href="./images/techton-pagina.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Pagina Techton"><img src="https://sebastiandres.xyz/blog/2024/images/techton-pagina.png" class="img-fluid figure-img" alt="Pagina Techton"></a></p>
 <figcaption>Pagina Techton</figcaption>
 </figure>
 </div>
@@ -1152,7 +1152,7 @@ font-style: inherit;">print</span>(df_agg)</span></code></pre></div></div>
 <p>¡¡¡Se logró reunir más de 4 millones de pesos!!!</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://sebastiandres.xyz/blog/2024/images/techton-total.png" class="img-fluid figure-img"></p>
+<p><a href="./images/techton-total.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Total Techton"><img src="https://sebastiandres.xyz/blog/2024/images/techton-total.png" class="img-fluid figure-img" alt="Total Techton"></a></p>
 <figcaption>Total Techton</figcaption>
 </figure>
 </div>
@@ -1160,7 +1160,7 @@ font-style: inherit;">print</span>(df_agg)</span></code></pre></div></div>
 <p>Tuve muy buenas conversaciones durante y post charla, que me ayudarán a hacer mejores presentaciones en el futuro y a refinar lo que he estado preparando como apuntes sobre Data Storytelling. Y además, pude conocer nuevas personas super motivadas y capaces.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://sebastiandres.xyz/blog/2024/images/techton-agenda.png" class="img-fluid figure-img"></p>
+<p><a href="./images/techton-agenda.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Agenda Techton"><img src="https://sebastiandres.xyz/blog/2024/images/techton-agenda.png" class="img-fluid figure-img" alt="Agenda Techton"></a></p>
 <figcaption>Agenda Techton</figcaption>
 </figure>
 </div>
@@ -1716,7 +1716,7 @@ font-style: inherit;">"Hola mundo"</span>)</span></code></pre></div></div>
 
 <p>Este es el primer post en este nuevo blog hecho con Quarto.</p>
 <p>¡Bienvenido!</p>
-<p><img src="https://sebastiandres.xyz/blog/2023/thumbnail.jpg" class="img-fluid"></p>
+<p><a href="thumbnail.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="https://sebastiandres.xyz/blog/2023/thumbnail.jpg" class="img-fluid"></a></p>
 
 
 

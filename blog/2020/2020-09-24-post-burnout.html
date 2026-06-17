@@ -43,7 +43,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-580496dacbc81ff1c201807634f1d0aa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1126176dc1e1c8ea128a5c41afbd35af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-442c2dc775672f77f383292e288ce91d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -150,6 +153,10 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <a class="nav-link" href="../../pages/writing.html"> 
 <span class="menu-text">Cuentos</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pages/art.html"> 
+<span class="menu-text">Arte</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -227,7 +234,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <p>El “burnout” — fatiga laboral o agotamiento extremo — se caracteriza por los presentar algunas de las siguientes sensaciones: * Sensación permanente de agotamiento, fracaso . * Dificultad para concentrarse, baja productividad y baja autoestima. * Fantasía de escape e incluso suicidio. * Dolor de cabeza, taquicardia o insomnio. * Apatía, aburrimiento, impaciencia o irritabilidad.</p>
 <p>Primero que nada, hay que desprenderse de la vergüenza y estigma. Tener burnout no es (necesariamente) no querer o no apreciar tu trabajo. Es una condición médica de agotamiento físico y mental. Reconocer el burnout es el primer paso para recuperar el control e interés en tu vida.</p>
 <p>Se dice que afecta más a personas de “Tipo A” (competitivos, detallistas y trabajólicos) que de “Tipo B” (relajados y no neuróticos)</p>
-<p><img src="../_images/2020-09-24-burnout/burnout.jpeg" title="Tipo A y tipo B relajándose (Owlturd)." class="img-fluid"></p>
+<p><a href="../_images/2020-09-24-burnout/burnout.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../_images/2020-09-24-burnout/burnout.jpeg" title="Tipo A y tipo B relajándose (Owlturd)." class="img-fluid"></a></p>
 <p>Hay ciertas dimensiones a revisar para disminuir el impacto del burnout:</p>
 <ul>
 <li><strong>Alimentación</strong>: reducir toxinas como azúcar, grasas o alcohol. Suele ser muy difícil porque precisamente esas toxinas nos proporcionan placer y suelen ser vías de escape (de corto plazo).</li>
@@ -717,6 +724,38 @@ document.addEventListener("click", function (e) {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

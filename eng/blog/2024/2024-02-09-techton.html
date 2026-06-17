@@ -43,7 +43,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-580496dacbc81ff1c201807634f1d0aa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1126176dc1e1c8ea128a5c41afbd35af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-442c2dc775672f77f383292e288ce91d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -150,6 +153,10 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <a class="nav-link" href="../../pages/writing.html"> 
 <span class="menu-text">Stories</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pages/art.html"> 
+<span class="menu-text">Art</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -220,7 +227,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <p>I was invited to give a talk at Techtón, an event to raise funds to donate to the Firefighters of Chile due to the recent fires in Viña del Mar.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./images/techton-pagina.png" class="img-fluid figure-img"></p>
+<p><a href="./images/techton-pagina.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Techton page"><img src="./images/techton-pagina.png" class="img-fluid figure-img" alt="Techton page"></a></p>
 <figcaption>Techton page</figcaption>
 </figure>
 </div>
@@ -235,7 +242,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <p>They managed to raise more than 4 million pesos!!!</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./images/techton-total.png" class="img-fluid figure-img"></p>
+<p><a href="./images/techton-total.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Techton total"><img src="./images/techton-total.png" class="img-fluid figure-img" alt="Techton total"></a></p>
 <figcaption>Techton total</figcaption>
 </figure>
 </div>
@@ -243,7 +250,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <p>I had very good conversations during and after the talk, which will help me give better presentations in the future and refine what I have been preparing as notes on Data Storytelling. And in addition, I got to meet new, highly motivated and capable people.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./images/techton-agenda.png" class="img-fluid figure-img"></p>
+<p><a href="./images/techton-agenda.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Techton agenda"><img src="./images/techton-agenda.png" class="img-fluid figure-img" alt="Techton agenda"></a></p>
 <figcaption>Techton agenda</figcaption>
 </figure>
 </div>
@@ -726,6 +733,38 @@ document.addEventListener("click", function (e) {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

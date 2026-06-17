@@ -44,7 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-580496dacbc81ff1c201807634f1d0aa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1126176dc1e1c8ea128a5c41afbd35af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-442c2dc775672f77f383292e288ce91d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -151,6 +154,10 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <a class="nav-link" href="../../pages/writing.html"> 
 <span class="menu-text">Stories</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pages/art.html"> 
+<span class="menu-text">Art</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -231,7 +238,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <p>You’re surely wondering, and what could I contribute at a PyCon? Each person has different experiences, strengths and opinions. I can’t answer that question for you, but I’m sure there’s a talk inside you waiting to come out. Submit a talk about something you’re truly passionate about. Let it be that topic you bore your coworkers with and that you’re always reading something about. It can be a library, methodologies, specific problems or community topics. The important thing is that you can convey your enthusiasm. Don’t give a talk on a topic just because it’s popular. Present it your way. Make it entertaining. It’s not a scientific conference or a class, but rather a gathering among friends and people of the same interest. You’ll realize that, in addition to contributing to the community, you’ll receive a great deal in return.</p>
 <p>Submit your talk here: <a href="https://pycon-2022-production.herokuapp.com/2022/speaking/charlas/">https://pycon-2022-production.herokuapp.com/2022/speaking/charlas/</a></p>
 <p><a href="../_images/2021-12-05-pycon-y-sindrome-impostor/pycon1.jpg" title="Mi charla - Copyright PyCon Colombia"></a></p>
-<p><img src="../_images/2021-12-05-pycon-y-sindrome-impostor/pycon2.jpg" title="Presentando - Copyright PyCon Colombia" class="img-fluid"></p>
+<p><a href="../_images/2021-12-05-pycon-y-sindrome-impostor/pycon2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../_images/2021-12-05-pycon-y-sindrome-impostor/pycon2.jpg" title="Presentando - Copyright PyCon Colombia" class="img-fluid"></a></p>
 
 
 
@@ -711,6 +718,38 @@ document.addEventListener("click", function (e) {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

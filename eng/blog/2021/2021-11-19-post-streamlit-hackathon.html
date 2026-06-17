@@ -44,7 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-580496dacbc81ff1c201807634f1d0aa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1126176dc1e1c8ea128a5c41afbd35af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-442c2dc775672f77f383292e288ce91d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -151,6 +154,10 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <a class="nav-link" href="../../pages/writing.html"> 
 <span class="menu-text">Stories</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pages/art.html"> 
+<span class="menu-text">Art</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -227,7 +234,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <p>Friday November 19th was the project presentation for the hackathon. The projects had a great level; they surprised me a lot. An app that showed in streamlit everything written in a notion file, another that generated a streamlit app from a description using codex, and others that analyzed stock market or cryptocurrency data.</p>
 <p>My project consisted of creating a library, which I called streamlit-book, that lets you navigate python+streamlit and markdown files, as well as defining a format for creating quizzes and activities (in markdown and python) using streamlit elements. My goal was to create a way to use streamlit to create and distribute course content.</p>
 <p>I can proudly mention that it shared first place in the hackathon!</p>
-<p><img src="../_images/2021-11-19-streamlit-hackathon/hackathon.png" title="Hackathon" class="img-fluid"></p>
+<p><a href="../_images/2021-11-19-streamlit-hackathon/hackathon.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../_images/2021-11-19-streamlit-hackathon/hackathon.png" title="Hackathon" class="img-fluid"></a></p>
 <p>Since then, I’ve been working on packaging everything and making it fully functional: * The library is now available on pypi and installable via pip. * The library has documentation on <a href="https://streamlit-book.readthedocs.io">readthedocs</a>. * I’m writing a mini-tutorial (in English) so that streamlit can use it and thus spread my work. I made it thinking about explaining something simple, with charts, and that would be fun: Happy birds.</p>
 <p>Some lessons from the hackathon: * I had a lot of fun writing code. It’s something I should do more often. Programming with GitHub’s Copilot also made me very productive; at times it perfectly understood the intent and completed the code very well. There’s incredible potential there. Surely the step from assembly to C, and from C/C++ to python must have been a similar (though smaller) conceptual leap. * Working alone means you don’t question your decisions. Agreeing on a format, discussing pros and cons, would have helped me not have so many doubts and changes during the project.</p>
 <p>The fate of the library may be similar to the rest of my +70 repositories on github, with little traffic and more focused on my personal learning… but you never know, hopefully someone can make good use of it!</p>
@@ -710,6 +717,38 @@ document.addEventListener("click", function (e) {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

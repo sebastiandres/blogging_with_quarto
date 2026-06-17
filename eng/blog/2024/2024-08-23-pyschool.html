@@ -43,7 +43,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-580496dacbc81ff1c201807634f1d0aa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1126176dc1e1c8ea128a5c41afbd35af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-442c2dc775672f77f383292e288ce91d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -150,6 +153,10 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <a class="nav-link" href="../../pages/writing.html"> 
 <span class="menu-text">Stories</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pages/art.html"> 
+<span class="menu-text">Art</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -220,8 +227,8 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <p>On Friday, August 23, we finally held the <a href="https://pyschool.cl/">PySchool</a>. We had scheduled this event for a few weeks earlier, but torrential rains forced us to postpone it.</p>
 <p>During a morning of workshops we tried to introduce Python as a programming language and its applications in a simple way, with no prior knowledge required. This was the first time we held the event, so we knew there was plenty to learn and improve. Even so, the event was a success and we got very good feedback from the students.</p>
 <p>My role at the event was as organizer and coordinator: designing the event structure, coordinating the dates and activities with DUOC UC Valparaíso, building the first version of the website, finding workshop leaders, and that kind of thing. I would have liked to lead one of the workshops, but I wanted to give space and prominence to our workshop leaders (Yileanne, Valeska, Lilina, Francisco, Cristián and Bastián) so they could take ownership of the event. Francisco helped me enormously in creating the event material, which worked perfectly that day. Having students access a static page, always available online (and ad-free, as one of them noted) was easy and fast - no users, credentials, or anything were required. Just a browser. The combination of quarto + pyodide really works very, very well.</p>
-<p><img src="./images/2024-08-23-pyschool/foto1.jpg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></p>
-<p><img src="./images/2024-08-23-pyschool/foto1.jpg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></p>
+<p><a href="./images/2024-08-23-pyschool/foto1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="./images/2024-08-23-pyschool/foto1.jpg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></a></p>
+<p><a href="./images/2024-08-23-pyschool/foto1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="./images/2024-08-23-pyschool/foto1.jpg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></a></p>
 
 
 
@@ -701,6 +708,38 @@ document.addEventListener("click", function (e) {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

@@ -43,7 +43,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-580496dacbc81ff1c201807634f1d0aa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1126176dc1e1c8ea128a5c41afbd35af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-442c2dc775672f77f383292e288ce91d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -150,6 +153,10 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <a class="nav-link" href="../../pages/writing.html"> 
 <span class="menu-text">Stories</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pages/art.html"> 
+<span class="menu-text">Art</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -219,7 +226,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 
 <p>It’s now official: with great pride and joy I can share that I will be presenting at PyCon US Here I share the links to the <a href="https://us.pycon.org/2024/schedule/">schedule</a> and to the <a href="https://us.pycon.org/2024/schedule/presentation/19/">abstract of my talk</a></p>
 <p>Both my talk in English and in Spanish received good evaluations and were accepted. I decided to present in English, because I have already presented on Data Storytelling in Spanish (PyCon Chile 2023, Techton 2024), and because I think it is a bigger challenge. I am very grateful to the PSF, because they also provided me with funding to make the trip and the stay.</p>
-<p><img src="./images/pycon_talk_wide.png" class="img-fluid"></p>
+<p><a href="./images/pycon_talk_wide.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="./images/pycon_talk_wide.png" class="img-fluid"></a></p>
 <p>The process of getting to present at PyCon US has been very interesting, because it represents an important milestone in a search I have been carrying out for some time without knowing it. It all started when I dared to go to a PyCon for the first time, and submit a talk, which ended up being accepted. The talk was “How to make interactive surveys in Jupyter + RISE?”, at PyCon Colombia 2020. After that first experience, I participated in several events and began to speak more frequently:</p>
 <ul>
 <li>“Coding as a Service: pypsdier library, learnings and methodology”, at PyCon Argentina 2020</li>
@@ -710,6 +717,38 @@ document.addEventListener("click", function (e) {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

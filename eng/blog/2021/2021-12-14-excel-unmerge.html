@@ -79,7 +79,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-580496dacbc81ff1c201807634f1d0aa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1126176dc1e1c8ea128a5c41afbd35af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-442c2dc775672f77f383292e288ce91d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -186,6 +189,10 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <a class="nav-link" href="../../pages/writing.html"> 
 <span class="menu-text">Stories</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pages/art.html"> 
+<span class="menu-text">Art</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -260,11 +267,11 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 
 
 <p>Recently I needed to process a large number of excel files that had many merged cells. Something like what I show in the image:</p>
-<p><img src="../_images/2021-12-14-excel-unmerge/ejemplo.png" title="Ejemplo del problema" class="img-fluid"></p>
+<p><a href="../_images/2021-12-14-excel-unmerge/ejemplo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../_images/2021-12-14-excel-unmerge/ejemplo.png" title="Ejemplo del problema" class="img-fluid"></a></p>
 <p>I thought the good old reliable pandas library would be enough, but no. When opening the file with pandas, the cell’s value is assigned only to the first one:</p>
-<p><img src="../_images/2021-12-14-excel-unmerge/pandas1.png" title="Pandas se queda corto" class="img-fluid"></p>
+<p><a href="../_images/2021-12-14-excel-unmerge/pandas1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="../_images/2021-12-14-excel-unmerge/pandas1.png" title="Pandas se queda corto" class="img-fluid"></a></p>
 <p>Naively I tried filling with fillna and replacing the NaNs, but the result wasn’t what I wanted:</p>
-<p><img src="../_images/2021-12-14-excel-unmerge/pandas2.png" title="Pandas no completa correctamente los datos" class="img-fluid"></p>
+<p><a href="../_images/2021-12-14-excel-unmerge/pandas2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="../_images/2021-12-14-excel-unmerge/pandas2.png" title="Pandas no completa correctamente los datos" class="img-fluid"></a></p>
 <p>None of the methods for filling the adjacent cells (<code>fillna</code> with options <code>‘backfill’, ‘bfill’, ‘pad’, ‘ffill’, None</code>) works, because there are unmerged cells that should remain without data.</p>
 <p>What to do then? After a lot of googling, I found the right solution on <a href="https://stackoverflow.com/questions/46426662/openpyxl-assign-value-to-range-of-cells-during-unmerge">stackoverflow</a>. The <code>openpyxl</code> library is incredibly flexible and allows cell-by-cell manipulation.</p>
 <p>The following function, which is an improved version of the one proposed on stackoverflow, will remove the merged cells by copying the corresponding values. It will do it for all the sheets of the file, and will highlight in red the cells that were modified:</p>
@@ -305,7 +312,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>The resulting excel is the following:</p>
-<p><img src="../_images/2021-12-14-excel-unmerge/resultado.png" title="Excel unmerge" class="img-fluid"></p>
+<p><a href="../_images/2021-12-14-excel-unmerge/resultado.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="../_images/2021-12-14-excel-unmerge/resultado.png" title="Excel unmerge" class="img-fluid"></a></p>
 <p>From that point on, it’s possible to work with pandas without problems.</p>
 <p>Note: You have to use a recent version of pyopenxl, since the previous version throws an error.</p>
 
@@ -787,6 +794,38 @@ document.addEventListener("click", function (e) {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

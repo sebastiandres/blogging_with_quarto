@@ -42,7 +42,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-580496dacbc81ff1c201807634f1d0aa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1126176dc1e1c8ea128a5c41afbd35af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-442c2dc775672f77f383292e288ce91d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -149,6 +152,10 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <a class="nav-link" href="../../pages/writing.html"> 
 <span class="menu-text">Cuentos</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pages/art.html"> 
+<span class="menu-text">Arte</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -219,8 +226,8 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <p>El viernes 23 de agosto por fin realizamos la <a href="https://pyschool.cl/">PySchool</a>. Habíamos programado este evento para unas semanas antes, pero torrenciales lluvias nos obligaron a suspender.</p>
 <p>Durante una mañana de talleres tratamos de dar a conocer Python como lenguaje de programación y sus aplicaciones de una manera sencilla y sin conocimientos previos requeridos. Ésta fue la primera vez que realizábamos el evento, así que sabíamos que había harto por aprender y mejorar. Aún así, el evento fue un éxito y tuvimos muy buenos comentarios de los estudiantes.</p>
 <p>Mi rol en el evento fue de gestor y coordinador: diseñar la estructura del evento, coordinar con DUOC UC Valparaíso las fechas y las actividades, armar la primera versión de la página, buscar talleristas, y ese tipo de cosas. Me hubiera gustado dictar uno de los talleres, pero quería darle espacio y protagonismo a nuestros talleristas (Yileanne, Valeska, Lilina, Francisco, Cristián y Bastián) para que ellos se empoderaran del evento. Francisco me ayudó enormemente a generar el material del evento, que funcionó perfecto ese día. Que los estudiantes tengan que acceder a una página estática, siempre disponible en línea (y sin publicidad, como comentó uno) fue fácil y rápido - no se requirieron usuarios, credenciales ni nada. Sólo un navegador. La combinación de quarto + pyodide la verdad es que funciona muy muy bien.</p>
-<p><img src="./images/2024-08-23-pyschool/foto1.jpg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></p>
-<p><img src="./images/2024-08-23-pyschool/foto1.jpg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></p>
+<p><a href="./images/2024-08-23-pyschool/foto1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="./images/2024-08-23-pyschool/foto1.jpg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></a></p>
+<p><a href="./images/2024-08-23-pyschool/foto1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="./images/2024-08-23-pyschool/foto1.jpg" title="© 2024 Sebastian Flores (CC BY-SA)" class="img-fluid"></a></p>
 
 
 
@@ -700,6 +707,38 @@ document.addEventListener("click", function (e) {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

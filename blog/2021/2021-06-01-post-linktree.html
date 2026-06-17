@@ -78,7 +78,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-580496dacbc81ff1c201807634f1d0aa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1126176dc1e1c8ea128a5c41afbd35af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-442c2dc775672f77f383292e288ce91d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -185,6 +188,10 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <a class="nav-link" href="../../pages/writing.html"> 
 <span class="menu-text">Cuentos</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pages/art.html"> 
+<span class="menu-text">Arte</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -263,20 +270,20 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 
 
 <p>Un directorio de enlaces permite tener entregar un link único y memorable, que puedes actualizar posteriormente a haberlo compartido. Donde, por ejemplo, al dar una charla pudiera decir “el código y la presentación estarán en este link”, pero donde posteriormente sea posible agregarle la grabación de la charla o un resultados de una encuesta. Probé con Linktree, pero pronto lo llené con demasiados enlaces y se volvió confuso y difícil de navegar. Necesitaba una forma de agrupar de manera temática y con un grado flexible de niveles de profundad. En efecto, si a alguien no le interesa el tema “X” probablemente no le interesaría el video de “X”, el código de “X”, la presentación de “X” en html o pdf.</p>
-<p><img src="../_images/2021-06-01-linktree/comparacion.png" title="Formato ofrecido por linktree (izquieda) versus lo que necesitaba y que tuve que crear (derecha)." class="img-fluid"></p>
+<p><a href="../_images/2021-06-01-linktree/comparacion.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../_images/2021-06-01-linktree/comparacion.png" title="Formato ofrecido por linktree (izquieda) versus lo que necesitaba y que tuve que crear (derecha)." class="img-fluid"></a></p>
 <p>Formato ofrecido por linktree (izquieda) versus lo que necesitaba y que tuve que crear (derecha). Necesitaba una manera de tener un directorio de enlaces con un nombre memorable, fácil de compartir y personalizar, pero permitiendo mantener distintos niveles de agrupación. Desafío adicional: Cuando se trata de recursos en línea, soy un tacaño extremo. Así que buscaba una solución que pudiera implementar sin costos mensuales recurrentes.</p>
 <p>Como tacaño extremo llegué a pensar en hacer varias cuentas en linktree y vincularlas entre sí, pero no era una solución escalable (y tendría que acordarme de que correo y password usé para cada enlace). Así que entre una mezcla de vergüenza y flojera terminé desechando la idea. La solución me llegó de golpe. Github permite mostrar páginas html estáticas. ¡Podía hacer una página html simple que emulara a linktree y que podía guardar en cada repositorio en github! El enlace central seguiría siendo en linktree (lintr.ee/sebastiandres en mi caso) y los enlaces serían a los htmls plano de cada repositorio de github. Es una buena mezcla, porque linktree es bastante amigable y tiene algunas herramientas de administración como activar/desactivar enlaces. Comencé revisando el código de linktree, pero era excesivamente largo y confuso. Así que puse manos a la obra y me puse a construir una solución de manera incremental.</p>
 <ul>
 <li><strong>Primera versión</strong>: Un único archivo html, simple y funcional. Imita los colores y botones sólo con html y css, sin javascript, incluyendo la animación del botón. Comienzo a desplegarlo en mis repositorios y enlazarlos desde linktree. Basta con activar cada repositorio como github pages para que github proporcione un enlace fijo y estable para index.html (o README.md). No es perfecto, pero funciona, ya se cumple el funcionamiento mínimo. Problemas detectados: el tipo y tamaño de fuente es similar pero no es correcto. El despliegue en un smartphone es muy distinto entre linktree y imitación (tacaña).</li>
 </ul>
-<p><img src="../_images/2021-06-01-linktree/v1.png" title="Resultado de la primera versión: web (izquierda) y mobile (derecha). Un resultado sorprendentemente similar para la cantidad de código y esfuerzo." class="img-fluid"></p>
+<p><a href="../_images/2021-06-01-linktree/v1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="../_images/2021-06-01-linktree/v1.png" title="Resultado de la primera versión: web (izquierda) y mobile (derecha). Un resultado sorprendentemente similar para la cantidad de código y esfuerzo." class="img-fluid"></a></p>
 <ul>
 <li><p><strong>Segunda versión</strong>: Después de googlear, aprendí a manejar css selectivo usando <span class="citation" data-cites="media">@media</span> (orientation: landscape/portrait). Problemas detectados: Todavía se ve un poco diferente, sobre todo en los márgenes y tamaño del botón. Al ir actualizando en mis repositorios esta segunda versión, me doy cuenta que es difícil recordar y distinguir visualmente cuál es la versión actual. Sería interesante tener algún tipo de indicador visual al respecto. Tercera versión: Ajustes a las propiedades del css para imitar mejor linktree (width, height, text wrapping, font sizes). Incluye un texto con la versión para distinguir la versión utilizada en cada repositorio y hacer más fácil la actualización. Problemas detectados: Los textos no están centrados adecuadamente. Lo peor es tener que ir copiando manualmente el nuevo estilo a cada repositorio en cada nueva actualización. Lo ideal es que el estilo se manejara centralmente y actualizara automáticamente a todos los repositorios que lo utilizaran.</p></li>
 <li><p><strong>Cuarta versión</strong>: En lugar de tener el css directamente en el html, lo muevo a un archivo css. De esa manera, todos los archivos pueden llamar a ese archivo. Eso permite separar contenido de formato. Esta cuarta versión me dio muchos problemas. En local todo funcionaba bien, pero github no desplegaba bien la página por un problema con el MIME type del archivo css. Así que tuve que usar https://raw.githack.com para obtener un enlace del css con el MIME type correcto. Problemas detectados: La actualización de css con github a través de https://raw.githack.com tiene un lag importante, a veces de horas, por lo que es difícil (y frustrante) comprobar si el cambio resultó bien.</p></li>
 <li><p><strong>Quinta versión</strong>: Comienzo a utilizar DigitalOcean para levantar un sitio estático a partir del repositorio en github. De esa manera, se generan urls fijas de los assets (css o eventualmente javascript) que se actualizan automáticamente con cada push a github, sin costo asociado y con el MIME type adecuado. Eso permite tener un enlace estable para css y html que puede utilizarse en los repos de github. Ahora también externalizo la “versión” del archivo, para que sea importado por el archivo. Estos archivos css y html ahora se llamarán siempre “latest_style.css” y “latest_copyright.html”, y que actualizo con cada cambio de versión. Así el archivo final se actualiza automáticamente cuando hay algún cambio (¡¡¡no más cambios masivos en los repos!!!). Se definen también algunas clases adicionales para manejar títulos y subtítulos. Problemas detectados: En general se observa bien, pero hay algunos glitchs de tamaño de fuente, textos centrados y detalles así.</p></li>
 </ul>
 <p>*** Sexta (y última) versión**: Revisión general del código para optimizarlo y limpiarlo. Se eliminan algunas propiedades css innecesarias. Hay 3 archivos: El archivo principal es index.html donde se definen los enlaces, y se utilizan los archivos latest_style.css (estilo) y latest_copyright.html (versión de emulador). Cada nueva página con enlaces sólo necesita definir los enlaces, ¡el estilo y copyright ya está definido! Problemas detectados: Nada por ahora.</p>
-<p><img src="../_images/2021-06-01-linktree/vf.png" title="El resultado final: web (izquierda) y mobile (derecha). Las versiones son prácticamente indistinguibles." class="img-fluid"></p>
+<p><a href="../_images/2021-06-01-linktree/vf.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="../_images/2021-06-01-linktree/vf.png" title="El resultado final: web (izquierda) y mobile (derecha). Las versiones son prácticamente indistinguibles." class="img-fluid"></a></p>
 <p><strong>Sneak peak:</strong></p>
 <p>¿Cómo es el código? La primera versión mezcla el código y el estilo. Hace que actualizar múltiples archivos sea tedioso y propenso a errores (pero fue una versión rápida de desarrollar y autocontenida).</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
@@ -339,7 +346,7 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
 <span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p>¿Y cómo se ve todo al final? Se ve así:</p>
-<p><img src="../_images/2021-06-01-linktree/vfinal.gif" title="El resultado final funciona sorprendentemente bien. La transición es suave y no se nota que son 2 servicios distintos." class="img-fluid"></p>
+<p><a href="../_images/2021-06-01-linktree/vfinal.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="../_images/2021-06-01-linktree/vfinal.gif" title="El resultado final funciona sorprendentemente bien. La transición es suave y no se nota que son 2 servicios distintos." class="img-fluid"></a></p>
 <section id="aprendizajes" class="level2">
 <h2 class="anchored" data-anchor-id="aprendizajes">Aprendizajes:</h2>
 <p>La separación de contenido y forma es esencial para poder ahorrar trabajo. Incluso para un proyecto pequeño como éste, ayuda enormemente a no duplicar trabajo y hacer más fácil las actualizaciones de N páginas.</p>
@@ -826,6 +833,38 @@ document.addEventListener("click", function (e) {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

@@ -44,7 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-580496dacbc81ff1c201807634f1d0aa.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1126176dc1e1c8ea128a5c41afbd35af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-442c2dc775672f77f383292e288ce91d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -151,6 +154,10 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
     <a class="nav-link" href="../../pages/writing.html"> 
 <span class="menu-text">Stories</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pages/art.html"> 
+<span class="menu-text">Art</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -229,9 +236,9 @@ gtag('config', 'G-HG9BYLK8FC', { 'anonymize_ip': true});
 <p>During the sprint, organizing ourselves to do pair programming was also a great help. With Leonardo Rocco we worked on 2 issues: * <a href="https://github.com/scikit-learn/scikit-learn/pull/20381">DOC Ensures that ARDRegression passes numpydoc validation #20381</a> * <a href="https://github.com/scikit-learn/scikit-learn/pull/20405">DOC ensures FastICA estimator pass the numpydoc validation #20405</a></p>
 <p>I can proudly say that both pull requests have already been accepted!</p>
 <p>Reflecting on my experience at the Sprint, I realize that I had the expectation that I was missing many things to learn.</p>
-<p><img src="../_images/2021-07-25-data-umbrella-sprint/expectativa.png" title="Expectation: I have a long way to go before I can contribute :'(." class="img-fluid"></p>
+<p><a href="../_images/2021-07-25-data-umbrella-sprint/expectativa.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../_images/2021-07-25-data-umbrella-sprint/expectativa.png" title="Expectation: I have a long way to go before I can contribute :'(." class="img-fluid"></a></p>
 <p>At the sprint I learned that you do not need to be a super-programmer to contribute to open source. The reality is that, to begin with, there is no single way to contribute. There is an endless range of possible tasks, from the simplest to the most advanced, and a long learning path. That is why it is important to realize that it is not that you <em>“don’t know”</em> but that you <em>“don’t know <strong>yet</strong>”</em>, and that there is a community willing to support you in that learning process. We are all in a learning process. Getting involved in collaborative projects is precisely a way to accelerate learning, and, along the way, contribute to the libraries you use the most.</p>
-<p><img src="../_images/2021-07-25-data-umbrella-sprint/realidad.png" title="Reality: I could have contributed much earlier! :D" class="img-fluid"></p>
+<p><a href="../_images/2021-07-25-data-umbrella-sprint/realidad.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="../_images/2021-07-25-data-umbrella-sprint/realidad.png" title="Reality: I could have contributed much earlier! :D" class="img-fluid"></a></p>
 <p>There is an excellent report of the sprint on <a href="https://reshamas.github.io/data-umbrella-latam-2021-scikit-learn-sprint-report/">Reshama’s blog</a>. The distribution of participants by country is quite surprising. I imagined a more uniform distribution, but most of the participants are from Argentina and Brazil. Something has to be done about it!</p>
 <p>In addition to community and individual contributions, another important element of open source is grants and funding from companies. Ask your boss for budget to fund the tools you use daily! In particular, this sprint was funded in part by a grant from <a href="https://eventfund.codeforscience.org/">Code for Science &amp; Society</a>. This is community and transparency in their purest form: you can get all the details of the grant online: <a href="https://www.moore.org/grant-detail?grantId=GBMF8449">Grant number GBMF8449</a> at the <a href="https://www.moore.org/">Gordon and Betty Moore Foundation</a>.</p>
 
@@ -713,6 +720,38 @@ document.addEventListener("click", function (e) {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
