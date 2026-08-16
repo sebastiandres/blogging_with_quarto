@@ -10,7 +10,49 @@
 <atom:link href="https://sebastiandres.xyz/eng/pages/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Tue, 16 Jun 2026 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 15 Aug 2026 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>Marchetti, Jevons and the unfulfilled promise of more personal time</title>
+  <dc:creator>sebastiandres </dc:creator>
+  <link>https://sebastiandres.xyz/eng/blog/2026/2026-08-15-marchetti.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>En promedio, las personas dedican alrededor de una hora diaria a desplazarse. Esa cifra se mantiene sorprendentemente estable a través de siglos y culturas, ya sean ciudades amuralladas o suburbios con automóvil. Cambian las condiciones, pero no el tiempo que estamos dispuestos a “perder en traslados”. Esa observación se conoce como la constante de Marchetti, por el físico italiano que la popularizó.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./images/marchetti.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="David Montgomery / CityLab"><img src="https://sebastiandres.xyz/eng/blog/2026/images/marchetti.webp" class="img-fluid figure-img" alt="Diagrama del crecimiento del radio urbano según el medio de transporte"></a></p>
+<figcaption><a href="https://bigthink.com/strange-maps/marchettis-constant/">David Montgomery / CityLab</a></figcaption>
+</figure>
+</div>
+<p>Cuando aparece un medio de transporte más rápido, no usamos el tiempo ahorrado en otra cosa. Lo gastamos en distancia. Nos vamos a vivir más lejos, donde la vivienda es más barata, hasta volver a llenar la hora. El tranvía, el automóvil y el metro no nos regalaron tiempo libre: nos dieron ciudades más grandes.</p>
+<section id="lo-mismo-pero-con-código" class="level2">
+<h2 class="anchored" data-anchor-id="lo-mismo-pero-con-código">Lo mismo, pero con código</h2>
+<p>Sospecho que esto mismo se repite con la productividad. El computador, los lenguajes de alto nivel, las automatizaciones y ahora la inteligencia artificial redujeron de forma brutal el costo de producir una unidad de trabajo. Ninguno de ellos redujo la jornada. Lo que hicieron fue aumentar las expectativas de lo que era posible entregar en una jornada.</p>
+<p>Este fenómeno también tiene nombre: la paradoja de Jevons. Cuando el uso de un recurso se vuelve más eficiente, el consumo total del recurso aumenta en lugar de disminuir. Watt hizo la máquina de vapor mucho más eficiente y el Reino Unido terminó quemando más carbón, no menos.</p>
+</section>
+<section id="el-problema" class="level2">
+<h2 class="anchored" data-anchor-id="el-problema">El problema</h2>
+<p>Un sistema que opera siempre al tope no tiene holgura. Y sin holgura, una perturbación no puede amortiguarse y la absorbes tú.</p>
+<p>Una falla en el metro convierte un viaje de quince minutos en una hora, porque los medios alternativos no son igual de eficientes. Nos mudamos lejos apostando a que el sistema rápido funciona todos los días… y nunca es así.</p>
+<p>Y cuando se acaban los créditos o el modelo está saturado, el código que ibas a terminar antes de almorzar te vuelve a tomar la tarde completa. Porque también ahí nos mudamos lejos: aceptamos alcances que solo son razonables si la herramienta rinde al máximo.</p>
+</section>
+<section id="y-entonces" class="level2">
+<h2 class="anchored" data-anchor-id="y-entonces">¿Y entonces?</h2>
+<p>Que algo se pueda hacer en quince minutos con la mejor herramienta no significa que debas comprometer quince minutos. El compromiso debería considerar el caso degradado, no el óptimo. El sistema no generará holgura para ti: tienes que producirla tú mismo.</p>
+<p>Considera crear un plan B (y otro plan C, y quizás hasta un plan D) y cuál es su impacto en tus tareas. Puede ser fácil cambiarse de Claude a Gemini o ChatGPT, pero ¿qué pasa si lo que falla es tu conexión a internet? Ahí está la resiliencia. Y considera siempre andar con zapatos cómodos para caminar ;D</p>
+
+
+</section>
+
+ ]]></description>
+  <category>ia</category>
+  <category>reflexión</category>
+  <guid>https://sebastiandres.xyz/eng/blog/2026/2026-08-15-marchetti.html</guid>
+  <pubDate>Sat, 15 Aug 2026 04:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Non-productive uses of AI</title>
   <dc:creator>sebastiandres </dc:creator>
@@ -94,6 +136,23 @@ Read them from the other person's perspective and tell me: where my argument is 
  ]]></description>
   <category>ia</category>
   <guid>https://sebastiandres.xyz/eng/blog/2026/2026-06-16-usos-ia-no-productivos.html</guid>
+  <pubDate>Tue, 16 Jun 2026 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Vacations on Cusco and Machu Picchu</title>
+  <dc:creator>sebastiandres </dc:creator>
+  <link>https://sebastiandres.xyz/eng/blog/2026/wip-2026-07-16-machupicchu.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+
+ ]]></description>
+  <category>ia</category>
+  <guid>https://sebastiandres.xyz/eng/blog/2026/wip-2026-07-16-machupicchu.html</guid>
   <pubDate>Tue, 16 Jun 2026 04:00:00 GMT</pubDate>
 </item>
 <item>
@@ -1704,76 +1763,6 @@ font-style: inherit;">"Hola mundo"</span>)</span></code></pre></div></div>
   <guid>https://sebastiandres.xyz/eng/blog/2023/2023-11-29-codigo.html</guid>
   <pubDate>Wed, 29 Nov 2023 03:00:00 GMT</pubDate>
   <media:content url="https://sebastiandres.xyz/eng/blog/2023/image.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>First post</title>
-  <dc:creator>sebastiandres </dc:creator>
-  <link>https://sebastiandres.xyz/eng/blog/2023/2023-11-28-bienvenida.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>This is the first post on this new blog made with Quarto.</p>
-<p>Welcome!</p>
-<p><a href="thumbnail.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="https://sebastiandres.xyz/eng/blog/2023/thumbnail.jpg" class="img-fluid"></a></p>
-
-
-
- ]]></description>
-  <category>vida</category>
-  <guid>https://sebastiandres.xyz/eng/blog/2023/2023-11-28-bienvenida.html</guid>
-  <pubDate>Tue, 28 Nov 2023 03:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Goals 2022</title>
-  <dc:creator>sebastiandres </dc:creator>
-  <link>https://sebastiandres.xyz/eng/blog/2022/2022-01-21-metas-anuales.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="what-do-i-want-for-2022" class="level2">
-<h2 class="anchored" data-anchor-id="what-do-i-want-for-2022">What do I want for 2022?</h2>
-<p>A piece of advice I’ve read in several places is: don’t set specific goals, but instead implement processes that allow you to reach those goals. My objective for this year is to create those processes in different areas, with the goal of being happy. Nothing more. Goals are there to move you in the right direction, not to decide how successful the year is.</p>
-<section id="writing" class="level3">
-<h3 class="anchored" data-anchor-id="writing">Writing</h3>
-<p>I would like to: * Write a fiction book * Write a non-fiction book * Take part in some writing contests, particularly Santiago en 100 palabras (again) * Take part again in a writing workshop, such as the crime novel writing workshop</p>
-</section>
-<section id="learning-and-creativity" class="level3">
-<h3 class="anchored" data-anchor-id="learning-and-creativity">Learning and Creativity</h3>
-<p>I think I have a debt with my artistic skills: music and drawing. They are 2 dimensions I could explore a bit more. Additionally, learn to have a better sense of humor and laugh more at myself and my mistakes.</p>
-</section>
-<section id="sports" class="level3">
-<h3 class="anchored" data-anchor-id="sports">Sports</h3>
-<p>As a goal I want to do at least 5 minutes of exercise a day, Monday to Friday, throughout the year. I’ve discovered that it’s easier for me to meet the exercise goal at night, and that I can take advantage of the 7 minutes of waiting for the french press to do push-ups. I think that in addition to that, I need to go running if I want to be able to finish a marathon.</p>
-</section>
-<section id="technology" class="level3">
-<h3 class="anchored" data-anchor-id="technology">Technology</h3>
-<p>I want to keep participating in the Open Source space. I think here I don’t need to impose much discipline on myself, these are things that naturally emerge: * Increase my presence on twitter. Goal: 1000 followers. * Create new apps in Streamlit: complete the Machine Learning and Confusion Matrix saga, and make the datasaurus. * Participate in a free software development community, which could be the RISE one. * Attend the Latin American PyCons, particularly the ones Ariel is organizing in Salta. Maybe some other international one.</p>
-</section>
-<section id="reading" class="level3">
-<h3 class="anchored" data-anchor-id="reading">Reading</h3>
-<p>I have the goal of reading 10 non-fiction books and another 10 non-fiction books in the year 2022. For this I will set the goal of dedicating a little time every day and reading 1 fiction book and another non-fiction book per month. There are 2 months of tolerance for unfortunate events.</p>
-<p>For the fiction books, I selected the ones Derek Sivers has marked 10/10: https://sive.rs/book</p>
-<p>Topic: The world 1.- Open Borders - por Bryan Caplan</p>
-<p>Topic: Writing 2.- On Writing Well - por William Zinsser</p>
-<p>Topic: the mind 3.- Mindwise: How We Understand What Others Think, Believe, Feel, and Want - por Nicholas Epley 4.- The Time Paradox - por Philip Zimbardo y John Boyd</p>
-<p>Topic: Learning 5.- The Listening Book - por W.A. Mathieu 6.- How Buildings Learn - por Stewart Brand 7.- E-Myth Revisited - por Michael Gerber</p>
-<p>Topic: Life and death 8.- Forty Tales from the Afterlives - por David Eagleman 9.- The War of Art - por Steven Pressfield 10.- A Guide to the Good Life: The Ancient Art of Stoic Joy - por William Irvine</p>
-<p>Other books: 1. Non designer design book 1. Resonate 1. Creativity INC 1. Invent and Wanter, Jeff Bezos 1. Zero to one 1. So good they cant ignore you 1. Numbers dont lie 1. Think Again 1. Antifragile 1. Almanak of Naval Ravikant 1. Why We Sleep: Unlocking the Power of Sleep and Dreams 1. The Sovereign Individual</p>
-<p>Among the fiction books I would like to read or reread are: 1. Siddhartha, by Herman Hesse.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>balance</category>
-  <category>reflexión</category>
-  <guid>https://sebastiandres.xyz/eng/blog/2022/2022-01-21-metas-anuales.html</guid>
-  <pubDate>Fri, 21 Jan 2022 03:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
