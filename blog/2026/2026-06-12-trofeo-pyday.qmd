@@ -1,6 +1,7 @@
 ---
-title: "Galvano Pyday"
-date: "2026-06-15"
+title: "Imprimiendo en 3d el galvano de PyDay 2026"
+title-en: "3d printing the PyDay 2026 speaker gift"
+date: "2026-06-12"
 categories: [impresión 3d]
 image: "./images/galvano-v3-small.jpg"
 ---

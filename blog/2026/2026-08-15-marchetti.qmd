@@ -1,0 +1,34 @@
+---
+title: "Marchetti, Jevons y la promesa incumplida de más tiempo para ti"
+title-en: "Marchetti, Jevons and the unfulfilled promise of more personal time"
+date: "2026-08-15"
+categories: [ia, reflexión]
+---
+
+En promedio, las personas dedican alrededor de una hora diaria a desplazarse. Esa cifra se mantiene sorprendentemente estable a través de siglos y culturas, ya sean ciudades amuralladas o suburbios con automóvil. Cambian las condiciones, pero no el tiempo que estamos dispuestos a "perder en traslados".
+Esa observación se conoce como la constante de Marchetti, por el físico italiano que la popularizó.
+
+
+![[David Montgomery / CityLab](https://bigthink.com/strange-maps/marchettis-constant/)](./images/marchetti.webp){fig-alt="Diagrama del crecimiento del radio urbano según el medio de transporte"}
+
+Cuando aparece un medio de transporte más rápido, no usamos el tiempo ahorrado en otra cosa. Lo gastamos en distancia. Nos vamos a vivir más lejos, donde la vivienda es más barata, hasta volver a llenar la hora. El tranvía, el automóvil y el metro no nos regalaron tiempo libre: nos dieron ciudades más grandes.
+
+## Lo mismo, pero con código
+
+Sospecho que esto mismo se repite con la productividad. El computador, los lenguajes de alto nivel, las automatizaciones y ahora la inteligencia artificial redujeron de forma brutal el costo de producir una unidad de trabajo. Ninguno de ellos redujo la jornada. Lo que hicieron fue aumentar las expectativas de lo que era posible entregar en una jornada. 
+
+Este fenómeno también tiene nombre: la paradoja de Jevons. Cuando el uso de un recurso se vuelve más eficiente, el consumo total del recurso aumenta en lugar de disminuir. Watt hizo la máquina de vapor mucho más eficiente y el Reino Unido terminó quemando más carbón, no menos.
+
+## El problema
+
+Un sistema que opera siempre al tope no tiene holgura. Y sin holgura, una perturbación no puede amortiguarse y la absorbes tú.
+
+Una falla en el metro convierte un viaje de quince minutos en una hora, porque los medios alternativos no son igual de eficientes. Nos mudamos lejos apostando a que el sistema rápido funciona todos los días... y nunca es así.
+
+Y cuando se acaban los créditos o el modelo está saturado, el código que ibas a terminar antes de almorzar te vuelve a tomar la tarde completa. Porque también ahí nos mudamos lejos: aceptamos alcances que solo son razonables si la herramienta rinde al máximo.
+
+## ¿Y entonces?
+
+Que algo se pueda hacer en quince minutos con la mejor herramienta no significa que debas comprometer quince minutos. El compromiso debería considerar el caso degradado, no el óptimo. El sistema no generará holgura para ti: tienes que producirla tú mismo.
+
+Considera crear un plan B (y otro plan C, y quizás hasta un plan D) y cuál es su impacto en tus tareas. Puede ser fácil cambiarse de Claude a Gemini o ChatGPT, pero ¿qué pasa si lo que falla es tu conexión a internet? Ahí está la resiliencia. Y considera siempre andar con zapatos cómodos para caminar ;D

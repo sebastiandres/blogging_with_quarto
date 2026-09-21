@@ -1,5 +1,6 @@
 ---
 title: "Open Visualization Academy"
+title-en: "Open Visualization Academy"
 date: "2026-05-31"
 categories: [python, visualization]
 image: "./images/ova.png"

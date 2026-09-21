@@ -1,0 +1,32 @@
+---
+title: "Arte"
+title-en: "Art"
+---
+
+:::: {.content-visible when-profile="esp"}
+Durante el 2025 participé del taller de calcografía del Museo Universitario del Grabado, dirigido por el maestro grabador Ismael Díaz. Estas son las obras que creé. Haz clic en cualquiera para verla en grande.
+
+::: {.art-gallery}
+![**Caracol** · Punta Seca (2025)](../art/01_caracol.jpg){group="obras"}
+
+![**Contraste Milenario** · Agua Fuerte (2025)](../art/02_contraste_milenario.jpg){group="obras"}
+
+![**Los 2 fuegos que arden en mí** · Agua Tinta (2025)](../art/03_todos_los_fuegos.jpg){group="obras"}
+
+![**Experimental #1** · Agua Fuerte y Agua Tinta (2025)](../art/04_geometrico.jpg){group="obras"}
+:::
+::::
+
+:::: {.content-visible when-profile="eng"}
+During 2025 I took part in the engraving workshop at the Museo Universitario del Grabado, led by master engraver Ismael Díaz. These are the works I created. Click any of them to enlarge.
+
+::: {.art-gallery}
+![**Snail** · Drypoint (2025)](../art/01_caracol.jpg){group="works"}
+
+![**Millenary Contrast** · Etching (2025)](../art/02_contraste_milenario.jpg){group="works"}
+
+![**The 2 Fires That Burn in Me** · Aquatint (2025)](../art/03_todos_los_fuegos.jpg){group="works"}
+
+![**Experimental #1** · Etching and Aquatint (2025)](../art/04_geometrico.jpg){group="works"}
+:::
+::::

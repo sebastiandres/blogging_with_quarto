@@ -6,14 +6,22 @@ about:
   template: jolla
   links:
     - icon: twitter
-      text: Twitter
       href: https://twitter.com/sebastiandres
     - icon: linkedin
-      text: LinkedIn
       href: https://www.linkedin.com/in/sebastiandres/
     - icon: github
-      text: Github
       href: https://github.com/sebastiandres
+listing:
+  - id: latest-posts
+    contents: blog/**/*.qmd
+    sort: "date desc"
+    max-items: 3
+    type: default
+    template: pages/listing-titles.ejs.md
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    feed: false
 ---
 
 ::: {.content-visible  when-profile="esp"}
@@ -31,7 +39,8 @@ Escribo sobre python, tecnología y libros.
 
 </form>
 
-<p style="margin: 10px 0;"></p>
+<br>
+<p class="latest-posts-heading"><strong>Últimos posts en el blog</strong></p>
 :::
 
 ::: {.content-visible when-profile="eng"}
@@ -47,4 +56,10 @@ I write about python, technology and books.
   <input type="submit" value="¡Suscríbeme!" />
 
 </form>
+
+<br>
+<p class="latest-posts-heading"><strong>Latest entries of blog</strong></p>
+:::
+
+::: {#latest-posts}
 :::

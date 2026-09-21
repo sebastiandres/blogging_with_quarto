@@ -1,0 +1,39 @@
+---
+title: "Vacaciones en Cusco y Machu Picchu"
+title-en: "Vacations on Cusco and Machu Picchu"
+date: "2026-06-16"
+categories: [ia]
+---
+
+:::{.content-visible when-profile="esp"}
+Durante nuestras últimas vacaciones visitamos Cusco y Machu Picchu, en Perú. 
+
+Aclaraciones: Aunque tanto Cuzco como Cusco son aceptadas por la RAE, Cusco (del nombre quechua Qosco) es la preferida por los locales.  
+Aprendizaje 2: Lo he dicho mal toda mi vida. No es no Machu Pichu (ma-chu-pi-chu) sino Machu Picchu (,ma-chu-pi**k**-chu).
+
+**Cusco**  
+El centro histórico está muy bien conservado. Es impresionante ver la técnica de construcción de los incas, y muros y construcciones todavía en pie. Resulta asombrosa la precisión con la cual estaban cortadas las piedras, y la forma en la que logran hacerlas encajar.  
+Me parece que hay dos técnicas: Una, de bloques más bien cuadrados, más parecido como construimos hoy día, de manera más estructurada y ordenada, y otra con rocas bastante más irregulares, y que desencajaban entre ellas como puzzle muy de otros otros. 
+
+**Pisaq** 
+Fue el lugar a mayor altura que visitamos, 3600 msnm. Nos explicaron que los incas construían en la cima de los cerros por razones prácticas: evitar los desbordes del río y la caída de rocas durante las torrenciales lluvias, estar más cerca del sol (Inti, su deidad principal), e imagino también por razones defensivas. Construían con roca porque no existían mejores alternativas: no tenían madera el no contar con árboles, sino matorrales y arbustos.
+
+**Ollantaytambo**
+Me costaba recordar y pronunciar el nombre de este pueblo, hasta que me explicaron que era un tambo, uno de los puestos de relevo de los chasquis (los mensajeros corredores de los incas). Así que, más que una ciudad, es un tambo llamado Ollantay.  
+El sitio arqueológico de Ollantaytambo es impresionante.
+La ciudad tiene un gran mercado de artesanías.
+Me sorprendió una buena cafetería, y una buena cultura del café y del chocolate en Perú. 
+
+**Machu Picchu**
+Es realmente grande. Una ciudad completa, construida "a la punta del cerro", que obviamente no sigue el sistema de cuadras de los españoles, sino que se adapta al terreno.   
+Es difícil de explicar lo impresionante que es ver y tratar de entender como y porque construyeron de esa manera hace más de 500 años. 
+Algunas cosas que aprendimos:  
+* La ciudad no alcanzó a ser terminada, y fue abandonada durante la conquista. Los locales sabían de su existencia, y fue "re-descubierta" por X en 1906 y compartida al mundo.
+* Estar oculta la protegió de los españoles, pero no está intacta: más de 40,000 artefactos y todo el oro fue retirado durante las escavaciones.
+* No se sabe el nombre original. Machu Picchu es el nombre de uno de los cerros y significa montaña vieja, mientras el otro es Huayna Picchu que significa montaña joven.
+* 
+
+:::
+
+:::{.content-visible when-profile="eng"}
+:::

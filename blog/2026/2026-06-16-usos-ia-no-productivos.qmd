@@ -1,0 +1,128 @@
+---
+title: "Usos no productivos de la IA"
+title-en: "Non-productive uses of AI"
+date: "2026-06-16"
+categories: [ia]
+---
+
+:::{.content-visible when-profile="esp"}
+Hay muchísimos tutoriales, videos y podcasts sobre cómo usar la IA para ser más productivo. Me parece bien, pero la verdad es que los usos que más me han sorprendido no tienen que ver con productividad. Son un poco más contra-intuitivos, y son justamente esos los que quiero anotar acá, sobre todo para mi yo futuro.
+
+Una cosa antes de empezar: comparto los prompts que uso, pero el truco no está en copiarlos tal cual. Está en darle a la IA **contexto, un rol claro, y permitirle hacerte preguntas** antes de responder. Esa última parte es la que más cambia los resultados.
+
+### Recomendaciones
+Le paso a la IA una lista de mis libros o música favorita, le explico qué es lo que me gusta de ellos, y listo: tengo una lista de recomendaciones personalizadas. Así he encontrado rarezas musicales y un par de excelentes recomendaciones literarias que probablemente nunca habría llegado a leer.
+
+```{.text filename="Prompt para recomendaciones literarias"}
+Mis libros favoritos son X, Y y Z, y me gustan especialmente por A y B.
+Antes de recomendarme nada, hazme 3 o 4 preguntas para afinar mi gusto.
+Luego recomiéndame 5 libros que probablemente no haya leído, explicando en una línea por qué cada uno conecta con lo que me gusta.
+```
+
+o, para música:
+
+```{.text filename="Prompt para recomendaciones musicales"}
+Me gusta la música de X, Y, ..., Z.
+Antes de recomendarme nada, hazme un par de preguntas para entender qué me atrae de ellos.
+Luego recomiéndame artistas poco conocidos que me podrían gustar, agrupados por el estilo o la razón que los conecta con mi gusto.
+```
+
+### Asistente de compras
+Cuando tengo que comprar algo por internet, suelo caer en una terrible parálisis de decisión. Investigo más de la cuenta, armo un excel con características y precios, y con toda seguridad invierto bastante más tiempo del necesario. ¡Una vez me demoré 2 semanas en decidir que disco duro comprar!
+
+Pedirle a la IA que primero me ayude a definir qué estoy buscando, y recién después a comparar, me ahorra horas. Literal. El cambio clave fue dejar de pedirle "el mejor producto" y empezar a pedirle que me ayudara a decidir qué significa "mejor" para mí.
+
+```{.text filename="Prompt para shopping"}
+Quiero comprar X, disponible en Y. Mi presupuesto es Z y lo voy a usar para [uso].
+Primero, ayúdame a definir las 4 o 5 características que realmente importan para mi caso, y pregúntame lo que necesites.
+Luego compárame las mejores opciones en una tabla con precio, ventajas y desventajas, y cierra con tu recomendación y por qué.
+```
+
+### Encontrar tu propósito
+Le pedí a Claude que revisara mi LinkedIn, mi página web y otras cosas mías en internet, y que me hiciera preguntas para ayudarme a encontrar mi propósito (mi *why*). Me sorprendió: hizo un buen resumen de mis actividades y me empujó a pensar. Eso sí, fui honesto: tuve que iterar varias versiones antes de quedar conforme. No salió a la primera, ni de cerca.
+
+```{.text filename="Prompt para tu propósito"}
+Actúa como un coach de liderazgo experto en el "Círculo Dorado" (what/how/why) de Simon Sinek.
+Quiero identificar mi WHY: mi propósito o creencia fundamental.
+Revisa mi contexto [pega perfil, links o trayectoria] y busca los hilos conductores entre mis logros, mis decisiones difíciles y lo que me da satisfacción profunda. No te quedes en lo superficial.
+Hazme entre 5 y 7 preguntas abiertas sobre el "para qué" hago lo que hago.
+Cuando responda, ayúdame a redactar una declaración de propósito clara y accionable.
+Empieza haciéndome la primera pregunta.
+```
+
+### Análisis de conversaciones
+Cuando me toca tener una conversación difícil, anoto los puntos antes para poder revisarlos con calma. Descubrí que pasárselos a la IA me ayuda a prepararla mejor: encuentra puntos débiles en mi argumento, me sugiere analogías, y a veces me hace ver el otro lado de una forma que yo no estaba viendo.
+
+```{.text filename="Prompt para conversaciones"}
+Tengo que tener una conversación difícil con [persona] sobre [tema]. Mi objetivo es [objetivo].
+Estos son mis apuntes:
+X
+Y
+Z
+
+Léelos desde la perspectiva de la otra persona y dime: dónde está débil mi argumento, qué podría malinterpretarse, y cómo lo reformularías. Si te sirve algún ejemplo o analogía, úsalo.
+```
+
+No sé si a esto se le pueda llamar "productividad". Para mí es más bien usar la IA como un compañero de pensamiento: alguien/algo que me obliga a hacer más y mejores preguntas.
+:::
+
+:::{.content-visible when-profile="eng"}
+There are tons of tutorials, videos and podcasts about how to use AI to be more productive. That's fine, but honestly the uses that have surprised me the most have nothing to do with productivity. They're a bit more counter-intuitive, and those are exactly the ones I want to jot down here, mostly for my future self.
+
+One thing before we start: I'm sharing the prompts I use, but the trick isn't to copy them verbatim. It's about giving the AI **context, a clear role, and letting it ask you questions** before answering. That last part is what changes the results the most.
+
+### Recommendations
+I give the AI a list of my favorite books or music, explain what I like about them, and that's it: I get a list of personalized recommendations. That's how I've found musical oddities and a couple of great literary recommendations I probably never would have gotten around to reading.
+
+```{.text filename="Prompt for book recommendations"}
+My favorite books are X, Y and Z, and I like them especially because of A and B.
+Before recommending anything, ask me 3 or 4 questions to fine-tune my taste.
+Then recommend 5 books I probably haven't read, explaining in one line why each one connects with what I like.
+```
+
+or, for music:
+
+```{.text filename="Prompt for music recommendations"}
+I like the music of X, Y, ..., Z.
+Before recommending anything, ask me a couple of questions to understand what draws me to them.
+Then recommend lesser-known artists I might like, grouped by the style or reason that connects them to my taste.
+```
+
+### Shopping assistant
+When I have to buy something online, I tend to fall into a terrible decision paralysis. I over-research, build a spreadsheet with features and prices, and almost certainly spend way more time than necessary. Sound familiar?
+
+Asking the AI to first help me define what I'm looking for, and only then to compare, saves me hours. Literally. The key shift was to stop asking it for "the best product" and start asking it to help me decide what "best" means for me.
+
+```{.text filename="Prompt for shopping"}
+I want to buy X, available in Y. My budget is Z and I'll use it for [use case].
+First, help me define the 4 or 5 features that really matter for my case, and ask me whatever you need.
+Then compare the best options in a table with price, pros and cons, and close with your recommendation and why.
+```
+
+### Finding your purpose
+I asked Claude to review my LinkedIn, my website and other things of mine online, and to ask me questions to help me find my purpose (my *why*). It surprised me: it made a good summary of my activities and pushed me to think. That said, I'll be honest: I had to iterate through several versions before I was happy with it. It didn't come out right the first time, not even close.
+
+```{.text filename="Prompt for your purpose"}
+Act as a leadership coach who's an expert in Simon Sinek's "Golden Circle" (what/how/why).
+I want to identify my WHY: my fundamental purpose or belief.
+Review my context [paste profile, links or background] and look for the common threads between my achievements, my hard decisions and what gives me deep satisfaction. Don't stay on the surface.
+Ask me between 5 and 7 open questions about the "what for" of what I do.
+When I answer, help me draft a clear, actionable purpose statement.
+Start by asking me the first question.
+```
+
+### Analyzing conversations
+When I have to have a difficult conversation, I write down my points beforehand so I can review them calmly. I discovered that passing them to the AI helps me prepare better: it finds the weak spots in my argument, suggests analogies, and sometimes makes me see the other side in a way I wasn't seeing on my own.
+
+```{.text filename="Prompt for conversations"}
+I have to have a difficult conversation with [person] about [topic]. My goal is [goal].
+These are my notes:
+X
+Y
+Z
+
+Read them from the other person's perspective and tell me: where my argument is weak, what could be misinterpreted, and how you'd rephrase it. If an example or analogy helps, use it.
+```
+
+I'm not sure you can even call this "productivity". For me it's more like using AI as a thinking partner: someone/something that forces me to ask more and better questions.
+:::

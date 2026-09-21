@@ -5,6 +5,7 @@ project:
     - "*/*.qmd"
     - "!README.md"
     - "!pages/listing-bilingual.ejs.md"
+    - "!pages/listing-titles.ejs.md"
 
 website:
   title: "sebastiandres"
@@ -30,6 +31,8 @@ website:
           - tutorial/storytelling_by_sanderson.qmd
       - text: "Stories"
         href: pages/writing.qmd
+      - text: "Art"
+        href: pages/art.qmd
     right:
       - text: "About me"
         href: pages/about.qmd

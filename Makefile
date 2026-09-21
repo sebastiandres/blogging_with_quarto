@@ -1,5 +1,5 @@
-QMD_PATH = "./posts/2026/2026-06-15-trofeo-pyday.qmd"
-HTML_PATH = "_site/posts/2026/2026-06-15-trofeo-pyday.html"
+QMD_PATH = "./blog/2026/2026-08-15-marchetti.qmd"
+HTML_PATH = "_site/blog/2026/2026-08-15-marchetti.html"
 
 # Use the project venv's Python so posts with code cells can execute
 # (system python3 lacks pyyaml/jupyter -> "No module named 'yaml'").

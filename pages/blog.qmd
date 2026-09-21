@@ -10,4 +10,7 @@ listing:
   filter-ui: false
   feed: true
 page-layout: full
+format:
+  html:
+    code-overflow: wrap
 ---
